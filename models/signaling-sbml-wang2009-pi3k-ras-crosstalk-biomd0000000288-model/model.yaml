@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000288
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000288?filename=BIOMD0000000288_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wang2009_pi3k_ras_crosstalk_biomd0000000288_model:Wang2009Pi3kRasCrosstalkBiomd0000000288Model
   init_kwargs:
     model_path: data/BIOMD0000000288.xml

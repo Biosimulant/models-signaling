@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2306210001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2306210001?filename=Dual_G_protein_Model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dual_g_protein_model_model2306210001_model:DualGProteinModelModel2306210001Model
   init_kwargs:
     model_path: data/MODEL2306210001.xml

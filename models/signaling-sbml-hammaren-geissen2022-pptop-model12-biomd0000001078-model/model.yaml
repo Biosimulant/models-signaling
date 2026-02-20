@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001078
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001078?filename=Hammaren-Geissen2022_PPToP_Model12_withParameterSets.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hammaren_geissen2022_pptop_model12_biomd0000001078_model:HammarenGeissen2022PptopModel12Biomd0000001078Model
   init_kwargs:
     model_path: data/BIOMD0000001078.xml

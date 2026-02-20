@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1710260001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1710260001?filename=MODEL1710260001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.martinez_guimera2017_generic_redox_signalling_mo_model1710260001_model:MartinezGuimera2017GenericRedoxSignallingMoModel1710260001Model
   init_kwargs:
     model_path: data/MODEL1710260001.xml

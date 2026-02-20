@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1409050000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1409050000?filename=MODEL1409050000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050000_model:Rutkis2013EntnerDoudoroffPathwayInZMobilisModel1409050000Model
   init_kwargs:
     model_path: data/MODEL1409050000.xml

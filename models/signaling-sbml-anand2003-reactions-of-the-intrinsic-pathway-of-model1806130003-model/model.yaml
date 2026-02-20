@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1806130003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806130003?filename=Anand2003.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.anand2003_reactions_of_the_intrinsic_pathway_of_model1806130003_model:Anand2003ReactionsOfTheIntrinsicPathwayOfModel1806130003Model
   init_kwargs:
     model_path: data/MODEL1806130003.xml

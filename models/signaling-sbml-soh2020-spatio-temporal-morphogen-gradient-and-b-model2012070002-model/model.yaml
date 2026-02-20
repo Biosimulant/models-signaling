@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2012070002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2012070002?filename=BMP_signaling.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.soh2020_spatio_temporal_morphogen_gradient_and_b_model2012070002_model:Soh2020SpatioTemporalMorphogenGradientAndBModel2012070002Model
   init_kwargs:
     model_path: data/MODEL2012070002.xml

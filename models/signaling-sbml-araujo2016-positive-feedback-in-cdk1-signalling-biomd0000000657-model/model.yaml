@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000657
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000657?filename=BIOMD0000000657.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.araujo2016_positive_feedback_in_cdk1_signalling_biomd0000000657_model:Araujo2016PositiveFeedbackInCdk1SignallingBiomd0000000657Model
   init_kwargs:
     model_path: data/BIOMD0000000657.xml

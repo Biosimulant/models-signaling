@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9080388197
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9080388197?filename=MODEL9080388197_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bhalla2004_pkc_2003_model9080388197_model:Bhalla2004Pkc2003Model9080388197Model
   init_kwargs:
     model_path: data/MODEL9080388197.xml

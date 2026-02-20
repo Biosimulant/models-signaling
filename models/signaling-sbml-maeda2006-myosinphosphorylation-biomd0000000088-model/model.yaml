@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000088
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000088?filename=BIOMD0000000088_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.maeda2006_myosinphosphorylation_biomd0000000088_model:Maeda2006MyosinphosphorylationBiomd0000000088Model
   init_kwargs:
     model_path: data/BIOMD0000000088.xml

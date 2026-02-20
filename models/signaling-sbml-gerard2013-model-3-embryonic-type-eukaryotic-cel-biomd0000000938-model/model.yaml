@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000938
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000938?filename=Gerard2013.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gerard2013_model_3_embryonic_type_eukaryotic_cel_biomd0000000938_model:Gerard2013Model3EmbryonicTypeEukaryoticCelBiomd0000000938Model
   init_kwargs:
     model_path: data/BIOMD0000000938.xml

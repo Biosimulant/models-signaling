@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000311
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000311?filename=BIOMD0000000311_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tyson2003_mutual_activation_biomd0000000311_model:Tyson2003MutualActivationBiomd0000000311Model
   init_kwargs:
     model_path: data/BIOMD0000000311.xml

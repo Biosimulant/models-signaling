@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2010030005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2010030005?filename=3HP_Gly_Gly.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.oliveira2020_glycerol_pathway_for_3_hydroxypropi_model2010030005_model:Oliveira2020GlycerolPathwayFor3HydroxypropiModel2010030005Model
   init_kwargs:
     model_path: data/MODEL2010030005.xml

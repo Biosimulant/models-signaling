@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230036
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230036?filename=MODEL1006230036_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gupta2007_hypothalamicpituitaryadrenal_modelb_model1006230036_model:Gupta2007HypothalamicpituitaryadrenalModelbModel1006230036Model
   init_kwargs:
     model_path: data/MODEL1006230036.xml

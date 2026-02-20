@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000605
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000605?filename=BIOMD0000000605_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.petelenzkuehn_osmoadaptation_hog1att_biomd0000000605_model:PetelenzkuehnOsmoadaptationHog1attBiomd0000000605Model
   init_kwargs:
     model_path: data/BIOMD0000000605.xml

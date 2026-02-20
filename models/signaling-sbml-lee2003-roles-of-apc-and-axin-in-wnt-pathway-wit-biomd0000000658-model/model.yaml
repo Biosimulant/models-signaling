@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000658
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000658?filename=BIOMD0000000658_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model:Lee2003RolesOfApcAndAxinInWntPathwayWitBiomd0000000658Model
   init_kwargs:
     model_path: data/BIOMD0000000658.xml

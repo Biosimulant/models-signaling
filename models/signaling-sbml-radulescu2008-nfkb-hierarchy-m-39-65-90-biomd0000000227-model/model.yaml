@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000227
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000227?filename=BIOMD0000000227_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.radulescu2008_nfkb_hierarchy_m_39_65_90_biomd0000000227_model:Radulescu2008NfkbHierarchyM396590Biomd0000000227Model
   init_kwargs:
     model_path: data/BIOMD0000000227.xml

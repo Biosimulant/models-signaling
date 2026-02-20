@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1604100000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1604100000?filename=MODEL1604100000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mukhopadhyay2013_t_cell_receptor_proximal_signal_model1604100000_model:Mukhopadhyay2013TCellReceptorProximalSignalModel1604100000Model
   init_kwargs:
     model_path: data/MODEL1604100000.xml

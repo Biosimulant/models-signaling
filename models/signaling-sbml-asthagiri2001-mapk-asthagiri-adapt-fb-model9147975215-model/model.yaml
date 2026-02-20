@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9147975215
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9147975215?filename=MODEL9147975215_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model:Asthagiri2001MapkAsthagiriAdaptFbModel9147975215Model
   init_kwargs:
     model_path: data/MODEL9147975215.xml

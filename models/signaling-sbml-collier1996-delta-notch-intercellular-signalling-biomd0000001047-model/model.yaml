@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001047
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001047?filename=delta_notch.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.collier1996_delta_notch_intercellular_signalling_biomd0000001047_model:Collier1996DeltaNotchIntercellularSignallingBiomd0000001047Model
   init_kwargs:
     model_path: data/BIOMD0000001047.xml

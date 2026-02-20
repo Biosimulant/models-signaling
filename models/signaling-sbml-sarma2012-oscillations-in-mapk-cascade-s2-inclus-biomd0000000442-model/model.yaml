@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000442
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000442?filename=BIOMD0000000442_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sarma2012_oscillations_in_mapk_cascade_s2_inclus_biomd0000000442_model:Sarma2012OscillationsInMapkCascadeS2InclusBiomd0000000442Model
   init_kwargs:
     model_path: data/BIOMD0000000442.xml

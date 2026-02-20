@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000356
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000356?filename=BIOMD0000000356_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nyman2011_m3hierarachical_insulinglucosedynamics_biomd0000000356_model:Nyman2011M3hierarachicalInsulinglucosedynamicsBiomd0000000356Model
   init_kwargs:
     model_path: data/BIOMD0000000356.xml

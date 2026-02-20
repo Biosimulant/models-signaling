@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000250
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000250?filename=BIOMD0000000250_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nakakuki2010_cellfatedecision_mechanistic_biomd0000000250_model:Nakakuki2010CellfatedecisionMechanisticBiomd0000000250Model
   init_kwargs:
     model_path: data/BIOMD0000000250.xml

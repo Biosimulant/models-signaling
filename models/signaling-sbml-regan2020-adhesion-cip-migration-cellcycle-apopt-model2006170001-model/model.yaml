@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2006170001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2006170001?filename=Regan2020_Adhesion_CIP_Migration_CellCycle_Apoptosis_v2.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.regan2020_adhesion_cip_migration_cellcycle_apopt_model2006170001_model:Regan2020AdhesionCipMigrationCellcycleApoptModel2006170001Model
   init_kwargs:
     model_path: data/MODEL2006170001.xml

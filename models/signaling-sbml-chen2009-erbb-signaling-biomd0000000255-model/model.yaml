@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000255
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000255?filename=BIOMD0000000255_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chen2009_erbb_signaling_biomd0000000255_model:Chen2009ErbbSignalingBiomd0000000255Model
   init_kwargs:
     model_path: data/BIOMD0000000255.xml

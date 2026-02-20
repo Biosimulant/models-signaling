@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000638
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000638?filename=BIOMD0000000638_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bush2016_extended_carrousel_model_of_gpcr_rgs_biomd0000000638_model:Bush2016ExtendedCarrouselModelOfGpcrRgsBiomd0000000638Model
   init_kwargs:
     model_path: data/BIOMD0000000638.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000432
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000432?filename=BIOMD0000000432_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sarma2012_interaction_topologies_of_mapk_cascade_biomd0000000432_model:Sarma2012InteractionTopologiesOfMapkCascadeBiomd0000000432Model
   init_kwargs:
     model_path: data/BIOMD0000000432.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000478
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000478?filename=BIOMD0000000478_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model:Besozzi2012OscillatoryRegimesInTheRasCampBiomd0000000478Model
   init_kwargs:
     model_path: data/BIOMD0000000478.xml

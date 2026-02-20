@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001017?filename=Bakshi2020
     minimal model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bakshi2020_minimal_model_of_alternative_pathway_biomd0000001017_model:Bakshi2020MinimalModelOfAlternativePathwayBiomd0000001017Model
   init_kwargs:
     model_path: data/BIOMD0000001017.xml

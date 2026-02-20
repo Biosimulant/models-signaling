@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1505130000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1505130000?filename=paper_figs_Jalil_Sacktor_Shouval_supplemental_new.m
   license: CC0
-bsim:
+biosim:
   entrypoint: src.jalil2015_atypical_protein_kinase_c_isoforms_in_model1505130000_model:Jalil2015AtypicalProteinKinaseCIsoformsInModel1505130000Model
   init_kwargs:
     model_path: data/MODEL1505130000.xml

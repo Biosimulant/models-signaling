@@ -23,7 +23,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1908290001?filename=Hetmanski
     2019 cell rear.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hetmanski2019_mechanochemical_signaling_controll_model1908290001_model:Hetmanski2019MechanochemicalSignalingControllModel1908290001Model
   init_kwargs:
     model_path: data/MODEL1908290001.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1403040000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1403040000?filename=MODEL1403040000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sackmann2006_mating_pheromone_response_pathway_o_model1403040000_model:Sackmann2006MatingPheromoneResponsePathwayOModel1403040000Model
   init_kwargs:
     model_path: data/MODEL1403040000.xml

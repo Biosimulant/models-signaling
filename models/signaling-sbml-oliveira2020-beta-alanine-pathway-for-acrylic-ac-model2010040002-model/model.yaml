@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2010040002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2010040002?filename=AA_Gly_Ba.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040002_model:Oliveira2020BetaAlaninePathwayForAcrylicAcModel2010040002Model
   init_kwargs:
     model_path: data/MODEL2010040002.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2206230002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2206230002?filename=acp_model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.caruso2020_alternative_complement_pathway_model_model2206230002_model:Caruso2020AlternativeComplementPathwayModelModel2206230002Model
   init_kwargs:
     model_path: data/MODEL2206230002.xml

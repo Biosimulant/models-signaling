@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2010040006
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2010040006?filename=AA_Glu_Mcoa.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.oliveira2020_malonyl_coa_pathway_for_acrylic_aci_model2010040006_model:Oliveira2020MalonylCoaPathwayForAcrylicAciModel2010040006Model
   init_kwargs:
     model_path: data/MODEL2010040006.xml

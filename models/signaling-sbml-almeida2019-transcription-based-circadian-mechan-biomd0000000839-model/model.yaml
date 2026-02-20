@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000839
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000839?filename=Almeida2019.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.almeida2019_transcription_based_circadian_mechan_biomd0000000839_model:Almeida2019TranscriptionBasedCircadianMechanBiomd0000000839Model
   init_kwargs:
     model_path: data/BIOMD0000000839.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000706
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000706?filename=BIOMD0000000706_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smith2010_response_of_foxo_transcription_factors_biomd0000000706_model:Smith2010ResponseOfFoxoTranscriptionFactorsBiomd0000000706Model
   init_kwargs:
     model_path: data/BIOMD0000000706.xml

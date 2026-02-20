@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000082
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000082?filename=BIOMD0000000082_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model:Thomsen1988AdenylatecyclaseInhibitionBiomd0000000082Model
   init_kwargs:
     model_path: data/BIOMD0000000082.xml

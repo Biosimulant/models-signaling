@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000049
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000049?filename=BIOMD0000000049_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sasagawa2005_mapk_biomd0000000049_model:Sasagawa2005MapkBiomd0000000049Model
   init_kwargs:
     model_path: data/BIOMD0000000049.xml

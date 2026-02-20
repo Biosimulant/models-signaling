@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1902140002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1902140002?filename=Heberle-RazquinNavas-2019_model_V.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model:HeberleRazquinNavas2019Pi3kMapkP38MtorMoModel1902140002Model
   init_kwargs:
     model_path: data/MODEL1902140002.xml

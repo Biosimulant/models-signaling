@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1172425728
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1172425728?filename=MODEL1172425728_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cui2008_cardiacmyocytes_model1172425728_model:Cui2008CardiacmyocytesModel1172425728Model
   init_kwargs:
     model_path: data/MODEL1172425728.xml

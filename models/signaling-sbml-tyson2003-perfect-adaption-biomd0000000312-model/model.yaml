@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000312
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000312?filename=BIOMD0000000312_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tyson2003_perfect_adaption_biomd0000000312_model:Tyson2003PerfectAdaptionBiomd0000000312Model
   init_kwargs:
     model_path: data/BIOMD0000000312.xml

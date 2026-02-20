@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000048
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000048?filename=BIOMD0000000048_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kholodenko1999_egfr_signaling_biomd0000000048_model:Kholodenko1999EgfrSignalingBiomd0000000048Model
   init_kwargs:
     model_path: data/BIOMD0000000048.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2002110001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2002110001?filename=multiStability_Jin_Xu.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thomson2009_unlimited_multistability_in_multisit_model2002110001_model:Thomson2009UnlimitedMultistabilityInMultisitModel2002110001Model
   init_kwargs:
     model_path: data/MODEL2002110001.xml

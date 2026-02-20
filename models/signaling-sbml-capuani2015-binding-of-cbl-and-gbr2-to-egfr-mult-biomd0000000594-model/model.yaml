@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000594
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000594?filename=BIOMD0000000594_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.capuani2015_binding_of_cbl_and_gbr2_to_egfr_mult_biomd0000000594_model:Capuani2015BindingOfCblAndGbr2ToEgfrMultBiomd0000000594Model
   init_kwargs:
     model_path: data/BIOMD0000000594.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000560
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000560?filename=BIOMD0000000560_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hui2016_age_related_changes_in_articular_cartila_biomd0000000560_model:Hui2016AgeRelatedChangesInArticularCartilaBiomd0000000560Model
   init_kwargs:
     model_path: data/BIOMD0000000560.xml

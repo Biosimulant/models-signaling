@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000952
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000952?filename=Rodenfels2019_V1.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rodenfels2019_heat_oscillations_driven_by_the_em_biomd0000000952_model:Rodenfels2019HeatOscillationsDrivenByTheEmBiomd0000000952Model
   init_kwargs:
     model_path: data/BIOMD0000000952.xml

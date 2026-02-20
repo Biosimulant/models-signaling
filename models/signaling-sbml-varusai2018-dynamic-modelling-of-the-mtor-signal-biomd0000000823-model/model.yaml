@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000823
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000823?filename=Varusai2018.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.varusai2018_dynamic_modelling_of_the_mtor_signal_biomd0000000823_model:Varusai2018DynamicModellingOfTheMtorSignalBiomd0000000823Model
   init_kwargs:
     model_path: data/BIOMD0000000823.xml

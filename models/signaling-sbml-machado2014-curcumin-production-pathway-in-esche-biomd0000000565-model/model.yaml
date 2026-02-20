@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000565
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000565?filename=BIOMD0000000565_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model:Machado2014CurcuminProductionPathwayInEscheBiomd0000000565Model
   init_kwargs:
     model_path: data/BIOMD0000000565.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000445
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000445?filename=BIOMD0000000445_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model:Pokhilko2013Toc1SignallingInArabidopsisCircBiomd0000000445Model
   init_kwargs:
     model_path: data/BIOMD0000000445.xml

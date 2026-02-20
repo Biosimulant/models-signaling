@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000803
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000803?filename=Park2019.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model:Park2019Il7ReceptorSignalingInTCellsBiomd0000000803Model
   init_kwargs:
     model_path: data/BIOMD0000000803.xml

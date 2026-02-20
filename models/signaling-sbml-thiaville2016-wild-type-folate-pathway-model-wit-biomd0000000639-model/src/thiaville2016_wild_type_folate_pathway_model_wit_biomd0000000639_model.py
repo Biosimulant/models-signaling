@@ -12,13 +12,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class SbmlThiaville2016WildTypeFolatePathwayModelWithProposed(bsim.BioModule):
+class SbmlThiaville2016WildTypeFolatePathwayModelWithProposed(biosim.BioModule):
     """BioModule wrapper for SBML model: Thiaville2016 - Wild type folate pathway model with proposed PanB reaction."""
 
     def __init__(self, model_path: str = "data/BIOMD0000000639.xml", min_dt: float = 0.01) -> None:

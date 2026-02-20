@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000474
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000474?filename=BIOMD0000000474_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smith2013_regulation_of_insulin_signalling_by_ox_biomd0000000474_model:Smith2013RegulationOfInsulinSignallingByOxBiomd0000000474Model
   init_kwargs:
     model_path: data/BIOMD0000000474.xml

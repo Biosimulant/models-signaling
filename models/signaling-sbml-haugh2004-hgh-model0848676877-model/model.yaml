@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0848676877
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0848676877?filename=MODEL0848676877_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.haugh2004_hgh_model0848676877_model:Haugh2004HghModel0848676877Model
   init_kwargs:
     model_path: data/MODEL0848676877.xml

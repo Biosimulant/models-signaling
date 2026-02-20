@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2010030006
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2010030006?filename=3HP_Glu_Mcoa.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.oliveira2020_malonyl_coa_pathway_for_3_hydroxypr_model2010030006_model:Oliveira2020MalonylCoaPathwayFor3HydroxyprModel2010030006Model
   init_kwargs:
     model_path: data/MODEL2010030006.xml

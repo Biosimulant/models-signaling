@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2503270002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2503270002?filename=PHH_model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model:Zeilfelder2025ModelForPrimaryHumanHepatocytModel2503270002Model
   init_kwargs:
     model_path: data/MODEL2503270002.xml

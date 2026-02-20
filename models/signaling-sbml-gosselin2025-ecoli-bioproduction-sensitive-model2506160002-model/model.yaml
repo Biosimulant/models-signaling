@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2506160002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2506160002?filename=Gosselin2025_Ecoli_bioproduction_sensitive.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gosselin2025_ecoli_bioproduction_sensitive_model2506160002_model:Gosselin2025EcoliBioproductionSensitiveModel2506160002Model
   init_kwargs:
     model_path: data/MODEL2506160002.xml

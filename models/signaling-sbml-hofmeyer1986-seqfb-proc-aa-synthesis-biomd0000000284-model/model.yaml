@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000284
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000284?filename=BIOMD0000000284_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hofmeyer1986_seqfb_proc_aa_synthesis_biomd0000000284_model:Hofmeyer1986SeqfbProcAaSynthesisBiomd0000000284Model
   init_kwargs:
     model_path: data/BIOMD0000000284.xml

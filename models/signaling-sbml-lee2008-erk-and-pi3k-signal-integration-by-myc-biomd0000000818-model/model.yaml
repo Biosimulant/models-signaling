@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000818
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000818?filename=Lee2008.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lee2008_erk_and_pi3k_signal_integration_by_myc_biomd0000000818_model:Lee2008ErkAndPi3kSignalIntegrationByMycBiomd0000000818Model
   init_kwargs:
     model_path: data/BIOMD0000000818.xml

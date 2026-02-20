@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1807190001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807190001?filename=Sveshnikova2015.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.platelet_par1_with_soce_model1807190001_model:PlateletPar1WithSoceModel1807190001Model
   init_kwargs:
     model_path: data/MODEL1807190001.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL8478881246
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL8478881246?filename=MODEL8478881246_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.basak_cell_2007_model8478881246_model:BasakCell2007Model8478881246Model
   init_kwargs:
     model_path: data/MODEL8478881246.xml

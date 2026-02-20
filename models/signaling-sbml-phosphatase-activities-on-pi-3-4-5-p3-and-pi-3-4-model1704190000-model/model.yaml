@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1704190000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1704190000?filename=MODEL1704190000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model:PhosphataseActivitiesOnPi345P3AndPi34Model1704190000Model
   init_kwargs:
     model_path: data/MODEL1704190000.xml

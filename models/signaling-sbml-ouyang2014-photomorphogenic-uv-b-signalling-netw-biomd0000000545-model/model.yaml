@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000545
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000545?filename=BIOMD0000000545_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model:Ouyang2014PhotomorphogenicUvBSignallingNetwBiomd0000000545Model
   init_kwargs:
     model_path: data/BIOMD0000000545.xml

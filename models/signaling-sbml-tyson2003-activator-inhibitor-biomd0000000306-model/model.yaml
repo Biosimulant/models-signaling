@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000306
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000306?filename=BIOMD0000000306_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tyson2003_activator_inhibitor_biomd0000000306_model:Tyson2003ActivatorInhibitorBiomd0000000306Model
   init_kwargs:
     model_path: data/BIOMD0000000306.xml

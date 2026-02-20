@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000600
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000600?filename=BIOMD0000000600_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.celli_re2011_plasticity_of_tgf_signalling_biomd0000000600_model:CelliRe2011PlasticityOfTgfSignallingBiomd0000000600Model
   init_kwargs:
     model_path: data/BIOMD0000000600.xml

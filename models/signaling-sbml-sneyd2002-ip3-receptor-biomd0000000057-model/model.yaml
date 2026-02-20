@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000057
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000057?filename=BIOMD0000000057_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sneyd2002_ip3_receptor_biomd0000000057_model:Sneyd2002Ip3ReceptorBiomd0000000057Model
   init_kwargs:
     model_path: data/BIOMD0000000057.xml

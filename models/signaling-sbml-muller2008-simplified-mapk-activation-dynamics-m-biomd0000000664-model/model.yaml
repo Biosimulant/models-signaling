@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000664
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000664?filename=BIOMD0000000664_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.muller2008_simplified_mapk_activation_dynamics_m_biomd0000000664_model:Muller2008SimplifiedMapkActivationDynamicsMBiomd0000000664Model
   init_kwargs:
     model_path: data/BIOMD0000000664.xml

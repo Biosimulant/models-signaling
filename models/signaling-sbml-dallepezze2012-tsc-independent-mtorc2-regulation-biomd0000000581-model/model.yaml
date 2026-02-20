@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000581
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000581?filename=BIOMD0000000581_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model:Dallepezze2012TscIndependentMtorc2RegulationBiomd0000000581Model
   init_kwargs:
     model_path: data/BIOMD0000000581.xml

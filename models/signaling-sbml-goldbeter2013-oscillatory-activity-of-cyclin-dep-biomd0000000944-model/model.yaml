@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000944
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000944?filename=Goldbeter2013.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.goldbeter2013_oscillatory_activity_of_cyclin_dep_biomd0000000944_model:Goldbeter2013OscillatoryActivityOfCyclinDepBiomd0000000944Model
   init_kwargs:
     model_path: data/BIOMD0000000944.xml

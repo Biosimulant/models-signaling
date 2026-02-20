@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000854
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000854?filename=Gray2016.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gray2016_the_akt_switch_model_biomd0000000854_model:Gray2016TheAktSwitchModelBiomd0000000854Model
   init_kwargs:
     model_path: data/BIOMD0000000854.xml

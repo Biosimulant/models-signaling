@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1201140006
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1201140006?filename=MODEL1201140006_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wanant2000_insulinreceptormodel_b_model1201140006_model:Wanant2000InsulinreceptormodelBModel1201140006Model
   init_kwargs:
     model_path: data/MODEL1201140006.xml

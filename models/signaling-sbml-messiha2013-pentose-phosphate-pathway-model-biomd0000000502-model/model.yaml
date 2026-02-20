@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000502
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000502?filename=BIOMD0000000502_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.messiha2013_pentose_phosphate_pathway_model_biomd0000000502_model:Messiha2013PentosePhosphatePathwayModelBiomd0000000502Model
   init_kwargs:
     model_path: data/BIOMD0000000502.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000489
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000489?filename=BIOMD0000000489_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sharp2013_lipopolysaccharide_induced_nfkb_activa_biomd0000000489_model:Sharp2013LipopolysaccharideInducedNfkbActivaBiomd0000000489Model
   init_kwargs:
     model_path: data/BIOMD0000000489.xml

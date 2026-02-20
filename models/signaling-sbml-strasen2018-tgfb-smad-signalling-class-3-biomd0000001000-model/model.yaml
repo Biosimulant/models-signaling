@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001000?filename=MODEL1712050009.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.strasen2018_tgfb_smad_signalling_class_3_biomd0000001000_model:Strasen2018TgfbSmadSignallingClass3Biomd0000001000Model
   init_kwargs:
     model_path: data/BIOMD0000001000.xml

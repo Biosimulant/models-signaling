@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000448
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000448?filename=BIOMD0000000448_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.br_nnmark2013_insulin_signalling_in_human_adipoc_biomd0000000448_model:BrNnmark2013InsulinSignallingInHumanAdipocBiomd0000000448Model
   init_kwargs:
     model_path: data/BIOMD0000000448.xml

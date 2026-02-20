@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1809230001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1809230001?filename=TLR4-NF-kB_MACR_MODEL_SBML.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tlr4_nfkb_phospho_nf_kb_signaling_in_bmdm_model1809230001_model:Tlr4NfkbPhosphoNfKbSignalingInBmdmModel1809230001Model
   init_kwargs:
     model_path: data/MODEL1809230001.xml

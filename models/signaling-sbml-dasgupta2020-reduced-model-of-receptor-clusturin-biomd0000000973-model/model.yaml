@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000973
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000973?filename=Dasgupta2020.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model:Dasgupta2020ReducedModelOfReceptorClusturinBiomd0000000973Model
   init_kwargs:
     model_path: data/BIOMD0000000973.xml

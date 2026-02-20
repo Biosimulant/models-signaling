@@ -23,7 +23,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2001290001?filename=FileS1_Final
     NF-kB Activation Model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ahmedmobeen2021_nf_kb_activation_model_model2001290001_model:Ahmedmobeen2021NfKbActivationModelModel2001290001Model
   init_kwargs:
     model_path: data/MODEL2001290001.xml

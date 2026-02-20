@@ -12,13 +12,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class SbmlGerard2013Model3EmbryonicTypeEukaryoticCellCycle(bsim.BioModule):
+class SbmlGerard2013Model3EmbryonicTypeEukaryoticCellCycle(biosim.BioModule):
     """BioModule wrapper for SBML model: Gerard2013 - Model 3 - Embryonic-type eukaryotic Cell Cycle regulation based on negative feedback between Cdk/cyclin and APC and competitive inhibition between Cdk/cyclin and securin for polyubiquityl."""
 
     def __init__(self, model_path: str = "data/BIOMD0000000938.xml", min_dt: float = 0.01) -> None:

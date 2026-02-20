@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2406110001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2406110001?filename=MechanotransductionSBMLPathway_17.10.24.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mechanotransduction_and_inflammation_model2406110001_model:MechanotransductionAndInflammationModel2406110001Model
   init_kwargs:
     model_path: data/MODEL2406110001.xml

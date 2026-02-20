@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2207280001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2207280001?filename=chassagnole1hyb.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pinto2022_hybrid_sbml_ann_model_model2207280001_model:Pinto2022HybridSbmlAnnModelModel2207280001Model
   init_kwargs:
     model_path: data/MODEL2207280001.xml

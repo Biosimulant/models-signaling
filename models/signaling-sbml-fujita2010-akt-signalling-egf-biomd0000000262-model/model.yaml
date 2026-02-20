@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000262
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000262?filename=BIOMD0000000262_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.fujita2010_akt_signalling_egf_biomd0000000262_model:Fujita2010AktSignallingEgfBiomd0000000262Model
   init_kwargs:
     model_path: data/BIOMD0000000262.xml

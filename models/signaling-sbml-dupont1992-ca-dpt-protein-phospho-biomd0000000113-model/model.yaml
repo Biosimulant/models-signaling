@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000113
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000113?filename=BIOMD0000000113_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dupont1992_ca_dpt_protein_phospho_biomd0000000113_model:Dupont1992CaDptProteinPhosphoBiomd0000000113Model
   init_kwargs:
     model_path: data/BIOMD0000000113.xml

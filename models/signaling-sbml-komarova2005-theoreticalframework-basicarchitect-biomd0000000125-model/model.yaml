@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000125
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000125?filename=BIOMD0000000125_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model:Komarova2005TheoreticalframeworkBasicarchitectBiomd0000000125Model
   init_kwargs:
     model_path: data/BIOMD0000000125.xml

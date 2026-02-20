@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000355
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000355?filename=BIOMD0000000355_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.abell2011_calciumsignaling_withadaptation_biomd0000000355_model:Abell2011CalciumsignalingWithadaptationBiomd0000000355Model
   init_kwargs:
     model_path: data/BIOMD0000000355.xml

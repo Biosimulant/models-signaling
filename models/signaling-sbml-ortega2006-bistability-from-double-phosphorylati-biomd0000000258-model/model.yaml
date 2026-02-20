@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000258
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000258?filename=BIOMD0000000258_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model:Ortega2006BistabilityFromDoublePhosphorylatiBiomd0000000258Model
   init_kwargs:
     model_path: data/BIOMD0000000258.xml

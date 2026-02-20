@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2006170002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2006170002?filename=Sizek_Regan_PI3K_growth_CellCycle_Apoptosis.sbml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sizek2019_pi3k_growth_cellcycle_apoptosis_model2006170002_model:Sizek2019Pi3kGrowthCellcycleApoptosisModel2006170002Model
   init_kwargs:
     model_path: data/MODEL2006170002.sbml

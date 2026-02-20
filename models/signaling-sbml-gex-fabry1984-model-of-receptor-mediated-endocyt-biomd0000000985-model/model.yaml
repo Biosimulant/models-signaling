@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000985
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000985?filename=Gex-Fabry1984.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gex_fabry1984_model_of_receptor_mediated_endocyt_biomd0000000985_model:GexFabry1984ModelOfReceptorMediatedEndocytBiomd0000000985Model
   init_kwargs:
     model_path: data/BIOMD0000000985.xml

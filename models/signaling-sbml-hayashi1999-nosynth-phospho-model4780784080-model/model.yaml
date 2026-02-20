@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL4780784080
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL4780784080?filename=MODEL4780784080_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hayashi1999_nosynth_phospho_model4780784080_model:Hayashi1999NosynthPhosphoModel4780784080Model
   init_kwargs:
     model_path: data/MODEL4780784080.xml

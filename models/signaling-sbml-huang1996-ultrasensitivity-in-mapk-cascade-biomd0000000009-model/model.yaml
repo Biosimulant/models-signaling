@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000009
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000009?filename=BIOMD0000000009_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.huang1996_ultrasensitivity_in_mapk_cascade_biomd0000000009_model:Huang1996UltrasensitivityInMapkCascadeBiomd0000000009Model
   init_kwargs:
     model_path: data/BIOMD0000000009.xml

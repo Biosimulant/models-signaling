@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1202030000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1202030000?filename=MODEL1202030000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dupeux2011_abareceptor_dimer_model1202030000_model:Dupeux2011AbareceptorDimerModel1202030000Model
   init_kwargs:
     model_path: data/MODEL1202030000.xml

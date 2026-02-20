@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000720
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000720?filename=Yan2012.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.yan2012_rb_e2f_pathway_dynamics_with_mir449_biomd0000000720_model:Yan2012RbE2fPathwayDynamicsWithMir449Biomd0000000720Model
   init_kwargs:
     model_path: data/BIOMD0000000720.xml

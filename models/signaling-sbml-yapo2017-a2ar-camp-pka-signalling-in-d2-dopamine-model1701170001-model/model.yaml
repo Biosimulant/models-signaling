@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1701170001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1701170001?filename=MODEL1701170001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model:Yapo2017A2arCampPkaSignallingInD2DopamineModel1701170001Model
   init_kwargs:
     model_path: data/MODEL1701170001.xml

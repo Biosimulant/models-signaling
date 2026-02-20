@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1409170000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1409170000?filename=MODEL1409170000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mazein2013_cholesterol_biosynthesis_pathway_model1409170000_model:Mazein2013CholesterolBiosynthesisPathwayModel1409170000Model
   init_kwargs:
     model_path: data/MODEL1409170000.xml

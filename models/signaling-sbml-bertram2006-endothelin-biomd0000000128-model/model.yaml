@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000128
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000128?filename=BIOMD0000000128_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bertram2006_endothelin_biomd0000000128_model:Bertram2006EndothelinBiomd0000000128Model
   init_kwargs:
     model_path: data/BIOMD0000000128.xml

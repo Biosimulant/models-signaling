@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000639
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000639?filename=BIOMD0000000639_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiaville2016_wild_type_folate_pathway_model_wit_biomd0000000639_model:Thiaville2016WildTypeFolatePathwayModelWitBiomd0000000639Model
   init_kwargs:
     model_path: data/BIOMD0000000639.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9070467164
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9070467164?filename=MODEL9070467164_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bhalla2002_mkp1_feedback_effects_model9070467164_model:Bhalla2002Mkp1FeedbackEffectsModel9070467164Model
   init_kwargs:
     model_path: data/MODEL9070467164.xml

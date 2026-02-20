@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000310
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000310?filename=BIOMD0000000310_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tyson2003_mutual_inhibition_biomd0000000310_model:Tyson2003MutualInhibitionBiomd0000000310Model
   init_kwargs:
     model_path: data/BIOMD0000000310.xml

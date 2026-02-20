@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000033
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000033?filename=BIOMD0000000033_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.brown2004_ngf_and_egf_signaling_biomd0000000033_model:Brown2004NgfAndEgfSignalingBiomd0000000033Model
   init_kwargs:
     model_path: data/BIOMD0000000033.xml

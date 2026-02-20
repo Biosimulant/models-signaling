@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000352
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000352?filename=BIOMD0000000352_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vernoux2011_auxinsignaling_auxinfluctuating_biomd0000000352_model:Vernoux2011AuxinsignalingAuxinfluctuatingBiomd0000000352Model
   init_kwargs:
     model_path: data/BIOMD0000000352.xml

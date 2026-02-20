@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2010040005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2010040005?filename=AA_Gly_Gly.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.oliveira2020_glycerol_pathway_for_acrylic_acid_p_model2010040005_model:Oliveira2020GlycerolPathwayForAcrylicAcidPModel2010040005Model
   init_kwargs:
     model_path: data/MODEL2010040005.xml

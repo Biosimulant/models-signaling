@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL7743576806
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL7743576806?filename=MODEL7743576806_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.radulescu2008_nf_b_hierarchy_16_34_46_model7743576806_model:Radulescu2008NfBHierarchy163446Model7743576806Model
   init_kwargs:
     model_path: data/MODEL7743576806.xml

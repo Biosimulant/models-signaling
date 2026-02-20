@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000833
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000833?filename=DiCamillo2016.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dicamillo2016_insulin_signalling_pathway_rule_ba_biomd0000000833_model:Dicamillo2016InsulinSignallingPathwayRuleBaBiomd0000000833Model
   init_kwargs:
     model_path: data/BIOMD0000000833.xml

@@ -23,7 +23,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2202080001?filename=Wehling2022
     YAP to TAZ transition model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wehling2022_alternative_model_for_yap_taz_phosph_model2202080001_model:Wehling2022AlternativeModelForYapTazPhosphModel2202080001Model
   init_kwargs:
     model_path: data/MODEL2202080001.xml

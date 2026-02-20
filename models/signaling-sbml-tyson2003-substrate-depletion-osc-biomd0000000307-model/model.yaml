@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000307
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000307?filename=BIOMD0000000307_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tyson2003_substrate_depletion_osc_biomd0000000307_model:Tyson2003SubstrateDepletionOscBiomd0000000307Model
   init_kwargs:
     model_path: data/BIOMD0000000307.xml

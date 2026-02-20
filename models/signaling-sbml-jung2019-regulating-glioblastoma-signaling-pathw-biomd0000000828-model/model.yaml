@@ -24,7 +24,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000828?filename=Jung2019
     model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.jung2019_regulating_glioblastoma_signaling_pathw_biomd0000000828_model:Jung2019RegulatingGlioblastomaSignalingPathwBiomd0000000828Model
   init_kwargs:
     model_path: data/BIOMD0000000828.xml

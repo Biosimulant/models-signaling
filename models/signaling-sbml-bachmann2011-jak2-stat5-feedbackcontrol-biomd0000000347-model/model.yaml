@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000347
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000347?filename=BIOMD0000000347_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bachmann2011_jak2_stat5_feedbackcontrol_biomd0000000347_model:Bachmann2011Jak2Stat5FeedbackcontrolBiomd0000000347Model
   init_kwargs:
     model_path: data/BIOMD0000000347.xml

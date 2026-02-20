@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000004?filename=BIOMD0000000004_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model:Goldbeter1991MinMitOscilExplInactBiomd0000000004Model
   init_kwargs:
     model_path: data/BIOMD0000000004.xml

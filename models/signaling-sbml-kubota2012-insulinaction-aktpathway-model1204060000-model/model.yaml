@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1204060000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1204060000?filename=MODEL1204060000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kubota2012_insulinaction_aktpathway_model1204060000_model:Kubota2012InsulinactionAktpathwayModel1204060000Model
   init_kwargs:
     model_path: data/MODEL1204060000.xml

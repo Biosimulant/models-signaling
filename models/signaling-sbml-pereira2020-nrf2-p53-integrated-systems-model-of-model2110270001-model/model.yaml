@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2110270001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2110270001?filename=NRF2_p53_ODE.m
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pereira2020_nrf2_p53_integrated_systems_model_of_model2110270001_model:Pereira2020Nrf2P53IntegratedSystemsModelOfModel2110270001Model
   init_kwargs:
     model_path: data/MODEL2110270001.xml

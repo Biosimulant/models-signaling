@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2103010001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2103010001?filename=S1_Model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hetmanski2021_rear_retraction_kinetic_model2103010001_model:Hetmanski2021RearRetractionKineticModel2103010001Model
   init_kwargs:
     model_path: data/MODEL2103010001.xml

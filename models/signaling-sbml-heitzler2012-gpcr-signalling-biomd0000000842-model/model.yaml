@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000842
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000842?filename=MODEL1012080000.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.heitzler2012_gpcr_signalling_biomd0000000842_model:Heitzler2012GpcrSignallingBiomd0000000842Model
   init_kwargs:
     model_path: data/BIOMD0000000842.xml

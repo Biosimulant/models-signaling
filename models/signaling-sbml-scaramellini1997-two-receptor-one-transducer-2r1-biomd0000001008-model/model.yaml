@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001008
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001008?filename=Scaramellini1997.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.scaramellini1997_two_receptor_one_transducer_2r1_biomd0000001008_model:Scaramellini1997TwoReceptorOneTransducer2r1Biomd0000001008Model
   init_kwargs:
     model_path: data/BIOMD0000001008.xml

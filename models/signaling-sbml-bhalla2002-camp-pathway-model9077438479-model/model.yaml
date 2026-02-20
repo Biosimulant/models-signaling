@@ -19,7 +19,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9077438479
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9077438479?filename=MODEL9077438479_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bhalla2002_camp_pathway_model9077438479_model:Bhalla2002CampPathwayModel9077438479Model
   init_kwargs:
     model_path: data/MODEL9077438479.xml

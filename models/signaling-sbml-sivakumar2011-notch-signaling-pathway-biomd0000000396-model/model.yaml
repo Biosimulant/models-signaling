@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000396
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000396?filename=BIOMD0000000396_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sivakumar2011_notch_signaling_pathway_biomd0000000396_model:Sivakumar2011NotchSignalingPathwayBiomd0000000396Model
   init_kwargs:
     model_path: data/BIOMD0000000396.xml

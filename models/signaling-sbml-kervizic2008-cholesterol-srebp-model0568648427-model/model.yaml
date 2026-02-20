@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0568648427
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0568648427?filename=MODEL0568648427_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kervizic2008_cholesterol_srebp_model0568648427_model:Kervizic2008CholesterolSrebpModel0568648427Model
   init_kwargs:
     model_path: data/MODEL0568648427.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000499
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000499?filename=BIOMD0000000499_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model:Vizan2013TgfPathwayLongTermSignalingBiomd0000000499Model
   init_kwargs:
     model_path: data/BIOMD0000000499.xml

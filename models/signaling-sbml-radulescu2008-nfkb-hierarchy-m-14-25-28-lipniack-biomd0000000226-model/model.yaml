@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000226
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000226?filename=BIOMD0000000226_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.radulescu2008_nfkb_hierarchy_m_14_25_28_lipniack_biomd0000000226_model:Radulescu2008NfkbHierarchyM142528LipniackBiomd0000000226Model
   init_kwargs:
     model_path: data/BIOMD0000000226.xml

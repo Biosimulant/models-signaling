@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL4151491057
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL4151491057?filename=MODEL4151491057_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.beard2005_mitochondrial_respiration_model4151491057_model:Beard2005MitochondrialRespirationModel4151491057Model
   init_kwargs:
     model_path: data/MODEL4151491057.xml

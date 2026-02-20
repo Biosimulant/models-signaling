@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230085
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230085?filename=MODEL1006230085_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.iribe2006_camkiikineticsmodel_model1006230085_model:Iribe2006CamkiikineticsmodelModel1006230085Model
   init_kwargs:
     model_path: data/MODEL1006230085.xml

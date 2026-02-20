@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000029
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000029?filename=BIOMD0000000029_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.markevich2004_mapk_phosphorandommm_biomd0000000029_model:Markevich2004MapkPhosphorandommmBiomd0000000029Model
   init_kwargs:
     model_path: data/BIOMD0000000029.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000060
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000060?filename=BIOMD0000000060_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model:Keizer1996RyanodineReceptorAdaptationBiomd0000000060Model
   init_kwargs:
     model_path: data/BIOMD0000000060.xml

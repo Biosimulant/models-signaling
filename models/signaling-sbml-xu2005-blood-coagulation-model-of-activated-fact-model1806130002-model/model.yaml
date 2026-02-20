@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1806130002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806130002?filename=Xu2005.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.xu2005_blood_coagulation_model_of_activated_fact_model1806130002_model:Xu2005BloodCoagulationModelOfActivatedFactModel1806130002Model
   init_kwargs:
     model_path: data/MODEL1806130002.xml

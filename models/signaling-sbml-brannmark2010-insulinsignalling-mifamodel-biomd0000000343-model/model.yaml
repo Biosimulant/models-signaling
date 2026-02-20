@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000343
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000343?filename=BIOMD0000000343_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model:Brannmark2010InsulinsignallingMifamodelBiomd0000000343Model
   init_kwargs:
     model_path: data/BIOMD0000000343.xml

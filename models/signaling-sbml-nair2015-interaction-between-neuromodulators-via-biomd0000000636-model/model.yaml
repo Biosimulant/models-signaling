@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000636
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000636?filename=BIOMD0000000636_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nair2015_interaction_between_neuromodulators_via_biomd0000000636_model:Nair2015InteractionBetweenNeuromodulatorsViaBiomd0000000636Model
   init_kwargs:
     model_path: data/BIOMD0000000636.xml

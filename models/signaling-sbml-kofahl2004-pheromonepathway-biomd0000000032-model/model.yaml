@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000032
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000032?filename=BIOMD0000000032_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kofahl2004_pheromonepathway_biomd0000000032_model:Kofahl2004PheromonepathwayBiomd0000000032Model
   init_kwargs:
     model_path: data/BIOMD0000000032.xml

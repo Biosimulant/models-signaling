@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2002170001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2002170001?filename=Cacace_TdevModel_2nov2020.sbml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cacace2020_logical_model_of_the_regulatory_netwo_model2002170001_model:Cacace2020LogicalModelOfTheRegulatoryNetwoModel2002170001Model
   init_kwargs:
     model_path: data/MODEL2002170001.sbml

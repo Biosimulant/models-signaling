@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000465
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000465?filename=BIOMD0000000465_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model:Koo2013ShearStressInducedAktAndEnosPhosphBiomd0000000465Model
   init_kwargs:
     model_path: data/BIOMD0000000465.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1908050003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1908050003?filename=Benary2015.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.benary2015_feedback_regulation_of_beta_catenin_p_model1908050003_model:Benary2015FeedbackRegulationOfBetaCateninPModel1908050003Model
   init_kwargs:
     model_path: data/MODEL1908050003.xml

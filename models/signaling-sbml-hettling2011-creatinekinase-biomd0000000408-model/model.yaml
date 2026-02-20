@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000408
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000408?filename=BIOMD0000000408_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hettling2011_creatinekinase_biomd0000000408_model:Hettling2011CreatinekinaseBiomd0000000408Model
   init_kwargs:
     model_path: data/BIOMD0000000408.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1812060001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1812060001?filename=Barik2010.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.a_model_of_yeast_cell_cycle_regulation_based_on_model1812060001_model:AModelOfYeastCellCycleRegulationBasedOnModel1812060001Model
   init_kwargs:
     model_path: data/MODEL1812060001.xml

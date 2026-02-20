@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2306170002?filename=Model
     of nuclear_cytoplasmic ERK oscillations induced by epidermal growth factor.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.harish2009_nuclear_cytoplasmic_erk_oscillation_m_model2306170002_model:Harish2009NuclearCytoplasmicErkOscillationMModel2306170002Model
   init_kwargs:
     model_path: data/MODEL2306170002.xml

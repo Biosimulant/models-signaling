@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000541
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000541?filename=BIOMD0000000541_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000541_model:Yugi2014InsulinInducedSignallingPfklPhosphoBiomd0000000541Model
   init_kwargs:
     model_path: data/BIOMD0000000541.xml

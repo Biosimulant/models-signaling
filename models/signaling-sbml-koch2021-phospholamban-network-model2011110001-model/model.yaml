@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2011110001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2011110001?filename=PLN_model.m
   license: CC0
-bsim:
+biosim:
   entrypoint: src.koch2021_phospholamban_network_model2011110001_model:Koch2021PhospholambanNetworkModel2011110001Model
   init_kwargs:
     model_path: data/MODEL2011110001.xml

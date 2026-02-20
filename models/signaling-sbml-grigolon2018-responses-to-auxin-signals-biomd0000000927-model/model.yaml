@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000927
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000927?filename=Grigolon2018_fig1b.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.grigolon2018_responses_to_auxin_signals_biomd0000000927_model:Grigolon2018ResponsesToAuxinSignalsBiomd0000000927Model
   init_kwargs:
     model_path: data/BIOMD0000000927.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000237
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000237?filename=BIOMD0000000237_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model:Schaber2006PheromoneStarvationCrosstalkBiomd0000000237Model
   init_kwargs:
     model_path: data/BIOMD0000000237.xml

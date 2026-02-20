@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001058
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001058?filename=Novak2022.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.novak2022_mitotic_kinase_oscillation_biomd0000001058_model:Novak2022MitoticKinaseOscillationBiomd0000001058Model
   init_kwargs:
     model_path: data/BIOMD0000001058.xml

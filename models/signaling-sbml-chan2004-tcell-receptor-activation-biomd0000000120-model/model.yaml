@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000120
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000120?filename=BIOMD0000000120_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chan2004_tcell_receptor_activation_biomd0000000120_model:Chan2004TcellReceptorActivationBiomd0000000120Model
   init_kwargs:
     model_path: data/BIOMD0000000120.xml

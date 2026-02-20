@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1607210000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1607210000?filename=MODEL1607210000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model:Huarat2016StarvationInducedSerThrProteinKiModel1607210000Model
   init_kwargs:
     model_path: data/MODEL1607210000.xml

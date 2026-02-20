@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000590
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000590?filename=BIOMD0000000590_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hermansen2015_denovo_biosynthesis_of_pyrimidines_biomd0000000590_model:Hermansen2015DenovoBiosynthesisOfPyrimidinesBiomd0000000590Model
   init_kwargs:
     model_path: data/BIOMD0000000590.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1509050002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1509050002?filename=MODEL1509050002_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.perrett2014_gnrh_pulse_erk_activity_model1509050002_model:Perrett2014GnrhPulseErkActivityModel1509050002Model
   init_kwargs:
     model_path: data/MODEL1509050002.xml

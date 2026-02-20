@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0975191032
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0975191032?filename=MODEL0975191032_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chang2008_erk_activation_hallucinogenic_drugs_me_model0975191032_model:Chang2008ErkActivationHallucinogenicDrugsMeModel0975191032Model
   init_kwargs:
     model_path: data/MODEL0975191032.xml

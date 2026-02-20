@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2010030002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2010030002?filename=3HP_Glu_Ba.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.oliveira2020_beta_alanine_pathway_for_3_hydroxyp_model2010030002_model:Oliveira2020BetaAlaninePathwayFor3HydroxypModel2010030002Model
   init_kwargs:
     model_path: data/MODEL2010030002.xml

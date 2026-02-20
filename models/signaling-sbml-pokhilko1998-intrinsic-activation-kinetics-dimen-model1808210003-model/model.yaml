@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1808210003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1808210003?filename=Pokhilko1998_dimensional.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model:Pokhilko1998IntrinsicActivationKineticsDimenModel1808210003Model
   init_kwargs:
     model_path: data/MODEL1808210003.xml

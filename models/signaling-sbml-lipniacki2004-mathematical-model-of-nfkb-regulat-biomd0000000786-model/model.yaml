@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000786
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000786?filename=Lipniacki2004.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lipniacki2004_mathematical_model_of_nfkb_regulat_biomd0000000786_model:Lipniacki2004MathematicalModelOfNfkbRegulatBiomd0000000786Model
   init_kwargs:
     model_path: data/BIOMD0000000786.xml

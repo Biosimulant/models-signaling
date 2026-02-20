@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000329
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000329?filename=BIOMD0000000329_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kummer2000_oscillations_in_calcium_signalling_biomd0000000329_model:Kummer2000OscillationsInCalciumSignallingBiomd0000000329Model
   init_kwargs:
     model_path: data/BIOMD0000000329.xml

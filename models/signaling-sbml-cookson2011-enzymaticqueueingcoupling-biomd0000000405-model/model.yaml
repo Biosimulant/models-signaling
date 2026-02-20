@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000405
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000405?filename=BIOMD0000000405_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cookson2011_enzymaticqueueingcoupling_biomd0000000405_model:Cookson2011EnzymaticqueueingcouplingBiomd0000000405Model
   init_kwargs:
     model_path: data/BIOMD0000000405.xml

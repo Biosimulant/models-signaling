@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001056
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001056?filename=chulian2021.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chulian2021_feedback_signalling_in_b_lymphopoeis_biomd0000001056_model:Chulian2021FeedbackSignallingInBLymphopoeisBiomd0000001056Model
   init_kwargs:
     model_path: data/BIOMD0000001056.xml

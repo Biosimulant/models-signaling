@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1905220001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1905220001?filename=data_S2_NAD_evolution_model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.heiland2019_nad_pathway_model_analysing_the_impa_model1905220001_model:Heiland2019NadPathwayModelAnalysingTheImpaModel1905220001Model
   init_kwargs:
     model_path: data/MODEL1905220001.xml

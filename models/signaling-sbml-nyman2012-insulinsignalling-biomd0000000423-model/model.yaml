@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000423
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000423?filename=BIOMD0000000423_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nyman2012_insulinsignalling_biomd0000000423_model:Nyman2012InsulinsignallingBiomd0000000423Model
   init_kwargs:
     model_path: data/BIOMD0000000423.xml

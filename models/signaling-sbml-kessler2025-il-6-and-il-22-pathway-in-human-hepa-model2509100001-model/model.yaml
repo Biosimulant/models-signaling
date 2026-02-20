@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2509100001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2509100001?filename=kessler2025-IL6_IL22_combined_pathway.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kessler2025_il_6_and_il_22_pathway_in_human_hepa_model2509100001_model:Kessler2025Il6AndIl22PathwayInHumanHepaModel2509100001Model
   init_kwargs:
     model_path: data/MODEL2509100001.xml

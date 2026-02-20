@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000027
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000027?filename=BIOMD0000000027_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.markevich2004_mapk_double_phosphorylation_ordere_biomd0000000027_model:Markevich2004MapkDoublePhosphorylationOrdereBiomd0000000027Model
   init_kwargs:
     model_path: data/BIOMD0000000027.xml

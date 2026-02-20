@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2206230001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2206230001?filename=mosbacher2022_mixed_Hog1_phosphorylation_l2v4.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mosbacher2022_yeast_hog_pathway_model2206230001_model:Mosbacher2022YeastHogPathwayModel2206230001Model
   init_kwargs:
     model_path: data/MODEL2206230001.xml

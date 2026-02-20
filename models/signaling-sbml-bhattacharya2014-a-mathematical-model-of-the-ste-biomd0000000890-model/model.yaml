@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000890
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000890?filename=Bhattacharya2014.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model:Bhattacharya2014AMathematicalModelOfTheSteBiomd0000000890Model
   init_kwargs:
     model_path: data/BIOMD0000000890.xml

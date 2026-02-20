@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000652
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000652?filename=BIOMD0000000652_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000652_model:Padala2017ErkPi3kAktAndWntSignallingNetwoBiomd0000000652Model
   init_kwargs:
     model_path: data/BIOMD0000000652.xml

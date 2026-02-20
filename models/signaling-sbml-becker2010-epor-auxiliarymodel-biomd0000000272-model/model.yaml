@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000272
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000272?filename=BIOMD0000000272_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.becker2010_epor_auxiliarymodel_biomd0000000272_model:Becker2010EporAuxiliarymodelBiomd0000000272Model
   init_kwargs:
     model_path: data/BIOMD0000000272.xml

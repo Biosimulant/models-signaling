@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1806140001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806140001?filename=Zarnitsina1996.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model:Zarnitsina1996ReactionsOfTheIntrinsicPathwaModel1806140001Model
   init_kwargs:
     model_path: data/MODEL1806140001.xml

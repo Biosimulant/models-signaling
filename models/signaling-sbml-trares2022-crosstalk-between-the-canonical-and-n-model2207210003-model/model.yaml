@@ -21,7 +21,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2207210003?filename=Trares2022
     - Crosstalk between the canonical and non-canonical NF-kB pathways - Petri net.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model:Trares2022CrosstalkBetweenTheCanonicalAndNModel2207210003Model
   init_kwargs:
     model_path: data/MODEL2207210003.xml

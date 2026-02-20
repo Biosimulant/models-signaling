@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000990
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000990?filename=MODEL1712050002.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.strasen2018_tgfb_smad_signalling_degradation_of_biomd0000000990_model:Strasen2018TgfbSmadSignallingDegradationOfBiomd0000000990Model
   init_kwargs:
     model_path: data/BIOMD0000000990.xml

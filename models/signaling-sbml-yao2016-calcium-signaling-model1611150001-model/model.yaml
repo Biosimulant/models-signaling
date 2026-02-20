@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1611150001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1611150001?filename=MODEL1611150001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.yao2016_calcium_signaling_model1611150001_model:Yao2016CalciumSignalingModel1611150001Model
   init_kwargs:
     model_path: data/MODEL1611150001.xml

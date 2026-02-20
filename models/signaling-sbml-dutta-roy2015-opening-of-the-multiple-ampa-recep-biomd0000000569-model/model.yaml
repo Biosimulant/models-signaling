@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000569
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000569?filename=BIOMD0000000569_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dutta_roy2015_opening_of_the_multiple_ampa_recep_biomd0000000569_model:DuttaRoy2015OpeningOfTheMultipleAmpaRecepBiomd0000000569Model
   init_kwargs:
     model_path: data/BIOMD0000000569.xml

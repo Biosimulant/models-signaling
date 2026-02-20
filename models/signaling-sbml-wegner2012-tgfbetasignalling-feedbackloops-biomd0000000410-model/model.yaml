@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000410
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000410?filename=BIOMD0000000410_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wegner2012_tgfbetasignalling_feedbackloops_biomd0000000410_model:Wegner2012TgfbetasignallingFeedbackloopsBiomd0000000410Model
   init_kwargs:
     model_path: data/BIOMD0000000410.xml

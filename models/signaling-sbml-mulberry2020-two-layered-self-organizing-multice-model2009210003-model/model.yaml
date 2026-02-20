@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2009210003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2009210003?filename=SingleGenotype_Fig10.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mulberry2020_two_layered_self_organizing_multice_model2009210003_model:Mulberry2020TwoLayeredSelfOrganizingMulticeModel2009210003Model
   init_kwargs:
     model_path: data/MODEL2009210003.xml

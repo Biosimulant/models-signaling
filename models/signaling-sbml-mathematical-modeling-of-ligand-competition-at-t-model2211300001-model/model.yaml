@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2211300001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2211300001?filename=biomodels.zip
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mathematical_modeling_of_ligand_competition_at_t_model2211300001_model:MathematicalModelingOfLigandCompetitionAtTModel2211300001Model
   init_kwargs:
     model_path: data/MODEL2211300001.xml

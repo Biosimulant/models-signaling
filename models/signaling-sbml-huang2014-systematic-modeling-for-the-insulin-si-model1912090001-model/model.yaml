@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1912090001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1912090001?filename=Huang2014.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.huang2014_systematic_modeling_for_the_insulin_si_model1912090001_model:Huang2014SystematicModelingForTheInsulinSiModel1912090001Model
   init_kwargs:
     model_path: data/MODEL1912090001.xml

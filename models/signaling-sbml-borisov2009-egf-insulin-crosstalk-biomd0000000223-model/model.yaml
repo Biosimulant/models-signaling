@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000223
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000223?filename=BIOMD0000000223_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.borisov2009_egf_insulin_crosstalk_biomd0000000223_model:Borisov2009EgfInsulinCrosstalkBiomd0000000223Model
   init_kwargs:
     model_path: data/BIOMD0000000223.xml

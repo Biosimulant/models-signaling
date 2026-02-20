@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1102210000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1102210000?filename=MODEL1102210000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wei2011_mlcactivationpathway_endothelialpermeabi_model1102210000_model:Wei2011MlcactivationpathwayEndothelialpermeabiModel1102210000Model
   init_kwargs:
     model_path: data/MODEL1102210000.xml

@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000794
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000794?filename=Benary2019.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.benary2019_controlling_nfkb_dynamics_by_b_trcp_biomd0000000794_model:Benary2019ControllingNfkbDynamicsByBTrcpBiomd0000000794Model
   init_kwargs:
     model_path: data/BIOMD0000000794.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2503190002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2503190002?filename=AT_ATM_ATR_forDR_v1.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.integrated_model_of_dna_damage_response_and_p53_model2503190002_model:IntegratedModelOfDnaDamageResponseAndP53Model2503190002Model
   init_kwargs:
     model_path: data/MODEL2503190002.xml

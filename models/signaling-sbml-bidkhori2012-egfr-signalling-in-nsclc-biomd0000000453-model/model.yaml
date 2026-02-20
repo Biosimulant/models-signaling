@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000453
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000453?filename=BIOMD0000000453_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bidkhori2012_egfr_signalling_in_nsclc_biomd0000000453_model:Bidkhori2012EgfrSignallingInNsclcBiomd0000000453Model
   init_kwargs:
     model_path: data/BIOMD0000000453.xml

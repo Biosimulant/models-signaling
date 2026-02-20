@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000439
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000439?filename=BIOMD0000000439_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model:Smith2009RgsMediatedGtpHydrolysisBiomd0000000439Model
   init_kwargs:
     model_path: data/BIOMD0000000439.xml

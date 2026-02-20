@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2208050002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2208050002?filename=EMT_Mechanosensing_TGFbeta.sbml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.regan2022_mechanosensitive_emt_model_with_autocr_model2208050002_model:Regan2022MechanosensitiveEmtModelWithAutocrModel2208050002Model
   init_kwargs:
     model_path: data/MODEL2208050002.sbml

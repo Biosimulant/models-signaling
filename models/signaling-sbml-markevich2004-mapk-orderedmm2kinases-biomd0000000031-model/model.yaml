@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000031
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000031?filename=BIOMD0000000031_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.markevich2004_mapk_orderedmm2kinases_biomd0000000031_model:Markevich2004MapkOrderedmm2kinasesBiomd0000000031Model
   init_kwargs:
     model_path: data/BIOMD0000000031.xml

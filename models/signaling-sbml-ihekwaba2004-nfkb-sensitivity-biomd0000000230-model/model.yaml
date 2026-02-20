@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000230
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000230?filename=BIOMD0000000230_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ihekwaba2004_nfkb_sensitivity_biomd0000000230_model:Ihekwaba2004NfkbSensitivityBiomd0000000230Model
   init_kwargs:
     model_path: data/BIOMD0000000230.xml

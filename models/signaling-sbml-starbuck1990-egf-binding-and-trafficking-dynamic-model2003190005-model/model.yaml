@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2003190005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2003190005?filename=Starbuck1990.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.starbuck1990_egf_binding_and_trafficking_dynamic_model2003190005_model:Starbuck1990EgfBindingAndTraffickingDynamicModel2003190005Model
   init_kwargs:
     model_path: data/MODEL2003190005.xml

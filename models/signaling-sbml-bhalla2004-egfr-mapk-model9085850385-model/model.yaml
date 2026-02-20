@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9085850385
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9085850385?filename=MODEL9085850385_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bhalla2004_egfr_mapk_model9085850385_model:Bhalla2004EgfrMapkModel9085850385Model
   init_kwargs:
     model_path: data/MODEL9085850385.xml

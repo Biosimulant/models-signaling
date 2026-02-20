@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2307050001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2307050001?filename=il6_model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model:Sobotta2017Il6InducedJak1Stat3SignalingModel2307050001Model
   init_kwargs:
     model_path: data/MODEL2307050001.xml

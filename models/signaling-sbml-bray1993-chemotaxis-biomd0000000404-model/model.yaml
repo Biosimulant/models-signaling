@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000404
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000404?filename=BIOMD0000000404_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bray1993_chemotaxis_biomd0000000404_model:Bray1993ChemotaxisBiomd0000000404Model
   init_kwargs:
     model_path: data/BIOMD0000000404.xml

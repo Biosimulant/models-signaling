@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000243
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000243?filename=BIOMD0000000243_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model:Neumann2010Cd95stimulationNfkbApoptosisBiomd0000000243Model
   init_kwargs:
     model_path: data/BIOMD0000000243.xml

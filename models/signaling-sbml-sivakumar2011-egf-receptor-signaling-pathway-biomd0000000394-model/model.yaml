@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000394
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000394?filename=BIOMD0000000394_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sivakumar2011_egf_receptor_signaling_pathway_biomd0000000394_model:Sivakumar2011EgfReceptorSignalingPathwayBiomd0000000394Model
   init_kwargs:
     model_path: data/BIOMD0000000394.xml

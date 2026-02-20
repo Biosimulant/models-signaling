@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000907
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000907?filename=Navas2019_model3.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.heberlerazquinnavas2019_the_pi3k_and_mapk_p38_pa_biomd0000000907_model:Heberlerazquinnavas2019ThePi3kAndMapkP38PaBiomd0000000907Model
   init_kwargs:
     model_path: data/BIOMD0000000907.xml

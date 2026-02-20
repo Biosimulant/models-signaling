@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000997
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000997?filename=MODEL1712050006.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.strasen2018_tgfb_smad_signalling_drb_treatment_biomd0000000997_model:Strasen2018TgfbSmadSignallingDrbTreatmentBiomd0000000997Model
   init_kwargs:
     model_path: data/BIOMD0000000997.xml

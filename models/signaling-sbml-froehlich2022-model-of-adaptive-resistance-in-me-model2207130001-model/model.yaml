@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2207130001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2207130001?filename=RTKERK__pRAF.bngl
   license: CC0
-bsim:
+biosim:
   entrypoint: src.froehlich2022_model_of_adaptive_resistance_in_me_model2207130001_model:Froehlich2022ModelOfAdaptiveResistanceInMeModel2207130001Model
   init_kwargs:
     model_path: data/MODEL2207130001.xml

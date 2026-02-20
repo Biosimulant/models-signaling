@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2011260001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2011260001?filename=Pancreas_Differentiation.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.deback2013_pancreas_differentiation_patterning_i_model2011260001_model:Deback2013PancreasDifferentiationPatterningIModel2011260001Model
   init_kwargs:
     model_path: data/MODEL2011260001.xml

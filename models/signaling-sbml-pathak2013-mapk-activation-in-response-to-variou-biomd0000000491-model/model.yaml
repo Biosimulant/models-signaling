@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000491
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000491?filename=BIOMD0000000491_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pathak2013_mapk_activation_in_response_to_variou_biomd0000000491_model:Pathak2013MapkActivationInResponseToVariouBiomd0000000491Model
   init_kwargs:
     model_path: data/BIOMD0000000491.xml

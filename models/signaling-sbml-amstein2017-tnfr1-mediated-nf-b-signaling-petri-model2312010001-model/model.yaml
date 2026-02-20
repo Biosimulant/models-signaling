@@ -23,7 +23,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2312010001?filename=Amstein2017
     - TNFR1-mediated Nf-kB signaling - Petri Net.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.amstein2017_tnfr1_mediated_nf_b_signaling_petri_model2312010001_model:Amstein2017Tnfr1MediatedNfBSignalingPetriModel2312010001Model
   init_kwargs:
     model_path: data/MODEL2312010001.xml

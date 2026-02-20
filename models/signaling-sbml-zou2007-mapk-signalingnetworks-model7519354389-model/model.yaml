@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL7519354389
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL7519354389?filename=MODEL7519354389_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zou2007_mapk_signalingnetworks_model7519354389_model:Zou2007MapkSignalingnetworksModel7519354389Model
   init_kwargs:
     model_path: data/MODEL7519354389.xml

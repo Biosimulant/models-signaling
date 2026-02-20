@@ -20,7 +20,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1904170001?filename=EDN
     signalling models.cys
   license: CC0
-bsim:
+biosim:
   entrypoint: src.edn_signalling_models_model1904170001_model:EdnSignallingModelsModel1904170001Model
   init_kwargs:
     model_path: data/MODEL1904170001.xml

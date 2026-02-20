@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000429
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000429?filename=BIOMD0000000429_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.schaber2012_hog_pathway_in_yeast_biomd0000000429_model:Schaber2012HogPathwayInYeastBiomd0000000429Model
   init_kwargs:
     model_path: data/BIOMD0000000429.xml

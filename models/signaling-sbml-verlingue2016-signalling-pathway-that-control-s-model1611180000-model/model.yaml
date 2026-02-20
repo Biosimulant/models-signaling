@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1611180000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1611180000?filename=MODEL1611180000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.verlingue2016_signalling_pathway_that_control_s_model1611180000_model:Verlingue2016SignallingPathwayThatControlSModel1611180000Model
   init_kwargs:
     model_path: data/MODEL1611180000.xml

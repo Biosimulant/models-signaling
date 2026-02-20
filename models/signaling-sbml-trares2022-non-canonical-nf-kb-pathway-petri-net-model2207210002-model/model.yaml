@@ -21,7 +21,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2207210002?filename=Trares2022
     - Non-canonical NF-kB pathway - Petri net.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model:Trares2022NonCanonicalNfKbPathwayPetriNetModel2207210002Model
   init_kwargs:
     model_path: data/MODEL2207210002.xml

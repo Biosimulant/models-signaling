@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1911120001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1911120001?filename=Khan2018.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.khan2018_origins_of_robustness_in_translational_model1911120001_model:Khan2018OriginsOfRobustnessInTranslationalModel1911120001Model
   init_kwargs:
     model_path: data/MODEL1911120001.xml

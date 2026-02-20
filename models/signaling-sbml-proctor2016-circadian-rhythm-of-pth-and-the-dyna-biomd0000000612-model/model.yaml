@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000612
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000612?filename=BIOMD0000000612_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model:Proctor2016CircadianRhythmOfPthAndTheDynaBiomd0000000612Model
   init_kwargs:
     model_path: data/BIOMD0000000612.xml

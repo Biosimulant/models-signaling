@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000576
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000576?filename=BIOMD0000000576_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kolodkin2013_nuclear_receptor_mediated_cortisol_biomd0000000576_model:Kolodkin2013NuclearReceptorMediatedCortisolBiomd0000000576Model
   init_kwargs:
     model_path: data/BIOMD0000000576.xml

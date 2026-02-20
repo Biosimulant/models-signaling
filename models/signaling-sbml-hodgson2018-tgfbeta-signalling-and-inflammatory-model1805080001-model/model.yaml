@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1805080001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1805080001?filename=Hodgson2018_Tgfb_signalling_ageing.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hodgson2018_tgfbeta_signalling_and_inflammatory_model1805080001_model:Hodgson2018TgfbetaSignallingAndInflammatoryModel1805080001Model
   init_kwargs:
     model_path: data/MODEL1805080001.xml

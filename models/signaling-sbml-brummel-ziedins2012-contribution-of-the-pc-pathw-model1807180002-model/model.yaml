@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1807180002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807180002?filename=Brummel-Ziedins2012.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.brummel_ziedins2012_contribution_of_the_pc_pathw_model1807180002_model:BrummelZiedins2012ContributionOfThePcPathwModel1807180002Model
   init_kwargs:
     model_path: data/MODEL1807180002.xml

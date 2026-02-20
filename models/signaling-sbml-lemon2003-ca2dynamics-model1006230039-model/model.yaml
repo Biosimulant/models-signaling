@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230039
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230039?filename=MODEL1006230039_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lemon2003_ca2dynamics_model1006230039_model:Lemon2003Ca2dynamicsModel1006230039Model
   init_kwargs:
     model_path: data/MODEL1006230039.xml

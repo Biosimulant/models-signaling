@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1911140002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1911140002?filename=Tiwari2019.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model:Tiwari2019MathematicalModelOfNfkbRegulatoryModel1911140002Model
   init_kwargs:
     model_path: data/MODEL1911140002.xml

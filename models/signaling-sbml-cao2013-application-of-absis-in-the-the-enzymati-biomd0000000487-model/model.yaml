@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000487
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000487?filename=BIOMD0000000487_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cao2013_application_of_absis_in_the_the_enzymati_biomd0000000487_model:Cao2013ApplicationOfAbsisInTheTheEnzymatiBiomd0000000487Model
   init_kwargs:
     model_path: data/BIOMD0000000487.xml

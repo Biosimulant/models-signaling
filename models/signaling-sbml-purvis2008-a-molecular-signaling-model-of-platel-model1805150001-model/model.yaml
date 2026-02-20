@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1805150001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1805150001?filename=Purvis2008.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.purvis2008_a_molecular_signaling_model_of_platel_model1805150001_model:Purvis2008AMolecularSignalingModelOfPlatelModel1805150001Model
   init_kwargs:
     model_path: data/MODEL1805150001.xml

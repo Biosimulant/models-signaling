@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1506220000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1506220000?filename=MODEL1506220000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.benson2017_systems_pharmacology_multidrug_choles_model1506220000_model:Benson2017SystemsPharmacologyMultidrugCholesModel1506220000Model
   init_kwargs:
     model_path: data/MODEL1506220000.xml

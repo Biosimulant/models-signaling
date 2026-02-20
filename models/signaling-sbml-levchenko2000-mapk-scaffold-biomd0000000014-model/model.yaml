@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000014
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000014?filename=BIOMD0000000014_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.levchenko2000_mapk_scaffold_biomd0000000014_model:Levchenko2000MapkScaffoldBiomd0000000014Model
   init_kwargs:
     model_path: data/BIOMD0000000014.xml

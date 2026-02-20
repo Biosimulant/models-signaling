@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2006170003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2006170003?filename=D1_Gq_EJN_fixed.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.blackwell2019_mechanistic_model_of_signaling_pat_model2006170003_model:Blackwell2019MechanisticModelOfSignalingPatModel2006170003Model
   init_kwargs:
     model_path: data/MODEL2006170003.xml

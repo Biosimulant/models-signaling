@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9147091146
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9147091146?filename=MODEL9147091146_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ajay_bhalla_2007_bistable_model9147091146_model:AjayBhalla2007BistableModel9147091146Model
   init_kwargs:
     model_path: data/MODEL9147091146.xml

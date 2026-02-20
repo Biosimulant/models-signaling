@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000659
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000659?filename=BIOMD0000000659_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cursons2015_regulation_of_erk_mapk_signaling_in_biomd0000000659_model:Cursons2015RegulationOfErkMapkSignalingInBiomd0000000659Model
   init_kwargs:
     model_path: data/BIOMD0000000659.xml

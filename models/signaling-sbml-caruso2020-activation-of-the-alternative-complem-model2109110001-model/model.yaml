@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2109110001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2109110001?filename=Caruso2020.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.caruso2020_activation_of_the_alternative_complem_model2109110001_model:Caruso2020ActivationOfTheAlternativeComplemModel2109110001Model
   init_kwargs:
     model_path: data/MODEL2109110001.xml

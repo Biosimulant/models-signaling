@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000562
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000562?filename=BIOMD0000000562_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chaouiya2013_egf_and_tnfalpha_mediated_signallin_biomd0000000562_model:Chaouiya2013EgfAndTnfalphaMediatedSignallinBiomd0000000562Model
   init_kwargs:
     model_path: data/BIOMD0000000562.xml

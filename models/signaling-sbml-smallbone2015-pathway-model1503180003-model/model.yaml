@@ -18,7 +18,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1503180003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1503180003?filename=MODEL1503180003_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smallbone2015_pathway_model1503180003_model:Smallbone2015PathwayModel1503180003Model
   init_kwargs:
     model_path: data/MODEL1503180003.xml

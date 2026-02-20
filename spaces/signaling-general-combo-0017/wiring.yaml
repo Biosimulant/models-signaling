@@ -1,0 +1,28 @@
+modules:
+  celli_re2011_1:
+    class: src.celli_re2011_plasticity_of_tgf_signalling_biomd0000000600_model:CelliRe2011PlasticityOfTgfSignallingBiomd0000000600Model
+    args:
+      model_path: data/BIOMD0000000600.xml
+  chan2004_tcell_2:
+    class: src.chan2004_tcell_receptor_activation_biomd0000000120_model:Chan2004TcellReceptorActivationBiomd0000000120Model
+    args:
+      model_path: data/BIOMD0000000120.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: celli_re2011_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: chan2004_tcell_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

@@ -1,0 +1,36 @@
+modules:
+  chaouiya2013_egf_1:
+    class: src.chaouiya2013_egf_and_tnfalpha_mediated_signallin_biomd0000000562_model:Chaouiya2013EgfAndTnfalphaMediatedSignallinBiomd0000000562Model
+    args:
+      model_path: data/BIOMD0000000562.xml
+  collier1996_delt_2:
+    class: src.collier1996_delta_notch_intercellular_signalling_biomd0000001047_model:Collier1996DeltaNotchIntercellularSignallingBiomd0000001047Model
+    args:
+      model_path: data/BIOMD0000001047.xml
+  dutta_roy2015_3:
+    class: src.dutta_roy2015_opening_of_the_multiple_ampa_recep_biomd0000000569_model:DuttaRoy2015OpeningOfTheMultipleAmpaRecepBiomd0000000569Model
+    args:
+      model_path: data/BIOMD0000000569.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: chaouiya2013_egf_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: collier1996_delt_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: dutta_roy2015_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

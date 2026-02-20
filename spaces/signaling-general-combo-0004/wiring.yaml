@@ -1,0 +1,28 @@
+modules:
+  bakshi2020_minim_1:
+    class: src.bakshi2020_minimal_model_of_alternative_pathway_biomd0000001017_model:Bakshi2020MinimalModelOfAlternativePathwayBiomd0000001017Model
+    args:
+      model_path: data/BIOMD0000001017.xml
+  bakshi2020_prope_2:
+    class: src.bakshi2020_properdin_model_of_alternative_pathwa_biomd0000001018_model:Bakshi2020ProperdinModelOfAlternativePathwaBiomd0000001018Model
+    args:
+      model_path: data/BIOMD0000001018.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bakshi2020_minim_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bakshi2020_prope_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

@@ -1,0 +1,44 @@
+modules:
+  lee2008_erk_1:
+    class: src.lee2008_erk_and_pi3k_signal_integration_by_myc_biomd0000000818_model:Lee2008ErkAndPi3kSignalIntegrationByMycBiomd0000000818Model
+    args:
+      model_path: data/BIOMD0000000818.xml
+  levchenko2000_ma_2:
+    class: src.levchenko2000_mapk_noscaffold_biomd0000000011_model:Levchenko2000MapkNoscaffoldBiomd0000000011Model
+    args:
+      model_path: data/BIOMD0000000011.xml
+  levchenko2000_ma_3:
+    class: src.levchenko2000_mapk_scaffold_biomd0000000014_model:Levchenko2000MapkScaffoldBiomd0000000014Model
+    args:
+      model_path: data/BIOMD0000000014.xml
+  markevich2004_ma_4:
+    class: src.markevich2004_mapk_double_phosphorylation_ordere_biomd0000000027_model:Markevich2004MapkDoublePhosphorylationOrdereBiomd0000000027Model
+    args:
+      model_path: data/BIOMD0000000027.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: lee2008_erk_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: levchenko2000_ma_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: levchenko2000_ma_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: markevich2004_ma_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

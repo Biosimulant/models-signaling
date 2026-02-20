@@ -1,0 +1,36 @@
+modules:
+  kervizic2008_cho_1:
+    class: src.kervizic2008_cholesterol_srebp_model0568648427_model:Kervizic2008CholesterolSrebpModel0568648427Model
+    args:
+      model_path: data/MODEL0568648427.xml
+  kessler2025_il_2:
+    class: src.kessler2025_il_6_and_il_22_pathway_in_human_hepa_model2509100001_model:Kessler2025Il6AndIl22PathwayInHumanHepaModel2509100001Model
+    args:
+      model_path: data/MODEL2509100001.xml
+  khan2018_origins_3:
+    class: src.khan2018_origins_of_robustness_in_translational_model1911120001_model:Khan2018OriginsOfRobustnessInTranslationalModel1911120001Model
+    args:
+      model_path: data/MODEL1911120001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: kervizic2008_cho_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: kessler2025_il_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: khan2018_origins_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

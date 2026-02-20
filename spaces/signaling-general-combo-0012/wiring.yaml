@@ -1,0 +1,28 @@
+modules:
+  brannmark2010_in_1:
+    class: src.brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model:Brannmark2010InsulinsignallingMifamodelBiomd0000000343Model
+    args:
+      model_path: data/BIOMD0000000343.xml
+  bray1993_chemota_2:
+    class: src.bray1993_chemotaxis_biomd0000000404_model:Bray1993ChemotaxisBiomd0000000404Model
+    args:
+      model_path: data/BIOMD0000000404.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: brannmark2010_in_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bray1993_chemota_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

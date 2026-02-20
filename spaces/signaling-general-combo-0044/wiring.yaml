@@ -1,0 +1,36 @@
+modules:
+  martinez_guimera_1:
+    class: src.martinez_guimera2017_generic_redox_signalling_mo_model1710260000_model:MartinezGuimera2017GenericRedoxSignallingMoModel1710260000Model
+    args:
+      model_path: data/MODEL1710260000.xml
+  martinez_guimera_2:
+    class: src.martinez_guimera2017_generic_redox_signalling_mo_model1710260001_model:MartinezGuimera2017GenericRedoxSignallingMoModel1710260001Model
+    args:
+      model_path: data/MODEL1710260001.xml
+  martinez_guimera_3:
+    class: src.martinez_guimera2017_generic_redox_signalling_mo_model1710260002_model:MartinezGuimera2017GenericRedoxSignallingMoModel1710260002Model
+    args:
+      model_path: data/MODEL1710260002.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: martinez_guimera_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: martinez_guimera_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: martinez_guimera_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

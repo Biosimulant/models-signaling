@@ -1,0 +1,28 @@
+modules:
+  bush2016_simplif_1:
+    class: src.bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model:Bush2016SimplifiedCarrouselModelOfGpcrBiomd0000000637Model
+    args:
+      model_path: data/BIOMD0000000637.xml
+  cacace2020_logic_2:
+    class: src.cacace2020_logical_model_of_the_regulatory_netwo_model2002170001_model:Cacace2020LogicalModelOfTheRegulatoryNetwoModel2002170001Model
+    args:
+      model_path: data/MODEL2002170001.sbml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bush2016_simplif_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: cacace2020_logic_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

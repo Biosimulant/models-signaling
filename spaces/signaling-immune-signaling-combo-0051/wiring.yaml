@@ -1,0 +1,36 @@
+modules:
+  gex_fabry1984_1:
+    class: src.gex_fabry1984_model_of_receptor_mediated_endocyt_biomd0000000985_model:GexFabry1984ModelOfReceptorMediatedEndocytBiomd0000000985Model
+    args:
+      model_path: data/BIOMD0000000985.xml
+  hofmeyer1986_seq_2:
+    class: src.hofmeyer1986_seqfb_proc_aa_synthesis_biomd0000000284_model:Hofmeyer1986SeqfbProcAaSynthesisBiomd0000000284Model
+    args:
+      model_path: data/BIOMD0000000284.xml
+  koch2021_phospho_3:
+    class: src.koch2021_phospholamban_network_model2011110001_model:Koch2021PhospholambanNetworkModel2011110001Model
+    args:
+      model_path: data/MODEL2011110001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: gex_fabry1984_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: hofmeyer1986_seq_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: koch2021_phospho_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

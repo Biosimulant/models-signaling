@@ -1,0 +1,36 @@
+modules:
+  li2019_neurogran_1:
+    class: src.li2019_neurogranin_stimulates_ca_calmodulin_depe_model1903010001_model:Li2019NeurograninStimulatesCaCalmodulinDepeModel1903010001Model
+    args:
+      model_path: data/MODEL1903010001.xml
+  machado2014_curc_2:
+    class: src.machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model:Machado2014CurcuminProductionPathwayInEscheBiomd0000000565Model
+    args:
+      model_path: data/BIOMD0000000565.xml
+  maeda2006_myosin_3:
+    class: src.maeda2006_myosinphosphorylation_biomd0000000088_model:Maeda2006MyosinphosphorylationBiomd0000000088Model
+    args:
+      model_path: data/BIOMD0000000088.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: li2019_neurogran_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: machado2014_curc_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: maeda2006_myosin_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

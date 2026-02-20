@@ -1,0 +1,36 @@
+modules:
+  ihekwaba2004_nfk_1:
+    class: src.ihekwaba2004_nfkb_sensitivity_biomd0000000230_model:Ihekwaba2004NfkbSensitivityBiomd0000000230Model
+    args:
+      model_path: data/BIOMD0000000230.xml
+  integrated_model_2:
+    class: src.integrated_model_of_dna_damage_response_and_p53_model2503190002_model:IntegratedModelOfDnaDamageResponseAndP53Model2503190002Model
+    args:
+      model_path: data/MODEL2503190002.xml
+  ito2019_gefitnib_3:
+    class: src.ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model:Ito2019GefitnibResistanceOfLungAdenocarcinoBiomd0000000827Model
+    args:
+      model_path: data/BIOMD0000000827.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: ihekwaba2004_nfk_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: integrated_model_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: ito2019_gefitnib_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

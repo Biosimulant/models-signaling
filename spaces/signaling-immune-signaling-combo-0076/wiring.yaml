@@ -1,0 +1,44 @@
+modules:
+  lipniacki2004_ma_1:
+    class: src.lipniacki2004_mathematical_model_of_nfkb_regulat_biomd0000000786_model:Lipniacki2004MathematicalModelOfNfkbRegulatBiomd0000000786Model
+    args:
+      model_path: data/BIOMD0000000786.xml
+  sobotta2017_il_2:
+    class: src.sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model:Sobotta2017Il6InducedJak1Stat3SignalingModel2307050001Model
+    args:
+      model_path: data/MODEL2307050001.xml
+  tiwari2019_mathe_3:
+    class: src.tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model:Tiwari2019MathematicalModelOfNfkbRegulatoryModel1911140002Model
+    args:
+      model_path: data/MODEL1911140002.xml
+  yao2016_calcium_4:
+    class: src.yao2016_calcium_signaling_model1611150001_model:Yao2016CalciumSignalingModel1611150001Model
+    args:
+      model_path: data/MODEL1611150001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: lipniacki2004_ma_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: sobotta2017_il_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: tiwari2019_mathe_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: yao2016_calcium_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

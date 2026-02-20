@@ -1,0 +1,28 @@
+modules:
+  dicamillo2016_in_1:
+    class: src.dicamillo2016_insulin_signalling_pathway_rule_ba_biomd0000000833_model:Dicamillo2016InsulinSignallingPathwayRuleBaBiomd0000000833Model
+    args:
+      model_path: data/BIOMD0000000833.xml
+  dual_g_2:
+    class: src.dual_g_protein_model_model2306210001_model:DualGProteinModelModel2306210001Model
+    args:
+      model_path: data/MODEL2306210001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: dicamillo2016_in_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: dual_g_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

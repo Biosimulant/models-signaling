@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: 'Signaling: Mapk Pi3K (COMBO_0054)'
+description: Signaling mapk pi3k comparative space with 3 models, configured as non-causal
+  co-simulation.
+models:
+- repo: Biosimulant/models-signaling
+  alias: bhalla2002_mkp1_1
+  manifest_path: models/signaling-sbml-bhalla2002-mkp1-feedback-effects-model9070467164-model/model.yaml
+  parameters:
+    model_path: data/MODEL9070467164.xml
+- repo: Biosimulant/models-signaling
+  alias: bhalla2004_egfr_2
+  manifest_path: models/signaling-sbml-bhalla2004-egfr-mapk-model9085850385-model/model.yaml
+  parameters:
+    model_path: data/MODEL9085850385.xml
+- repo: Biosimulant/models-signaling
+  alias: bidkhori2012_egf_3
+  manifest_path: models/signaling-sbml-bidkhori2012-egfr-signalling-in-nsclc-biomd0000000453-model/model.yaml
+  parameters:
+    model_path: data/BIOMD0000000453.xml
+- repo: Biosimulant/models-observability
+  alias: state_compare_mon
+  manifest_path: models/observability-state-comparison-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+- repo: Biosimulant/models-observability
+  alias: state_metrics_mon
+  manifest_path: models/observability-state-metrics-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+runtime:
+  duration: 40.0
+  tick_dt: 0.01
+  initial_inputs: {}
+wiring:
+- from: bhalla2002_mkp1_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bhalla2004_egfr_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: bidkhori2012_egf_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+scientific_context:
+  question: How do mapk pi3k mechanisms compare across these models?
+  mode: comparative
+  assumptions:
+  - Model implementations are used as published in their curated manifests without
+    biological reinterpretation.
+  - Time integration uses a shared global tick compatible with model min_dt constraints.
+  - Comparative (non-causal) mode is used because full deterministic IO coverage for
+    causal coupling was not satisfied.
+  expected_observables:
+  - Model output trajectories under shared runtime settings.
+  - Cross-model agreement/divergence in key state or metric signals.
+  - Relative behavior comparison without causal linkage claims.
+  limitations:
+  - No new biology is introduced beyond what upstream models encode.
+  - Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+  provenance:
+  - 'signaling-sbml-bhalla2002-mkp1-feedback-effects-model9070467164-model :: biomodels_ebi:MODEL9070467164
+    :: https://www.ebi.ac.uk/biomodels/MODEL9070467164'
+  - 'signaling-sbml-bhalla2004-egfr-mapk-model9085850385-model :: biomodels_ebi:MODEL9085850385
+    :: https://www.ebi.ac.uk/biomodels/MODEL9085850385'
+  - 'signaling-sbml-bidkhori2012-egfr-signalling-in-nsclc-biomd0000000453-model ::
+    biomodels_ebi:BIOMD0000000453 :: https://www.ebi.ac.uk/biomodels/BIOMD0000000453'
+  visualization_rationale: A dedicated monitor model receives all participating model
+    state streams (`state_a..state_d`) so trajectories can be compared in one place
+    without claiming causal coupling when IO semantics are incomplete.

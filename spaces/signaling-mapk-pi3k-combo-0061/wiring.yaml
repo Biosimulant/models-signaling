@@ -1,0 +1,44 @@
+modules:
+  markevich2004_ma_1:
+    class: src.markevich2004_mapk_orderedelementary_biomd0000000026_model:Markevich2004MapkOrderedelementaryBiomd0000000026Model
+    args:
+      model_path: data/BIOMD0000000026.xml
+  markevich2004_ma_2:
+    class: src.markevich2004_mapk_orderedmm2kinases_biomd0000000031_model:Markevich2004MapkOrderedmm2kinasesBiomd0000000031Model
+    args:
+      model_path: data/BIOMD0000000031.xml
+  markevich2004_ma_3:
+    class: src.markevich2004_mapk_phosphorandomelementary_biomd0000000028_model:Markevich2004MapkPhosphorandomelementaryBiomd0000000028Model
+    args:
+      model_path: data/BIOMD0000000028.xml
+  markevich2004_ma_4:
+    class: src.markevich2004_mapk_phosphorandommm_biomd0000000029_model:Markevich2004MapkPhosphorandommmBiomd0000000029Model
+    args:
+      model_path: data/BIOMD0000000029.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: markevich2004_ma_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: markevich2004_ma_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: markevich2004_ma_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: markevich2004_ma_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

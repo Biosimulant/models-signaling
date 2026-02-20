@@ -1,0 +1,28 @@
+modules:
+  cookson2011_enzy_1:
+    class: src.cookson2011_enzymaticqueueingcoupling_biomd0000000405_model:Cookson2011EnzymaticqueueingcouplingBiomd0000000405Model
+    args:
+      model_path: data/BIOMD0000000405.xml
+  dallepezze2012_t_2:
+    class: src.dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model:Dallepezze2012TscIndependentMtorc2RegulationBiomd0000000581Model
+    args:
+      model_path: data/BIOMD0000000581.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: cookson2011_enzy_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: dallepezze2012_t_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

@@ -1,0 +1,36 @@
+modules:
+  huarat2016_starv_1:
+    class: src.huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model:Huarat2016StarvationInducedSerThrProteinKiModel1607210000Model
+    args:
+      model_path: data/MODEL1607210000.xml
+  hui2016_age_2:
+    class: src.hui2016_age_related_changes_in_articular_cartila_biomd0000000560_model:Hui2016AgeRelatedChangesInArticularCartilaBiomd0000000560Model
+    args:
+      model_path: data/BIOMD0000000560.xml
+  iancu2007_cardia_3:
+    class: src.iancu2007_cardiacmyoscytes_campsignaling_model1006230117_model:Iancu2007CardiacmyoscytesCampsignalingModel1006230117Model
+    args:
+      model_path: data/MODEL1006230117.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: huarat2016_starv_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: hui2016_age_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: iancu2007_cardia_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

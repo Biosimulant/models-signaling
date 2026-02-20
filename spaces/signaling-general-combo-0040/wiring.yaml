@@ -1,0 +1,36 @@
+modules:
+  kholodenko1999_e_1:
+    class: src.kholodenko1999_egfr_signaling_biomd0000000048_model:Kholodenko1999EgfrSignalingBiomd0000000048Model
+    args:
+      model_path: data/BIOMD0000000048.xml
+  koch2005_sucrose_2:
+    class: src.koch2005_sucrose_breakdown_pathway_petri_net_model1308080002_model:Koch2005SucroseBreakdownPathwayPetriNetModel1308080002Model
+    args:
+      model_path: data/MODEL1308080002.xml
+  kofahl2004_phero_3:
+    class: src.kofahl2004_pheromonepathway_biomd0000000032_model:Kofahl2004PheromonepathwayBiomd0000000032Model
+    args:
+      model_path: data/BIOMD0000000032.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: kholodenko1999_e_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: koch2005_sucrose_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: kofahl2004_phero_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

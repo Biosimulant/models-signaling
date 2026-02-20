@@ -1,0 +1,44 @@
+modules:
+  kummer2000_oscil_1:
+    class: src.kummer2000_oscillations_in_calcium_signalling_biomd0000000329_model:Kummer2000OscillationsInCalciumSignallingBiomd0000000329Model
+    args:
+      model_path: data/BIOMD0000000329.xml
+  lemon2003_ca2dyn_2:
+    class: src.lemon2003_ca2dynamics_model1006230039_model:Lemon2003Ca2dynamicsModel1006230039Model
+    args:
+      model_path: data/MODEL1006230039.xml
+  pepke2010_full_3:
+    class: src.pepke2010_full_ca2_cam_mcamkii_model1001150000_model:Pepke2010FullCa2CamMcamkiiModel1001150000Model
+    args:
+      model_path: data/MODEL1001150000.xml
+  sneyd2002_ip3_4:
+    class: src.sneyd2002_ip3_receptor_biomd0000000057_model:Sneyd2002Ip3ReceptorBiomd0000000057Model
+    args:
+      model_path: data/BIOMD0000000057.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: kummer2000_oscil_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: lemon2003_ca2dyn_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: pepke2010_full_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: sneyd2002_ip3_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

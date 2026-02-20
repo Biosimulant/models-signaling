@@ -1,0 +1,28 @@
+modules:
+  dupeux2011_abare_1:
+    class: src.dupeux2011_abareceptor_dimer_model1202030000_model:Dupeux2011AbareceptorDimerModel1202030000Model
+    args:
+      model_path: data/MODEL1202030000.xml
+  dupeux2011_abare_2:
+    class: src.dupeux2011_abareceptor_monomer_model1202030001_model:Dupeux2011AbareceptorMonomerModel1202030001Model
+    args:
+      model_path: data/MODEL1202030001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: dupeux2011_abare_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: dupeux2011_abare_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

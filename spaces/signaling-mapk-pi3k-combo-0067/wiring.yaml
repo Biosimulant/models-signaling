@@ -1,0 +1,44 @@
+modules:
+  sarma2012_intera_1:
+    class: src.sarma2012_interaction_topologies_of_mapk_cascade_model1204280004_model:Sarma2012InteractionTopologiesOfMapkCascadeModel1204280004Model
+    args:
+      model_path: data/MODEL1204280004.xml
+  sarma2012_intera_2:
+    class: src.sarma2012_interaction_topologies_of_mapk_cascade_model1204280005_model:Sarma2012InteractionTopologiesOfMapkCascadeModel1204280005Model
+    args:
+      model_path: data/MODEL1204280005.xml
+  sarma2012_intera_3:
+    class: src.sarma2012_interaction_topologies_of_mapk_cascade_model1204280006_model:Sarma2012InteractionTopologiesOfMapkCascadeModel1204280006Model
+    args:
+      model_path: data/MODEL1204280006.xml
+  sarma2012_intera_4:
+    class: src.sarma2012_interaction_topologies_of_mapk_cascade_model1204280007_model:Sarma2012InteractionTopologiesOfMapkCascadeModel1204280007Model
+    args:
+      model_path: data/MODEL1204280007.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: sarma2012_intera_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: sarma2012_intera_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: sarma2012_intera_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: sarma2012_intera_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: 'Signaling: Immune Signaling (COMBO_0048)'
+description: Signaling immune signaling comparative space with 3 models, configured
+  as non-causal co-simulation.
+models:
+- repo: Biosimulant/models-signaling
+  alias: adlung2021_cell_1
+  manifest_path: models/signaling-sbml-adlung2021-cell-to-cell-variability-in-jak2-stat-biomd0000001077-model/model.yaml
+  parameters:
+    model_path: data/BIOMD0000001077.xml
+- repo: Biosimulant/models-signaling
+  alias: amstein2017_tnfr_2
+  manifest_path: models/signaling-sbml-amstein2017-tnfr1-mediated-nf-b-signaling-petri-model2312010001-model/model.yaml
+  parameters:
+    model_path: data/MODEL2312010001.xml
+- repo: Biosimulant/models-signaling
+  alias: bachmann2011_jak_3
+  manifest_path: models/signaling-sbml-bachmann2011-jak2-stat5-feedbackcontrol-biomd0000000347-model/model.yaml
+  parameters:
+    model_path: data/BIOMD0000000347.xml
+- repo: Biosimulant/models-observability
+  alias: state_compare_mon
+  manifest_path: models/observability-state-comparison-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+- repo: Biosimulant/models-observability
+  alias: state_metrics_mon
+  manifest_path: models/observability-state-metrics-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+runtime:
+  duration: 40.0
+  tick_dt: 0.01
+  initial_inputs: {}
+wiring:
+- from: adlung2021_cell_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: amstein2017_tnfr_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: bachmann2011_jak_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+scientific_context:
+  question: How do immune signaling mechanisms compare across these models?
+  mode: comparative
+  assumptions:
+  - Model implementations are used as published in their curated manifests without
+    biological reinterpretation.
+  - Time integration uses a shared global tick compatible with model min_dt constraints.
+  - Comparative (non-causal) mode is used because full deterministic IO coverage for
+    causal coupling was not satisfied.
+  expected_observables:
+  - Model output trajectories under shared runtime settings.
+  - Cross-model agreement/divergence in key state or metric signals.
+  - Relative behavior comparison without causal linkage claims.
+  limitations:
+  - No new biology is introduced beyond what upstream models encode.
+  - Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+  provenance:
+  - 'signaling-sbml-adlung2021-cell-to-cell-variability-in-jak2-stat-biomd0000001077-model
+    :: biomodels_ebi:BIOMD0000001077 :: https://www.ebi.ac.uk/biomodels/BIOMD0000001077'
+  - 'signaling-sbml-amstein2017-tnfr1-mediated-nf-b-signaling-petri-model2312010001-model
+    :: biomodels_ebi:MODEL2312010001 :: https://www.ebi.ac.uk/biomodels/MODEL2312010001'
+  - 'signaling-sbml-bachmann2011-jak2-stat5-feedbackcontrol-biomd0000000347-model
+    :: biomodels_ebi:BIOMD0000000347 :: https://www.ebi.ac.uk/biomodels/BIOMD0000000347'
+  visualization_rationale: A dedicated monitor model receives all participating model
+    state streams (`state_a..state_d`) so trajectories can be compared in one place
+    without claiming causal coupling when IO semantics are incomplete.

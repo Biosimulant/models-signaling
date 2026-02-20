@@ -1,0 +1,36 @@
+modules:
+  konrath2023_geno_1:
+    class: src.konrath2023_genotoxic_stress_induced_ikk_nfkb_si_model2307130001_model:Konrath2023GenotoxicStressInducedIkkNfkbSiModel2307130001Model
+    args:
+      model_path: data/MODEL2307130001.xml
+  lee2003_roles_2:
+    class: src.lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model:Lee2003RolesOfApcAndAxinInWntPathwayWitBiomd0000000658Model
+    args:
+      model_path: data/BIOMD0000000658.xml
+  lemaire2004_role_3:
+    class: src.lemaire2004_role_of_rank_rankl_opg_pathway_in_bo_biomd0000000278_model:Lemaire2004RoleOfRankRanklOpgPathwayInBoBiomd0000000278Model
+    args:
+      model_path: data/BIOMD0000000278.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: konrath2023_geno_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: lee2003_roles_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: lemaire2004_role_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

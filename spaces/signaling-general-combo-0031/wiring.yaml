@@ -1,0 +1,36 @@
+modules:
+  haugh2004_hgh_1:
+    class: src.haugh2004_hgh_model0848676877_model:Haugh2004HghModel0848676877Model
+    args:
+      model_path: data/MODEL0848676877.xml
+  hayashi1999_nosy_2:
+    class: src.hayashi1999_nosynth_phospho_model4780784080_model:Hayashi1999NosynthPhosphoModel4780784080Model
+    args:
+      model_path: data/MODEL4780784080.xml
+  heiland2019_nad_3:
+    class: src.heiland2019_nad_pathway_model_analysing_the_impa_model1905220001_model:Heiland2019NadPathwayModelAnalysingTheImpaModel1905220001Model
+    args:
+      model_path: data/MODEL1905220001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: haugh2004_hgh_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: hayashi1999_nosy_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: heiland2019_nad_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

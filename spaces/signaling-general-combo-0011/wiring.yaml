@@ -1,0 +1,28 @@
+modules:
+  bhattacharya2014_1:
+    class: src.bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model:Bhattacharya2014AMathematicalModelOfTheSteBiomd0000000890Model
+    args:
+      model_path: data/BIOMD0000000890.xml
+  blackwell2019_me_2:
+    class: src.blackwell2019_mechanistic_model_of_signaling_pat_model2006170003_model:Blackwell2019MechanisticModelOfSignalingPatModel2006170003Model
+    args:
+      model_path: data/MODEL2006170003.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bhattacharya2014_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: blackwell2019_me_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

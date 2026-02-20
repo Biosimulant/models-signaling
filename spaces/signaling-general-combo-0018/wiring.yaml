@@ -1,0 +1,28 @@
+modules:
+  chen2009_erbb_1:
+    class: src.chen2009_erbb_signaling_biomd0000000255_model:Chen2009ErbbSignalingBiomd0000000255Model
+    args:
+      model_path: data/BIOMD0000000255.xml
+  chulian2021_feed_2:
+    class: src.chulian2021_feedback_signalling_in_b_lymphopoeis_biomd0000001056_model:Chulian2021FeedbackSignallingInBLymphopoeisBiomd0000001056Model
+    args:
+      model_path: data/BIOMD0000001056.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: chen2009_erbb_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: chulian2021_feed_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

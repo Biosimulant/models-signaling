@@ -1,0 +1,28 @@
+modules:
+  gupta2007_hypoth_1:
+    class: src.gupta2007_hypothalamicpituitaryadrenal_modelb_model1006230036_model:Gupta2007HypothalamicpituitaryadrenalModelbModel1006230036Model
+    args:
+      model_path: data/MODEL1006230036.xml
+  hammaren_geissen_2:
+    class: src.hammaren_geissen2022_pptop_model12_biomd0000001078_model:HammarenGeissen2022PptopModel12Biomd0000001078Model
+    args:
+      model_path: data/BIOMD0000001078.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: gupta2007_hypoth_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: hammaren_geissen_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

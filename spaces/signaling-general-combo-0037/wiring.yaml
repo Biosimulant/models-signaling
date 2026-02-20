@@ -1,0 +1,36 @@
+modules:
+  jalil2015_atypic_1:
+    class: src.jalil2015_atypical_protein_kinase_c_isoforms_in_model1505130000_model:Jalil2015AtypicalProteinKinaseCIsoformsInModel1505130000Model
+    args:
+      model_path: data/MODEL1505130000.xml
+  jalil2015_atypic_2:
+    class: src.jalil2015_atypical_protein_kinase_c_isoforms_in_model1505130001_model:Jalil2015AtypicalProteinKinaseCIsoformsInModel1505130001Model
+    args:
+      model_path: data/MODEL1505130001.xml
+  jung2019_egulati_3:
+    class: src.jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model:Jung2019EgulatingGlioblastomaSignalingPathwaBiomd0000000829Model
+    args:
+      model_path: data/BIOMD0000000829.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: jalil2015_atypic_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: jalil2015_atypic_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: jung2019_egulati_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

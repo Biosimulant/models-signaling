@@ -1,0 +1,44 @@
+modules:
+  muller2008_simpl_1:
+    class: src.muller2008_simplified_mapk_activation_dynamics_m_biomd0000000664_model:Muller2008SimplifiedMapkActivationDynamicsMBiomd0000000664Model
+    args:
+      model_path: data/BIOMD0000000664.xml
+  nakakuki2010_cel_2:
+    class: src.nakakuki2010_cellfatedecision_core_biomd0000000251_model:Nakakuki2010CellfatedecisionCoreBiomd0000000251Model
+    args:
+      model_path: data/BIOMD0000000251.xml
+  nakakuki2010_cel_3:
+    class: src.nakakuki2010_cellfatedecision_mechanistic_biomd0000000250_model:Nakakuki2010CellfatedecisionMechanisticBiomd0000000250Model
+    args:
+      model_path: data/BIOMD0000000250.xml
+  padala2017_erk_4:
+    class: src.padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000648_model:Padala2017ErkPi3kAktAndWntSignallingNetwoBiomd0000000648Model
+    args:
+      model_path: data/BIOMD0000000648.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: muller2008_simpl_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: nakakuki2010_cel_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: nakakuki2010_cel_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: padala2017_erk_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

@@ -1,0 +1,28 @@
+modules:
+  bhalla2004_pka_1:
+    class: src.bhalla2004_pka_2003_model9079740062_model:Bhalla2004Pka2003Model9079740062Model
+    args:
+      model_path: data/MODEL9079740062.xml
+  bhalla2004_pkc_2:
+    class: src.bhalla2004_pkc_2003_model9080388197_model:Bhalla2004Pkc2003Model9080388197Model
+    args:
+      model_path: data/MODEL9080388197.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bhalla2004_pka_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bhalla2004_pkc_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

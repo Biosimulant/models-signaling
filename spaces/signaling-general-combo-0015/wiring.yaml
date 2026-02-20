@@ -1,0 +1,28 @@
+modules:
+  cao2013_applicat_1:
+    class: src.cao2013_application_of_absis_in_the_the_enzymati_biomd0000000487_model:Cao2013ApplicationOfAbsisInTheTheEnzymatiBiomd0000000487Model
+    args:
+      model_path: data/BIOMD0000000487.xml
+  capuani2015_bind_2:
+    class: src.capuani2015_binding_of_cbl_and_gbr2_to_egfr_mult_biomd0000000594_model:Capuani2015BindingOfCblAndGbr2ToEgfrMultBiomd0000000594Model
+    args:
+      model_path: data/BIOMD0000000594.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: cao2013_applicat_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: capuani2015_bind_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

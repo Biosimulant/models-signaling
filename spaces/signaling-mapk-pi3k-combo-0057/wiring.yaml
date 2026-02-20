@@ -1,0 +1,44 @@
+modules:
+  fujita2010_akt_1:
+    class: src.fujita2010_akt_signalling_ngf_biomd0000000263_model:Fujita2010AktSignallingNgfBiomd0000000263Model
+    args:
+      model_path: data/BIOMD0000000263.xml
+  gray2016_the_2:
+    class: src.gray2016_the_akt_switch_model_biomd0000000854_model:Gray2016TheAktSwitchModelBiomd0000000854Model
+    args:
+      model_path: data/BIOMD0000000854.xml
+  harish2009_nucle_3:
+    class: src.harish2009_nuclear_cytoplasmic_erk_oscillation_m_model2306170002_model:Harish2009NuclearCytoplasmicErkOscillationMModel2306170002Model
+    args:
+      model_path: data/MODEL2306170002.xml
+  heberle_razquin_4:
+    class: src.heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model:HeberleRazquinNavas2019Pi3kMapkP38MtorMoModel1902140002Model
+    args:
+      model_path: data/MODEL1902140002.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: fujita2010_akt_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: gray2016_the_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: harish2009_nucle_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: heberle_razquin_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

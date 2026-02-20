@@ -1,0 +1,36 @@
+modules:
+  abell2011_calciu_1:
+    class: src.abell2011_calciumsignaling_withadaptation_biomd0000000355_model:Abell2011CalciumsignalingWithadaptationBiomd0000000355Model
+    args:
+      model_path: data/BIOMD0000000355.xml
+  abell2011_calciu_2:
+    class: src.abell2011_calciumsignaling_withoutadaptation_biomd0000000354_model:Abell2011CalciumsignalingWithoutadaptationBiomd0000000354Model
+    args:
+      model_path: data/BIOMD0000000354.xml
+  bertram2006_endo_3:
+    class: src.bertram2006_endothelin_biomd0000000128_model:Bertram2006EndothelinBiomd0000000128Model
+    args:
+      model_path: data/BIOMD0000000128.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: abell2011_calciu_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: abell2011_calciu_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: bertram2006_endo_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

@@ -1,0 +1,36 @@
+modules:
+  hodgson2018_tgfb_1:
+    class: src.hodgson2018_tgfbeta_signalling_and_inflammatory_model1805080001_model:Hodgson2018TgfbetaSignallingAndInflammatoryModel1805080001Model
+    args:
+      model_path: data/MODEL1805080001.xml
+  hoffmann2002_wt_2:
+    class: src.hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model:Hoffmann2002WtIkbnfkbSignalingBiomd0000000140Model
+    args:
+      model_path: data/BIOMD0000000140.xml
+  huang2014_system_3:
+    class: src.huang2014_systematic_modeling_for_the_insulin_si_model1912090001_model:Huang2014SystematicModelingForTheInsulinSiModel1912090001Model
+    args:
+      model_path: data/MODEL1912090001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: hodgson2018_tgfb_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: hoffmann2002_wt_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: huang2014_system_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

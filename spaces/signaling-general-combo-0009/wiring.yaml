@@ -1,0 +1,28 @@
+modules:
+  besozzi2012_osci_1:
+    class: src.besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model:Besozzi2012OscillatoryRegimesInTheRasCampBiomd0000000478Model
+    args:
+      model_path: data/BIOMD0000000478.xml
+  bhalla2002_camp_2:
+    class: src.bhalla2002_camp_pathway_model9077438479_model:Bhalla2002CampPathwayModel9077438479Model
+    args:
+      model_path: data/MODEL9077438479.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: besozzi2012_osci_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bhalla2002_camp_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

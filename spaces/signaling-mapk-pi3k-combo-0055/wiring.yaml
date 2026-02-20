@@ -1,0 +1,36 @@
+modules:
+  bidkhori2012_nor_1:
+    class: src.bidkhori2012_normal_egfr_signalling_biomd0000000452_model:Bidkhori2012NormalEgfrSignallingBiomd0000000452Model
+    args:
+      model_path: data/BIOMD0000000452.xml
+  borisov2009_egf_2:
+    class: src.borisov2009_egf_insulin_crosstalk_biomd0000000223_model:Borisov2009EgfInsulinCrosstalkBiomd0000000223Model
+    args:
+      model_path: data/BIOMD0000000223.xml
+  chang2008_erk_3:
+    class: src.chang2008_erk_activation_hallucinogenic_drugs_me_model0975191032_model:Chang2008ErkActivationHallucinogenicDrugsMeModel0975191032Model
+    args:
+      model_path: data/MODEL0975191032.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bidkhori2012_nor_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: borisov2009_egf_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: chang2008_erk_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

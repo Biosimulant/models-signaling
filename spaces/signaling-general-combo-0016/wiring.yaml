@@ -1,0 +1,28 @@
+modules:
+  caruso2020_activ_1:
+    class: src.caruso2020_activation_of_the_alternative_complem_model2109110001_model:Caruso2020ActivationOfTheAlternativeComplemModel2109110001Model
+    args:
+      model_path: data/MODEL2109110001.xml
+  caruso2020_alter_2:
+    class: src.caruso2020_alternative_complement_pathway_model_model2206230002_model:Caruso2020AlternativeComplementPathwayModelModel2206230002Model
+    args:
+      model_path: data/MODEL2206230002.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: caruso2020_activ_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: caruso2020_alter_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

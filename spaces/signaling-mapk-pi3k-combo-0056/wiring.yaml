@@ -1,0 +1,44 @@
+modules:
+  cursons2015_regu_1:
+    class: src.cursons2015_regulation_of_erk_mapk_signaling_in_biomd0000000659_model:Cursons2015RegulationOfErkMapkSignalingInBiomd0000000659Model
+    args:
+      model_path: data/BIOMD0000000659.xml
+  froehlich2022_mo_2:
+    class: src.froehlich2022_model_of_adaptive_resistance_in_me_model2207130001_model:Froehlich2022ModelOfAdaptiveResistanceInMeModel2207130001Model
+    args:
+      model_path: data/MODEL2207130001.xml
+  fujita2010_akt_3:
+    class: src.fujita2010_akt_signalling_egf_biomd0000000262_model:Fujita2010AktSignallingEgfBiomd0000000262Model
+    args:
+      model_path: data/BIOMD0000000262.xml
+  fujita2010_akt_4:
+    class: src.fujita2010_akt_signalling_egfrinhib_biomd0000000264_model:Fujita2010AktSignallingEgfrinhibBiomd0000000264Model
+    args:
+      model_path: data/BIOMD0000000264.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: cursons2015_regu_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: froehlich2022_mo_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: fujita2010_akt_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: fujita2010_akt_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

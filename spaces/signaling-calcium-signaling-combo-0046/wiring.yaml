@@ -1,0 +1,36 @@
+modules:
+  cui2008_cardiacm_1:
+    class: src.cui2008_cardiacmyocytes_model1172425728_model:Cui2008CardiacmyocytesModel1172425728Model
+    args:
+      model_path: data/MODEL1172425728.xml
+  iribe2006_camkii_2:
+    class: src.iribe2006_camkiikineticsmodel_model1006230085_model:Iribe2006CamkiikineticsmodelModel1006230085Model
+    args:
+      model_path: data/MODEL1006230085.xml
+  jafri1998_ventri_3:
+    class: src.jafri1998_ventricularmyocyte_model0847869198_model:Jafri1998VentricularmyocyteModel0847869198Model
+    args:
+      model_path: data/MODEL0847869198.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: cui2008_cardiacm_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: iribe2006_camkii_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: jafri1998_ventri_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

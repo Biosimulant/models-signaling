@@ -1,0 +1,44 @@
+modules:
+  kholodenko2000_u_1:
+    class: src.kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model:Kholodenko2000UltrasensitivityAndNegativeFeeBiomd0000000010Model
+    args:
+      model_path: data/BIOMD0000000010.xml
+  koo2013_shear_2:
+    class: src.koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model:Koo2013ShearStressInducedAktAndEnosPhosphBiomd0000000465Model
+    args:
+      model_path: data/BIOMD0000000465.xml
+  kubota2012_insul_3:
+    class: src.kubota2012_insulinaction_aktpathway_model1204060000_model:Kubota2012InsulinactionAktpathwayModel1204060000Model
+    args:
+      model_path: data/MODEL1204060000.xml
+  kwang2003_the_4:
+    class: src.kwang2003_the_influence_of_rkip_on_the_erk_signa_biomd0000000647_model:Kwang2003TheInfluenceOfRkipOnTheErkSignaBiomd0000000647Model
+    args:
+      model_path: data/BIOMD0000000647.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: kholodenko2000_u_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: koo2013_shear_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: kubota2012_insul_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: kwang2003_the_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

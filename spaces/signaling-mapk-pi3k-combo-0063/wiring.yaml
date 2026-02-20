@@ -1,0 +1,44 @@
+modules:
+  padala2017_erk_1:
+    class: src.padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000652_model:Padala2017ErkPi3kAktAndWntSignallingNetwoBiomd0000000652Model
+    args:
+      model_path: data/BIOMD0000000652.xml
+  padala2017_erk_2:
+    class: src.padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000653_model:Padala2017ErkPi3kAktAndWntSignallingNetwoBiomd0000000653Model
+    args:
+      model_path: data/BIOMD0000000653.xml
+  padala2017_erk_3:
+    class: src.padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000654_model:Padala2017ErkPi3kAktAndWntSignallingNetwoBiomd0000000654Model
+    args:
+      model_path: data/BIOMD0000000654.xml
+  padala2017_erk_4:
+    class: src.padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000655_model:Padala2017ErkPi3kAktAndWntSignallingNetwoBiomd0000000655Model
+    args:
+      model_path: data/BIOMD0000000655.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: padala2017_erk_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: padala2017_erk_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: padala2017_erk_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: padala2017_erk_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

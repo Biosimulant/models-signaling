@@ -1,0 +1,28 @@
+modules:
+  anand2003_reacti_1:
+    class: src.anand2003_reactions_of_the_intrinsic_pathway_of_model1806130003_model:Anand2003ReactionsOfTheIntrinsicPathwayOfModel1806130003Model
+    args:
+      model_path: data/MODEL1806130003.xml
+  araujo2016_posit_2:
+    class: src.araujo2016_positive_feedback_in_cdk1_signalling_biomd0000000657_model:Araujo2016PositiveFeedbackInCdk1SignallingBiomd0000000657Model
+    args:
+      model_path: data/BIOMD0000000657.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: anand2003_reacti_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: araujo2016_posit_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

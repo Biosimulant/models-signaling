@@ -1,0 +1,36 @@
+modules:
+  heitzler2012_gpc_1:
+    class: src.heitzler2012_gpcr_signalling_biomd0000000842_model:Heitzler2012GpcrSignallingBiomd0000000842Model
+    args:
+      model_path: data/BIOMD0000000842.xml
+  hermansen2015_de_2:
+    class: src.hermansen2015_denovo_biosynthesis_of_pyrimidines_biomd0000000590_model:Hermansen2015DenovoBiosynthesisOfPyrimidinesBiomd0000000590Model
+    args:
+      model_path: data/BIOMD0000000590.xml
+  hetmanski2019_me_3:
+    class: src.hetmanski2019_mechanochemical_signaling_controll_model1908290001_model:Hetmanski2019MechanochemicalSignalingControllModel1908290001Model
+    args:
+      model_path: data/MODEL1908290001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: heitzler2012_gpc_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: hermansen2015_de_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: hetmanski2019_me_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

@@ -1,0 +1,28 @@
+modules:
+  bakshi2020_trunc_1:
+    class: src.bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model:Bakshi2020TruncatedMinimalModelOfAlternativBiomd0000001016Model
+    args:
+      model_path: data/BIOMD0000001016.xml
+  basak_cell_2:
+    class: src.basak_cell_2007_model8478881246_model:BasakCell2007Model8478881246Model
+    args:
+      model_path: data/MODEL8478881246.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bakshi2020_trunc_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: basak_cell_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

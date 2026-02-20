@@ -1,0 +1,28 @@
+modules:
+  dupont1992_ca_1:
+    class: src.dupont1992_ca_dpt_protein_phospho_biomd0000000113_model:Dupont1992CaDptProteinPhosphoBiomd0000000113Model
+    args:
+      model_path: data/BIOMD0000000113.xml
+  edn_signalling_2:
+    class: src.edn_signalling_models_model1904170001_model:EdnSignallingModelsModel1904170001Model
+    args:
+      model_path: data/MODEL1904170001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: dupont1992_ca_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: edn_signalling_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

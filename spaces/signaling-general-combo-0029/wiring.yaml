@@ -1,0 +1,28 @@
+modules:
+  grigolon2018_res_1:
+    class: src.grigolon2018_responses_to_auxin_signals_model2003060002_model:Grigolon2018ResponsesToAuxinSignalsModel2003060002Model
+    args:
+      model_path: data/MODEL2003060002.xml
+  gupta2007_hypoth_2:
+    class: src.gupta2007_hypothalamicpituitaryadrenal_modela_model1006230111_model:Gupta2007HypothalamicpituitaryadrenalModelaModel1006230111Model
+    args:
+      model_path: data/MODEL1006230111.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: grigolon2018_res_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: gupta2007_hypoth_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

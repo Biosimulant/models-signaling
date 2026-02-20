@@ -1,0 +1,28 @@
+modules:
+  beard2005_mitoch_1:
+    class: src.beard2005_mitochondrial_respiration_model4151491057_model:Beard2005MitochondrialRespirationModel4151491057Model
+    args:
+      model_path: data/MODEL4151491057.xml
+  becker2010_epor_2:
+    class: src.becker2010_epor_auxiliarymodel_biomd0000000272_model:Becker2010EporAuxiliarymodelBiomd0000000272Model
+    args:
+      model_path: data/BIOMD0000000272.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: beard2005_mitoch_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: becker2010_epor_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

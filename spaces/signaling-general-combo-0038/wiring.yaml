@@ -1,0 +1,36 @@
+modules:
+  jung2019_regulat_1:
+    class: src.jung2019_regulating_glioblastoma_signaling_pathw_biomd0000000828_model:Jung2019RegulatingGlioblastomaSignalingPathwBiomd0000000828Model
+    args:
+      model_path: data/BIOMD0000000828.xml
+  kawka2014_reveal_2:
+    class: src.kawka2014_revealing_the_role_of_sgk1_in_the_dyna_model1912090002_model:Kawka2014RevealingTheRoleOfSgk1InTheDynaModel1912090002Model
+    args:
+      model_path: data/MODEL1912090002.xml
+  keizer1996_ryano_3:
+    class: src.keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model:Keizer1996RyanodineReceptorAdaptationBiomd0000000060Model
+    args:
+      model_path: data/BIOMD0000000060.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: jung2019_regulat_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: kawka2014_reveal_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: keizer1996_ryano_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

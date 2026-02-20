@@ -1,0 +1,44 @@
+modules:
+  amara2013_pcna_1:
+    class: src.amara2013_pcna_ubiquitylation_in_the_activation_biomd0000000475_model:Amara2013PcnaUbiquitylationInTheActivationBiomd0000000475Model
+    args:
+      model_path: data/BIOMD0000000475.xml
+  anand2003_reacti_2:
+    class: src.anand2003_reactions_of_the_intrinsic_pathway_of_model1806130003_model:Anand2003ReactionsOfTheIntrinsicPathwayOfModel1806130003Model
+    args:
+      model_path: data/MODEL1806130003.xml
+  araujo2016_posit_3:
+    class: src.araujo2016_positive_feedback_in_cdk1_signalling_biomd0000000657_model:Araujo2016PositiveFeedbackInCdk1SignallingBiomd0000000657Model
+    args:
+      model_path: data/BIOMD0000000657.xml
+  bakshi2020_minim_4:
+    class: src.bakshi2020_minimal_model_of_alternative_pathway_biomd0000001017_model:Bakshi2020MinimalModelOfAlternativePathwayBiomd0000001017Model
+    args:
+      model_path: data/BIOMD0000001017.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: amara2013_pcna_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: anand2003_reacti_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: araujo2016_posit_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: bakshi2020_minim_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

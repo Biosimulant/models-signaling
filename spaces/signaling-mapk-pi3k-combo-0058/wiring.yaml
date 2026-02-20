@@ -1,0 +1,44 @@
+modules:
+  heberlerazquinna_1:
+    class: src.heberlerazquinnavas2019_the_pi3k_and_mapk_p38_pa_biomd0000000907_model:Heberlerazquinnavas2019ThePi3kAndMapkP38PaBiomd0000000907Model
+    args:
+      model_path: data/BIOMD0000000907.xml
+  heberlerazquinna_2:
+    class: src.heberlerazquinnavas2019_the_pi3k_and_mapk_p38_pa_model2001030002_model:Heberlerazquinnavas2019ThePi3kAndMapkP38PaModel2001030002Model
+    args:
+      model_path: data/MODEL2001030002.xml
+  hornberg2005_map_3:
+    class: src.hornberg2005_mapksignalling_biomd0000000667_model:Hornberg2005MapksignallingBiomd0000000667Model
+    args:
+      model_path: data/BIOMD0000000667.xml
+  huang1996_ultras_4:
+    class: src.huang1996_ultrasensitivity_in_mapk_cascade_biomd0000000009_model:Huang1996UltrasensitivityInMapkCascadeBiomd0000000009Model
+    args:
+      model_path: data/BIOMD0000000009.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: heberlerazquinna_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: heberlerazquinna_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: hornberg2005_map_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: huang1996_ultras_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

@@ -1,0 +1,36 @@
+modules:
+  ajay_bhalla_1:
+    class: src.ajay_bhalla_2007_bistable_model9147091146_model:AjayBhalla2007BistableModel9147091146Model
+    args:
+      model_path: data/MODEL9147091146.xml
+  ajay_bhalla_2:
+    class: src.ajay_bhalla_2007_pkm_model9147232940_model:AjayBhalla2007PkmModel9147232940Model
+    args:
+      model_path: data/MODEL9147232940.xml
+  asthagiri2001_ma_3:
+    class: src.asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model:Asthagiri2001MapkAsthagiriAdaptFbModel9147975215Model
+    args:
+      model_path: data/MODEL9147975215.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: ajay_bhalla_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ajay_bhalla_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: asthagiri2001_ma_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

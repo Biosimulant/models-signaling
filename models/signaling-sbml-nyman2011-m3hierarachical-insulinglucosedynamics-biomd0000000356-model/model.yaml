@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Nyman2011M3hierarachicalInsulinglucosedynamicsBiomd0000000356Model'
-description: 'This a model from the article: A Hierarchical Whole-body Modeling Approach
-  Elucidates the Link between in Vitro Insulin Signaling and in Vivo Glucose Homeostasis.
-  Nyman E, Brannmark C, Palmer R, Bruga'
+description: "This a model from the article: A Hierarchical Whole-body Modeling Approach Elucidates the Link between in Vitro Insulin Signaling and in Vivo Glucose Homeostasis. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

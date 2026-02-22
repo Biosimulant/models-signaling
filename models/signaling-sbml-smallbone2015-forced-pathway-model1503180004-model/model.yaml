@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Smallbone2015ForcedPathwayModel1503180004Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Signaling Smallbone2015Forced Pathway Model1503180004Model models signaling smallbone2015 forced pathway model1503180004 dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL1503180004). When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - signaling

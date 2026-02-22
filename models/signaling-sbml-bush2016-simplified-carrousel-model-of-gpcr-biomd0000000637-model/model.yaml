@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Bush2016SimplifiedCarrouselModelOfGpcrBiomd0000000637Model'
-description: 'Bush2016 - Simplified Carrousel model ofGPCR This model is described
-  in the article: Yeast GPCR signaling reflects the fraction of occupied receptors,
-  not the number. Bush A, Vasen G, Constantinou A, '
+description: "Bush2016 - Simplified Carrousel model ofGPCR This model is described in the article: Yeast GPCR signaling reflects the fraction of occupied receptors, not the number. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

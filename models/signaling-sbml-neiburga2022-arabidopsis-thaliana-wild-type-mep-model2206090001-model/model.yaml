@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Neiburga2022ArabidopsisThalianaWildTypeMepModel2206090001Model'
-description: Kinetic model of extended MEP pathway in wild-type Arabidopsis thaliana.This
-  model was used for the Parameter Estimation task in COPASI. Reactions for isoprene
-  and cis-abienol synthesis are included b
+description: "Kinetic model of extended MEP pathway in wild-type Arabidopsis thaliana.This model was used for the Parameter Estimation task in COPASI. Reactions for isoprene and cis-abienol synthesis are included b."
 standard: other
 tags:
 - signaling

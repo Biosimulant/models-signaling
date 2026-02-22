@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: HammarenGeissen2022PptopModel12Biomd0000001078Model'
-description: The model encodes the general biological process of protein synthesis
-  and post-translational modification (PTM, such as protein phosphorylation), viewed
-  through the eyes of a specific, widely-used exp
+description: "The model encodes the general biological process of protein synthesis and post-translational modification (PTM, such as protein phosphorylation), viewed through the eyes of a specific, widely-used exp. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

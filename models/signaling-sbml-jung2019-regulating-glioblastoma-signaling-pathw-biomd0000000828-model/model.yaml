@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Jung2019RegulatingGlioblastomaSignalingPathwBiomd0000000828Model'
-description: 'This model is based on paper:Strategies in regulating glioblastoma signaling
-  pathways and anti-invasion therapyAbstract:Glioblastoma multiforme is one of the
-  most invasive type of glial tumors, which '
+description: "This model is based on paper:Strategies in regulating glioblastoma signaling pathways and anti-invasion therapyAbstract:Glioblastoma multiforme is one of the most invasive type of glial tumors, which. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Muller2008SimplifiedMapkActivationDynamicsMBiomd0000000664Model'
-description: 'Muller2008 - Simplified MAPK activation Dynamics (Model B) Simplified
-  mathematical model (model B)for predicting MAPK signal expression. This model is
-  described in the article: Network topology determ'
+description: "Muller2008 - Simplified MAPK activation Dynamics (Model B) Simplified mathematical model (model B)for predicting MAPK signal expression. This model is described in the article: Network topology determ."
 standard: other
 tags:
 - signaling

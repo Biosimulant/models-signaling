@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Haugh2004HghModel0848676877Model'
-description: 'This a model from the article: Mathematical model of human growth hormone
-  (hGH)-stimulated cell proliferationexplains the efficacy of hGH variants as receptor
-  agonists or antagonists. Haugh JM. Biotec'
+description: "This a model from the article: Mathematical model of human growth hormone (hGH)-stimulated cell proliferationexplains the efficacy of hGH variants as receptor agonists or antagonists. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

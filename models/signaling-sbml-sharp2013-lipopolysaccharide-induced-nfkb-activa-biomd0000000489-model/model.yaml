@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Sharp2013LipopolysaccharideInducedNfkbActivaBiomd0000000489Model'
-description: Markus W. Covert, Thomas H. Leung, Jahlionais E. Gaston & David Baltimore.
-  Achieving stability of lipopolysaccharide-induced NF-kappaB activation. Science
-  309, 5742 (2005). Preterm birth is the single
+description: "Markus W. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

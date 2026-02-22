@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Harish2009NuclearCytoplasmicErkOscillationMModel2306170002Model'
-description: "This model is based on the supplementary material of the publication\
-  \ \u201CRapid and sustained nuclear\u2013cytoplasmic ERK oscillations induced by\
-  \ epidermal growth factor This model is an Antimony version of t"
+description: "This model is based on the supplementary material of the publication \u201cRapid and sustained nuclear\u2013cytoplasmic ERK oscillations induced by epidermal growth factor This model is an Antimony version of t. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

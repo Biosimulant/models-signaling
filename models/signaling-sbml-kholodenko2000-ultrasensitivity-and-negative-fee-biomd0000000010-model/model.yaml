@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Kholodenko2000UltrasensitivityAndNegativeFeeBiomd0000000010Model'
-description: Kholodenko2000 - Ultrasensitivity and negative feedback bring oscillations
-  in MAPK cascade The combination of ultrasensitivity and negative feedback bring
-  sustained oscillations in the mitogen-activat
+description: "Kholodenko2000 - Ultrasensitivity and negative feedback bring oscillations in MAPK cascade The combination of ultrasensitivity and negative feedback bring sustained oscillations in the mitogen-activat. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

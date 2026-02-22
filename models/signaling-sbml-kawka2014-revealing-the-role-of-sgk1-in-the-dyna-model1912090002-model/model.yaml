@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Kawka2014RevealingTheRoleOfSgk1InTheDynaModel1912090002Model'
-description: This is a mathematical model of the Wnt signaling pathway in medulloblastoma
-  comprised of two compartments. Composed of nine ordinary differential equations
-  accounts for the formation and dissociation
+description: "This is a mathematical model of the Wnt signaling pathway in medulloblastoma comprised of two compartments. Composed of nine ordinary differential equations accounts for the formation and dissociation."
 standard: other
 tags:
 - signaling

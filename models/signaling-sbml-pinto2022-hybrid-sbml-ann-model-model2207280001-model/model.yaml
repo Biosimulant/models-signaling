@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Pinto2022HybridSbmlAnnModelModel2207280001Model'
-description: This model picks up an already published mechanistic model by Chassagnole
-  et al. (2001) for the threonine synthesis pathway model of E. coli and turns it
-  into a hybrid model with a deep neural network
+description: "This model picks up an already published mechanistic model by Chassagnole et al. (2001) for the threonine synthesis pathway model of E."
 standard: other
 tags:
 - signaling

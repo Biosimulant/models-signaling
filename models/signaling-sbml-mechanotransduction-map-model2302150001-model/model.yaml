@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: MechanotransductionMapModel2302150001Model'
-description: PAthway representing mechanotransduction
+description: "Signaling Mechanotransduction Map Model2302150001Model models signaling mechanotransduction map model2302150001 dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL2302150001), focused. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - signaling

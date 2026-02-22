@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Khan2018OriginsOfRobustnessInTranslationalModel1911120001Model'
-description: This is a ordinary differential equation-based model of the eukaryotic
-  translation initiation factor (eIF2) phosphorylation pathway, a pathway important
-  for regulating protein synthesis activity in eu
+description: "This is a ordinary differential equation-based model of the eukaryotic translation initiation factor (eIF2) phosphorylation pathway, a pathway important for regulating protein synthesis activity in eu. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

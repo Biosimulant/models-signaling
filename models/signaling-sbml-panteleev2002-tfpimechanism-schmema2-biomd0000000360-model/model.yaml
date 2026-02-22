@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Panteleev2002TfpimechanismSchmema2Biomd0000000360Model'
-description: 'Mikhail A. Panteleev, Veronica I. Zarnitsina & Fazoil I. Ataullakhanov.
-  Tissue factor pathway inhibitor: a possible mechanism of action. European Journal
-  of Biochemistry 269, 8 (2002). We have analyze'
+description: "Mikhail A. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

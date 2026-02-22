@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Schaber2012HogPathwayInYeastBiomd0000000429Model'
-description: Schaber2012 - Hog pathway in yeast The high osmolarity glycerol (HOG)
-  pathway in the yeast Saccharomyces cerevisiae is one of the best-studied mitogen-activated
-  protein kinase (MAPK) pathways and serv
+description: "Schaber2012 - Hog pathway in yeast The high osmolarity glycerol (HOG) pathway in the yeast Saccharomyces cerevisiae is one of the best-studied mitogen-activated protein kinase (MAPK) pathways and serv. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

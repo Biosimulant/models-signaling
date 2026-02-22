@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: AModelOfYeastCellCycleRegulationBasedOnModel1812060001Model'
-description: Model does not simulate
+description: "Signaling AModel Of Yeast Cell Cycle Regulation Based On Model1812060001Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL1812060001), focused on signali. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - signaling

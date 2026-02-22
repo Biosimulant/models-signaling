@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Bhalla2002CampPathwayModel9077438479Model'
-description: This is a model of the canonical cAMP signaling pathway:&lt;br'&gt;Ligand-&gt;Receptor-&gt;G-protein-&gt;Cyclase-&gt;cAMP-&gt;PKA.&lt;br&gt;It
-  also includes phosphodiesterases to balance out cAMP form
+description: "This is a model of the canonical cAMP signaling pathway:&lt;br'&gt;Ligand-&gt;Receptor-&gt;G-protein-&gt;Cyclase-&gt;cAMP-&gt;PKA.&lt;br&gt;It also includes phosphodiesterases to balance out cAMP form. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Keizer1996RyanodineReceptorAdaptationBiomd0000000060Model'
-description: The model reproduces the time profile of Open probability of the ryanodine
-  receptor as shown in Fig 2A and 2B of the paper. The model was successfully tested
-  on MathSBML and Jarnac. To the extent poss
+description: "The model reproduces the time profile of Open probability of the ryanodine receptor as shown in Fig 2A and 2B of the paper. The model was successfully tested on MathSBML and Jarnac."
 standard: other
 tags:
 - signaling

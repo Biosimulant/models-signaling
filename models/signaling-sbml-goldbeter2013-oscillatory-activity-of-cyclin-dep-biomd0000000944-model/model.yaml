@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Goldbeter2013OscillatoryActivityOfCyclinDepBiomd0000000944Model'
-description: "A model for oscillations of Cdc2 kinase in embryonic cell cycles based\
-  \ on Michaelis\u2013Menten phosphorylation\u2013dephosphorylation kinetics shows\
-  \ that the occurrence and amplitude of the oscillations strong"
+description: "A model for oscillations of Cdc2 kinase in embryonic cell cycles based on Michaelis\u2013Menten phosphorylation\u2013dephosphorylation kinetics shows that the occurrence and amplitude of the oscillations strong. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: MathematicalModelingOfLigandCompetitionAtTModel2211300001Model'
-description: Modeling the competition of two ligands which have the ability to bind
-  to the same receptor. Example is given from ECM proteins fibronectin and von Willebrand
-  factor and their common receptor integrin
+description: "Modeling the competition of two ligands which have the ability to bind to the same receptor. Example is given from ECM proteins fibronectin and von Willebrand factor and their common receptor integrin."
 standard: other
 tags:
 - signaling

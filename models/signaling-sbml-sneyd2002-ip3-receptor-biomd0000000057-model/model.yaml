@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Sneyd2002Ip3ReceptorBiomd0000000057Model'
-description: This model was successfully tested on Jarnac and MathSBML. The model
-  reproduces the time profile of 'Open Probability' of the receptor as shown in Figure
-  4 of the publication. The value of calcium ion
+description: "This model was successfully tested on Jarnac and MathSBML. The model reproduces the time profile of 'Open Probability' of the receptor as shown in Figure 4 of the publication."
 standard: other
 tags:
 - signaling

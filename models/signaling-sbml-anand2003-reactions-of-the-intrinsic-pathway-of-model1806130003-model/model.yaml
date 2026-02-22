@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Anand2003ReactionsOfTheIntrinsicPathwayOfModel1806130003Model'
-description: Inhomogeneous blood coagulation model. Encoded model contains reactions
-  of the intrinsic pathway with platelet activation. Initial conditions provided.
-  Mostly an extension of Zarnitsina1996.
+description: "Inhomogeneous blood coagulation model. Encoded model contains reactions of the intrinsic pathway with platelet activation."
 standard: other
 tags:
 - signaling

@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Mosbacher2022YeastHogPathwayModel2206230001Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Signaling Mosbacher2022Yeast Hog Pathway Model2206230001Model models signaling mosbacher2022 yeast hog pathway model2206230001 dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL22062. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - signaling

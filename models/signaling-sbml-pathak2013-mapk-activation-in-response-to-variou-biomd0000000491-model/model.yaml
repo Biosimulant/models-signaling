@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Pathak2013MapkActivationInResponseToVariouBiomd0000000491Model'
-description: Pathak2013 - MAPK activation in response to various abiotic stresses
-  MAPK activation mechanism in response to various abiotic stress conditions, such
-  as cold, salt, drought, H2O2, heavy metal and ethy
+description: "Pathak2013 - MAPK activation in response to various abiotic stresses MAPK activation mechanism in response to various abiotic stress conditions, such as cold, salt, drought, H2O2, heavy metal and ethy. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

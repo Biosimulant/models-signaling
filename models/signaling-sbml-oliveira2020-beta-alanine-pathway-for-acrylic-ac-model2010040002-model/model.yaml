@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Oliveira2020BetaAlaninePathwayForAcrylicAcModel2010040002Model'
-description: Beta-Alanine pathway for Acrylic Acid production from glycerol.
+description: "Beta-Alanine pathway for Acrylic Acid production from glycerol. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

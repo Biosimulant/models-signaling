@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Tyson2003MutualActivationBiomd0000000311Model'
-description: 'This is an SBML implementation the model of mutual activation (figure
-  1e) described in the article: Sniffers, buzzers, toggles and blinkers: dynamics
-  of regulatory and signaling pathways in the cell. '
+description: "This is an SBML implementation the model of mutual activation (figure 1e) described in the article: Sniffers, buzzers, toggles and blinkers: dynamics of regulatory and signaling pathways in the cell. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

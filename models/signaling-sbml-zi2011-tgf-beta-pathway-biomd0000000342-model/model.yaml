@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Zi2011TgfBetaPathwayBiomd0000000342Model'
-description: "This model is from the article: Quantitative analysis of transient and\
-  \ sustained transforming growth factor-\u03B2 signaling dynamics. Zhike Zi, Zipei\
-  \ Feng, Douglas A Chapnick, Markus Dahl, Difan Deng, Edd"
+description: "This model is from the article: Quantitative analysis of transient and sustained transforming growth factor-\u03b2 signaling dynamics. Zhike Zi, Zipei Feng, Douglas A Chapnick, Markus Dahl, Difan Deng, Edd."
 standard: other
 tags:
 - signaling

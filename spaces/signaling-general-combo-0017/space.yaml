@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: General (COMBO_0017)'
-description: Signaling general comparative space with 2 models, configured as non-causal
-  co-simulation.
+description: "Signaling General (COMBO_0017) brings together celli_re2011_1, chan2004_tcell_2, state_compare_mon in a comparative space to examine how general mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-signaling
   alias: celli_re2011_1

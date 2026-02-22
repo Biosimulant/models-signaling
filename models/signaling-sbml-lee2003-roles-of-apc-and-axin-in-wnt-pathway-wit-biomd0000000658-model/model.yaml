@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Lee2003RolesOfApcAndAxinInWntPathwayWitBiomd0000000658Model'
-description: 'Lee2003 - Roles of APC and Axin in WntPathway (without regulatory loop)
-  This model is described in the article: The roles of APC and Axin derived from experimental
-  and theoretical analysis of the Wnt '
+description: "Lee2003 - Roles of APC and Axin in WntPathway (without regulatory loop) This model is described in the article: The roles of APC and Axin derived from experimental and theoretical analysis of the Wnt. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

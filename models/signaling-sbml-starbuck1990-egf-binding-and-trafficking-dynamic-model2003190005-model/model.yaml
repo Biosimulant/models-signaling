@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Starbuck1990EgfBindingAndTraffickingDynamicModel2003190005Model'
-description: mathematical model, with accompanying quantitative experimental data,
-  for binding and trafficking properties of the epidermal growth factor (EGF) receptor
-  on B82 fibroblasts, and propose a theoretical
+description: "mathematical model, with accompanying quantitative experimental data, for binding and trafficking properties of the epidermal growth factor (EGF) receptor on B82 fibroblasts, and propose a theoretical. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

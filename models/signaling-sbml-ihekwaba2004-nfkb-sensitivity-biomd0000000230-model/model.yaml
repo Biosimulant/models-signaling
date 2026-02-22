@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Ihekwaba2004NfkbSensitivityBiomd0000000230Model'
-description: 'This a model from the article: Sensitivity analysis of parameters controlling
-  oscillatory signalling in the NF-kappaB pathway: the roles of IKK and IkappaBalpha.
-  Ihekwaba AE, Broomhead DS, Grimley RL,'
+description: "This a model from the article: Sensitivity analysis of parameters controlling oscillatory signalling in the NF-kappaB pathway: the roles of IKK and IkappaBalpha. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

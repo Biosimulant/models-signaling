@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Mukhopadhyay2013TCellReceptorProximalSignalModel1604100000Model'
-description: 'Mukhopadhyay2013 - T cell receptor proximalsignaling reveals emergent
-  ultrasensitivity This model is described in the article: Systems model of T cell
-  receptor proximal signaling reveals emergent ultr'
+description: "Mukhopadhyay2013 - T cell receptor proximalsignaling reveals emergent ultrasensitivity This model is described in the article: Systems model of T cell receptor proximal signaling reveals emergent ultr. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

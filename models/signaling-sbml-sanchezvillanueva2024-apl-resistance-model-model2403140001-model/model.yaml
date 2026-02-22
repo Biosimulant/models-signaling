@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Sanchezvillanueva2024AplResistanceModelModel2403140001Model'
-description: This logical network model integrate signalling, transcriptional and
-  epigenetic regulatory mechanisms underlying the the Acute Promyelocytic Leukaemia
-  cell responses to RA treatment depending on their
+description: "This logical network model integrate signalling, transcriptional and epigenetic regulatory mechanisms underlying the the Acute Promyelocytic Leukaemia cell responses to RA treatment depending on their. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

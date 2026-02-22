@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Strasen2018TgfbSmadSignallingClass6Biomd0000001003Model'
-description: simulating class 6 signalling
+description: "Signaling Strasen2018Tgfb Smad Signalling Class6Biomd0000001003Model models signaling strasen2018 tgfb smad signalling class dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:BIOMD0000001. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - signaling

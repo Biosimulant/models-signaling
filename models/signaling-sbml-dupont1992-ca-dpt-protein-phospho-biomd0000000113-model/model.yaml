@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Dupont1992CaDptProteinPhosphoBiomd0000000113Model'
-description: Model reproduces Fig 4 of the paper. For fraction of phosphorylated protein,
-  W_star, the model reproduces panel b in the same figure. Model successfully tested
-  on MathSBML and Jarnac. To the extent po
+description: "Model reproduces Fig 4 of the paper. For fraction of phosphorylated protein, W_star, the model reproduces panel b in the same figure."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Thomsen1988AdenylatecyclaseInhibitionBiomd0000000082Model'
-description: This model was created according to the paper Inhibition of Adenylate
-  Cyclase Is Mediated by the High Affinity Conformation of the alpha2-Adrenergic Receptor
-  published in 1988. The figure4 (steady sta
+description: "This model was created according to the paper Inhibition of Adenylate Cyclase Is Mediated by the High Affinity Conformation of the alpha2-Adrenergic Receptor published in 1988. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

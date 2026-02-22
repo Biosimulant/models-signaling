@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Nair2015InteractionBetweenNeuromodulatorsViaBiomd0000000636Model'
-description: 'Nair2015 - Interaction betweenneuromodulators via GPCRs - Effect on
-  cAMP/PKA signaling (D2Neuron) This model is described in the article: Sensing Positive
-  versus Negative Reward Signals through Adenyl'
+description: "Nair2015 - Interaction betweenneuromodulators via GPCRs - Effect on cAMP/PKA signaling (D2Neuron) This model is described in the article: Sensing Positive versus Negative Reward Signals through Adenyl. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

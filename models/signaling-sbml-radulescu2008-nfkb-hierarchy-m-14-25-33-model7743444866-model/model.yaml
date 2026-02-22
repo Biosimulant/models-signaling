@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Radulescu2008NfkbHierarchyM142533Model7743444866Model'
-description: NFkB model M(14,25,33) This is a model of NFkB pathway functioning from
-  hierarchy of models of decreasing complexity,created to demonstrate application
-  of model reduction methods Radulescu O, Gorban A
+description: "NFkB model M(14,25,33) This is a model of NFkB pathway functioning from hierarchy of models of decreasing complexity,created to demonstrate application of model reduction methods Radulescu O, Gorban A. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

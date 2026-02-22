@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Bhalla2002Mkp1FeedbackEffectsModel9070467164Model'
-description: This is a network involving the MAPK-PKC feedback loop with input from
-  the PDGFR in the synapse. The distinctive feature of this model is that it includes
-  MKP-1 induction by MAPK, and the consequent i
+description: "This is a network involving the MAPK-PKC feedback loop with input from the PDGFR in the synapse. The distinctive feature of this model is that it includes MKP-1 induction by MAPK, and the consequent i."
 standard: other
 tags:
 - signaling

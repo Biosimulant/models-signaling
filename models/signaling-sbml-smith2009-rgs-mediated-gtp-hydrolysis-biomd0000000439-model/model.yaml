@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Smith2009RgsMediatedGtpHydrolysisBiomd0000000439Model'
-description: 'Smith2009 - RGS mediated GTP hydrolysis This model is described in the
-  article: Dual positive and negative regulation of GPCR signaling by GTP hydrolysis.
-  Smith B, Hill C, Godfrey EL, Rand D, van den '
+description: "Smith2009 - RGS mediated GTP hydrolysis This model is described in the article: Dual positive and negative regulation of GPCR signaling by GTP hydrolysis. Smith B, Hill C, Godfrey EL, Rand D, van den."
 standard: other
 tags:
 - signaling

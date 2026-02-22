@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Mapk Pi3K (COMBO_0056)'
-description: Signaling mapk pi3k comparative space with 4 models, configured as non-causal
-  co-simulation.
+description: "Signaling Mapk Pi3K (COMBO_0056) brings together cursons2015_regu_1, froehlich2022_mo_2, fujita2010_akt_3 in a comparative space to examine how mapk pi3k mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-signaling
   alias: cursons2015_regu_1

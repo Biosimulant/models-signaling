@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Smith2010ResponseOfFoxoTranscriptionFactorsBiomd0000000705Model'
-description: 'Graham R. Smith & Daryl P. Shanley. Modelling the response of FOXO transcription
-  factors to multiple post-translational modifications made by ageing-related signalling
-  pathways. PLoS ONE 5, 6 (2010). '
+description: "Graham R. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

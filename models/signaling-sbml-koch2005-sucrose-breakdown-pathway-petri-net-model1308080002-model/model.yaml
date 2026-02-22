@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Koch2005SucroseBreakdownPathwayPetriNetModel1308080002Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Signaling Koch2005Sucrose Breakdown Pathway Petri Net Model1308080002Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL1308080002), focused on signaling. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - signaling

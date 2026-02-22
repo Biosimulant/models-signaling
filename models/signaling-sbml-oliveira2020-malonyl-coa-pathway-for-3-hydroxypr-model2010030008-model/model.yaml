@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Oliveira2020MalonylCoaPathwayFor3HydroxyprModel2010030008Model'
-description: Malonyl-CoA pathway for 3-hydroxypropionate production from glycerol.
+description: "Malonyl-CoA pathway for 3-hydroxypropionate production from glycerol. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

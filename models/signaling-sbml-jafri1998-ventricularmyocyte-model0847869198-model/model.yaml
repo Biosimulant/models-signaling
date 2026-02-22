@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Jafri1998VentricularmyocyteModel0847869198Model'
-description: 'This a model from the article: Cardiac Ca2+ dynamics: the roles of ryanodine
-  receptor adaptation andsarcoplasmic reticulum load. Jafri MS, Rice JJ, Winslow RL.
-  Biophys J 1998 Mar;74(3):1149-68 9512016'
+description: "This a model from the article: Cardiac Ca2+ dynamics: the roles of ryanodine receptor adaptation andsarcoplasmic reticulum load. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

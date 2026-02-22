@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Messiha2013PentosePhosphatePathwayModelBiomd0000000502Model'
-description: Messiha2013 - Pentose phosphate pathway model This model describes the
-  dynamic behaviour of the pentose phosphate pathway with the inclusion of various
-  enzymes involved in the pathway. The model's pre
+description: "Messiha2013 - Pentose phosphate pathway model This model describes the dynamic behaviour of the pentose phosphate pathway with the inclusion of various enzymes involved in the pathway. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Schilling2009ErkDistributiveBiomd0000000270Model'
-description: Schilling2009 - ERK distributive This model has been exported from PottersWheel
-  on 2009-04-20 18:57:44. The PottersWheel Model Definition file can be obtained from
-  the curation tab. This model is desc
+description: "Schilling2009 - ERK distributive This model has been exported from PottersWheel on 2009-04-20 18:57:44. The PottersWheel Model Definition file can be obtained from the curation tab."
 standard: other
 tags:
 - signaling

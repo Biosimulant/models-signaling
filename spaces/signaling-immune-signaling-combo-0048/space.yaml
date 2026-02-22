@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Immune Signaling (COMBO_0048)'
-description: Signaling immune signaling comparative space with 3 models, configured
-  as non-causal co-simulation.
+description: "Signaling Immune Signaling (COMBO_0048) brings together adlung2021_cell_1, amstein2017_tnfr_2, bachmann2011_jak_3 in a comparative space to examine how immune signaling mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-signaling
   alias: adlung2021_cell_1

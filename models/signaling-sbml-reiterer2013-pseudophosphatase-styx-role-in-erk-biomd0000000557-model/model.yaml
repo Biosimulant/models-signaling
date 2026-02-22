@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Reiterer2013PseudophosphataseStyxRoleInErkBiomd0000000557Model'
-description: 'Reiterer2013 - pseudophosphatase STYX role inERK signalling This model
-  is described in the article: Pseudophosphatase STYX modulates cell-fate decisions
-  and cell migration by spatiotemporal regulation'
+description: "Reiterer2013 - pseudophosphatase STYX role inERK signalling This model is described in the article: Pseudophosphatase STYX modulates cell-fate decisions and cell migration by spatiotemporal regulation. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

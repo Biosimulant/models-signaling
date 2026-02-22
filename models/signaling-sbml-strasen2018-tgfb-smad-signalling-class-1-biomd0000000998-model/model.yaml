@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Strasen2018TgfbSmadSignallingClass1Biomd0000000998Model'
-description: "Model depicting response Class 1 defined by a minimal response to stimulation\
-  \ which is considered as non\u2010responders."
+description: "Model depicting response Class 1 defined by a minimal response to stimulation which is considered as non\u2010responders. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

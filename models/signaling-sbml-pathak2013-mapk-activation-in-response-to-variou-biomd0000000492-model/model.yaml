@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Pathak2013MapkActivationInResponseToVariouBiomd0000000492Model'
-description: Pathak2013 - MAPK activation in response to various biotic stresses MAPK
-  activation mechanism in response to various biotic (fungal and bacterial pathogens)
-  stress conditions in plants This model is d
+description: "Pathak2013 - MAPK activation in response to various biotic stresses MAPK activation mechanism in response to various biotic (fungal and bacterial pathogens) stress conditions in plants This model is d. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

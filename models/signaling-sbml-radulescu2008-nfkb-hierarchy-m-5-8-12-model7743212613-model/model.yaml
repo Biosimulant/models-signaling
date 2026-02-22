@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Radulescu2008NfkbHierarchyM5812Model7743212613Model'
-description: NFkB model M(5,8,12) - minimal model This is a model of NFkB pathway
-  functioning from hierarchy of models of decreasing complexity,created to demonstrate
-  application of model reduction methods Radules
+description: "NFkB model M(5,8,12) - minimal model This is a model of NFkB pathway functioning from hierarchy of models of decreasing complexity,created to demonstrate application of model reduction methods Radules. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

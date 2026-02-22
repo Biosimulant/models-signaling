@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: PhosphataseActivitiesOnPi345P3AndPi34Model1704190000Model'
-description: Phosphatase activities on PI(3,4,5)P3 andPI(3,4)P2 This model describes
-  the action of various phosphatases onPI(3,4,5)P3 and PI(3,4)P2, in response to a
-  stimulation by EGF. Itcontains boolean switches
+description: "Phosphatase activities on PI(3,4,5)P3 andPI(3,4)P2 This model describes the action of various phosphatases onPI(3,4,5)P3 and PI(3,4)P2, in response to a stimulation by EGF. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

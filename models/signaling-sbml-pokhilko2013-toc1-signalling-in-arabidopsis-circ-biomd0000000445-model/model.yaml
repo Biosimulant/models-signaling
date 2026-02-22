@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Pokhilko2013Toc1SignallingInArabidopsisCircBiomd0000000445Model'
-description: Pokhilko2013 - TOC1 signalling in Arabidopsiscircadian clock In this
-  model, Pokhilko et al. has incorporated the negative transcriptional regulations
-  of the core clock genes by TOC1 and the up-regulat
+description: "Pokhilko2013 - TOC1 signalling in Arabidopsiscircadian clock In this model, Pokhilko et al. has incorporated the negative transcriptional regulations of the core clock genes by TOC1 and the up-regulat."
 standard: other
 tags:
 - signaling

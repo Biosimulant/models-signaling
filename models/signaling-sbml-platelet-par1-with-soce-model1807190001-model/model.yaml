@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: PlateletPar1WithSoceModel1807190001Model'
-description: Mathematical model of platelet intracellular signaling network
+description: "Mathematical model of platelet intracellular signaling network. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

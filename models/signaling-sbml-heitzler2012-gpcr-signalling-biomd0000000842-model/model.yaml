@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Heitzler2012GpcrSignallingBiomd0000000842Model'
-description: "This model is from the article: Competing G protein-coupled receptor\
-  \ kinases balance G protein and \u03B2-arrestin signaling Heitzler D, Durand G,\
-  \ Gallay N, Rizk A, Ahn S, Kim J, Violin JD, Dupuy L, Gauthi"
+description: "This model is from the article: Competing G protein-coupled receptor kinases balance G protein and \u03b2-arrestin signaling Heitzler D, Durand G, Gallay N, Rizk A, Ahn S, Kim J, Violin JD, Dupuy L, Gauthi. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

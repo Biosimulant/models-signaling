@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Becker2010EporAuxiliarymodelBiomd0000000272Model'
-description: 'This is the auxiliary model described in the article: Covering a Broad
-  Dynamic Range: Information Processing at the Erythropoietin Receptor Verena Becker,
-  Marcel Schilling, Julie Bachmann, Ute Baumann'
+description: "This is the auxiliary model described in the article: Covering a Broad Dynamic Range: Information Processing at the Erythropoietin Receptor Verena Becker, Marcel Schilling, Julie Bachmann, Ute Baumann. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

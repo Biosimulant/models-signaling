@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Ray2013MeioticInitiationInSCerevisiaeBiomd0000000626Model'
-description: Ray2013 - Meiotic initiation in S. cerevisiae A mathematical representation
-  of early meiotic events, particularly feedback mechanisms at the system level and
-  phosphorylation of signalling molecules fo
+description: "Ray2013 - Meiotic initiation in S. cerevisiae A mathematical representation of early meiotic events, particularly feedback mechanisms at the system level and phosphorylation of signalling molecules fo."
 standard: other
 tags:
 - signaling

@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Calcium Signaling (COMBO_0045)'
-description: Signaling calcium signaling comparative space with 3 models, configured
-  as non-causal co-simulation.
+description: "Signaling Calcium Signaling (COMBO_0045) assembles abell2011_calciu_1, abell2011_calciu_2, bertram2006_endo_3 as a comparative composed simulation to examine how calcium signaling mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-signaling
   alias: abell2011_calciu_1

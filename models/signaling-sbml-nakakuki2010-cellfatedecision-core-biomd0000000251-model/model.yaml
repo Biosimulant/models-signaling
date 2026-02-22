@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Nakakuki2010CellfatedecisionCoreBiomd0000000251Model'
-description: This model describes the activation of immediate early genes such as
-  cFos after EGF or heregulin (HRG) stimulation of the MAPK pathway. Phosphorylated
-  cFos is a key transcription factor triggering dow
+description: "This model describes the activation of immediate early genes such as cFos after EGF or heregulin (HRG) stimulation of the MAPK pathway. Phosphorylated cFos is a key transcription factor triggering dow."
 standard: other
 tags:
 - signaling

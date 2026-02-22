@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Chaouiya2013EgfAndTnfalphaMediatedSignallinBiomd0000000562Model'
-description: 'Chaouiya2013 - EGF and TNFalpha mediated signalling pathway This model
-  is described in the article: SBML qualitative models: a model representation format
-  and infrastructure to foster interactions bet'
+description: "Chaouiya2013 - EGF and TNFalpha mediated signalling pathway This model is described in the article: SBML qualitative models: a model representation format and infrastructure to foster interactions bet. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Neumann2010Cd95stimulationNfkbApoptosisBiomd0000000243Model'
-description: 'This is the reduced model (model 8) described in: Dynamics within the
-  CD95 death-inducing signaling complex decide life and death of cells. Leo Neumann,
-  Carina Pforr, Joel Beaudouin, Alexander Golks, '
+description: "This is the reduced model (model 8) described in: Dynamics within the CD95 death-inducing signaling complex decide life and death of cells. Leo Neumann, Carina Pforr, Joel Beaudouin, Alexander Golks,."
 standard: other
 tags:
 - signaling

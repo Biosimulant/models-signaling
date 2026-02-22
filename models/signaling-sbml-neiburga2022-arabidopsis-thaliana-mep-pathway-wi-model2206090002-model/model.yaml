@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Neiburga2022ArabidopsisThalianaMepPathwayWiModel2206090002Model'
-description: Kinetic model of extended MEP pathway in Arabidopsis thaliana for cis-abienol
-  production.This model was used for determining total optimization potential (TOP)
-  of cis-abienol production in Arabidopsis
+description: "Kinetic model of extended MEP pathway in Arabidopsis thaliana for cis-abienol production.This model was used for determining total optimization potential (TOP) of cis-abienol production in Arabidopsis. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

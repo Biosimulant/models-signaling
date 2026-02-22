@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Markevich2004MapkDoublePhosphorylationOrdereBiomd0000000027Model'
-description: Markevich2004 - MAPK double phosphorylation,ordered Michaelis-Menton
-  The model corresponds to the schemas 1and 2 of Markevich et al 2004, as described
-  in the figure 1 andmodelled using Michaelis-Mente
+description: "Markevich2004 - MAPK double phosphorylation,ordered Michaelis-Menton The model corresponds to the schemas 1and 2 of Markevich et al 2004, as described in the figure 1 andmodelled using Michaelis-Mente. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

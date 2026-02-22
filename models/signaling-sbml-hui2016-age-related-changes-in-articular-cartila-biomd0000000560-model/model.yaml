@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Hui2016AgeRelatedChangesInArticularCartilaBiomd0000000560Model'
-description: 'Hui2014 - Age-related changes in articularcartilage This model is described
-  in the article: Oxidative changes and signalling pathways are pivotal in initiating
-  age-related changes in articular cartila'
+description: "Hui2014 - Age-related changes in articularcartilage This model is described in the article: Oxidative changes and signalling pathways are pivotal in initiating age-related changes in articular cartila. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

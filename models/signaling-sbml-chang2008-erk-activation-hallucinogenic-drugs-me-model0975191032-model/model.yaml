@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Chang2008ErkActivationHallucinogenicDrugsMeModel0975191032Model'
-description: 'Chang2008 - ERK activation, hallucinogenicdrugs mediated signalling
-  through serotonin receptors This model is described in the article: Towards a quantitative
-  representation of the cell signaling mech'
+description: "Chang2008 - ERK activation, hallucinogenicdrugs mediated signalling through serotonin receptors This model is described in the article: Towards a quantitative representation of the cell signaling mech. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

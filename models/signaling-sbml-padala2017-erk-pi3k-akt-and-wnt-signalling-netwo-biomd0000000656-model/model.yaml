@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Padala2017ErkPi3kAktAndWntSignallingNetwoBiomd0000000656Model'
-description: 'Padala2017- ERK, PI3K/Akt and Wnt signallingnetwork (EGFR overexpression)
-  Crosstalk model of the ERK, Wnt and Aktsignalling pathways with EGFR overexpression.
-  This model is described in the article: C'
+description: "Padala2017- ERK, PI3K/Akt and Wnt signallingnetwork (EGFR overexpression) Crosstalk model of the ERK, Wnt and Aktsignalling pathways with EGFR overexpression. This model is described in the article: C."
 standard: other
 tags:
 - signaling

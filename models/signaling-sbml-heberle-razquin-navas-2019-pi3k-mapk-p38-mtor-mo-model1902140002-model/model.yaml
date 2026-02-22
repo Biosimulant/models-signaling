@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: HeberleRazquinNavas2019Pi3kMapkP38MtorMoModel1902140002Model'
-description: Model V simulating stress induction with stress inputs on PI3K, Akt-pS473
-  and mTORC1. The model scheme is depicted in Figure S11 and the simulations are shown
-  in Figure S12.
+description: "Model V simulating stress induction with stress inputs on PI3K, Akt-pS473 and mTORC1. The model scheme is depicted in Figure S11 and the simulations are shown in Figure S12."
 standard: other
 tags:
 - signaling

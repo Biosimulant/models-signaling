@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Hettling2011CreatinekinaseBiomd0000000408Model'
-description: 'This model is from the article: Analyzing the functional properties
-  of the creatine kinase system with multiscale ''sloppy'' modeling. Hettling H, van
-  Beek JH PLoS Comput Biol. 2011 Aug;7(8):e1002130. P'
+description: "This model is from the article: Analyzing the functional properties of the creatine kinase system with multiscale 'sloppy' modeling. Hettling H, van Beek JH PLoS Comput Biol."
 standard: other
 tags:
 - signaling

@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Dasgupta2020ReducedModelOfReceptorClusturinBiomd0000000973Model'
-description: a simple kinetic mass-action-law-based model could be utilized to adequately
-  describe clustering inresponse to activation both in 2D and in 3D
+description: "a simple kinetic mass-action-law-based model could be utilized to adequately describe clustering inresponse to activation both in 2D and in 3D. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

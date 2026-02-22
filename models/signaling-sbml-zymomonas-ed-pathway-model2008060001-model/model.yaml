@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: ZymomonasEdPathwayModel2008060001Model'
-description: Mathematical Definition symbol/abbreviation Mathematical symbols Keq
-  Equilibrium constant Ki Inhibition constant Km Affinity constant v Predicted enzyme
-  activities Vf Maximal enzyme activities under s
+description: "Mathematical Definition symbol/abbreviation Mathematical symbols Keq Equilibrium constant Ki Inhibition constant Km Affinity constant v Predicted enzyme activities Vf Maximal enzyme activities under s. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

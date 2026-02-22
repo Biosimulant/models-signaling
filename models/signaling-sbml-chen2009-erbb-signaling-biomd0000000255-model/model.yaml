@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Chen2009ErbbSignalingBiomd0000000255Model'
-description: This is A431 IERMv1.0 model described in the article Input-output behavior
-  of ErbB signaling pathways as revealed by a mass action model trained against dynamic
-  data. William W Chen, Birgit Schoeberl,
+description: "This is A431 IERMv1.0 model described in the article Input-output behavior of ErbB signaling pathways as revealed by a mass action model trained against dynamic data. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

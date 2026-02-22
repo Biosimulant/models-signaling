@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Smith2010FoxoPtmsAgeingrelatedsignallingpathwModel1112260002Model'
-description: 'This a model from the article: Modelling the response of FOXO transcription
-  factors to multiple post-translational modifications made by ageing-related signalling
-  pathways. Smith GR, Shanley DP. PLoS '
+description: "This a model from the article: Modelling the response of FOXO transcription factors to multiple post-translational modifications made by ageing-related signalling pathways. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

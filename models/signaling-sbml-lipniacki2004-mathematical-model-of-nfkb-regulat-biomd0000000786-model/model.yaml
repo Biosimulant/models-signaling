@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Lipniacki2004MathematicalModelOfNfkbRegulatBiomd0000000786Model'
-description: its a mathematical model studying impact of TNF on NFKB nuclear dynamics.
-  This model is derived from Hoffmann2002 (PMID:12424381).
+description: "its a mathematical model studying impact of TNF on NFKB nuclear dynamics. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

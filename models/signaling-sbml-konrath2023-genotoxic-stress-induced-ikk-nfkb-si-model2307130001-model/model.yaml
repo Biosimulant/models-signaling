@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Konrath2023GenotoxicStressInducedIkkNfkbSiModel2307130001Model'
-description: Ordinary differential equation-based model describing the genotoxic stress-induced
-  activation of IKK/ NF-kB signaling.
+description: "Ordinary differential equation-based model describing the genotoxic stress-induced activation of IKK/ NF-kB signaling. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

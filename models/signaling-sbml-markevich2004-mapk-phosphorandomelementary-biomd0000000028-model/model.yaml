@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Markevich2004MapkPhosphorandomelementaryBiomd0000000028Model'
-description: The model corresponds to the schema 3 of Markevich et al 2004, as described
-  in the figure 2 and the supplementary table S2. Phosphorylations follow distributive
-  random kinetics, while dephosphorylatio
+description: "The model corresponds to the schema 3 of Markevich et al 2004, as described in the figure 2 and the supplementary table S2. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Pereira2020Nrf2P53IntegratedSystemsModelOfModel2110270001Model'
-description: 'Integrated-systems model of oxidative stress connecting NRF2 and p53
-  signaling pathways. Additional crosstalk linking oxidative stress to p53 inhibition,
-  p53 to NRF2 through p21, and NRF2 to MDM2 was '
+description: "Integrated-systems model of oxidative stress connecting NRF2 and p53 signaling pathways. Additional crosstalk linking oxidative stress to p53 inhibition, p53 to NRF2 through p21, and NRF2 to MDM2 was."
 standard: other
 tags:
 - signaling

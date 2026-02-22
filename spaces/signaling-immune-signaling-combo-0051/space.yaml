@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Immune Signaling (COMBO_0051)'
-description: Signaling immune signaling comparative space with 3 models, configured
-  as non-causal co-simulation.
+description: "Signaling Immune Signaling (COMBO_0051) brings together gex_fabry1984_1, hofmeyer1986_seq_2, koch2021_phospho_3 in a comparative space to examine how immune signaling mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-signaling
   alias: gex_fabry1984_1

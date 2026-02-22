@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Gupta2007HypothalamicpituitaryadrenalModelaModel1006230111Model'
-description: 'This a model from the article: Inclusion of the glucocorticoid receptor
-  in a hypothalamic pituitary adrenalaxis model reveals bistability. Gupta S, Aslakson
-  E, Gurbaxani BM, Vernon SD. Theor Biol Med '
+description: "This a model from the article: Inclusion of the glucocorticoid receptor in a hypothalamic pituitary adrenalaxis model reveals bistability. Gupta S, Aslakson E, Gurbaxani BM, Vernon SD."
 standard: other
 tags:
 - signaling

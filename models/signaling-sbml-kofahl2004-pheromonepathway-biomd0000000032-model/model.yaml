@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Kofahl2004PheromonepathwayBiomd0000000032Model'
-description: 'This a model from the article: Modelling the dynamics of the yeast pheromone
-  pathway. Kofahl B, Klipp E Yeast [2004 Jul; Volume: 21 (Issue: 10 )] Page info:
-  831-50 15300679 , Abstract: We present a ma'
+description: "This a model from the article: Modelling the dynamics of the yeast pheromone pathway. Kofahl B, Klipp E Yeast [2004 Jul; Volume: 21 (Issue: 10 )] Page info: 831-50 15300679 , Abstract: We present a ma."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Deback2013PancreasDifferentiationPatterningIModel2011260001Model'
-description: This model reproduces a solution (at a=1, b=20.8, eta=1e-4) of the parameter
-  scan in Fig. 4b of the referenced paper. Equations and other parameter values are
-  as published. Notch signaling in competit
+description: "This model reproduces a solution (at a=1, b=20.8, eta=1e-4) of the parameter scan in Fig. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

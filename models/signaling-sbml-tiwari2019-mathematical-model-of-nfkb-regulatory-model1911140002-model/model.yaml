@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Tiwari2019MathematicalModelOfNfkbRegulatoryModel1911140002Model'
-description: It is a dynamic model containing elements of two different model as one.
-  It contains the impact of TNF on SOD and impact of ROS on A20 behavior.
+description: "It is a dynamic model containing elements of two different model as one. It contains the impact of TNF on SOD and impact of ROS on A20 behavior."
 standard: other
 tags:
 - signaling

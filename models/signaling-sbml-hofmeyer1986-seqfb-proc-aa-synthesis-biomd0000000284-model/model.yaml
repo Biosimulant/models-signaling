@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Hofmeyer1986SeqfbProcAaSynthesisBiomd0000000284Model'
-description: This model is the reaction sequence SEQFB, a model pathway of a branched
-  system with sequential feedback interactions found in bacterial amino acid synthesis.
-  Its steady state is presented in Fig 4. T
+description: "This model is the reaction sequence SEQFB, a model pathway of a branched system with sequential feedback interactions found in bacterial amino acid synthesis. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

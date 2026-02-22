@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Gerard2013Model3EmbryonicTypeEukaryoticCelBiomd0000000938Model'
-description: The eukaryotic cell cycle is characterized by alternating oscillations
-  in the activities of cyclin-dependent kinase (Cdk) and the anaphase-promoting complex
-  (APC). Successful completion of the cell cy
+description: "The eukaryotic cell cycle is characterized by alternating oscillations in the activities of cyclin-dependent kinase (Cdk) and the anaphase-promoting complex (APC). It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

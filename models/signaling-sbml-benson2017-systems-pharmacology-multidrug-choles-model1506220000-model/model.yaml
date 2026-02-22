@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Benson2017SystemsPharmacologyMultidrugCholesModel1506220000Model'
-description: 'BensonWattersonetal_SystemsPharmacology_Multidrug This model is described
-  in the article: Is systems pharmacology ready to impact upon therapy development?
-  A study on the cholesterol biosynthesis path'
+description: "BensonWattersonetal_SystemsPharmacology_Multidrug This model is described in the article: Is systems pharmacology ready to impact upon therapy development? It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

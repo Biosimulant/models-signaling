@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Yan2012RbE2fPathwayDynamicsWithMir449Biomd0000000720Model'
-description: MiRNAs, which are a family of small non-coding RNAs, regulate a broad
-  array of physiological and developmental processes. However, their regulatory roles
-  have remained largely mysterious. E2F is a pos
+description: "MiRNAs, which are a family of small non-coding RNAs, regulate a broad array of physiological and developmental processes. However, their regulatory roles have remained largely mysterious."
 standard: other
 tags:
 - signaling

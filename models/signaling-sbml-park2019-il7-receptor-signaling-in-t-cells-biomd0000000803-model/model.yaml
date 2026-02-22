@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Park2019Il7ReceptorSignalingInTCellsBiomd0000000803Model'
-description: This model is an attempt to provide a mathematical description of IL-7
-  dependent T cell homeostasis at the molecular and cellular level, with inclusion
-  of gamma-chain and ligand binding in the context
+description: "This model is an attempt to provide a mathematical description of IL-7 dependent T cell homeostasis at the molecular and cellular level, with inclusion of gamma-chain and ligand binding in the context. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

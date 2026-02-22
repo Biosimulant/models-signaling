@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: General (COMBO_0036)'
-description: Signaling general comparative space with 3 models, configured as non-causal
-  co-simulation.
+description: "Signaling General (COMBO_0036) brings together ihekwaba2004_nfk_1, integrated_model_2, ito2019_gefitnib_3 in a comparative space to examine how general mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-signaling
   alias: ihekwaba2004_nfk_1

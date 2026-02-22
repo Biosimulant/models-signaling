@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Caruso2020AlternativeComplementPathwayModelModel2206230002Model'
-description: SBML export of the Alternative Complement Pathway model published by
-  Caruso et al. 2020
+description: "SBML export of the Alternative Complement Pathway model published by Caruso et al. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

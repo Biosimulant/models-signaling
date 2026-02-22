@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Markevich2004MapkOrderedmm2kinasesBiomd0000000031Model'
-description: 'The model describes the double phosphorylation of MAP kinase by an ordered
-  mechanism using the Michaelis-Menten formalism. Two different enzymes, MAPKK1 and
-  MAPKK2, successively phosphorylate the MAP '
+description: "The model describes the double phosphorylation of MAP kinase by an ordered mechanism using the Michaelis-Menten formalism. Two different enzymes, MAPKK1 and MAPKK2, successively phosphorylate the MAP."
 standard: other
 tags:
 - signaling

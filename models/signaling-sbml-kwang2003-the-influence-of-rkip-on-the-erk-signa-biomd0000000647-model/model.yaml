@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Kwang2003TheInfluenceOfRkipOnTheErkSignaBiomd0000000647Model'
-description: 'Kwang2003 - The influence of RKIP on the ERKsignaling pathway This model
-  is described in the article: Mathematical Modeling of the Influence of RKIP on the
-  ERK Signaling Pathway Kwang-Hyun Cho, Sung-Y'
+description: "Kwang2003 - The influence of RKIP on the ERKsignaling pathway This model is described in the article: Mathematical Modeling of the Influence of RKIP on the ERK Signaling Pathway Kwang-Hyun Cho, Sung-Y. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

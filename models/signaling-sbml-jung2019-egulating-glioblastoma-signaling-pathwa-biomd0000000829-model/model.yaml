@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Jung2019EgulatingGlioblastomaSignalingPathwaBiomd0000000829Model'
-description: This model is based on paper, based on its cell cycle dynamics model:Strategies
-  in regulating glioblastoma signaling pathways and anti-invasion therapyAbstract:Glioblastoma
-  multiforme is one of the mo
+description: "This model is based on paper, based on its cell cycle dynamics model:Strategies in regulating glioblastoma signaling pathways and anti-invasion therapyAbstract:Glioblastoma multiforme is one of the mo. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

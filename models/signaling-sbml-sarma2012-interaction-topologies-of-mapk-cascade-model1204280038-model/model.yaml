@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Sarma2012InteractionTopologiesOfMapkCascadeModel1204280038Model'
-description: 'Sarma2012 - Interaction topologies of MAPK cascade (M2_K2_QSS_PSEQ)
-  The paper presents the various interaction topologies between the kinases and phosphatases
-  of MAPK cascade. They are represented as '
+description: "Sarma2012 - Interaction topologies of MAPK cascade (M2_K2_QSS_PSEQ) The paper presents the various interaction topologies between the kinases and phosphatases of MAPK cascade. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

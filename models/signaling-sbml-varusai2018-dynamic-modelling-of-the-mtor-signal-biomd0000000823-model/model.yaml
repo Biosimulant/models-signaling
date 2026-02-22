@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Varusai2018DynamicModellingOfTheMtorSignalBiomd0000000823Model'
-description: This is a mathematical describing the effect that DEP domain-containing
-  mTOR-interacting protein (DEPTOR) has on the mammalian target of rapamycin (mTOR)
-  signalling network.
+description: "This is a mathematical describing the effect that DEP domain-containing mTOR-interacting protein (DEPTOR) has on the mammalian target of rapamycin (mTOR) signalling network. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

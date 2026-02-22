@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Sivakumar2011HedgehogSignalingPathwayBiomd0000000395Model'
-description: Sivakumar2011 - Hedgehog Signaling Pathway This is the current model
-  for the Hedgehog signaling pathway. The best data for mechanism of signaling has
-  been worked out in Drosophila, so this model is ba
+description: "Sivakumar2011 - Hedgehog Signaling Pathway This is the current model for the Hedgehog signaling pathway. The best data for mechanism of signaling has been worked out in Drosophila, so this model is ba."
 standard: other
 tags:
 - signaling

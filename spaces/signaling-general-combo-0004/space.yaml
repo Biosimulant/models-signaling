@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: General (COMBO_0004)'
-description: Signaling general comparative space with 2 models, configured as non-causal
-  co-simulation.
+description: "Signaling General (COMBO_0004) assembles bakshi2020_minim_1, bakshi2020_prope_2, state_compare_mon as a comparative composed simulation to examine how general mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-signaling
   alias: bakshi2020_minim_1

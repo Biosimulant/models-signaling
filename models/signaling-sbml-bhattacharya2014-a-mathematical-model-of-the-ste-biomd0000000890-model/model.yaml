@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Bhattacharya2014AMathematicalModelOfTheSteBiomd0000000890Model'
-description: This is a deterministic nonlinear ordinary differential equation mathematical
-  model of the sterol regulatory element binding protein 2 (SREBP-2) cholesterol genetic
-  regulatory pathway in a hepatocyte.
+description: "This is a deterministic nonlinear ordinary differential equation mathematical model of the sterol regulatory element binding protein 2 (SREBP-2) cholesterol genetic regulatory pathway in a hepatocyte. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

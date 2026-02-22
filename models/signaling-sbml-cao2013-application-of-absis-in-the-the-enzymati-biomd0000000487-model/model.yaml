@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Cao2013ApplicationOfAbsisInTheTheEnzymatiBiomd0000000487Model'
-description: Michael Samoilov, Sergey Plyasunov & Adam P. Arkin. Stochastic amplification
-  and signaling in enzymatic futile cycles through noise-induced bistability with
-  oscillations. Proceedings of the National A
+description: "Michael Samoilov, Sergey Plyasunov & Adam P. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: MechanotransductionAndInflammationModel2406110001Model'
-description: 'Deep review of our previous model MODEL2302150001 and publication Dent
-  et al., 2015 ( Mechanotransduction map: simulation model, molecular pathway, gene
-  set ) with more mechanical stimuli and specific'
+description: "Deep review of our previous model MODEL2302150001 and publication Dent et al., 2015 ( Mechanotransduction map: simulation model, molecular pathway, gene set ) with more mechanical stimuli and specific. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Padala2017ErkPi3kAktAndWntSignallingNetwoBiomd0000000652Model'
-description: 'Padala2017- ERK, PI3K/Akt and Wnt signallingnetwork (PI3K mutated) Crosstalk
-  model of the ERK, Wnt and Aktsignalling pathways with mutated PI3K. This model is
-  described in the article: Cancerous pertu'
+description: "Padala2017- ERK, PI3K/Akt and Wnt signallingnetwork (PI3K mutated) Crosstalk model of the ERK, Wnt and Aktsignalling pathways with mutated PI3K. This model is described in the article: Cancerous pertu."
 standard: other
 tags:
 - signaling

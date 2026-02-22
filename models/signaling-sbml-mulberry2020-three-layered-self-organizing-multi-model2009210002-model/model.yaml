@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Mulberry2020ThreeLayeredSelfOrganizingMultiModel2009210002Model'
-description: This model generates a three-layered, multicellular structure from a
-  simple cell-cell signaling model. The cell signaling model is described by a system
-  of ordinary differential equations, and is coup
+description: "This model generates a three-layered, multicellular structure from a simple cell-cell signaling model. The cell signaling model is described by a system of ordinary differential equations, and is coup."
 standard: other
 tags:
 - signaling

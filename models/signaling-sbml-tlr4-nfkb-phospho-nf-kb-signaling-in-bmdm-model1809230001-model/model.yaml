@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Tlr4NfkbPhosphoNfKbSignalingInBmdmModel1809230001Model'
-description: "The model was constructed to describe TLR4 induced NF-\u03BAB activation\
-  \ in native bone marrow-derived macrophages. It included processes of ligand (lipopolysaccharide)\
-  \ recognition, formation of dimer rece"
+description: "The model was constructed to describe TLR4 induced NF-\u03baB activation in native bone marrow-derived macrophages. It included processes of ligand (lipopolysaccharide) recognition, formation of dimer rece."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Wanant2000InsulinreceptormodelBModel1201140006Model'
-description: 'This a model from the article: Insulin receptor binding kinetics: modeling
-  and simulation studies. Wanant S, Quon MJ. J Theor Biol. 2000 Aug 7;205(3):355-64.
-  10882558 , Abstract: Biological actions of'
+description: "This a model from the article: Insulin receptor binding kinetics: modeling and simulation studies. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

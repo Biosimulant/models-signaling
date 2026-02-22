@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Goldbeter1991MinMitOscilExplInactBiomd0000000004Model'
-description: Goldbeter1991 - Min Mit Oscil, Expl Inact This model represents the inactive
-  forms of CDC-2 Kinase and Cyclin Protease as separate species, unlike the ODEs in
-  the published paper, in which the equatio
+description: "Goldbeter1991 - Min Mit Oscil, Expl Inact This model represents the inactive forms of CDC-2 Kinase and Cyclin Protease as separate species, unlike the ODEs in the published paper, in which the equatio. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

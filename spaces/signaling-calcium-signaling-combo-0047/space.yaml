@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Calcium Signaling (COMBO_0047)'
-description: Signaling calcium signaling comparative space with 3 models, configured
-  as non-causal co-simulation.
+description: "Signaling Calcium Signaling (COMBO_0047) assembles kummer2000_oscil_1, lemon2003_ca2dyn_2, pepke2010_full_3 as a comparative composed simulation to examine how calcium signaling mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-signaling
   alias: kummer2000_oscil_1

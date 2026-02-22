@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Iancu2007CardiacmyoscytesCampsignalingModel1006230117Model'
-description: 'This a model from the article: Compartmentation of cAMP signaling in
-  cardiac myocytes: a computational study. Iancu RV, Jones SW, Harvey RD. Biophys
-  J 2007 May 1;92(9):3317-31 17293406 , Abstract: Rec'
+description: "This a model from the article: Compartmentation of cAMP signaling in cardiac myocytes: a computational study. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

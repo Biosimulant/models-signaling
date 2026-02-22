@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Zarnitsina1996ReactionsOfTheIntrinsicPathwaModel1806140001Model'
-description: Model listing the reactions of the intrinsic pathway as listed in Zarnitsina1996.
-  Publication model is a spatio-termporal mathematical model of blood coagulation.Model
-  used as the example of the numer
+description: "Model listing the reactions of the intrinsic pathway as listed in Zarnitsina1996. Publication model is a spatio-termporal mathematical model of blood coagulation.Model used as the example of the numer."
 standard: other
 tags:
 - signaling

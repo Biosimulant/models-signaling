@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Strasen2018TgfbSmadSignallingClass4Biomd0000001001Model'
-description: Simulating Class 4 signalling
+description: "Signaling Strasen2018Tgfb Smad Signalling Class4Biomd0000001001Model captures signaling strasen2018 tgfb smad signalling class behavior in the context of signaling, sbml, biomodels_ebi using a biomodels_ebi-sou. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - signaling

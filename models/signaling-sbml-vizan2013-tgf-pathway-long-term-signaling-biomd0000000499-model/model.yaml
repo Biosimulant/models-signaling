@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Vizan2013TgfPathwayLongTermSignalingBiomd0000000499Model'
-description: "Pedro Viz\xE1n, Daniel S. J. Miller, Ilaria Gori, Debipriya Das, Bernhard\
-  \ Schmierer & Caroline S. Hill. Controlling long-term signaling: receptor dynamics\
-  \ determine attenuation and refractory behavior of"
+description: "Pedro Viz\u00e1n, Daniel S. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

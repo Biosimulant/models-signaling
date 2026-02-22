@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Froehlich2022ModelOfAdaptiveResistanceInMeModel2207130001Model'
-description: This model provides a thermodynamically consistent description of the
-  action of MEK, RAF and panRAF inhibitors on EGFR and ERK signaling in BRAF mutant
-  cancers.
+description: "This model provides a thermodynamically consistent description of the action of MEK, RAF and panRAF inhibitors on EGFR and ERK signaling in BRAF mutant cancers. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

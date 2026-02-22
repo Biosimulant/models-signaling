@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Kummer2000OscillationsInCalciumSignallingBiomd0000000329Model'
-description: Kummer2000 - Oscillations in CalciumSignalling Simplified (3-variable)
-  calcium oscillation model Kummer et al. (2000) Biophys. J. 79, 1188-1195 This model
-  is defined in a small compartment with low co
+description: "Kummer2000 - Oscillations in CalciumSignalling Simplified (3-variable) calcium oscillation model Kummer et al. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

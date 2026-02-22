@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Radulescu2008NfkbHierarchyM396590Biomd0000000227Model'
-description: 'NFkB model M(39,65,90) - most complex model This is a model of NFkB
-  pathway functioning from hierarchy of models of decreasing complexity,created to
-  demonstrate application of model reduction methods '
+description: "NFkB model M(39,65,90) - most complex model This is a model of NFkB pathway functioning from hierarchy of models of decreasing complexity,created to demonstrate application of model reduction methods. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

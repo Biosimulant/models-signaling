@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Caruso2020ActivationOfTheAlternativeComplemModel2109110001Model'
-description: 'This model is based on the publication:Caruso A, Vollmer J, Machacek
-  M, Kortvely E. ''Modeling the activation of the alternative complement pathway and
-  its effects on hemolysis in health and disease.'' '
+description: "This model is based on the publication:Caruso A, Vollmer J, Machacek M, Kortvely E. 'Modeling the activation of the alternative complement pathway and its effects on hemolysis in health and disease.'."
 standard: other
 tags:
 - signaling

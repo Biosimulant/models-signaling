@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Ortega2006BistabilityFromDoublePhosphorylatiBiomd0000000258Model'
-description: 'Ortega2006 - bistability from doublephosphorylation in signal transduction
-  This model is described in the article: Bistability from double phosphorylation
-  in signal transduction. Kinetic and structura'
+description: "Ortega2006 - bistability from doublephosphorylation in signal transduction This model is described in the article: Bistability from double phosphorylation in signal transduction. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

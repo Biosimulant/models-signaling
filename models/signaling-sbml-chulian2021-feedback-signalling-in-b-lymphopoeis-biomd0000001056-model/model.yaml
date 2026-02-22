@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Chulian2021FeedbackSignallingInBLymphopoeisBiomd0000001056Model'
-description: "Salvador Chuli\xE1n, \xC1lvaro Mart\xEDnez-Rubio, Anna Marciniak-Czochra,\
-  \ Thomas Stiehl, Cristina Bl\xE1zquez Go\xF1i, Juan Francisco Rodr\xEDguez Guti\xE9\
-  rrez, Manuel Ram\xEDrez Orellana, Ana Castillo Robleda, V\xEDctor M. P\xE9r"
+description: "Salvador Chuli\u00e1n, \u00c1lvaro Mart\u00ednez-Rubio, Anna Marciniak-Czochra, Thomas Stiehl, Cristina Bl\u00e1zquez Go\u00f1i, Juan Francisco Rodr\u00edguez Guti\u00e9rrez, Manuel Ram\u00edrez Orellana, Ana Castillo Robleda, V\u00edctor M. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

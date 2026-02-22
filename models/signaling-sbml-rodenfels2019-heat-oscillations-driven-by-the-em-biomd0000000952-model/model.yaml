@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Rodenfels2019HeatOscillationsDrivenByTheEmBiomd0000000952Model'
-description: All living systems function out of equilibrium and exchange energy in
-  the form of heat with their environment. Thus, heat flow can inform on the energetic
-  costs of cellular processes, which are largel
+description: "All living systems function out of equilibrium and exchange energy in the form of heat with their environment. Thus, heat flow can inform on the energetic costs of cellular processes, which are largel."
 standard: other
 tags:
 - signaling

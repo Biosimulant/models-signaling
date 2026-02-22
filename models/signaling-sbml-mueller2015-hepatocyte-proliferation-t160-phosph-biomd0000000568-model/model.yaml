@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Mueller2015HepatocyteProliferationT160PhosphBiomd0000000568Model'
-description: 'Mueller2015 - Hepatocyte proliferation, T160phosphorylation of CDK2
-  This model is described in the article: T160-phosphorylated CDK2 defines threshold
-  for HGF-dependent proliferation in primary hepato'
+description: "Mueller2015 - Hepatocyte proliferation, T160phosphorylation of CDK2 This model is described in the article: T160-phosphorylated CDK2 defines threshold for HGF-dependent proliferation in primary hepato. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

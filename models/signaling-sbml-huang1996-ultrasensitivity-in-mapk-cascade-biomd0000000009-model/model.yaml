@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Huang1996UltrasensitivityInMapkCascadeBiomd0000000009Model'
-description: 'Huang1996 - Ultrasensitivity in MAPK cascade The temporal sequence of
-  kinase activation, from MAPKKK (activated RAF) to the final effector MAPK (activated
-  ERK), is described here. It is observed from '
+description: "Huang1996 - Ultrasensitivity in MAPK cascade The temporal sequence of kinase activation, from MAPKKK (activated RAF) to the final effector MAPK (activated ERK), is described here. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

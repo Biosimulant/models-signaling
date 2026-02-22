@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: General (COMBO_0034)'
-description: Signaling general comparative space with 3 models, configured as non-causal
-  co-simulation.
+description: "Signaling General (COMBO_0034) assembles hodgson2018_tgfb_1, hoffmann2002_wt_2, huang2014_system_3 as a comparative composed simulation to examine how general mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-signaling
   alias: hodgson2018_tgfb_1

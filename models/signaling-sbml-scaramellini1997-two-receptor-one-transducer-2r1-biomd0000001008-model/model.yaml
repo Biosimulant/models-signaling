@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Scaramellini1997TwoReceptorOneTransducer2r1Biomd0000001008Model'
-description: The two-receptor:one-transducerm odel (Leff, 1987) is here extended to
-  analyze interactions between agonistsd isplaying E/[A] curves of different shapes,
-  by incorporating slope factors into the separa
+description: "The two-receptor:one-transducerm odel (Leff, 1987) is here extended to analyze interactions between agonistsd isplaying E/[A] curves of different shapes, by incorporating slope factors into the separa. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Brown2004NgfAndEgfSignalingBiomd0000000033Model'
-description: 'Brown2004 - NGF and EGF signaling This model is described in the article:
-  The statistical mechanics of complex signaling networks: nerve growth factor signaling.
-  Brown KS, Hill CC, Calero GA, Myers CR'
+description: "Brown2004 - NGF and EGF signaling This model is described in the article: The statistical mechanics of complex signaling networks: nerve growth factor signaling. Brown KS, Hill CC, Calero GA, Myers CR."
 standard: other
 tags:
 - signaling

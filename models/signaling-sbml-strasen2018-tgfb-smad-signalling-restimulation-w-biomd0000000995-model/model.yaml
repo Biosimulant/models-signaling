@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Strasen2018TgfbSmadSignallingRestimulationWBiomd0000000995Model'
-description: "Restimulation with 5pM TGF\u03B2 at 8 hrs, shown in Figure 4F"
+description: "Restimulation with 5pM TGF\u03b2 at 8 hrs, shown in Figure 4F. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

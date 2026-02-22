@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Cacace2020LogicalModelOfTheRegulatoryNetwoModel2002170001Model'
-description: Boolean approaches and extensions thereof are becoming increasingly popular
-  to model signaling and regulatory networks, including those controlling cell differentiation,
-  pattern formation and embryoni
+description: "Boolean approaches and extensions thereof are becoming increasingly popular to model signaling and regulatory networks, including those controlling cell differentiation, pattern formation and embryoni. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

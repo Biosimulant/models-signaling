@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Becker2010EporCoremodelBiomd0000000271Model'
-description: 'This is the core model described in the article: Covering a Broad Dynamic
-  Range: Information Processing at the Erythropoietin Receptor Verena Becker, Marcel
-  Schilling, Julie Bachmann, Ute Baumann, And'
+description: "This is the core model described in the article: Covering a Broad Dynamic Range: Information Processing at the Erythropoietin Receptor Verena Becker, Marcel Schilling, Julie Bachmann, Ute Baumann, And. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

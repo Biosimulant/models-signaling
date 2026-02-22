@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Nyman2012InsulinsignallingBiomd0000000423Model'
-description: 'This model is from the article: Mechanistic explanations for counter-intuitive
-  phosphorylation dynamics of the insulin receptor and insulin receptor substrate-1
-  in response to insulin in murine adipoc'
+description: "This model is from the article: Mechanistic explanations for counter-intuitive phosphorylation dynamics of the insulin receptor and insulin receptor substrate-1 in response to insulin in murine adipoc. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

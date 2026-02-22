@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: BrummelZiedins2012ContributionOfThePcPathwModel1807180002Model'
-description: Mathematical model of the blood coagulation cascade including meizothrombin,
-  protein C, thrombomodulin, factor VIIIa fragments, partially proteolyzed factor
-  Va species and inactive factor Va fragments
+description: "Mathematical model of the blood coagulation cascade including meizothrombin, protein C, thrombomodulin, factor VIIIa fragments, partially proteolyzed factor Va species and inactive factor Va fragments. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

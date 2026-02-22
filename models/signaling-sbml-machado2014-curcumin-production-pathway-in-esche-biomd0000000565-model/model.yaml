@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Machado2014CurcuminProductionPathwayInEscheBiomd0000000565Model'
-description: 'Machado2014 - Curcumin production pathway inEscherichia coli This model
-  is described in the article: A kinetic model for curcumin production in Escherichia
-  coli. Machado D, Rodrigues LR, Rocha I. BioS'
+description: "Machado2014 - Curcumin production pathway inEscherichia coli This model is described in the article: A kinetic model for curcumin production in Escherichia coli. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Rutkis2013EntnerDoudoroffPathwayInZMobilisModel1409050000Model'
-description: 'The model corresponds to the third columns (model simulations) in tables
-  3 and 5 of publication (PMID: 24085837, DOI: 10.1099/mic.0.071340-0)Mathematical
-  Definition symbol/abbreviation Mathematical sy'
+description: "The model corresponds to the third columns (model simulations) in tables 3 and 5 of publication (PMID: 24085837, DOI: 10.1099/mic.0.071340-0)Mathematical Definition symbol/abbreviation Mathematical sy. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

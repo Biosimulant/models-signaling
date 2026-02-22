@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Sivakumar2011WntsignalingpathwayBiomd0000000397Model'
-description: Sivakumar2011_WntSignalingPathway The secreted protein Wnt activates
-  theheptahelical receptor Frizzled on nieghboring cells. Activation ofFrizzled causes
-  the recruitment of additional membrane protein
+description: "Sivakumar2011_WntSignalingPathway The secreted protein Wnt activates theheptahelical receptor Frizzled on nieghboring cells. Activation ofFrizzled causes the recruitment of additional membrane protein."
 standard: other
 tags:
 - signaling

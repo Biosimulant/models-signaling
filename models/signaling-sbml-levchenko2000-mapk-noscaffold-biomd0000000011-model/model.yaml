@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Levchenko2000MapkNoscaffoldBiomd0000000011Model'
-description: MAPK cascade in solution (no scaffold) Description This model describes
-  a basic 3- stage Mitogen Activated Protein Kinase (MAPK) cascade in solution. This
-  cascade is typically expressed as RAF= =&gt;M
+description: "MAPK cascade in solution (no scaffold) Description This model describes a basic 3- stage Mitogen Activated Protein Kinase (MAPK) cascade in solution. This cascade is typically expressed as RAF= =&gt;M."
 standard: other
 tags:
 - signaling

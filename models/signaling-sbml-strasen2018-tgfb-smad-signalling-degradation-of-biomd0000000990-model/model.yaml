@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Strasen2018TgfbSmadSignallingDegradationOfBiomd0000000990Model'
-description: MOdel simulates 25pM ligand degradation kinetics as shown in Figure 4D
+description: "MOdel simulates 25pM ligand degradation kinetics as shown in Figure 4D. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

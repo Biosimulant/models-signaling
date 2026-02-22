@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Vernoux2011AuxinsignalingAuxinfluctuatingBiomd0000000352Model'
-description: 'This model is from the article: The auxin signalling network translates
-  dynamic input into robust patterning at the shoot apex. Vernoux T, Brunoud G, Farcot
-  E, Morin V, Van den Daele H, Legrand J, Oli'
+description: "This model is from the article: The auxin signalling network translates dynamic input into robust patterning at the shoot apex. Vernoux T, Brunoud G, Farcot E, Morin V, Van den Daele H, Legrand J, Oli."
 standard: other
 tags:
 - signaling

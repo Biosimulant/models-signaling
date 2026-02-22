@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Huang2014SystematicModelingForTheInsulinSiModel1912090001Model'
-description: This is a mathematical model is which is a combination of systemic models
-  for the insulin signaling network as mediated by insulin receptor substrate (IRS)
-  1 and 2.
+description: "This is a mathematical model is which is a combination of systemic models for the insulin signaling network as mediated by insulin receptor substrate (IRS) 1 and 2. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Kok2020IfnalphaInducedSignalingInHuh75CelBiomd0000000959Model'
-description: The proposed ODE model describes dynamics of IFNalpha-induced signaling
-  in Huh7.5 cells for a time scale up to 32 hours after stimulation with IFNalpha.
-  The model consists of an IFN receptor model, fo
+description: "The proposed ODE model describes dynamics of IFNalpha-induced signaling in Huh7.5 cells for a time scale up to 32 hours after stimulation with IFNalpha. The model consists of an IFN receptor model, fo."
 standard: other
 tags:
 - signaling

@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: General (COMBO_0005)'
-description: Signaling general comparative space with 2 models, configured as non-causal
-  co-simulation.
+description: "Signaling General (COMBO_0005) brings together bakshi2020_trunc_1, basak_cell_2, state_compare_mon in a comparative space to examine how general mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-signaling
   alias: bakshi2020_trunc_1

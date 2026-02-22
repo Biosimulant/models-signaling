@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Beard2005MitochondrialRespirationModel4151491057Model'
-description: 'This is the model described in the article: A biophysical model of the
-  mitochondrial respiratory system and oxidative phosphorylation. Beard DA. PLoS Comput
-  Biol. 2005 Sep;1(4):e36. Pubmed ID: 1616339'
+description: "This is the model described in the article: A biophysical model of the mitochondrial respiratory system and oxidative phosphorylation. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

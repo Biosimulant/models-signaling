@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Bachmann2011Jak2Stat5FeedbackcontrolBiomd0000000347Model'
-description: "This model is from the article: Division of labor by dual feedback regulators\
-  \ controls JAK2/STAT5 signaling over broad ligand range. Bachmann J, Raue A, Schilling\
-  \ M, B\xF6hm ME, Kreutz C, Kaschek D, Busc"
+description: "This model is from the article: Division of labor by dual feedback regulators controls JAK2/STAT5 signaling over broad ligand range. Bachmann J, Raue A, Schilling M, B\u00f6hm ME, Kreutz C, Kaschek D, Busc."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Lemon2003Ca2dynamicsModel1006230039Model'
-description: 'This a model from the article: Metabotropic receptor activation, desensitization
-  and sequestration-I: modellingcalcium and inositol 1,4,5-trisphosphate dynamics
-  following receptor activation. Lemon G,'
+description: "This a model from the article: Metabotropic receptor activation, desensitization and sequestration-I: modellingcalcium and inositol 1,4,5-trisphosphate dynamics following receptor activation. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: MartinezGuimera2017GenericRedoxSignallingMoModel1710260000Model'
-description: 'Martinez-Guimera2017 - Generic redox signalling model without negative
-  regulation (Model 1) This model is described in the article: ''Molecular habituation''
-  as a potential mechanism of gradual homeosta'
+description: "Martinez-Guimera2017 - Generic redox signalling model without negative regulation (Model 1) This model is described in the article: 'Molecular habituation' as a potential mechanism of gradual homeosta. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

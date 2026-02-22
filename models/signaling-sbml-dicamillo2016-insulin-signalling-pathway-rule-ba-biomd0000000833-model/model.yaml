@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Dicamillo2016InsulinSignallingPathwayRuleBaBiomd0000000833Model'
-description: 'Barbara Di Camillo, Azzurra Carlon, Federica Eduati & Gianna Maria Toffolo.
-  A rule-based model of insulin signalling pathway. BMC Systems Biology 10, 1 (2016).
-  The insulin signalling pathway (ISP) is '
+description: "Barbara Di Camillo, Azzurra Carlon, Federica Eduati & Gianna Maria Toffolo. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

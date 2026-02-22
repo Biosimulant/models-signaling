@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Heiland2019NadPathwayModelAnalysingTheImpaModel1905220001Model'
-description: This is a detailed model of NAD biosynthesis and consumption representing
-  pathway variances across kingdoms.
+description: "This is a detailed model of NAD biosynthesis and consumption representing pathway variances across kingdoms. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

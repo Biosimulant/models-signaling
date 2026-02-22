@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: DuttaRoy2015OpeningOfTheMultipleAmpaRecepBiomd0000000569Model'
-description: 'Dutta-Roy2015 - Opening of the multiple AMPAreceptor conductance states
-  This model is described in the article: Ligand-dependent opening of the multiple
-  AMPA receptor conductance States: a concerted m'
+description: "Dutta-Roy2015 - Opening of the multiple AMPAreceptor conductance states This model is described in the article: Ligand-dependent opening of the multiple AMPA receptor conductance States: a concerted m. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

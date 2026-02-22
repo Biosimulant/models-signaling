@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Sizek2019Pi3kGrowthCellcycleApoptosisModel2006170002Model'
-description: This 89-node Boolean model of mammalian growth factor signaling can reproduce
-  oscillations in PI3K signaling in cycling cells, and links these oscillations to
-  the regulatory networks that drive each p
+description: "This 89-node Boolean model of mammalian growth factor signaling can reproduce oscillations in PI3K signaling in cycling cells, and links these oscillations to the regulatory networks that drive each p. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

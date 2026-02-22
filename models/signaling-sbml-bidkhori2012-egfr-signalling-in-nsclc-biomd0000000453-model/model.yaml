@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Bidkhori2012EgfrSignallingInNsclcBiomd0000000453Model'
-description: Bidkhori2012 - EGFR signalling in NSCLC The paper describes and compares
-  two models on EGFR signalling between normal and NSCLC cells. Moreover, it is shown
-  that ERK (MAPK), STAT and Akt factor's acti
+description: "Bidkhori2012 - EGFR signalling in NSCLC The paper describes and compares two models on EGFR signalling between normal and NSCLC cells. Moreover, it is shown that ERK (MAPK), STAT and Akt factor's acti."
 standard: other
 tags:
 - signaling

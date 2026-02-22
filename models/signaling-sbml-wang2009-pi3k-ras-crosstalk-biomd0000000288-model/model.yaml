@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Wang2009Pi3kRasCrosstalkBiomd0000000288Model'
-description: 'This model is from the article: PI3K-dependent cross-talk interactions
-  converge with Ras as quantifiable inputs integrated by Erk. Wang CC, Cirit M, Haugh
-  JM Mol. Syst. Biol. 2009;5:246. 19225459 , Ab'
+description: "This model is from the article: PI3K-dependent cross-talk interactions converge with Ras as quantifiable inputs integrated by Erk. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Regan2022MechanosensitiveEmtModelModel2208050001Model'
-description: This file contains a 136-node modular Boolean network model of EMT triggered
-  by biomechanical and growth signaling crosstalk, linked to a published network of
-  epithelial contact inhibition, proliferat
+description: "This file contains a 136-node modular Boolean network model of EMT triggered by biomechanical and growth signaling crosstalk, linked to a published network of epithelial contact inhibition, proliferat. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

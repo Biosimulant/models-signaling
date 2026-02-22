@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Markevich2004MapkPhosphorandommmBiomd0000000029Model'
-description: The model corresponds to the schema 3 of Markevich et al 2004, as described
-  in the figure 2 and the supplementary table S3, and modelled using Michaelis-Menten
-  like kinetics. Phosphorylations follow d
+description: "The model corresponds to the schema 3 of Markevich et al 2004, as described in the figure 2 and the supplementary table S3, and modelled using Michaelis-Menten like kinetics. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

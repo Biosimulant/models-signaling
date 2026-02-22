@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Radulescu2008NfBHierarchy163446Model7743576806Model'
-description: "Radulescu2008 - NF-\u03BAB hierarchy \u2133(16,34,46) This is a model\
-  \ of NF-\u03BAB pathway functioning from hierarchy of models of decreasing complexity,\
-  \ created to demonstrate application of model reduction method"
+description: "Radulescu2008 - NF-\u03baB hierarchy \u2133(16,34,46) This is a model of NF-\u03baB pathway functioning from hierarchy of models of decreasing complexity, created to demonstrate application of model reduction method. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

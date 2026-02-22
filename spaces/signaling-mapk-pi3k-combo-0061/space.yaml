@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Mapk Pi3K (COMBO_0061)'
-description: Signaling mapk pi3k comparative space with 4 models, configured as non-causal
-  co-simulation.
+description: "Signaling Mapk Pi3K (COMBO_0061) assembles markevich2004_ma_1, markevich2004_ma_2, markevich2004_ma_3 as a comparative composed simulation to examine how mapk pi3k mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-signaling
   alias: markevich2004_ma_1

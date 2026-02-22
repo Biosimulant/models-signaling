@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Wei2011MlcactivationpathwayEndothelialpermeabiModel1102210000Model'
-description: 'This model is from the article: An Integrated Mathematical Model of
-  Thrombin-, Histamine-and VEGF-Mediated Signalling in Endothelial Permeability. Wei
-  X, Han B, Zhang J, Liu X, Tan C, Jiang Y, Low B, '
+description: "This model is from the article: An Integrated Mathematical Model of Thrombin-, Histamine-and VEGF-Mediated Signalling in Endothelial Permeability. Wei X, Han B, Zhang J, Liu X, Tan C, Jiang Y, Low B,."
 standard: other
 tags:
 - signaling

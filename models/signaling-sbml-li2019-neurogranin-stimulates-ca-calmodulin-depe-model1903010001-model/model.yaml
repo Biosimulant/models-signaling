@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Li2019NeurograninStimulatesCaCalmodulinDepeModel1903010001Model'
-description: Calmodulin sits at the center of molecular mechanisms underlying learning
-  and memory. Its complex, and sometimes opposite, influences via the binding to various
-  proteins are yet to be fully understood
+description: "Calmodulin sits at the center of molecular mechanisms underlying learning and memory. Its complex, and sometimes opposite, influences via the binding to various proteins are yet to be fully understood."
 standard: other
 tags:
 - signaling

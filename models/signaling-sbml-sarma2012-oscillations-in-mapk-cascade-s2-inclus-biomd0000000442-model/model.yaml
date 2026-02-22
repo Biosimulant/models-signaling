@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Sarma2012OscillationsInMapkCascadeS2InclusBiomd0000000442Model'
-description: Sarma2012 - Oscillations in MAPK cascade (S2), inclusion of external
-  signalling module Two plausible designs (S1 and S2) of coupled positive and negative
-  feedback loops of MAPK cascade has been descri
+description: "Sarma2012 - Oscillations in MAPK cascade (S2), inclusion of external signalling module Two plausible designs (S1 and S2) of coupled positive and negative feedback loops of MAPK cascade has been descri. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

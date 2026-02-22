@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Maurya2005GtpasecycleReducedorderBiomd0000000085Model'
-description: 'This model is according to the paper Reduced-order modeling of biochemical
-  networks: application to the GTPase-cycle signalling module by Maurya et al 2006.The
-  figure 4c is reproduced by Copasi 4.0.19'
+description: "This model is according to the paper Reduced-order modeling of biochemical networks: application to the GTPase-cycle signalling module by Maurya et al 2006.The figure 4c is reproduced by Copasi 4.0.19. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

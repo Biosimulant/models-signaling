@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Chan2004TcellReceptorActivationBiomd0000000120Model'
-description: 'The model reproduces Fig 3a of the paper. Please note that the authors
-  mention that they used a value of 2 for n, n being the power in the positive feedback
-  function for kinase autocatalysis, however '
+description: "The model reproduces Fig 3a of the paper. Please note that the authors mention that they used a value of 2 for n, n being the power in the positive feedback function for kinase autocatalysis, however."
 standard: other
 tags:
 - signaling

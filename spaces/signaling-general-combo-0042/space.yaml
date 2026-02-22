@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: General (COMBO_0042)'
-description: Signaling general comparative space with 3 models, configured as non-causal
-  co-simulation.
+description: "Signaling General (COMBO_0042) assembles konrath2023_geno_1, lee2003_roles_2, lemaire2004_role_3 as a comparative composed simulation to examine how general mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-signaling
   alias: konrath2023_geno_1

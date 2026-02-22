@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Bhalla2004Pka2003Model9079740062Model'
-description: This model consists of receptor-ligand interaction, G-protein activation,
-  Adenylyl cyclase mediated formation of cAMP and activation of PKA in the neuron.
-  Demonstration programs using this model descr
+description: "This model consists of receptor-ligand interaction, G-protein activation, Adenylyl cyclase mediated formation of cAMP and activation of PKA in the neuron. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

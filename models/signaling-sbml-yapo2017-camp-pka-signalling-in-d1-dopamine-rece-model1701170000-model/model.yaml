@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Yapo2017CampPkaSignallingInD1DopamineReceModel1701170000Model'
-description: 'Yapo2017- cAMP/PKA signalling in D1 dopamine receptor expressing medium-spiny
-  neurons This model is described in the article: Detection of phasic dopamine by
-  D1 and D2 striatal medium spiny neurons. Y'
+description: "Yapo2017- cAMP/PKA signalling in D1 dopamine receptor expressing medium-spiny neurons This model is described in the article: Detection of phasic dopamine by D1 and D2 striatal medium spiny neurons. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

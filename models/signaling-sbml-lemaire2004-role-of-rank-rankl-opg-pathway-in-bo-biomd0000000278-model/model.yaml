@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Lemaire2004RoleOfRankRanklOpgPathwayInBoBiomd0000000278Model'
-description: 'This a model from the article: Modeling the interactions between osteoblast
-  and osteoclast activities in bone remodeling. Lemaire V, Tobin FL, Greller LD, Cho
-  CR, Suva LJ. J Theor Biol. 2004 Aug 7;229'
+description: "This a model from the article: Modeling the interactions between osteoblast and osteoclast activities in bone remodeling. Lemaire V, Tobin FL, Greller LD, Cho CR, Suva LJ."
 standard: other
 tags:
 - signaling

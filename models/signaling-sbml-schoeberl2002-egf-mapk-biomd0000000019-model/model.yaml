@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Schoeberl2002EgfMapkBiomd0000000019Model'
-description: Schoeberl2002 - EGF MAPK Computational model that offers an integrated
-  quantitative, dynamic, and topological representation of intracellular signal networks,
-  based on known components of epidermal gr
+description: "Schoeberl2002 - EGF MAPK Computational model that offers an integrated quantitative, dynamic, and topological representation of intracellular signal networks, based on known components of epidermal gr. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

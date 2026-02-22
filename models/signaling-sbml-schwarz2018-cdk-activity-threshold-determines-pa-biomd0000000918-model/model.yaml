@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Schwarz2018CdkActivityThresholdDeterminesPaBiomd0000000918Model'
-description: At the restriction point (R), mammalian cells irreversibly commit to
-  divide. R has been viewed as a point in G1 that is passed when growth factor signaling
-  initiates a positive feedback loop of Cdk ac
+description: "At the restriction point (R), mammalian cells irreversibly commit to divide. R has been viewed as a point in G1 that is passed when growth factor signaling initiates a positive feedback loop of Cdk ac."
 standard: other
 tags:
 - signaling

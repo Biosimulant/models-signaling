@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Kolodkin2013NuclearReceptorMediatedCortisolBiomd0000000576Model'
-description: 'Kolodkin2013 - Nuclear receptor-mediatedcortisol signalling network
-  This model is described in the article: Optimization of stress response through
-  the nuclear receptor-mediated cortisol signalling ne'
+description: "Kolodkin2013 - Nuclear receptor-mediatedcortisol signalling network This model is described in the article: Optimization of stress response through the nuclear receptor-mediated cortisol signalling ne. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

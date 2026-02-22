@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Adlung2021CellToCellVariabilityInJak2StatBiomd0000001077Model'
-description: A mathematical model for cell-to-cell variability in JAK2/STAT5 pathway
-  components and cytoplasmic volumes defines survival threshold in erythroid progenitor
-  cells
+description: "A mathematical model for cell-to-cell variability in JAK2/STAT5 pathway components and cytoplasmic volumes defines survival threshold in erythroid progenitor cells. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

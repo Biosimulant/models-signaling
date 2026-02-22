@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Nakakuki2010CellfatedecisionMechanisticBiomd0000000250Model'
-description: This mechanistic model describes the activation of immediate early genes
-  such as cFos after EGF or heregulin (HRG) stimulation of the MAPK pathway. Phosphorylated
-  cFos is a key transcription factor tr
+description: "This mechanistic model describes the activation of immediate early genes such as cFos after EGF or heregulin (HRG) stimulation of the MAPK pathway. Phosphorylated cFos is a key transcription factor tr."
 standard: other
 tags:
 - signaling

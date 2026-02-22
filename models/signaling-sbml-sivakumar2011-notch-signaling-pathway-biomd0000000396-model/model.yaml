@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Sivakumar2011NotchSignalingPathwayBiomd0000000396Model'
-description: Sivakumar2011 - Notch Signaling Pathway Notch is a transmembrane receptor
-  that mediates local cell-cell communication and coordinates a signaling cascade.
-  It plays a key role in modulating cell fate d
+description: "Sivakumar2011 - Notch Signaling Pathway Notch is a transmembrane receptor that mediates local cell-cell communication and coordinates a signaling cascade. It plays a key role in modulating cell fate d."
 standard: other
 tags:
 - signaling

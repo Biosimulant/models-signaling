@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Blackwell2019MechanisticModelOfSignalingPatModel2006170003Model'
-description: '&lt;notes xmlns=&quot;http://www.sbml.org/sbml/level2/version4&quot;&gt;
-  &lt;body xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;p&gt;D1_Gq Pathway&lt;/p&gt;
-  &lt;/body&gt; &lt;/notes&gt;'
+description: "&lt;notes xmlns=&quot;http://www.sbml.org/sbml/level2/version4&quot;&gt; &lt;body xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;p&gt;D1_Gq Pathway&lt;/p&gt; &lt;/body&gt; &lt;/notes&gt;. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

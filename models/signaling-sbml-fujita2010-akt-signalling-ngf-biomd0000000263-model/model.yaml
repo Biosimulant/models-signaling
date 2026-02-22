@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Fujita2010AktSignallingNgfBiomd0000000263Model'
-description: 'NGF dependent Akt pathway model made by Kazuhiro A. Fujita. This is
-  the NGF dependent Akt pathway model described in: Decoupling of receptor and downstream
-  signals in the Akt pathway by its low-pass f'
+description: "NGF dependent Akt pathway model made by Kazuhiro A. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

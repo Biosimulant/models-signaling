@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Sivakumar2011EgfReceptorSignalingPathwayBiomd0000000394Model'
-description: Sivakumar2011 - EGF Receptor Signaling Pathway EGFR belongs to the human
-  epidermal receptor (HER) family of receptor tyrosine kinases, which consists of
-  four closely related receptors (EGFR (HER1, erb
+description: "Sivakumar2011 - EGF Receptor Signaling Pathway EGFR belongs to the human epidermal receptor (HER) family of receptor tyrosine kinases, which consists of four closely related receptors (EGFR (HER1, erb. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

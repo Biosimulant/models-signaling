@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Komarova2005TheoreticalframeworkBasicarchitectBiomd0000000125Model'
-description: This model according to the paper A Theoretical Framework for Specificity
-  in Cell Signalling The model is 'basic architecture' of Figure2A. Figure2B, Figure2C
-  have been reproduced by MathSBML. The rep
+description: "This model according to the paper A Theoretical Framework for Specificity in Cell Signalling The model is 'basic architecture' of Figure2A. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

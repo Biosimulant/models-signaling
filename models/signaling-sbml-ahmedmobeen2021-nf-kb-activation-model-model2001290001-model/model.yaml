@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Ahmedmobeen2021NfKbActivationModelModel2001290001Model'
-description: NF-kappaB Activation Model includes the activation of both NFKB1:RELA
-  and NFKB2:RELB for Canonical and Non-Canonical Pathway respectively.The model includes
-  the pathway model integrated with post-tran
+description: "NF-kappaB Activation Model includes the activation of both NFKB1:RELA and NFKB2:RELB for Canonical and Non-Canonical Pathway respectively.The model includes the pathway model integrated with post-tran. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

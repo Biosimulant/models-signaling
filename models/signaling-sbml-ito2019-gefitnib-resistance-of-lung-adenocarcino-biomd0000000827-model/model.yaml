@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Ito2019GefitnibResistanceOfLungAdenocarcinoBiomd0000000827Model'
-description: The model is based on publication:Mathematical analysis of gefitinib
-  resistance of lung adenocarcinoma caused by MET amplificationAbstract:Gefitinib,
-  one of the tyrosine kinase inhibitors of epidermal
+description: "The model is based on publication:Mathematical analysis of gefitinib resistance of lung adenocarcinoma caused by MET amplificationAbstract:Gefitinib, one of the tyrosine kinase inhibitors of epidermal. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

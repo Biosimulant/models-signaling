@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Middleton2012GibberellinsignallingBiomd0000000422Model'
-description: "This model is from the article: Mathematical modeling elucidates the\
-  \ role of transcriptional feedback in gibberellin signaling. Middleton AM , \xDA\
-  beda-Tom\xE1s S , Griffiths J , Holman T , Hedden P , Thoma"
+description: "This model is from the article: Mathematical modeling elucidates the role of transcriptional feedback in gibberellin signaling. Middleton AM , \u00dabeda-Tom\u00e1s S , Griffiths J , Holman T , Hedden P , Thoma."
 standard: other
 tags:
 - signaling

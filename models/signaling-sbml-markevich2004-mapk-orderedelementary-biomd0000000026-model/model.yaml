@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Markevich2004MapkOrderedelementaryBiomd0000000026Model'
-description: The model corresponds to the schemas 1 and 2 of Markevich et al 2004,
-  as described in the figure 1 and the supplementary table S1. Phosphorylations and
-  dephosphorylations follow distributive ordered k
+description: "The model corresponds to the schemas 1 and 2 of Markevich et al 2004, as described in the figure 1 and the supplementary table S1. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

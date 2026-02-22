@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Sible2007MitoticCellCycleMecanismInXenopusBiomd0000000942Model'
-description: Although not a traditional experimental 'method,' mathematical modeling
-  can provide a powerful approach for investigating complex cell signaling networks,
-  such as those that regulate the eukaryotic ce
+description: "Although not a traditional experimental 'method,' mathematical modeling can provide a powerful approach for investigating complex cell signaling networks, such as those that regulate the eukaryotic ce. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

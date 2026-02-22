@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: BrNnmark2013InsulinSignallingInHumanAdipocBiomd0000000448Model'
-description: "Br\xE4nnmark2013 - Insulin signalling in human adipocytes (normal condition)\
-  \ The paper describes insulin signalling in human adipocytes under normal and diabetic\
-  \ states using mathematical models based on"
+description: "Br\u00e4nnmark2013 - Insulin signalling in human adipocytes (normal condition) The paper describes insulin signalling in human adipocytes under normal and diabetic states using mathematical models based on. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

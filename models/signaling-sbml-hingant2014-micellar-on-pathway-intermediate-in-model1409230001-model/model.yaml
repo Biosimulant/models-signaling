@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Hingant2014MicellarOnPathwayIntermediateInModel1409230001Model'
-description: 'Hingant2014 - Micellar On-PathwayIntermediate in Prion Amyloid Formation
-  Hingant2014 - Micellar On-PathwayIntermediate in Prion Amyloid Formation Encoded
-  non-curated model. Issues: - Missing kinetic p'
+description: "Hingant2014 - Micellar On-PathwayIntermediate in Prion Amyloid Formation Hingant2014 - Micellar On-PathwayIntermediate in Prion Amyloid Formation Encoded non-curated model. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

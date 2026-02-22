@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Brannmark2010InsulinsignallingMifamodelBiomd0000000343Model'
-description: 'This model is from the article: Mass and information feedbacks through
-  receptor endocytosis govern insulin signaling as revealed using a parameter-free
-  modeling framework. Brannmark C, Palmer R, Glad '
+description: "This model is from the article: Mass and information feedbacks through receptor endocytosis govern insulin signaling as revealed using a parameter-free modeling framework. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

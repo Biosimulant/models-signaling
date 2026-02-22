@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Pepke2010FullCa2CamMcamkiiModel1001150000Model'
-description: 'This the full model from the article: A dynamic model of interactions
-  of Ca2+, calmodulin, and catalytic subunits of Ca2+/calmodulin-dependent protein
-  kinase II. Pepke S, Kinzer-Ursem T, Mihalas S, Ke'
+description: "This the full model from the article: A dynamic model of interactions of Ca2+, calmodulin, and catalytic subunits of Ca2+/calmodulin-dependent protein kinase II. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Yao2016CalciumSignalingModel1611150001Model'
-description: 'Yao2016_Calcium_Signaling This model is described in the article: Distinct
-  cellular states determine calcium signaling response Jason Yao, Anna Pilko, Roy
-  Wollman Molecular Systems Biology Abstract: T'
+description: "Yao2016_Calcium_Signaling This model is described in the article: Distinct cellular states determine calcium signaling response Jason Yao, Anna Pilko, Roy Wollman Molecular Systems Biology Abstract: T. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

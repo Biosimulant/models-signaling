@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Palini2011Minimal2FeedbackModelBiomd0000000325Model'
-description: 'This is the model of the minmal 2 feedback switch described in the article:
-  Synthetic conversion of a graded receptor signal into a tunable, reversible switch.
-  Santhosh Palani and Casim A. Sarkar, 201'
+description: "This is the model of the minmal 2 feedback switch described in the article: Synthetic conversion of a graded receptor signal into a tunable, reversible switch. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

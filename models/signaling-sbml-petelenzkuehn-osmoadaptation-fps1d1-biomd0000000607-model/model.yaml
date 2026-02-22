@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: PetelenzkuehnOsmoadaptationFps1d1Biomd0000000607Model'
-description: "J\xF6rg Schaber & Edda Klipp. Short-term volume and turgor regulation\
-  \ in yeast. Essays in Biochemistry 45 (2008). We provide an integrated dynamic view\
-  \ on a eukaryotic osmolyte system, linking signaling "
+description: "J\u00f6rg Schaber & Edda Klipp. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

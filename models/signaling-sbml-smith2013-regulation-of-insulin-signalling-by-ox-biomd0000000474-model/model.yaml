@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Smith2013RegulationOfInsulinSignallingByOxBiomd0000000474Model'
-description: Smith2013 - Regulation of Insulin Signalling by Oxidative Stress The
-  model describes insulin signalling (in rodent adipocytes), which includes in addition
-  to the core pathway, the transcriptional feed
+description: "Smith2013 - Regulation of Insulin Signalling by Oxidative Stress The model describes insulin signalling (in rodent adipocytes), which includes in addition to the core pathway, the transcriptional feed. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

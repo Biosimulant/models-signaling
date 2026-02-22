@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Neves2008RoleOfCellShapeAndSizeInControlBiomd0000000182Model'
-description: Neves2008 - Role of cell shape and size in controlling intracellular
-  signalling The role of cell shape and size in the flow of spatial information from
-  the cell surface receptor to downstream componen
+description: "Neves2008 - Role of cell shape and size in controlling intracellular signalling The role of cell shape and size in the flow of spatial information from the cell surface receptor to downstream componen. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

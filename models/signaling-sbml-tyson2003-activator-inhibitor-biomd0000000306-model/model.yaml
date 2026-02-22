@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Tyson2003ActivatorInhibitorBiomd0000000306Model'
-description: 'This is an SBML implementation the model of the activator inhibitor
-  oscillator (figure 2b) described in the article: Sniffers, buzzers, toggles and
-  blinkers: dynamics of regulatory and signaling pathw'
+description: "This is an SBML implementation the model of the activator inhibitor oscillator (figure 2b) described in the article: Sniffers, buzzers, toggles and blinkers: dynamics of regulatory and signaling pathw. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

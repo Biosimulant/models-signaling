@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Goldbeter2007SomitogenesisSwitchBiomd0000000275Model'
-description: This is the simple model without diffusion described in th epublication
-  Sharp developmental thresholds defined through bistability by antagonistic gradients
-  of retinoic acid and FGF signaling. Goldbet
+description: "This is the simple model without diffusion described in th epublication Sharp developmental thresholds defined through bistability by antagonistic gradients of retinoic acid and FGF signaling. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

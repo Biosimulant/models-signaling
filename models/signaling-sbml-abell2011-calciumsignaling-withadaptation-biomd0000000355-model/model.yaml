@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Abell2011CalciumsignalingWithadaptationBiomd0000000355Model'
-description: 'This model is from the article: Parallel adaptive feedback enhances
-  reliability of the Ca2+ signaling system. Abell E, Ahrends R, Bandara S, Park BO,
-  Teruel MN. Proc Natl Acad Sci U S A. 2011 Aug 15. '
+description: "This model is from the article: Parallel adaptive feedback enhances reliability of the Ca2+ signaling system. Abell E, Ahrends R, Bandara S, Park BO, Teruel MN."
 standard: other
 tags:
 - signaling

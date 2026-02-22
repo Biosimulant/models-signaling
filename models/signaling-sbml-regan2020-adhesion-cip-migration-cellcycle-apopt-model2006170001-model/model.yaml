@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Regan2020AdhesionCipMigrationCellcycleApoptModel2006170001Model'
-description: This 121-node Boolean regulatory network model that synthesizes mechanosensitive
-  signaling that links anchorage and matrix stiffness to proliferation and migration,
-  and cell density to contact inhibit
+description: "This 121-node Boolean regulatory network model that synthesizes mechanosensitive signaling that links anchorage and matrix stiffness to proliferation and migration, and cell density to contact inhibit. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

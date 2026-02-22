@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Jalil2015AtypicalProteinKinaseCIsoformsInModel1505130000Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Signaling Jalil2015Atypical Protein Kinase CIsoforms In Model1505130000Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1505130000. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - signaling

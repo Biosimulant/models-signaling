@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Amara2013PcnaUbiquitylationInTheActivationBiomd0000000475Model'
-description: Mechanistic model of the Post-Replication Repair (PRR), the pathway involved
-  in the bypass of DNA lesions induced by sunlight exposure and UV radiation. PRR
-  acts through two different mechanisms, acti
+description: "Mechanistic model of the Post-Replication Repair (PRR), the pathway involved in the bypass of DNA lesions induced by sunlight exposure and UV radiation. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

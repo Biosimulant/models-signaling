@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Novak2022MitoticKinaseOscillationBiomd0000001058Model'
-description: Bela Novak & John J. Tyson. Mitotic kinase oscillation governs the latching
-  of cell cycle switches. Current Biology 32, 12 (2022). In 1996, Kim Nasmyth1 proposed
-  that the eukaryotic cell cycle is an a
+description: "Bela Novak & John J. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

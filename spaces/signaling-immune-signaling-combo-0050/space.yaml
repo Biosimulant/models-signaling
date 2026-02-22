@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Immune Signaling (COMBO_0050)'
-description: Signaling immune signaling comparative space with 3 models, configured
-  as non-causal co-simulation.
+description: "Signaling Immune Signaling (COMBO_0050) assembles chaouiya2013_egf_1, collier1996_delt_2, dutta_roy2015_3 as a comparative composed simulation to examine how immune signaling mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-signaling
   alias: chaouiya2013_egf_1

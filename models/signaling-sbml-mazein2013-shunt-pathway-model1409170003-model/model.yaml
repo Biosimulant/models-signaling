@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Mazein2013ShuntPathwayModel1409170003Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Signaling Mazein2013Shunt Pathway Model1409170003Model represents signaling mazein2013 shunt pathway model1409170003 mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1409170003. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - signaling

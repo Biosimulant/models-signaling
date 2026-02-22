@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Soh2020SpatioTemporalMorphogenGradientAndBModel2012070002Model'
-description: This model couples BMP morphogen gradient formation with Smad signaling
-  in zebrafish and reproduces Fig.3B of the referenced paper. mBMP4 diffuses and forms
-  a morphogen gradient in the host tissue whe
+description: "This model couples BMP morphogen gradient formation with Smad signaling in zebrafish and reproduces Fig.3B of the referenced paper. mBMP4 diffuses and forms a morphogen gradient in the host tissue whe."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Yugi2014InsulinInducedSignallingPfklPhosphoBiomd0000000540Model'
-description: Yugi2014 - Insulin induced signalling (PFKLphosphorylation) - model 1
-  Insulin induces phosphorylation and activation of liver-type phosphofructokinase
-  1, which thereby controls a key reaction in glyco
+description: "Yugi2014 - Insulin induced signalling (PFKLphosphorylation) - model 1 Insulin induces phosphorylation and activation of liver-type phosphofructokinase 1, which thereby controls a key reaction in glyco. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

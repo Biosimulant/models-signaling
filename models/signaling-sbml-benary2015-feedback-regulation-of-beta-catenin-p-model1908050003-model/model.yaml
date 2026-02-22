@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Benary2015FeedbackRegulationOfBetaCateninPModel1908050003Model'
-description: It's a mathematical model studying feedback control of B-catenin pathway
-  by HOS and FWD1 using Lee2003 model as base.
+description: "It's a mathematical model studying feedback control of B-catenin pathway by HOS and FWD1 using Lee2003 model as base. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

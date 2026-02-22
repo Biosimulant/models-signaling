@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Strasen2018TgfbSmadSignallingClass2Biomd0000000999Model'
-description: "Model depicting class 2 signaling class observed upon stimulation with\
-  \ 100 pM TGF\u03B21."
+description: "Model depicting class 2 signaling class observed upon stimulation with 100 pM TGF\u03b21. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Immune Signaling (COMBO_0049)'
-description: Signaling immune signaling comparative space with 3 models, configured
-  as non-causal co-simulation.
+description: "Signaling Immune Signaling (COMBO_0049) organizes br_nnmark2013_1, br_nnmark2013_2, brown2004_ngf_3 into a comparative simulation setup to examine how immune signaling mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-signaling
   alias: br_nnmark2013_1

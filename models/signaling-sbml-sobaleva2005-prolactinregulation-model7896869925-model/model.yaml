@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Sobaleva2005ProlactinregulationModel7896869925Model'
-description: 'This a model from the article: Mathematical modelling of prolactin-receptor
-  interaction and the corollary for prolactin receptor gene expression in skin Soboleva
-  TK, Vetharaniam I, Nixon AJ, Montenegr'
+description: "This a model from the article: Mathematical modelling of prolactin-receptor interaction and the corollary for prolactin receptor gene expression in skin Soboleva TK, Vetharaniam I, Nixon AJ, Montenegr. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

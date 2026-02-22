@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Huarat2016StarvationInducedSerThrProteinKiModel1607210000Model'
-description: 'Huarat2016 -Starvation-induced Ser/Thrprotein kinase ArnS (Saci_1181)
-  (Model 14) This model is described in the article: ArnS, a kinase involved in starvation-induced
-  archaellum expression. Haurat MF,'
+description: "Huarat2016 -Starvation-induced Ser/Thrprotein kinase ArnS (Saci_1181) (Model 14) This model is described in the article: ArnS, a kinase involved in starvation-induced archaellum expression. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

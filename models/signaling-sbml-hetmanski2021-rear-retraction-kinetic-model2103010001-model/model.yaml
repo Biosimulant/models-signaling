@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Hetmanski2021RearRetractionKineticModel2103010001Model'
-description: Point models describing protein-protein signalling and membrane tension/contractility
-  leading to rear retraction.
+description: "Point models describing protein-protein signalling and membrane tension/contractility leading to rear retraction. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

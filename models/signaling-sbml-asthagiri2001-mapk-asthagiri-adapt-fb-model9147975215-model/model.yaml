@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Asthagiri2001MapkAsthagiriAdaptFbModel9147975215Model'
-description: This is a complex model to examine mechanisms that govern MAPK pathway
-  dynamics in Chinese hamster ovary (CHO) cell lines, particularly the role of adapter
-  targeted negative feedback mechanism in gene
+description: "This is a complex model to examine mechanisms that govern MAPK pathway dynamics in Chinese hamster ovary (CHO) cell lines, particularly the role of adapter targeted negative feedback mechanism in gene. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: EdnSignallingModelsModel1904170001Model'
-description: Elucidating essential kinases of endothelin signalling by logic modelling
-  of phosphoproteomics data
+description: "Elucidating essential kinases of endothelin signalling by logic modelling of phosphoproteomics data. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

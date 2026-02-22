@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Verlingue2016SignallingPathwayThatControlSModel1611180000Model'
-description: 'Verlingue2016 - Signalling pathway thatcontrol S-phase entry and geroconversion
-  - Boolean Model This model is described in the article: A comprehensive approach
-  to the molecular determinants of lifesp'
+description: "Verlingue2016 - Signalling pathway thatcontrol S-phase entry and geroconversion - Boolean Model This model is described in the article: A comprehensive approach to the molecular determinants of lifesp. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

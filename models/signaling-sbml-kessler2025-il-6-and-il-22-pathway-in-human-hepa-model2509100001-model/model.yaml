@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Kessler2025Il6AndIl22PathwayInHumanHepaModel2509100001Model'
-description: IL-6 and IL-22 pathway in human hepatocytes
+description: "Signaling Kessler2025Il6And Il22Pathway In Human Hepa Model2509100001Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL2509100001. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Bhalla2004EgfrMapkModel9085850385Model'
-description: Model of MAPK activation by EGFR in the synapse. Demonstration programs
-  using this model are available &lt;a href = 'http://www.ncbs.res.in/~bhalla/stochnet/demos.html''&gt;
-  here&lt;/a&gt;.&lt;br&gt;P
+description: "Model of MAPK activation by EGFR in the synapse. Demonstration programs using this model are available &lt;a href = 'http://www.ncbs.res.in/~bhalla/stochnet/demos.html''&gt; here&lt;/a&gt;.&lt;br&gt;P."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Sobotta2017Il6InducedJak1Stat3SignalingModel2307050001Model'
-description: Here we present a mathematical model of IL-6-induced JAK1-STAT3 signaling
-  that quantitatively links physiological IL-6 concentrations to the dynamics of IL-6-induced
-  signal transduction and expression
+description: "Here we present a mathematical model of IL-6-induced JAK1-STAT3 signaling that quantitatively links physiological IL-6 concentrations to the dynamics of IL-6-induced signal transduction and expression. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Besozzi2012OscillatoryRegimesInTheRasCampBiomd0000000478Model'
-description: Besozzi2012 - Oscillatory regimes in the Ras/cAMP/PKA pathway in S.cerevisiae
-  Mechanistic model of the Ras/cAMP/PKA in yeast S.cerevisiae. The Ras/cAMP/PKA pathway
-  plays a major role in the regulation
+description: "Besozzi2012 - Oscillatory regimes in the Ras/cAMP/PKA pathway in S.cerevisiae Mechanistic model of the Ras/cAMP/PKA in yeast S.cerevisiae. The Ras/cAMP/PKA pathway plays a major role in the regulation."
 standard: other
 tags:
 - signaling

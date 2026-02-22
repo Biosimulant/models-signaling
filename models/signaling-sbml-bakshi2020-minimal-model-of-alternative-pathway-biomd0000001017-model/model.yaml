@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Bakshi2020MinimalModelOfAlternativePathwayBiomd0000001017Model'
-description: This model is based on the publication:'Mathematical Modelling of Alternative
-  Pathway of Complement System'.Suruchi Bakshi, Fraser Cunningham, Eva-Maria Nichols,
-  Marta Biedzka-Sarek, Jessica Neisen, S
+description: "This model is based on the publication:'Mathematical Modelling of Alternative Pathway of Complement System'.Suruchi Bakshi, Fraser Cunningham, Eva-Maria Nichols, Marta Biedzka-Sarek, Jessica Neisen, S. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

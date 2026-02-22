@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Hermansen2015DenovoBiosynthesisOfPyrimidinesBiomd0000000590Model'
-description: 'Hermansen2015 - denovo biosynthesis of pyrimidines in yeast This model
-  is described in the article: Characterizing selective pressures on the pathway for
-  de novo biosynthesis of pyrimidines in yeast. '
+description: "Hermansen2015 - denovo biosynthesis of pyrimidines in yeast This model is described in the article: Characterizing selective pressures on the pathway for de novo biosynthesis of pyrimidines in yeast. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

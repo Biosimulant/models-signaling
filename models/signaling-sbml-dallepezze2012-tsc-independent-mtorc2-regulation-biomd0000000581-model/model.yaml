@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Dallepezze2012TscIndependentMtorc2RegulationBiomd0000000581Model'
-description: 'DallePezze2012 - TSC-independent mTORC2regulation This model is described
-  in the article: A dynamic network model of mTOR signaling reveals TSC-independent
-  mTORC2 regulation. Dalle Pezze P, Sonntag AG'
+description: "DallePezze2012 - TSC-independent mTORC2regulation This model is described in the article: A dynamic network model of mTOR signaling reveals TSC-independent mTORC2 regulation. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:
 - signaling

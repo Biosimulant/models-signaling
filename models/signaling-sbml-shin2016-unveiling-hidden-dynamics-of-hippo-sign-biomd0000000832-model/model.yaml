@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Signaling: Shin2016UnveilingHiddenDynamicsOfHippoSignBiomd0000000832Model'
-description: This is a mathematical model describing Hippo signalling pathway activity.
-  It includes descriptions of crosstalk with the Akt and ERK MAPK pathways; crosstalk
-  activity is described using complex regul
+description: "This is a mathematical model describing Hippo signalling pathway activity. It includes descriptions of crosstalk with the Akt and ERK MAPK pathways; crosstalk activity is described using complex regul."
 standard: other
 tags:
 - signaling

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Kubota2012InsulinactionAktpathwayModel1204060000Model'
+title: "Kubota2012_InsulinAction_AKTpathway"
 description: "This model is from the article: Temporal Coding of Insulin Action through Multiplexing of the AKT Pathway. Kubota H, Noguchi R, Toyoshima Y, Ozaki Y, Uda S, Watanabe K, Ogawa W, Kuroda S."
 standard: other
 tags:

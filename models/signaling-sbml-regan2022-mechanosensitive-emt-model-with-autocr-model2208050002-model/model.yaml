@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Regan2022MechanosensitiveEmtModelWithAutocrModel2208050002Model'
+title: "Regan2022 - Mechanosensitive EMT model with autocrine TGFbeta signaling"
 description: "This model is an expansion of the Regan2022 - Mechanosensitive EMT model (MODEL2208050001); it includes a TGF\u03b2 signaling module and autocrine signaling in mesenchymal cells. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

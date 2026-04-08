@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Goldbeter1991MinMitOscilBiomd0000000003Model'
+title: "Goldbeter1991 - Min Mit Oscil"
 description: "Goldbeter1991 - Min Mit Oscil Minimal cascade model for the mitotic oscillator involving cyclin and cdc2 kinase. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

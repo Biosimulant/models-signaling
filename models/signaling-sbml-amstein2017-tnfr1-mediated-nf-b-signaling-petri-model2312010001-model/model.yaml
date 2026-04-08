@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Amstein2017Tnfr1MediatedNfBSignalingPetriModel2312010001Model'
+title: "Amstein2017 - TNFR1-mediated Nf-κB signaling, Petri Net"
 description: "Signaling Amstein2017Tnfr1Mediated Nf BSignaling Petri Model2312010001Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL2312010001. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:

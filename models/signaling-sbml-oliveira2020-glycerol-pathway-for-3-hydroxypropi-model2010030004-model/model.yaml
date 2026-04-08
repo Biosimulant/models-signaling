@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Oliveira2020GlycerolPathwayFor3HydroxypropiModel2010030004Model'
+title: "Oliveira2020 - Glycerol pathway for 3-hydroxypropionate production from glucose"
 description: "Glycerol pathway for 3-hydroxypropionate production from glucose. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Perrett2014GnrhPulseErkActivityModel1509050002Model'
+title: "Perrett2014 - GnRH pulse, ERK activity"
 description: "Signaling Perrett2014Gnrh Pulse Erk Activity Model1509050002Model captures signaling perrett2014 gnrh pulse erk activity behavior in the context of signaling, sbml, biomodels_ebi using a biomodels_ebi-sourced O. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:

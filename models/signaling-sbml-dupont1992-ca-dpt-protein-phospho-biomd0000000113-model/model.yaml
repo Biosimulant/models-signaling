@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Dupont1992CaDptProteinPhosphoBiomd0000000113Model'
+title: "Dupont1992_Ca_dpt_protein_phospho"
 description: "Model reproduces Fig 4 of the paper. For fraction of phosphorylated protein, W_star, the model reproduces panel b in the same figure."
 standard: other
 tags:

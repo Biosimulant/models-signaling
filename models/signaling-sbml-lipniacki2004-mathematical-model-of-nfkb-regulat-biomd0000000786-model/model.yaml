@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Lipniacki2004MathematicalModelOfNfkbRegulatBiomd0000000786Model'
+title: "Lipniacki2004 - Mathematical model of NFKB regulatory module"
 description: "its a mathematical model studying impact of TNF on NFKB nuclear dynamics. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

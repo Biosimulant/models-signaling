@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Oliveira2020BetaAlaninePathwayFor3HydroxypModel2010030002Model'
+title: "Oliveira2020 - Beta-Alanine pathway for 3-hydroxypropionate production from glucose"
 description: "Beta-Alanine pathway for 3-hydroxypropionate production from glucose. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

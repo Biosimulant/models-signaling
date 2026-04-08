@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Ouyang2014PhotomorphogenicUvBSignallingNetwBiomd0000000545Model'
+title: "Ouyang2014 - photomorphogenic UV-B signalling network"
 description: "Ouyang2014 - photomorphogenic UV-B signallingnetwork This model is described in the article: Coordinated photomorphogenic UV-B signaling network captured by mathematical modeling. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

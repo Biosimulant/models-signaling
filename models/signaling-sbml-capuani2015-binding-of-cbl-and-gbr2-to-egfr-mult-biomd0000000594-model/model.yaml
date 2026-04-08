@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Capuani2015BindingOfCblAndGbr2ToEgfrMultBiomd0000000594Model'
+title: "Capuani2015 - Binding of Cbl and Gbr2 to EGFR (Multisite Phosphorylation Model - MPM)"
 description: "Fabrizio Capuani, Alexia Conte, Elisabetta Argenzio, Luca Marchetti, Corrado Priami, Simona Polo, Pier Paolo Di Fiore, Sara Sigismund & Andrea Ciliberto. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

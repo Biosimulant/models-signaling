@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Smallbone2015ForcedPathwayFeedbackModel1503180006Model'
+title: "Smallbone2015 - forced pathway feedback"
 description: "Signaling Smallbone2015Forced Pathway Feedback Model1503180006Model represents signaling smallbone2015 forced pathway feedback model1503180006 mechanisms from biomodels_ebi reference biomodels_ebi:MODEL15031800. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:

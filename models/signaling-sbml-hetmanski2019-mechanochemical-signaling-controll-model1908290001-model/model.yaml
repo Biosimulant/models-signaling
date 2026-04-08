@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Hetmanski2019MechanochemicalSignalingControllModel1908290001Model'
+title: "Hetmanski2019 - Mechanochemical signaling controlled rear retraction of migrating cell"
 description: "Signaling Hetmanski2019Mechanochemical Signaling Controll Model1908290001Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL1908290001), focused on signal. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:

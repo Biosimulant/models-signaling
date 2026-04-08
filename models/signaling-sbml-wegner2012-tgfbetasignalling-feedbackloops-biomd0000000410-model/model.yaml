@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Wegner2012TgfbetasignallingFeedbackloopsBiomd0000000410Model'
+title: "Wegner2012_TGFbetaSignalling_FeedbackLoops"
 description: "This model is from the article: Dynamics and feedback loops in the transforming growth factor \u03b2 signaling pathway. Wegner K, Bachmann A, Schad JU, Lucarelli P, Sahle S, Nickel P, Meyer C, Klingm\u00fcller."
 standard: other
 tags:

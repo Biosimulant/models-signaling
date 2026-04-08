@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Xu2005BloodCoagulationModelOfActivatedFactModel1806130002Model'
+title: "Xu2005 - Blood Coagulation Model of Activated Factors of Extrinsic Pathway and TFPI"
 description: "System of ODEs to describe the behaviour of the activated factors of the extrinsic pathway of blood coagulation with the addition of the TFPI-Xa complex. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

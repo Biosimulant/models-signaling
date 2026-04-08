@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Smith2010ResponseOfFoxoTranscriptionFactorsBiomd0000000705Model'
+title: "Smith2010 - Response of FOXO Transcription Factors to Post-Translational Modifications Made by Ageing-Related Signalling Pathways"
 description: "Graham R. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

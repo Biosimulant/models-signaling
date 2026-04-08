@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: DualGProteinModelModel2306210001Model'
+title: "Dual G protein Model"
 description: "A model of G protein activation using ordinary differential equations. Used to explore how the presence of two G proteins each with different properties can alter signalling output."
 standard: other
 tags:

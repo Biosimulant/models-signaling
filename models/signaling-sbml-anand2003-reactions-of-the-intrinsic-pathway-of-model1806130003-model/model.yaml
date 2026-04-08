@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Anand2003ReactionsOfTheIntrinsicPathwayOfModel1806130003Model'
+title: "Anand2003 - Reactions of the Intrinsic Pathway of Blood Coagulation with Platelet Activation"
 description: "Inhomogeneous blood coagulation model. Encoded model contains reactions of the intrinsic pathway with platelet activation."
 standard: other
 tags:

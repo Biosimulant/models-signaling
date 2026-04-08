@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Gray2016TheAktSwitchModelBiomd0000000854Model'
+title: "Gray2016 - The Akt switch model"
 description: "This is a simple, linear, four-compartment ordinary differential equation (ODE) model Akt activation that tracks both the phosphorylation state and the physical location (cytosol, plasma membrane) of. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

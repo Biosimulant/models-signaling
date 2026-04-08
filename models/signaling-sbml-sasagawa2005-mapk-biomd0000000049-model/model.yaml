@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Sasagawa2005MapkBiomd0000000049Model'
+title: "Sasagawa2005_MAPK"
 description: "This a model from the article: Prediction and validation of the distinct dynamics of transient and sustained ERK activation. Sasagawa S, Ozaki Y, Fujita K, Kuroda S Nat."
 standard: other
 tags:

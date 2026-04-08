@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Gerard2013Model3EmbryonicTypeEukaryoticCelBiomd0000000938Model'
+title: "Gerard2013 - Model 3 - Embryonic-type eukaryotic Cell Cycle regulation based on negative feedback between Cdk/cyclin and APC and competitive inhibition between Cdk/cyclin and securin for polyubiquitylation_1"
 description: "The eukaryotic cell cycle is characterized by alternating oscillations in the activities of cyclin-dependent kinase (Cdk) and the anaphase-promoting complex (APC). It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

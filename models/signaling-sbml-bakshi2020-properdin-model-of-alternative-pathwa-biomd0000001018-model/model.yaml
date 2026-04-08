@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Bakshi2020ProperdinModelOfAlternativePathwaBiomd0000001018Model'
+title: "Bakshi2020 - Properdin model of alternative pathway of complement system"
 description: "This model is based on the publication:'Mathematical Modelling of Alternative Pathway of Complement System'.Suruchi Bakshi, Fraser Cunningham, Eva-Maria Nichols, Marta Biedzka-Sarek, Jessica Neisen, S. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

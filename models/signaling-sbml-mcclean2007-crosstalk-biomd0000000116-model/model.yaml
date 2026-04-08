@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Mcclean2007CrosstalkBiomd0000000116Model'
+title: "McClean2007_CrossTalk"
 description: "This model encoded according to the paper Cross-talk and decision making in MAP kinase pathways. Supplementary Figure 2 has been reproduced by COPASI4.0.20 (development) using parameter scan method."
 standard: other
 tags:

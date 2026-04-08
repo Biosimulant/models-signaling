@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Wehling2022AlternativeModelForYapTazPhosphModel2202080001Model'
+title: "Wehling2022 - Alternative model for YAP/TAZ phosphorylation and transition between nuclear and cytoplasmic localization"
 description: "Signaling Wehling2022Alternative Model For Yap Taz Phosph Model2202080001Model captures core biological behavior in the context of signaling, sbml, biomodels_ebi using a biomodels_ebi-sourced OTHER model. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:

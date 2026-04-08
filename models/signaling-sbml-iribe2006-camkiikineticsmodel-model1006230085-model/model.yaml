@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Iribe2006CamkiikineticsmodelModel1006230085Model'
+title: "Iribe2006_CaMKIIkineticsModel"
 description: "This a model from the article: Modulatory effect of calmodulin-dependent kinase II (CaMKII) on sarcoplasmicreticulum Ca2+ handling and interval-force relations: a modelling study. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

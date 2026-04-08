@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Maeda2006MyosinphosphorylationBiomd0000000088Model'
+title: "Maeda2006_MyosinPhosphorylation"
 description: "The model reproduces Fig 2B, D, F, and 2H. The dynamics correspond to a stimulus of 1 U/ml of thrombin which is equal to 0.01 uM."
 standard: other
 tags:

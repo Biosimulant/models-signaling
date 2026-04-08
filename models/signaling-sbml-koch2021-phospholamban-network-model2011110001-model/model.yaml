@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Koch2021PhospholambanNetworkModel2011110001Model'
+title: "Koch2021 - Phospholamban_network"
 description: "Ordinary differential equation model of the micropeptide phospholamban and the control of its phosphorylation status at serine 16 in the context of beta-adrenergic stimulation. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

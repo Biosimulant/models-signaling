@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Almeida2019TranscriptionBasedCircadianMechanBiomd0000000839Model'
+title: "Almeida2019 - Transcription-based circadian mechanism controls the duration of molecular clock states in response to signaling inputs"
 description: "This is a transcriptional-based mathematical model centered on linear combinations of the clock controlled elements (CCEs): E-box, R-box and D-box, used to identify the essential interactions needed t. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

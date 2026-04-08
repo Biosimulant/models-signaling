@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Strasen2018TgfbSmadSignallingRestimulationWBiomd0000000995Model'
+title: "Strasen2018 - TGFb SMAD Signalling - Restimulation with 5pM TGFb at 8hr"
 description: "Restimulation with 5pM TGF\u03b2 at 8 hrs, shown in Figure 4F. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

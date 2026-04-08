@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Benary2019ControllingNfkbDynamicsByBTrcpBiomd0000000794Model'
+title: "Benary2019 - Controlling NFKB dynamics by B-TrCP"
 description: "its a mathematical model studying impact of b_TrCP on NFKB nuclear dynamics. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

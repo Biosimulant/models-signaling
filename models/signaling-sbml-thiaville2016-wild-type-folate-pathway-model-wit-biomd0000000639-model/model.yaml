@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Thiaville2016WildTypeFolatePathwayModelWitBiomd0000000639Model'
+title: "Thiaville2016 - Wild type folate pathway model with proposed PanB reaction"
 description: "Thiaville2016 - Wild type folate pathwaymodel with proposed PanB reaction This is a wild type E. coli model, andis one amongst the three models described in the paper."
 standard: other
 tags:

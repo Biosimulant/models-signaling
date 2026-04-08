@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Padala2017ErkPi3kAktAndWntSignallingNetwoBiomd0000000654Model'
+title: "Padala2017- ERK, PI3K/Akt and Wnt signalling network (Ras mutated)"
 description: "Padala2017- ERK, PI3K/Akt and Wnt signallingnetwork (Ras mutated) Crosstalk model of the ERK, Wnt and Aktsignalling pathways with Ras mutation. This model is described in the article: Cancerous pertur."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Lemaire2004RoleOfRankRanklOpgPathwayInBoBiomd0000000278Model'
+title: "Lemaire2004 - Role of RANK/RANKL/OPG pathway in bone remodelling process"
 description: "This a model from the article: Modeling the interactions between osteoblast and osteoclast activities in bone remodeling. Lemaire V, Tobin FL, Greller LD, Cho CR, Suva LJ."
 standard: other
 tags:

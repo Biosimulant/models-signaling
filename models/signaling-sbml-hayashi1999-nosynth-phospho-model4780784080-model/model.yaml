@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Hayashi1999NosynthPhosphoModel4780784080Model'
+title: "Hayashi1999_NOSynth_Phospho"
 description: "This model features the phosphorylation of rat brain neuronal NOS expressed in E. coli or Sf9 cells, which leads to a decrease in Vmax of the phosphorylated enzyme, with little change of both the Km f."
 standard: other
 tags:

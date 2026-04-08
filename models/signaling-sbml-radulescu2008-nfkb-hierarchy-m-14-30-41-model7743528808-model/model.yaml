@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Radulescu2008NfkbHierarchyM143041Model7743528808Model'
+title: "Radulescu2008_NFkB_hierarchy_M_14_30_41"
 description: "NFkB model M(14,30,41) This is a model of NFkB pathway functioning from hierarchy of models of decreasing complexity,created to demonstrate application of model reduction methods proposed in Radulescu. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

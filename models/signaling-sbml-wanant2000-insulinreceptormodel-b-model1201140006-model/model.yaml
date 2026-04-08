@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Wanant2000InsulinreceptormodelBModel1201140006Model'
+title: "Wanant2000_InsulinReceptorModel_B"
 description: "This a model from the article: Insulin receptor binding kinetics: modeling and simulation studies. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

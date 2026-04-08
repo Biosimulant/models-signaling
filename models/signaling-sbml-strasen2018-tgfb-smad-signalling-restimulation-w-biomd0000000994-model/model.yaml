@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Strasen2018TgfbSmadSignallingRestimulationWBiomd0000000994Model'
+title: "Strasen2018 - TGFb SMAD Signalling - Restimulation with 5pM TGFb at 3hr"
 description: "Signaling Strasen2018Tgfb Smad Signalling Restimulation WBiomd0000000994Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:BIOMD0000000994. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:

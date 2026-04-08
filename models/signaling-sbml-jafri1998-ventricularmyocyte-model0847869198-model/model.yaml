@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Jafri1998VentricularmyocyteModel0847869198Model'
+title: "Jafri1998_VentricularMyocyte"
 description: "This a model from the article: Cardiac Ca2+ dynamics: the roles of ryanodine receptor adaptation andsarcoplasmic reticulum load. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

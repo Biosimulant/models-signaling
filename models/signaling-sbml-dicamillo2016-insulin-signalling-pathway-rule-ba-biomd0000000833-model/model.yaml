@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Dicamillo2016InsulinSignallingPathwayRuleBaBiomd0000000833Model'
+title: "DiCamillo2016 - Insulin signalling pathway - Rule-based model"
 description: "Barbara Di Camillo, Azzurra Carlon, Federica Eduati & Gianna Maria Toffolo. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

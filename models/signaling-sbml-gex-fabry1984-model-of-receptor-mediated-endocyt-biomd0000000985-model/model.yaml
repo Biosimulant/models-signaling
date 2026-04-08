@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: GexFabry1984ModelOfReceptorMediatedEndocytBiomd0000000985Model'
+title: "Gex-Fabry1984 - model of receptor-mediated endocytosis of EGF in BALB/c 3T3 cells"
 description: "We present a mathematical model for analyzing, simulating, and quantitating the dynamic and steady-state characteristics of receptor-mediated endocytosis. The basic processes considered by the model a."
 standard: other
 tags:

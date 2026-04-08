@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Dupeux2011AbareceptorDimerModel1202030000Model'
+title: "Dupeux2011_ABAreceptor_Dimer"
 description: "This model is from the article: A thermodynamic switch modulates abscisic acid receptor sensitivity. Dupeux F, Santiago J, Betz K, Twycross J, Park SY, Rodriguez L, Gonzalez-Guzman M, Jensen MR, Krasn."
 standard: other
 tags:

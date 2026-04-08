@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: PanrtkModelForSingleCellLineModel1708210000Model'
+title: "PanRTK model for single cell line"
 description: "Hass2017-PanRTK model for single cellline The model structure comprisesheterodimerization and receptor trafficking as described in detailin the article below. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

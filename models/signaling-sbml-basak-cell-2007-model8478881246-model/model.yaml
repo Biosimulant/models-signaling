@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: BasakCell2007Model8478881246Model'
+title: "Basak_Cell_2007"
 description: "This SBML file is a translation of a MatLab model utilized inthe following paper. It describes the interplay of IkB and P100 negative feedback tocontrol the cellular localization of the NFkB transcrip."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Deback2013PancreasDifferentiationPatterningIModel2011260001Model'
+title: "deBack2013 - Pancreas differentiation patterning in spatio-temporal multicellular model"
 description: "This model reproduces a solution (at a=1, b=20.8, eta=1e-4) of the parameter scan in Fig. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

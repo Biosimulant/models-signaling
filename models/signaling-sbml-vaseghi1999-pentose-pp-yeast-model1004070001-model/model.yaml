@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Vaseghi1999PentosePpYeastModel1004070001Model'
+title: "Vaseghi1999_Pentose_PP_yeast"
 description: "Model as described in: In vivo dynamics of the pentose phosphate pathway in Saccharomyces cerevisiae Vaseghi S, Baumeister A, Rizzi M, Reuss M. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

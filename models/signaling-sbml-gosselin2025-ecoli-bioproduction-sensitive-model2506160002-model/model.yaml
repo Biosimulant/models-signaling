@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Gosselin2025EcoliBioproductionSensitiveModel2506160002Model'
+title: "Gosselin2025 - Ecoli_bioproduction_sensitive"
 description: "Kinetic model for bioproduction via an acetyl-CoA sensitive pathway, as detailed in DOI 10.1101/2025.06.17.659982. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

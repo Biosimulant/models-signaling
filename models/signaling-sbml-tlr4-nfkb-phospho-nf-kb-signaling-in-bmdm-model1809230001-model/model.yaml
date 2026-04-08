@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Tlr4NfkbPhosphoNfKbSignalingInBmdmModel1809230001Model'
+title: "TLR4-NFkB-phospho-NF-kB signaling in BMDM"
 description: "The model was constructed to describe TLR4 induced NF-\u03baB activation in native bone marrow-derived macrophages. It included processes of ligand (lipopolysaccharide) recognition, formation of dimer rece."
 standard: other
 tags:

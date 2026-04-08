@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Signaling: Collier1996DeltaNotchIntercellularSignallingBiomd0000001047Model'
+title: "Collier1996 - Delta Notch intercellular signalling and lateral inhibition"
 description: "ODE model describing how slight variations in Notch and Delta cellular concentrations, through lateral inhibition, lead to cells with different states of differentiation. It can be used to explore signaling dynamics and compare pathway response across conditions."
 standard: other
 tags:

@@ -11,14 +11,13 @@ This version of the model is very close to the version described in the paper wi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-bray1993-chemotaxis-biomd0000000404-model
     alias: model
-    manifest_path: models/signaling-sbml-bray1993-chemotaxis-biomd0000000404-model/model.yaml
 ```
 
 ## Tags

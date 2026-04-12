@@ -11,14 +11,13 @@ Model of MAPK activation by EGFR in the synapse. Demonstration programs using th
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-bhalla2004-egfr-mapk-model9085850385-model
     alias: model
-    manifest_path: models/signaling-sbml-bhalla2004-egfr-mapk-model9085850385-model/model.yaml
 ```
 
 ## Tags

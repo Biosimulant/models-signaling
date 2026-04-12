@@ -11,14 +11,13 @@ Cellière2011 - Plasticity of TGF-β Signalling Transforming growth factor beta 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-celli-re2011-plasticity-of-tgf-signalling-biomd0000000600-model
     alias: model
-    manifest_path: models/signaling-sbml-celli-re2011-plasticity-of-tgf-signalling-biomd0000000600-model/model.yaml
 ```
 
 ## Tags

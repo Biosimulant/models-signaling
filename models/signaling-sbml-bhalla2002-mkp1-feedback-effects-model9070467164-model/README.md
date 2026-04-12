@@ -11,14 +11,13 @@ This is a network involving the MAPK-PKC feedback loop with input from the PDGFR
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-bhalla2002-mkp1-feedback-effects-model9070467164-model
     alias: model
-    manifest_path: models/signaling-sbml-bhalla2002-mkp1-feedback-effects-model9070467164-model/model.yaml
 ```
 
 ## Tags

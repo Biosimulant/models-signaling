@@ -11,14 +11,13 @@ This model is based on paper:Strategies in regulating glioblastoma signaling pat
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-jung2019-regulating-glioblastoma-signaling-pathw-biomd0000000828-model
     alias: model
-    manifest_path: models/signaling-sbml-jung2019-regulating-glioblastoma-signaling-pathw-biomd0000000828-model/model.yaml
 ```
 
 ## Tags

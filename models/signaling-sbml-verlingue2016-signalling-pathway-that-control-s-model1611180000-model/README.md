@@ -11,14 +11,13 @@ Verlingue2016 - Signalling pathway thatcontrol S-phase entry and geroconversion 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-verlingue2016-signalling-pathway-that-control-s-model1611180000-model
     alias: model
-    manifest_path: models/signaling-sbml-verlingue2016-signalling-pathway-that-control-s-model1611180000-model/model.yaml
 ```
 
 ## Tags

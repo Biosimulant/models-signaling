@@ -11,14 +11,13 @@ Neves2008 - Role of cell shape and size in controlling intracellular signalling 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-neves2008-role-of-cell-shape-and-size-in-control-biomd0000000182-model
     alias: model
-    manifest_path: models/signaling-sbml-neves2008-role-of-cell-shape-and-size-in-control-biomd0000000182-model/model.yaml
 ```
 
 ## Tags

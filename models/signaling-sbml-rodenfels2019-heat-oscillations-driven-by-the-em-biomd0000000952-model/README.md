@@ -11,14 +11,13 @@ All living systems function out of equilibrium and exchange energy in the form o
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-rodenfels2019-heat-oscillations-driven-by-the-em-biomd0000000952-model
     alias: model
-    manifest_path: models/signaling-sbml-rodenfels2019-heat-oscillations-driven-by-the-em-biomd0000000952-model/model.yaml
 ```
 
 ## Tags

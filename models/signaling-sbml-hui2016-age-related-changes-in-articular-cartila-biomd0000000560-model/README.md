@@ -11,14 +11,13 @@ Hui2014 - Age-related changes in articularcartilage This model is described in t
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-hui2016-age-related-changes-in-articular-cartila-biomd0000000560-model
     alias: model
-    manifest_path: models/signaling-sbml-hui2016-age-related-changes-in-articular-cartila-biomd0000000560-model/model.yaml
 ```
 
 ## Tags

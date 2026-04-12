@@ -11,14 +11,13 @@ mathematical model, with accompanying quantitative experimental data, for bindin
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-starbuck1990-egf-binding-and-trafficking-dynamic-model2003190005-model
     alias: model
-    manifest_path: models/signaling-sbml-starbuck1990-egf-binding-and-trafficking-dynamic-model2003190005-model/model.yaml
 ```
 
 ## Tags

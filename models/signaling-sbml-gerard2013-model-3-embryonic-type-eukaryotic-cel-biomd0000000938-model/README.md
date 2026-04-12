@@ -11,14 +11,13 @@ The eukaryotic cell cycle is characterized by alternating oscillations in the ac
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-gerard2013-model-3-embryonic-type-eukaryotic-cel-biomd0000000938-model
     alias: model
-    manifest_path: models/signaling-sbml-gerard2013-model-3-embryonic-type-eukaryotic-cel-biomd0000000938-model/model.yaml
 ```
 
 ## Tags

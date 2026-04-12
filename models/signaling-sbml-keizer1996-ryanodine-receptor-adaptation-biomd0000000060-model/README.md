@@ -11,14 +11,13 @@ The model reproduces the time profile of Open probability of the ryanodine recep
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-keizer1996-ryanodine-receptor-adaptation-biomd0000000060-model
     alias: model
-    manifest_path: models/signaling-sbml-keizer1996-ryanodine-receptor-adaptation-biomd0000000060-model/model.yaml
 ```
 
 ## Tags

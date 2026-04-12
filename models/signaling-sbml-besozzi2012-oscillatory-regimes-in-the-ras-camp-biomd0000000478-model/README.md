@@ -11,14 +11,13 @@ Besozzi2012 - Oscillatory regimes in the Ras/cAMP/PKA pathway in S.cerevisiae Me
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-besozzi2012-oscillatory-regimes-in-the-ras-camp-biomd0000000478-model
     alias: model
-    manifest_path: models/signaling-sbml-besozzi2012-oscillatory-regimes-in-the-ras-camp-biomd0000000478-model/model.yaml
 ```
 
 ## Tags

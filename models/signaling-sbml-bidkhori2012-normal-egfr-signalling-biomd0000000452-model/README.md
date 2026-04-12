@@ -11,14 +11,13 @@ Bidkhori2012 - normal EGFR signalling The paper describes and compares two model
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-bidkhori2012-normal-egfr-signalling-biomd0000000452-model
     alias: model
-    manifest_path: models/signaling-sbml-bidkhori2012-normal-egfr-signalling-biomd0000000452-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Hass2017-PanRTK model for single cellline The model structure comprisesheterodim
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-panrtk-model-for-single-cell-line-model1708210000-model
     alias: model
-    manifest_path: models/signaling-sbml-panrtk-model-for-single-cell-line-model1708210000-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This model is from the article: The auxin signalling network translates dynamic 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-vernoux2011-auxinsignaling-auxinsinglestepinput-biomd0000000351-model
     alias: model
-    manifest_path: models/signaling-sbml-vernoux2011-auxinsignaling-auxinsinglestepinput-biomd0000000351-model/model.yaml
 ```
 
 ## Tags

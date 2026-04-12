@@ -11,14 +11,13 @@ This model is from the article: PI3K-dependent cross-talk interactions converge 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-wang2009-pi3k-ras-crosstalk-biomd0000000288-model
     alias: model
-    manifest_path: models/signaling-sbml-wang2009-pi3k-ras-crosstalk-biomd0000000288-model/model.yaml
 ```
 
 ## Tags

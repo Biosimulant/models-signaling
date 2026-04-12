@@ -11,14 +11,13 @@ This model picks up an already published mechanistic model by Chassagnole et al.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-pinto2022-hybrid-sbml-ann-model-model2207280001-model
     alias: model
-    manifest_path: models/signaling-sbml-pinto2022-hybrid-sbml-ann-model-model2207280001-model/model.yaml
 ```
 
 ## Tags

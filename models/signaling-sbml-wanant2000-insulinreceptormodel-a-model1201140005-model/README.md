@@ -11,14 +11,13 @@ This a model from the article: Insulin receptor binding kinetics: modeling and s
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-wanant2000-insulinreceptormodel-a-model1201140005-model
     alias: model
-    manifest_path: models/signaling-sbml-wanant2000-insulinreceptormodel-a-model1201140005-model/model.yaml
 ```
 
 ## Tags

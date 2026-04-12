@@ -11,14 +11,13 @@ Markevich2004 - MAPK double phosphorylation,ordered Michaelis-Menton The model c
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-markevich2004-mapk-double-phosphorylation-ordere-biomd0000000027-model
     alias: model
-    manifest_path: models/signaling-sbml-markevich2004-mapk-double-phosphorylation-ordere-biomd0000000027-model/model.yaml
 ```
 
 ## Tags

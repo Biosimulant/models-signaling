@@ -11,14 +11,13 @@ This a model from the article: Simulating Complex Calcium-Calcineurin Signaling 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-cui2008-cardiacmyocytes-model1172425728-model
     alias: model
-    manifest_path: models/signaling-sbml-cui2008-cardiacmyocytes-model1172425728-model/model.yaml
 ```
 
 ## Tags

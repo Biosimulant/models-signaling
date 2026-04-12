@@ -11,14 +11,13 @@ It is a dynamic model containing elements of two different model as one. It cont
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-tiwari2019-mathematical-model-of-nfkb-regulatory-model1911140002-model
     alias: model
-    manifest_path: models/signaling-sbml-tiwari2019-mathematical-model-of-nfkb-regulatory-model1911140002-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ It's a mathematical model studying feedback control of B-catenin pathway by HOS 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-benary2015-feedback-regulation-of-beta-catenin-p-model1908050003-model
     alias: model
-    manifest_path: models/signaling-sbml-benary2015-feedback-regulation-of-beta-catenin-p-model1908050003-model/model.yaml
 ```
 
 ## Tags

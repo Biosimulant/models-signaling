@@ -11,14 +11,13 @@ We consider a minimal cascade model previously proposed for the mitotic oscillat
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-goldbeter1996-cyclin-cdc2-kinase-oscillations-biomd0000000729-model
     alias: model
-    manifest_path: models/signaling-sbml-goldbeter1996-cyclin-cdc2-kinase-oscillations-biomd0000000729-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Smith2013 - Regulation of Insulin Signalling by Oxidative Stress The model descr
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-smith2013-regulation-of-insulin-signalling-by-ox-biomd0000000474-model
     alias: model
-    manifest_path: models/signaling-sbml-smith2013-regulation-of-insulin-signalling-by-ox-biomd0000000474-model/model.yaml
 ```
 
 ## Tags

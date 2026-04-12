@@ -11,14 +11,13 @@ This 121-node Boolean regulatory network model that synthesizes mechanosensitive
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-regan2020-adhesion-cip-migration-cellcycle-apopt-model2006170001-model
     alias: model
-    manifest_path: models/signaling-sbml-regan2020-adhesion-cip-migration-cellcycle-apopt-model2006170001-model/model.yaml
 ```
 
 ## Tags

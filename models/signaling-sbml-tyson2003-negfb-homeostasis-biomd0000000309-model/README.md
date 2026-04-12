@@ -11,14 +11,13 @@ This is an SBML implementation the model of homeostastis by negative feedback (f
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-tyson2003-negfb-homeostasis-biomd0000000309-model
     alias: model
-    manifest_path: models/signaling-sbml-tyson2003-negfb-homeostasis-biomd0000000309-model/model.yaml
 ```
 
 ## Tags

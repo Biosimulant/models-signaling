@@ -11,14 +11,13 @@ This the full model from the article: A dynamic model of interactions of Ca2+, c
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-pepke2010-full-ca2-cam-mcamkii-model1001150000-model
     alias: model
-    manifest_path: models/signaling-sbml-pepke2010-full-ca2-cam-mcamkii-model1001150000-model/model.yaml
 ```
 
 ## Tags

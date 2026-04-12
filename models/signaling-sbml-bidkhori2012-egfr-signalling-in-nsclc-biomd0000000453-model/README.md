@@ -11,14 +11,13 @@ Bidkhori2012 - EGFR signalling in NSCLC The paper describes and compares two mod
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-bidkhori2012-egfr-signalling-in-nsclc-biomd0000000453-model
     alias: model
-    manifest_path: models/signaling-sbml-bidkhori2012-egfr-signalling-in-nsclc-biomd0000000453-model/model.yaml
 ```
 
 ## Tags

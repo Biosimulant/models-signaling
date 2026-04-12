@@ -11,14 +11,13 @@ its a mathematical model studying impact of b_TrCP on NFKB nuclear dynamics. Thi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-benary2019-controlling-nfkb-dynamics-by-b-trcp-biomd0000000794-model
     alias: model
-    manifest_path: models/signaling-sbml-benary2019-controlling-nfkb-dynamics-by-b-trcp-biomd0000000794-model/model.yaml
 ```
 
 ## Tags

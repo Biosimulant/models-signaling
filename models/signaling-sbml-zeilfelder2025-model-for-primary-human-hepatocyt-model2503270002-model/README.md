@@ -11,14 +11,13 @@ Mathematical multi-compartment model described by sets of coupled ordinary diffe
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-zeilfelder2025-model-for-primary-human-hepatocyt-model2503270002-model
     alias: model
-    manifest_path: models/signaling-sbml-zeilfelder2025-model-for-primary-human-hepatocyt-model2503270002-model/model.yaml
 ```
 
 ## Tags

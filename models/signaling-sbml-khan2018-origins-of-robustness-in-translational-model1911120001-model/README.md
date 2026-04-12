@@ -11,14 +11,13 @@ This is a ordinary differential equation-based model of the eukaryotic translati
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-khan2018-origins-of-robustness-in-translational-model1911120001-model
     alias: model
-    manifest_path: models/signaling-sbml-khan2018-origins-of-robustness-in-translational-model1911120001-model/model.yaml
 ```
 
 ## Tags

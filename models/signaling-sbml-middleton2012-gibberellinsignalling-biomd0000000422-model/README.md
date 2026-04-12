@@ -11,14 +11,13 @@ This model is from the article: Mathematical modeling elucidates the role of tra
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-middleton2012-gibberellinsignalling-biomd0000000422-model
     alias: model
-    manifest_path: models/signaling-sbml-middleton2012-gibberellinsignalling-biomd0000000422-model/model.yaml
 ```
 
 ## Tags

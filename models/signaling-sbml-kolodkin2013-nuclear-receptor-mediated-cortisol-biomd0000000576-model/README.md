@@ -11,14 +11,13 @@ Kolodkin2013 - Nuclear receptor-mediatedcortisol signalling network This model i
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-kolodkin2013-nuclear-receptor-mediated-cortisol-biomd0000000576-model
     alias: model
-    manifest_path: models/signaling-sbml-kolodkin2013-nuclear-receptor-mediated-cortisol-biomd0000000576-model/model.yaml
 ```
 
 ## Tags

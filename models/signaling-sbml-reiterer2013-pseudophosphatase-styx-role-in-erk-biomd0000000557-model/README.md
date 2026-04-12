@@ -11,14 +11,13 @@ Reiterer2013 - pseudophosphatase STYX role inERK signalling This model is descri
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-reiterer2013-pseudophosphatase-styx-role-in-erk-biomd0000000557-model
     alias: model
-    manifest_path: models/signaling-sbml-reiterer2013-pseudophosphatase-styx-role-in-erk-biomd0000000557-model/model.yaml
 ```
 
 ## Tags

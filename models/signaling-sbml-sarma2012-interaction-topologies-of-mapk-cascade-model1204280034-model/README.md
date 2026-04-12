@@ -11,14 +11,13 @@ Sarma2012 - Interaction topologies of MAPK cascade (M2_K2_QSS_USEQ) The paper pr
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-sarma2012-interaction-topologies-of-mapk-cascade-model1204280034-model
     alias: model
-    manifest_path: models/signaling-sbml-sarma2012-interaction-topologies-of-mapk-cascade-model1204280034-model/model.yaml
 ```
 
 ## Tags

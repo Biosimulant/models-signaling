@@ -11,14 +11,13 @@ Yapo2017 - A2AR/cAMP/PKA signalling in D2 dopamine receptor expressing medium-sp
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-yapo2017-a2ar-camp-pka-signalling-in-d2-dopamine-model1701170001-model
     alias: model
-    manifest_path: models/signaling-sbml-yapo2017-a2ar-camp-pka-signalling-in-d2-dopamine-model1701170001-model/model.yaml
 ```
 
 ## Tags

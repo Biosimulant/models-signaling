@@ -11,14 +11,13 @@ Malonyl-CoA pathway for 3-hydroxypropionate production from glycerol.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-oliveira2020-malonyl-coa-pathway-for-3-hydroxypr-model2010030008-model
     alias: model
-    manifest_path: models/signaling-sbml-oliveira2020-malonyl-coa-pathway-for-3-hydroxypr-model2010030008-model/model.yaml
 ```
 
 ## Tags

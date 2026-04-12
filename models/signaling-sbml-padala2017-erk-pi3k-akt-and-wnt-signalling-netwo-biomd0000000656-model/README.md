@@ -11,14 +11,13 @@ Padala2017- ERK, PI3K/Akt and Wnt signallingnetwork (EGFR overexpression) Crosst
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000656-model
     alias: model
-    manifest_path: models/signaling-sbml-padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000656-model/model.yaml
 ```
 
 ## Tags

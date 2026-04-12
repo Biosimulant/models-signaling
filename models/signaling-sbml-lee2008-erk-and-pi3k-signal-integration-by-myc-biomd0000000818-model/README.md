@@ -11,14 +11,13 @@ Mechanisitc model of PI3K and ERK signal integration by Myc. ERK and PI3K regula
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-lee2008-erk-and-pi3k-signal-integration-by-myc-biomd0000000818-model
     alias: model
-    manifest_path: models/signaling-sbml-lee2008-erk-and-pi3k-signal-integration-by-myc-biomd0000000818-model/model.yaml
 ```
 
 ## Tags

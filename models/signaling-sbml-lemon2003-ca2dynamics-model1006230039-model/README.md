@@ -11,14 +11,13 @@ This a model from the article: Metabotropic receptor activation, desensitization
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-lemon2003-ca2dynamics-model1006230039-model
     alias: model
-    manifest_path: models/signaling-sbml-lemon2003-ca2dynamics-model1006230039-model/model.yaml
 ```
 
 ## Tags

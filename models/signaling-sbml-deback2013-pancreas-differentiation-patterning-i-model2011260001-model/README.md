@@ -11,14 +11,13 @@ This model reproduces a solution (at a=1, b=20.8, eta=1e-4) of the parameter sca
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-deback2013-pancreas-differentiation-patterning-i-model2011260001-model
     alias: model
-    manifest_path: models/signaling-sbml-deback2013-pancreas-differentiation-patterning-i-model2011260001-model/model.yaml
 ```
 
 ## Tags

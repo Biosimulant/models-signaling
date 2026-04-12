@@ -11,14 +11,13 @@ Sarma2012 - Oscillations in MAPK cascade (S2) Two plausible designs (S1 and S2) 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-sarma2012-oscillations-in-mapk-cascade-s2-biomd0000000441-model
     alias: model
-    manifest_path: models/signaling-sbml-sarma2012-oscillations-in-mapk-cascade-s2-biomd0000000441-model/model.yaml
 ```
 
 ## Tags

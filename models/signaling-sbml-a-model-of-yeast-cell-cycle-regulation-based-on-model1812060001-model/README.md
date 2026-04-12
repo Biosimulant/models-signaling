@@ -11,14 +11,13 @@ Model does not simulate
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-a-model-of-yeast-cell-cycle-regulation-based-on-model1812060001-model
     alias: model
-    manifest_path: models/signaling-sbml-a-model-of-yeast-cell-cycle-regulation-based-on-model1812060001-model/model.yaml
 ```
 
 ## Tags

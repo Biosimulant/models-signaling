@@ -11,14 +11,13 @@ Kummer2000 - Oscillations in CalciumSignalling Simplified (3-variable) calcium o
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-kummer2000-oscillations-in-calcium-signalling-biomd0000000329-model
     alias: model
-    manifest_path: models/signaling-sbml-kummer2000-oscillations-in-calcium-signalling-biomd0000000329-model/model.yaml
 ```
 
 ## Tags

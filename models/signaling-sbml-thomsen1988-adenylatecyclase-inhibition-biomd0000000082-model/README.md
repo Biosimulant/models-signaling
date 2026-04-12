@@ -11,14 +11,13 @@ This model was created according to the paper Inhibition of Adenylate Cyclase Is
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-thomsen1988-adenylatecyclase-inhibition-biomd0000000082-model
     alias: model
-    manifest_path: models/signaling-sbml-thomsen1988-adenylatecyclase-inhibition-biomd0000000082-model/model.yaml
 ```
 
 ## Tags

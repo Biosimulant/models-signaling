@@ -11,14 +11,13 @@ Machado2014 - Curcumin production pathway inEscherichia coli This model is descr
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-machado2014-curcumin-production-pathway-in-esche-biomd0000000565-model
     alias: model
-    manifest_path: models/signaling-sbml-machado2014-curcumin-production-pathway-in-esche-biomd0000000565-model/model.yaml
 ```
 
 ## Tags

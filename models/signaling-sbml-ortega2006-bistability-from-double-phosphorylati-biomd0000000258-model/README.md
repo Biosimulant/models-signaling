@@ -11,14 +11,13 @@ Ortega2006 - bistability from doublephosphorylation in signal transduction This 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-ortega2006-bistability-from-double-phosphorylati-biomd0000000258-model
     alias: model
-    manifest_path: models/signaling-sbml-ortega2006-bistability-from-double-phosphorylati-biomd0000000258-model/model.yaml
 ```
 
 ## Tags

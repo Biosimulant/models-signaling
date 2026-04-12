@@ -11,14 +11,13 @@ DallePezze2012 - TSC-independent mTORC2regulation This model is described in the
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-dallepezze2012-tsc-independent-mtorc2-regulation-biomd0000000581-model
     alias: model
-    manifest_path: models/signaling-sbml-dallepezze2012-tsc-independent-mtorc2-regulation-biomd0000000581-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Hermansen2015 - denovo biosynthesis of pyrimidines in yeast This model is descri
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-hermansen2015-denovo-biosynthesis-of-pyrimidines-biomd0000000590-model
     alias: model
-    manifest_path: models/signaling-sbml-hermansen2015-denovo-biosynthesis-of-pyrimidines-biomd0000000590-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ The proposed ODE model describes dynamics of IFNalpha-induced signaling in Huh7.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-kok2020-ifnalpha-induced-signaling-in-huh7-5-cel-biomd0000000959-model
     alias: model
-    manifest_path: models/signaling-sbml-kok2020-ifnalpha-induced-signaling-in-huh7-5-cel-biomd0000000959-model/model.yaml
 ```
 
 ## Tags

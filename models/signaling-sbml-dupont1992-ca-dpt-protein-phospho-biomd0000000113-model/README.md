@@ -11,14 +11,13 @@ Model reproduces Fig 4 of the paper. For fraction of phosphorylated protein, W_s
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-dupont1992-ca-dpt-protein-phospho-biomd0000000113-model
     alias: model
-    manifest_path: models/signaling-sbml-dupont1992-ca-dpt-protein-phospho-biomd0000000113-model/model.yaml
 ```
 
 ## Tags

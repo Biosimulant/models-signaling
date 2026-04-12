@@ -11,14 +11,13 @@ This model is an attempt to provide a mathematical description of IL-7 dependent
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-park2019-il7-receptor-signaling-in-t-cells-biomd0000000803-model
     alias: model
-    manifest_path: models/signaling-sbml-park2019-il7-receptor-signaling-in-t-cells-biomd0000000803-model/model.yaml
 ```
 
 ## Tags

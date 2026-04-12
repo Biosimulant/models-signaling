@@ -11,14 +11,13 @@ This model is based on the publication:'Mathematical Modelling of Alternative Pa
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-bakshi2020-properdin-model-of-alternative-pathwa-biomd0000001018-model
     alias: model
-    manifest_path: models/signaling-sbml-bakshi2020-properdin-model-of-alternative-pathwa-biomd0000001018-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ The model reproduces Fig 3a of the paper. Please note that the authors mention t
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-chan2004-tcell-receptor-activation-biomd0000000120-model
     alias: model
-    manifest_path: models/signaling-sbml-chan2004-tcell-receptor-activation-biomd0000000120-model/model.yaml
 ```
 
 ## Tags

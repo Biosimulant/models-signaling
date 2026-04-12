@@ -11,14 +11,13 @@ MiRNAs, which are a family of small non-coding RNAs, regulate a broad array of p
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-yan2012-rb-e2f-pathway-dynamics-with-mir449-biomd0000000720-model
     alias: model
-    manifest_path: models/signaling-sbml-yan2012-rb-e2f-pathway-dynamics-with-mir449-biomd0000000720-model/model.yaml
 ```
 
 ## Tags

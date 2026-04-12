@@ -11,14 +11,13 @@ Model depicting response Class 1 defined by a minimal response to stimulation wh
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-strasen2018-tgfb-smad-signalling-class-1-biomd0000000998-model
     alias: model
-    manifest_path: models/signaling-sbml-strasen2018-tgfb-smad-signalling-class-1-biomd0000000998-model/model.yaml
 ```
 
 ## Tags

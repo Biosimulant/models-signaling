@@ -11,14 +11,13 @@ This is the model described in the article: A biophysical model of the mitochond
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-beard2005-mitochondrial-respiration-model4151491057-model
     alias: model
-    manifest_path: models/signaling-sbml-beard2005-mitochondrial-respiration-model4151491057-model/model.yaml
 ```
 
 ## Tags

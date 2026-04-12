@@ -11,14 +11,13 @@ This a model from the article: Mathematical modelling of prolactin-receptor inte
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-sobaleva2005-prolactinregulation-model7896869925-model
     alias: model
-    manifest_path: models/signaling-sbml-sobaleva2005-prolactinregulation-model7896869925-model/model.yaml
 ```
 
 ## Tags

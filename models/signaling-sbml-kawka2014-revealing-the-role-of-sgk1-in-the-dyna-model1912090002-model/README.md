@@ -11,14 +11,13 @@ This is a mathematical model of the Wnt signaling pathway in medulloblastoma com
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-kawka2014-revealing-the-role-of-sgk1-in-the-dyna-model1912090002-model
     alias: model
-    manifest_path: models/signaling-sbml-kawka2014-revealing-the-role-of-sgk1-in-the-dyna-model1912090002-model/model.yaml
 ```
 
 ## Tags

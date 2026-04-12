@@ -11,14 +11,13 @@ This model couples BMP morphogen gradient formation with Smad signaling in zebra
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-soh2020-spatio-temporal-morphogen-gradient-and-b-model2012070002-model
     alias: model
-    manifest_path: models/signaling-sbml-soh2020-spatio-temporal-morphogen-gradient-and-b-model2012070002-model/model.yaml
 ```
 
 ## Tags

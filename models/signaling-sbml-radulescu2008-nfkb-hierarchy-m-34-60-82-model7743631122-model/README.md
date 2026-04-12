@@ -11,14 +11,13 @@ NFkB model M(34,60,82) This is a model of NFkB pathway functioning from hierarch
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-radulescu2008-nfkb-hierarchy-m-34-60-82-model7743631122-model
     alias: model
-    manifest_path: models/signaling-sbml-radulescu2008-nfkb-hierarchy-m-34-60-82-model7743631122-model/model.yaml
 ```
 
 ## Tags

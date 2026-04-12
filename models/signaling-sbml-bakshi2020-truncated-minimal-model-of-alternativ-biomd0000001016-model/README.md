@@ -11,14 +11,13 @@ This model is based on the publication:'Mathematical Modelling of Alternative Pa
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-bakshi2020-truncated-minimal-model-of-alternativ-biomd0000001016-model
     alias: model
-    manifest_path: models/signaling-sbml-bakshi2020-truncated-minimal-model-of-alternativ-biomd0000001016-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Plants depend on the signalling of the phytohormone auxin for their development 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-grigolon2018-responses-to-auxin-signals-biomd0000000927-model
     alias: model
-    manifest_path: models/signaling-sbml-grigolon2018-responses-to-auxin-signals-biomd0000000927-model/model.yaml
 ```
 
 ## Tags

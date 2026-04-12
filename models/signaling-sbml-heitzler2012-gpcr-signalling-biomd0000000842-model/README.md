@@ -11,14 +11,13 @@ This model is from the article: Competing G protein-coupled receptor kinases bal
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-heitzler2012-gpcr-signalling-biomd0000000842-model
     alias: model
-    manifest_path: models/signaling-sbml-heitzler2012-gpcr-signalling-biomd0000000842-model/model.yaml
 ```
 
 ## Tags

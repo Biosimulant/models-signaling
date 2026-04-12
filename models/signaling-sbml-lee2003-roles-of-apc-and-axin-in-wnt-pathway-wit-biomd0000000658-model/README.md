@@ -11,14 +11,13 @@ Lee2003 - Roles of APC and Axin in WntPathway (without regulatory loop) This mod
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-lee2003-roles-of-apc-and-axin-in-wnt-pathway-wit-biomd0000000658-model
     alias: model
-    manifest_path: models/signaling-sbml-lee2003-roles-of-apc-and-axin-in-wnt-pathway-wit-biomd0000000658-model/model.yaml
 ```
 
 ## Tags

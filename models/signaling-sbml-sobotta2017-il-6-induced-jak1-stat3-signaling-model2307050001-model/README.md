@@ -11,14 +11,13 @@ Here we present a mathematical model of IL-6-induced JAK1-STAT3 signaling that q
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-sobotta2017-il-6-induced-jak1-stat3-signaling-model2307050001-model
     alias: model
-    manifest_path: models/signaling-sbml-sobotta2017-il-6-induced-jak1-stat3-signaling-model2307050001-model/model.yaml
 ```
 
 ## Tags

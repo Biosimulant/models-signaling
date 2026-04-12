@@ -11,14 +11,13 @@ This model is from the article: Mechanistic explanations for counter-intuitive p
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-nyman2012-insulinsignalling-biomd0000000423-model
     alias: model
-    manifest_path: models/signaling-sbml-nyman2012-insulinsignalling-biomd0000000423-model/model.yaml
 ```
 
 ## Tags

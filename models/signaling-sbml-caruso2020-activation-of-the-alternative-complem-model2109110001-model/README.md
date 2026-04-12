@@ -11,14 +11,13 @@ This model is based on the publication:Caruso A, Vollmer J, Machacek M, Kortvely
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-caruso2020-activation-of-the-alternative-complem-model2109110001-model
     alias: model
-    manifest_path: models/signaling-sbml-caruso2020-activation-of-the-alternative-complem-model2109110001-model/model.yaml
 ```
 
 ## Tags

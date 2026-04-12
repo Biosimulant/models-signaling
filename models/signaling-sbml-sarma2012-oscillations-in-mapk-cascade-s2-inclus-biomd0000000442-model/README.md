@@ -11,14 +11,13 @@ Sarma2012 - Oscillations in MAPK cascade (S2), inclusion of external signalling 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-sarma2012-oscillations-in-mapk-cascade-s2-inclus-biomd0000000442-model
     alias: model
-    manifest_path: models/signaling-sbml-sarma2012-oscillations-in-mapk-cascade-s2-inclus-biomd0000000442-model/model.yaml
 ```
 
 ## Tags

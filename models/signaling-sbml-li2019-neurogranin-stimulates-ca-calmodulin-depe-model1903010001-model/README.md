@@ -11,14 +11,13 @@ Calmodulin sits at the center of molecular mechanisms underlying learning and me
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-li2019-neurogranin-stimulates-ca-calmodulin-depe-model1903010001-model
     alias: model
-    manifest_path: models/signaling-sbml-li2019-neurogranin-stimulates-ca-calmodulin-depe-model1903010001-model/model.yaml
 ```
 
 ## Tags

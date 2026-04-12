@@ -11,14 +11,13 @@ its a mathematical model studying impact of TNF on NFKB nuclear dynamics. This m
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-lipniacki2004-mathematical-model-of-nfkb-regulat-biomd0000000786-model
     alias: model
-    manifest_path: models/signaling-sbml-lipniacki2004-mathematical-model-of-nfkb-regulat-biomd0000000786-model/model.yaml
 ```
 
 ## Tags

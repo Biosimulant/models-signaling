@@ -11,14 +11,13 @@ BensonWattersonetal_SystemsPharmacology_Multidrug This model is described in the
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-benson2017-systems-pharmacology-multidrug-choles-model1506220000-model
     alias: model
-    manifest_path: models/signaling-sbml-benson2017-systems-pharmacology-multidrug-choles-model1506220000-model/model.yaml
 ```
 
 ## Tags

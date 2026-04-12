@@ -11,14 +11,13 @@ This model according to the paper A Theoretical Framework for Specificity in Cel
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-komarova2005-theoreticalframework-basicarchitect-biomd0000000125-model
     alias: model
-    manifest_path: models/signaling-sbml-komarova2005-theoreticalframework-basicarchitect-biomd0000000125-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This model generates a three-layered, multicellular structure from a simple cell
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-mulberry2020-three-layered-self-organizing-multi-model2009210002-model
     alias: model
-    manifest_path: models/signaling-sbml-mulberry2020-three-layered-self-organizing-multi-model2009210002-model/model.yaml
 ```
 
 ## Tags

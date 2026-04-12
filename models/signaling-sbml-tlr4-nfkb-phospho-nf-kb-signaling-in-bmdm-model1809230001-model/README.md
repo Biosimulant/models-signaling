@@ -11,14 +11,13 @@ The model was constructed to describe TLR4 induced NF-κB activation in native b
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-tlr4-nfkb-phospho-nf-kb-signaling-in-bmdm-model1809230001-model
     alias: model
-    manifest_path: models/signaling-sbml-tlr4-nfkb-phospho-nf-kb-signaling-in-bmdm-model1809230001-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Radulescu2008 - NF-κB hierarchy ℳ(16,34,46) This is a model of NF-κB pathway
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-radulescu2008-nf-b-hierarchy-16-34-46-model7743576806-model
     alias: model
-    manifest_path: models/signaling-sbml-radulescu2008-nf-b-hierarchy-16-34-46-model7743576806-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This model is according to the paper Reduced-order modeling of biochemical netwo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-maurya2005-gtpasecycle-reducedorder-biomd0000000085-model
     alias: model
-    manifest_path: models/signaling-sbml-maurya2005-gtpasecycle-reducedorder-biomd0000000085-model/model.yaml
 ```
 
 ## Tags

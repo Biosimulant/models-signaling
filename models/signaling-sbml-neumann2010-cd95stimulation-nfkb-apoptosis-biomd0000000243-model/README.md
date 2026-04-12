@@ -11,14 +11,13 @@ This is the reduced model (model 8) described in: Dynamics within the CD95 death
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-neumann2010-cd95stimulation-nfkb-apoptosis-biomd0000000243-model
     alias: model
-    manifest_path: models/signaling-sbml-neumann2010-cd95stimulation-nfkb-apoptosis-biomd0000000243-model/model.yaml
 ```
 
 ## Tags

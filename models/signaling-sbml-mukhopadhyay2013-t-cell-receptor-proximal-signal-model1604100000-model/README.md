@@ -11,14 +11,13 @@ Mukhopadhyay2013 - T cell receptor proximalsignaling reveals emergent ultrasensi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-mukhopadhyay2013-t-cell-receptor-proximal-signal-model1604100000-model
     alias: model
-    manifest_path: models/signaling-sbml-mukhopadhyay2013-t-cell-receptor-proximal-signal-model1604100000-model/model.yaml
 ```
 
 ## Tags

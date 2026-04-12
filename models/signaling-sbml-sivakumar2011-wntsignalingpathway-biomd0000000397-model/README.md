@@ -11,14 +11,13 @@ Sivakumar2011_WntSignalingPathway The secreted protein Wnt activates theheptahel
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-sivakumar2011-wntsignalingpathway-biomd0000000397-model
     alias: model
-    manifest_path: models/signaling-sbml-sivakumar2011-wntsignalingpathway-biomd0000000397-model/model.yaml
 ```
 
 ## Tags

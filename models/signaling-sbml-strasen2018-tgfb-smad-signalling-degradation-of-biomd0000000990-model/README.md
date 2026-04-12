@@ -11,14 +11,13 @@ MOdel simulates 25pM ligand degradation kinetics as shown in Figure 4D
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-strasen2018-tgfb-smad-signalling-degradation-of-biomd0000000990-model
     alias: model
-    manifest_path: models/signaling-sbml-strasen2018-tgfb-smad-signalling-degradation-of-biomd0000000990-model/model.yaml
 ```
 
 ## Tags

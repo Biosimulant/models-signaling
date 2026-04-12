@@ -11,14 +11,13 @@ Goldbeter1991 - Min Mit Oscil Minimal cascade model for the mitotic oscillator i
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-goldbeter1991-min-mit-oscil-biomd0000000003-model
     alias: model
-    manifest_path: models/signaling-sbml-goldbeter1991-min-mit-oscil-biomd0000000003-model/model.yaml
 ```
 
 ## Tags

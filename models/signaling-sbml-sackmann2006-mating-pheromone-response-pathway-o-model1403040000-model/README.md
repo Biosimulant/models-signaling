@@ -11,14 +11,13 @@ Sackmann2006 - mating pheromone response pathway of S.cerevisiae This model is d
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-sackmann2006-mating-pheromone-response-pathway-o-model1403040000-model
     alias: model
-    manifest_path: models/signaling-sbml-sackmann2006-mating-pheromone-response-pathway-o-model1403040000-model/model.yaml
 ```
 
 ## Tags

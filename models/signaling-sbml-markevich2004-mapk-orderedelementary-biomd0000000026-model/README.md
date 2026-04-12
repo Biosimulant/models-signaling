@@ -11,14 +11,13 @@ The model corresponds to the schemas 1 and 2 of Markevich et al 2004, as describ
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-markevich2004-mapk-orderedelementary-biomd0000000026-model
     alias: model
-    manifest_path: models/signaling-sbml-markevich2004-mapk-orderedelementary-biomd0000000026-model/model.yaml
 ```
 
 ## Tags

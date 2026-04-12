@@ -11,14 +11,13 @@ Brown2004 - NGF and EGF signaling This model is described in the article: The st
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-brown2004-ngf-and-egf-signaling-biomd0000000033-model
     alias: model
-    manifest_path: models/signaling-sbml-brown2004-ngf-and-egf-signaling-biomd0000000033-model/model.yaml
 ```
 
 ## Tags

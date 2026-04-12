@@ -11,14 +11,13 @@ Graham R. Smith & Daryl P. Shanley. Modelling the response of FOXO transcription
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-smith2010-response-of-foxo-transcription-factors-biomd0000000706-model
     alias: model
-    manifest_path: models/signaling-sbml-smith2010-response-of-foxo-transcription-factors-biomd0000000706-model/model.yaml
 ```
 
 ## Tags

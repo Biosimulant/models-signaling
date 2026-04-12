@@ -11,14 +11,13 @@ This a model from the article: A Hierarchical Whole-body Modeling Approach Eluci
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-nyman2011-m3hierarachical-insulinglucosedynamics-biomd0000000356-model
     alias: model
-    manifest_path: models/signaling-sbml-nyman2011-m3hierarachical-insulinglucosedynamics-biomd0000000356-model/model.yaml
 ```
 
 ## Tags

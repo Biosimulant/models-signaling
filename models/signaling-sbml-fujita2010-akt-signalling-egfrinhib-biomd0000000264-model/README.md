@@ -11,14 +11,13 @@ Akt pathway model with EGFR inhibitor made by Kazuhiro A. Fujita. This is the Ak
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-fujita2010-akt-signalling-egfrinhib-biomd0000000264-model
     alias: model
-    manifest_path: models/signaling-sbml-fujita2010-akt-signalling-egfrinhib-biomd0000000264-model/model.yaml
 ```
 
 ## Tags

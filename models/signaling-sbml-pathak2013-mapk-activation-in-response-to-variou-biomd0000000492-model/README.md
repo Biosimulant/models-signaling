@@ -11,14 +11,13 @@ Pathak2013 - MAPK activation in response to various biotic stresses MAPK activat
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-pathak2013-mapk-activation-in-response-to-variou-biomd0000000492-model
     alias: model
-    manifest_path: models/signaling-sbml-pathak2013-mapk-activation-in-response-to-variou-biomd0000000492-model/model.yaml
 ```
 
 ## Tags

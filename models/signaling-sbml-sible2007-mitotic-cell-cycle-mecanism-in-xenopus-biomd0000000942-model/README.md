@@ -11,14 +11,13 @@ Although not a traditional experimental 'method,' mathematical modeling can prov
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-sible2007-mitotic-cell-cycle-mecanism-in-xenopus-biomd0000000942-model
     alias: model
-    manifest_path: models/signaling-sbml-sible2007-mitotic-cell-cycle-mecanism-in-xenopus-biomd0000000942-model/model.yaml
 ```
 
 ## Tags

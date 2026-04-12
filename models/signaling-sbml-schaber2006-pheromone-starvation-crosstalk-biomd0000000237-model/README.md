@@ -11,14 +11,13 @@ This a model from the article: A modelling approach to quantify dynamic crosstal
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-schaber2006-pheromone-starvation-crosstalk-biomd0000000237-model
     alias: model
-    manifest_path: models/signaling-sbml-schaber2006-pheromone-starvation-crosstalk-biomd0000000237-model/model.yaml
 ```
 
 ## Tags

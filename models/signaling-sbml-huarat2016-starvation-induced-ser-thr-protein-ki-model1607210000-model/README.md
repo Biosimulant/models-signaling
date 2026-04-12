@@ -11,14 +11,13 @@ Huarat2016 -Starvation-induced Ser/Thrprotein kinase ArnS (Saci_1181) (Model 14)
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-huarat2016-starvation-induced-ser-thr-protein-ki-model1607210000-model
     alias: model
-    manifest_path: models/signaling-sbml-huarat2016-starvation-induced-ser-thr-protein-ki-model1607210000-model/model.yaml
 ```
 
 ## Tags

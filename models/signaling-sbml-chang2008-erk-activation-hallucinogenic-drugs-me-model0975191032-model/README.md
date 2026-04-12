@@ -11,14 +11,13 @@ Chang2008 - ERK activation, hallucinogenicdrugs mediated signalling through sero
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-chang2008-erk-activation-hallucinogenic-drugs-me-model0975191032-model
     alias: model
-    manifest_path: models/signaling-sbml-chang2008-erk-activation-hallucinogenic-drugs-me-model0975191032-model/model.yaml
 ```
 
 ## Tags

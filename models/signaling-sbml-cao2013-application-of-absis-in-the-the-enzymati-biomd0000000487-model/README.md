@@ -11,14 +11,13 @@ Michael Samoilov, Sergey Plyasunov & Adam P. Arkin. Stochastic amplification and
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-cao2013-application-of-absis-in-the-the-enzymati-biomd0000000487-model
     alias: model
-    manifest_path: models/signaling-sbml-cao2013-application-of-absis-in-the-the-enzymati-biomd0000000487-model/model.yaml
 ```
 
 ## Tags

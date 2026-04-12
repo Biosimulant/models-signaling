@@ -11,14 +11,13 @@ Ray2013 - Meiotic initiation in S. cerevisiae A mathematical representation of e
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-ray2013-meiotic-initiation-in-s-cerevisiae-biomd0000000626-model
     alias: model
-    manifest_path: models/signaling-sbml-ray2013-meiotic-initiation-in-s-cerevisiae-biomd0000000626-model/model.yaml
 ```
 
 ## Tags

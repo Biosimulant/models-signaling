@@ -11,14 +11,13 @@ This is a model of the canonical cAMP signaling pathway:&lt;br'&gt;Ligand-&gt;Re
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-bhalla2002-camp-pathway-model9077438479-model
     alias: model
-    manifest_path: models/signaling-sbml-bhalla2002-camp-pathway-model9077438479-model/model.yaml
 ```
 
 ## Tags

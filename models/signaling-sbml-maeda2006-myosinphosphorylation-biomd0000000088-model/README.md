@@ -11,14 +11,13 @@ The model reproduces Fig 2B, D, F, and 2H. The dynamics correspond to a stimulus
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-maeda2006-myosinphosphorylation-biomd0000000088-model
     alias: model
-    manifest_path: models/signaling-sbml-maeda2006-myosinphosphorylation-biomd0000000088-model/model.yaml
 ```
 
 ## Tags

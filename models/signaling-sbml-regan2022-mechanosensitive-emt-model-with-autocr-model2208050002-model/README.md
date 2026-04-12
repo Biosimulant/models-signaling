@@ -11,14 +11,13 @@ This model is an expansion of the Regan2022 - Mechanosensitive EMT model (MODEL2
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-regan2022-mechanosensitive-emt-model-with-autocr-model2208050002-model
     alias: model
-    manifest_path: models/signaling-sbml-regan2022-mechanosensitive-emt-model-with-autocr-model2208050002-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Model depicting class 2 signaling class observed upon stimulation with 100 pM TG
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-strasen2018-tgfb-smad-signalling-class-2-biomd0000000999-model
     alias: model
-    manifest_path: models/signaling-sbml-strasen2018-tgfb-smad-signalling-class-2-biomd0000000999-model/model.yaml
 ```
 
 ## Tags

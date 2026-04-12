@@ -11,14 +11,13 @@ Markus W. Covert, Thomas H. Leung, Jahlionais E. Gaston & David Baltimore. Achie
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-sharp2013-lipopolysaccharide-induced-nfkb-activa-biomd0000000489-model
     alias: model
-    manifest_path: models/signaling-sbml-sharp2013-lipopolysaccharide-induced-nfkb-activa-biomd0000000489-model/model.yaml
 ```
 
 ## Tags

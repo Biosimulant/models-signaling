@@ -11,14 +11,13 @@ Mueller2015 - Hepatocyte proliferation, T160phosphorylation of CDK2 This model i
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-mueller2015-hepatocyte-proliferation-t160-phosph-biomd0000000568-model
     alias: model
-    manifest_path: models/signaling-sbml-mueller2015-hepatocyte-proliferation-t160-phosph-biomd0000000568-model/model.yaml
 ```
 
 ## Tags

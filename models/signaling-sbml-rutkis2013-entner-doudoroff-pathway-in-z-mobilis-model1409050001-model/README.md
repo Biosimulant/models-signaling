@@ -11,14 +11,13 @@ The model corresponds to the Table 4 and the last column of table 5 of publicati
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-rutkis2013-entner-doudoroff-pathway-in-z-mobilis-model1409050001-model
     alias: model
-    manifest_path: models/signaling-sbml-rutkis2013-entner-doudoroff-pathway-in-z-mobilis-model1409050001-model/model.yaml
 ```
 
 ## Tags

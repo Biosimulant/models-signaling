@@ -11,14 +11,13 @@ Kwang2003 - The influence of RKIP on the ERKsignaling pathway This model is desc
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-kwang2003-the-influence-of-rkip-on-the-erk-signa-biomd0000000647-model
     alias: model
-    manifest_path: models/signaling-sbml-kwang2003-the-influence-of-rkip-on-the-erk-signa-biomd0000000647-model/model.yaml
 ```
 
 ## Tags

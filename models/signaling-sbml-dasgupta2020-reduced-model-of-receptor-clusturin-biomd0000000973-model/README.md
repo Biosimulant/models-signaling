@@ -11,14 +11,13 @@ a simple kinetic mass-action-law-based model could be utilized to adequately des
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-dasgupta2020-reduced-model-of-receptor-clusturin-biomd0000000973-model
     alias: model
-    manifest_path: models/signaling-sbml-dasgupta2020-reduced-model-of-receptor-clusturin-biomd0000000973-model/model.yaml
 ```
 
 ## Tags

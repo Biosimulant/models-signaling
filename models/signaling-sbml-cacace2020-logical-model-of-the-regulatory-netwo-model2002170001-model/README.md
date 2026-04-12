@@ -11,14 +11,13 @@ Boolean approaches and extensions thereof are becoming increasingly popular to m
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-cacace2020-logical-model-of-the-regulatory-netwo-model2002170001-model
     alias: model
-    manifest_path: models/signaling-sbml-cacace2020-logical-model-of-the-regulatory-netwo-model2002170001-model/model.yaml
 ```
 
 ## Tags

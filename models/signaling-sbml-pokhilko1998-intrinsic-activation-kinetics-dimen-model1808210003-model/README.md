@@ -11,14 +11,13 @@ Mathematical model of intrinsic pathway activation consisting of XIIa, kallikrei
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-pokhilko1998-intrinsic-activation-kinetics-dimen-model1808210003-model
     alias: model
-    manifest_path: models/signaling-sbml-pokhilko1998-intrinsic-activation-kinetics-dimen-model1808210003-model/model.yaml
 ```
 
 ## Tags

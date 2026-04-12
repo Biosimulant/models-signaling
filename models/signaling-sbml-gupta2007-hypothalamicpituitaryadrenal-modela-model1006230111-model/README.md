@@ -11,14 +11,13 @@ This a model from the article: Inclusion of the glucocorticoid receptor in a hyp
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-gupta2007-hypothalamicpituitaryadrenal-modela-model1006230111-model
     alias: model
-    manifest_path: models/signaling-sbml-gupta2007-hypothalamicpituitaryadrenal-modela-model1006230111-model/model.yaml
 ```
 
 ## Tags

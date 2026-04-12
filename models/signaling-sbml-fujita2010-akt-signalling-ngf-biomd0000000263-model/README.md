@@ -11,14 +11,13 @@ NGF dependent Akt pathway model made by Kazuhiro A. Fujita. This is the NGF depe
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-fujita2010-akt-signalling-ngf-biomd0000000263-model
     alias: model
-    manifest_path: models/signaling-sbml-fujita2010-akt-signalling-ngf-biomd0000000263-model/model.yaml
 ```
 
 ## Tags

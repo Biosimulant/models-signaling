@@ -11,14 +11,13 @@ This model is from the article: Dynamics and feedback loops in the transforming 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-wegner2012-tgfbetasignalling-feedbackloops-biomd0000000410-model
     alias: model
-    manifest_path: models/signaling-sbml-wegner2012-tgfbetasignalling-feedbackloops-biomd0000000410-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This SBML file is a translation of a MatLab model utilized inthe following paper
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-basak-cell-2007-model8478881246-model
     alias: model
-    manifest_path: models/signaling-sbml-basak-cell-2007-model8478881246-model/model.yaml
 ```
 
 ## Tags

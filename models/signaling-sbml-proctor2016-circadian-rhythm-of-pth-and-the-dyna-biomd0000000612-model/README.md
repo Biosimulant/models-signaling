@@ -11,14 +11,13 @@ Proctor2016 - Circadian rhythm of PTH and thedynamics of signaling molecules on 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-proctor2016-circadian-rhythm-of-pth-and-the-dyna-biomd0000000612-model
     alias: model
-    manifest_path: models/signaling-sbml-proctor2016-circadian-rhythm-of-pth-and-the-dyna-biomd0000000612-model/model.yaml
 ```
 
 ## Tags

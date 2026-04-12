@@ -11,14 +11,13 @@ NFkB model M(5,8,12) - minimal model This is a model of NFkB pathway functioning
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-radulescu2008-nfkb-hierarchy-m-5-8-12-model7743212613-model
     alias: model
-    manifest_path: models/signaling-sbml-radulescu2008-nfkb-hierarchy-m-5-8-12-model7743212613-model/model.yaml
 ```
 
 ## Tags

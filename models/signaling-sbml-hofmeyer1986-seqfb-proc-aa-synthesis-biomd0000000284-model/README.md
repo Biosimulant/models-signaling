@@ -11,14 +11,13 @@ This model is the reaction sequence SEQFB, a model pathway of a branched system 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-hofmeyer1986-seqfb-proc-aa-synthesis-biomd0000000284-model
     alias: model
-    manifest_path: models/signaling-sbml-hofmeyer1986-seqfb-proc-aa-synthesis-biomd0000000284-model/model.yaml
 ```
 
 ## Tags

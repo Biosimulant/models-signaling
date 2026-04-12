@@ -11,14 +11,13 @@ Martinez-Guimera2017 - Generic redox signalling model with negative feedforward 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-martinez-guimera2017-generic-redox-signalling-mo-model1710260002-model
     alias: model
-    manifest_path: models/signaling-sbml-martinez-guimera2017-generic-redox-signalling-mo-model1710260002-model/model.yaml
 ```
 
 ## Tags

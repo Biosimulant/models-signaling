@@ -11,14 +11,13 @@ This model is from the article: Division of labor by dual feedback regulators co
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-bachmann2011-jak2-stat5-feedbackcontrol-biomd0000000347-model
     alias: model
-    manifest_path: models/signaling-sbml-bachmann2011-jak2-stat5-feedbackcontrol-biomd0000000347-model/model.yaml
 ```
 
 ## Tags

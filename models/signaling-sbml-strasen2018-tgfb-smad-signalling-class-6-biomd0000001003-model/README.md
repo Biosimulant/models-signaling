@@ -11,14 +11,13 @@ simulating class 6 signalling
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-strasen2018-tgfb-smad-signalling-class-6-biomd0000001003-model
     alias: model
-    manifest_path: models/signaling-sbml-strasen2018-tgfb-smad-signalling-class-6-biomd0000001003-model/model.yaml
 ```
 
 ## Tags

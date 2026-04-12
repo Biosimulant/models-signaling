@@ -11,14 +11,13 @@ Muller2008 - Simplified MAPK activation Dynamics (Model B) Simplified mathematic
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-muller2008-simplified-mapk-activation-dynamics-m-biomd0000000664-model
     alias: model
-    manifest_path: models/signaling-sbml-muller2008-simplified-mapk-activation-dynamics-m-biomd0000000664-model/model.yaml
 ```
 
 ## Tags

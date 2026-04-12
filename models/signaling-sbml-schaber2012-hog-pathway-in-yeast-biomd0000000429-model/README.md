@@ -11,14 +11,13 @@ Schaber2012 - Hog pathway in yeast The high osmolarity glycerol (HOG) pathway in
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-schaber2012-hog-pathway-in-yeast-biomd0000000429-model
     alias: model
-    manifest_path: models/signaling-sbml-schaber2012-hog-pathway-in-yeast-biomd0000000429-model/model.yaml
 ```
 
 ## Tags

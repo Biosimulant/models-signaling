@@ -11,14 +11,13 @@ The model encodes the general biological process of protein synthesis and post-t
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-hammaren-geissen2022-pptop-model12-biomd0000001078-model
     alias: model
-    manifest_path: models/signaling-sbml-hammaren-geissen2022-pptop-model12-biomd0000001078-model/model.yaml
 ```
 
 ## Tags

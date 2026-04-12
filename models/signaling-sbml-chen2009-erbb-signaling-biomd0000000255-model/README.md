@@ -11,14 +11,13 @@ This is A431 IERMv1.0 model described in the article Input-output behavior of Er
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-chen2009-erbb-signaling-biomd0000000255-model
     alias: model
-    manifest_path: models/signaling-sbml-chen2009-erbb-signaling-biomd0000000255-model/model.yaml
 ```
 
 ## Tags

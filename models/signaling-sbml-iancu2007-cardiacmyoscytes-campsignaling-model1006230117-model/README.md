@@ -11,14 +11,13 @@ This a model from the article: Compartmentation of cAMP signaling in cardiac myo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-iancu2007-cardiacmyoscytes-campsignaling-model1006230117-model
     alias: model
-    manifest_path: models/signaling-sbml-iancu2007-cardiacmyoscytes-campsignaling-model1006230117-model/model.yaml
 ```
 
 ## Tags

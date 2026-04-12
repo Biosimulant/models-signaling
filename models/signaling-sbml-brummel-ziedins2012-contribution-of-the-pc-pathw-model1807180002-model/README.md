@@ -11,14 +11,13 @@ Mathematical model of the blood coagulation cascade including meizothrombin, pro
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-brummel-ziedins2012-contribution-of-the-pc-pathw-model1807180002-model
     alias: model
-    manifest_path: models/signaling-sbml-brummel-ziedins2012-contribution-of-the-pc-pathw-model1807180002-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ All cells and organisms exhibit stress-coping mechanisms to ensure survival. Cyt
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-heberlerazquinnavas2019-the-pi3k-and-mapk-p38-pa-model2001030002-model
     alias: model
-    manifest_path: models/signaling-sbml-heberlerazquinnavas2019-the-pi3k-and-mapk-p38-pa-model2001030002-model/model.yaml
 ```
 
 ## Tags

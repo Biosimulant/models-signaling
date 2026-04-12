@@ -11,14 +11,13 @@ Sivakumar2011 - Hedgehog Signaling Pathway This is the current model for the Hed
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-sivakumar2011-hedgehog-signaling-pathway-biomd0000000395-model
     alias: model
-    manifest_path: models/signaling-sbml-sivakumar2011-hedgehog-signaling-pathway-biomd0000000395-model/model.yaml
 ```
 
 ## Tags

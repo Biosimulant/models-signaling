@@ -11,14 +11,13 @@ Modeling the competition of two ligands which have the ability to bind to the sa
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-mathematical-modeling-of-ligand-competition-at-t-model2211300001-model
     alias: model
-    manifest_path: models/signaling-sbml-mathematical-modeling-of-ligand-competition-at-t-model2211300001-model/model.yaml
 ```
 
 ## Tags

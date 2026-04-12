@@ -11,14 +11,13 @@ A model for oscillations of Cdc2 kinase in embryonic cell cycles based on Michae
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-goldbeter2013-oscillatory-activity-of-cyclin-dep-biomd0000000944-model
     alias: model
-    manifest_path: models/signaling-sbml-goldbeter2013-oscillatory-activity-of-cyclin-dep-biomd0000000944-model/model.yaml
 ```
 
 ## Tags

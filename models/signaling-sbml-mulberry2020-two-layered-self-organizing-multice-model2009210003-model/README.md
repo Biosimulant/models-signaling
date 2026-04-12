@@ -11,14 +11,13 @@ This model generates a two-layered, multicellular structure from a simple cell-c
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-mulberry2020-two-layered-self-organizing-multice-model2009210003-model
     alias: model
-    manifest_path: models/signaling-sbml-mulberry2020-two-layered-self-organizing-multice-model2009210003-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This model encoded according to the paper Cross-talk and decision making in MAP 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-mcclean2007-crosstalk-biomd0000000116-model
     alias: model
-    manifest_path: models/signaling-sbml-mcclean2007-crosstalk-biomd0000000116-model/model.yaml
 ```
 
 ## Tags

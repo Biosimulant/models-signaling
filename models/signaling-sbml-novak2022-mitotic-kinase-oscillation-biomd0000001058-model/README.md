@@ -11,14 +11,13 @@ Bela Novak & John J. Tyson. Mitotic kinase oscillation governs the latching of c
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-novak2022-mitotic-kinase-oscillation-biomd0000001058-model
     alias: model
-    manifest_path: models/signaling-sbml-novak2022-mitotic-kinase-oscillation-biomd0000001058-model/model.yaml
 ```
 
 ## Tags

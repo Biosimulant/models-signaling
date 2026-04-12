@@ -11,14 +11,13 @@ This model consists of receptor-ligand interaction, G-protein activation, Adenyl
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-bhalla2004-pkc-2003-model9080388197-model
     alias: model
-    manifest_path: models/signaling-sbml-bhalla2004-pkc-2003-model9080388197-model/model.yaml
 ```
 
 ## Tags

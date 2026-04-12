@@ -11,14 +11,13 @@ Hornberg2005 - MAPKsignalling Large model of the ERK signallingnetwork. Results 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-hornberg2005-mapksignalling-biomd0000000667-model
     alias: model
-    manifest_path: models/signaling-sbml-hornberg2005-mapksignalling-biomd0000000667-model/model.yaml
 ```
 
 ## Tags

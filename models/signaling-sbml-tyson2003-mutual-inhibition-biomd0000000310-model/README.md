@@ -11,14 +11,13 @@ This is an SBML implementation the model of mutual inhibition (figure 1f) descri
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-tyson2003-mutual-inhibition-biomd0000000310-model
     alias: model
-    manifest_path: models/signaling-sbml-tyson2003-mutual-inhibition-biomd0000000310-model/model.yaml
 ```
 
 ## Tags

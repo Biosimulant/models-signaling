@@ -11,14 +11,13 @@ Salvador Chulián, Álvaro Martínez-Rubio, Anna Marciniak-Czochra, Thomas Stieh
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-chulian2021-feedback-signalling-in-b-lymphopoeis-biomd0000001056-model
     alias: model
-    manifest_path: models/signaling-sbml-chulian2021-feedback-signalling-in-b-lymphopoeis-biomd0000001056-model/model.yaml
 ```
 
 ## Tags

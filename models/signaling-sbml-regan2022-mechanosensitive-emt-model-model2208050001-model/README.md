@@ -11,14 +11,13 @@ This file contains a 136-node modular Boolean network model of EMT triggered by 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-regan2022-mechanosensitive-emt-model-model2208050001-model
     alias: model
-    manifest_path: models/signaling-sbml-regan2022-mechanosensitive-emt-model-model2208050001-model/model.yaml
 ```
 
 ## Tags

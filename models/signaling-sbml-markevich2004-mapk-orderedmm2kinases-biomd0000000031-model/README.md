@@ -11,14 +11,13 @@ The model describes the double phosphorylation of MAP kinase by an ordered mecha
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-markevich2004-mapk-orderedmm2kinases-biomd0000000031-model
     alias: model
-    manifest_path: models/signaling-sbml-markevich2004-mapk-orderedmm2kinases-biomd0000000031-model/model.yaml
 ```
 
 ## Tags

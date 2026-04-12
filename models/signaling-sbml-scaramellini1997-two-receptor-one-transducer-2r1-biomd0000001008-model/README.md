@@ -11,14 +11,13 @@ The two-receptor:one-transducerm odel (Leff, 1987) is here extended to analyze i
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-scaramellini1997-two-receptor-one-transducer-2r1-biomd0000001008-model
     alias: model
-    manifest_path: models/signaling-sbml-scaramellini1997-two-receptor-one-transducer-2r1-biomd0000001008-model/model.yaml
 ```
 
 ## Tags

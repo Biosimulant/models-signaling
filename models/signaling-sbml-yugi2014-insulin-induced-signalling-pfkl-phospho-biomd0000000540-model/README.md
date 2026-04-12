@@ -11,14 +11,13 @@ Yugi2014 - Insulin induced signalling (PFKLphosphorylation) - model 1 Insulin in
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-yugi2014-insulin-induced-signalling-pfkl-phospho-biomd0000000540-model
     alias: model
-    manifest_path: models/signaling-sbml-yugi2014-insulin-induced-signalling-pfkl-phospho-biomd0000000540-model/model.yaml
 ```
 
 ## Tags

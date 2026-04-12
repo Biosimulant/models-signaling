@@ -11,14 +11,13 @@ Sivakumar2011 - Notch Signaling Pathway Notch is a transmembrane receptor that m
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-sivakumar2011-notch-signaling-pathway-biomd0000000396-model
     alias: model
-    manifest_path: models/signaling-sbml-sivakumar2011-notch-signaling-pathway-biomd0000000396-model/model.yaml
 ```
 
 ## Tags

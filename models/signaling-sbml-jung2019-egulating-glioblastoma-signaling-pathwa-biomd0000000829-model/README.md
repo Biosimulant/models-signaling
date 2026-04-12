@@ -11,14 +11,13 @@ This model is based on paper, based on its cell cycle dynamics model:Strategies 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-jung2019-egulating-glioblastoma-signaling-pathwa-biomd0000000829-model
     alias: model
-    manifest_path: models/signaling-sbml-jung2019-egulating-glioblastoma-signaling-pathwa-biomd0000000829-model/model.yaml
 ```
 
 ## Tags

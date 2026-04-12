@@ -11,14 +11,13 @@ Yao2016_Calcium_Signaling This model is described in the article: Distinct cellu
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-yao2016-calcium-signaling-model1611150001-model
     alias: model
-    manifest_path: models/signaling-sbml-yao2016-calcium-signaling-model1611150001-model/model.yaml
 ```
 
 ## Tags

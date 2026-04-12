@@ -11,14 +11,13 @@ This model is from the article: Quantitative analysis of transient and sustained
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-zi2011-tgf-beta-pathway-biomd0000000342-model
     alias: model
-    manifest_path: models/signaling-sbml-zi2011-tgf-beta-pathway-biomd0000000342-model/model.yaml
 ```
 
 ## Tags

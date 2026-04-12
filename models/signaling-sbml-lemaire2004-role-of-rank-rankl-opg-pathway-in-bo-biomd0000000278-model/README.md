@@ -11,14 +11,13 @@ This a model from the article: Modeling the interactions between osteoblast and 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-lemaire2004-role-of-rank-rankl-opg-pathway-in-bo-biomd0000000278-model
     alias: model
-    manifest_path: models/signaling-sbml-lemaire2004-role-of-rank-rankl-opg-pathway-in-bo-biomd0000000278-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ NF-kappaB Activation Model includes the activation of both NFKB1:RELA and NFKB2:
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-ahmedmobeen2021-nf-kb-activation-model-model2001290001-model
     alias: model
-    manifest_path: models/signaling-sbml-ahmedmobeen2021-nf-kb-activation-model-model2001290001-model/model.yaml
 ```
 
 ## Tags

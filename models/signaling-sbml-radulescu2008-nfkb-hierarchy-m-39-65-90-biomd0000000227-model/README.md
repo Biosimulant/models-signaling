@@ -11,14 +11,13 @@ NFkB model M(39,65,90) - most complex model This is a model of NFkB pathway func
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/signaling-sbml-radulescu2008-nfkb-hierarchy-m-39-65-90-biomd0000000227-model
     alias: model
-    manifest_path: models/signaling-sbml-radulescu2008-nfkb-hierarchy-m-39-65-90-biomd0000000227-model/model.yaml
 ```
 
 ## Tags

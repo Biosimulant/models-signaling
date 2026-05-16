@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Thomson2009 – Unlimited multistability in multisite phosphorylation systems
+  Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Thomson2009 – Unlimited multistability in multisite phosphorylation systems.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model
+    title: Thomson2009 – Unlimited multistability in multisite phosphorylation systems
+    context: phosphorylation and regulatory motif dynamics
+    question: How does Thomson2009 – Unlimited multistability in multisite phosphorylation
+      systems express its source-modeled signaling motif over the baseline run?
+    visual_scope: phosphorylation and regulatory motif dynamics
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_e_state: float
+      source_defined_s0_state: float
+      source_defined_es0_state: float
+      source_defined_s1_state: float
+      source_defined_es1_state: float
+      source_defined_s2_state: float
+      source_defined_es2_state: float
+      source_defined_s3_state: float
+      source_defined_es3_state: float
+      source_defined_s4_state: float
+      source_defined_f_state: float
+      source_defined_fs4_state: float
+      source_defined_fs3_state: float
+      source_defined_fs2_state: float
+      source_defined_fs1_state: float
+    species_labels:
+      source_defined_e_state: Source Defined E State
+      source_defined_s0_state: Source Defined S0 State
+      source_defined_es0_state: Source Defined ES0 State
+      source_defined_s1_state: Source Defined S1 State
+      source_defined_es1_state: Source Defined ES1 State
+      source_defined_s2_state: Source Defined S2 State
+      source_defined_es2_state: Source Defined ES2 State
+      source_defined_s3_state: Source Defined S3 State
+      source_defined_es3_state: Source Defined ES3 State
+      source_defined_s4_state: Source Defined S4 State
+      source_defined_f_state: Source Defined F State
+      source_defined_fs4_state: Source Defined FS4 State
+      source_defined_fs3_state: Source Defined FS3 State
+      source_defined_fs2_state: Source Defined FS2 State
+      source_defined_fs1_state: Source Defined FS1 State
+io:
+  inputs: []
+  outputs: []

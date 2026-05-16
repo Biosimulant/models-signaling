@@ -1,0 +1,219 @@
+schema_version: '2.0'
+title: Borisov2009_EGF_Insulin_Crosstalk Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+- hormone-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_borisov2009_egf_insulin_crosstalk_biomd0000000223_model
+    title: Borisov2009_EGF_Insulin_Crosstalk
+    context: receptor-to-MAPK cascade signaling
+    question: How does Borisov2009 EGF Insulin Crosstalk propagate receptor or RAS/ERK
+      pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      egf: float
+      source_defined_i_state: float
+      source_defined_re_state: float
+      source_defined_rd_state: float
+      source_defined_rp_state: float
+      source_defined_gs_state: float
+      source_defined_rp_gs_state: float
+      shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: float
+      rp_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: float
+      rp_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: float
+      phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: float
+      rp_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_gs: float
+      pi3k: float
+      rp_pi3k: float
+      ras_gap: float
+      rp_ras_gap: float
+      source_defined_irl_state: float
+      phosphorylated_insulin_receptor: float
+      phosphorylated_insulin_receptor_pi3k: float
+      phosphorylated_insulin_receptor_ras_gap: float
+      irs: float
+      phosphorylated_insulin_receptor_irs: float
+      phosphorylated_insulin_receptor_irsp: float
+      source_defined_irsp_state: float
+      source_defined_isrc_state: float
+      source_defined_mirs_state: float
+      mirsp: float
+      mirsp_gs: float
+      mirsp_pi3k: float
+      source_defined_shp2_state: float
+      mirsp_shp2: float
+      source_defined_gab_state: float
+      source_defined_mgab_state: float
+      mgabp: float
+      mgabp_gs: float
+      mgabp_pi3k: float
+      mgabp_shp2: float
+      mgabp_pshp2: float
+      source_defined_phosphorylated_ip3_state: float
+      source_defined_dras_state: float
+      raf: float
+      source_defined_araf_state: float
+      mek: float
+      erk: float
+      phospho_erk: float
+      source_defined_pdk1_state: float
+      akt: float
+      phospho_akt: float
+      mtor: float
+      source_defined_null_state: float
+      aa_raf: float
+      source_defined_pka_state: float
+      phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_gs: float
+      pp_mek: float
+      mgabp_pshp2_gs: float
+      source_defined_r_state: float
+      pp_erk: float
+      insulin_receptor: float
+      source_defined_mpdk1_state: float
+      source_defined_tras_state: float
+      tras_pi3k: float
+      pp_akt: float
+      mgabp_ras_gap: float
+      am_tor: float
+      source_defined_igs_state: float
+      im_gab: float
+      im_irs: float
+      source_defined_asrc_state: float
+      source_defined_ri_state: float
+      internalized_insulin_receptor: float
+      source_defined_ipx_state: float
+      source_defined_apx_state: float
+      apx_gs: float
+      irsp_pi3k: float
+      irsp_gs: float
+      irsp_shp2: float
+      source_defined_gabp_state: float
+      gabp_pi3k: float
+      gabp_gs: float
+      gabp_ras_gap: float
+      gabp_shp2: float
+      gabp_pshp2: float
+      gabp_pshp2_gs: float
+      im_gabp: float
+      bras_gap: float
+      phosphorylated_akt: float
+    species_labels:
+      egf: EGF
+      source_defined_i_state: Source Defined I State
+      source_defined_re_state: Source Defined RE State
+      source_defined_rd_state: Source Defined RD State
+      source_defined_rp_state: Source Defined RP State
+      source_defined_gs_state: Source Defined GS State
+      source_defined_rp_gs_state: Source Defined RP GS State
+      shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: Shc
+        adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein
+        Adapter Protein
+      rp_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: Rp
+        Shc adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein
+      rp_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: Rp
+        Phospho Shc adapter protein Adapter Protein Adapter Protein Adapter Protein
+        Adapter Protein Adapter Protein
+      phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: Phospho
+        Shc adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein
+      rp_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_gs: Rp
+        Phospho Shc adapter protein Adapter Protein Adapter Protein Adapter Protein
+        Adapter Protein Adapter Protein GS
+      pi3k: PI3K
+      rp_pi3k: Rp PI3K
+      ras_gap: RAS GAP
+      rp_ras_gap: Rp RAS GAP
+      source_defined_irl_state: Source Defined IRL State
+      phosphorylated_insulin_receptor: Phosphorylated Insulin Receptor
+      phosphorylated_insulin_receptor_pi3k: Phosphorylated Insulin Receptor PI3K
+      phosphorylated_insulin_receptor_ras_gap: Phosphorylated Insulin Receptor RAS
+        GAP
+      irs: IRS
+      phosphorylated_insulin_receptor_irs: Phosphorylated Insulin Receptor IRS
+      phosphorylated_insulin_receptor_irsp: Phosphorylated Insulin Receptor Irsp
+      source_defined_irsp_state: Source Defined IRSP State
+      source_defined_isrc_state: Source Defined ISRC State
+      source_defined_mirs_state: Source Defined MIRS State
+      mirsp: Mirsp
+      mirsp_gs: Mirsp GS
+      mirsp_pi3k: Mirsp PI3K
+      source_defined_shp2_state: Source Defined SHP2 State
+      mirsp_shp2: Mirsp SHP2
+      source_defined_gab_state: Source Defined GAB State
+      source_defined_mgab_state: Source Defined MGAB State
+      mgabp: Mgabp
+      mgabp_gs: Mgabp GS
+      mgabp_pi3k: Mgabp PI3K
+      mgabp_shp2: Mgabp SHP2
+      mgabp_pshp2: Mgabp PSHP2
+      source_defined_phosphorylated_ip3_state: Source Defined Phosphorylated IP3 State
+      source_defined_dras_state: Source Defined DRAS State
+      raf: RAF
+      source_defined_araf_state: Source Defined ARAF State
+      mek: MEK
+      erk: ERK
+      phospho_erk: Phospho ERK
+      source_defined_pdk1_state: Source Defined PDK1 State
+      akt: AKT
+      phospho_akt: Phospho AKT
+      mtor: mTOR
+      source_defined_null_state: Source Defined NULL State
+      aa_raf: Aa RAF
+      source_defined_pka_state: Source Defined PKA State
+      phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_gs: Phospho
+        Shc adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein GS
+      pp_mek: Pp MEK
+      mgabp_pshp2_gs: Mgabp PSHP2 GS
+      source_defined_r_state: Source Defined R State
+      pp_erk: Pp ERK
+      insulin_receptor: Insulin Receptor
+      source_defined_mpdk1_state: Source Defined MPDK1 State
+      source_defined_tras_state: Source Defined TRAS State
+      tras_pi3k: Tras PI3K
+      pp_akt: Pp AKT
+      mgabp_ras_gap: Mgabp RAS GAP
+      am_tor: Am TOR
+      source_defined_igs_state: Source Defined IGS State
+      im_gab: Im GAB
+      im_irs: Im IRS
+      source_defined_asrc_state: Source Defined ASRC State
+      source_defined_ri_state: Source Defined RI State
+      internalized_insulin_receptor: Internalized Insulin Receptor
+      source_defined_ipx_state: Source Defined IPX State
+      source_defined_apx_state: Source Defined APX State
+      apx_gs: APX GS
+      irsp_pi3k: Irsp PI3K
+      irsp_gs: Irsp GS
+      irsp_shp2: Irsp SHP2
+      source_defined_gabp_state: Source Defined GABP State
+      gabp_pi3k: Gabp PI3K
+      gabp_gs: Gabp GS
+      gabp_ras_gap: Gabp RAS GAP
+      gabp_shp2: Gabp SHP2
+      gabp_pshp2: Gabp PSHP2
+      gabp_pshp2_gs: Gabp PSHP2 GS
+      im_gabp: Im Gabp
+      bras_gap: Bras GAP
+      phosphorylated_akt: Phosphorylated AKT
+io:
+  inputs: []
+  outputs: []

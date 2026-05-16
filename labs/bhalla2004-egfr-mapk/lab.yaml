@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Bhalla2004_EGFR_MAPK Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model.state
+  to:
+  - visualisation.signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model_state
+- from: signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model.summary
+  to:
+  - visualisation.signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model_summary
+- from: signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model.species_labels
+  to:
+  - visualisation.signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- egfr
+- neuroscience
+io:
+  inputs:
+  - name: initial_beta_response_parameter_gamma
+    maps_to: signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model.initial_beta_response_parameter_gamma
+    label: Initial beta response parameter Gamma
+    description: Initial level of beta response parameter Gamma. Maps to SBML symbol
+      `BetaGamma`; exposed as a traceable initial-condition perturbation.
+  - name: initial_calcium_m_ca4
+    maps_to: signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model.initial_calcium_m_ca4
+    label: Initial calcium M Ca4
+    description: Initial level of calcium M Ca4. Maps to SBML symbol `CaM_minus_Ca4`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_egfr_egf
+    maps_to: signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model.initial_egfr_egf
+    label: Initial EGFR EGF
+    description: Initial level of EGFR EGF. Maps to SBML symbol `EGFR_slash_EGF`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: pkc_active_pkc_act_raf_pkc_act_raf_cplx
+    maps_to: signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model.pkc_active_pkc_act_raf_pkc_act_raf_cplx
+    label: PKC active PKC Act RAF PKC Act RAF Cplx
+    description: PKC active PKC Act RAF PKC Act RAF Cplx. Maps to SBML symbol `PKC_minus_active_slash_PKC_minus_act_minus_raf_slash_PKC_minus_act_minus_raf_cplx`
+      and is emitted in native SBML units.
+  - name: pkc_active_pkc_inact_gap_pkc_inact_gap_cplx
+    maps_to: signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model.pkc_active_pkc_inact_gap_pkc_inact_gap_cplx
+    label: PKC active PKC Inact GAP PKC Inact GAP Cplx
+    description: PKC active PKC Inact GAP PKC Inact GAP Cplx. Maps to SBML symbol
+      `PKC_minus_active_slash_PKC_minus_inact_minus_GAP_slash_PKC_minus_inact_minus_GAP_cplx`
+      and is emitted in native SBML units.
+  - name: pkc_active_pkc_act_gef_pkc_act_gef_cplx
+    maps_to: signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model.pkc_active_pkc_act_gef_pkc_act_gef_cplx
+    label: PKC active PKC Act GEF PKC Act GEF Cplx
+    description: PKC active PKC Act GEF PKC Act GEF Cplx. Maps to SBML symbol `PKC_minus_active_slash_PKC_minus_act_minus_GEF_slash_PKC_minus_act_minus_GEF_cplx`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model.species_labels
+    label: Observable labels

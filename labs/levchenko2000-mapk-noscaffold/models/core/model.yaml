@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Levchenko2000_MAPK_noScaffold
+description: MAPK cascade in solution (no scaffold) Description This model describes
+  a basic 3- stage Mitogen Activated Protein Kinase (MAPK) cascade in solution. This
+  cascade is typically expressed as RAF= =&gt;M.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+authors:
+- Biosimulant Team
+- A Levchenko
+- J Bruck
+- P W Sternberg
+upstream:
+  id: biomodels_ebi:BIOMD0000000011
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000011
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000011
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000011?filename=BIOMD0000000011_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.levchenko2000_mapk_noscaffold:Levchenko2000MapkNoscaffoldBiomd0000000011Model
+  init_kwargs:
+    model_path: data/BIOMD0000000011.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_mapk
+    maps_to: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.initial_mapk
+    label: Initial MAPK
+    description: Initial level of MAPK. Maps to SBML symbol `MAPK`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: mapk
+    maps_to: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.mapk
+    label: MAPK
+    description: MAPK. Maps to SBML symbol `MAPK` and is emitted in native SBML units.
+  - name: mapk_mek_pp
+    maps_to: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.mapk_mek_pp
+    label: MAPK MEK PP
+    description: MAPK MEK PP. Maps to SBML symbol `MAPKMEKpp` and is emitted in native
+      SBML units.
+  - name: mapk_p
+    maps_to: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.mapk_p
+    label: MAPK P
+    description: MAPK P. Maps to SBML symbol `MAPKp` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.species_labels
+    label: Observable labels

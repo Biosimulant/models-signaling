@@ -1,0 +1,85 @@
+schema_version: '2.0'
+title: Machado2014 - Curcumin production pathway in Escherichia coli Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Machado2014 - Curcumin production pathway in Escherichia coli.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model
+    title: Machado2014 - Curcumin production pathway in Escherichia coli
+    context: metabolic and hormone signaling response
+    question: How does Machado2014 - Curcumin production pathway in Escherichia coli
+      shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      phosphoenol_pyruvate: float
+      extracellular_glucose: float
+      glucose_6_phosphate: float
+      pyruvate: float
+      fructose_6_phosphate: float
+      glucose_1_phosphate: float
+      source_6_phosphogluconate: float
+      fructose_1_6_bisphosphate: float
+      sedoheptulose_7_phosphate: float
+      glyceraldehyde_3_phosphate: float
+      erythrose_4_phosphate: float
+      xylulose_5_phosphate: float
+      ribose_5_phosphate: float
+      dihydroxyacetonephosphate: float
+      source_1_3_diphosphosphoglycerate: float
+      source_3_phosphoglycerate: float
+      source_2_phosphoglycerate: float
+      ribulose_5_phosphate: float
+      accoa: float
+      malcoa: float
+      source_defined_fer_state: float
+      fer_ext: float
+      fercoa: float
+      ferdicoa: float
+      source_defined_cur_state: float
+      cur_ext: float
+    species_labels:
+      phosphoenol_pyruvate: Phosphoenol Pyruvate
+      extracellular_glucose: Extracellular Glucose
+      glucose_6_phosphate: Glucose 6 Phosphate
+      pyruvate: Pyruvate
+      fructose_6_phosphate: Fructose 6 Phosphate
+      glucose_1_phosphate: Glucose 1 Phosphate
+      source_6_phosphogluconate: 6 Phosphogluconate
+      fructose_1_6_bisphosphate: Fructose 1 6 Bisphosphate
+      sedoheptulose_7_phosphate: Sedoheptulose 7 Phosphate
+      glyceraldehyde_3_phosphate: Glyceraldehyde 3 Phosphate
+      erythrose_4_phosphate: Erythrose 4 Phosphate
+      xylulose_5_phosphate: Xylulose 5 Phosphate
+      ribose_5_phosphate: Ribose 5 Phosphate
+      dihydroxyacetonephosphate: Dihydroxyacetonephosphate
+      source_1_3_diphosphosphoglycerate: 1 3 Diphosphosphoglycerate
+      source_3_phosphoglycerate: 3 Phosphoglycerate
+      source_2_phosphoglycerate: 2 Phosphoglycerate
+      ribulose_5_phosphate: Ribulose 5 Phosphate
+      accoa: Accoa
+      malcoa: Malcoa
+      source_defined_fer_state: Source Defined FER State
+      fer_ext: Fer Ext
+      fercoa: Fercoa
+      ferdicoa: Ferdicoa
+      source_defined_cur_state: Source Defined CUR State
+      cur_ext: Cur Ext
+io:
+  inputs: []
+  outputs: []

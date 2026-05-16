@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Strasen2018 - TGFb SMAD Signalling - DRB treatment
+description: Simulates figure 4H. DRB = 1 simulates the wild type condition and DRB
+  = 0.2 simulates the DRB treated condition.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- tgf-beta
+- smad
+authors:
+- Biosimulant Team
+- Strasen J
+- Sarma U
+- Jentsch M
+- Bohn S
+- Sheng C
+upstream:
+  id: biomodels_ebi:BIOMD0000000997
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000997
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000997
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000997?filename=MODEL1712050006.xml
+  license: CC0
+biosim:
+  entrypoint: src.strasen2018_tgfb_smad_signalling_drb_treatment:Strasen2018TgfbSmadSignallingDrbTreatmentBiomd0000000997Model
+  init_kwargs:
+    model_path: data/BIOMD0000000997.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_index_induced_ligand_deg_level
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_drb_treatment_biomd0000000997_model.initial_index_induced_ligand_deg_level
+    label: Index Induced Ligand Deg
+    description: Index Induced Ligand Deg source parameter. Maps to SBML symbol `index_induced_ligand_deg`
+      and preserves the bundled default.
+  - name: initial_kin_deg_ligand_level
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_drb_treatment_biomd0000000997_model.initial_kin_deg_ligand_level
+    label: Kin Deg Ligand
+    description: Kin Deg Ligand source parameter. Maps to SBML symbol `kin_deg_Ligand`
+      and preserves the bundled default.
+  - name: initial_tgf_beta_ligand_dose
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_drb_treatment_biomd0000000997_model.initial_tgf_beta_ligand_dose
+    label: TGF-beta LIGAND Dose
+    description: TGF-beta LIGAND Dose source parameter. Maps to SBML symbol `TGFb_LIGAND_Dose`
+      and preserves the bundled default.
+  outputs:
+  - name: active_tgfr2
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_drb_treatment_biomd0000000997_model.active_tgfr2
+    label: active TGFR2
+    description: active TGFR2. Maps to SBML symbol `Active_R2` and is emitted in native
+      SBML units.
+  - name: active_tgf_beta_tgfr1_tgfr2
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_drb_treatment_biomd0000000997_model.active_tgf_beta_tgfr1_tgfr2
+    label: active TGF-beta TGFR1 TGFR2
+    description: active TGF-beta TGFR1 TGFR2. Maps to SBML symbol `Active_Rec` and
+      is emitted in native SBML units.
+  - name: active_tgf_beta_tgfr1_tgfr2_endo
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_drb_treatment_biomd0000000997_model.active_tgf_beta_tgfr1_tgfr2_endo
+    label: active TGF-beta TGFR1 TGFR2 Endo
+    description: active TGF-beta TGFR1 TGFR2 Endo. Maps to SBML symbol `Active_Rec_endo`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_drb_treatment_biomd0000000997_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_drb_treatment_biomd0000000997_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_drb_treatment_biomd0000000997_model.species_labels
+    label: Observable labels

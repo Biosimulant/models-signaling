@@ -1,0 +1,139 @@
+schema_version: '2.0'
+title: TLR4-NFkB-phospho-NF-kB signaling in BMDM Visualisation
+description: Question-and-answer and chart visualisation for NF-kB pathway signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- tlr-signaling
+- immune-signaling
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_tlr4_nfkb_phospho_nf_kb_signaling_in_bmdm_model1809230001_model
+    title: TLR4-NFkB-phospho-NF-kB signaling in BMDM
+    context: NF-kB activation and feedback signaling
+    question: How does TLR4-NFkB-phospho-NF-kB signaling in BMDM move NF-kB and inhibitor-linked
+      signaling states?
+    visual_scope: NF-kB activation and feedback signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      cd14: float
+      source_defined_traf6_state: float
+      source_defined_ikk_state: float
+      source_defined_ikk_p_state: float
+      source_dna: float
+      sink_species: float
+      source_defined_ikba_state: float
+      ik_ba_nfk_b: float
+      nfkb: float
+      ikk_p_ik_ba_nfk_b: float
+      nfk_b_nuc: float
+      ik_ba_nuc: float
+      ik_ba_nfk_b_nuc: float
+      ik_ba_m_rna: float
+      ikk_p_ik_ba: float
+      source_defined_tak1_state: float
+      cd14lps: float
+      tlr4lps_memb: float
+      tlr4_memb: float
+      cd14lps_endo: float
+      tlr4lps_endo: float
+      tlr4_endo: float
+      myd88: float
+      myd88_2: float
+      source_defined_trif_state: float
+      source_defined_trif_state_2: float
+      traf6_p: float
+      tak1_p: float
+      source_defined_ikbb_state: float
+      ik_complement_factor_bb_nfk_b: float
+      source_defined_ikbe_state: float
+      ik_be_nfk_b: float
+      ikk_p_ik_complement_factor_bb_nfk_b: float
+      ikk_p_ik_be_nfk_b: float
+      ik_complement_factor_bb_nuc: float
+      ik_complement_factor_bb_nfk_b_nuc: float
+      ik_be_nuc: float
+      ik_be_nfk_b_nuc: float
+      ik_complement_factor_bb_m_rna: float
+      ik_be_m_rna: float
+      ikk_p_ik_complement_factor_bb: float
+      ikk_p_ik_be: float
+      dimer_tlr4lps_memb: float
+      dimer_tlr4lps_endo: float
+      nfk_bdna_nuc: float
+      nfk_b_p: float
+      nfk_b_p_nuc: float
+      ikk_p_ik_ba_nfk_b_p: float
+      nfk_bdna_p_nuc: float
+      source_defined_wip1_state: float
+      wip1_m_rna: float
+      source_defined_lps_state: float
+    species_labels:
+      cd14: CD14
+      source_defined_traf6_state: source-defined TRAF6 state
+      source_defined_ikk_state: source-defined IKK state
+      source_defined_ikk_p_state: source-defined IKK[P] state
+      source_dna: Source DNA
+      sink_species: sink species
+      source_defined_ikba_state: source-defined IKBA state
+      ik_ba_nfk_b: Ik Ba Nfk B
+      nfkb: NF-kB
+      ikk_p_ik_ba_nfk_b: IKK P Ik Ba Nfk B
+      nfk_b_nuc: Nfk B Nuc
+      ik_ba_nuc: Ik Ba Nuc
+      ik_ba_nfk_b_nuc: Ik Ba Nfk B Nuc
+      ik_ba_m_rna: Ik Ba M RNA
+      ikk_p_ik_ba: IKK P Ik Ba
+      source_defined_tak1_state: source-defined TAK1 state
+      cd14lps: CD14LPS
+      tlr4lps_memb: TLR4LPS Memb
+      tlr4_memb: TLR4 Memb
+      cd14lps_endo: CD14LPS Endo
+      tlr4lps_endo: TLR4LPS Endo
+      tlr4_endo: TLR4 Endo
+      myd88: MYD88
+      myd88_2: MYD88
+      source_defined_trif_state: source-defined TRIF state
+      source_defined_trif_state_2: source-defined TRIF* state
+      traf6_p: TRAF6 P
+      tak1_p: TAK1 P
+      source_defined_ikbb_state: source-defined IKBB state
+      ik_complement_factor_bb_nfk_b: Ik complement factor Bb Nfk B
+      source_defined_ikbe_state: source-defined IKBE state
+      ik_be_nfk_b: Ik Be Nfk B
+      ikk_p_ik_complement_factor_bb_nfk_b: IKK P Ik complement factor Bb Nfk B
+      ikk_p_ik_be_nfk_b: IKK P Ik Be Nfk B
+      ik_complement_factor_bb_nuc: Ik complement factor Bb Nuc
+      ik_complement_factor_bb_nfk_b_nuc: Ik complement factor Bb Nfk B Nuc
+      ik_be_nuc: Ik Be Nuc
+      ik_be_nfk_b_nuc: Ik Be Nfk B Nuc
+      ik_complement_factor_bb_m_rna: Ik complement factor Bb M RNA
+      ik_be_m_rna: Ik Be M RNA
+      ikk_p_ik_complement_factor_bb: IKK P Ik complement factor Bb
+      ikk_p_ik_be: IKK P Ik Be
+      dimer_tlr4lps_memb: Dimer TLR4LPS Memb
+      dimer_tlr4lps_endo: Dimer TLR4LPS Endo
+      nfk_bdna_nuc: Nfk BDNA Nuc
+      nfk_b_p: Nfk B P
+      nfk_b_p_nuc: Nfk B P Nuc
+      ikk_p_ik_ba_nfk_b_p: IKK P Ik Ba Nfk B P
+      nfk_bdna_p_nuc: Nfk BDNA P Nuc
+      source_defined_wip1_state: source-defined WIP1 state
+      wip1_m_rna: WIP1 M RNA
+      source_defined_lps_state: source-defined LPS state
+io:
+  inputs: []
+  outputs: []

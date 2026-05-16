@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8275fccf-1652-4fec-989a-7c669e6b089f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3100767d-4542-46d2-8e33-13914567bfc9",
+  "created_at": "2026-05-15T19:08:09.656511478+00:00",
+  "last_synced_at": "2026-05-16T09:40:04.269196+00:00",
+  "hub_manifest_hash": "4c836a874caa86e1f3026c27a3c47f86a7116316832d0fb8b78778bb9226aa4b",
+  "package_name": "goldbeter1996-cyclin-cdc2-kinase-oscillations-lab"
+}

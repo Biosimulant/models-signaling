@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Thiaville2016 - Wild type folate pathway model with proposed PanB reaction
+description: Thiaville2016 - Wild type folate pathwaymodel with proposed PanB reaction
+  This is a wild type E. coli model, andis one amongst the three models described
+  in the paper.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Jennifer J Thiaville
+- Océane Frelin
+- Carolina García-Salinas
+- Katherine Harrison
+- Ghulam Hasnain
+upstream:
+  id: biomodels_ebi:BIOMD0000000639
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000639
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000639
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000639?filename=BIOMD0000000639_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.thiaville2016_wild_type_folate_pathway_model_wit:Thiaville2016WildTypeFolatePathwayModelWitBiomd0000000639Model
+  init_kwargs:
+    model_path: data/BIOMD0000000639.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_adp
+    maps_to: signaling_sbml_thiaville2016_wild_type_folate_pathway_model_wit_biomd0000000639_model.initial_adp
+    label: Initial ADP
+    description: Initial level of ADP. Maps to SBML symbol `ADP`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_amp
+    maps_to: signaling_sbml_thiaville2016_wild_type_folate_pathway_model_wit_biomd0000000639_model.initial_amp
+    label: Initial AMP
+    description: Initial level of AMP. Maps to SBML symbol `AMP`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_atp
+    maps_to: signaling_sbml_thiaville2016_wild_type_folate_pathway_model_wit_biomd0000000639_model.initial_atp
+    label: Initial ATP
+    description: Initial level of ATP. Maps to SBML symbol `ATP`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: phosphate
+    maps_to: signaling_sbml_thiaville2016_wild_type_folate_pathway_model_wit_biomd0000000639_model.phosphate
+    label: Phosphate
+    description: Phosphate. Maps to SBML symbol `Phosphate` and is emitted in native
+      SBML units.
+  - name: h2_hmpt
+    maps_to: signaling_sbml_thiaville2016_wild_type_folate_pathway_model_wit_biomd0000000639_model.h2_hmpt
+    label: H2 Hmpt
+    description: H2 Hmpt. Maps to SBML symbol `H2_HMPt` and is emitted in native SBML
+      units.
+  - name: atp
+    maps_to: signaling_sbml_thiaville2016_wild_type_folate_pathway_model_wit_biomd0000000639_model.atp
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_thiaville2016_wild_type_folate_pathway_model_wit_biomd0000000639_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_thiaville2016_wild_type_folate_pathway_model_wit_biomd0000000639_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_thiaville2016_wild_type_folate_pathway_model_wit_biomd0000000639_model.species_labels
+    label: Observable labels

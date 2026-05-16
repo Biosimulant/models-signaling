@@ -1,0 +1,182 @@
+schema_version: '2.0'
+title: Yapo2017 - A2AR/cAMP/PKA signalling in D2 dopamine receptor expressing medium-spiny
+  neurons Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Yapo2017 - A2AR/cAMP/PKA signalling in D2 dopamine receptor expressing medium-spiny
+  neurons.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- camp-pka
+- gpcr
+- neuroscience
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model
+    title: Yapo2017 - A2AR/cAMP/PKA signalling in D2 dopamine receptor expressing
+      medium-spiny neurons
+    context: GPCR and cAMP/PKA signaling
+    question: How does Yapo2017 - A2AR/cAMP/PKA signalling in D2 dopamine receptor
+      expressing medium-spiny neurons route receptor activity into cAMP/PKA-linked
+      readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_da_state: float
+      d2r: float
+      d2rda: float
+      d2rdagi: float
+      source_defined_gi_state: float
+      d2rgi: float
+      gai_gtp: float
+      source_defined_gbgi_state: float
+      a2ar: float
+      a2aradn: float
+      adenosine: float
+      a2aradn_golf_g_protein: float
+      golf_g_protein: float
+      a2argolf: float
+      gaolf_gtp: float
+      gbgolf: float
+      gaolf_gdp: float
+      gai_gdp: float
+      source_defined_ac5_state: float
+      ac5_atp: float
+      atp: float
+      camp: float
+      ac5gaolf_gtp: float
+      ac5gaolf_gtp_atp: float
+      ac5gai_gtp: float
+      ac5gai_gtp_atp: float
+      ac5gaolf_gtpgai_gtp: float
+      ac5gaolf_gtpgai_gtp_atp: float
+      pde10: float
+      pde10_c_amp: float
+      amp: float
+      source_defined_pka_state: float
+      pkac_amp2: float
+      pkac_amp4: float
+      source_defined_pkac_state: float
+      pkareg: float
+      calcium: float
+      calmodulin: float
+      calcium_mca2: float
+      calcium_mca4: float
+      pp2b: float
+      pp2bca_m: float
+      pp2bca_mca2: float
+      pp2bc: float
+      darpp32: float
+      pkac_d32: float
+      d32p34: float
+      b56pp2a: float
+      pkac_b56pp2a: float
+      b56pp2ap: float
+      source_defined_pp1_state: float
+      pp1d32p34: float
+      source_defined_cdk5_state: float
+      cdk5_d32: float
+      d32p75: float
+      pkac_d32p75: float
+      b72pp2a: float
+      b72ppa2ca: float
+      b56pp2ap_d32p75: float
+      b72pp2a_d32p75: float
+      b72pp2aca_d32p75: float
+      b56pp2a_d32p75: float
+      pp2bc_d32p34: float
+      source_defined_epac_state: float
+      epac_c_amp: float
+      source_defined_akar3_state: float
+      pkac_akar3: float
+      akar3p: float
+      pp1_akar3p: float
+      total_active_pka: float
+      total_akar3p: float
+    species_labels:
+      source_defined_da_state: source-defined DA state
+      d2r: D2R
+      d2rda: D2RDA
+      d2rdagi: D2rdagi
+      source_defined_gi_state: source-defined GI state
+      d2rgi: D2rgi
+      gai_gtp: Gai GTP
+      source_defined_gbgi_state: source-defined GBGI state
+      a2ar: A2AR
+      a2aradn: A2aradn
+      adenosine: adenosine
+      a2aradn_golf_g_protein: A2aradn Golf G protein
+      golf_g_protein: Golf G protein
+      a2argolf: A2argolf
+      gaolf_gtp: Gaolf GTP
+      gbgolf: Gbgolf
+      gaolf_gdp: Gaolf GDP
+      gai_gdp: Gai GDP
+      source_defined_ac5_state: source-defined AC5 state
+      ac5_atp: AC5 ATP
+      atp: ATP
+      camp: cAMP
+      ac5gaolf_gtp: Ac5gaolf GTP
+      ac5gaolf_gtp_atp: Ac5gaolf GTP ATP
+      ac5gai_gtp: Ac5gai GTP
+      ac5gai_gtp_atp: Ac5gai GTP ATP
+      ac5gaolf_gtpgai_gtp: Ac5gaolf Gtpgai GTP
+      ac5gaolf_gtpgai_gtp_atp: Ac5gaolf Gtpgai GTP ATP
+      pde10: PDE10
+      pde10_c_amp: PDE10 C AMP
+      amp: AMP
+      source_defined_pka_state: source-defined PKA state
+      pkac_amp2: Pkac AMP2
+      pkac_amp4: Pkac AMP4
+      source_defined_pkac_state: source-defined PKAC state
+      pkareg: Pkareg
+      calcium: calcium
+      calmodulin: calmodulin
+      calcium_mca2: calcium Mca2
+      calcium_mca4: calcium Mca4
+      pp2b: PP2B
+      pp2bca_m: Pp2bca M
+      pp2bca_mca2: Pp2bca Mca2
+      pp2bc: Pp2bc
+      darpp32: DARPP32
+      pkac_d32: Pkac D32
+      d32p34: D32p34
+      b56pp2a: B56PP2A
+      pkac_b56pp2a: Pkac B56PP2A
+      b56pp2ap: B56pp2ap
+      source_defined_pp1_state: source-defined PP1 state
+      pp1d32p34: Pp1d32p34
+      source_defined_cdk5_state: source-defined CDK5 state
+      cdk5_d32: CDK5 D32
+      d32p75: D32p75
+      pkac_d32p75: Pkac D32p75
+      b72pp2a: B72PP2A
+      b72ppa2ca: B72ppa2ca
+      b56pp2ap_d32p75: B56pp2ap D32p75
+      b72pp2a_d32p75: B72PP2A D32p75
+      b72pp2aca_d32p75: B72pp2aca D32p75
+      b56pp2a_d32p75: B56PP2A D32p75
+      pp2bc_d32p34: Pp2bc D32p34
+      source_defined_epac_state: source-defined EPAC state
+      epac_c_amp: EPAC C AMP
+      source_defined_akar3_state: source-defined AKAR3 state
+      pkac_akar3: Pkac AKAR3
+      akar3p: Akar3p
+      pp1_akar3p: PP1 Akar3p
+      total_active_pka: Total active PKA
+      total_akar3p: Total Akar3p
+io:
+  inputs: []
+  outputs: []

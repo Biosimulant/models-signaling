@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "fd503bac-7310-41b3-ab81-3a8d5e51f406",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "dcf836c2-eed2-4cef-9cfe-1645aab2337f",
+  "created_at": "2026-05-16T05:38:38.796561367+00:00",
+  "last_synced_at": "2026-05-16T10:28:38.387508+00:00",
+  "hub_manifest_hash": "b4f3c11360dabf9f768bc48e1095006c02052d33d6fbff23e0a95ec68d2421e1",
+  "package_name": "oliveira2020-beta-alanine-pathway-for-acrylic-acid-production-fr"
+}

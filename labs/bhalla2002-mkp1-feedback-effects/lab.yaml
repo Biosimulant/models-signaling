@@ -1,0 +1,97 @@
+schema_version: '2.0'
+title: Bhalla2002_mkp1_feedback_effects Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model.state
+  to:
+  - visualisation.signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model_state
+- from: signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model.summary
+  to:
+  - visualisation.signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model_summary
+- from: signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model.species_labels
+  to:
+  - visualisation.signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- neuroscience
+io:
+  inputs:
+  - name: initial_dag
+    maps_to: signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model.initial_dag
+    label: Initial DAG
+    description: Initial level of DAG. Maps to SBML symbol `DAG`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_mapk_nucleotides
+    maps_to: signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model.initial_mapk_nucleotides
+    label: Initial MAPK Nucleotides
+    description: Initial level of MAPK Nucleotides. Maps to SBML symbol `MAPK_slash_Nucleotides`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_mapk_ubiquitination
+    maps_to: signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model.initial_mapk_ubiquitination
+    label: Initial MAPK Ubiquitination
+    description: Initial level of MAPK Ubiquitination. Maps to SBML symbol `MAPK_slash_Ubiquitination`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_active_dot_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_ras_gef_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_ras_gef_cplx
+    maps_to: signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model.shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_active_dot_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_ras_gef_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_ras_gef_cplx
+    label: Shc adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+      Protein Adapter Protein Adapter Protein active Dot SOS guanine-nucleotide exchange
+      factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor
+      Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine
+      Nucleotide Exchange Factor Dot Grb2 adapter protein Adapter Protein Adapter
+      Protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein SOS
+      guanine-nucleotide exchange factor Guanine Nucleotide Exchange Factor Guanine
+      Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide
+      Exchange Factor Guanine Nucleotide Exchange Factor Dot RAS GEF SOS guanine-nucleotide
+      exchange factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange
+      Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor
+      Guanine Nucleotide Exchange Factor Dot RAS GEF Cplx
+    description: Shc adapter protein Adapter Protein Adapter Protein Adapter Protein
+      Adapter Protein Adapter Protein Adapter Protein active Dot SOS guanine-nucleotide
+      exchange factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange
+      Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor
+      Guanine Nucleotide Exchange Factor Dot Grb2 adapter protein Adapter Protein
+      Adapter Protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein
+      SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange Factor Guanine
+      Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide
+      Exchange Factor Guanine Nucleotide Exchange Factor Dot RAS GEF SOS guanine-nucleotide
+      exchange factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange
+      Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor
+      Guanine Nucleotide Exchange Factor Dot RAS GEF Cplx. Maps to SBML symbol `Shc_star__dot_Sos_dot_Grb2_slash_Sos_dot_Ras_GEF_slash_Sos_dot_Ras_GEF_cplx`
+      and is emitted in native SBML units.
+  - name: calcium_bound_pkc
+    maps_to: signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model.calcium_bound_pkc
+    label: Calcium bound PKC
+    description: Calcium bound PKC. Maps to SBML symbol `PKC_slash_PKC_minus_Ca` and
+      is emitted in native SBML units.
+  - name: arachidonic_acid_active_calcium_bound_pkc
+    maps_to: signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model.arachidonic_acid_active_calcium_bound_pkc
+    label: Arachidonic Acid active Calcium bound PKC
+    description: Arachidonic Acid active Calcium bound PKC. Maps to SBML symbol `PKC_slash_PKC_minus_Ca_minus_AA_star_`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_bhalla2002_mkp1_feedback_effects_model9070467164_model.species_labels
+    label: Observable labels

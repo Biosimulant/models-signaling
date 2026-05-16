@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Yapo2017- cAMP/PKA signalling in D1 dopamine receptor expressing medium-spiny
+  neurons
+description: 'Yapo2017- cAMP/PKA signalling in D1 dopamine receptor expressing medium-spiny
+  neurons This model is described in the article: Detection of phasic dopamine by
+  D1 and D2 striatal medium spiny neurons. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- camp-pka
+- gpcr
+- neuroscience
+- physiology
+authors:
+- Biosimulant Team
+- Cedric Yapo
+- Anu G Nair
+- Lorna Clement
+- Liliana R Castro
+- Jeanette Hellgren Kotaleski
+upstream:
+  id: biomodels_ebi:MODEL1701170000
+  source_db: biomodels_ebi
+  source_id: MODEL1701170000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1701170000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1701170000?filename=MODEL1701170000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.yapo2017_camp_pka_signalling_in_d1_dopamine_rece:Yapo2017CampPkaSignallingInD1DopamineReceModel1701170000Model
+  init_kwargs:
+    model_path: data/MODEL1701170000.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_amp
+    maps_to: signaling_sbml_yapo2017_camp_pka_signalling_in_d1_dopamine_rece_model1701170000_model.initial_amp
+    label: Initial AMP
+    description: Initial level of AMP. Maps to SBML symbol `mw9710c658_a2a1_4f49_b494_af109853f251`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_atp
+    maps_to: signaling_sbml_yapo2017_camp_pka_signalling_in_d1_dopamine_rece_model1701170000_model.initial_atp
+    label: Initial ATP
+    description: Initial level of ATP. Maps to SBML symbol `mw46dccec6_6f0f_40f6_a10c_2f34ae7a005a`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_calcium
+    maps_to: signaling_sbml_yapo2017_camp_pka_signalling_in_d1_dopamine_rece_model1701170000_model.initial_calcium
+    label: Initial calcium
+    description: Initial level of calcium. Maps to SBML symbol `mwccd3a17c_e207_4663_9b16_327b78882497`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: golf_g_protein
+    maps_to: signaling_sbml_yapo2017_camp_pka_signalling_in_d1_dopamine_rece_model1701170000_model.golf_g_protein
+    label: Golf G protein
+    description: Golf G protein. Maps to SBML symbol `mw351f6cee_3e64_4b8e_8e60_24b1aca99a92`
+      and is emitted in native SBML units.
+  - name: camp
+    maps_to: signaling_sbml_yapo2017_camp_pka_signalling_in_d1_dopamine_rece_model1701170000_model.camp
+    label: cAMP
+    description: cAMP. Maps to SBML symbol `mw1c97b02d_169a_4eb8_bc84_1be57c51a255`
+      and is emitted in native SBML units.
+  - name: source_defined_ac5_state
+    maps_to: signaling_sbml_yapo2017_camp_pka_signalling_in_d1_dopamine_rece_model1701170000_model.source_defined_ac5_state
+    label: source-defined AC5 state
+    description: source-defined AC5 state. Maps to SBML symbol `mw724f1afe_8032_40ae_96ca_808ab7b8b943`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_yapo2017_camp_pka_signalling_in_d1_dopamine_rece_model1701170000_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_yapo2017_camp_pka_signalling_in_d1_dopamine_rece_model1701170000_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_yapo2017_camp_pka_signalling_in_d1_dopamine_rece_model1701170000_model.species_labels
+    label: Observable labels

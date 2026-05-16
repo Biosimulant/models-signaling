@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Pathak2013 - MAPK activation in response to various abiotic stresses
+description: Pathak2013 - MAPK activation in response to various abiotic stresses
+  MAPK activation mechanism in response to various abiotic stress conditions, such
+  as cold, salt, drought, H2O2, heavy metal and ethy. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- stress-response
+authors:
+- Biosimulant Team
+- Rajesh Kumar Pathak
+- Gohar Taj
+- Dinesh Pandey
+- Sandeep Arora
+- Anil Kumar
+upstream:
+  id: biomodels_ebi:BIOMD0000000491
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000491
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000491
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000491?filename=BIOMD0000000491_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.pathak2013_mapk_activation_in_response_to_variou:Pathak2013MapkActivationInResponseToVariouBiomd0000000491Model
+  init_kwargs:
+    model_path: data/BIOMD0000000491.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cold_stress_input
+    maps_to: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000491_model.initial_cold_stress_input
+    label: Initial cold stress input
+    description: Initial level of cold stress input. Maps to SBML symbol `s1`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: mapkkk
+    maps_to: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000491_model.mapkkk
+    label: MAPKKK
+    description: MAPKKK. Maps to SBML symbol `s13` and is emitted in native SBML units.
+  - name: mapkkk_2
+    maps_to: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000491_model.mapkkk_2
+    label: MAPKKK
+    description: MAPKKK. Maps to SBML symbol `s14` and is emitted in native SBML units.
+  - name: mapkkk1
+    maps_to: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000491_model.mapkkk1
+    label: MAPKKK1
+    description: MAPKKK1. Maps to SBML symbol `s15` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000491_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000491_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000491_model.species_labels
+    label: Observable labels

@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Nakakuki2010_CellFateDecision_Core
+description: This model describes the activation of immediate early genes such as
+  cFos after EGF or heregulin (HRG) stimulation of the MAPK pathway. Phosphorylated
+  cFos is a key transcription factor triggering dow.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+authors:
+- Biosimulant Team
+- Takashi Nakakuki
+- Marc R Birtwistle
+- Yuko Saeki
+- Noriko Yumoto
+- Kaori Ide
+upstream:
+  id: biomodels_ebi:BIOMD0000000251
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000251
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000251
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000251?filename=BIOMD0000000251_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.nakakuki2010_cellfatedecision_core:Nakakuki2010CellfatedecisionCoreBiomd0000000251Model
+  init_kwargs:
+    model_path: data/BIOMD0000000251.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_pp_erk_cytosol
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_core_biomd0000000251_model.initial_pp_erk_cytosol
+    label: Initial Pp ERK Cytosol
+    description: Initial level of Pp ERK Cytosol. Maps to SBML symbol `ppERKc`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: pp_erk_nucleus
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_core_biomd0000000251_model.pp_erk_nucleus
+    label: Pp ERK Nucleus
+    description: Pp ERK Nucleus. Maps to SBML symbol `ppERKn` and is emitted in native
+      SBML units.
+  - name: pp_erk_cytosol
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_core_biomd0000000251_model.pp_erk_cytosol
+    label: Pp ERK Cytosol
+    description: Pp ERK Cytosol. Maps to SBML symbol `ppERKc` and is emitted in native
+      SBML units.
+  - name: source_defined_dusp_state
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_core_biomd0000000251_model.source_defined_dusp_state
+    label: source-defined DUSP state
+    description: source-defined DUSP state. Maps to SBML symbol `DUSP` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_core_biomd0000000251_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_core_biomd0000000251_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_core_biomd0000000251_model.species_labels
+    label: Observable labels

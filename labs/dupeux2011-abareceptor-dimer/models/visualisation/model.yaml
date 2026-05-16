@@ -1,0 +1,61 @@
+schema_version: '2.0'
+title: Dupeux2011_ABAreceptor_Dimer Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Dupeux2011_ABAreceptor_Dimer.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model
+    title: Dupeux2011_ABAreceptor_Dimer
+    context: GPCR and cAMP/PKA signaling
+    question: How does Dupeux2011 ABAreceptor Dimer route receptor activity into cAMP/PKA-linked
+      readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      s0_0: float
+      h_h_ra_ra: float
+      h_h_rb_rb: float
+      source_defined_h_ra_state: float
+      h_ra_ra: float
+      source_defined_h_rb_state: float
+      h_rb_rb: float
+      s0_7: float
+      source_defined_p_h_ra_state: float
+      source_defined_p_h_rb_state: float
+      source_defined_ra_state: float
+      source_defined_ra_ra_state: float
+      source_defined_rb_state: float
+      source_defined_rb_rb_state: float
+    species_labels:
+      s0_0: S0 0
+      h_h_ra_ra: H H RA RA
+      h_h_rb_rb: H H RB RB
+      source_defined_h_ra_state: source-defined H.RA state
+      h_ra_ra: H RA RA
+      source_defined_h_rb_state: source-defined H.RB state
+      h_rb_rb: H RB RB
+      s0_7: S0 7
+      source_defined_p_h_ra_state: source-defined P.H.RA state
+      source_defined_p_h_rb_state: source-defined P.H.RB state
+      source_defined_ra_state: source-defined RA state
+      source_defined_ra_ra_state: source-defined RA.RA state
+      source_defined_rb_state: source-defined RB state
+      source_defined_rb_rb_state: source-defined RB.RB state
+io:
+  inputs: []
+  outputs: []

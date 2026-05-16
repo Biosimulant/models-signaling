@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "19d61a51-9bdf-4939-aee3-9eca59781f2a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1e24e56b-11e7-4d60-b813-dacecdee5c60",
+  "created_at": "2026-05-15T19:08:08.792502223+00:00",
+  "last_synced_at": "2026-05-16T09:04:29.656161+00:00",
+  "hub_manifest_hash": "1234d2a556380d5f4f51734ae44e4e7b63d64fea848a4f3d8aac2d9c830a956b",
+  "package_name": "benary2015-feedback-regulation-of-beta-catenin-pathway-by-hos-an"
+}

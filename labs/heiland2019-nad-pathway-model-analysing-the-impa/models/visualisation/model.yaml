@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Heiland2019 - NAD pathway model analysing the impact of NNMT on pathway dynamics
+  and evolution Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Heiland2019 - NAD pathway model analysing the impact of NNMT on pathway dynamics
+  and evolution.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_heiland2019_nad_pathway_model_analysing_the_impa_model1905220001_model
+    title: Heiland2019 - NAD pathway model analysing the impact of NNMT on pathway
+      dynamics and evolution
+    context: metabolic and hormone signaling response
+    question: How does Heiland2019 - NAD pathway model analysing the impact of NNMT
+      on pathway dynamics and evolution shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_na_state: float
+      nicotinate_mononucleotide: float
+      nicotinamide: float
+      nad: float
+      source_defined_naad_state: float
+      source_defined_nmn_state: float
+      source_defined_nar_state: float
+      h2o: float
+      adp: float
+      atp: float
+      source_defined_ppi_state: float
+      source_defined_prpp_state: float
+      source_1_methyl_nicotinamide: float
+      source_defined_sah_state: float
+      source_defined_sam_state: float
+      amp: float
+      source_defined_gln_state: float
+      glutamate: float
+      h3_ac: float
+      h3_deac: float
+      source_defined_pi_state: float
+      source_defined_nr_state: float
+      nadbound: float
+    species_labels:
+      source_defined_na_state: source-defined NA state
+      nicotinate_mononucleotide: nicotinate mononucleotide
+      nicotinamide: nicotinamide
+      nad: NAD
+      source_defined_naad_state: source-defined NAAD state
+      source_defined_nmn_state: source-defined NMN state
+      source_defined_nar_state: source-defined NAR state
+      h2o: H2O
+      adp: ADP
+      atp: ATP
+      source_defined_ppi_state: source-defined PPI state
+      source_defined_prpp_state: source-defined PRPP state
+      source_1_methyl_nicotinamide: 1 Methyl nicotinamide
+      source_defined_sah_state: source-defined SAH state
+      source_defined_sam_state: source-defined SAM state
+      amp: AMP
+      source_defined_gln_state: source-defined GLN state
+      glutamate: glutamate
+      h3_ac: H3 Ac
+      h3_deac: H3 Deac
+      source_defined_pi_state: source-defined PI state
+      source_defined_nr_state: source-defined NR state
+      nadbound: Nadbound
+io:
+  inputs: []
+  outputs: []

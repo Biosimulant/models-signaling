@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Maeda2006_MyosinPhosphorylation
+description: The model reproduces Fig 2B, D, F, and 2H. The dynamics correspond to
+  a stimulus of 1 U/ml of thrombin which is equal to 0.01 uM.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- coagulation
+authors:
+- Biosimulant Team
+- Akio Maeda
+- Yu-ichi Ozaki
+- Sudhir Sivakumaran
+- Tetsuro Akiyama
+- Hidetoshi Urakubo
+upstream:
+  id: biomodels_ebi:BIOMD0000000088
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000088
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000088
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000088?filename=BIOMD0000000088_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.maeda2006_myosinphosphorylation:Maeda2006MyosinphosphorylationBiomd0000000088Model
+  init_kwargs:
+    model_path: data/BIOMD0000000088.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_calcium_super_2_endsuper_ext
+    maps_to: signaling_sbml_maeda2006_myosinphosphorylation_biomd0000000088_model.initial_calcium_super_2_endsuper_ext
+    label: Initial calcium Super 2 Endsuper Ext
+    description: Initial level of calcium Super 2 Endsuper Ext. Maps to SBML symbol
+      `s267`; exposed as a traceable initial-condition perturbation.
+  - name: initial_gdp
+    maps_to: signaling_sbml_maeda2006_myosinphosphorylation_biomd0000000088_model.initial_gdp
+    label: Initial GDP
+    description: Initial level of GDP. Maps to SBML symbol `s50`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_gtp
+    maps_to: signaling_sbml_maeda2006_myosinphosphorylation_biomd0000000088_model.initial_gtp
+    label: Initial GTP
+    description: Initial level of GTP. Maps to SBML symbol `s48`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: thrombin_r_active
+    maps_to: signaling_sbml_maeda2006_myosinphosphorylation_biomd0000000088_model.thrombin_r_active
+    label: Thrombin R active
+    description: Thrombin R active. Maps to SBML symbol `s57` and is emitted in native
+      SBML units.
+  - name: rho_gef_active
+    maps_to: signaling_sbml_maeda2006_myosinphosphorylation_biomd0000000088_model.rho_gef_active
+    label: Rho GEF active
+    description: Rho GEF active. Maps to SBML symbol `s245` and is emitted in native
+      SBML units.
+  - name: calcium_super_2_endsuper_calcium_m
+    maps_to: signaling_sbml_maeda2006_myosinphosphorylation_biomd0000000088_model.calcium_super_2_endsuper_calcium_m
+    label: calcium Super 2 Endsuper calcium M
+    description: calcium Super 2 Endsuper calcium M. Maps to SBML symbol `s277` and
+      is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_maeda2006_myosinphosphorylation_biomd0000000088_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_maeda2006_myosinphosphorylation_biomd0000000088_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_maeda2006_myosinphosphorylation_biomd0000000088_model.species_labels
+    label: Observable labels

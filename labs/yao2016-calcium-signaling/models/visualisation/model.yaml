@@ -1,0 +1,40 @@
+schema_version: '2.0'
+title: Yao2016_Calcium_Signaling Visualisation
+description: Question-and-answer and chart visualisation for calcium and second-messenger
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_yao2016_calcium_signaling_model1611150001_model
+    title: Yao2016_Calcium_Signaling
+    context: calcium second-messenger signaling
+    question: How do calcium-linked states respond in Yao2016 Calcium Signaling?
+    visual_scope: calcium second-messenger signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_plc_state: float
+      ip3: float
+      source_defined_h_state: float
+      calcium: float
+    species_labels:
+      source_defined_plc_state: Source Defined PLC State
+      ip3: IP3
+      source_defined_h_state: Source Defined H State
+      calcium: Calcium
+io:
+  inputs: []
+  outputs: []

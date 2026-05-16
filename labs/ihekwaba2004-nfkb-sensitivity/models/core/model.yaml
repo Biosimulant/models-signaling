@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Ihekwaba2004_NFkB_Sensitivity
+description: 'This a model from the article: Sensitivity analysis of parameters controlling
+  oscillatory signalling in the NF-kappaB pathway: the roles of IKK and IkappaBalpha.
+  It can be used to explore signaling dynamics and compare pathway response across
+  conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+authors:
+- Biosimulant Team
+- A E C Ihekwaba
+- D S Broomhead
+- R L Grimley
+- N Benson
+- D B Kell
+upstream:
+  id: biomodels_ebi:BIOMD0000000230
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000230
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000230
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000230?filename=BIOMD0000000230_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.ihekwaba2004_nfkb_sensitivity:Ihekwaba2004NfkbSensitivityBiomd0000000230Model
+  init_kwargs:
+    model_path: data/BIOMD0000000230.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_sink_species
+    maps_to: signaling_sbml_ihekwaba2004_nfkb_sensitivity_biomd0000000230_model.initial_sink_species
+    label: Initial sink species
+    description: Initial level of sink species. Maps to SBML symbol `sink`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_source
+    maps_to: signaling_sbml_ihekwaba2004_nfkb_sensitivity_biomd0000000230_model.initial_source
+    label: Initial Source
+    description: Initial level of Source. Maps to SBML symbol `source`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: nfkb
+    maps_to: signaling_sbml_ihekwaba2004_nfkb_sensitivity_biomd0000000230_model.nfkb
+    label: NF-kB
+    description: NF-kB. Maps to SBML symbol `NFkB` and is emitted in native SBML units.
+  - name: ikkik_ba_nfk_b
+    maps_to: signaling_sbml_ihekwaba2004_nfkb_sensitivity_biomd0000000230_model.ikkik_ba_nfk_b
+    label: Ikkik Ba Nfk B
+    description: Ikkik Ba Nfk B. Maps to SBML symbol `IKKIkBaNFkB` and is emitted
+      in native SBML units.
+  - name: ikkik_complement_factor_bb_nfk_b
+    maps_to: signaling_sbml_ihekwaba2004_nfkb_sensitivity_biomd0000000230_model.ikkik_complement_factor_bb_nfk_b
+    label: Ikkik complement factor Bb Nfk B
+    description: Ikkik complement factor Bb Nfk B. Maps to SBML symbol `IKKIkBbNFkB`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_ihekwaba2004_nfkb_sensitivity_biomd0000000230_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_ihekwaba2004_nfkb_sensitivity_biomd0000000230_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_ihekwaba2004_nfkb_sensitivity_biomd0000000230_model.species_labels
+    label: Observable labels

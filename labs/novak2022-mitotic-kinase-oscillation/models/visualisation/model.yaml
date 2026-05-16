@@ -1,0 +1,53 @@
+schema_version: '2.0'
+title: Novak2022 - Mitotic kinase oscillation Visualisation
+description: Question-and-answer and chart visualisation for cell-cycle regulatory
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_novak2022_mitotic_kinase_oscillation_biomd0000001058_model
+    title: Novak2022 - Mitotic kinase oscillation
+    context: cell-cycle regulatory signaling
+    question: How does Novak2022 - Mitotic kinase oscillation move checkpoint or cycle-control
+      signaling states?
+    visual_scope: cell-cycle regulatory signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      cln_cyclin: float
+      clb_cyclin_st: float
+      source_defined_mbf_state: float
+      nrm1t: float
+      clb_cyclin_mt: float
+      source_defined_polo_state: float
+      sic1t: float
+      source_defined_sbf_state: float
+      cdh1_cell_cycle_regulator: float
+      cdc14_phosphatase: float
+    species_labels:
+      cln_cyclin: Cln cyclin
+      clb_cyclin_st: Clb cyclin St
+      source_defined_mbf_state: source-defined MBF state
+      nrm1t: Nrm1t
+      clb_cyclin_mt: Clb cyclin Mt
+      source_defined_polo_state: source-defined POLO state
+      sic1t: Sic1t
+      source_defined_sbf_state: source-defined SBF state
+      cdh1_cell_cycle_regulator: Cdh1 cell-cycle regulator
+      cdc14_phosphatase: Cdc14 phosphatase
+io:
+  inputs: []
+  outputs: []

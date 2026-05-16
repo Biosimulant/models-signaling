@@ -1,0 +1,53 @@
+schema_version: '2.0'
+title: Thomsen1988_AdenylateCyclase_Inhibition Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Thomsen1988_AdenylateCyclase_Inhibition.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model
+    title: Thomsen1988_AdenylateCyclase_Inhibition
+    context: GPCR and cAMP/PKA signaling
+    question: How does Thomsen1988 AdenylateCyclase Inhibition route receptor activity
+      into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      agonist: float
+      source_defined_dr_state: float
+      drg_gdp: float
+      source_defined_drg_state: float
+      gdp: float
+      drg_gtp: float
+      gtp: float
+      recptor: float
+      source_defined_g_gdp_state: float
+      source_defined_g_gtp_state: float
+    species_labels:
+      agonist: Agonist
+      source_defined_dr_state: source-defined DR state
+      drg_gdp: DRG GDP
+      source_defined_drg_state: source-defined DRG state
+      gdp: GDP
+      drg_gtp: DRG GTP
+      gtp: GTP
+      recptor: Recptor
+      source_defined_g_gdp_state: source-defined G_GDP state
+      source_defined_g_gtp_state: source-defined G_GTP state
+io:
+  inputs: []
+  outputs: []

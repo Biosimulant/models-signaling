@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "41c80fec-543b-434c-8af0-f63103eaec11",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e480c55c-2e46-4b59-966e-55d69d5bfd70",
+  "created_at": "2026-05-16T05:51:46.186972928+00:00",
+  "last_synced_at": "2026-05-16T10:44:06.191392+00:00",
+  "hub_manifest_hash": "ae0d512eaf7631e464e94a45c14249d6be3e6bd5b6737dd58771abcaa40243b0",
+  "package_name": "rutkis2013-entner-doudoroff-pathway-in-z-mobilis-lab"
+}

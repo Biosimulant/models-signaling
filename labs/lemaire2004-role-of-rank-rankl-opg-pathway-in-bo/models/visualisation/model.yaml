@@ -1,0 +1,39 @@
+schema_version: '2.0'
+title: Lemaire2004 - Role of RANK/RANKL/OPG pathway in bone remodelling process Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Lemaire2004 - Role of RANK/RANKL/OPG pathway in bone remodelling process.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_lemaire2004_role_of_rank_rankl_opg_pathway_in_bo_biomd0000000278_model
+    title: Lemaire2004 - Role of RANK/RANKL/OPG pathway in bone remodelling process
+    context: metabolic and hormone signaling response
+    question: How does Lemaire2004 - Role of RANK/RANKL/OPG pathway in bone remodelling
+      process shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      responding_osteoblasts: float
+      active_osteoblasts: float
+      active_osteoclasts: float
+    species_labels:
+      responding_osteoblasts: Responding Osteoblasts
+      active_osteoblasts: active Osteoblasts
+      active_osteoclasts: active Osteoclasts
+io:
+  inputs: []
+  outputs: []

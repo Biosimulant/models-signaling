@@ -1,0 +1,39 @@
+schema_version: '2.0'
+title: Chulian2021 - feedback signalling in B lymphopoeisis Visualisation
+description: Question-and-answer and chart visualisation for immune signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- immune-signaling
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_chulian2021_feedback_signalling_in_b_lymphopoeis_biomd0000001056_model
+    title: Chulian2021 - feedback signalling in B lymphopoeisis
+    context: immune and cytokine signaling response
+    question: How does Chulian2021 - feedback signalling in B lymphopoeisis redistribute
+      immune or cytokine-linked pathway states?
+    visual_scope: immune and cytokine signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_c1_state: float
+      source_defined_c2_state: float
+      complement_c3: float
+    species_labels:
+      source_defined_c1_state: source-defined C1 state
+      source_defined_c2_state: source-defined C2 state
+      complement_c3: complement C3
+io:
+  inputs: []
+  outputs: []

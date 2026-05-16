@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5a2877d4-d727-497b-a033-9c210e4573b1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7b5086ad-fdde-4d2e-8bf5-e9b9e96c89ee",
+  "created_at": "2026-05-15T19:08:09.729034452+00:00",
+  "last_synced_at": "2026-05-16T09:41:43.196280+00:00",
+  "hub_manifest_hash": "7396b65f7fc48733f76971c655acd434923306f398631e755a0f4cc15b1ada11",
+  "package_name": "gray2016-the-akt-switch-model-lab"
+}

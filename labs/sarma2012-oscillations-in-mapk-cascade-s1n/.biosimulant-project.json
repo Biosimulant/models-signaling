@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a911d869-dd85-4aa4-a5fa-e79d46caaa8c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e420543e-26e8-4285-a892-92acb6370ec3",
+  "created_at": "2026-05-16T05:58:26.101076191+00:00",
+  "last_synced_at": "2026-05-16T10:57:46.163425+00:00",
+  "hub_manifest_hash": "9b2b9517a7c4bc4b21152b912d9ac84c4fadb22b58ea346d8207f6a91eb80fd0",
+  "package_name": "sarma2012-oscillations-in-mapk-cascade-s1n-lab"
+}

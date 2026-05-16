@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e09ee346-ba7f-4e97-bd4f-0154b3b2ad9b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1550fc7d-e3dc-4f7b-b2c7-cfbb80e67c00",
+  "created_at": "2026-05-16T05:58:28.499797471+00:00",
+  "last_synced_at": "2026-05-16T11:19:23.452779+00:00",
+  "hub_manifest_hash": "d40101f54e1119989363d05307fb1cff64212ff2b1037dc0a39a22a2a22193f5",
+  "package_name": "tyson2003-mutual-inhibition-lab"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8fbbe7d1-c7da-4bbe-91ce-8d14b8907891",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "caca0116-af55-43a9-8512-abe0c08b8a16",
+  "created_at": "2026-05-15T19:08:08.510269759+00:00",
+  "last_synced_at": "2026-05-16T08:41:00.761222+00:00",
+  "hub_manifest_hash": "2ca5b623032f5814b1bb107f9e5f51ce756c3de8695c6591abafcd09731745c4",
+  "package_name": "adlung2021-cell-to-cell-variability-in-jak2-stat5-pathway-lab"
+}

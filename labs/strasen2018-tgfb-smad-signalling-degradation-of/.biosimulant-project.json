@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c1d59291-23b9-4f59-8ff2-102259b79b56",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4e3010e8-c9f8-424d-ada9-2ad27374b84f",
+  "created_at": "2026-05-16T05:58:27.915545948+00:00",
+  "last_synced_at": "2026-05-16T11:12:36.057496+00:00",
+  "hub_manifest_hash": "d95367df10fa95b13eef683ff2884eb1a21a61922d0bbad7eeede43461deb6b9",
+  "package_name": "strasen2018-tgfb-smad-signalling-degradation-of-25pm-ligand-tgfb"
+}

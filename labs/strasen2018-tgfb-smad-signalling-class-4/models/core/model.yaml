@@ -1,0 +1,84 @@
+schema_version: '2.0'
+title: Strasen2018 - TGFb SMAD Signalling Class 4
+description: Signaling Strasen2018Tgfb Smad Signalling Class4Biomd0000001001Model
+  captures signaling strasen2018 tgfb smad signalling class behavior in the context
+  of signaling, sbml, biomodels_ebi using a biomodels_ebi-sou. When you run it, you
+  can observe state and evaluate how the modeled system changes across runs.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- tgf-beta
+- smad
+authors:
+- Biosimulant Team
+- Strasen J
+- Sarma U
+- Jentsch M
+- Bohn S
+- Sheng C
+upstream:
+  id: biomodels_ebi:BIOMD0000001001
+  source_db: biomodels_ebi
+  source_id: BIOMD0000001001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001001?filename=MODEL1712050010.xml
+  license: CC0
+biosim:
+  entrypoint: src.strasen2018_tgfb_smad_signalling_class_4:Strasen2018TgfbSmadSignallingClass4Biomd0000001001Model
+  init_kwargs:
+    model_path: data/BIOMD0000001001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_index_induced_ligand_deg_level
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_class_4_biomd0000001001_model.initial_index_induced_ligand_deg_level
+    label: Index Induced Ligand Deg
+    description: Index Induced Ligand Deg source parameter. Maps to SBML symbol `index_induced_ligand_deg`
+      and preserves the bundled default.
+  - name: initial_kin_deg_ligand_level
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_class_4_biomd0000001001_model.initial_kin_deg_ligand_level
+    label: Kin Deg Ligand
+    description: Kin Deg Ligand source parameter. Maps to SBML symbol `kin_deg_Ligand`
+      and preserves the bundled default.
+  - name: initial_kout_deg_ligand_100p_m_level
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_class_4_biomd0000001001_model.initial_kout_deg_ligand_100p_m_level
+    label: Kout Deg Ligand 100p M
+    description: Kout Deg Ligand 100p M source parameter. Maps to SBML symbol `kout_deg_Ligand_100pM`
+      and preserves the bundled default.
+  outputs:
+  - name: active_tgfr2
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_class_4_biomd0000001001_model.active_tgfr2
+    label: active TGFR2
+    description: active TGFR2. Maps to SBML symbol `Active_R2` and is emitted in native
+      SBML units.
+  - name: active_tgf_beta_tgfr1_tgfr2
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_class_4_biomd0000001001_model.active_tgf_beta_tgfr1_tgfr2
+    label: active TGF-beta TGFR1 TGFR2
+    description: active TGF-beta TGFR1 TGFR2. Maps to SBML symbol `Active_Rec` and
+      is emitted in native SBML units.
+  - name: active_tgf_beta_tgfr1_tgfr2_endo
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_class_4_biomd0000001001_model.active_tgf_beta_tgfr1_tgfr2_endo
+    label: active TGF-beta TGFR1 TGFR2 Endo
+    description: active TGF-beta TGFR1 TGFR2 Endo. Maps to SBML symbol `Active_Rec_endo`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_class_4_biomd0000001001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_class_4_biomd0000001001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_class_4_biomd0000001001_model.species_labels
+    label: Observable labels

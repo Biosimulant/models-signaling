@@ -1,0 +1,92 @@
+schema_version: '2.0'
+title: Amstein2017 - TNFR1-mediated Nf-κB signaling, Petri Net Visualisation
+description: Question-and-answer and chart visualisation for NF-kB pathway signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- tnf-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_amstein2017_tnfr1_mediated_nf_b_signaling_petri_model2312010001_model
+    title: Amstein2017 - TNFR1-mediated Nf-κB signaling, Petri Net
+    context: NF-kB activation and feedback signaling
+    question: How does Amstein2017 - TNFR1-mediated Nf-κB signaling, Petri Net move
+      NF-kB and inhibitor-linked signaling states?
+    visual_scope: NF-kB activation and feedback signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      nf_b_n_gen_a20: float
+      gen_a20: float
+      nf_b_n_gen_i_b: float
+      gen_i_b: float
+      tnf_receptor_1: float
+      tnf: float
+      tnf_receptor_1_tnf: float
+      tradd: float
+      tnf_receptor_1_tnf_tradd: float
+      source_defined_rip1_state: float
+      tnf_receptor_1_tnf_tradd_rip1: float
+      tnf_receptor_1_tnf_tradd_rip1_traf2: float
+      source_defined_traf2_state: float
+      c_iaps: float
+      tnf_receptor_1_tnf_tradd_rip1_traf2_c_iaps: float
+      rsc_ub: float
+      source_defined_ikk_state: float
+      source_defined_tak1_state: float
+      rsc_ub_tak1_ikk: float
+      rsc_ub_tak1_ikk_a20: float
+      rsc_ub_tak1_ikk_nf_b_i_b: float
+      nf_b_i_b: float
+      nf_b_i_b_n: float
+      source_defined_nf_b_state: float
+      source_defined_nf_b_n_state: float
+      source_defined_i_b_state: float
+      source_defined_i_b_n_state: float
+      source_defined_i_b_p_state: float
+      abstract_source_state_a20: float
+    species_labels:
+      nf_b_n_gen_a20: NF B N Gen A20
+      gen_a20: Gen A20
+      nf_b_n_gen_i_b: NF B N Gen I B
+      gen_i_b: Gen I B
+      tnf_receptor_1: TNF receptor 1
+      tnf: TNF
+      tnf_receptor_1_tnf: TNF receptor 1 TNF
+      tradd: TRADD
+      tnf_receptor_1_tnf_tradd: TNF receptor 1 TNF TRADD
+      source_defined_rip1_state: source-defined RIP1 state
+      tnf_receptor_1_tnf_tradd_rip1: TNF receptor 1 TNF TRADD RIP1
+      tnf_receptor_1_tnf_tradd_rip1_traf2: TNF receptor 1 TNF TRADD RIP1 TRAF2
+      source_defined_traf2_state: source-defined TRAF2 state
+      c_iaps: C Iaps
+      tnf_receptor_1_tnf_tradd_rip1_traf2_c_iaps: TNF receptor 1 TNF TRADD RIP1 TRAF2
+        C Iaps
+      rsc_ub: RSC Ub
+      source_defined_ikk_state: source-defined IKK state
+      source_defined_tak1_state: source-defined TAK1 state
+      rsc_ub_tak1_ikk: RSC Ub TAK1 IKK
+      rsc_ub_tak1_ikk_a20: RSC Ub TAK1 IKK A20
+      rsc_ub_tak1_ikk_nf_b_i_b: RSC Ub TAK1 IKK NF B I B
+      nf_b_i_b: NF B I B
+      nf_b_i_b_n: NF B I B N
+      source_defined_nf_b_state: source-defined NF-ΚB state
+      source_defined_nf_b_n_state: source-defined NF-ΚB_N state
+      source_defined_i_b_state: source-defined IΚB state
+      source_defined_i_b_n_state: source-defined IΚB_N state
+      source_defined_i_b_p_state: source-defined IΚB_P state
+      abstract_source_state_a20: Abstract source state A20
+io:
+  inputs: []
+  outputs: []

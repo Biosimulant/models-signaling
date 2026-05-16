@@ -1,0 +1,41 @@
+schema_version: '2.0'
+title: Tyson2003_NegFB_Homeostasis Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Tyson2003_NegFB_Homeostasis.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model
+    title: Tyson2003_NegFB_Homeostasis
+    context: receptor-to-MAPK cascade signaling
+    question: How does Tyson2003 NegFB Homeostasis propagate receptor or RAS/ERK pathway
+      activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_r_state: float
+      source_defined_s_state: float
+      source_defined_ep_state: float
+      source_defined_e_state: float
+    species_labels:
+      source_defined_r_state: Source Defined R State
+      source_defined_s_state: Source Defined S State
+      source_defined_ep_state: Source Defined EP State
+      source_defined_e_state: Source Defined E State
+io:
+  inputs: []
+  outputs: []

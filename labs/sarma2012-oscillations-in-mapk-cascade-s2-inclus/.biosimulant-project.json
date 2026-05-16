@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9e5516f0-96ac-4a01-8276-0630d2b63dbf",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2bc3b015-d454-4720-98c8-3b38918de178",
+  "created_at": "2026-05-16T05:58:26.253554253+00:00",
+  "last_synced_at": "2026-05-16T10:58:29.580444+00:00",
+  "hub_manifest_hash": "67ca7e657c9d616d507c85ee1fef9cef690737c14f9193a49482a33127149c85",
+  "package_name": "sarma2012-oscillations-in-mapk-cascade-s2-inclusion-of-external"
+}

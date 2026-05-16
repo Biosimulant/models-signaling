@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Bachmann2011_JAK2-STAT5_FeedbackControl
+description: 'This model is from the article: Division of labor by dual feedback regulators
+  controls JAK2/STAT5 signaling over broad ligand range. Bachmann J, Raue A, Schilling
+  M, Böhm ME, Kreutz C, Kaschek D, Busc.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- jak-stat
+authors:
+- Biosimulant Team
+- Julie Bachmann
+- Andreas Raue
+- Marcel Schilling
+- Martin E Böhm
+- Clemens Kreutz
+upstream:
+  id: biomodels_ebi:BIOMD0000000347
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000347
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000347
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000347?filename=BIOMD0000000347_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bachmann2011_jak2_stat5_feedbackcontrol:Bachmann2011Jak2Stat5FeedbackcontrolBiomd0000000347Model
+  init_kwargs:
+    model_path: data/BIOMD0000000347.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_epo_receptor_jak2_complex
+    maps_to: signaling_sbml_bachmann2011_jak2_stat5_feedbackcontrol_biomd0000000347_model.initial_epo_receptor_jak2_complex
+    label: Initial EPO receptor-JAK2 complex
+    description: Initial level of EPO receptor-JAK2 complex. Maps to SBML symbol `EpoRJAK2`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: stat5
+    maps_to: signaling_sbml_bachmann2011_jak2_stat5_feedbackcontrol_biomd0000000347_model.stat5
+    label: STAT5
+    description: STAT5. Maps to SBML symbol `STAT5` and is emitted in native SBML
+      units.
+  - name: phosphorylated_stat5
+    maps_to: signaling_sbml_bachmann2011_jak2_stat5_feedbackcontrol_biomd0000000347_model.phosphorylated_stat5
+    label: phosphorylated STAT5
+    description: phosphorylated STAT5. Maps to SBML symbol `pSTAT5` and is emitted
+      in native SBML units.
+  - name: nuclear_phosphorylated_stat5
+    maps_to: signaling_sbml_bachmann2011_jak2_stat5_feedbackcontrol_biomd0000000347_model.nuclear_phosphorylated_stat5
+    label: nuclear phosphorylated STAT5
+    description: nuclear phosphorylated STAT5. Maps to SBML symbol `npSTAT5` and is
+      emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_bachmann2011_jak2_stat5_feedbackcontrol_biomd0000000347_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_bachmann2011_jak2_stat5_feedbackcontrol_biomd0000000347_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_bachmann2011_jak2_stat5_feedbackcontrol_biomd0000000347_model.species_labels
+    label: Observable labels

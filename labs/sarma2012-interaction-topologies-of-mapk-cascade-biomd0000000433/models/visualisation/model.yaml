@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Sarma2012 - Interaction topologies of MAPK cascade (M4_K2_QSS_PSEQ) Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_sarma2012_interaction_topologies_of_mapk_cascade_biomd0000000433_model
+    title: Sarma2012 - Interaction topologies of MAPK cascade (M4_K2_QSS_PSEQ)
+    context: receptor-to-MAPK cascade signaling
+    question: How does Sarma2012 - Interaction topologies of MAPK cascade (M4 K2 QSS
+      PSEQ) propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      mapk_kinase_kinase: float
+      mapk_kinase_kinase_p: float
+      mapk_kinase: float
+      source_defined_mkk_p_state: float
+      mapk_kinase_pp: float
+      map_kinase: float
+      source_defined_mk_p_state: float
+      source_defined_mk_pp_state: float
+      source_defined_p1_state: float
+      source_defined_p2_state: float
+      source_defined_sig_state: float
+    species_labels:
+      mapk_kinase_kinase: MAPK kinase kinase
+      mapk_kinase_kinase_p: MAPK kinase kinase P
+      mapk_kinase: MAPK kinase
+      source_defined_mkk_p_state: source-defined MKK_P state
+      mapk_kinase_pp: MAPK kinase PP
+      map_kinase: MAP kinase
+      source_defined_mk_p_state: source-defined MK_P state
+      source_defined_mk_pp_state: source-defined MK_PP state
+      source_defined_p1_state: source-defined P1 state
+      source_defined_p2_state: source-defined P2 state
+      source_defined_sig_state: source-defined SIG state
+io:
+  inputs: []
+  outputs: []

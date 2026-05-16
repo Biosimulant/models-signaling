@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Shin2016 - Unveiling Hidden Dynamics of Hippo Signalling Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+- pi3k-akt
+- hippo
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model
+    title: Shin2016 - Unveiling Hidden Dynamics of Hippo Signalling
+    context: receptor-to-MAPK cascade signaling
+    question: How does Shin2016 - Unveiling Hidden Dynamics of Hippo Signalling propagate
+      receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      akt: float
+      rassf1a: float
+      source_defined_mst2_state: float
+      source_defined_dmst2_state: float
+      source_defined_amst2_state: float
+      a_mst2u_rassf1a: float
+      mst2u_rassf1a: float
+      source_defined_imst2_state: float
+      i_raf1ui_mst2: float
+      a_lats1: float
+      source_defined_lats1_state: float
+      source_defined_iraf1_state: float
+      raf1: float
+      source_defined_araf1_state: float
+      ip_raf1: float
+      ras_gdp: float
+      ras_gtp: float
+      erk: float
+      pp_erk: float
+      source_defined_pakt_state: float
+    species_labels:
+      akt: AKT
+      rassf1a: RASSF1A
+      source_defined_mst2_state: source-defined MST2 state
+      source_defined_dmst2_state: source-defined DMST2 state
+      source_defined_amst2_state: source-defined AMST2 state
+      a_mst2u_rassf1a: A Mst2u RASSF1A
+      mst2u_rassf1a: Mst2u RASSF1A
+      source_defined_imst2_state: source-defined IMST2 state
+      i_raf1ui_mst2: I Raf1ui MST2
+      a_lats1: A LATS1
+      source_defined_lats1_state: source-defined LATS1 state
+      source_defined_iraf1_state: source-defined IRAF1 state
+      raf1: RAF1
+      source_defined_araf1_state: source-defined ARAF1 state
+      ip_raf1: Ip RAF1
+      ras_gdp: RAS GDP
+      ras_gtp: RAS GTP
+      erk: ERK
+      pp_erk: Pp ERK
+      source_defined_pakt_state: source-defined PAKT state
+io:
+  inputs: []
+  outputs: []

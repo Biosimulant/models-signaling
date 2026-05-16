@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "15d60198-270d-416b-9584-94a12315c03b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b3386652-ca45-4007-8704-c74ccf03f0b2",
+  "created_at": "2026-05-16T05:58:29.124811694+00:00",
+  "last_synced_at": "2026-05-16T11:22:31.220499+00:00",
+  "hub_manifest_hash": "06acb51ca5b1d7974f91a3aaa70a4abfa7cf99239e7b4250a98d30c0ebf64cdd",
+  "package_name": "wanant2000-insulinreceptormodel-b-lab"
+}

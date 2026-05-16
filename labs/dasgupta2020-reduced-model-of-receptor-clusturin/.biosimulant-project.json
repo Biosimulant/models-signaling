@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5fa89d8d-229f-40de-b22d-040a85f5d62d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "05bafd52-215d-4a9c-bca2-d414e8f69dd5",
+  "created_at": "2026-05-15T19:08:09.464925555+00:00",
+  "last_synced_at": "2026-05-16T09:27:46.511456+00:00",
+  "hub_manifest_hash": "260d49ede6a150dab6de75703a789608c5187c1e9071972d7c0bd3dd183b9d5c",
+  "package_name": "dasgupta2020-reduced-model-of-receptor-clusturing-and-aggregatio"
+}

@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Kummer2000 - Oscillations in Calcium Signalling
+description: Kummer2000 - Oscillations in CalciumSignalling Simplified (3-variable)
+  calcium oscillation model Kummer et al. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+authors:
+- Biosimulant Team
+- U Kummer
+- L F Olsen
+- C J Dixon
+- A K Green
+- E Bornberg-Bauer
+upstream:
+  id: biomodels_ebi:BIOMD0000000329
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000329
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000329
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000329?filename=BIOMD0000000329_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kummer2000_oscillations_in_calcium_signalling:Kummer2000OscillationsInCalciumSignallingBiomd0000000329Model
+  init_kwargs:
+    model_path: data/BIOMD0000000329.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_calcium
+    maps_to: signaling_sbml_kummer2000_oscillations_in_calcium_signalling_biomd0000000329_model.initial_calcium
+    label: Initial Calcium
+    description: Initial level of Calcium. Maps to SBML symbol `c`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: active_plc
+    maps_to: signaling_sbml_kummer2000_oscillations_in_calcium_signalling_biomd0000000329_model.active_plc
+    label: active PLC
+    description: active PLC. Maps to SBML symbol `b` and is emitted in native SBML
+      units.
+  - name: calcium
+    maps_to: signaling_sbml_kummer2000_oscillations_in_calcium_signalling_biomd0000000329_model.calcium
+    label: Calcium
+    description: Calcium. Maps to SBML symbol `c` and is emitted in native SBML units.
+  - name: g_alpha
+    maps_to: signaling_sbml_kummer2000_oscillations_in_calcium_signalling_biomd0000000329_model.g_alpha
+    label: G Alpha
+    description: G Alpha. Maps to SBML symbol `a` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_kummer2000_oscillations_in_calcium_signalling_biomd0000000329_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_kummer2000_oscillations_in_calcium_signalling_biomd0000000329_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_kummer2000_oscillations_in_calcium_signalling_biomd0000000329_model.species_labels
+    label: Observable labels

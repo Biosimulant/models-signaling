@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "fc973d2a-a1ac-4662-ba66-fc824944eed0",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "cf369770-4a15-45f8-ba8f-3e21437caa85",
+  "created_at": "2026-05-16T05:38:38.112562711+00:00",
+  "last_synced_at": "2026-05-16T10:21:09.202631+00:00",
+  "hub_manifest_hash": "34403f3c316dbf30212fe6bd1ff685a03f784cbdb3ffbced32fb0cdf89b832fb",
+  "package_name": "middleton2012-gibberellinsignalling-lab"
+}

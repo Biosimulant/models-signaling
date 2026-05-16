@@ -1,0 +1,84 @@
+schema_version: '2.0'
+title: Xu2005 - Blood Coagulation Model of Activated Factors of Extrinsic Pathway
+  and TFPI
+description: System of ODEs to describe the behaviour of the activated factors of
+  the extrinsic pathway of blood coagulation with the addition of the TFPI-Xa complex.
+  It can be used to explore signaling dynamics and compare pathway response across
+  conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- coagulation
+- physiology
+authors:
+- Biosimulant Team
+- Chuanqing Xu
+- Xiao Hu Xu
+- Yanjun Zeng
+- Yao Wen Chen
+upstream:
+  id: biomodels_ebi:MODEL1806130002
+  source_db: biomodels_ebi
+  source_id: MODEL1806130002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1806130002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806130002?filename=Xu2005.xml
+  license: CC0
+biosim:
+  entrypoint: src.xu2005_blood_coagulation_model_of_activated_fact:Xu2005BloodCoagulationModelOfActivatedFactModel1806130002Model
+  init_kwargs:
+    model_path: data/MODEL1806130002.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_x1_state
+    maps_to: signaling_sbml_xu2005_blood_coagulation_model_of_activated_fact_model1806130002_model.initial_source_defined_x1_state
+    label: Initial source-defined X1 state
+    description: Initial level of source-defined X1 state. Maps to SBML symbol `x1`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_x2_state
+    maps_to: signaling_sbml_xu2005_blood_coagulation_model_of_activated_fact_model1806130002_model.initial_source_defined_x2_state
+    label: Initial source-defined X2 state
+    description: Initial level of source-defined X2 state. Maps to SBML symbol `x2`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_x3_state
+    maps_to: signaling_sbml_xu2005_blood_coagulation_model_of_activated_fact_model1806130002_model.initial_source_defined_x3_state
+    label: Initial source-defined X3 state
+    description: Initial level of source-defined X3 state. Maps to SBML symbol `x3`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_x1_state
+    maps_to: signaling_sbml_xu2005_blood_coagulation_model_of_activated_fact_model1806130002_model.source_defined_x1_state
+    label: source-defined X1 state
+    description: source-defined X1 state. Maps to SBML symbol `x1` and is emitted
+      in native SBML units.
+  - name: source_defined_x2_state
+    maps_to: signaling_sbml_xu2005_blood_coagulation_model_of_activated_fact_model1806130002_model.source_defined_x2_state
+    label: source-defined X2 state
+    description: source-defined X2 state. Maps to SBML symbol `x2` and is emitted
+      in native SBML units.
+  - name: source_defined_x3_state
+    maps_to: signaling_sbml_xu2005_blood_coagulation_model_of_activated_fact_model1806130002_model.source_defined_x3_state
+    label: source-defined X3 state
+    description: source-defined X3 state. Maps to SBML symbol `x3` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_xu2005_blood_coagulation_model_of_activated_fact_model1806130002_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_xu2005_blood_coagulation_model_of_activated_fact_model1806130002_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_xu2005_blood_coagulation_model_of_activated_fact_model1806130002_model.species_labels
+    label: Observable labels

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Kwang2003 - The influence of RKIP on the ERK signaling pathway Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_kwang2003_the_influence_of_rkip_on_the_erk_signa_biomd0000000647_model
+    title: Kwang2003 - The influence of RKIP on the ERK signaling pathway
+    context: receptor-to-MAPK cascade signaling
+    question: How does Kwang2003 - The influence of RKIP on the ERK signaling pathway
+      propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      raf1: float
+      source_defined_rkip_state: float
+      raf1_rkip: float
+      raf1_rkip_erkpp: float
+      erk: float
+      rkipp: float
+      mekpp: float
+      mekpp_erk: float
+      erkpp: float
+      source_defined_rp_state: float
+      rkipp_rp: float
+    species_labels:
+      raf1: RAF1
+      source_defined_rkip_state: source-defined RKIP state
+      raf1_rkip: RAF1 RKIP
+      raf1_rkip_erkpp: RAF1 RKIP ERKPP
+      erk: ERK
+      rkipp: RKIPP
+      mekpp: MEKPP
+      mekpp_erk: MEKPP ERK
+      erkpp: ERKPP
+      source_defined_rp_state: source-defined RP state
+      rkipp_rp: RKIPP RP
+io:
+  inputs: []
+  outputs: []

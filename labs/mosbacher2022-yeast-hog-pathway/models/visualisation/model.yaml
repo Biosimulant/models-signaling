@@ -1,0 +1,231 @@
+schema_version: '2.0'
+title: Mosbacher2022 - Yeast HOG pathway Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Mosbacher2022 - Yeast HOG pathway.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model
+    title: Mosbacher2022 - Yeast HOG pathway
+    context: metabolic and hormone signaling response
+    question: How does Mosbacher2022 - Yeast HOG pathway shift hormone-linked signaling
+      readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      v_os_cytosol: float
+      v_os_nucleus: float
+      source_defined_v_os_state: float
+      source_defined_nacl_state: float
+      v_os_pi_t_0: float
+      source_defined_pi_t_0_state: float
+      glycin: float
+      base_line: float
+      pi_t_below_threshold: float
+      source_defined_sln1_state: float
+      sln1p: float
+      source_defined_ypd1_state: float
+      ypd1p: float
+      source_defined_ssk1_state: float
+      ssk1p: float
+      source_defined_ssk2_state: float
+      ssk2p: float
+      sln1_phosphorylated: float
+      sln1p_phosphorylated: float
+      ssk1_phosphorylated: float
+      ssk1p_phosphorylated: float
+      ssk2_phosphorylated: float
+      ssk2_phosphorylated_second: float
+      ssk2p_phosphorylated: float
+      ssk2p_phosphorylated_second: float
+      source_defined_sho1_state: float
+      sho1_active: float
+      sho1_pbs2: float
+      sho1_active_pbs2: float
+      sho1_active_ste11_pbs2_inactive: float
+      sho1_active_ste11_pbs2: float
+      sho1_active_ste11: float
+      sho1_active_ste11pp: float
+      sho1_active_ste11_pbs2p: float
+      sho1_active_ste11_pbs2pp: float
+      ste11: float
+      ste11_ste50: float
+      ste50: float
+      ste1pp: float
+      sho1_pbs2_phosphorylated: float
+      sho1_active_pbs2_phosphorylated: float
+      sho1_active_ste11_pbs2_phosphorylated_inactive: float
+      sho1_active_ste11_pbs2_phosphorylated: float
+      sho1_active_ste11_pbs2p_phosphorylated: float
+      sho1_active_ste11_pbs2pp_phosphorylated: float
+      sho1_active_ste11_pbs2_inactive_phosphorylated: float
+      sho1_active_ste11_phosphorylated: float
+      sho1_active_ste11pp_phosphorylated: float
+      ste20: float
+      ste20_phosphorylated: float
+      source_defined_pbs2_state: float
+      pbs2pp: float
+      pbs2p: float
+      pbs2_phosphorylated: float
+      pbs2p_phosphorylated: float
+      pbs2pp_phosphorylated: float
+      hog1c: float
+      hog1n: float
+      hog1p174c: float
+      hog1p176c: float
+      hog1p174n: float
+      hog1p176n: float
+      hog1ppc: float
+      hog1ppn: float
+      hog1c_pbs2pp: float
+      hog1p174c_pbs2pp: float
+      hog1p176c_pbs2pp: float
+      hog1ppc_pbs2pp: float
+      hog1c_pbs2_phosphorylated: float
+      hog1p176c_pbs2_phosphorylated: float
+      hog1p174c_pbs2_phosphorylated: float
+      hog1ppc_pbs2_phosphorylated: float
+      hog1c_pbs2pp_phosphorylated: float
+      hog1p176c_pbs2pp_phosphorylated: float
+      hog1p174c_pbs2pp_phosphorylated: float
+      hog1ppc_pbs2pp_phosphorylated: float
+      hog1c_pbs2: float
+      hog1p176c_pbs2: float
+      hog1p174c_pbs2: float
+      hog1ppc_pbs2: float
+      source_defined_ptp3_state: float
+      ptp3_active: float
+      source_defined_ptc1_state: float
+      source_defined_ptc_state: float
+      source_defined_ptp2_state: float
+      ptp2_active: float
+      additional_phosphatase_cyto: float
+      additional_phosphatase_nucleus: float
+      gene_off_phosphatase: float
+      gene_on_phosphatase: float
+      gene_off_phosphatase_hog1ppn: float
+      gene_on_phosphatase_hog1ppn: float
+      gene_on_phosphatase_r: float
+      gene_on_phosphatase_r_hog1ppn: float
+      source_defined_mrna_state: float
+      m_rna_cytosol: float
+      source_defined_gpd1_state: float
+      gpd1_pre: float
+    species_labels:
+      v_os_cytosol: V Os Cytosol
+      v_os_nucleus: V Os Nucleus
+      source_defined_v_os_state: source-defined V_OS state
+      source_defined_nacl_state: source-defined NACL state
+      v_os_pi_t_0: V Os Pi T 0
+      source_defined_pi_t_0_state: source-defined PI_T_0 state
+      glycin: Glycin
+      base_line: Base Line
+      pi_t_below_threshold: Pi T Below Threshold
+      source_defined_sln1_state: source-defined SLN1 state
+      sln1p: Sln1p
+      source_defined_ypd1_state: source-defined YPD1 state
+      ypd1p: Ypd1p
+      source_defined_ssk1_state: source-defined SSK1 state
+      ssk1p: Ssk1p
+      source_defined_ssk2_state: source-defined SSK2 state
+      ssk2p: Ssk2p
+      sln1_phosphorylated: Sln1 Phosphorylated
+      sln1p_phosphorylated: Sln1p Phosphorylated
+      ssk1_phosphorylated: Ssk1 Phosphorylated
+      ssk1p_phosphorylated: Ssk1p Phosphorylated
+      ssk2_phosphorylated: Ssk2 Phosphorylated
+      ssk2_phosphorylated_second: Ssk2 Phosphorylated Second
+      ssk2p_phosphorylated: Ssk2p Phosphorylated
+      ssk2p_phosphorylated_second: Ssk2p Phosphorylated Second
+      source_defined_sho1_state: source-defined SHO1 state
+      sho1_active: Sho1 active
+      sho1_pbs2: Sho1 Pbs2
+      sho1_active_pbs2: Sho1 active Pbs2
+      sho1_active_ste11_pbs2_inactive: Sho1 active Ste11 Pbs2 Inactive
+      sho1_active_ste11_pbs2: Sho1 active Ste11 Pbs2
+      sho1_active_ste11: Sho1 active Ste11
+      sho1_active_ste11pp: Sho1 active Ste11pp
+      sho1_active_ste11_pbs2p: Sho1 active Ste11 Pbs2p
+      sho1_active_ste11_pbs2pp: Sho1 active Ste11 Pbs2pp
+      ste11: Ste11
+      ste11_ste50: Ste11 Ste50
+      ste50: Ste50
+      ste1pp: Ste1pp
+      sho1_pbs2_phosphorylated: Sho1 Pbs2 Phosphorylated
+      sho1_active_pbs2_phosphorylated: Sho1 active Pbs2 Phosphorylated
+      sho1_active_ste11_pbs2_phosphorylated_inactive: Sho1 active Ste11 Pbs2 Phosphorylated
+        Inactive
+      sho1_active_ste11_pbs2_phosphorylated: Sho1 active Ste11 Pbs2 Phosphorylated
+      sho1_active_ste11_pbs2p_phosphorylated: Sho1 active Ste11 Pbs2p Phosphorylated
+      sho1_active_ste11_pbs2pp_phosphorylated: Sho1 active Ste11 Pbs2pp Phosphorylated
+      sho1_active_ste11_pbs2_inactive_phosphorylated: Sho1 active Ste11 Pbs2 Inactive
+        Phosphorylated
+      sho1_active_ste11_phosphorylated: Sho1 active Ste11 Phosphorylated
+      sho1_active_ste11pp_phosphorylated: Sho1 active Ste11pp Phosphorylated
+      ste20: Ste20
+      ste20_phosphorylated: Ste20 Phosphorylated
+      source_defined_pbs2_state: source-defined PBS2 state
+      pbs2pp: Pbs2pp
+      pbs2p: Pbs2p
+      pbs2_phosphorylated: Pbs2 Phosphorylated
+      pbs2p_phosphorylated: Pbs2p Phosphorylated
+      pbs2pp_phosphorylated: Pbs2pp Phosphorylated
+      hog1c: Hog1c
+      hog1n: Hog1n
+      hog1p174c: Hog1p174c
+      hog1p176c: Hog1p176c
+      hog1p174n: Hog1p174n
+      hog1p176n: Hog1p176n
+      hog1ppc: Hog1ppc
+      hog1ppn: Hog1ppn
+      hog1c_pbs2pp: Hog1c Pbs2pp
+      hog1p174c_pbs2pp: Hog1p174c Pbs2pp
+      hog1p176c_pbs2pp: Hog1p176c Pbs2pp
+      hog1ppc_pbs2pp: Hog1ppc Pbs2pp
+      hog1c_pbs2_phosphorylated: Hog1c Pbs2 Phosphorylated
+      hog1p176c_pbs2_phosphorylated: Hog1p176c Pbs2 Phosphorylated
+      hog1p174c_pbs2_phosphorylated: Hog1p174c Pbs2 Phosphorylated
+      hog1ppc_pbs2_phosphorylated: Hog1ppc Pbs2 Phosphorylated
+      hog1c_pbs2pp_phosphorylated: Hog1c Pbs2pp Phosphorylated
+      hog1p176c_pbs2pp_phosphorylated: Hog1p176c Pbs2pp Phosphorylated
+      hog1p174c_pbs2pp_phosphorylated: Hog1p174c Pbs2pp Phosphorylated
+      hog1ppc_pbs2pp_phosphorylated: Hog1ppc Pbs2pp Phosphorylated
+      hog1c_pbs2: Hog1c Pbs2
+      hog1p176c_pbs2: Hog1p176c Pbs2
+      hog1p174c_pbs2: Hog1p174c Pbs2
+      hog1ppc_pbs2: Hog1ppc Pbs2
+      source_defined_ptp3_state: source-defined PTP3 state
+      ptp3_active: Ptp3 active
+      source_defined_ptc1_state: source-defined PTC1 state
+      source_defined_ptc_state: source-defined PTC state
+      source_defined_ptp2_state: source-defined PTP2 state
+      ptp2_active: Ptp2 active
+      additional_phosphatase_cyto: Additional Phosphatase Cyto
+      additional_phosphatase_nucleus: Additional Phosphatase Nucleus
+      gene_off_phosphatase: Gene Off Phosphatase
+      gene_on_phosphatase: Gene On Phosphatase
+      gene_off_phosphatase_hog1ppn: Gene Off Phosphatase Hog1ppn
+      gene_on_phosphatase_hog1ppn: Gene On Phosphatase Hog1ppn
+      gene_on_phosphatase_r: Gene On Phosphatase R
+      gene_on_phosphatase_r_hog1ppn: Gene On Phosphatase R Hog1ppn
+      source_defined_mrna_state: source-defined MRNA state
+      m_rna_cytosol: M RNA Cytosol
+      source_defined_gpd1_state: source-defined GPD1 state
+      gpd1_pre: Gpd1 Pre
+io:
+  inputs: []
+  outputs: []

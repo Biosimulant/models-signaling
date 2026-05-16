@@ -1,0 +1,142 @@
+schema_version: '2.0'
+title: Hodgson2018 - TGFbeta signalling and inflammatory response Visualisation
+description: Question-and-answer and chart visualisation for developmental and growth-control
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- tgf-beta
+- immune-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_hodgson2018_tgfbeta_signalling_and_inflammatory_model1805080001_model
+    title: Hodgson2018 - TGFbeta signalling and inflammatory response
+    context: growth-control pathway signaling
+    question: How does Hodgson2018 - TGFbeta signalling and inflammatory response
+      shift developmental or growth-control pathway states?
+    visual_scope: growth-control pathway signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_il1_state: float
+      source_defined_jnk_p_state: float
+      source_defined_jnk_state: float
+      il1r: float
+      il1rr: float
+      il1rr_int: float
+      source_defined_cjun_state: float
+      c_jun_p: float
+      c_jun_dimer: float
+      source_defined_osm_state: float
+      source_defined_osmr_state: float
+      osmrr: float
+      source_defined_jak1_state: float
+      jak1_p: float
+      stat3_nuc: float
+      c_fos_m_rna: float
+      stat3_cyt: float
+      source_defined_cfos_state: float
+      abstract_source_state_p38: float
+      p38_p: float
+      c_fos_p: float
+      c_fos_c_jun: float
+      block: float
+      mmp13_m_rna: float
+      integrin: float
+      source: float
+      sink_species: float
+      source_defined_alk5_state: float
+      tgf_beta_a: float
+      tgf_beta_i: float
+      alk5_dimer: float
+      source_defined_alk1_state: float
+      alk1_alk5: float
+      tgf_beta_alk5_dimer: float
+      smad7: float
+      tgf_beta_alk5_dimer_smad7: float
+      tgf_beta_alk1_alk5: float
+      smad2_3: float
+      smad2_3_p: float
+      smad2_3_p_smad4: float
+      source_defined_smad4_state: float
+      runx2_a: float
+      runx2_i: float
+      smad1_5_8: float
+      smad1_5_8_p: float
+      smad1_5_8_p_smad4: float
+      tgf_beta_alk1_alk5_smad7: float
+      jun_b_m_rna: float
+      source_defined_junb_state: float
+      jun_b_c_jun: float
+      source_defined_a_state: float
+      dummy_m_rna: float
+      dummy: float
+      a_phos: float
+    species_labels:
+      source_defined_il1_state: source-defined IL1 state
+      source_defined_jnk_p_state: source-defined JNK_P state
+      source_defined_jnk_state: source-defined JNK state
+      il1r: IL1R
+      il1rr: IL1RR
+      il1rr_int: IL1RR Int
+      source_defined_cjun_state: source-defined CJUN state
+      c_jun_p: C Jun P
+      c_jun_dimer: C Jun Dimer
+      source_defined_osm_state: source-defined OSM state
+      source_defined_osmr_state: source-defined OSMR state
+      osmrr: OSMRR
+      source_defined_jak1_state: source-defined JAK1 state
+      jak1_p: Jak1 P
+      stat3_nuc: STAT3 Nuc
+      c_fos_m_rna: C Fos M RNA
+      stat3_cyt: STAT3 Cyt
+      source_defined_cfos_state: source-defined CFOS state
+      abstract_source_state_p38: Abstract source state P38
+      p38_p: P38 P
+      c_fos_p: C Fos P
+      c_fos_c_jun: C Fos C Jun
+      block: Block
+      mmp13_m_rna: MMP13 M RNA
+      integrin: Integrin
+      source: Source
+      sink_species: sink species
+      source_defined_alk5_state: source-defined ALK5 state
+      tgf_beta_a: TGF-beta A
+      tgf_beta_i: TGF-beta I
+      alk5_dimer: Alk5 Dimer
+      source_defined_alk1_state: source-defined ALK1 state
+      alk1_alk5: Alk1 Alk5
+      tgf_beta_alk5_dimer: TGF-beta Alk5 Dimer
+      smad7: SMAD7
+      tgf_beta_alk5_dimer_smad7: TGF-beta Alk5 Dimer SMAD7
+      tgf_beta_alk1_alk5: TGF-beta Alk1 Alk5
+      smad2_3: Smad2 3
+      smad2_3_p: Smad2 3 P
+      smad2_3_p_smad4: Smad2 3 P Smad4
+      source_defined_smad4_state: source-defined SMAD4 state
+      runx2_a: Runx2 A
+      runx2_i: Runx2 I
+      smad1_5_8: Smad1 5 8
+      smad1_5_8_p: Smad1 5 8 P
+      smad1_5_8_p_smad4: Smad1 5 8 P Smad4
+      tgf_beta_alk1_alk5_smad7: TGF-beta Alk1 Alk5 SMAD7
+      jun_b_m_rna: Jun B M RNA
+      source_defined_junb_state: source-defined JUNB state
+      jun_b_c_jun: Jun B C Jun
+      source_defined_a_state: source-defined A state
+      dummy_m_rna: Dummy M RNA
+      dummy: Dummy
+      a_phos: A Phos
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8ee05414-16cc-4f5b-92ac-471bcaa282f1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ffe14ae4-9c48-4a80-a262-425df0959b49",
+  "created_at": "2026-05-16T05:58:29.602302253+00:00",
+  "last_synced_at": "2026-05-16T11:26:02.469920+00:00",
+  "hub_manifest_hash": "3ded1d0d3b4b33a546f92c85a5e83e0c8bc55d4a516e7f36e25aa6b3ba2a9db4",
+  "package_name": "yapo2017-a2ar-camp-pka-signalling-in-d2-dopamine-receptor-expres"
+}

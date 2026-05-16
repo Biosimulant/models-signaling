@@ -1,0 +1,69 @@
+schema_version: '2.0'
+title: Phosphatase activities on PI(3,4,5)P3 and PI(3,4)P2 Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Phosphatase activities on PI(3,4,5)P3 and PI(3,4)P2.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model
+    title: Phosphatase activities on PI(3,4,5)P3 and PI(3,4)P2
+    context: phosphorylation and regulatory motif dynamics
+    question: How does Phosphatase activities on PI(3,4,5)P3 and PI(3,4)P2 express
+      its source-modeled signaling motif over the baseline run?
+    visual_scope: phosphorylation and regulatory motif dynamics
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      egf: float
+      egfr: float
+      egfr_p: float
+      pi3keff1: float
+      pi_4_5_p2: float
+      pi_3_4_5_p3: float
+      pi_103_ext: float
+      pi_103_int: float
+      source_defined_pten_state: float
+      pi_3_4_p2: float
+      source_defined_ship2_state: float
+      inpp4ab: float
+      pi_3_p: float
+      pi_4_p: float
+      response_node_x: float
+      mode_pi_103_diff: float
+      source_defined_y_state: float
+      source_defined_pi_y_p_state: float
+    species_labels:
+      egf: EGF
+      egfr: EGFR
+      egfr_p: EGFR P
+      pi3keff1: Pi3keff1
+      pi_4_5_p2: PI 4 5 P2
+      pi_3_4_5_p3: PI 3 4 5 P3
+      pi_103_ext: PI 103 Ext
+      pi_103_int: PI 103 Int
+      source_defined_pten_state: source-defined PTEN state
+      pi_3_4_p2: PI 3 4 P2
+      source_defined_ship2_state: source-defined SHIP2 state
+      inpp4ab: INPP4AB
+      pi_3_p: PI 3 P
+      pi_4_p: PI 4 P
+      response_node_x: response node X
+      mode_pi_103_diff: Mode PI 103 Diff
+      source_defined_y_state: source-defined Y state
+      source_defined_pi_y_p_state: source-defined PI(Y)P state
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,83 @@
+schema_version: '2.0'
+title: Hui2016 - Age-related changes in articular cartilage
+description: 'Hui2014 - Age-related changes in articularcartilage This model is described
+  in the article: Oxidative changes and signalling pathways are pivotal in initiating
+  age-related changes in articular cartila. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- stress-response
+authors:
+- Biosimulant Team
+- Wang Hui
+- David A Young
+- Andrew D Rowan
+- Xin Xu
+- Tim E Cawston
+upstream:
+  id: biomodels_ebi:BIOMD0000000560
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000560
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000560
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000560?filename=BIOMD0000000560_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hui2016_age_related_changes_in_articular_cartila:Hui2016AgeRelatedChangesInArticularCartilaBiomd0000000560Model
+  init_kwargs:
+    model_path: data/BIOMD0000000560.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_natp_state
+    maps_to: signaling_sbml_hui2016_age_related_changes_in_articular_cartila_biomd0000000560_model.initial_source_defined_natp_state
+    label: Initial source-defined NATP state
+    description: Initial level of source-defined NATP state. Maps to SBML symbol `NatP`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_sink_species
+    maps_to: signaling_sbml_hui2016_age_related_changes_in_articular_cartila_biomd0000000560_model.initial_sink_species
+    label: Initial sink species
+    description: Initial level of sink species. Maps to SBML symbol `Sink`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_source
+    maps_to: signaling_sbml_hui2016_age_related_changes_in_articular_cartila_biomd0000000560_model.initial_source
+    label: Initial Source
+    description: Initial level of Source. Maps to SBML symbol `Source`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: acanm_rna
+    maps_to: signaling_sbml_hui2016_age_related_changes_in_articular_cartila_biomd0000000560_model.acanm_rna
+    label: Acanm RNA
+    description: Acanm RNA. Maps to SBML symbol `AcanmRNA` and is emitted in native
+      SBML units.
+  - name: caspase_a
+    maps_to: signaling_sbml_hui2016_age_related_changes_in_articular_cartila_biomd0000000560_model.caspase_a
+    label: Caspase A
+    description: Caspase A. Maps to SBML symbol `Caspase_A` and is emitted in native
+      SBML units.
+  - name: caspase_i
+    maps_to: signaling_sbml_hui2016_age_related_changes_in_articular_cartila_biomd0000000560_model.caspase_i
+    label: Caspase I
+    description: Caspase I. Maps to SBML symbol `Caspase_I` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_hui2016_age_related_changes_in_articular_cartila_biomd0000000560_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_hui2016_age_related_changes_in_articular_cartila_biomd0000000560_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_hui2016_age_related_changes_in_articular_cartila_biomd0000000560_model.species_labels
+    label: Observable labels

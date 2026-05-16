@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "fbd46cee-27d1-4ba0-9f55-2145666c059a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6b533c78-1c56-4816-9af1-043078497b31",
+  "created_at": "2026-05-15T19:08:09.700765794+00:00",
+  "last_synced_at": "2026-05-16T09:41:34.669295+00:00",
+  "hub_manifest_hash": "e1891dfb956d00f6e29df77d6e1eeea1fb944e68d2faf78b819afbd9d2b39469",
+  "package_name": "gosselin2025-ecoli-bioproduction-insensitive-lab"
+}

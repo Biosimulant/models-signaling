@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2ec69b7c-ab6f-494d-afba-c81c56187ca8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4d93a459-c269-441f-95a9-4d84c5132c94",
+  "created_at": "2026-05-15T19:08:10.220527659+00:00",
+  "last_synced_at": "2026-05-16T09:55:27.121665+00:00",
+  "hub_manifest_hash": "9efcb078349a2951ce2396dcf5104a6bf2f2c9c3b3ff1653bf178348c8f456ee",
+  "package_name": "jung2019-regulating-glioblastoma-signaling-pathways-and-anti-inv"
+}

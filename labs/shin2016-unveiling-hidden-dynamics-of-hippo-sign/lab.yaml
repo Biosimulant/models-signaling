@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Shin2016 - Unveiling Hidden Dynamics of Hippo Signalling Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model.state
+  to:
+  - visualisation.signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model_state
+- from: signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model.summary
+  to:
+  - visualisation.signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model_summary
+- from: signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model.species_labels
+  to:
+  - visualisation.signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+- pi3k-akt
+- hippo
+io:
+  inputs:
+  - name: initial_a_egfr_level
+    maps_to: signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model.initial_a_egfr_level
+    label: A EGFR
+    description: A EGFR source parameter. Maps to SBML symbol `aEGFR` and preserves
+      the bundled default.
+  outputs:
+  - name: akt
+    maps_to: signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model.akt
+    label: AKT
+    description: AKT. Maps to SBML symbol `Akt` and is emitted in native SBML units.
+  - name: rassf1a
+    maps_to: signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model.rassf1a
+    label: RASSF1A
+    description: RASSF1A. Maps to SBML symbol `RASSF1A` and is emitted in native SBML
+      units.
+  - name: a_mst2u_rassf1a
+    maps_to: signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model.a_mst2u_rassf1a
+    label: A Mst2u RASSF1A
+    description: A Mst2u RASSF1A. Maps to SBML symbol `aMST2uRASSF1A` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_shin2016_unveiling_hidden_dynamics_of_hippo_sign_biomd0000000832_model.species_labels
+    label: Observable labels

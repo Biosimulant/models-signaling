@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Strasen2018 - TGFb SMAD Signalling Class 1 Visualisation
+description: Question-and-answer and chart visualisation for developmental and growth-control
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- tgf-beta
+- smad
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_strasen2018_tgfb_smad_signalling_class_1_biomd0000000998_model
+    title: Strasen2018 - TGFb SMAD Signalling Class 1
+    context: receptor-to-MAPK cascade signaling
+    question: How does Strasen2018 - TGFb SMAD Signalling Class 1 propagate receptor
+      or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      tgf_beta_tgfr1_surface: float
+      tgf_beta_tgfr2_surface: float
+      tgf_beta_tgfr1_endo: float
+      tgf_beta_tgfr2_endo: float
+      tgf_beta: float
+      tgf_beta_in: float
+      active_tgfr2: float
+      active_tgf_beta_tgfr1_tgfr2: float
+      active_tgf_beta_tgfr1_tgfr2_endo: float
+      inactive_tgf_beta_tgfr1_tgfr2: float
+      p_smad2_c: float
+      smad2_c: float
+      smad4_c: float
+      p_s2_p_s2_s4_c: float
+      p_s2_p_s2_p_s2_c: float
+      smad7_m_rna: float
+      smad7_m_rna1: float
+      smad7: float
+      p_smad2_n: float
+      p_s2_p_s2_s4_n: float
+      p_s2_p_s2_p_s2_n: float
+      smad2_n: float
+      smad4_n: float
+    species_labels:
+      tgf_beta_tgfr1_surface: TGF-beta TGFR1 Surface
+      tgf_beta_tgfr2_surface: TGF-beta TGFR2 Surface
+      tgf_beta_tgfr1_endo: TGF-beta TGFR1 Endo
+      tgf_beta_tgfr2_endo: TGF-beta TGFR2 Endo
+      tgf_beta: TGF-beta
+      tgf_beta_in: TGF-beta In
+      active_tgfr2: active TGFR2
+      active_tgf_beta_tgfr1_tgfr2: active TGF-beta TGFR1 TGFR2
+      active_tgf_beta_tgfr1_tgfr2_endo: active TGF-beta TGFR1 TGFR2 Endo
+      inactive_tgf_beta_tgfr1_tgfr2: Inactive TGF-beta TGFR1 TGFR2
+      p_smad2_c: P SMAD2 C
+      smad2_c: SMAD2 C
+      smad4_c: SMAD4 C
+      p_s2_p_s2_s4_c: P S2 P S2 S4 C
+      p_s2_p_s2_p_s2_c: P S2 P S2 P S2 C
+      smad7_m_rna: SMAD7 M RNA
+      smad7_m_rna1: SMAD7 M RNA1
+      smad7: SMAD7
+      p_smad2_n: P SMAD2 N
+      p_s2_p_s2_s4_n: P S2 P S2 S4 N
+      p_s2_p_s2_p_s2_n: P S2 P S2 P S2 N
+      smad2_n: SMAD2 N
+      smad4_n: SMAD4 N
+io:
+  inputs: []
+  outputs: []

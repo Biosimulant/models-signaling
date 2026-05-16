@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "85e2f9aa-772e-436a-99cc-ab7e3e43bfd4",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f9b073a4-893d-42ea-9a4e-c0ca980092b4",
+  "created_at": "2026-05-15T19:08:10.437371585+00:00",
+  "last_synced_at": "2026-05-16T11:35:18.533851+00:00",
+  "hub_manifest_hash": "daba78541e368c5d3de0e271c7ea7dd0324708718e97984ef54fad740ec97af6",
+  "package_name": "koo2013-shear-stress-induced-akt-and-enos-phosphorylation-model"
+}

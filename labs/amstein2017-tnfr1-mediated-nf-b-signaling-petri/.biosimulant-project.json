@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2afcac5c-7a50-4eb5-816d-b227f93a4e6a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2cc1a793-dc26-4f09-a5b7-6f0f05143700",
+  "created_at": "2026-05-15T19:08:08.607768694+00:00",
+  "last_synced_at": "2026-05-16T08:43:12.364673+00:00",
+  "hub_manifest_hash": "d67235f12eb2fb9c0bf65a24f7ce52184d35f9a4ac6fd95d4559ee47a4730437",
+  "package_name": "amstein2017-tnfr1-mediated-nf-b-signaling-petri-net-lab"
+}

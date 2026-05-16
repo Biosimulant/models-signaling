@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Sobotta2017 - IL-6-induced JAK1-STAT3-signaling Visualisation
+description: Question-and-answer and chart visualisation for JAK/STAT cytokine signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cytokine-signaling
+- jak-stat
+- interleukin-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model
+    title: Sobotta2017 - IL-6-induced JAK1-STAT3-signaling
+    context: JAK/STAT receptor-to-transcription signaling
+    question: How does Sobotta2017 - IL-6-induced JAK1-STAT3-signaling transmit cytokine
+      receptor activity into STAT pathway states?
+    visual_scope: JAK/STAT receptor-to-transcription signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      unphosphorylated_receptor: float
+      phosphorylated_jak1_receptor: float
+      active_receptor: float
+      unphosphorylated_cytoplasmic_stat3: float
+      phosphorylated_stat3: float
+      unphosphorylated_nuclear_stat3: float
+      socs3_transcriptional_delay: float
+      socs3_transcriptional_delay_2: float
+      socs3_transcriptional_delay_3: float
+      socs3_transcriptional_delay_4: float
+      socs3_transcriptional_delay_5: float
+      socs3_m_rna: float
+      socs3_protein: float
+      il33_transcriptional_delay: float
+      il33_transcriptional_delay_2: float
+      il33_transcriptional_delay_3: float
+      il33_transcriptional_delay_4: float
+      il33_transcriptional_delay_5: float
+      cxcl10_transcriptional_delay: float
+      cxcl10_transcriptional_delay_2: float
+      cxcl10_transcriptional_delay_3: float
+      fgg_transcriptional_delay: float
+      fgg_transcriptional_delay_2: float
+      fgg_transcriptional_delay_3: float
+      fgg_transcriptional_delay_4: float
+      fgg_transcriptional_delay_5: float
+      hp_transcriptional_delay: float
+      hpx_transcriptional_delay: float
+      cxcl10_m_rna: float
+      fgg_m_rna: float
+      hamp_m_rna: float
+      il33_m_rna: float
+      apcs_m_rna: float
+      hp_m_rna: float
+      hpx_m_rna: float
+    species_labels:
+      unphosphorylated_receptor: Unphosphorylated Receptor
+      phosphorylated_jak1_receptor: Phosphorylated JAK1 Receptor
+      active_receptor: active Receptor
+      unphosphorylated_cytoplasmic_stat3: Unphosphorylated Cytoplasmic STAT3
+      phosphorylated_stat3: Phosphorylated STAT3
+      unphosphorylated_nuclear_stat3: Unphosphorylated nuclear STAT3
+      socs3_transcriptional_delay: SOCS3 Transcriptional Delay
+      socs3_transcriptional_delay_2: SOCS3 Transcriptional Delay
+      socs3_transcriptional_delay_3: SOCS3 Transcriptional Delay
+      socs3_transcriptional_delay_4: SOCS3 Transcriptional Delay
+      socs3_transcriptional_delay_5: SOCS3 Transcriptional Delay
+      socs3_m_rna: SOCS3 M RNA
+      socs3_protein: SOCS3 Protein
+      il33_transcriptional_delay: IL33 Transcriptional Delay
+      il33_transcriptional_delay_2: IL33 Transcriptional Delay
+      il33_transcriptional_delay_3: IL33 Transcriptional Delay
+      il33_transcriptional_delay_4: IL33 Transcriptional Delay
+      il33_transcriptional_delay_5: IL33 Transcriptional Delay
+      cxcl10_transcriptional_delay: CXCL10 Transcriptional Delay
+      cxcl10_transcriptional_delay_2: CXCL10 Transcriptional Delay
+      cxcl10_transcriptional_delay_3: CXCL10 Transcriptional Delay
+      fgg_transcriptional_delay: FGG Transcriptional Delay
+      fgg_transcriptional_delay_2: FGG Transcriptional Delay
+      fgg_transcriptional_delay_3: FGG Transcriptional Delay
+      fgg_transcriptional_delay_4: FGG Transcriptional Delay
+      fgg_transcriptional_delay_5: FGG Transcriptional Delay
+      hp_transcriptional_delay: HP Transcriptional Delay
+      hpx_transcriptional_delay: HPX Transcriptional Delay
+      cxcl10_m_rna: CXCL10 M RNA
+      fgg_m_rna: FGG M RNA
+      hamp_m_rna: HAMP M RNA
+      il33_m_rna: IL33 M RNA
+      apcs_m_rna: APCS M RNA
+      hp_m_rna: HP M RNA
+      hpx_m_rna: HPX M RNA
+io:
+  inputs: []
+  outputs: []

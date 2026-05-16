@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Yan2012 - Rb-E2F pathway dynamics with miR449 Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Yan2012 - Rb-E2F pathway dynamics with miR449.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_yan2012_rb_e2f_pathway_dynamics_with_mir449_biomd0000000720_model
+    title: Yan2012 - Rb-E2F pathway dynamics with miR449
+    context: metabolic and hormone signaling response
+    question: How does Yan2012 - Rb-E2F pathway dynamics with miR449 shift hormone-linked
+      signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      e2f: float
+      myc_transcription_factor: float
+      source_defined_cycd_state: float
+      source_defined_re_state: float
+      source_defined_cyce_state: float
+      source_defined_rb_state: float
+      mi_r449: float
+      source_defined_s_state: float
+      source_defined_prb_state: float
+    species_labels:
+      e2f: E2F
+      myc_transcription_factor: MYC transcription factor
+      source_defined_cycd_state: source-defined CYCD state
+      source_defined_re_state: source-defined RE state
+      source_defined_cyce_state: source-defined CYCE state
+      source_defined_rb_state: source-defined RB state
+      mi_r449: Mi R449
+      source_defined_s_state: source-defined S state
+      source_defined_prb_state: source-defined PRB state
+io:
+  inputs: []
+  outputs: []

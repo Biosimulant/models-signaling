@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "410858f8-0ebe-446e-8855-0db2c4d71ac5",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "47611edb-d154-45ba-a2f0-aba188a13c3c",
+  "created_at": "2026-05-16T05:38:39.286244649+00:00",
+  "last_synced_at": "2026-05-16T12:29:24.648760+00:00",
+  "hub_manifest_hash": "3c9d93dd45696d65a2a5a040c4b2ea92dd2a53030c21a8ac87bb869da4d6559d",
+  "package_name": "model2010040007-oliveira2020-malonyl-coa-pathway-for-acrylic-aci"
+}

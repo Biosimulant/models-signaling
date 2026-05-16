@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Neves2008 - Role of cell shape and size in controlling intracellular signalling
+  Lab
+description: 'Clean Biosimulant lab for systems signaling model: Neves2008 - Role
+  of cell shape and size in controlling intracellular signalling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.'
+models:
+- alias: signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model.state
+  to:
+  - visualisation.signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model_state
+- from: signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model.summary
+  to:
+  - visualisation.signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model_summary
+- from: signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model.species_labels
+  to:
+  - visualisation.signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+io:
+  inputs:
+  - name: initial_c_amp_cyto
+    maps_to: signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model.initial_c_amp_cyto
+    label: Initial C AMP Cyto
+    description: Initial level of C AMP Cyto. Maps to SBML symbol `cAMP_cyto`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: ac_active_cyto_mem
+    maps_to: signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model.ac_active_cyto_mem
+    label: AC active Cyto Mem
+    description: AC active Cyto Mem. Maps to SBML symbol `AC_active_cyto_mem` and
+      is emitted in native SBML units.
+  - name: mapk_active_cyto
+    maps_to: signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model.mapk_active_cyto
+    label: MAPK active Cyto
+    description: MAPK active Cyto. Maps to SBML symbol `MAPK_active_cyto` and is emitted
+      in native SBML units.
+  - name: mek_active_cyto
+    maps_to: signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model.mek_active_cyto
+    label: MEK active Cyto
+    description: MEK active Cyto. Maps to SBML symbol `MEK_active_cyto` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model.species_labels
+    label: Observable labels

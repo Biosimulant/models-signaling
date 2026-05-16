@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c5c1fd75-d085-4e83-b106-5df9ab851d2f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b4b922b9-195c-400d-9384-21af02e7c864",
+  "created_at": "2026-05-15T19:08:09.553942101+00:00",
+  "last_synced_at": "2026-05-16T09:36:41.231965+00:00",
+  "hub_manifest_hash": "67dc170cd8b935b0172fdac7a828712c4bedffe37c7aece00df0369f95ddc16e",
+  "package_name": "dutta-roy2015-opening-of-the-multiple-ampa-receptor-conductance"
+}

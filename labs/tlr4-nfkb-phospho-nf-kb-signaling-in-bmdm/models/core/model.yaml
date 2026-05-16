@@ -1,0 +1,85 @@
+schema_version: '2.0'
+title: TLR4-NFkB-phospho-NF-kB signaling in BMDM
+description: The model was constructed to describe TLR4 induced NF-κB activation in
+  native bone marrow-derived macrophages. It included processes of ligand (lipopolysaccharide)
+  recognition, formation of dimer rece.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- tlr-signaling
+- immune-signaling
+- physiology
+authors:
+- Biosimulant Team
+- Alexander V Bagaev
+- Anastasiya Y Garaeva
+- Ekaterina S Lebedeva
+- Alexey V Pichugin
+- Ravshan I Ataullakhanov
+upstream:
+  id: biomodels_ebi:MODEL1809230001
+  source_db: biomodels_ebi
+  source_id: MODEL1809230001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1809230001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1809230001?filename=TLR4-NF-kB_MACR_MODEL_SBML.xml
+  license: CC0
+biosim:
+  entrypoint: src.tlr4_nfkb_phospho_nf_kb_signaling_in_bmdm:Tlr4NfkbPhosphoNfKbSignalingInBmdmModel1809230001Model
+  init_kwargs:
+    model_path: data/MODEL1809230001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_sink_species
+    maps_to: signaling_sbml_tlr4_nfkb_phospho_nf_kb_signaling_in_bmdm_model1809230001_model.initial_sink_species
+    label: Initial sink species
+    description: Initial level of sink species. Maps to SBML symbol `species_23`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_dna
+    maps_to: signaling_sbml_tlr4_nfkb_phospho_nf_kb_signaling_in_bmdm_model1809230001_model.initial_source_dna
+    label: Initial Source DNA
+    description: Initial level of Source DNA. Maps to SBML symbol `species_22`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_cd14lps
+    maps_to: signaling_sbml_tlr4_nfkb_phospho_nf_kb_signaling_in_bmdm_model1809230001_model.initial_cd14lps
+    label: Initial CD14LPS
+    description: Initial level of CD14LPS. Maps to SBML symbol `CD14LPS`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: ik_ba_nfk_b
+    maps_to: signaling_sbml_tlr4_nfkb_phospho_nf_kb_signaling_in_bmdm_model1809230001_model.ik_ba_nfk_b
+    label: Ik Ba Nfk B
+    description: Ik Ba Nfk B. Maps to SBML symbol `species_30` and is emitted in native
+      SBML units.
+  - name: nfkb
+    maps_to: signaling_sbml_tlr4_nfkb_phospho_nf_kb_signaling_in_bmdm_model1809230001_model.nfkb
+    label: NF-kB
+    description: NF-kB. Maps to SBML symbol `species_31` and is emitted in native
+      SBML units.
+  - name: ikk_p_ik_ba_nfk_b
+    maps_to: signaling_sbml_tlr4_nfkb_phospho_nf_kb_signaling_in_bmdm_model1809230001_model.ikk_p_ik_ba_nfk_b
+    label: IKK P Ik Ba Nfk B
+    description: IKK P Ik Ba Nfk B. Maps to SBML symbol `species_32` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_tlr4_nfkb_phospho_nf_kb_signaling_in_bmdm_model1809230001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_tlr4_nfkb_phospho_nf_kb_signaling_in_bmdm_model1809230001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_tlr4_nfkb_phospho_nf_kb_signaling_in_bmdm_model1809230001_model.species_labels
+    label: Observable labels

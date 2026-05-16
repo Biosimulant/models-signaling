@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Sackmann2006 - mating pheromone response pathway of S.cerevisiae
+description: 'Sackmann2006 - mating pheromone response pathway of S.cerevisiae This
+  model is described in the article: Application of Petri net based analysis techniques
+  to signal transduction pathways Sackmann A,. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Andrea Sackmann
+- monika heiner
+- Koch I
+upstream:
+  id: biomodels_ebi:MODEL1403040000
+  source_db: biomodels_ebi
+  source_id: MODEL1403040000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1403040000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1403040000?filename=MODEL1403040000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.sackmann2006_mating_pheromone_response_pathway_o:Sackmann2006MatingPheromoneResponsePathwayOModel1403040000Model
+  init_kwargs:
+    model_path: data/MODEL1403040000.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_alpha_factor
+    maps_to: signaling_sbml_sackmann2006_mating_pheromone_response_pathway_o_model1403040000_model.initial_alpha_factor
+    label: Initial Alpha Factor
+    description: Initial level of Alpha Factor. Maps to SBML symbol `P0`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_receptor_factor_complex
+    maps_to: signaling_sbml_sackmann2006_mating_pheromone_response_pathway_o_model1403040000_model.initial_receptor_factor_complex
+    label: Initial Receptor Factor Complex
+    description: Initial level of Receptor Factor Complex. Maps to SBML symbol `P2`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: ste2_receptor
+    maps_to: signaling_sbml_sackmann2006_mating_pheromone_response_pathway_o_model1403040000_model.ste2_receptor
+    label: Ste2 Receptor
+    description: Ste2 Receptor. Maps to SBML symbol `P1` and is emitted in native
+      SBML units.
+  - name: receptor_factor_complex
+    maps_to: signaling_sbml_sackmann2006_mating_pheromone_response_pathway_o_model1403040000_model.receptor_factor_complex
+    label: Receptor Factor Complex
+    description: Receptor Factor Complex. Maps to SBML symbol `P2` and is emitted
+      in native SBML units.
+  - name: receptor_complex
+    maps_to: signaling_sbml_sackmann2006_mating_pheromone_response_pathway_o_model1403040000_model.receptor_complex
+    label: Receptor Complex
+    description: Receptor Complex. Maps to SBML symbol `P3` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_sackmann2006_mating_pheromone_response_pathway_o_model1403040000_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_sackmann2006_mating_pheromone_response_pathway_o_model1403040000_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_sackmann2006_mating_pheromone_response_pathway_o_model1403040000_model.species_labels
+    label: Observable labels

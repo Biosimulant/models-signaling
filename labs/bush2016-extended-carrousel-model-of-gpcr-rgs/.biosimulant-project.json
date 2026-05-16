@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c4f6ccd2-eb61-4a7b-be79-7e4e6d08823a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9157e356-a042-44df-9c39-4dff7cfc2516",
+  "created_at": "2026-05-15T19:08:09.159442499+00:00",
+  "last_synced_at": "2026-05-16T09:18:10.852195+00:00",
+  "hub_manifest_hash": "ee5792aecc97feaa2225470e19c418e13e059b9d88d847fb8cb6091791d09413",
+  "package_name": "bush2016-extended-carrousel-model-of-gpcr-rgs-lab"
+}

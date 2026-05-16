@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "70e29028-58b1-4e6d-97b4-1c5a8880f6a5",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4056f3e8-20f1-47b8-be8f-2e8647e4edf5",
+  "created_at": "2026-05-15T19:08:10.415983362+00:00",
+  "last_synced_at": "2026-05-16T10:02:30.414673+00:00",
+  "hub_manifest_hash": "8c2bd4ecd52711b609c47f7b9cc37f2dd9824b4ce96a37160f80b085d7bb3f8e",
+  "package_name": "komarova2005-theoreticalframework-basicarchitecture-lab"
+}

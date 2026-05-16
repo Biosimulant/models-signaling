@@ -1,0 +1,69 @@
+schema_version: '2.0'
+title: Kwang2003 - The influence of RKIP on the ERK signaling pathway
+description: 'Kwang2003 - The influence of RKIP on the ERKsignaling pathway This model
+  is described in the article: Mathematical Modeling of the Influence of RKIP on the
+  ERK Signaling Pathway Kwang-Hyun Cho, Sung-Y. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+authors:
+- Biosimulant Team
+- biomodels_ebi
+upstream:
+  id: biomodels_ebi:BIOMD0000000647
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000647
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000647
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000647?filename=BIOMD0000000647_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kwang2003_the_influence_of_rkip_on_the_erk_signa:Kwang2003TheInfluenceOfRkipOnTheErkSignaBiomd0000000647Model
+  init_kwargs:
+    model_path: data/BIOMD0000000647.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_raf1
+    maps_to: signaling_sbml_kwang2003_the_influence_of_rkip_on_the_erk_signa_biomd0000000647_model.initial_raf1
+    label: Initial RAF1
+    description: Initial level of RAF1. Maps to SBML symbol `Raf1`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: raf1_rkip_erkpp
+    maps_to: signaling_sbml_kwang2003_the_influence_of_rkip_on_the_erk_signa_biomd0000000647_model.raf1_rkip_erkpp
+    label: RAF1 RKIP ERKPP
+    description: RAF1 RKIP ERKPP. Maps to SBML symbol `Raf1_RKIP_ERKPP` and is emitted
+      in native SBML units.
+  - name: erk
+    maps_to: signaling_sbml_kwang2003_the_influence_of_rkip_on_the_erk_signa_biomd0000000647_model.erk
+    label: ERK
+    description: ERK. Maps to SBML symbol `ERK` and is emitted in native SBML units.
+  - name: mekpp_erk
+    maps_to: signaling_sbml_kwang2003_the_influence_of_rkip_on_the_erk_signa_biomd0000000647_model.mekpp_erk
+    label: MEKPP ERK
+    description: MEKPP ERK. Maps to SBML symbol `MEKPP_ERK` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_kwang2003_the_influence_of_rkip_on_the_erk_signa_biomd0000000647_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_kwang2003_the_influence_of_rkip_on_the_erk_signa_biomd0000000647_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_kwang2003_the_influence_of_rkip_on_the_erk_signa_biomd0000000647_model.species_labels
+    label: Observable labels

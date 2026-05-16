@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Schaber2012 - Hog pathway in yeast
+description: Schaber2012 - Hog pathway in yeast The high osmolarity glycerol (HOG)
+  pathway in the yeast Saccharomyces cerevisiae is one of the best-studied mitogen-activated
+  protein kinase (MAPK) pathways and serv. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+authors:
+- Biosimulant Team
+- Jörg Schaber
+- Rodrigo Baltanas
+- Alan Bush
+- Edda Klipp
+- Alejandro Colman-Lerner
+upstream:
+  id: biomodels_ebi:BIOMD0000000429
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000429
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000429
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000429?filename=BIOMD0000000429_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.schaber2012_hog_pathway_in_yeast:Schaber2012HogPathwayInYeastBiomd0000000429Model
+  init_kwargs:
+    model_path: data/BIOMD0000000429.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_hog1ppactive
+    maps_to: signaling_sbml_schaber2012_hog_pathway_in_yeast_biomd0000000429_model.initial_hog1ppactive
+    label: Initial Hog1ppactive
+    description: Initial level of Hog1ppactive. Maps to SBML symbol `species_12`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: phosphatase
+    maps_to: signaling_sbml_schaber2012_hog_pathway_in_yeast_biomd0000000429_model.phosphatase
+    label: Phosphatase
+    description: Phosphatase. Maps to SBML symbol `species_6` and is emitted in native
+      SBML units.
+  - name: hog1ppactive
+    maps_to: signaling_sbml_schaber2012_hog_pathway_in_yeast_biomd0000000429_model.hog1ppactive
+    label: Hog1ppactive
+    description: Hog1ppactive. Maps to SBML symbol `species_12` and is emitted in
+      native SBML units.
+  - name: glyin
+    maps_to: signaling_sbml_schaber2012_hog_pathway_in_yeast_biomd0000000429_model.glyin
+    label: Glyin
+    description: Glyin. Maps to SBML symbol `species_1` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_schaber2012_hog_pathway_in_yeast_biomd0000000429_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_schaber2012_hog_pathway_in_yeast_biomd0000000429_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_schaber2012_hog_pathway_in_yeast_biomd0000000429_model.species_labels
+    label: Observable labels

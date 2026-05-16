@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: Harish2009 - nuclear–cytoplasmic ERK oscillation model Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- egfr
+- ras-erk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_harish2009_nuclear_cytoplasmic_erk_oscillation_m_model2306170002_model
+    title: Harish2009 - nuclear–cytoplasmic ERK oscillation model
+    context: receptor-to-MAPK cascade signaling
+    question: How does Harish2009 - nuclear–cytoplasmic ERK oscillation model propagate
+      receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      e1_mos_kinase: float
+      source_defined_mos_p_state: float
+      e2_mos_kinase_p: float
+      source_defined_mapk_kinase_c_state: float
+      p_mos_kinase_mek1: float
+      p_mapk_kinase_c: float
+      p1_p_mapk_kinase_c: float
+      p_mos_kinase_p_mek1: float
+      pp_mapk_kinase_c: float
+      p1_pp_mapk_kinase_c: float
+      p1_c: float
+      cytosolic_phosphorylated_erk: float
+      pp_mapk_kinase_erk_c: float
+      p_erk_c: float
+      p2_p_erk_c: float
+      pp_mapk_kinase_p_erk_c: float
+      pp_erk_c: float
+      p2_pp_erk_c: float
+      p2_c: float
+      p_mapk_kinase_n: float
+      p1_p_mapk_kinase_n: float
+      pp_mapk_kinase_n: float
+      p1_pp_mapk_kinase_n: float
+      pp_mapk_kinase_erk_n: float
+      p_erk_n: float
+      p2_p_erk_n: float
+      pp_mapk_kinase_p_erk_n: float
+      pp_erk_n: float
+      p2_pp_erk_n: float
+      mapk_kinase_erk_c: float
+      mapk_kinase_erk_n: float
+      mapkkk_activator_ras: float
+      mapkkk_inactivator: float
+      mos_kinase: float
+      source_defined_mapk_kinase_n_state: float
+      nuclear_phosphorylated_erk: float
+      p2_n: float
+      p1_n: float
+    species_labels:
+      e1_mos_kinase: E1 Mos kinase
+      source_defined_mos_p_state: source-defined MOS-P state
+      e2_mos_kinase_p: E2 Mos kinase P
+      source_defined_mapk_kinase_c_state: Source Defined MAPK Kinase C State
+      p_mos_kinase_mek1: P Mos kinase Mek1
+      p_mapk_kinase_c: P MAPK Kinase C
+      p1_p_mapk_kinase_c: P1 P MAPK Kinase C
+      p_mos_kinase_p_mek1: P Mos kinase P Mek1
+      pp_mapk_kinase_c: PP MAPK Kinase C
+      p1_pp_mapk_kinase_c: P1 PP MAPK Kinase C
+      p1_c: P1 C
+      cytosolic_phosphorylated_erk: cytosolic Phosphorylated ERK
+      pp_mapk_kinase_erk_c: PP MAPK Kinase ERK C
+      p_erk_c: P ERK C
+      p2_p_erk_c: P2 P ERK C
+      pp_mapk_kinase_p_erk_c: PP MAPK Kinase P ERK C
+      pp_erk_c: PP ERK C
+      p2_pp_erk_c: P2 PP ERK C
+      p2_c: P2 C
+      p_mapk_kinase_n: P MAPK Kinase N
+      p1_p_mapk_kinase_n: P1 P MAPK Kinase N
+      pp_mapk_kinase_n: PP MAPK Kinase N
+      p1_pp_mapk_kinase_n: P1 PP MAPK Kinase N
+      pp_mapk_kinase_erk_n: PP MAPK Kinase ERK N
+      p_erk_n: P ERK N
+      p2_p_erk_n: P2 P ERK N
+      pp_mapk_kinase_p_erk_n: PP MAPK Kinase P ERK N
+      pp_erk_n: PP ERK N
+      p2_pp_erk_n: P2 PP ERK N
+      mapk_kinase_erk_c: MAPK Kinase ERK C
+      mapk_kinase_erk_n: MAPK Kinase ERK N
+      mapkkk_activator_ras: MAPKKK Activator RAS
+      mapkkk_inactivator: MAPKKK Inactivator
+      mos_kinase: Mos kinase
+      source_defined_mapk_kinase_n_state: Source Defined MAPK Kinase N State
+      nuclear_phosphorylated_erk: nuclear Phosphorylated ERK
+      p2_n: P2 N
+      p1_n: P1 N
+io:
+  inputs: []
+  outputs: []

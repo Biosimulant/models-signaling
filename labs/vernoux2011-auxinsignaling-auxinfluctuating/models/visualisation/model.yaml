@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Vernoux2011_AuxinSignaling_AuxinFluctuating Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Vernoux2011_AuxinSignaling_AuxinFluctuating.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- plant-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_vernoux2011_auxinsignaling_auxinfluctuating_biomd0000000352_model
+    title: Vernoux2011_AuxinSignaling_AuxinFluctuating
+    context: plant signaling response
+    question: How does Vernoux2011 AuxinSignaling AuxinFluctuating respond through
+      its source-defined plant signaling states?
+    visual_scope: plant signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      aux_indole_3_acetic_acid: float
+      auxin_response_factor: float
+      aux_indole_3_acetic_acid_aux_indole_3_acetic_acid: float
+      aux_indole_3_acetic_acid_auxin_response_factor: float
+      source_defined_mrna_state: float
+      auxin: float
+    species_labels:
+      aux_indole_3_acetic_acid: Aux indole-3-acetic acid
+      auxin_response_factor: auxin response factor
+      aux_indole_3_acetic_acid_aux_indole_3_acetic_acid: Aux indole-3-acetic acid
+        Aux indole-3-acetic acid
+      aux_indole_3_acetic_acid_auxin_response_factor: Aux indole-3-acetic acid auxin
+        response factor
+      source_defined_mrna_state: source-defined MRNA state
+      auxin: Auxin
+io:
+  inputs: []
+  outputs: []

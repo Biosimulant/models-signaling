@@ -1,0 +1,62 @@
+schema_version: '2.0'
+title: Trares2022 - Non-canonical NF-kB pathway, Petri net Lab
+description: Clean Biosimulant lab for NF-kB pathway signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model.state
+  to:
+  - visualisation.signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model_state
+- from: signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model.summary
+  to:
+  - visualisation.signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model_summary
+- from: signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model.species_labels
+  to:
+  - visualisation.signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+io:
+  inputs:
+  - name: initial_source_defined_nik_state
+    maps_to: signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model.initial_source_defined_nik_state
+    label: Initial source-defined NIK state
+    description: Initial level of source-defined NIK state. Maps to SBML symbol `P0`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_nik_state
+    maps_to: signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model.source_defined_nik_state
+    label: source-defined NIK state
+    description: source-defined NIK state. Maps to SBML symbol `P0` and is emitted
+      in native SBML units.
+  - name: cd40
+    maps_to: signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model.cd40
+    label: CD40
+    description: CD40. Maps to SBML symbol `P1` and is emitted in native SBML units.
+  - name: cd40l
+    maps_to: signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model.cd40l
+    label: CD40L
+    description: CD40L. Maps to SBML symbol `P2` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model.species_labels
+    label: Observable labels

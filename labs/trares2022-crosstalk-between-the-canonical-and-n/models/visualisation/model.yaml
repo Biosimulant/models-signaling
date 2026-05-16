@@ -1,0 +1,120 @@
+schema_version: '2.0'
+title: Trares2022 - Crosstalk between the canonical and non-canonical NF-kB pathways,
+  Petri net Visualisation
+description: Question-and-answer and chart visualisation for NF-kB pathway signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model
+    title: Trares2022 - Crosstalk between the canonical and non-canonical NF-kB pathways,
+      Petri net
+    context: NF-kB activation and feedback signaling
+    question: How does Trares2022 - Crosstalk between the canonical and non-canonical
+      NF-kB pathways, Petri net move NF-kB and inhibitor-linked signaling states?
+    visual_scope: NF-kB activation and feedback signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      cd40: float
+      c_iap1_2_ub: float
+      cd40l: float
+      source_defined_traf3_state: float
+      cd40_cd40l: float
+      p100_phos_rel_b: float
+      traf3_ub: float
+      source_defined_traf6_state: float
+      p100_phos_ub_rel_b: float
+      source_defined_traf2_state: float
+      p52_rel_b: float
+      cd40_cd40l_traf6: float
+      c_iap1_2: float
+      ikk_complex_c: float
+      source_defined_tak1_state: float
+      tak1_activated: float
+      ikkalpha: float
+      ikkbeta: float
+      otud7b_traf3_ub: float
+      otud7b: float
+      p100_p50_rel_a_c: float
+      source_defined_nemo_state: float
+      ikk_complex: float
+      source_defined_nik_state: float
+      ikk_complex_activated: float
+      traf3_deg: float
+      p50_rel_a: float
+      nik_stab: float
+      ik_b_p50_rel_a: float
+      ik_b_phos_p50_rel_a: float
+      ikb: float
+      p50_rel_a_n: float
+      source_defined_tbk1_state: float
+      ik_b_phos_ub_p50_rel_a: float
+      nik_phos: float
+      ikkalpha_phos_nik_stab: float
+      p100_phos_ub_p50_rel_a_c: float
+      source_defined_relb_state: float
+      p100_phos_p50_rel_a_c: float
+      abstract_source_state_p100: float
+      traf2_ub: float
+      p100_rel_b: float
+      traf2_traf3_c_iap1_2: float
+    species_labels:
+      cd40: CD40
+      c_iap1_2_ub: C IAP1 2 Ub
+      cd40l: CD40L
+      source_defined_traf3_state: source-defined TRAF3 state
+      cd40_cd40l: CD40 CD40L
+      p100_phos_rel_b: P100 Phos Rel B
+      traf3_ub: TRAF3 Ub
+      source_defined_traf6_state: source-defined TRAF6 state
+      p100_phos_ub_rel_b: P100 Phos Ub Rel B
+      source_defined_traf2_state: source-defined TRAF2 state
+      p52_rel_b: P52 Rel B
+      cd40_cd40l_traf6: CD40 CD40L TRAF6
+      c_iap1_2: C IAP1 2
+      ikk_complex_c: IKK Complex C
+      source_defined_tak1_state: source-defined TAK1 state
+      tak1_activated: TAK1 Activated
+      ikkalpha: Ikkalpha
+      ikkbeta: Ikkbeta
+      otud7b_traf3_ub: OTUD7B TRAF3 Ub
+      otud7b: OTUD7B
+      p100_p50_rel_a_c: P100 P50 Rel A C
+      source_defined_nemo_state: source-defined NEMO state
+      ikk_complex: IKK Complex
+      source_defined_nik_state: source-defined NIK state
+      ikk_complex_activated: IKK Complex Activated
+      traf3_deg: TRAF3 Deg
+      p50_rel_a: P50 Rel A
+      nik_stab: NIK Stab
+      ik_b_p50_rel_a: Ik B P50 Rel A
+      ik_b_phos_p50_rel_a: Ik B Phos P50 Rel A
+      ikb: IkB
+      p50_rel_a_n: P50 Rel A N
+      source_defined_tbk1_state: source-defined TBK1 state
+      ik_b_phos_ub_p50_rel_a: Ik B Phos Ub P50 Rel A
+      nik_phos: NIK Phos
+      ikkalpha_phos_nik_stab: Ikkalpha Phos NIK Stab
+      p100_phos_ub_p50_rel_a_c: P100 Phos Ub P50 Rel A C
+      source_defined_relb_state: source-defined RELB state
+      p100_phos_p50_rel_a_c: P100 Phos P50 Rel A C
+      abstract_source_state_p100: Abstract source state P100
+      traf2_ub: TRAF2 Ub
+      p100_rel_b: P100 Rel B
+      traf2_traf3_c_iap1_2: TRAF2 TRAF3 C IAP1 2
+io:
+  inputs: []
+  outputs: []

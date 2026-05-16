@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Messiha2013 - Pentose phosphate pathway model
+description: Messiha2013 - Pentose phosphate pathway model This model describes the
+  dynamic behaviour of the pentose phosphate pathway with the inclusion of various
+  enzymes involved in the pathway. It can be used to explore signaling dynamics and
+  compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Messiha HL
+- Kent E
+- Malys N
+- Carroll KM
+- Mendes P
+upstream:
+  id: biomodels_ebi:BIOMD0000000502
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000502
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000502
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000502?filename=BIOMD0000000502_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.messiha2013_pentose_phosphate_pathway_model:Messiha2013PentosePhosphatePathwayModelBiomd0000000502Model
+  init_kwargs:
+    model_path: data/BIOMD0000000502.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_f6p
+    maps_to: signaling_sbml_messiha2013_pentose_phosphate_pathway_model_biomd0000000502_model.initial_f6p
+    label: Initial F6P
+    description: Initial level of F6P. Maps to SBML symbol `F6P`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_g6p
+    maps_to: signaling_sbml_messiha2013_pentose_phosphate_pathway_model_biomd0000000502_model.initial_g6p
+    label: Initial G6P
+    description: Initial level of G6P. Maps to SBML symbol `G6P`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_source_defined_gap_state
+    maps_to: signaling_sbml_messiha2013_pentose_phosphate_pathway_model_biomd0000000502_model.initial_source_defined_gap_state
+    label: Initial source-defined GAP state
+    description: Initial level of source-defined GAP state. Maps to SBML symbol `GAP`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: e4p
+    maps_to: signaling_sbml_messiha2013_pentose_phosphate_pathway_model_biomd0000000502_model.e4p
+    label: E4P
+    description: E4P. Maps to SBML symbol `E4P` and is emitted in native SBML units.
+  - name: g6l
+    maps_to: signaling_sbml_messiha2013_pentose_phosphate_pathway_model_biomd0000000502_model.g6l
+    label: G6L
+    description: G6L. Maps to SBML symbol `G6L` and is emitted in native SBML units.
+  - name: nadph
+    maps_to: signaling_sbml_messiha2013_pentose_phosphate_pathway_model_biomd0000000502_model.nadph
+    label: NADPH
+    description: NADPH. Maps to SBML symbol `NADPH` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_messiha2013_pentose_phosphate_pathway_model_biomd0000000502_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_messiha2013_pentose_phosphate_pathway_model_biomd0000000502_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_messiha2013_pentose_phosphate_pathway_model_biomd0000000502_model.species_labels
+    label: Observable labels

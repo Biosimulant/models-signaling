@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Markevich2004_MAPK_phosphoRandomElementary Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_markevich2004_mapk_phosphorandomelementary_biomd0000000028_model
+    title: Markevich2004_MAPK_phosphoRandomElementary
+    context: receptor-to-MAPK cascade signaling
+    question: How does Markevich2004 MAPK phosphoRandomElementary propagate receptor
+      or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      erk: float
+      erk_py: float
+      erk_pt: float
+      erk_pp: float
+      mek: float
+      source_defined_mkp3_state: float
+      erk_py_mek: float
+      erk_pt_mek: float
+      erk_mek_y: float
+      erk_mek_t: float
+      erk_pp_mkp3: float
+      erk_py_mkp3: float
+      erk_pt_mkp3_y: float
+      erk_pt_mkp3_t: float
+      erk_mkp3_t: float
+      erk_mkp3_y: float
+    species_labels:
+      erk: ERK
+      erk_py: ERK PY
+      erk_pt: ERK PT
+      erk_pp: ERK PP
+      mek: MEK
+      source_defined_mkp3_state: source-defined MKP3 state
+      erk_py_mek: ERK PY MEK
+      erk_pt_mek: ERK PT MEK
+      erk_mek_y: ERK MEK Y
+      erk_mek_t: ERK MEK T
+      erk_pp_mkp3: ERK PP MKP3
+      erk_py_mkp3: ERK PY MKP3
+      erk_pt_mkp3_y: ERK PT MKP3 Y
+      erk_pt_mkp3_t: ERK PT MKP3 T
+      erk_mkp3_t: ERK MKP3 T
+      erk_mkp3_y: ERK MKP3 Y
+io:
+  inputs: []
+  outputs: []

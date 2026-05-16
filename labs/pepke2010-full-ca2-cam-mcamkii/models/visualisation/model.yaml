@@ -1,0 +1,345 @@
+schema_version: '2.0'
+title: Pepke2010_Full_Ca2/CaM_mCaMKII Visualisation
+description: Question-and-answer and chart visualisation for calcium and second-messenger
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+- neuroscience
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_pepke2010_full_ca2_cam_mcamkii_model1001150000_model
+    title: Pepke2010_Full_Ca2/CaM_mCaMKII
+    context: calcium second-messenger signaling
+    question: How do calcium-linked states respond in Pepke2010 Full Ca2/CaM mCaMKII?
+    visual_scope: calcium second-messenger signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      calcium_m_0_1: float
+      calcium_m_0_2: float
+      calcium_m_1_0: float
+      calcium_m_1_1: float
+      calcium_m_1_2: float
+      calcium_m_2_0: float
+      calcium_m_2_1: float
+      calcium_m_2_2: float
+      kca_m_0_0: float
+      kca_m_0_1: float
+      kca_m_0_2: float
+      kca_m_1_0: float
+      kca_m_1_1: float
+      kca_m_1_2: float
+      kca_m_2_0: float
+      kca_m_2_1: float
+      kca_m_2_2: float
+      kca_mcomplex_0_0_0_1: float
+      kca_mcomplex_0_0_0_2: float
+      kca_mcomplex_0_0_1_0: float
+      kca_mcomplex_0_0_1_1: float
+      kca_mcomplex_0_0_1_2: float
+      kca_mcomplex_0_0_2_0: float
+      kca_mcomplex_0_0_2_1: float
+      kca_mcomplex_0_0_2_2: float
+      kca_mcomplex_0_1_0_2: float
+      kca_mcomplex_0_1_1_0: float
+      kca_mcomplex_0_1_1_1: float
+      kca_mcomplex_0_1_1_2: float
+      kca_mcomplex_0_1_2_0: float
+      kca_mcomplex_0_1_2_1: float
+      kca_mcomplex_0_1_2_2: float
+      kca_mcomplex_0_2_1_0: float
+      kca_mcomplex_0_2_1_1: float
+      kca_mcomplex_0_2_1_2: float
+      kca_mcomplex_0_2_2_0: float
+      kca_mcomplex_0_2_2_1: float
+      kca_mcomplex_0_2_2_2: float
+      kca_mcomplex_1_0_1_1: float
+      kca_mcomplex_1_0_1_2: float
+      kca_mcomplex_1_0_2_0: float
+      kca_mcomplex_1_0_2_1: float
+      kca_mcomplex_1_0_2_2: float
+      kca_mcomplex_1_1_1_2: float
+      kca_mcomplex_1_1_2_0: float
+      kca_mcomplex_1_1_2_1: float
+      kca_mcomplex_1_1_2_2: float
+      kca_mcomplex_1_2_2_0: float
+      kca_mcomplex_1_2_2_1: float
+      kca_mcomplex_1_2_2_2: float
+      kca_mcomplex_2_0_2_1: float
+      kca_mcomplex_2_0_2_2: float
+      kca_mcomplex_2_1_2_2: float
+      kca_mcomplex_0_0_0_0: float
+      kca_mcomplex_0_1_0_1: float
+      kca_mcomplex_0_2_0_2: float
+      kca_mcomplex_1_0_1_0: float
+      kca_mcomplex_1_1_1_1: float
+      kca_mcomplex_1_2_1_2: float
+      kca_mcomplex_2_0_2_0: float
+      kca_mcomplex_2_1_2_1: float
+      kca_mcomplex_2_2_2_2: float
+      p_kca_m_0_0: float
+      p_kca_m_0_1: float
+      p_kca_m_0_2: float
+      p_kca_m_1_0: float
+      p_kca_m_1_1: float
+      p_kca_m_1_2: float
+      p_kca_m_2_0: float
+      p_kca_m_2_1: float
+      p_kca_m_2_2: float
+      p_kca_mcomplex_0_0_0_0: float
+      p_kca_mcomplex_0_0_0_1: float
+      p_kca_mcomplex_0_0_0_2: float
+      p_kca_mcomplex_0_0_1_0: float
+      p_kca_mcomplex_0_0_1_1: float
+      p_kca_mcomplex_0_0_1_2: float
+      p_kca_mcomplex_0_0_2_0: float
+      p_kca_mcomplex_0_0_2_1: float
+      p_kca_mcomplex_0_0_2_2: float
+      p_kca_mcomplex_0_1_0_0: float
+      p_kca_mcomplex_0_1_0_1: float
+      p_kca_mcomplex_0_1_0_2: float
+      p_kca_mcomplex_0_1_1_0: float
+      p_kca_mcomplex_0_1_1_1: float
+      p_kca_mcomplex_0_1_1_2: float
+      p_kca_mcomplex_0_1_2_0: float
+      p_kca_mcomplex_0_1_2_1: float
+      p_kca_mcomplex_0_1_2_2: float
+      p_kca_mcomplex_0_2_0_0: float
+      p_kca_mcomplex_0_2_0_1: float
+      p_kca_mcomplex_0_2_0_2: float
+      p_kca_mcomplex_0_2_1_0: float
+      p_kca_mcomplex_0_2_1_1: float
+      p_kca_mcomplex_0_2_1_2: float
+      p_kca_mcomplex_0_2_2_0: float
+      p_kca_mcomplex_0_2_2_1: float
+      p_kca_mcomplex_0_2_2_2: float
+      p_kca_mcomplex_1_0_0_0: float
+      p_kca_mcomplex_1_0_0_1: float
+      p_kca_mcomplex_1_0_0_2: float
+      p_kca_mcomplex_1_0_1_0: float
+      p_kca_mcomplex_1_0_1_1: float
+      p_kca_mcomplex_1_0_1_2: float
+      p_kca_mcomplex_1_0_2_0: float
+      p_kca_mcomplex_1_0_2_1: float
+      p_kca_mcomplex_1_0_2_2: float
+      p_kca_mcomplex_1_1_0_0: float
+      p_kca_mcomplex_1_1_0_1: float
+      p_kca_mcomplex_1_1_0_2: float
+      p_kca_mcomplex_1_1_1_0: float
+      p_kca_mcomplex_1_1_1_1: float
+      p_kca_mcomplex_1_1_1_2: float
+      p_kca_mcomplex_1_1_2_0: float
+      p_kca_mcomplex_1_1_2_1: float
+      p_kca_mcomplex_1_1_2_2: float
+      p_kca_mcomplex_1_2_0_0: float
+      p_kca_mcomplex_1_2_0_1: float
+      p_kca_mcomplex_1_2_0_2: float
+      p_kca_mcomplex_1_2_1_0: float
+      p_kca_mcomplex_1_2_1_1: float
+      p_kca_mcomplex_1_2_1_2: float
+      p_kca_mcomplex_1_2_2_0: float
+      p_kca_mcomplex_1_2_2_1: float
+      p_kca_mcomplex_1_2_2_2: float
+      p_kca_mcomplex_2_0_0_0: float
+      p_kca_mcomplex_2_0_0_1: float
+      p_kca_mcomplex_2_0_0_2: float
+      p_kca_mcomplex_2_0_1_0: float
+      p_kca_mcomplex_2_0_1_1: float
+      p_kca_mcomplex_2_0_1_2: float
+      p_kca_mcomplex_2_0_2_0: float
+      p_kca_mcomplex_2_0_2_1: float
+      p_kca_mcomplex_2_0_2_2: float
+      p_kca_mcomplex_2_1_0_0: float
+      p_kca_mcomplex_2_1_0_1: float
+      p_kca_mcomplex_2_1_0_2: float
+      p_kca_mcomplex_2_1_1_0: float
+      p_kca_mcomplex_2_1_1_1: float
+      p_kca_mcomplex_2_1_1_2: float
+      p_kca_mcomplex_2_1_2_0: float
+      p_kca_mcomplex_2_1_2_1: float
+      p_kca_mcomplex_2_1_2_2: float
+      p_kca_mcomplex_2_2_0_0: float
+      p_kca_mcomplex_2_2_0_1: float
+      p_kca_mcomplex_2_2_0_2: float
+      p_kca_mcomplex_2_2_1_0: float
+      p_kca_mcomplex_2_2_1_1: float
+      p_kca_mcomplex_2_2_1_2: float
+      p_kca_mcomplex_2_2_2_0: float
+      p_kca_mcomplex_2_2_2_1: float
+      p_kca_mcomplex_2_2_2_2: float
+      calcium_m_0_0: float
+      source_defined_kame_state: float
+      calcium: float
+      kca_m2c_tot: float
+    species_labels:
+      calcium_m_0_1: calcium M 0 1
+      calcium_m_0_2: calcium M 0 2
+      calcium_m_1_0: calcium M 1 0
+      calcium_m_1_1: calcium M 1 1
+      calcium_m_1_2: calcium M 1 2
+      calcium_m_2_0: calcium M 2 0
+      calcium_m_2_1: calcium M 2 1
+      calcium_m_2_2: calcium M 2 2
+      kca_m_0_0: Kca M 0 0
+      kca_m_0_1: Kca M 0 1
+      kca_m_0_2: Kca M 0 2
+      kca_m_1_0: Kca M 1 0
+      kca_m_1_1: Kca M 1 1
+      kca_m_1_2: Kca M 1 2
+      kca_m_2_0: Kca M 2 0
+      kca_m_2_1: Kca M 2 1
+      kca_m_2_2: Kca M 2 2
+      kca_mcomplex_0_0_0_1: Kca Mcomplex 0 0 0 1
+      kca_mcomplex_0_0_0_2: Kca Mcomplex 0 0 0 2
+      kca_mcomplex_0_0_1_0: Kca Mcomplex 0 0 1 0
+      kca_mcomplex_0_0_1_1: Kca Mcomplex 0 0 1 1
+      kca_mcomplex_0_0_1_2: Kca Mcomplex 0 0 1 2
+      kca_mcomplex_0_0_2_0: Kca Mcomplex 0 0 2 0
+      kca_mcomplex_0_0_2_1: Kca Mcomplex 0 0 2 1
+      kca_mcomplex_0_0_2_2: Kca Mcomplex 0 0 2 2
+      kca_mcomplex_0_1_0_2: Kca Mcomplex 0 1 0 2
+      kca_mcomplex_0_1_1_0: Kca Mcomplex 0 1 1 0
+      kca_mcomplex_0_1_1_1: Kca Mcomplex 0 1 1 1
+      kca_mcomplex_0_1_1_2: Kca Mcomplex 0 1 1 2
+      kca_mcomplex_0_1_2_0: Kca Mcomplex 0 1 2 0
+      kca_mcomplex_0_1_2_1: Kca Mcomplex 0 1 2 1
+      kca_mcomplex_0_1_2_2: Kca Mcomplex 0 1 2 2
+      kca_mcomplex_0_2_1_0: Kca Mcomplex 0 2 1 0
+      kca_mcomplex_0_2_1_1: Kca Mcomplex 0 2 1 1
+      kca_mcomplex_0_2_1_2: Kca Mcomplex 0 2 1 2
+      kca_mcomplex_0_2_2_0: Kca Mcomplex 0 2 2 0
+      kca_mcomplex_0_2_2_1: Kca Mcomplex 0 2 2 1
+      kca_mcomplex_0_2_2_2: Kca Mcomplex 0 2 2 2
+      kca_mcomplex_1_0_1_1: Kca Mcomplex 1 0 1 1
+      kca_mcomplex_1_0_1_2: Kca Mcomplex 1 0 1 2
+      kca_mcomplex_1_0_2_0: Kca Mcomplex 1 0 2 0
+      kca_mcomplex_1_0_2_1: Kca Mcomplex 1 0 2 1
+      kca_mcomplex_1_0_2_2: Kca Mcomplex 1 0 2 2
+      kca_mcomplex_1_1_1_2: Kca Mcomplex 1 1 1 2
+      kca_mcomplex_1_1_2_0: Kca Mcomplex 1 1 2 0
+      kca_mcomplex_1_1_2_1: Kca Mcomplex 1 1 2 1
+      kca_mcomplex_1_1_2_2: Kca Mcomplex 1 1 2 2
+      kca_mcomplex_1_2_2_0: Kca Mcomplex 1 2 2 0
+      kca_mcomplex_1_2_2_1: Kca Mcomplex 1 2 2 1
+      kca_mcomplex_1_2_2_2: Kca Mcomplex 1 2 2 2
+      kca_mcomplex_2_0_2_1: Kca Mcomplex 2 0 2 1
+      kca_mcomplex_2_0_2_2: Kca Mcomplex 2 0 2 2
+      kca_mcomplex_2_1_2_2: Kca Mcomplex 2 1 2 2
+      kca_mcomplex_0_0_0_0: Kca Mcomplex 0 0 0 0
+      kca_mcomplex_0_1_0_1: Kca Mcomplex 0 1 0 1
+      kca_mcomplex_0_2_0_2: Kca Mcomplex 0 2 0 2
+      kca_mcomplex_1_0_1_0: Kca Mcomplex 1 0 1 0
+      kca_mcomplex_1_1_1_1: Kca Mcomplex 1 1 1 1
+      kca_mcomplex_1_2_1_2: Kca Mcomplex 1 2 1 2
+      kca_mcomplex_2_0_2_0: Kca Mcomplex 2 0 2 0
+      kca_mcomplex_2_1_2_1: Kca Mcomplex 2 1 2 1
+      kca_mcomplex_2_2_2_2: Kca Mcomplex 2 2 2 2
+      p_kca_m_0_0: P Kca M 0 0
+      p_kca_m_0_1: P Kca M 0 1
+      p_kca_m_0_2: P Kca M 0 2
+      p_kca_m_1_0: P Kca M 1 0
+      p_kca_m_1_1: P Kca M 1 1
+      p_kca_m_1_2: P Kca M 1 2
+      p_kca_m_2_0: P Kca M 2 0
+      p_kca_m_2_1: P Kca M 2 1
+      p_kca_m_2_2: P Kca M 2 2
+      p_kca_mcomplex_0_0_0_0: P Kca Mcomplex 0 0 0 0
+      p_kca_mcomplex_0_0_0_1: P Kca Mcomplex 0 0 0 1
+      p_kca_mcomplex_0_0_0_2: P Kca Mcomplex 0 0 0 2
+      p_kca_mcomplex_0_0_1_0: P Kca Mcomplex 0 0 1 0
+      p_kca_mcomplex_0_0_1_1: P Kca Mcomplex 0 0 1 1
+      p_kca_mcomplex_0_0_1_2: P Kca Mcomplex 0 0 1 2
+      p_kca_mcomplex_0_0_2_0: P Kca Mcomplex 0 0 2 0
+      p_kca_mcomplex_0_0_2_1: P Kca Mcomplex 0 0 2 1
+      p_kca_mcomplex_0_0_2_2: P Kca Mcomplex 0 0 2 2
+      p_kca_mcomplex_0_1_0_0: P Kca Mcomplex 0 1 0 0
+      p_kca_mcomplex_0_1_0_1: P Kca Mcomplex 0 1 0 1
+      p_kca_mcomplex_0_1_0_2: P Kca Mcomplex 0 1 0 2
+      p_kca_mcomplex_0_1_1_0: P Kca Mcomplex 0 1 1 0
+      p_kca_mcomplex_0_1_1_1: P Kca Mcomplex 0 1 1 1
+      p_kca_mcomplex_0_1_1_2: P Kca Mcomplex 0 1 1 2
+      p_kca_mcomplex_0_1_2_0: P Kca Mcomplex 0 1 2 0
+      p_kca_mcomplex_0_1_2_1: P Kca Mcomplex 0 1 2 1
+      p_kca_mcomplex_0_1_2_2: P Kca Mcomplex 0 1 2 2
+      p_kca_mcomplex_0_2_0_0: P Kca Mcomplex 0 2 0 0
+      p_kca_mcomplex_0_2_0_1: P Kca Mcomplex 0 2 0 1
+      p_kca_mcomplex_0_2_0_2: P Kca Mcomplex 0 2 0 2
+      p_kca_mcomplex_0_2_1_0: P Kca Mcomplex 0 2 1 0
+      p_kca_mcomplex_0_2_1_1: P Kca Mcomplex 0 2 1 1
+      p_kca_mcomplex_0_2_1_2: P Kca Mcomplex 0 2 1 2
+      p_kca_mcomplex_0_2_2_0: P Kca Mcomplex 0 2 2 0
+      p_kca_mcomplex_0_2_2_1: P Kca Mcomplex 0 2 2 1
+      p_kca_mcomplex_0_2_2_2: P Kca Mcomplex 0 2 2 2
+      p_kca_mcomplex_1_0_0_0: P Kca Mcomplex 1 0 0 0
+      p_kca_mcomplex_1_0_0_1: P Kca Mcomplex 1 0 0 1
+      p_kca_mcomplex_1_0_0_2: P Kca Mcomplex 1 0 0 2
+      p_kca_mcomplex_1_0_1_0: P Kca Mcomplex 1 0 1 0
+      p_kca_mcomplex_1_0_1_1: P Kca Mcomplex 1 0 1 1
+      p_kca_mcomplex_1_0_1_2: P Kca Mcomplex 1 0 1 2
+      p_kca_mcomplex_1_0_2_0: P Kca Mcomplex 1 0 2 0
+      p_kca_mcomplex_1_0_2_1: P Kca Mcomplex 1 0 2 1
+      p_kca_mcomplex_1_0_2_2: P Kca Mcomplex 1 0 2 2
+      p_kca_mcomplex_1_1_0_0: P Kca Mcomplex 1 1 0 0
+      p_kca_mcomplex_1_1_0_1: P Kca Mcomplex 1 1 0 1
+      p_kca_mcomplex_1_1_0_2: P Kca Mcomplex 1 1 0 2
+      p_kca_mcomplex_1_1_1_0: P Kca Mcomplex 1 1 1 0
+      p_kca_mcomplex_1_1_1_1: P Kca Mcomplex 1 1 1 1
+      p_kca_mcomplex_1_1_1_2: P Kca Mcomplex 1 1 1 2
+      p_kca_mcomplex_1_1_2_0: P Kca Mcomplex 1 1 2 0
+      p_kca_mcomplex_1_1_2_1: P Kca Mcomplex 1 1 2 1
+      p_kca_mcomplex_1_1_2_2: P Kca Mcomplex 1 1 2 2
+      p_kca_mcomplex_1_2_0_0: P Kca Mcomplex 1 2 0 0
+      p_kca_mcomplex_1_2_0_1: P Kca Mcomplex 1 2 0 1
+      p_kca_mcomplex_1_2_0_2: P Kca Mcomplex 1 2 0 2
+      p_kca_mcomplex_1_2_1_0: P Kca Mcomplex 1 2 1 0
+      p_kca_mcomplex_1_2_1_1: P Kca Mcomplex 1 2 1 1
+      p_kca_mcomplex_1_2_1_2: P Kca Mcomplex 1 2 1 2
+      p_kca_mcomplex_1_2_2_0: P Kca Mcomplex 1 2 2 0
+      p_kca_mcomplex_1_2_2_1: P Kca Mcomplex 1 2 2 1
+      p_kca_mcomplex_1_2_2_2: P Kca Mcomplex 1 2 2 2
+      p_kca_mcomplex_2_0_0_0: P Kca Mcomplex 2 0 0 0
+      p_kca_mcomplex_2_0_0_1: P Kca Mcomplex 2 0 0 1
+      p_kca_mcomplex_2_0_0_2: P Kca Mcomplex 2 0 0 2
+      p_kca_mcomplex_2_0_1_0: P Kca Mcomplex 2 0 1 0
+      p_kca_mcomplex_2_0_1_1: P Kca Mcomplex 2 0 1 1
+      p_kca_mcomplex_2_0_1_2: P Kca Mcomplex 2 0 1 2
+      p_kca_mcomplex_2_0_2_0: P Kca Mcomplex 2 0 2 0
+      p_kca_mcomplex_2_0_2_1: P Kca Mcomplex 2 0 2 1
+      p_kca_mcomplex_2_0_2_2: P Kca Mcomplex 2 0 2 2
+      p_kca_mcomplex_2_1_0_0: P Kca Mcomplex 2 1 0 0
+      p_kca_mcomplex_2_1_0_1: P Kca Mcomplex 2 1 0 1
+      p_kca_mcomplex_2_1_0_2: P Kca Mcomplex 2 1 0 2
+      p_kca_mcomplex_2_1_1_0: P Kca Mcomplex 2 1 1 0
+      p_kca_mcomplex_2_1_1_1: P Kca Mcomplex 2 1 1 1
+      p_kca_mcomplex_2_1_1_2: P Kca Mcomplex 2 1 1 2
+      p_kca_mcomplex_2_1_2_0: P Kca Mcomplex 2 1 2 0
+      p_kca_mcomplex_2_1_2_1: P Kca Mcomplex 2 1 2 1
+      p_kca_mcomplex_2_1_2_2: P Kca Mcomplex 2 1 2 2
+      p_kca_mcomplex_2_2_0_0: P Kca Mcomplex 2 2 0 0
+      p_kca_mcomplex_2_2_0_1: P Kca Mcomplex 2 2 0 1
+      p_kca_mcomplex_2_2_0_2: P Kca Mcomplex 2 2 0 2
+      p_kca_mcomplex_2_2_1_0: P Kca Mcomplex 2 2 1 0
+      p_kca_mcomplex_2_2_1_1: P Kca Mcomplex 2 2 1 1
+      p_kca_mcomplex_2_2_1_2: P Kca Mcomplex 2 2 1 2
+      p_kca_mcomplex_2_2_2_0: P Kca Mcomplex 2 2 2 0
+      p_kca_mcomplex_2_2_2_1: P Kca Mcomplex 2 2 2 1
+      p_kca_mcomplex_2_2_2_2: P Kca Mcomplex 2 2 2 2
+      calcium_m_0_0: calcium M 0 0
+      source_defined_kame_state: source-defined KAME state
+      calcium: calcium
+      kca_m2c_tot: Kca M2C Tot
+io:
+  inputs: []
+  outputs: []

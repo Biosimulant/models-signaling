@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: PetelenzKuehn_osmoadaptation_HOG1att
+description: Jörg Schaber & Edda Klipp. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- stress-response
+authors:
+- Biosimulant Team
+- Elzbieta Petelenz-Kurdziel
+- Clemens Kuehn
+- Bodil Nordlander
+- Dagmara Klein
+- Kuk-Ki Hong
+upstream:
+  id: biomodels_ebi:BIOMD0000000605
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000605
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000605
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000605?filename=BIOMD0000000605_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.petelenzkuehn_osmoadaptation_hog1att:PetelenzkuehnOsmoadaptationHog1attBiomd0000000605Model
+  init_kwargs:
+    model_path: data/BIOMD0000000605.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_t_stress_level
+    maps_to: signaling_sbml_petelenzkuehn_osmoadaptation_hog1att_biomd0000000605_model.initial_t_stress_level
+    label: T Stress
+    description: T Stress source parameter. Maps to SBML symbol `t_stress` and preserves
+      the bundled default.
+  - name: initial_glucose_e
+    maps_to: signaling_sbml_petelenzkuehn_osmoadaptation_hog1att_biomd0000000605_model.initial_glucose_e
+    label: Initial Glucose E
+    description: Initial level of Glucose E. Maps to SBML symbol `glucose_e`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_glucose_i
+    maps_to: signaling_sbml_petelenzkuehn_osmoadaptation_hog1att_biomd0000000605_model.initial_glucose_i
+    label: Initial Glucose I
+    description: Initial level of Glucose I. Maps to SBML symbol `glucose_i`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: glycerol_i
+    maps_to: signaling_sbml_petelenzkuehn_osmoadaptation_hog1att_biomd0000000605_model.glycerol_i
+    label: Glycerol I
+    description: Glycerol I. Maps to SBML symbol `glycerol_i` and is emitted in native
+      SBML units.
+  - name: intracellular_concentration_input
+    maps_to: signaling_sbml_petelenzkuehn_osmoadaptation_hog1att_biomd0000000605_model.intracellular_concentration_input
+    label: intracellular concentration input
+    description: intracellular concentration input. Maps to SBML symbol `cin` and
+      is emitted in native SBML units.
+  - name: glucose_i
+    maps_to: signaling_sbml_petelenzkuehn_osmoadaptation_hog1att_biomd0000000605_model.glucose_i
+    label: Glucose I
+    description: Glucose I. Maps to SBML symbol `glucose_i` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_petelenzkuehn_osmoadaptation_hog1att_biomd0000000605_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_petelenzkuehn_osmoadaptation_hog1att_biomd0000000605_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_petelenzkuehn_osmoadaptation_hog1att_biomd0000000605_model.species_labels
+    label: Observable labels

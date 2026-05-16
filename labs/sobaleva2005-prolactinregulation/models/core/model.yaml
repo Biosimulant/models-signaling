@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Sobaleva2005_ProlactinRegulation
+description: 'This a model from the article: Mathematical modelling of prolactin-receptor
+  interaction and the corollary for prolactin receptor gene expression in skin Soboleva
+  TK, Vetharaniam I, Nixon AJ, Montenegr. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+authors:
+- Biosimulant Team
+- T K Soboleva
+- I Vetharaniam
+- A J Nixon
+- R Montenegro
+- A J Pearson
+upstream:
+  id: biomodels_ebi:MODEL7896869925
+  source_db: biomodels_ebi
+  source_id: MODEL7896869925
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL7896869925
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL7896869925?filename=MODEL7896869925_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.sobaleva2005_prolactinregulation:Sobaleva2005ProlactinregulationModel7896869925Model
+  init_kwargs:
+    model_path: data/MODEL7896869925.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_r_state
+    maps_to: signaling_sbml_sobaleva2005_prolactinregulation_model7896869925_model.initial_source_defined_r_state
+    label: Initial source-defined R state
+    description: Initial level of source-defined R state. Maps to SBML symbol `R`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_r_state
+    maps_to: signaling_sbml_sobaleva2005_prolactinregulation_model7896869925_model.source_defined_r_state
+    label: source-defined R state
+    description: source-defined R state. Maps to SBML symbol `R` and is emitted in
+      native SBML units.
+  - name: source_defined_u_state
+    maps_to: signaling_sbml_sobaleva2005_prolactinregulation_model7896869925_model.source_defined_u_state
+    label: source-defined U state
+    description: source-defined U state. Maps to SBML symbol `U` and is emitted in
+      native SBML units.
+  - name: source_defined_b1_state
+    maps_to: signaling_sbml_sobaleva2005_prolactinregulation_model7896869925_model.source_defined_b1_state
+    label: source-defined B1 state
+    description: source-defined B1 state. Maps to SBML symbol `B1` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_sobaleva2005_prolactinregulation_model7896869925_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_sobaleva2005_prolactinregulation_model7896869925_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_sobaleva2005_prolactinregulation_model7896869925_model.species_labels
+    label: Observable labels

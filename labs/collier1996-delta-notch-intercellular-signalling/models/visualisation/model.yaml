@@ -1,0 +1,41 @@
+schema_version: '2.0'
+title: Collier1996 - Delta Notch intercellular signalling and lateral inhibition Visualisation
+description: Question-and-answer and chart visualisation for developmental and growth-control
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- notch
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_collier1996_delta_notch_intercellular_signalling_biomd0000001047_model
+    title: Collier1996 - Delta Notch intercellular signalling and lateral inhibition
+    context: growth-control pathway signaling
+    question: How does Collier1996 - Delta Notch intercellular signalling and lateral
+      inhibition shift developmental or growth-control pathway states?
+    visual_scope: growth-control pathway signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      delta1: float
+      delta2: float
+      notch1: float
+      notch2: float
+    species_labels:
+      delta1: Delta1
+      delta2: Delta2
+      notch1: Notch1
+      notch2: Notch2
+io:
+  inputs: []
+  outputs: []

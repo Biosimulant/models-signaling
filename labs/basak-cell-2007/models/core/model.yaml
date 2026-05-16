@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Basak_Cell_2007
+description: This SBML file is a translation of a MatLab model utilized inthe following
+  paper. It describes the interplay of IkB and P100 negative feedback tocontrol the
+  cellular localization of the NFkB transcrip.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+authors:
+- Biosimulant Team
+- Soumen Basak
+- Hana Kim
+- Jeffrey D Kearns
+- Vinay Tergaonkar
+- Ellen O'Dea
+upstream:
+  id: biomodels_ebi:MODEL8478881246
+  source_db: biomodels_ebi
+  source_id: MODEL8478881246
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL8478881246
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL8478881246?filename=MODEL8478881246_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.basak_cell_2007:BasakCell2007Model8478881246Model
+  init_kwargs:
+    model_path: data/MODEL8478881246.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_a_c_2pnq_level
+    maps_to: signaling_sbml_basak_cell_2007_model8478881246_model.initial_a_c_2pnq_level
+    label: A C 2pnq
+    description: A C 2pnq source parameter. Maps to SBML symbol `mw67DBC35D_6ABA_4E03_A921_AA3E88FCDA17`
+      and preserves the bundled default.
+  outputs:
+  - name: ik_ba_nfk_b
+    maps_to: signaling_sbml_basak_cell_2007_model8478881246_model.ik_ba_nfk_b
+    label: Ik Ba Nfk B
+    description: Ik Ba Nfk B. Maps to SBML symbol `mwB5B12B45_0F61_44BD_9781_989D8B015906`
+      and is emitted in native SBML units.
+  - name: ik_ba_nfk_bn
+    maps_to: signaling_sbml_basak_cell_2007_model8478881246_model.ik_ba_nfk_bn
+    label: Ik Ba Nfk Bn
+    description: Ik Ba Nfk Bn. Maps to SBML symbol `mwA7D14F2B_20BE_4FF7_83B7_8B24C34D94A6`
+      and is emitted in native SBML units.
+  - name: ik_ba_ikknfk_b
+    maps_to: signaling_sbml_basak_cell_2007_model8478881246_model.ik_ba_ikknfk_b
+    label: Ik Ba Ikknfk B
+    description: Ik Ba Ikknfk B. Maps to SBML symbol `mw67E597F5_E642_45A3_A377_0BD9CE41467B`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_basak_cell_2007_model8478881246_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_basak_cell_2007_model8478881246_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_basak_cell_2007_model8478881246_model.species_labels
+    label: Observable labels

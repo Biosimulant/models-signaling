@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Hettling2011_CreatineKinase
+description: 'This model is from the article: Analyzing the functional properties
+  of the creatine kinase system with multiscale ''sloppy'' modeling. Hettling H, van
+  Beek JH PLoS Comput Biol.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Hannes Hettling
+- Johannes H G M van Beek
+upstream:
+  id: biomodels_ebi:BIOMD0000000408
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000408
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000408
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000408?filename=BIOMD0000000408_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hettling2011_creatinekinase:Hettling2011CreatinekinaseBiomd0000000408Model
+  init_kwargs:
+    model_path: data/BIOMD0000000408.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ck_factor_ia_level
+    maps_to: signaling_sbml_hettling2011_creatinekinase_biomd0000000408_model.initial_ck_factor_ia_level
+    label: Ck Factor Ia
+    description: Ck Factor Ia source parameter. Maps to SBML symbol `ck_factor_ia`
+      and preserves the bundled default.
+  - name: initial_ck_factor_indole_3_acetic_acid_level
+    maps_to: signaling_sbml_hettling2011_creatinekinase_biomd0000000408_model.initial_ck_factor_indole_3_acetic_acid_level
+    label: Ck Factor indole-3-acetic acid
+    description: Ck Factor indole-3-acetic acid source parameter. Maps to SBML symbol
+      `ck_factor_iaa` and preserves the bundled default.
+  - name: initial_tmito_factor_level
+    maps_to: signaling_sbml_hettling2011_creatinekinase_biomd0000000408_model.initial_tmito_factor_level
+    label: Tmito Factor
+    description: Tmito Factor source parameter. Maps to SBML symbol `tmito_factor`
+      and preserves the bundled default.
+  outputs:
+  - name: intracellular_adp
+    maps_to: signaling_sbml_hettling2011_creatinekinase_biomd0000000408_model.intracellular_adp
+    label: intracellular ADP
+    description: intracellular ADP. Maps to SBML symbol `ADPi` and is emitted in native
+      SBML units.
+  - name: intracellular_atp
+    maps_to: signaling_sbml_hettling2011_creatinekinase_biomd0000000408_model.intracellular_atp
+    label: intracellular ATP
+    description: intracellular ATP. Maps to SBML symbol `ATPi` and is emitted in native
+      SBML units.
+  - name: intracellular_creatine
+    maps_to: signaling_sbml_hettling2011_creatinekinase_biomd0000000408_model.intracellular_creatine
+    label: intracellular creatine
+    description: intracellular creatine. Maps to SBML symbol `Cri` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_hettling2011_creatinekinase_biomd0000000408_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_hettling2011_creatinekinase_biomd0000000408_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_hettling2011_creatinekinase_biomd0000000408_model.species_labels
+    label: Observable labels

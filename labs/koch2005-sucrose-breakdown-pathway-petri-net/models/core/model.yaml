@@ -1,0 +1,69 @@
+schema_version: '2.0'
+title: Koch2005 - Sucrose breakdown pathway - Petri net
+description: Signaling Koch2005Sucrose Breakdown Pathway Petri Net Model1308080002Model
+  models core biological dynamics as a OTHER simulation curated from biomodels_ebi
+  (biomodels_ebi:MODEL1308080002), focused on signaling. When you run it, you can
+  track state over time and compare response patterns across parameter settings.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Koch I
+- Björn H Junker
+- monika heiner
+upstream:
+  id: biomodels_ebi:MODEL1308080002
+  source_db: biomodels_ebi
+  source_id: MODEL1308080002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1308080002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1308080002?filename=MODEL1308080002_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.koch2005_sucrose_breakdown_pathway_petri_net:Koch2005SucroseBreakdownPathwayPetriNetModel1308080002Model
+  init_kwargs:
+    model_path: data/MODEL1308080002.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_sucrose
+    maps_to: signaling_sbml_koch2005_sucrose_breakdown_pathway_petri_net_model1308080002_model.initial_sucrose
+    label: Initial sucrose
+    description: Initial level of sucrose. Maps to SBML symbol `P0`; exposed as a
+      traceable initial-condition perturbation.
+  outputs:
+  - name: sucrose
+    maps_to: signaling_sbml_koch2005_sucrose_breakdown_pathway_petri_net_model1308080002_model.sucrose
+    label: sucrose
+    description: sucrose. Maps to SBML symbol `P0` and is emitted in native SBML units.
+  - name: source_defined_esuc_state
+    maps_to: signaling_sbml_koch2005_sucrose_breakdown_pathway_petri_net_model1308080002_model.source_defined_esuc_state
+    label: source-defined ESUC state
+    description: source-defined ESUC state. Maps to SBML symbol `P1` and is emitted
+      in native SBML units.
+  - name: glucose
+    maps_to: signaling_sbml_koch2005_sucrose_breakdown_pathway_petri_net_model1308080002_model.glucose
+    label: glucose
+    description: glucose. Maps to SBML symbol `P2` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_koch2005_sucrose_breakdown_pathway_petri_net_model1308080002_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_koch2005_sucrose_breakdown_pathway_petri_net_model1308080002_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_koch2005_sucrose_breakdown_pathway_petri_net_model1308080002_model.species_labels
+    label: Observable labels

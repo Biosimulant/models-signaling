@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Machado2014 - Curcumin production pathway in Escherichia coli Lab
+description: 'Clean Biosimulant lab for systems signaling model: Machado2014 - Curcumin
+  production pathway in Escherichia coli. Values are native SBML quantities; equations,
+  parameters, and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model.state
+  to:
+  - visualisation.signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model_state
+- from: signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model.summary
+  to:
+  - visualisation.signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model_summary
+- from: signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model.species_labels
+  to:
+  - visualisation.signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_camp_level
+    maps_to: signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model.initial_camp_level
+    label: cAMP
+    description: cAMP source parameter. Maps to SBML symbol `camp` and preserves the
+      bundled default.
+  - name: initial_extracellular_glucose
+    maps_to: signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model.initial_extracellular_glucose
+    label: Initial Extracellular Glucose
+    description: Initial level of Extracellular Glucose. Maps to SBML symbol `cglcex`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_glucose_1_phosphate
+    maps_to: signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model.initial_glucose_1_phosphate
+    label: Initial Glucose 1 Phosphate
+    description: Initial level of Glucose 1 Phosphate. Maps to SBML symbol `cg1p`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: phosphoenol_pyruvate
+    maps_to: signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model.phosphoenol_pyruvate
+    label: Phosphoenol Pyruvate
+    description: Phosphoenol Pyruvate. Maps to SBML symbol `cpep` and is emitted in
+      native SBML units.
+  - name: glucose_6_phosphate
+    maps_to: signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model.glucose_6_phosphate
+    label: Glucose 6 Phosphate
+    description: Glucose 6 Phosphate. Maps to SBML symbol `cg6p` and is emitted in
+      native SBML units.
+  - name: fructose_6_phosphate
+    maps_to: signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model.fructose_6_phosphate
+    label: Fructose 6 Phosphate
+    description: Fructose 6 Phosphate. Maps to SBML symbol `cf6p` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_machado2014_curcumin_production_pathway_in_esche_biomd0000000565_model.species_labels
+    label: Observable labels

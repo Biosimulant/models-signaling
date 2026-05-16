@@ -1,0 +1,61 @@
+schema_version: '2.0'
+title: Markevich2004_MAPK_phosphoRandomMM Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_markevich2004_mapk_phosphorandommm_biomd0000000029_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_markevich2004_mapk_phosphorandommm_biomd0000000029_model.state
+  to:
+  - visualisation.signaling_sbml_markevich2004_mapk_phosphorandommm_biomd0000000029_model_state
+- from: signaling_sbml_markevich2004_mapk_phosphorandommm_biomd0000000029_model.summary
+  to:
+  - visualisation.signaling_sbml_markevich2004_mapk_phosphorandommm_biomd0000000029_model_summary
+- from: signaling_sbml_markevich2004_mapk_phosphorandommm_biomd0000000029_model.species_labels
+  to:
+  - visualisation.signaling_sbml_markevich2004_mapk_phosphorandommm_biomd0000000029_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+io:
+  inputs:
+  - name: initial_erk
+    maps_to: signaling_sbml_markevich2004_mapk_phosphorandommm_biomd0000000029_model.initial_erk
+    label: Initial ERK
+    description: Initial level of ERK. Maps to SBML symbol `M`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: erk
+    maps_to: signaling_sbml_markevich2004_mapk_phosphorandommm_biomd0000000029_model.erk
+    label: ERK
+    description: ERK. Maps to SBML symbol `M` and is emitted in native SBML units.
+  - name: erk_py
+    maps_to: signaling_sbml_markevich2004_mapk_phosphorandommm_biomd0000000029_model.erk_py
+    label: ERK PY
+    description: ERK PY. Maps to SBML symbol `MpY` and is emitted in native SBML units.
+  - name: erk_pt
+    maps_to: signaling_sbml_markevich2004_mapk_phosphorandommm_biomd0000000029_model.erk_pt
+    label: ERK PT
+    description: ERK PT. Maps to SBML symbol `MpT` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_markevich2004_mapk_phosphorandommm_biomd0000000029_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_markevich2004_mapk_phosphorandommm_biomd0000000029_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_markevich2004_mapk_phosphorandommm_biomd0000000029_model.species_labels
+    label: Observable labels

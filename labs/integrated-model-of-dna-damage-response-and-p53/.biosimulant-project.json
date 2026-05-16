@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "431167f0-a557-4691-943f-eebae84de7a4",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "26cc5823-30c5-48cb-9810-b68f59bcc0cd",
+  "created_at": "2026-05-15T19:08:10.140921832+00:00",
+  "last_synced_at": "2026-05-16T09:52:35.146228+00:00",
+  "hub_manifest_hash": "5d4b1453bf642a3bca63147daf28f996aa78dbe98786730b8514de37fef0f74d",
+  "package_name": "integrated-model-of-dna-damage-response-and-p53-signaling-in-atm"
+}

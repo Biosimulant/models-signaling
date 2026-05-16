@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Strasen2018 - TGFb SMAD Signalling - Restimulation with 5pM TGFb at 3hr Lab
+description: Clean Biosimulant lab for developmental and growth-control signaling.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.
+models:
+- alias: signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model.state
+  to:
+  - visualisation.signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model_state
+- from: signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model.summary
+  to:
+  - visualisation.signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model_summary
+- from: signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model.species_labels
+  to:
+  - visualisation.signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- tgf-beta
+- smad
+io:
+  inputs:
+  - name: initial_index_induced_ligand_deg_level
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model.initial_index_induced_ligand_deg_level
+    label: Index Induced Ligand Deg
+    description: Index Induced Ligand Deg source parameter. Maps to SBML symbol `index_induced_ligand_deg`
+      and preserves the bundled default.
+  - name: initial_kin_deg_ligand_level
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model.initial_kin_deg_ligand_level
+    label: Kin Deg Ligand
+    description: Kin Deg Ligand source parameter. Maps to SBML symbol `kin_deg_Ligand`
+      and preserves the bundled default.
+  - name: initial_wash_ligand_level
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model.initial_wash_ligand_level
+    label: WASH LIGAND
+    description: WASH LIGAND source parameter. Maps to SBML symbol `WASH_LIGAND` and
+      preserves the bundled default.
+  outputs:
+  - name: active_tgfr2
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model.active_tgfr2
+    label: active TGFR2
+    description: active TGFR2. Maps to SBML symbol `Active_R2` and is emitted in native
+      SBML units.
+  - name: active_tgf_beta_tgfr1_tgfr2
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model.active_tgf_beta_tgfr1_tgfr2
+    label: active TGF-beta TGFR1 TGFR2
+    description: active TGF-beta TGFR1 TGFR2. Maps to SBML symbol `Active_Rec` and
+      is emitted in native SBML units.
+  - name: active_tgf_beta_tgfr1_tgfr2_endo
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model.active_tgf_beta_tgfr1_tgfr2_endo
+    label: active TGF-beta TGFR1 TGFR2 Endo
+    description: active TGF-beta TGFR1 TGFR2 Endo. Maps to SBML symbol `Active_Rec_endo`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_strasen2018_tgfb_smad_signalling_restimulation_w_biomd0000000994_model.species_labels
+    label: Observable labels

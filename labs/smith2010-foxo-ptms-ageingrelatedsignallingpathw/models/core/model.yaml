@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Smith2010_Foxo_PTMs_AgeingRelatedSignallingPathway_C
+description: 'This a model from the article: Modelling the response of FOXO transcription
+  factors to multiple post-translational modifications made by ageing-related signalling
+  pathways. It can be used to explore signaling dynamics and compare pathway response
+  across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Graham R Smith
+- Daryl P Shanley
+upstream:
+  id: biomodels_ebi:MODEL1112260002
+  source_db: biomodels_ebi
+  source_id: MODEL1112260002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1112260002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1112260002?filename=MODEL1112260002_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.smith2010_foxo_ptms_ageingrelatedsignallingpathw:Smith2010FoxoPtmsAgeingrelatedsignallingpathwModel1112260002Model
+  init_kwargs:
+    model_path: data/MODEL1112260002.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_degr_foxo1
+    maps_to: signaling_sbml_smith2010_foxo_ptms_ageingrelatedsignallingpathw_model1112260002_model.initial_degr_foxo1
+    label: Initial Degr Foxo1
+    description: Initial level of Degr Foxo1. Maps to SBML symbol `degr_Foxo1`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_source_defined_null_state
+    maps_to: signaling_sbml_smith2010_foxo_ptms_ageingrelatedsignallingpathw_model1112260002_model.initial_source_defined_null_state
+    label: Initial source-defined NULL state
+    description: Initial level of source-defined NULL state. Maps to SBML symbol `null`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: akt
+    maps_to: signaling_sbml_smith2010_foxo_ptms_ageingrelatedsignallingpathw_model1112260002_model.akt
+    label: AKT
+    description: AKT. Maps to SBML symbol `Akt` and is emitted in native SBML units.
+  - name: source_defined_null_state
+    maps_to: signaling_sbml_smith2010_foxo_ptms_ageingrelatedsignallingpathw_model1112260002_model.source_defined_null_state
+    label: Source Defined NULL State
+    description: Source Defined NULL State. Maps to SBML symbol `null` and is emitted
+      in native SBML units.
+  - name: degr_foxo1
+    maps_to: signaling_sbml_smith2010_foxo_ptms_ageingrelatedsignallingpathw_model1112260002_model.degr_foxo1
+    label: Degr FOXO1
+    description: Degr FOXO1. Maps to SBML symbol `degr_Foxo1` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_smith2010_foxo_ptms_ageingrelatedsignallingpathw_model1112260002_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_smith2010_foxo_ptms_ageingrelatedsignallingpathw_model1112260002_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_smith2010_foxo_ptms_ageingrelatedsignallingpathw_model1112260002_model.species_labels
+    label: Observable labels

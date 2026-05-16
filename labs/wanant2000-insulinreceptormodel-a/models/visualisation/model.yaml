@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: Wanant2000_InsulinReceptorModel_A Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- metabolic-signaling
+- hormone-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_wanant2000_insulinreceptormodel_a_model1201140005_model
+    title: Wanant2000_InsulinReceptorModel_A
+    context: GPCR and cAMP/PKA signaling
+    question: How does Wanant2000 InsulinReceptorModel A route receptor activity into
+      cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_x1_state: float
+      source_defined_x2_state: float
+      source_defined_x3_state: float
+      source_defined_x4_state: float
+    species_labels:
+      source_defined_x1_state: Source Defined X1 State
+      source_defined_x2_state: Source Defined X2 State
+      source_defined_x3_state: Source Defined X3 State
+      source_defined_x4_state: Source Defined X4 State
+io:
+  inputs: []
+  outputs: []

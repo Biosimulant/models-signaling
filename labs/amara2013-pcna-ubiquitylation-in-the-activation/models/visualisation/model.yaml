@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Amara2013 - PCNA ubiquitylation in the activation of PRR pathway Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Amara2013 - PCNA ubiquitylation in the activation of PRR pathway.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- checkpoint-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_amara2013_pcna_ubiquitylation_in_the_activation_biomd0000000475_model
+    title: Amara2013 - PCNA ubiquitylation in the activation of PRR pathway
+    context: metabolic and hormone signaling response
+    question: How does Amara2013 - PCNA ubiquitylation in the activation of PRR pathway
+      shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_l_state: float
+      pcna: float
+      active_pcna: float
+      rad18_rad18: float
+      rad18: float
+      rad6: float
+      rad6u: float
+      source_defined_u_state: float
+      rad18_rad18_active_pcna: float
+      rad18_rad18_active_pcna_rad6u: float
+      rad18_rad18_active_pcna_u: float
+      active_pcna_u: float
+      rad5: float
+      rad5_active_pcna_u: float
+      ubc13u_mms2: float
+      ubc13u_mms2_rad5_active_pcna_u: float
+      rad5_active_pcna_u_u: float
+      ubc13_mms2: float
+      active_pcna_u_u: float
+      ubc13u_mms2_rad5_active_pcna_u_u: float
+      rad5_active_pcna_u_u_u: float
+      active_pcna_u_u_u: float
+      pcnaoff: float
+    species_labels:
+      source_defined_l_state: source-defined L state
+      pcna: PCNA
+      active_pcna: active PCNA
+      rad18_rad18: Rad18 Rad18
+      rad18: Rad18
+      rad6: Rad6
+      rad6u: Rad6u
+      source_defined_u_state: source-defined U state
+      rad18_rad18_active_pcna: Rad18 Rad18 active PCNA
+      rad18_rad18_active_pcna_rad6u: Rad18 Rad18 active PCNA Rad6u
+      rad18_rad18_active_pcna_u: Rad18 Rad18 active PCNA U
+      active_pcna_u: active PCNA U
+      rad5: Rad5
+      rad5_active_pcna_u: Rad5 active PCNA U
+      ubc13u_mms2: Ubc13u Mms2
+      ubc13u_mms2_rad5_active_pcna_u: Ubc13u Mms2 Rad5 active PCNA U
+      rad5_active_pcna_u_u: Rad5 active PCNA U U
+      ubc13_mms2: Ubc13 Mms2
+      active_pcna_u_u: active PCNA U U
+      ubc13u_mms2_rad5_active_pcna_u_u: Ubc13u Mms2 Rad5 active PCNA U U
+      rad5_active_pcna_u_u_u: Rad5 active PCNA U U U
+      active_pcna_u_u_u: active PCNA U U U
+      pcnaoff: Pcnaoff
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Zymomonas ED Pathway Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Zymomonas ED Pathway.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_zymomonas_ed_pathway_model2008060001_model
+    title: Zymomonas ED Pathway
+    context: metabolic and hormone signaling response
+    question: How does Zymomonas ED Pathway shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      ethanolex: float
+      glucex: float
+      pyrex: float
+      acetper: float
+      acetex: float
+      co2per: float
+      co2ex: float
+      gluccy: float
+      gluc6p: float
+      source_defined_bpg_state: float
+      p3g: float
+      p2g: float
+      source_defined_pep_state: float
+      pyrcy: float
+      acetcy: float
+      nad: float
+      source_defined_nadh_state: float
+      co2cy: float
+      ethanolcy: float
+      atp: float
+      adp: float
+      pglacton: float
+      pgluconate: float
+      source_defined_kdpg_state: float
+      source_defined_gap_state: float
+      amp: float
+      glucper: float
+      ethanolper: float
+      pyrper: float
+    species_labels:
+      ethanolex: Ethanolex
+      glucex: Glucex
+      pyrex: Pyrex
+      acetper: Acetper
+      acetex: Acetex
+      co2per: Co2per
+      co2ex: Co2ex
+      gluccy: Gluccy
+      gluc6p: GLUC6P
+      source_defined_bpg_state: source-defined BPG state
+      p3g: P3G
+      p2g: P2G
+      source_defined_pep_state: source-defined PEP state
+      pyrcy: Pyrcy
+      acetcy: Acetcy
+      nad: NAD
+      source_defined_nadh_state: source-defined NADH state
+      co2cy: Co2cy
+      ethanolcy: Ethanolcy
+      atp: ATP
+      adp: ADP
+      pglacton: PGLACTON
+      pgluconate: PGLUCONATE
+      source_defined_kdpg_state: source-defined KDPG state
+      source_defined_gap_state: source-defined GAP state
+      amp: AMP
+      glucper: Glucper
+      ethanolper: Ethanolper
+      pyrper: Pyrper
+io:
+  inputs: []
+  outputs: []

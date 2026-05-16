@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Sharp2013 - Lipopolysaccharide induced NFkB activation
+description: Markus W. It can be used to explore signaling dynamics and compare pathway
+  response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- tlr-signaling
+authors:
+- Biosimulant Team
+- Gemma C Sharp
+- Hongwu Ma
+- Philippa T K Saunders
+- Jane E Norman
+upstream:
+  id: biomodels_ebi:BIOMD0000000489
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000489
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000489
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000489?filename=BIOMD0000000489_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.sharp2013_lipopolysaccharide_induced_nfkb_activa:Sharp2013LipopolysaccharideInducedNfkbActivaBiomd0000000489Model
+  init_kwargs:
+    model_path: data/BIOMD0000000489.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cd14
+    maps_to: signaling_sbml_sharp2013_lipopolysaccharide_induced_nfkb_activa_biomd0000000489_model.initial_cd14
+    label: Initial CD14
+    description: Initial level of CD14. Maps to SBML symbol `species_1`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_source_defined_irak4_state
+    maps_to: signaling_sbml_sharp2013_lipopolysaccharide_induced_nfkb_activa_biomd0000000489_model.initial_source_defined_irak4_state
+    label: Initial source-defined IRAK4 state
+    description: Initial level of source-defined IRAK4 state. Maps to SBML symbol
+      `species_2`; exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_lbp_state
+    maps_to: signaling_sbml_sharp2013_lipopolysaccharide_induced_nfkb_activa_biomd0000000489_model.initial_source_defined_lbp_state
+    label: Initial source-defined LBP state
+    description: Initial level of source-defined LBP state. Maps to SBML symbol `species_3`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_tnfa_state
+    maps_to: signaling_sbml_sharp2013_lipopolysaccharide_induced_nfkb_activa_biomd0000000489_model.source_defined_tnfa_state
+    label: source-defined TNFA state
+    description: source-defined TNFA state. Maps to SBML symbol `species_24` and is
+      emitted in native SBML units.
+  - name: tnf_receptor_1
+    maps_to: signaling_sbml_sharp2013_lipopolysaccharide_induced_nfkb_activa_biomd0000000489_model.tnf_receptor_1
+    label: TNF receptor 1
+    description: TNF receptor 1. Maps to SBML symbol `species_25` and is emitted in
+      native SBML units.
+  - name: tnfa_tnf_receptor_1_traf2_tradd_rip1
+    maps_to: signaling_sbml_sharp2013_lipopolysaccharide_induced_nfkb_activa_biomd0000000489_model.tnfa_tnf_receptor_1_traf2_tradd_rip1
+    label: Tnfa TNF receptor 1 TRAF2 TRADD RIP1
+    description: Tnfa TNF receptor 1 TRAF2 TRADD RIP1. Maps to SBML symbol `species_28`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_sharp2013_lipopolysaccharide_induced_nfkb_activa_biomd0000000489_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_sharp2013_lipopolysaccharide_induced_nfkb_activa_biomd0000000489_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_sharp2013_lipopolysaccharide_induced_nfkb_activa_biomd0000000489_model.species_labels
+    label: Observable labels

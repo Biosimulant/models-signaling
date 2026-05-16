@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5ece4edc-d474-4760-a8ae-435b4518976f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "78283641-b145-4502-8aa3-2093c23c24ee",
+  "created_at": "2026-05-15T19:08:08.957427275+00:00",
+  "last_synced_at": "2026-05-16T09:07:00.252659+00:00",
+  "hub_manifest_hash": "7ca2692b834dcc961906502956cb748f5618a17fdbe382f2f6da50ba5542b306",
+  "package_name": "bhalla2004-pka-2003-lab"
+}

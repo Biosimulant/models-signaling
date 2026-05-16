@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a11faa44-9bfe-4864-b2c6-bcbd16cc208b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "061fc92f-9433-4f25-b31f-e182f0ba74ce",
+  "created_at": "2026-05-15T19:08:10.189121719+00:00",
+  "last_synced_at": "2026-05-16T09:54:37.496061+00:00",
+  "hub_manifest_hash": "8c6f612653ec2cd596d050af3e54d5b0c430f6a0d4acc176ff8efcd70a894232",
+  "package_name": "jafri1998-ventricularmyocyte-lab"
+}

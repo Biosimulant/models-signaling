@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4b51e216-899b-4868-8ad3-94d18236bdfa",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4bb11aad-82f1-4d64-8f14-2f1291b12b95",
+  "created_at": "2026-05-16T05:58:28.160841188+00:00",
+  "last_synced_at": "2026-05-16T11:15:36.326264+00:00",
+  "hub_manifest_hash": "3d844054834db0e32706fed414be6e857f92bea40ece4cd286b3bcaeb63c5946",
+  "package_name": "thiaville2016-wild-type-folate-pathway-model-with-proposed-panb"
+}

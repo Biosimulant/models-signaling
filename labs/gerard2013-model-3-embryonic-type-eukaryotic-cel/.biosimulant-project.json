@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "eb5045ef-9527-46ff-a048-9214a6d34a9c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "be194330-a17c-4d1a-b356-808072945779",
+  "created_at": "2026-05-15T19:08:09.603498441+00:00",
+  "last_synced_at": "2026-05-16T09:38:26.099702+00:00",
+  "hub_manifest_hash": "caa627d80723cae9ecdef4c7fc4d8d7c5a471f58e15696a7ffd2f759c38944d0",
+  "package_name": "gerard2013-model-3-embryonic-type-eukaryotic-cell-cycle-regulati"
+}

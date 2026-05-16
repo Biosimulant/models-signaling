@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a0aea6f4-b181-4312-90ee-f65904133fb3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6d26c4fe-9b35-4ba5-9c08-94f32c66da22",
+  "created_at": "2026-05-15T19:08:09.499529068+00:00",
+  "last_synced_at": "2026-05-16T09:35:22.459565+00:00",
+  "hub_manifest_hash": "dd19d7bfd9c0781f202992ae618cc70b3d2a55f0a28970cb58b09a05a770e24d",
+  "package_name": "dual-g-protein-model-lab"
+}

@@ -1,0 +1,83 @@
+schema_version: '2.0'
+title: Mueller2015 - Hepatocyte proliferation, T160 phosphorylation of CDK2
+description: 'Mueller2015 - Hepatocyte proliferation, T160phosphorylation of CDK2
+  This model is described in the article: T160-phosphorylated CDK2 defines threshold
+  for HGF-dependent proliferation in primary hepato. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+authors:
+- Biosimulant Team
+- Mueller S
+- Huard J
+- Waldow K
+- Huang X
+- D'Alessandro LA
+upstream:
+  id: biomodels_ebi:BIOMD0000000568
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000568
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000568
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000568?filename=BIOMD0000000568_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.mueller2015_hepatocyte_proliferation_t160_phosph:Mueller2015HepatocyteProliferationT160PhosphBiomd0000000568Model
+  init_kwargs:
+    model_path: data/BIOMD0000000568.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cdk2p21
+    maps_to: signaling_sbml_mueller2015_hepatocyte_proliferation_t160_phosph_biomd0000000568_model.initial_cdk2p21
+    label: Initial CDK2P21
+    description: Initial level of CDK2P21. Maps to SBML symbol `ObsCDK2P21_obs`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_dnacontent
+    maps_to: signaling_sbml_mueller2015_hepatocyte_proliferation_t160_phosph_biomd0000000568_model.initial_dnacontent
+    label: Initial Dnacontent
+    description: Initial level of Dnacontent. Maps to SBML symbol `ObsDNAContent_obs`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_hgf_state
+    maps_to: signaling_sbml_mueller2015_hepatocyte_proliferation_t160_phosph_biomd0000000568_model.initial_source_defined_hgf_state
+    label: Initial source-defined HGF state
+    description: Initial level of source-defined HGF state. Maps to SBML symbol `hgf`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: inh_erk
+    maps_to: signaling_sbml_mueller2015_hepatocyte_proliferation_t160_phosph_biomd0000000568_model.inh_erk
+    label: Inh ERK
+    description: Inh ERK. Maps to SBML symbol `inherk` and is emitted in native SBML
+      units.
+  - name: inh_akt
+    maps_to: signaling_sbml_mueller2015_hepatocyte_proliferation_t160_phosph_biomd0000000568_model.inh_akt
+    label: Inh AKT
+    description: Inh AKT. Maps to SBML symbol `inhakt` and is emitted in native SBML
+      units.
+  - name: cyto_c2e_t160_u_b
+    maps_to: signaling_sbml_mueller2015_hepatocyte_proliferation_t160_phosph_biomd0000000568_model.cyto_c2e_t160_u_b
+    label: Cyto C2E T160 U B
+    description: Cyto C2E T160 U B. Maps to SBML symbol `S4` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_mueller2015_hepatocyte_proliferation_t160_phosph_biomd0000000568_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_mueller2015_hepatocyte_proliferation_t160_phosph_biomd0000000568_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_mueller2015_hepatocyte_proliferation_t160_phosph_biomd0000000568_model.species_labels
+    label: Observable labels

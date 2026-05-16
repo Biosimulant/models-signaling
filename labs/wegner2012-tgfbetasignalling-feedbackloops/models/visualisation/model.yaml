@@ -1,0 +1,139 @@
+schema_version: '2.0'
+title: Wegner2012_TGFbetaSignalling_FeedbackLoops Visualisation
+description: Question-and-answer and chart visualisation for developmental and growth-control
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- tgf-beta
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_wegner2012_tgfbetasignalling_feedbackloops_biomd0000000410_model
+    title: Wegner2012_TGFbetaSignalling_FeedbackLoops
+    context: growth-control pathway signaling
+    question: How does Wegner2012 TGFbetaSignalling FeedbackLoops shift developmental
+      or growth-control pathway states?
+    visual_scope: growth-control pathway signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      tgf_rii: float
+      tgfbeta_tgf_rii: float
+      tgf_ri: float
+      rec_active: float
+      smad2_c: float
+      source_defined_sara_state: float
+      smad2_sara: float
+      p_smad2_c: float
+      smad4_c: float
+      p_smad2_smad4_c: float
+      smad7_c: float
+      smad7_smurf2_c: float
+      rec_smad7: float
+      smurf2_c: float
+      sno_n_c: float
+      smad3_c: float
+      p_smad3_c: float
+      smad3_sara: float
+      p_smad3_smad4_c: float
+      source_defined_ski_c_state: float
+      smad3_ski_c: float
+      smurf1_c: float
+      smad7_smurf1_c: float
+      p_smad2_smad4_ski_n: float
+      smad2_ski_c: float
+      p_smad2_sno_n_n: float
+      p_smad3_sno_n_n: float
+      arkadia_c: float
+      smad4_n: float
+      p_smad2_smad4_n: float
+      sno_n_n: float
+      p_smad2_smad4_sno_n_n: float
+      smurf2_n: float
+      p_smad2_n: float
+      smad2_n: float
+      smad7_n: float
+      smad7_smurf2_n: float
+      smad4_sno_n_n: float
+      smad3_n: float
+      p_smad3_smad4_n: float
+      smad4_smad2_n: float
+      p_smad3_n: float
+      p_smad3_smad4_sno_n_n: float
+      source_defined_ski_n_state: float
+      smad4_ski_n: float
+      smurf1_n: float
+      smad7_smurf1_n: float
+      p_smad3_smad4_ski_n: float
+      smad4_smad3_n: float
+      free_promoters: float
+      inactive_promoters: float
+      gene_product: float
+      arkadia_n: float
+    species_labels:
+      tgf_rii: TGF RII
+      tgfbeta_tgf_rii: Tgfbeta TGF RII
+      tgf_ri: TGF RI
+      rec_active: Rec active
+      smad2_c: Smad2 C
+      source_defined_sara_state: source-defined SARA state
+      smad2_sara: Smad2 SARA
+      p_smad2_c: P Smad2 C
+      smad4_c: Smad4 C
+      p_smad2_smad4_c: P Smad2 Smad4 C
+      smad7_c: SMAD7 C
+      smad7_smurf2_c: SMAD7 Smurf2 C
+      rec_smad7: Rec SMAD7
+      smurf2_c: Smurf2 C
+      sno_n_c: Sno N C
+      smad3_c: Smad3 C
+      p_smad3_c: P Smad3 C
+      smad3_sara: Smad3 SARA
+      p_smad3_smad4_c: P Smad3 Smad4 C
+      source_defined_ski_c_state: source-defined SKI_C state
+      smad3_ski_c: Smad3 Ski C
+      smurf1_c: Smurf1 C
+      smad7_smurf1_c: SMAD7 Smurf1 C
+      p_smad2_smad4_ski_n: P Smad2 Smad4 Ski N
+      smad2_ski_c: Smad2 Ski C
+      p_smad2_sno_n_n: P Smad2 Sno N N
+      p_smad3_sno_n_n: P Smad3 Sno N N
+      arkadia_c: Arkadia C
+      smad4_n: Smad4 N
+      p_smad2_smad4_n: P Smad2 Smad4 N
+      sno_n_n: Sno N N
+      p_smad2_smad4_sno_n_n: P Smad2 Smad4 Sno N N
+      smurf2_n: Smurf2 N
+      p_smad2_n: P Smad2 N
+      smad2_n: Smad2 N
+      smad7_n: SMAD7 N
+      smad7_smurf2_n: SMAD7 Smurf2 N
+      smad4_sno_n_n: Smad4 Sno N N
+      smad3_n: Smad3 N
+      p_smad3_smad4_n: P Smad3 Smad4 N
+      smad4_smad2_n: Smad4 Smad2 N
+      p_smad3_n: P Smad3 N
+      p_smad3_smad4_sno_n_n: P Smad3 Smad4 Sno N N
+      source_defined_ski_n_state: source-defined SKI_N state
+      smad4_ski_n: Smad4 Ski N
+      smurf1_n: Smurf1 N
+      smad7_smurf1_n: SMAD7 Smurf1 N
+      p_smad3_smad4_ski_n: P Smad3 Smad4 Ski N
+      smad4_smad3_n: Smad4 Smad3 N
+      free_promoters: free Promoters
+      inactive_promoters: Inactive Promoters
+      gene_product: Gene Product
+      arkadia_n: Arkadia N
+io:
+  inputs: []
+  outputs: []

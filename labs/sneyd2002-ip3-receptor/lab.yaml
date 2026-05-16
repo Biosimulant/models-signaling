@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Sneyd2002_IP3_Receptor Lab
+description: 'Clean Biosimulant lab for systems signaling model: Sneyd2002_IP3_Receptor.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model.state
+  to:
+  - visualisation.signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model_state
+- from: signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model.summary
+  to:
+  - visualisation.signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model_summary
+- from: signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model.species_labels
+  to:
+  - visualisation.signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+io:
+  inputs:
+  - name: initial_receptor
+    maps_to: signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model.initial_receptor
+    label: Initial Receptor
+    description: Initial level of Receptor. Maps to SBML symbol `R`; exposed as a
+      traceable initial-condition perturbation.
+  outputs:
+  - name: receptor
+    maps_to: signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model.receptor
+    label: Receptor
+    description: Receptor. Maps to SBML symbol `R` and is emitted in native SBML units.
+  - name: open_state
+    maps_to: signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model.open_state
+    label: open State
+    description: open State. Maps to SBML symbol `O` and is emitted in native SBML
+      units.
+  - name: inactivated_state_1
+    maps_to: signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model.inactivated_state_1
+    label: Inactivated State 1
+    description: Inactivated State 1. Maps to SBML symbol `I1` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model.species_labels
+    label: Observable labels

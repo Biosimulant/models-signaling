@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: Goldbeter2007_Somitogenesis_Switch Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Goldbeter2007_Somitogenesis_Switch.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_goldbeter2007_somitogenesis_switch_biomd0000000275_model
+    title: Goldbeter2007_Somitogenesis_Switch
+    context: cell-cycle regulatory signaling
+    question: How does Goldbeter2007 Somitogenesis Switch move checkpoint or cycle-control
+      signaling states?
+    visual_scope: cell-cycle regulatory signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_ra_state: float
+      cyp26_m_rna: float
+      cyp26: float
+      source_defined_fgf_state: float
+      fgf_m_rna: float
+    species_labels:
+      source_defined_ra_state: Source Defined RA State
+      cyp26_m_rna: Cyp26 M RNA
+      cyp26: CYP26
+      source_defined_fgf_state: source-defined FGF state
+      fgf_m_rna: FGF M RNA
+io:
+  inputs: []
+  outputs: []

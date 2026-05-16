@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c75c4fa4-0716-463b-ae78-c9ea9f09831f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1faa3095-5f74-4bc2-8074-2ed4a6efdc28",
+  "created_at": "2026-05-15T19:08:09.430428124+00:00",
+  "last_synced_at": "2026-05-16T09:33:54.509894+00:00",
+  "hub_manifest_hash": "d25c1f256386c15d3e01e3d62f35087c7c627e3516c3af1a914396094e73e75f",
+  "package_name": "cui2008-cardiacmyocytes-lab"
+}

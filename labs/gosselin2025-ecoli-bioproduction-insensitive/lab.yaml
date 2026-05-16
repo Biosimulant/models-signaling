@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Gosselin2025 - Ecoli_bioproduction_insensitive Lab
+description: 'Clean Biosimulant lab for systems signaling model: Gosselin2025 - Ecoli_bioproduction_insensitive.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model.state
+  to:
+  - visualisation.signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model_state
+- from: signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model.summary
+  to:
+  - visualisation.signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model_summary
+- from: signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model.species_labels
+  to:
+  - visualisation.signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_acetate_out
+    maps_to: signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model.initial_acetate_out
+    label: Initial acetate Out
+    description: Initial level of acetate Out. Maps to SBML symbol `Ace_out`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_glucose
+    maps_to: signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model.initial_glucose
+    label: Initial glucose
+    description: Initial level of glucose. Maps to SBML symbol `Glc`; exposed as a
+      traceable initial-condition perturbation.
+  - name: initial_response_node_x
+    maps_to: signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model.initial_response_node_x
+    label: Initial response node X
+    description: Initial level of response node X. Maps to SBML symbol `X`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: glucose
+    maps_to: signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model.glucose
+    label: glucose
+    description: glucose. Maps to SBML symbol `Glc` and is emitted in native SBML
+      units.
+  - name: source_defined_acp_state
+    maps_to: signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model.source_defined_acp_state
+    label: source-defined ACP state
+    description: source-defined ACP state. Maps to SBML symbol `AcP` and is emitted
+      in native SBML units.
+  - name: acetate
+    maps_to: signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model.acetate
+    label: acetate
+    description: acetate. Maps to SBML symbol `Ace` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_gosselin2025_ecoli_bioproduction_insensitive_model2506160001_model.species_labels
+    label: Observable labels

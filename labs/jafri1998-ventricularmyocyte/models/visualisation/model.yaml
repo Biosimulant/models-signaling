@@ -1,0 +1,97 @@
+schema_version: '2.0'
+title: Jafri1998_VentricularMyocyte Visualisation
+description: Question-and-answer and chart visualisation for calcium and second-messenger
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+- gpcr
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_jafri1998_ventricularmyocyte_model0847869198_model
+    title: Jafri1998_VentricularMyocyte
+    context: calcium second-messenger signaling
+    question: How do calcium-linked states respond in Jafri1998 VentricularMyocyte?
+    visual_scope: calcium second-messenger signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      v_membrane: float
+      source_defined_m_state: float
+      source_defined_h_state: float
+      source_defined_j_state: float
+      source_defined_c0_state: float
+      source_defined_c1_state: float
+      source_defined_c2_state: float
+      complement_complement_complement_complement_complement_complement_c3: float
+      source_defined_c4_state: float
+      source_defined_o_state: float
+      source_defined_c_ca0_state: float
+      source_defined_c_ca1_state: float
+      source_defined_c_ca2_state: float
+      source_defined_c_ca3_state: float
+      source_defined_c_ca4_state: float
+      source_defined_o_calcium_state: float
+      source_defined_y_state: float
+      response_node_x: float
+      source_defined_p_c1_state: float
+      source_defined_p_o1_state: float
+      source_defined_p_o2_state: float
+      source_defined_p_c2_state: float
+      htrpnca: float
+      ltrpnca: float
+      intracellular_calcium: float
+      source_defined_calcium_ss_state: float
+      calcium_jsr: float
+      calcium_nsr: float
+      source_defined_nai_state: float
+      source_defined_ki_state: float
+      source_defined_ko_state: float
+    species_labels:
+      v_membrane: V Membrane
+      source_defined_m_state: Source Defined M State
+      source_defined_h_state: Source Defined H State
+      source_defined_j_state: Source Defined J State
+      source_defined_c0_state: Source Defined C0 State
+      source_defined_c1_state: Source Defined C1 State
+      source_defined_c2_state: Source Defined C2 State
+      complement_complement_complement_complement_complement_complement_c3: Complement
+        Complement Complement Complement Complement complement C3
+      source_defined_c4_state: Source Defined C4 State
+      source_defined_o_state: Source Defined O State
+      source_defined_c_ca0_state: Source Defined C CA0 State
+      source_defined_c_ca1_state: Source Defined C CA1 State
+      source_defined_c_ca2_state: Source Defined C CA2 State
+      source_defined_c_ca3_state: Source Defined C CA3 State
+      source_defined_c_ca4_state: Source Defined C CA4 State
+      source_defined_o_calcium_state: Source Defined O Calcium State
+      source_defined_y_state: Source Defined Y State
+      response_node_x: Response Node X
+      source_defined_p_c1_state: Source Defined P C1 State
+      source_defined_p_o1_state: Source Defined P O1 State
+      source_defined_p_o2_state: Source Defined P O2 State
+      source_defined_p_c2_state: Source Defined P C2 State
+      htrpnca: Htrpnca
+      ltrpnca: Ltrpnca
+      intracellular_calcium: Intracellular Calcium
+      source_defined_calcium_ss_state: Source Defined Calcium SS State
+      calcium_jsr: Calcium JSR
+      calcium_nsr: Calcium NSR
+      source_defined_nai_state: Source Defined NAI State
+      source_defined_ki_state: Source Defined KI State
+      source_defined_ko_state: Source Defined KO State
+io:
+  inputs: []
+  outputs: []

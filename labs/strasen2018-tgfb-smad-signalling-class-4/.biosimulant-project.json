@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2ced4693-4b45-435b-8a50-af75865a7c15",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9b166bac-4064-47f2-b2b8-8f8172866483",
+  "created_at": "2026-05-16T05:58:27.760575877+00:00",
+  "last_synced_at": "2026-05-16T11:12:28.245036+00:00",
+  "hub_manifest_hash": "4eae9a6c63000a71df2df8420494f64698a73a12a01e573a2902f725eccfabf6",
+  "package_name": "strasen2018-tgfb-smad-signalling-class-4-lab"
+}

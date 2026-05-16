@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b3171f31-dbd6-48e6-add7-fd02be293d66",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3ae2399d-4935-4b11-878f-d3198cc08e9a",
+  "created_at": "2026-05-15T19:08:10.311785865+00:00",
+  "last_synced_at": "2026-05-16T09:58:19.199608+00:00",
+  "hub_manifest_hash": "6f7f2feca1dfd143b2761d25e8472311b27bc132e5d46dbc82cf2d3cc992b979",
+  "package_name": "kholodenko2000-ultrasensitivity-and-negative-feedback-bring-osci"
+}

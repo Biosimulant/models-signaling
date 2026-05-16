@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8e8ebb34-c45f-4fbc-9b3a-63dc883568c0",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "afc18e99-fde1-4546-aba6-3f614c8db6ff",
+  "created_at": "2026-05-15T19:08:09.689812996+00:00",
+  "last_synced_at": "2026-05-16T09:40:32.810044+00:00",
+  "hub_manifest_hash": "69154a7105501f2a1485ec5ef67b8053d2796cbae61b8a974087531a9644f47d",
+  "package_name": "gonzalezmiranda2013-the-effect-of-circadian-oscillations-on-bioc"
+}

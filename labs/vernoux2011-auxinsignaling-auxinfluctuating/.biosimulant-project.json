@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "65681e32-3ad8-4441-8676-62a48fba204e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c79648d2-0b43-4931-abef-5c0e09077fbf",
+  "created_at": "2026-05-16T05:58:28.690972967+00:00",
+  "last_synced_at": "2026-05-16T11:20:53.202790+00:00",
+  "hub_manifest_hash": "3279d9b637536fed90ba3179e1d4e8a5dcf6275320a044870378df36436bcd94",
+  "package_name": "vernoux2011-auxinsignaling-auxinfluctuating-lab"
+}

@@ -1,0 +1,41 @@
+schema_version: '2.0'
+title: Goldbeter2013-Oscillatory activity of cyclin-dependent kinases in the cell
+  cycle Visualisation
+description: Question-and-answer and chart visualisation for cell-cycle regulatory
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_goldbeter2013_oscillatory_activity_of_cyclin_dep_biomd0000000944_model
+    title: Goldbeter2013-Oscillatory activity of cyclin-dependent kinases in the cell
+      cycle
+    context: cell-cycle regulatory signaling
+    question: How does Goldbeter2013-Oscillatory activity of cyclin-dependent kinases
+      in the cell cycle move checkpoint or cycle-control signaling states?
+    visual_scope: cell-cycle regulatory signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      cyclin: float
+      active_cdc2_kinase: float
+      active_apc: float
+    species_labels:
+      cyclin: Cyclin
+      active_cdc2_kinase: active Cdc2 Kinase
+      active_apc: active APC
+io:
+  inputs: []
+  outputs: []

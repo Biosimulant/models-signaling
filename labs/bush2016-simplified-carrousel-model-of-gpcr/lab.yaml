@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Bush2016 - Simplified Carrousel model of GPCR Lab
+description: 'Clean Biosimulant lab for systems signaling model: Bush2016 - Simplified
+  Carrousel model of GPCR. Values are native SBML quantities; equations, parameters,
+  and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model.state
+  to:
+  - visualisation.signaling_sbml_bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model_state
+- from: signaling_sbml_bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model.summary
+  to:
+  - visualisation.signaling_sbml_bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model_summary
+- from: signaling_sbml_bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model.species_labels
+  to:
+  - visualisation.signaling_sbml_bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+io:
+  inputs:
+  - name: initial_source_defined_r_state
+    maps_to: signaling_sbml_bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model.initial_source_defined_r_state
+    label: Initial source-defined R state
+    description: Initial level of source-defined R state. Maps to SBML symbol `R`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: g_beta_gamma_complex
+    maps_to: signaling_sbml_bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model.g_beta_gamma_complex
+    label: G beta-gamma complex
+    description: G beta-gamma complex. Maps to SBML symbol `Gbg` and is emitted in
+      native SBML units.
+  - name: source_defined_lrg_state
+    maps_to: signaling_sbml_bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model.source_defined_lrg_state
+    label: source-defined LRG state
+    description: source-defined LRG state. Maps to SBML symbol `LRG` and is emitted
+      in native SBML units.
+  - name: ligand_receptor_gtp_complex
+    maps_to: signaling_sbml_bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model.ligand_receptor_gtp_complex
+    label: ligand-receptor GTP complex
+    description: ligand-receptor GTP complex. Maps to SBML symbol `LRGt` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_bush2016_simplified_carrousel_model_of_gpcr_biomd0000000637_model.species_labels
+    label: Observable labels

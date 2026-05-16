@@ -1,0 +1,199 @@
+schema_version: '2.0'
+title: Nair2015 - Interaction between neuromodulators via GPCRs - Effect on cAMP/PKA
+  signaling (D1 Neuron) Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Nair2015 - Interaction between neuromodulators via GPCRs - Effect on cAMP/PKA signaling
+  (D1 Neuron).'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- camp-pka
+- neuroscience
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model
+    title: Nair2015 - Interaction between neuromodulators via GPCRs - Effect on cAMP/PKA
+      signaling (D1 Neuron)
+    context: GPCR and cAMP/PKA signaling
+    question: How does Nair2015 - Interaction between neuromodulators via GPCRs -
+      Effect on cAMP/PKA signaling (D1 Neuron) route receptor activity into cAMP/PKA-linked
+      readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      gai_gtp: float
+      gaolf_gdp: float
+      gbgolf: float
+      gaolf_gtp: float
+      d1rdagolf: float
+      golf_g_protein: float
+      d1rgolf: float
+      d1rda: float
+      d1r: float
+      camp: float
+      calcium: float
+      source_defined_ac5_state: float
+      ac5gaolf_gtp: float
+      calmodulin: float
+      calcium_mca2: float
+      calcium_mca4: float
+      source_defined_pde4_state: float
+      source_defined_pka_state: float
+      pkac_amp2: float
+      pkac_amp4: float
+      pkareg: float
+      source_defined_pkac_state: float
+      pp2b: float
+      pp2bc: float
+      pp2bca_m: float
+      pp2bca_mca2: float
+      darpp32: float
+      pkac_d32: float
+      d32p34: float
+      b72pp2a: float
+      pkac_b56pp2a: float
+      b56pp2ap: float
+      source_defined_cdk5_state: float
+      source_defined_pp1_state: float
+      cdk5_d32: float
+      d32p75: float
+      pkac_d32p75: float
+      b72ppa2ca: float
+      b56pp2ap_d32p75: float
+      b72pp2a_d32p75: float
+      b72pp2aca_d32p75: float
+      pp1d32p34: float
+      pp2bc_d32p34: float
+      b72pp2a_d32p34: float
+      source_defined_da_state: float
+      amp: float
+      ac5ca: float
+      ac5ca_gaolf_gtp: float
+      ac5gai_gtp: float
+      ac5ca_gai_gtp: float
+      b56pp2a: float
+      b56pp2a_d32p75: float
+      b72pp2aca_d32p34: float
+      pde4_c_amp: float
+      ac5gaolf_gtpgai_gtp: float
+      ac5ca_gaolf_gtpgai_gtp: float
+      m4r: float
+      m4rach: float
+      m4rgi: float
+      source_defined_gi_state: float
+      m4rach_gi: float
+      source_defined_gbgi_state: float
+      gai_gdp: float
+      acetylcholine: float
+      pde10c: float
+      pde10: float
+      pde10_c_amp: float
+      pde10c_c_amp: float
+      atp: float
+      ac5gaolf_gtpgai_gtp_atp: float
+      ac5gai_gtp_atp: float
+      ac5gaolf_gtp_atp: float
+      ac5_atp: float
+      ac5ca_gaolf_gtp_atp: float
+      ac5ca_gai_gtp_atp: float
+      ac5ca_gaolf_gtpgai_gtp_atp: float
+      ac5ca_atp: float
+      pp1_akar3p: float
+      pkac_akar3: float
+      total_active_pka: float
+    species_labels:
+      gai_gtp: Gai GTP
+      gaolf_gdp: Gaolf GDP
+      gbgolf: Gbgolf
+      gaolf_gtp: Gaolf GTP
+      d1rdagolf: D1rdagolf
+      golf_g_protein: Golf G protein
+      d1rgolf: D1rgolf
+      d1rda: D1RDA
+      d1r: D1R
+      camp: cAMP
+      calcium: calcium
+      source_defined_ac5_state: source-defined AC5 state
+      ac5gaolf_gtp: Ac5gaolf GTP
+      calmodulin: calmodulin
+      calcium_mca2: calcium Mca2
+      calcium_mca4: calcium Mca4
+      source_defined_pde4_state: source-defined PDE4 state
+      source_defined_pka_state: source-defined PKA state
+      pkac_amp2: Pkac AMP2
+      pkac_amp4: Pkac AMP4
+      pkareg: Pkareg
+      source_defined_pkac_state: source-defined PKAC state
+      pp2b: PP2B
+      pp2bc: Pp2bc
+      pp2bca_m: Pp2bca M
+      pp2bca_mca2: Pp2bca Mca2
+      darpp32: DARPP32
+      pkac_d32: Pkac D32
+      d32p34: D32p34
+      b72pp2a: B72PP2A
+      pkac_b56pp2a: Pkac B56PP2A
+      b56pp2ap: B56pp2ap
+      source_defined_cdk5_state: source-defined CDK5 state
+      source_defined_pp1_state: source-defined PP1 state
+      cdk5_d32: CDK5 D32
+      d32p75: D32p75
+      pkac_d32p75: Pkac D32p75
+      b72ppa2ca: B72ppa2ca
+      b56pp2ap_d32p75: B56pp2ap D32p75
+      b72pp2a_d32p75: B72PP2A D32p75
+      b72pp2aca_d32p75: B72pp2aca D32p75
+      pp1d32p34: Pp1d32p34
+      pp2bc_d32p34: Pp2bc D32p34
+      b72pp2a_d32p34: B72PP2A D32p34
+      source_defined_da_state: source-defined DA state
+      amp: AMP
+      ac5ca: Ac5ca
+      ac5ca_gaolf_gtp: Ac5ca Gaolf GTP
+      ac5gai_gtp: Ac5gai GTP
+      ac5ca_gai_gtp: Ac5ca Gai GTP
+      b56pp2a: B56PP2A
+      b56pp2a_d32p75: B56PP2A D32p75
+      b72pp2aca_d32p34: B72pp2aca D32p34
+      pde4_c_amp: PDE4 C AMP
+      ac5gaolf_gtpgai_gtp: Ac5gaolf Gtpgai GTP
+      ac5ca_gaolf_gtpgai_gtp: Ac5ca Gaolf Gtpgai GTP
+      m4r: M4R
+      m4rach: M4rach
+      m4rgi: M4rgi
+      source_defined_gi_state: source-defined GI state
+      m4rach_gi: M4rach Gi
+      source_defined_gbgi_state: source-defined GBGI state
+      gai_gdp: Gai GDP
+      acetylcholine: acetylcholine
+      pde10c: Pde10c
+      pde10: PDE10
+      pde10_c_amp: PDE10 C AMP
+      pde10c_c_amp: Pde10c C AMP
+      atp: ATP
+      ac5gaolf_gtpgai_gtp_atp: Ac5gaolf Gtpgai GTP ATP
+      ac5gai_gtp_atp: Ac5gai GTP ATP
+      ac5gaolf_gtp_atp: Ac5gaolf GTP ATP
+      ac5_atp: AC5 ATP
+      ac5ca_gaolf_gtp_atp: Ac5ca Gaolf GTP ATP
+      ac5ca_gai_gtp_atp: Ac5ca Gai GTP ATP
+      ac5ca_gaolf_gtpgai_gtp_atp: Ac5ca Gaolf Gtpgai GTP ATP
+      ac5ca_atp: Ac5ca ATP
+      pp1_akar3p: PP1 Akar3p
+      pkac_akar3: Pkac AKAR3
+      total_active_pka: Total active PKA
+io:
+  inputs: []
+  outputs: []

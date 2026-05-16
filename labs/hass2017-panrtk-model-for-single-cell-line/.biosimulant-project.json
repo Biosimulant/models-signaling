@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "bc385d6e-392e-467f-aab1-0a64bc3f2f93",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3a7b5482-3016-48eb-8fc8-9fc46050e8c3",
+  "created_at": "2026-05-15T19:08:11.585199631+00:00",
+  "last_synced_at": "2026-05-16T09:44:29.770449+00:00",
+  "hub_manifest_hash": "714d41677281fd8e411bcb02ac3a3bb4155b762acf5eade475a284b2664ad9cc",
+  "package_name": "panrtk-model-for-single-cell-line-lab"
+}

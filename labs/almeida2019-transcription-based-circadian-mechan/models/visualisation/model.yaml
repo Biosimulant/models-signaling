@@ -1,0 +1,52 @@
+schema_version: '2.0'
+title: Almeida2019 - Transcription-based circadian mechanism controls the duration
+  of molecular clock states in response to signaling inputs Visualisation
+description: Question-and-answer and chart visualisation for circadian regulatory
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- circadian
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model
+    title: Almeida2019 - Transcription-based circadian mechanism controls the duration
+      of molecular clock states in response to signaling inputs
+    context: JAK/STAT receptor-to-transcription signaling
+    question: How does Almeida2019 - Transcription-based circadian mechanism controls
+      the duration of molecular clock states in response to signaling inputs transmit
+      cytokine receptor activity into STAT pathway states?
+    visual_scope: JAK/STAT receptor-to-transcription signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_bmal1_state: float
+      source_defined_ror_state: float
+      source_defined_rev_state: float
+      source_defined_dbp_state: float
+      e4bp4: float
+      source_defined_cry_state: float
+      source_defined_per_state: float
+      percry: float
+    species_labels:
+      source_defined_bmal1_state: source-defined BMAL1 state
+      source_defined_ror_state: source-defined ROR state
+      source_defined_rev_state: source-defined REV state
+      source_defined_dbp_state: source-defined DBP state
+      e4bp4: E4BP4
+      source_defined_cry_state: source-defined CRY state
+      source_defined_per_state: source-defined PER state
+      percry: PERCRY
+io:
+  inputs: []
+  outputs: []

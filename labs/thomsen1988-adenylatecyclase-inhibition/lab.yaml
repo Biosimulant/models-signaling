@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Thomsen1988_AdenylateCyclase_Inhibition Lab
+description: 'Clean Biosimulant lab for systems signaling model: Thomsen1988_AdenylateCyclase_Inhibition.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model.state
+  to:
+  - visualisation.signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model_state
+- from: signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model.summary
+  to:
+  - visualisation.signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model_summary
+- from: signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model.species_labels
+  to:
+  - visualisation.signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+io:
+  inputs:
+  - name: initial_agonist
+    maps_to: signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model.initial_agonist
+    label: Initial Agonist
+    description: Initial level of Agonist. Maps to SBML symbol `agonist`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: drg_gdp
+    maps_to: signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model.drg_gdp
+    label: DRG GDP
+    description: DRG GDP. Maps to SBML symbol `DRG_GDP` and is emitted in native SBML
+      units.
+  - name: source_defined_drg_state
+    maps_to: signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model.source_defined_drg_state
+    label: source-defined DRG state
+    description: source-defined DRG state. Maps to SBML symbol `DRG` and is emitted
+      in native SBML units.
+  - name: gdp
+    maps_to: signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model.gdp
+    label: GDP
+    description: GDP. Maps to SBML symbol `GDP` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_thomsen1988_adenylatecyclase_inhibition_biomd0000000082_model.species_labels
+    label: Observable labels

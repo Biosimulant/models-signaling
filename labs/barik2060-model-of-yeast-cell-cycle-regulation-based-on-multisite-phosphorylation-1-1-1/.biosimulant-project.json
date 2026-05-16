@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "330905f1-dec9-4c0b-af1d-ee142d1bf367",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d0cf788a-4490-42dd-98ef-7316bf084c59",
+  "created_at": "2026-05-15T19:08:08.461552374+00:00",
+  "last_synced_at": "2026-05-16T08:56:38.162638+00:00",
+  "hub_manifest_hash": "1fabc5b3f56ca2c5f4d85d012537d3817ad95e72719f46709668e393e2bd648d",
+  "package_name": "a-model-of-yeast-cell-cycle-regulation-based-on-multisite-phosph"
+}

@@ -1,0 +1,130 @@
+schema_version: '2.0'
+title: Kessler2025 - IL-6 and IL-22 pathway in human hepatocytes Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Kessler2025 - IL-6 and IL-22 pathway in human hepatocytes.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cytokine-signaling
+- interleukin-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_kessler2025_il_6_and_il_22_pathway_in_human_hepa_model2509100001_model
+    title: Kessler2025 - IL-6 and IL-22 pathway in human hepatocytes
+    context: JAK/STAT receptor-to-transcription signaling
+    question: How does Kessler2025 - IL-6 and IL-22 pathway in human hepatocytes transmit
+      cytokine receptor activity into STAT pathway states?
+    visual_scope: JAK/STAT receptor-to-transcription signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      il6rc_dimer_shp2: float
+      il22_il22r1: float
+      il6r: float
+      source_defined_il6_state: float
+      il6_il6r: float
+      il6st_jak: float
+      il6rc: float
+      il6rc_dimer: float
+      stat3: float
+      stat1: float
+      s_il6r: float
+      il6rc_dimer_stat1: float
+      il6_s_il6r: float
+      il6rc_dimer_stat3: float
+      sgp130: float
+      p_stat1: float
+      il6_s_il6r_sgp130: float
+      p_stat3: float
+      p_stat1_dimer_cytosol: float
+      p_stat_heterodimer_cytosol: float
+      p_stat3_dimer_cytosol: float
+      importin: float
+      twop_stat1_importin: float
+      p_stat1_3_importin: float
+      twop_stat3_importin: float
+      p_stat1_dimer_nucleus: float
+      p_stat_heterodimer_nucleus: float
+      p_stat3_dimer_nucleus: float
+      twop_stat1_dna: float
+      p_stat1_3_dna: float
+      twop_stat3_dna: float
+      source_defined_socs1_state: float
+      socs3: float
+      il6rc_dimer_socs1: float
+      il6rc_dimer_socs3: float
+      source_defined_shp2_state: float
+      twop_stat3_dna_inactive: float
+      twop_stat1_dna_inactive: float
+      il22: float
+      il22rc: float
+      il22r1: float
+      il10r2: float
+      il22rc_stat3: float
+      il22rc_stat1: float
+      il22rc_socs3: float
+      il22rc_socs1: float
+      il22bp: float
+      il22_il22bp: float
+    species_labels:
+      il6rc_dimer_shp2: IL6RC Dimer SHP2
+      il22_il22r1: IL22 IL22R1
+      il6r: IL6R
+      source_defined_il6_state: source-defined IL6 state
+      il6_il6r: IL6 IL6R
+      il6st_jak: IL6ST JAK
+      il6rc: IL6RC
+      il6rc_dimer: IL6RC Dimer
+      stat3: STAT3
+      stat1: STAT1
+      s_il6r: S IL6R
+      il6rc_dimer_stat1: IL6RC Dimer STAT1
+      il6_s_il6r: IL6 S IL6R
+      il6rc_dimer_stat3: IL6RC Dimer STAT3
+      sgp130: Sgp130
+      p_stat1: P STAT1
+      il6_s_il6r_sgp130: IL6 S IL6R Sgp130
+      p_stat3: P STAT3
+      p_stat1_dimer_cytosol: P STAT1 Dimer Cytosol
+      p_stat_heterodimer_cytosol: P STAT Heterodimer Cytosol
+      p_stat3_dimer_cytosol: P STAT3 Dimer Cytosol
+      importin: Importin
+      twop_stat1_importin: Twop STAT1 Importin
+      p_stat1_3_importin: P STAT1 3 Importin
+      twop_stat3_importin: Twop STAT3 Importin
+      p_stat1_dimer_nucleus: P STAT1 Dimer Nucleus
+      p_stat_heterodimer_nucleus: P STAT Heterodimer Nucleus
+      p_stat3_dimer_nucleus: P STAT3 Dimer Nucleus
+      twop_stat1_dna: Twop STAT1 DNA
+      p_stat1_3_dna: P STAT1 3 DNA
+      twop_stat3_dna: Twop STAT3 DNA
+      source_defined_socs1_state: source-defined SOCS1 state
+      socs3: SOCS3
+      il6rc_dimer_socs1: IL6RC Dimer SOCS1
+      il6rc_dimer_socs3: IL6RC Dimer SOCS3
+      source_defined_shp2_state: source-defined SHP2 state
+      twop_stat3_dna_inactive: Twop STAT3 DNA Inactive
+      twop_stat1_dna_inactive: Twop STAT1 DNA Inactive
+      il22: IL22
+      il22rc: IL22RC
+      il22r1: IL22R1
+      il10r2: IL10R2
+      il22rc_stat3: IL22RC STAT3
+      il22rc_stat1: IL22RC STAT1
+      il22rc_socs3: IL22RC SOCS3
+      il22rc_socs1: IL22RC SOCS1
+      il22bp: IL22BP
+      il22_il22bp: IL22 IL22BP
+io:
+  inputs: []
+  outputs: []

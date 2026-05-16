@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Dasgupta2020 - Reduced model of receptor clusturing and aggregation Lab
+description: 'Clean Biosimulant lab for systems signaling model: Dasgupta2020 - Reduced
+  model of receptor clusturing and aggregation. Values are native SBML quantities;
+  equations, parameters, and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model.state
+  to:
+  - visualisation.signaling_sbml_dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model_state
+- from: signaling_sbml_dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model.summary
+  to:
+  - visualisation.signaling_sbml_dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model_summary
+- from: signaling_sbml_dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model.species_labels
+  to:
+  - visualisation.signaling_sbml_dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+io:
+  inputs:
+  - name: initial_source_defined_p_state
+    maps_to: signaling_sbml_dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model.initial_source_defined_p_state
+    label: Initial source-defined P state
+    description: Initial level of source-defined P state. Maps to SBML symbol `P`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_p_state
+    maps_to: signaling_sbml_dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model.source_defined_p_state
+    label: source-defined P state
+    description: source-defined P state. Maps to SBML symbol `P` and is emitted in
+      native SBML units.
+  - name: source_defined_n_state
+    maps_to: signaling_sbml_dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model.source_defined_n_state
+    label: source-defined N state
+    description: source-defined N state. Maps to SBML symbol `N` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model.species_labels
+    label: Observable labels

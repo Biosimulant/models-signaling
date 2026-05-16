@@ -1,0 +1,68 @@
+schema_version: '2.0'
+title: Novak2022 - Mitotic kinase oscillation
+description: Bela Novak & John J. It can be used to explore signaling dynamics and
+  compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+authors:
+- Biosimulant Team
+- Novak B
+- Tyson JJ
+upstream:
+  id: biomodels_ebi:BIOMD0000001058
+  source_db: biomodels_ebi
+  source_id: BIOMD0000001058
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001058
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001058?filename=Novak2022.xml
+  license: CC0
+biosim:
+  entrypoint: src.novak2022_mitotic_kinase_oscillation:Novak2022MitoticKinaseOscillationBiomd0000001058Model
+  init_kwargs:
+    model_path: data/BIOMD0000001058.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cln_cyclin
+    maps_to: signaling_sbml_novak2022_mitotic_kinase_oscillation_biomd0000001058_model.initial_cln_cyclin
+    label: Initial Cln cyclin
+    description: Initial level of Cln cyclin. Maps to SBML symbol `Cln`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: cln_cyclin
+    maps_to: signaling_sbml_novak2022_mitotic_kinase_oscillation_biomd0000001058_model.cln_cyclin
+    label: Cln cyclin
+    description: Cln cyclin. Maps to SBML symbol `Cln` and is emitted in native SBML
+      units.
+  - name: clb_cyclin_st
+    maps_to: signaling_sbml_novak2022_mitotic_kinase_oscillation_biomd0000001058_model.clb_cyclin_st
+    label: Clb cyclin St
+    description: Clb cyclin St. Maps to SBML symbol `ClbSt` and is emitted in native
+      SBML units.
+  - name: source_defined_mbf_state
+    maps_to: signaling_sbml_novak2022_mitotic_kinase_oscillation_biomd0000001058_model.source_defined_mbf_state
+    label: source-defined MBF state
+    description: source-defined MBF state. Maps to SBML symbol `MBF` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_novak2022_mitotic_kinase_oscillation_biomd0000001058_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_novak2022_mitotic_kinase_oscillation_biomd0000001058_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_novak2022_mitotic_kinase_oscillation_biomd0000001058_model.species_labels
+    label: Observable labels

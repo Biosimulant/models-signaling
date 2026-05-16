@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "48f5d2ab-5517-4151-bd0f-d25204533609",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6d2824a5-c9ce-4925-b49f-eba71a6a7bfa",
+  "created_at": "2026-05-15T19:08:09.281959853+00:00",
+  "last_synced_at": "2026-05-16T09:21:34.665613+00:00",
+  "hub_manifest_hash": "8472f0062b323097c6cb668e0f9ca7ad1e03e6facd840098233775edb3e552d5",
+  "package_name": "chan2004-tcell-receptor-activation-lab"
+}

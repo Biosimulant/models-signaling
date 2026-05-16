@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Amara2013 - PCNA ubiquitylation in the activation of PRR pathway
+description: Mechanistic model of the Post-Replication Repair (PRR), the pathway involved
+  in the bypass of DNA lesions induced by sunlight exposure and UV radiation. It can
+  be used to explore signaling dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- checkpoint-signaling
+authors:
+- Biosimulant Team
+- Flavio Amara
+- Riccardo Colombo
+- Paolo Cazzaniga
+- Dario Pescini
+- Attila Csikász-Nagy
+upstream:
+  id: biomodels_ebi:BIOMD0000000475
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000475
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000475
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000475?filename=BIOMD0000000475_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.amara2013_pcna_ubiquitylation_in_the_activation:Amara2013PcnaUbiquitylationInTheActivationBiomd0000000475Model
+  init_kwargs:
+    model_path: data/BIOMD0000000475.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_l_state
+    maps_to: signaling_sbml_amara2013_pcna_ubiquitylation_in_the_activation_biomd0000000475_model.initial_source_defined_l_state
+    label: Initial source-defined L state
+    description: Initial level of source-defined L state. Maps to SBML symbol `species_1`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: pcna
+    maps_to: signaling_sbml_amara2013_pcna_ubiquitylation_in_the_activation_biomd0000000475_model.pcna
+    label: PCNA
+    description: PCNA. Maps to SBML symbol `species_2` and is emitted in native SBML
+      units.
+  - name: active_pcna
+    maps_to: signaling_sbml_amara2013_pcna_ubiquitylation_in_the_activation_biomd0000000475_model.active_pcna
+    label: active PCNA
+    description: active PCNA. Maps to SBML symbol `species_3` and is emitted in native
+      SBML units.
+  - name: rad18_rad18
+    maps_to: signaling_sbml_amara2013_pcna_ubiquitylation_in_the_activation_biomd0000000475_model.rad18_rad18
+    label: Rad18 Rad18
+    description: Rad18 Rad18. Maps to SBML symbol `species_4` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_amara2013_pcna_ubiquitylation_in_the_activation_biomd0000000475_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_amara2013_pcna_ubiquitylation_in_the_activation_biomd0000000475_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_amara2013_pcna_ubiquitylation_in_the_activation_biomd0000000475_model.species_labels
+    label: Observable labels

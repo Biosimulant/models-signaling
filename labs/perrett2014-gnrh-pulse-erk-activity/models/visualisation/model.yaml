@@ -1,0 +1,61 @@
+schema_version: '2.0'
+title: Perrett2014 - GnRH pulse, ERK activity Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model
+    title: Perrett2014 - GnRH pulse, ERK activity
+    context: receptor-to-MAPK cascade signaling
+    question: How does Perrett2014 - GnRH pulse, ERK activity propagate receptor or
+      RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      nuclear_phosphorylated_erk: float
+      pp_erk_n: float
+      source_defined_tf1_state: float
+      tf1dt: float
+      source_defined_e_state: float
+      cytosolic_phosphorylated_erk: float
+      source_defined_gnrh_state: float
+      source_defined_gq_state: float
+      e_inact: float
+      pp_erk_c: float
+      hr_inact: float
+      source_defined_hr_state: float
+      p_erk_c: float
+      mek_act: float
+    species_labels:
+      nuclear_phosphorylated_erk: nuclear phosphorylated ERK
+      pp_erk_n: Pp ERK N
+      source_defined_tf1_state: source-defined TF1 state
+      tf1dt: TF1DT
+      source_defined_e_state: source-defined E state
+      cytosolic_phosphorylated_erk: cytosolic phosphorylated ERK
+      source_defined_gnrh_state: source-defined GNRH state
+      source_defined_gq_state: source-defined GQ state
+      e_inact: E Inact
+      pp_erk_c: Pp ERK C
+      hr_inact: HR Inact
+      source_defined_hr_state: source-defined HR state
+      p_erk_c: P ERK C
+      mek_act: MEK Act
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Ray2013 - Meiotic initiation in S. cerevisiae
+description: Ray2013 - Meiotic initiation in S. cerevisiae A mathematical representation
+  of early meiotic events, particularly feedback mechanisms at the system level and
+  phosphorylation of signalling molecules fo.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Debjit Ray
+- Yongchun Su
+- Ping Ye
+upstream:
+  id: biomodels_ebi:BIOMD0000000626
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000626
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000626
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000626?filename=BIOMD0000000626_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.ray2013_meiotic_initiation_in_s_cerevisiae:Ray2013MeioticInitiationInSCerevisiaeBiomd0000000626Model
+  init_kwargs:
+    model_path: data/BIOMD0000000626.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_rim11
+    maps_to: signaling_sbml_ray2013_meiotic_initiation_in_s_cerevisiae_biomd0000000626_model.initial_rim11
+    label: Initial Rim11
+    description: Initial level of Rim11. Maps to SBML symbol `Rim11`; exposed as a
+      traceable initial-condition perturbation.
+  outputs:
+  - name: rim11
+    maps_to: signaling_sbml_ray2013_meiotic_initiation_in_s_cerevisiae_biomd0000000626_model.rim11
+    label: Rim11
+    description: Rim11. Maps to SBML symbol `Rim11` and is emitted in native SBML
+      units.
+  - name: source_defined_pume6_state
+    maps_to: signaling_sbml_ray2013_meiotic_initiation_in_s_cerevisiae_biomd0000000626_model.source_defined_pume6_state
+    label: source-defined PUME6 state
+    description: source-defined PUME6 state. Maps to SBML symbol `pUme6` and is emitted
+      in native SBML units.
+  - name: source_defined_psok2_state
+    maps_to: signaling_sbml_ray2013_meiotic_initiation_in_s_cerevisiae_biomd0000000626_model.source_defined_psok2_state
+    label: source-defined PSOK2 state
+    description: source-defined PSOK2 state. Maps to SBML symbol `pSok2` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_ray2013_meiotic_initiation_in_s_cerevisiae_biomd0000000626_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_ray2013_meiotic_initiation_in_s_cerevisiae_biomd0000000626_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_ray2013_meiotic_initiation_in_s_cerevisiae_biomd0000000626_model.species_labels
+    label: Observable labels

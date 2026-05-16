@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0cbba14a-4126-45b7-b3c8-55352414f33e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "de6d0235-c596-4c52-bb7a-bc45fa6c1c19",
+  "created_at": "2026-05-16T05:58:28.467315166+00:00",
+  "last_synced_at": "2026-05-16T11:18:32.506332+00:00",
+  "hub_manifest_hash": "b6a8f5559569a690dbcc3e9bf9689604fafcaefbaaeae5f4f78ab6fe787c5861",
+  "package_name": "tyson2003-mutual-activation-lab"
+}

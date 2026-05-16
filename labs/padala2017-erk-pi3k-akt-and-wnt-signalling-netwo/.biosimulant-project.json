@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "34220f11-d0a7-4458-975f-fc0adbe96e59",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "916c19cb-41f4-49d7-ba0d-ceb252f6bf34",
+  "created_at": "2026-05-16T05:46:10.812357563+00:00",
+  "last_synced_at": "2026-05-16T10:36:05.156604+00:00",
+  "hub_manifest_hash": "118fb1a467ae87f9630d3d75140ac323bc6817481a6f7d4cc318c4a4e86938a9",
+  "package_name": "padala2017-erk-pi3k-akt-and-wnt-signalling-network-normal-lab"
+}

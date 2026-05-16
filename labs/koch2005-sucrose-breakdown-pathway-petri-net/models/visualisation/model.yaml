@@ -1,0 +1,67 @@
+schema_version: '2.0'
+title: Koch2005 - Sucrose breakdown pathway - Petri net Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Koch2005 - Sucrose breakdown pathway - Petri net.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_koch2005_sucrose_breakdown_pathway_petri_net_model1308080002_model
+    title: Koch2005 - Sucrose breakdown pathway - Petri net
+    context: metabolic and hormone signaling response
+    question: How does Koch2005 - Sucrose breakdown pathway - Petri net shift hormone-linked
+      signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      sucrose: float
+      source_defined_esuc_state: float
+      glucose: float
+      source_defined_frc_state: float
+      udpglc: float
+      g6p: float
+      f6p: float
+      g1p: float
+      source_defined_udp_state: float
+      source_defined_utp_state: float
+      atp: float
+      adp: float
+      s6p: float
+      source_defined_pi_state: float
+      source_defined_pp_state: float
+      starch: float
+      amp: float
+    species_labels:
+      sucrose: sucrose
+      source_defined_esuc_state: source-defined ESUC state
+      glucose: glucose
+      source_defined_frc_state: source-defined FRC state
+      udpglc: Udpglc
+      g6p: G6P
+      f6p: F6P
+      g1p: G1P
+      source_defined_udp_state: source-defined UDP state
+      source_defined_utp_state: source-defined UTP state
+      atp: ATP
+      adp: ADP
+      s6p: S6P
+      source_defined_pi_state: source-defined PI state
+      source_defined_pp_state: source-defined PP state
+      starch: Starch
+      amp: AMP
+io:
+  inputs: []
+  outputs: []

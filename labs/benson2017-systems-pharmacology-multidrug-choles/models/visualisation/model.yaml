@@ -1,0 +1,99 @@
+schema_version: '2.0'
+title: Benson2017 - Systems Pharmacology Multidrug (cholesterol biosynthesis pathway)
+  Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+- pharmacology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_benson2017_systems_pharmacology_multidrug_choles_model1506220000_model
+    title: Benson2017 - Systems Pharmacology Multidrug (cholesterol biosynthesis pathway)
+    context: metabolic and hormone signaling response
+    question: How does Benson2017 - Systems Pharmacology Multidrug (cholesterol biosynthesis
+      pathway) shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_3_hydroxy_3_methylglutaryl_co_a: float
+      presqualene_pp: float
+      squalene: float
+      source_defined_fdft1_state: float
+      mevalonate_p: float
+      source_defined_mvk_state: float
+      mevalonate_pp: float
+      source_defined_pmvk_state: float
+      isopentenyl_pp: float
+      source_defined_mvd_state: float
+      dimethylallyl_pp: float
+      geranyl_pp: float
+      source_defined_fdps_state: float
+      source_defined_ggps1_state: float
+      source_defined_idi2_state: float
+      source_defined_idi1_state: float
+      geranylgeranyl_pp: float
+      acetyl_co_a: float
+      hmgcr: float
+      acetoacetyl_co_a: float
+      hmgcs1: float
+      mevaldyl_co_a: float
+      mevalonate: float
+      farnesyl_pp: float
+      l_659_699: float
+      rosuvastatin: float
+      farnesyl_thiodiphosphate: float
+      cinnamic_acid: float
+      source_6_fluoromevalonate_5_diphosphate: float
+      zoledronic_acid: float
+      bph_628: float
+      zaragozic_acid: float
+    species_labels:
+      source_3_hydroxy_3_methylglutaryl_co_a: 3 Hydroxy 3 Methylglutaryl Co A
+      presqualene_pp: Presqualene PP
+      squalene: Squalene
+      source_defined_fdft1_state: source-defined FDFT1 state
+      mevalonate_p: Mevalonate P
+      source_defined_mvk_state: source-defined MVK state
+      mevalonate_pp: Mevalonate PP
+      source_defined_pmvk_state: source-defined PMVK state
+      isopentenyl_pp: Isopentenyl PP
+      source_defined_mvd_state: source-defined MVD state
+      dimethylallyl_pp: Dimethylallyl PP
+      geranyl_pp: Geranyl PP
+      source_defined_fdps_state: source-defined FDPS state
+      source_defined_ggps1_state: source-defined GGPS1 state
+      source_defined_idi2_state: source-defined IDI2 state
+      source_defined_idi1_state: source-defined IDI1 state
+      geranylgeranyl_pp: Geranylgeranyl PP
+      acetyl_co_a: Acetyl Co A
+      hmgcr: HMGCR
+      acetoacetyl_co_a: Acetoacetyl Co A
+      hmgcs1: HMGCS1
+      mevaldyl_co_a: Mevaldyl Co A
+      mevalonate: Mevalonate
+      farnesyl_pp: Farnesyl PP
+      l_659_699: L 659 699
+      rosuvastatin: Rosuvastatin
+      farnesyl_thiodiphosphate: Farnesyl Thiodiphosphate
+      cinnamic_acid: Cinnamic Acid
+      source_6_fluoromevalonate_5_diphosphate: 6 Fluoromevalonate 5 Diphosphate
+      zoledronic_acid: Zoledronic Acid
+      bph_628: BPH 628
+      zaragozic_acid: Zaragozic Acid
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "dfb24bbe-7b07-4e4a-a347-8da022679379",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b25a6048-2273-4519-8387-9dc6e8e3dc92",
+  "created_at": "2026-05-15T19:08:09.205357392+00:00",
+  "last_synced_at": "2026-05-16T09:19:35.955563+00:00",
+  "hub_manifest_hash": "a5a266b09d1a5b723463d272f2e84508de6953610caf43d2081148578f41ad25",
+  "package_name": "capuani2015-binding-of-cbl-and-gbr2-to-egfr-multisite-phosphoryl"
+}

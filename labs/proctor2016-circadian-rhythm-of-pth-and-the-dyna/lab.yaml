@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Proctor2016 - Circadian rhythm of PTH and the dynamics of signaling molecules
+  on bone remodeling Lab
+description: Clean Biosimulant lab for circadian regulatory signaling. Values are
+  native SBML quantities; equations, parameters, and initial values remain in the
+  bundled source file.
+models:
+- alias: signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model.state
+  to:
+  - visualisation.signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model_state
+- from: signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model.summary
+  to:
+  - visualisation.signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model_summary
+- from: signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model.species_labels
+  to:
+  - visualisation.signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- circadian
+- physiology
+io:
+  inputs:
+  - name: initial_kact_tgf_beta_level
+    maps_to: signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model.initial_kact_tgf_beta_level
+    label: Kact TGF-beta
+    description: Kact TGF-beta source parameter. Maps to SBML symbol `kactTgfb` and
+      preserves the bundled default.
+  - name: initial_sink_species
+    maps_to: signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model.initial_sink_species
+    label: Initial sink species
+    description: Initial level of sink species. Maps to SBML symbol `Sink`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_source
+    maps_to: signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model.initial_source
+    label: Initial Source
+    description: Initial level of Source. Maps to SBML symbol `Source`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_bone_state
+    maps_to: signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model.source_defined_bone_state
+    label: Source Defined BONE State
+    description: Source Defined BONE State. Maps to SBML symbol `Bone` and is emitted
+      in native SBML units.
+  - name: source_defined_hsc_state
+    maps_to: signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model.source_defined_hsc_state
+    label: Source Defined HSC State
+    description: Source Defined HSC State. Maps to SBML symbol `HSC` and is emitted
+      in native SBML units.
+  - name: source_defined_ob_m_state
+    maps_to: signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model.source_defined_ob_m_state
+    label: Source Defined OB M State
+    description: Source Defined OB M State. Maps to SBML symbol `Ob_m` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model.species_labels
+    label: Observable labels

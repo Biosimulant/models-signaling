@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Hingant2014 - Micellar On-Pathway Intermediate in Prion Amyloid Formation Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Hingant2014 - Micellar On-Pathway Intermediate in Prion Amyloid Formation.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_hingant2014_micellar_on_pathway_intermediate_in_model1409230001_model
+    title: Hingant2014 - Micellar On-Pathway Intermediate in Prion Amyloid Formation
+    context: metabolic and hormone signaling response
+    question: How does Hingant2014 - Micellar On-Pathway Intermediate in Prion Amyloid
+      Formation shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_m1_state: float
+      source_defined_p1_state: float
+      source_defined_pn_state: float
+      source_defined_mi_state: float
+      source_defined_mi_1_state: float
+      source_defined_pi_state: float
+      source_defined_pi_1_state: float
+      source_defined_pi_j_state: float
+      source_defined_pj_state: float
+    species_labels:
+      source_defined_m1_state: source-defined M1 state
+      source_defined_p1_state: source-defined P1 state
+      source_defined_pn_state: source-defined PN state
+      source_defined_mi_state: source-defined MI state
+      source_defined_mi_1_state: source-defined MI+1 state
+      source_defined_pi_state: source-defined PI state
+      source_defined_pi_1_state: source-defined PI+1 state
+      source_defined_pi_j_state: source-defined PI-J state
+      source_defined_pj_state: source-defined PJ state
+io:
+  inputs: []
+  outputs: []

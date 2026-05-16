@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Lemaire2004 - Role of RANK/RANKL/OPG pathway in bone remodelling process
+description: 'This a model from the article: Modeling the interactions between osteoblast
+  and osteoclast activities in bone remodeling. Lemaire V, Tobin FL, Greller LD, Cho
+  CR, Suva LJ.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- physiology
+authors:
+- Biosimulant Team
+- Vincent Lemaire
+- Frank L Tobin
+- Larry D Greller
+- Carolyn R Cho
+- Larry J Suva
+upstream:
+  id: biomodels_ebi:BIOMD0000000278
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000278
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000278
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000278?filename=BIOMD0000000278_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.lemaire2004_role_of_rank_rankl_opg_pathway_in_bo:Lemaire2004RoleOfRankRanklOpgPathwayInBoBiomd0000000278Model
+  init_kwargs:
+    model_path: data/BIOMD0000000278.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_responding_osteoblasts
+    maps_to: signaling_sbml_lemaire2004_role_of_rank_rankl_opg_pathway_in_bo_biomd0000000278_model.initial_responding_osteoblasts
+    label: Initial Responding Osteoblasts
+    description: Initial level of Responding Osteoblasts. Maps to SBML symbol `R`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: active_osteoblasts
+    maps_to: signaling_sbml_lemaire2004_role_of_rank_rankl_opg_pathway_in_bo_biomd0000000278_model.active_osteoblasts
+    label: active Osteoblasts
+    description: active Osteoblasts. Maps to SBML symbol `B` and is emitted in native
+      SBML units.
+  - name: active_osteoclasts
+    maps_to: signaling_sbml_lemaire2004_role_of_rank_rankl_opg_pathway_in_bo_biomd0000000278_model.active_osteoclasts
+    label: active Osteoclasts
+    description: active Osteoclasts. Maps to SBML symbol `C` and is emitted in native
+      SBML units.
+  - name: responding_osteoblasts
+    maps_to: signaling_sbml_lemaire2004_role_of_rank_rankl_opg_pathway_in_bo_biomd0000000278_model.responding_osteoblasts
+    label: Responding Osteoblasts
+    description: Responding Osteoblasts. Maps to SBML symbol `R` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_lemaire2004_role_of_rank_rankl_opg_pathway_in_bo_biomd0000000278_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_lemaire2004_role_of_rank_rankl_opg_pathway_in_bo_biomd0000000278_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_lemaire2004_role_of_rank_rankl_opg_pathway_in_bo_biomd0000000278_model.species_labels
+    label: Observable labels

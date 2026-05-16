@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Benary2019 - Controlling NFKB dynamics by B-TrCP Visualisation
+description: Question-and-answer and chart visualisation for NF-kB pathway signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_benary2019_controlling_nfkb_dynamics_by_b_trcp_biomd0000000794_model
+    title: Benary2019 - Controlling NFKB dynamics by B-TrCP
+    context: NF-kB activation and feedback signaling
+    question: How does Benary2019 - Controlling NFKB dynamics by B-TrCP move NF-kB
+      and inhibitor-linked signaling states?
+    visual_scope: NF-kB activation and feedback signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      ikk_neutral: float
+      ikk_active: float
+      ikk_inact: float
+      ikkactive_ik_b: float
+      ikb: float
+      ikkactive_ik_b_nfkb: float
+      ik_b_nfkb: float
+      nfkb: float
+      nfkb_nuc: float
+      ik_b_nuc: float
+      ik_b_nfkb_nuc: float
+      ik_b_m_rna: float
+      a20_m_rna: float
+      abstract_source_state_a20: float
+      tnf: float
+      cgen_m_rna: float
+      b_tr_cp: float
+    species_labels:
+      ikk_neutral: IKK Neutral
+      ikk_active: IKK active
+      ikk_inact: IKK Inact
+      ikkactive_ik_b: Ikkactive Ik B
+      ikb: IkB
+      ikkactive_ik_b_nfkb: Ikkactive Ik B NF-kB
+      ik_b_nfkb: Ik B NF-kB
+      nfkb: NF-kB
+      nfkb_nuc: NF-kB Nuc
+      ik_b_nuc: Ik B Nuc
+      ik_b_nfkb_nuc: Ik B NF-kB Nuc
+      ik_b_m_rna: Ik B M RNA
+      a20_m_rna: A20 M RNA
+      abstract_source_state_a20: Abstract source state A20
+      tnf: TNF
+      cgen_m_rna: Cgen M RNA
+      b_tr_cp: B Tr CP
+io:
+  inputs: []
+  outputs: []

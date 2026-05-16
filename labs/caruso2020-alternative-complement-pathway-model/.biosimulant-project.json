@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8e4ee80c-e17f-432c-b28f-19c71151605c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "37cb5f94-f0ea-40e4-9f2c-5d763a33daff",
+  "created_at": "2026-05-15T19:08:09.252155449+00:00",
+  "last_synced_at": "2026-05-16T09:33:28.631248+00:00",
+  "hub_manifest_hash": "5eb4fb71fff65ce598d0141e7340d040747be870665f2049598b341e1fa4fccf",
+  "package_name": "caruso2020-alternative-complement-pathway-model-lab"
+}

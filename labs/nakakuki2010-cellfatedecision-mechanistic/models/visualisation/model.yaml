@@ -1,0 +1,130 @@
+schema_version: '2.0'
+title: Nakakuki2010_CellFateDecision_Mechanistic Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_nakakuki2010_cellfatedecision_mechanistic_biomd0000000250_model
+    title: Nakakuki2010_CellFateDecision_Mechanistic
+    context: receptor-to-MAPK cascade signaling
+    question: How does Nakakuki2010 CellFateDecision Mechanistic propagate receptor
+      or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      egf: float
+      heregulin: float
+      source_defined_a1_state: float
+      a1_2: float
+      source_defined_a2_state: float
+      a2_2: float
+      source_defined_a3_state: float
+      a3_2: float
+      duspm_rna: float
+      cytosolic_phosphorylated_erk: float
+      p_erk_c: float
+      pp_erk_c: float
+      source_defined_f_state: float
+      c_fos_c: float
+      pc_fos_c: float
+      c_fosm_rna: float
+      fm_rna: float
+      source_defined_kin_state: float
+      source_defined_kin_2_state: float
+      source_defined_pmek_state: float
+      mek: float
+      dusp_c: float
+      p_dusp_c: float
+      source_defined_rsk_c_state: float
+      p_rsk_c: float
+      source_defined_rsd_state: float
+      source_defined_rst_state: float
+      creb_n: float
+      p_creb_n: float
+      nuclear_phosphorylated_erk: float
+      p_erk_n: float
+      pp_erk_n: float
+      elk1_n: float
+      p_elk1_n: float
+      source_defined_fosn_state: float
+      source_defined_fosn_2_state: float
+      source_defined_fn_state: float
+      dusp_n: float
+      p_dusp_n: float
+      p_dusp_n_erk_n: float
+      p_dusp_n_p_erk_n: float
+      p_dusp_n_pp_erk_n: float
+      dusp_n_erk_n: float
+      dusp_n_p_erk_n: float
+      dusp_n_pp_erk_n: float
+      pre_duspm_rna: float
+      pre_fosm_rna: float
+      pre_fm_rna: float
+      p_rsk_n: float
+    species_labels:
+      egf: EGF
+      heregulin: heregulin
+      source_defined_a1_state: source-defined A1 state
+      a1_2: A1 2
+      source_defined_a2_state: source-defined A2 state
+      a2_2: A2 2
+      source_defined_a3_state: source-defined A3 state
+      a3_2: A3 2
+      duspm_rna: Duspm RNA
+      cytosolic_phosphorylated_erk: cytosolic phosphorylated ERK
+      p_erk_c: P ERK C
+      pp_erk_c: Pp ERK C
+      source_defined_f_state: source-defined F state
+      c_fos_c: C FOS C
+      pc_fos_c: Pc FOS C
+      c_fosm_rna: C Fosm RNA
+      fm_rna: Fm RNA
+      source_defined_kin_state: source-defined KIN state
+      source_defined_kin_2_state: source-defined KIN_2 state
+      source_defined_pmek_state: source-defined PMEK state
+      mek: MEK
+      dusp_c: DUSP C
+      p_dusp_c: P DUSP C
+      source_defined_rsk_c_state: source-defined RSK_C state
+      p_rsk_c: P RSK C
+      source_defined_rsd_state: source-defined RSD state
+      source_defined_rst_state: source-defined RST state
+      creb_n: CREB N
+      p_creb_n: P CREB N
+      nuclear_phosphorylated_erk: nuclear phosphorylated ERK
+      p_erk_n: P ERK N
+      pp_erk_n: Pp ERK N
+      elk1_n: Elk1 N
+      p_elk1_n: P Elk1 N
+      source_defined_fosn_state: source-defined FOSN state
+      source_defined_fosn_2_state: source-defined FOSN_2 state
+      source_defined_fn_state: source-defined FN state
+      dusp_n: DUSP N
+      p_dusp_n: P DUSP N
+      p_dusp_n_erk_n: P DUSP N ERK N
+      p_dusp_n_p_erk_n: P DUSP N P ERK N
+      p_dusp_n_pp_erk_n: P DUSP N Pp ERK N
+      dusp_n_erk_n: DUSP N ERK N
+      dusp_n_p_erk_n: DUSP N P ERK N
+      dusp_n_pp_erk_n: DUSP N Pp ERK N
+      pre_duspm_rna: Pre Duspm RNA
+      pre_fosm_rna: Pre Fosm RNA
+      pre_fm_rna: Pre Fm RNA
+      p_rsk_n: P RSK N
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "57e8da1b-f9e9-4263-94e2-5de120593651",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6e45e7d2-e60f-4b12-9fbf-fc9203eddb99",
+  "created_at": "2026-05-15T19:08:08.538567793+00:00",
+  "last_synced_at": "2026-05-16T08:30:55.803116+00:00",
+  "hub_manifest_hash": "498154c38f8a7dbe4275db82ddcdcedd5f134e5e648eddbab63401fd351a1aae",
+  "package_name": "ajay-bhalla-2007-bistable-lab"
+}

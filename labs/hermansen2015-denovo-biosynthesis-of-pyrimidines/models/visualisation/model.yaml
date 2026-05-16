@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Hermansen2015 - denovo biosynthesis of pyrimidines in yeast Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Hermansen2015 - denovo biosynthesis of pyrimidines in yeast.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_hermansen2015_denovo_biosynthesis_of_pyrimidines_biomd0000000590_model
+    title: Hermansen2015 - denovo biosynthesis of pyrimidines in yeast
+    context: metabolic and hormone signaling response
+    question: How does Hermansen2015 - denovo biosynthesis of pyrimidines in yeast
+      shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_cp_state: float
+      calcium: float
+      dihydroorotate: float
+      orotate: float
+      source_defined_omp_state: float
+      source_defined_ump_state: float
+      source_defined_udp_state: float
+      source_defined_utp_state: float
+      source_defined_ctp_state: float
+    species_labels:
+      source_defined_cp_state: source-defined CP state
+      calcium: calcium
+      dihydroorotate: dihydroorotate
+      orotate: orotate
+      source_defined_omp_state: source-defined OMP state
+      source_defined_ump_state: source-defined UMP state
+      source_defined_udp_state: source-defined UDP state
+      source_defined_utp_state: source-defined UTP state
+      source_defined_ctp_state: source-defined CTP state
+io:
+  inputs: []
+  outputs: []

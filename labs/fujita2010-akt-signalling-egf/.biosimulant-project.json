@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4bf47fa4-2a51-44b6-9809-bc224a381dea",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a4fdaf95-3f15-4f65-b9f7-9e95d6b43838",
+  "created_at": "2026-05-15T19:08:09.565660021+00:00",
+  "last_synced_at": "2026-05-16T09:36:51.762739+00:00",
+  "hub_manifest_hash": "f8150351ed3a397757ec4b1d3d4f626991d8ff8267196bb837172e24bac7bd0a",
+  "package_name": "fujita2010-akt-signalling-egf-lab"
+}

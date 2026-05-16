@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Grigolon2018-Responses to auxin signals
+description: Plants depend on the signalling of the phytohormone auxin for their development
+  and for responding to environmental perturbations. The associated biomolecular signalling
+  network involves a negative fe.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- plant-signaling
+- hormone-signaling
+- physiology
+authors:
+- Biosimulant Team
+- S Grigolon
+- B Bravi
+- O C Martin
+upstream:
+  id: biomodels_ebi:BIOMD0000000927
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000927
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000927
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000927?filename=Grigolon2018_fig1b.xml
+  license: CC0
+biosim:
+  entrypoint: src.grigolon2018_responses_to_auxin_signals:Grigolon2018ResponsesToAuxinSignalsBiomd0000000927Model
+  init_kwargs:
+    model_path: data/BIOMD0000000927.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_sauxin_level
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.initial_sauxin_level
+    label: Sauxin
+    description: Sauxin source parameter. Maps to SBML symbol `Sauxin` and preserves
+      the bundled default.
+  - name: initial_tauxin_level
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.initial_tauxin_level
+    label: Tauxin
+    description: Tauxin source parameter. Maps to SBML symbol `Tauxin` and preserves
+      the bundled default.
+  - name: initial_auxin
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.initial_auxin
+    label: Initial Auxin
+    description: Initial level of Auxin. Maps to SBML symbol `auxin`; exposed as a
+      traceable initial-condition perturbation.
+  outputs:
+  - name: auxin
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.auxin
+    label: Auxin
+    description: Auxin. Maps to SBML symbol `auxin` and is emitted in native SBML
+      units.
+  - name: indole_3_acetic_acid
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.indole_3_acetic_acid
+    label: indole-3-acetic acid
+    description: indole-3-acetic acid. Maps to SBML symbol `IAA` and is emitted in
+      native SBML units.
+  - name: auxin_response_factor
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.auxin_response_factor
+    label: auxin response factor
+    description: auxin response factor. Maps to SBML symbol `ARF` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.species_labels
+    label: Observable labels

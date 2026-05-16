@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e71a36ed-f42d-4013-8915-6ffcc747896b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ee3cf1aa-5bda-4d5b-abd9-28a83eea0124",
+  "created_at": "2026-05-16T05:58:26.952881051+00:00",
+  "last_synced_at": "2026-05-16T11:02:34.609677+00:00",
+  "hub_manifest_hash": "c498047682fa9f2945cbf8a9cd96ba75b6e6aa05ee62447ea84e85374cb6b4d9",
+  "package_name": "schwarz2018-cdk-activity-threshold-determines-passage-through-th"
+}

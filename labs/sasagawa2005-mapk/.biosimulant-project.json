@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f63e5b69-30b8-4f8a-bcf2-e8f56cb898ef",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9bea2c2b-7b9e-4fbb-ac32-835aa6cacefd",
+  "created_at": "2026-05-16T05:58:26.660486814+00:00",
+  "last_synced_at": "2026-05-16T10:59:51.189469+00:00",
+  "hub_manifest_hash": "85349d7c127aae87965007f9ce93c73d10b61e987af6c689dddf12993789b71a",
+  "package_name": "sasagawa2005-mapk-lab"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d205c435-a798-4db0-b0ac-6a78d2808268",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0cc9dcde-1d66-4140-9eca-111ca8c0f2ac",
+  "created_at": "2026-05-15T19:08:09.629695523+00:00",
+  "last_synced_at": "2026-05-16T11:31:11.416126+00:00",
+  "hub_manifest_hash": "e2ba88d0b8c8eff743d2156d42e105e316addc44ea3a061a63201b0c47195dbd",
+  "package_name": "goldbeter1991-min-mit-oscil-lab"
+}

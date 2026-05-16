@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "68d92f32-2798-4e10-ac8d-2107ff175db3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "620e06d1-85a7-408c-bbb0-c63f47f63f04",
+  "created_at": "2026-05-15T19:08:10.301999480+00:00",
+  "last_synced_at": "2026-05-16T09:58:10.926355+00:00",
+  "hub_manifest_hash": "054a0494a8ba4b088a6a5ed93301c9ab3ae9381130d11b74c84b55537f818db8",
+  "package_name": "kholodenko1999-egfr-signaling-lab"
+}

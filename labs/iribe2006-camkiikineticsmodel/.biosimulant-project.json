@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2b0f9ba4-f088-45ca-a794-a8622b7b94be",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "28ce1727-0af6-4078-8d31-f7d46de7d240",
+  "created_at": "2026-05-15T19:08:10.160529811+00:00",
+  "last_synced_at": "2026-05-16T09:53:03.876712+00:00",
+  "hub_manifest_hash": "8eb14331692a2bc361aed9b957e07bd81247b6528762c74fa977a89c2e73053f",
+  "package_name": "iribe2006-camkiikineticsmodel-lab"
+}

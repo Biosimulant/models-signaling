@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "00e92dd4-15b4-45df-95cc-0279f60e56c2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5837e674-ee0a-4484-923f-6eb774a358f1",
+  "created_at": "2026-05-15T19:08:08.723882111+00:00",
+  "last_synced_at": "2026-05-16T08:57:49.498357+00:00",
+  "hub_manifest_hash": "694cd83bba0f1d787e17a33a9ae01478c0c3d7d7ab50c065b37537b4d3813301",
+  "package_name": "basak-cell-2007-lab"
+}

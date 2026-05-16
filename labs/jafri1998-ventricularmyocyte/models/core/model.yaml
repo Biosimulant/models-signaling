@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Jafri1998_VentricularMyocyte
+description: 'This a model from the article: Cardiac Ca2+ dynamics: the roles of ryanodine
+  receptor adaptation andsarcoplasmic reticulum load. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+- gpcr
+- physiology
+authors:
+- Biosimulant Team
+- M Saleet Jafri
+- J J Rice
+- R L Winslow
+upstream:
+  id: biomodels_ebi:MODEL0847869198
+  source_db: biomodels_ebi
+  source_id: MODEL0847869198
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0847869198
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0847869198?filename=MODEL0847869198_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.jafri1998_ventricularmyocyte:Jafri1998VentricularmyocyteModel0847869198Model
+  init_kwargs:
+    model_path: data/MODEL0847869198.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_v_membrane
+    maps_to: signaling_sbml_jafri1998_ventricularmyocyte_model0847869198_model.initial_v_membrane
+    label: Initial V Membrane
+    description: Initial level of V Membrane. Maps to SBML symbol `V_membrane`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_c_ca0_state
+    maps_to: signaling_sbml_jafri1998_ventricularmyocyte_model0847869198_model.source_defined_c_ca0_state
+    label: source-defined C_CA0 state
+    description: source-defined C_CA0 state. Maps to SBML symbol `C_Ca0` and is emitted
+      in native SBML units.
+  - name: source_defined_c_ca1_state
+    maps_to: signaling_sbml_jafri1998_ventricularmyocyte_model0847869198_model.source_defined_c_ca1_state
+    label: source-defined C_CA1 state
+    description: source-defined C_CA1 state. Maps to SBML symbol `C_Ca1` and is emitted
+      in native SBML units.
+  - name: source_defined_c_ca2_state
+    maps_to: signaling_sbml_jafri1998_ventricularmyocyte_model0847869198_model.source_defined_c_ca2_state
+    label: source-defined C_CA2 state
+    description: source-defined C_CA2 state. Maps to SBML symbol `C_Ca2` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_jafri1998_ventricularmyocyte_model0847869198_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_jafri1998_ventricularmyocyte_model0847869198_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_jafri1998_ventricularmyocyte_model0847869198_model.species_labels
+    label: Observable labels

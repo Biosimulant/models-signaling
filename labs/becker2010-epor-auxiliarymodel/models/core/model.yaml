@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Becker2010_EpoR_AuxiliaryModel
+description: 'This is the auxiliary model described in the article: Covering a Broad
+  Dynamic Range: Information Processing at the Erythropoietin Receptor Verena Becker,
+  Marcel Schilling, Julie Bachmann, Ute Baumann. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+authors:
+- Biosimulant Team
+- Verena Becker
+- Marcel Schilling
+- Julie Bachmann
+- Ute Baumann
+- Andreas Raue
+upstream:
+  id: biomodels_ebi:BIOMD0000000272
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000272
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000272
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000272?filename=BIOMD0000000272_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.becker2010_epor_auxiliarymodel:Becker2010EporAuxiliarymodelBiomd0000000272Model
+  init_kwargs:
+    model_path: data/BIOMD0000000272.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_epo_receptor
+    maps_to: signaling_sbml_becker2010_epor_auxiliarymodel_biomd0000000272_model.initial_epo_receptor
+    label: Initial EPO receptor
+    description: Initial level of EPO receptor. Maps to SBML symbol `EpoR`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: epo_receptor
+    maps_to: signaling_sbml_becker2010_epor_auxiliarymodel_biomd0000000272_model.epo_receptor
+    label: EPO receptor
+    description: EPO receptor. Maps to SBML symbol `EpoR` and is emitted in native
+      SBML units.
+  - name: source_defined_sav_state
+    maps_to: signaling_sbml_becker2010_epor_auxiliarymodel_biomd0000000272_model.source_defined_sav_state
+    label: source-defined SAV state
+    description: source-defined SAV state. Maps to SBML symbol `SAv` and is emitted
+      in native SBML units.
+  - name: sav_erythropoietin_r
+    maps_to: signaling_sbml_becker2010_epor_auxiliarymodel_biomd0000000272_model.sav_erythropoietin_r
+    label: Sav erythropoietin R
+    description: Sav erythropoietin R. Maps to SBML symbol `SAv_EpoR` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_becker2010_epor_auxiliarymodel_biomd0000000272_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_becker2010_epor_auxiliarymodel_biomd0000000272_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_becker2010_epor_auxiliarymodel_biomd0000000272_model.species_labels
+    label: Observable labels

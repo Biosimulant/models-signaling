@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Nakakuki2010_CellFateDecision_Mechanistic
+description: This mechanistic model describes the activation of immediate early genes
+  such as cFos after EGF or heregulin (HRG) stimulation of the MAPK pathway. Phosphorylated
+  cFos is a key transcription factor tr.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+authors:
+- Biosimulant Team
+- Takashi Nakakuki
+- Marc R Birtwistle
+- Yuko Saeki
+- Noriko Yumoto
+- Kaori Ide
+upstream:
+  id: biomodels_ebi:BIOMD0000000250
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000250
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000250
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000250?filename=BIOMD0000000250_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.nakakuki2010_cellfatedecision_mechanistic:Nakakuki2010CellfatedecisionMechanisticBiomd0000000250Model
+  init_kwargs:
+    model_path: data/BIOMD0000000250.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_egf
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_mechanistic_biomd0000000250_model.initial_egf
+    label: Initial EGF
+    description: Initial level of EGF. Maps to SBML symbol `EGF`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_heregulin
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_mechanistic_biomd0000000250_model.initial_heregulin
+    label: Initial heregulin
+    description: Initial level of heregulin. Maps to SBML symbol `HRG`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: cytosolic_phosphorylated_erk
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_mechanistic_biomd0000000250_model.cytosolic_phosphorylated_erk
+    label: cytosolic phosphorylated ERK
+    description: cytosolic phosphorylated ERK. Maps to SBML symbol `ERK_c` and is
+      emitted in native SBML units.
+  - name: p_erk_c
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_mechanistic_biomd0000000250_model.p_erk_c
+    label: P ERK C
+    description: P ERK C. Maps to SBML symbol `pERK_c` and is emitted in native SBML
+      units.
+  - name: pp_erk_c
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_mechanistic_biomd0000000250_model.pp_erk_c
+    label: Pp ERK C
+    description: Pp ERK C. Maps to SBML symbol `ppERK_c` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_mechanistic_biomd0000000250_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_mechanistic_biomd0000000250_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_nakakuki2010_cellfatedecision_mechanistic_biomd0000000250_model.species_labels
+    label: Observable labels

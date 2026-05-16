@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Fujita2010_Akt_Signalling_EGF Lab
+description: 'Clean Biosimulant lab for systems signaling model: Fujita2010_Akt_Signalling_EGF.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.state
+  to:
+  - visualisation.signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model_state
+- from: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.summary
+  to:
+  - visualisation.signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model_summary
+- from: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.species_labels
+  to:
+  - visualisation.signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- pi3k-akt
+io:
+  inputs:
+  - name: initial_egf_conc_impulse_level
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.initial_egf_conc_impulse_level
+    label: EGF Conc Impulse
+    description: EGF Conc Impulse source parameter. Maps to SBML symbol `EGF_conc_impulse`
+      and preserves the bundled default.
+  - name: initial_egf_conc_ramp_level
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.initial_egf_conc_ramp_level
+    label: EGF Conc Ramp
+    description: EGF Conc Ramp source parameter. Maps to SBML symbol `EGF_conc_ramp`
+      and preserves the bundled default.
+  - name: initial_egf_conc_step_level
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.initial_egf_conc_step_level
+    label: EGF Conc Step
+    description: EGF Conc Step source parameter. Maps to SBML symbol `EGF_conc_step`
+      and preserves the bundled default.
+  outputs:
+  - name: p_egfr_akt
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.p_egfr_akt
+    label: P EGFR AKT
+    description: P EGFR AKT. Maps to SBML symbol `pEGFR_Akt` and is emitted in native
+      SBML units.
+  - name: akt
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.akt
+    label: AKT
+    description: AKT. Maps to SBML symbol `Akt` and is emitted in native SBML units.
+  - name: source_defined_pakt_state
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.source_defined_pakt_state
+    label: source-defined PAKT state
+    description: source-defined PAKT state. Maps to SBML symbol `pAkt` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.species_labels
+    label: Observable labels

@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Dutta-Roy2015 - Opening of the multiple AMPA receptor conductance states Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Dutta-Roy2015 - Opening of the multiple AMPA receptor conductance states.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_dutta_roy2015_opening_of_the_multiple_ampa_recep_biomd0000000569_model
+    title: Dutta-Roy2015 - Opening of the multiple AMPA receptor conductance states
+    context: JAK/STAT receptor-to-transcription signaling
+    question: How does Dutta-Roy2015 - Opening of the multiple AMPA receptor conductance
+      states transmit cytokine receptor activity into STAT pathway states?
+    visual_scope: JAK/STAT receptor-to-transcription signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_b0_state: float
+      source_defined_s0_state: float
+      source_defined_b1_state: float
+      source_defined_s1_state: float
+      source_defined_b2_state: float
+      source_defined_s2_state: float
+      source_defined_b3_state: float
+      source_defined_s3_state: float
+      source_defined_b4_state: float
+      source_defined_s4_state: float
+      source_defined_m0_state: float
+      source_defined_m1_state: float
+      source_defined_m2_state: float
+      source_defined_m3_state: float
+      source_defined_m4_state: float
+      source_defined_l0_state: float
+      source_defined_l1_state: float
+      source_defined_l2_state: float
+      source_defined_l3_state: float
+      source_defined_l4_state: float
+      glutamate: float
+    species_labels:
+      source_defined_b0_state: source-defined B0 state
+      source_defined_s0_state: source-defined S0 state
+      source_defined_b1_state: source-defined B1 state
+      source_defined_s1_state: source-defined S1 state
+      source_defined_b2_state: source-defined B2 state
+      source_defined_s2_state: source-defined S2 state
+      source_defined_b3_state: source-defined B3 state
+      source_defined_s3_state: source-defined S3 state
+      source_defined_b4_state: source-defined B4 state
+      source_defined_s4_state: source-defined S4 state
+      source_defined_m0_state: source-defined M0 state
+      source_defined_m1_state: source-defined M1 state
+      source_defined_m2_state: source-defined M2 state
+      source_defined_m3_state: source-defined M3 state
+      source_defined_m4_state: source-defined M4 state
+      source_defined_l0_state: source-defined L0 state
+      source_defined_l1_state: source-defined L1 state
+      source_defined_l2_state: source-defined L2 state
+      source_defined_l3_state: source-defined L3 state
+      source_defined_l4_state: source-defined L4 state
+      glutamate: glutamate
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8e6f582e-9c2b-440c-9014-14b5d088c3d8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ca8dddac-7dc0-4cc7-9ab4-c7f8d692efa8",
+  "created_at": "2026-05-16T05:58:26.920283790+00:00",
+  "last_synced_at": "2026-05-16T11:02:19.491985+00:00",
+  "hub_manifest_hash": "fec57514d6a7d247392d8abf2eba2c6e688b3a2c39c87947f04c4663b47e68af",
+  "package_name": "schoeberl2002-egf-mapk-lab"
+}

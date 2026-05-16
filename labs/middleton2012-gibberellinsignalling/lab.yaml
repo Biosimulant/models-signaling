@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Middleton2012_GibberellinSignalling Lab
+description: 'Clean Biosimulant lab for systems signaling model: Middleton2012_GibberellinSignalling.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model.state
+  to:
+  - visualisation.signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model_state
+- from: signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model.summary
+  to:
+  - visualisation.signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model_summary
+- from: signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model.species_labels
+  to:
+  - visualisation.signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_della_source
+    maps_to: signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model.initial_della_source
+    label: Initial DELLA Source
+    description: Initial level of DELLA Source. Maps to SBML symbol `s7`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_della_source_2
+    maps_to: signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model.initial_della_source_2
+    label: Initial Della Source
+    description: Initial level of Della Source. Maps to SBML symbol `s34`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_ga12_source
+    maps_to: signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model.initial_ga12_source
+    label: Initial GA12 Source
+    description: Initial level of GA12 Source. Maps to SBML symbol `s3`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_ga4_state
+    maps_to: signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model.source_defined_ga4_state
+    label: source-defined GA4 state
+    description: source-defined GA4 state. Maps to SBML symbol `s1` and is emitted
+      in native SBML units.
+  - name: source_defined_gid_state
+    maps_to: signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model.source_defined_gid_state
+    label: source-defined GID state
+    description: source-defined GID state. Maps to SBML symbol `s2` and is emitted
+      in native SBML units.
+  - name: della
+    maps_to: signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model.della
+    label: DELLA
+    description: DELLA. Maps to SBML symbol `s16` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model.species_labels
+    label: Observable labels

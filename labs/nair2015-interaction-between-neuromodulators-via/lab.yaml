@@ -1,0 +1,78 @@
+schema_version: '2.0'
+title: Nair2015 - Interaction between neuromodulators via GPCRs - Effect on cAMP/PKA
+  signaling (D1 Neuron) Lab
+description: 'Clean Biosimulant lab for systems signaling model: Nair2015 - Interaction
+  between neuromodulators via GPCRs - Effect on cAMP/PKA signaling (D1 Neuron). Values
+  are native SBML quantities; equations, parameters, and initial values remain in
+  the bundled source file.'
+models:
+- alias: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model.state
+  to:
+  - visualisation.signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model_state
+- from: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model.summary
+  to:
+  - visualisation.signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model_summary
+- from: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model.species_labels
+  to:
+  - visualisation.signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- camp-pka
+- neuroscience
+- physiology
+io:
+  inputs:
+  - name: initial_acetylcholine
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model.initial_acetylcholine
+    label: Initial acetylcholine
+    description: Initial level of acetylcholine. Maps to SBML symbol `mw3e1a2fbf_37b1_490c_9528_6cb6bbf11b21`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_amp
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model.initial_amp
+    label: Initial AMP
+    description: Initial level of AMP. Maps to SBML symbol `mw9710c658_a2a1_4f49_b494_af109853f251`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_atp
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model.initial_atp
+    label: Initial ATP
+    description: Initial level of ATP. Maps to SBML symbol `mw46dccec6_6f0f_40f6_a10c_2f34ae7a005a`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: golf_g_protein
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model.golf_g_protein
+    label: Golf G protein
+    description: Golf G protein. Maps to SBML symbol `mw351f6cee_3e64_4b8e_8e60_24b1aca99a92`
+      and is emitted in native SBML units.
+  - name: camp
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model.camp
+    label: cAMP
+    description: cAMP. Maps to SBML symbol `mw1c97b02d_169a_4eb8_bc84_1be57c51a255`
+      and is emitted in native SBML units.
+  - name: source_defined_ac5_state
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model.source_defined_ac5_state
+    label: source-defined AC5 state
+    description: source-defined AC5 state. Maps to SBML symbol `mw724f1afe_8032_40ae_96ca_808ab7b8b943`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000635_model.species_labels
+    label: Observable labels

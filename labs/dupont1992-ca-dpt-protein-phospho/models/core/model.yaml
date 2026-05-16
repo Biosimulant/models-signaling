@@ -1,0 +1,68 @@
+schema_version: '2.0'
+title: Dupont1992_Ca_dpt_protein_phospho
+description: Model reproduces Fig 4 of the paper. For fraction of phosphorylated protein,
+  W_star, the model reproduces panel b in the same figure.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- G Dupont
+- A Goldbeter
+upstream:
+  id: biomodels_ebi:BIOMD0000000113
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000113
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000113
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000113?filename=BIOMD0000000113_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.dupont1992_ca_dpt_protein_phospho:Dupont1992CaDptProteinPhosphoBiomd0000000113Model
+  init_kwargs:
+    model_path: data/BIOMD0000000113.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_z_state
+    maps_to: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.initial_source_defined_z_state
+    label: Initial source-defined Z state
+    description: Initial level of source-defined Z state. Maps to SBML symbol `Z`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: phosphorylated_protein
+    maps_to: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.phosphorylated_protein
+    label: Phosphorylated Protein
+    description: Phosphorylated Protein. Maps to SBML symbol `W_star` and is emitted
+      in native SBML units.
+  - name: total_protein
+    maps_to: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.total_protein
+    label: Total Protein
+    description: Total Protein. Maps to SBML symbol `Wt` and is emitted in native
+      SBML units.
+  - name: source_defined_z_state
+    maps_to: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.source_defined_z_state
+    label: Source Defined Z State
+    description: Source Defined Z State. Maps to SBML symbol `Z` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.species_labels
+    label: Observable labels

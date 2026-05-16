@@ -1,0 +1,49 @@
+schema_version: '2.0'
+title: Cursons2015 - Regulation of ERK-MAPK signaling in human epidermis Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+- calcium-signaling
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_cursons2015_regulation_of_erk_mapk_signaling_in_biomd0000000659_model
+    title: Cursons2015 - Regulation of ERK-MAPK signaling in human epidermis
+    context: receptor-to-MAPK cascade signaling
+    question: How does Cursons2015 - Regulation of ERK-MAPK signaling in human epidermis
+      propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_rafc_state: float
+      source_defined_mekc_state: float
+      cytosolic_phosphorylated_erk: float
+      source_defined_mekn_state: float
+      nuclear_phosphorylated_erk: float
+      calcium: float
+      calmodulin: float
+    species_labels:
+      source_defined_rafc_state: source-defined RAFC state
+      source_defined_mekc_state: source-defined MEKC state
+      cytosolic_phosphorylated_erk: cytosolic phosphorylated ERK
+      source_defined_mekn_state: source-defined MEKN state
+      nuclear_phosphorylated_erk: nuclear phosphorylated ERK
+      calcium: calcium
+      calmodulin: calmodulin
+io:
+  inputs: []
+  outputs: []

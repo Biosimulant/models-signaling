@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Adlung2021 - Cell-to-cell variability in JAK2/STAT5 pathway Lab
+description: Clean Biosimulant lab for JAK/STAT cytokine signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_adlung2021_cell_to_cell_variability_in_jak2_stat_biomd0000001077_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_adlung2021_cell_to_cell_variability_in_jak2_stat_biomd0000001077_model.state
+  to:
+  - visualisation.signaling_sbml_adlung2021_cell_to_cell_variability_in_jak2_stat_biomd0000001077_model_state
+- from: signaling_sbml_adlung2021_cell_to_cell_variability_in_jak2_stat_biomd0000001077_model.summary
+  to:
+  - visualisation.signaling_sbml_adlung2021_cell_to_cell_variability_in_jak2_stat_biomd0000001077_model_summary
+- from: signaling_sbml_adlung2021_cell_to_cell_variability_in_jak2_stat_biomd0000001077_model.species_labels
+  to:
+  - visualisation.signaling_sbml_adlung2021_cell_to_cell_variability_in_jak2_stat_biomd0000001077_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- jak-stat
+io:
+  inputs:
+  - name: initial_epo_receptor_jak2_complex
+    maps_to: signaling_sbml_adlung2021_cell_to_cell_variability_in_jak2_stat_biomd0000001077_model.initial_epo_receptor_jak2_complex
+    label: Initial EPO receptor-JAK2 complex
+    description: Initial level of EPO receptor-JAK2 complex. Maps to SBML symbol `EpoRJAK2`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: stat5
+    maps_to: signaling_sbml_adlung2021_cell_to_cell_variability_in_jak2_stat_biomd0000001077_model.stat5
+    label: STAT5
+    description: STAT5. Maps to SBML symbol `STAT5` and is emitted in native SBML
+      units.
+  - name: phosphorylated_stat5
+    maps_to: signaling_sbml_adlung2021_cell_to_cell_variability_in_jak2_stat_biomd0000001077_model.phosphorylated_stat5
+    label: phosphorylated STAT5
+    description: phosphorylated STAT5. Maps to SBML symbol `pSTAT5` and is emitted
+      in native SBML units.
+  - name: nuclear_phosphorylated_stat5
+    maps_to: signaling_sbml_adlung2021_cell_to_cell_variability_in_jak2_stat_biomd0000001077_model.nuclear_phosphorylated_stat5
+    label: nuclear phosphorylated STAT5
+    description: nuclear phosphorylated STAT5. Maps to SBML symbol `npSTAT5` and is
+      emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_adlung2021_cell_to_cell_variability_in_jak2_stat_biomd0000001077_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_adlung2021_cell_to_cell_variability_in_jak2_stat_biomd0000001077_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_adlung2021_cell_to_cell_variability_in_jak2_stat_biomd0000001077_model.species_labels
+    label: Observable labels

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e75ec411-9bde-4df7-b4fe-99be38c1ac3f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "92ce095f-eb50-4b62-b0c9-c2fccbfaeaad",
+  "created_at": "2026-05-15T19:08:09.738464089+00:00",
+  "last_synced_at": "2026-05-16T09:42:15.195635+00:00",
+  "hub_manifest_hash": "72795a3c1e0cc2755d9690e580d9556c141e30288a32817d88a98e3379ea648e",
+  "package_name": "grigolon2018-responses-to-auxin-signals-lab"
+}

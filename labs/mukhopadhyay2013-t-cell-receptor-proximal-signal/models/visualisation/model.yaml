@@ -1,0 +1,160 @@
+schema_version: '2.0'
+title: Mukhopadhyay2013 - T cell receptor proximal signaling reveals emergent ultrasensitivity
+  Visualisation
+description: Question-and-answer and chart visualisation for immune signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- immune-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_mukhopadhyay2013_t_cell_receptor_proximal_signal_model1604100000_model
+    title: Mukhopadhyay2013 - T cell receptor proximal signaling reveals emergent
+      ultrasensitivity
+    context: receptor-to-MAPK cascade signaling
+    question: How does Mukhopadhyay2013 - T cell receptor proximal signaling reveals
+      emergent ultrasensitivity propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      s_y1_u_y2_u_y3_u_b_0: float
+      source_defined_e_b_state: float
+      source_defined_f_b_state: float
+      source_defined_z_b_state: float
+      e_b_1_s_y1_u_1_y2_u_y3_u_b_1: float
+      s_y1_p_y2_u_y3_u_b_0: float
+      f_b_1_s_y1_p_1_y2_u_y3_u_b_1: float
+      e_b_1_s_y1_p_1_y2_u_y3_u_b_1: float
+      s_y1_2p_y2_u_y3_u_b_0: float
+      f_b_1_s_y1_2p_1_y2_u_y3_u_b_1: float
+      e_b_1_s_y1_2p_y2_u_1_y3_u_b_1: float
+      s_y1_2p_1_y2_u_y3_u_b_0_z_b_1: float
+      e_b_1_s_y1_2p_2_y2_u_1_y3_u_b_1_z_b_2: float
+      s_y1_2p_y2_p_y3_u_b_0: float
+      s_y1_2p_1_y2_p_y3_u_b_0_z_b_1: float
+      f_b_1_s_y1_2p_y2_p_1_y3_u_b_1: float
+      e_b_1_s_y1_2p_y2_p_1_y3_u_b_1: float
+      f_b_1_s_y1_2p_2_y2_p_1_y3_u_b_1_z_b_2: float
+      e_b_1_s_y1_2p_2_y2_p_1_y3_u_b_1_z_b_2: float
+      s_y1_2p_y2_2p_y3_u_b_0: float
+      s_y1_2p_1_y2_2p_y3_u_b_0_z_b_1: float
+      f_b_1_s_y1_2p_y2_2p_1_y3_u_b_1: float
+      e_b_1_s_y1_2p_y2_2p_y3_u_1_b_1: float
+      s_y1_2p_y2_2p_1_y3_u_b_0_z_b_1: float
+      f_b_1_s_y1_2p_2_y2_2p_1_y3_u_b_1_z_b_2: float
+      e_b_1_s_y1_2p_2_y2_2p_y3_u_1_b_1_z_b_2: float
+      e_b_1_s_y1_2p_y2_2p_2_y3_u_1_b_1_z_b_2: float
+      s_y1_2p_y2_2p_y3_p_b_0: float
+      s_y1_2p_1_y2_2p_2_y3_u_b_0_z_b_1_z_b_2: float
+      e_b_1_s_y1_2p_2_y2_2p_3_y3_u_1_b_1_z_b_2_z_b_3: float
+      s_y1_2p_1_y2_2p_y3_p_b_0_z_b_1: float
+      s_y1_2p_y2_2p_1_y3_p_b_0_z_b_1: float
+      f_b_1_s_y1_2p_y2_2p_y3_p_1_b_1: float
+      e_b_1_s_y1_2p_y2_2p_y3_p_1_b_1: float
+      s_y1_2p_1_y2_2p_2_y3_p_b_0_z_b_1_z_b_2: float
+      f_b_1_s_y1_2p_2_y2_2p_y3_p_1_b_1_z_b_2: float
+      f_b_1_s_y1_2p_y2_2p_2_y3_p_1_b_1_z_b_2: float
+      e_b_1_s_y1_2p_2_y2_2p_y3_p_1_b_1_z_b_2: float
+      e_b_1_s_y1_2p_y2_2p_2_y3_p_1_b_1_z_b_2: float
+      s_y1_2p_y2_2p_y3_2p_b_0: float
+      f_b_1_s_y1_2p_2_y2_2p_3_y3_p_1_b_1_z_b_2_z_b_3: float
+      e_b_1_s_y1_2p_2_y2_2p_3_y3_p_1_b_1_z_b_2_z_b_3: float
+      s_y1_2p_1_y2_2p_y3_2p_b_0_z_b_1: float
+      s_y1_2p_y2_2p_1_y3_2p_b_0_z_b_1: float
+      f_b_1_s_y1_2p_y2_2p_y3_2p_1_b_1: float
+      s_y1_2p_y2_2p_y3_2p_1_b_0_z_b_1: float
+      s_y1_2p_1_y2_2p_2_y3_2p_b_0_z_b_1_z_b_2: float
+      f_b_1_s_y1_2p_2_y2_2p_y3_2p_1_b_1_z_b_2: float
+      f_b_1_s_y1_2p_y2_2p_2_y3_2p_1_b_1_z_b_2: float
+      s_y1_2p_1_y2_2p_y3_2p_2_b_0_z_b_1_z_b_2: float
+      s_y1_2p_y2_2p_1_y3_2p_2_b_0_z_b_1_z_b_2: float
+      f_b_1_s_y1_2p_2_y2_2p_3_y3_2p_1_b_1_z_b_2_z_b_3: float
+      s_y1_2p_1_y2_2p_2_y3_2p_3_b_0_z_b_1_z_b_2_z_b_3: float
+    species_labels:
+      s_y1_u_y2_u_y3_u_b_0: S Y1 U Y2 U Y3 U B 0
+      source_defined_e_b_state: source-defined E(B) state
+      source_defined_f_b_state: source-defined F(B) state
+      source_defined_z_b_state: source-defined Z(B) state
+      e_b_1_s_y1_u_1_y2_u_y3_u_b_1: E B 1 S Y1 U 1 Y2 U Y3 U B 1
+      s_y1_p_y2_u_y3_u_b_0: S Y1 P Y2 U Y3 U B 0
+      f_b_1_s_y1_p_1_y2_u_y3_u_b_1: F B 1 S Y1 P 1 Y2 U Y3 U B 1
+      e_b_1_s_y1_p_1_y2_u_y3_u_b_1: E B 1 S Y1 P 1 Y2 U Y3 U B 1
+      s_y1_2p_y2_u_y3_u_b_0: S Y1 2P Y2 U Y3 U B 0
+      f_b_1_s_y1_2p_1_y2_u_y3_u_b_1: F B 1 S Y1 2P 1 Y2 U Y3 U B 1
+      e_b_1_s_y1_2p_y2_u_1_y3_u_b_1: E B 1 S Y1 2P Y2 U 1 Y3 U B 1
+      s_y1_2p_1_y2_u_y3_u_b_0_z_b_1: S Y1 2P 1 Y2 U Y3 U B 0 Z B 1
+      e_b_1_s_y1_2p_2_y2_u_1_y3_u_b_1_z_b_2: E B 1 S Y1 2P 2 Y2 U 1 Y3 U B 1 Z B 2
+      s_y1_2p_y2_p_y3_u_b_0: S Y1 2P Y2 P Y3 U B 0
+      s_y1_2p_1_y2_p_y3_u_b_0_z_b_1: S Y1 2P 1 Y2 P Y3 U B 0 Z B 1
+      f_b_1_s_y1_2p_y2_p_1_y3_u_b_1: F B 1 S Y1 2P Y2 P 1 Y3 U B 1
+      e_b_1_s_y1_2p_y2_p_1_y3_u_b_1: E B 1 S Y1 2P Y2 P 1 Y3 U B 1
+      f_b_1_s_y1_2p_2_y2_p_1_y3_u_b_1_z_b_2: F B 1 S Y1 2P 2 Y2 P 1 Y3 U B 1 Z B 2
+      e_b_1_s_y1_2p_2_y2_p_1_y3_u_b_1_z_b_2: E B 1 S Y1 2P 2 Y2 P 1 Y3 U B 1 Z B 2
+      s_y1_2p_y2_2p_y3_u_b_0: S Y1 2P Y2 2P Y3 U B 0
+      s_y1_2p_1_y2_2p_y3_u_b_0_z_b_1: S Y1 2P 1 Y2 2P Y3 U B 0 Z B 1
+      f_b_1_s_y1_2p_y2_2p_1_y3_u_b_1: F B 1 S Y1 2P Y2 2P 1 Y3 U B 1
+      e_b_1_s_y1_2p_y2_2p_y3_u_1_b_1: E B 1 S Y1 2P Y2 2P Y3 U 1 B 1
+      s_y1_2p_y2_2p_1_y3_u_b_0_z_b_1: S Y1 2P Y2 2P 1 Y3 U B 0 Z B 1
+      f_b_1_s_y1_2p_2_y2_2p_1_y3_u_b_1_z_b_2: F B 1 S Y1 2P 2 Y2 2P 1 Y3 U B 1 Z B
+        2
+      e_b_1_s_y1_2p_2_y2_2p_y3_u_1_b_1_z_b_2: E B 1 S Y1 2P 2 Y2 2P Y3 U 1 B 1 Z B
+        2
+      e_b_1_s_y1_2p_y2_2p_2_y3_u_1_b_1_z_b_2: E B 1 S Y1 2P Y2 2P 2 Y3 U 1 B 1 Z B
+        2
+      s_y1_2p_y2_2p_y3_p_b_0: S Y1 2P Y2 2P Y3 P B 0
+      s_y1_2p_1_y2_2p_2_y3_u_b_0_z_b_1_z_b_2: S Y1 2P 1 Y2 2P 2 Y3 U B 0 Z B 1 Z B
+        2
+      e_b_1_s_y1_2p_2_y2_2p_3_y3_u_1_b_1_z_b_2_z_b_3: E B 1 S Y1 2P 2 Y2 2P 3 Y3 U
+        1 B 1 Z B 2 Z B 3
+      s_y1_2p_1_y2_2p_y3_p_b_0_z_b_1: S Y1 2P 1 Y2 2P Y3 P B 0 Z B 1
+      s_y1_2p_y2_2p_1_y3_p_b_0_z_b_1: S Y1 2P Y2 2P 1 Y3 P B 0 Z B 1
+      f_b_1_s_y1_2p_y2_2p_y3_p_1_b_1: F B 1 S Y1 2P Y2 2P Y3 P 1 B 1
+      e_b_1_s_y1_2p_y2_2p_y3_p_1_b_1: E B 1 S Y1 2P Y2 2P Y3 P 1 B 1
+      s_y1_2p_1_y2_2p_2_y3_p_b_0_z_b_1_z_b_2: S Y1 2P 1 Y2 2P 2 Y3 P B 0 Z B 1 Z B
+        2
+      f_b_1_s_y1_2p_2_y2_2p_y3_p_1_b_1_z_b_2: F B 1 S Y1 2P 2 Y2 2P Y3 P 1 B 1 Z B
+        2
+      f_b_1_s_y1_2p_y2_2p_2_y3_p_1_b_1_z_b_2: F B 1 S Y1 2P Y2 2P 2 Y3 P 1 B 1 Z B
+        2
+      e_b_1_s_y1_2p_2_y2_2p_y3_p_1_b_1_z_b_2: E B 1 S Y1 2P 2 Y2 2P Y3 P 1 B 1 Z B
+        2
+      e_b_1_s_y1_2p_y2_2p_2_y3_p_1_b_1_z_b_2: E B 1 S Y1 2P Y2 2P 2 Y3 P 1 B 1 Z B
+        2
+      s_y1_2p_y2_2p_y3_2p_b_0: S Y1 2P Y2 2P Y3 2P B 0
+      f_b_1_s_y1_2p_2_y2_2p_3_y3_p_1_b_1_z_b_2_z_b_3: F B 1 S Y1 2P 2 Y2 2P 3 Y3 P
+        1 B 1 Z B 2 Z B 3
+      e_b_1_s_y1_2p_2_y2_2p_3_y3_p_1_b_1_z_b_2_z_b_3: E B 1 S Y1 2P 2 Y2 2P 3 Y3 P
+        1 B 1 Z B 2 Z B 3
+      s_y1_2p_1_y2_2p_y3_2p_b_0_z_b_1: S Y1 2P 1 Y2 2P Y3 2P B 0 Z B 1
+      s_y1_2p_y2_2p_1_y3_2p_b_0_z_b_1: S Y1 2P Y2 2P 1 Y3 2P B 0 Z B 1
+      f_b_1_s_y1_2p_y2_2p_y3_2p_1_b_1: F B 1 S Y1 2P Y2 2P Y3 2P 1 B 1
+      s_y1_2p_y2_2p_y3_2p_1_b_0_z_b_1: S Y1 2P Y2 2P Y3 2P 1 B 0 Z B 1
+      s_y1_2p_1_y2_2p_2_y3_2p_b_0_z_b_1_z_b_2: S Y1 2P 1 Y2 2P 2 Y3 2P B 0 Z B 1 Z
+        B 2
+      f_b_1_s_y1_2p_2_y2_2p_y3_2p_1_b_1_z_b_2: F B 1 S Y1 2P 2 Y2 2P Y3 2P 1 B 1 Z
+        B 2
+      f_b_1_s_y1_2p_y2_2p_2_y3_2p_1_b_1_z_b_2: F B 1 S Y1 2P Y2 2P 2 Y3 2P 1 B 1 Z
+        B 2
+      s_y1_2p_1_y2_2p_y3_2p_2_b_0_z_b_1_z_b_2: S Y1 2P 1 Y2 2P Y3 2P 2 B 0 Z B 1 Z
+        B 2
+      s_y1_2p_y2_2p_1_y3_2p_2_b_0_z_b_1_z_b_2: S Y1 2P Y2 2P 1 Y3 2P 2 B 0 Z B 1 Z
+        B 2
+      f_b_1_s_y1_2p_2_y2_2p_3_y3_2p_1_b_1_z_b_2_z_b_3: F B 1 S Y1 2P 2 Y2 2P 3 Y3
+        2P 1 B 1 Z B 2 Z B 3
+      s_y1_2p_1_y2_2p_2_y3_2p_3_b_0_z_b_1_z_b_2_z_b_3: S Y1 2P 1 Y2 2P 2 Y3 2P 3 B
+        0 Z B 1 Z B 2 Z B 3
+io:
+  inputs: []
+  outputs: []

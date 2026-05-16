@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Grigolon2018-Responses to auxin signals Lab
+description: 'Clean Biosimulant lab for systems signaling model: Grigolon2018-Responses
+  to auxin signals. Values are native SBML quantities; equations, parameters, and
+  initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.state
+  to:
+  - visualisation.signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model_state
+- from: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.summary
+  to:
+  - visualisation.signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model_summary
+- from: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.species_labels
+  to:
+  - visualisation.signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- plant-signaling
+- hormone-signaling
+- physiology
+io:
+  inputs:
+  - name: initial_sauxin_level
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.initial_sauxin_level
+    label: Sauxin
+    description: Sauxin source parameter. Maps to SBML symbol `Sauxin` and preserves
+      the bundled default.
+  - name: initial_tauxin_level
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.initial_tauxin_level
+    label: Tauxin
+    description: Tauxin source parameter. Maps to SBML symbol `Tauxin` and preserves
+      the bundled default.
+  - name: initial_auxin
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.initial_auxin
+    label: Initial Auxin
+    description: Initial level of Auxin. Maps to SBML symbol `auxin`; exposed as a
+      traceable initial-condition perturbation.
+  outputs:
+  - name: auxin
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.auxin
+    label: Auxin
+    description: Auxin. Maps to SBML symbol `auxin` and is emitted in native SBML
+      units.
+  - name: indole_3_acetic_acid
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.indole_3_acetic_acid
+    label: indole-3-acetic acid
+    description: indole-3-acetic acid. Maps to SBML symbol `IAA` and is emitted in
+      native SBML units.
+  - name: auxin_response_factor
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.auxin_response_factor
+    label: auxin response factor
+    description: auxin response factor. Maps to SBML symbol `ARF` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_grigolon2018_responses_to_auxin_signals_biomd0000000927_model.species_labels
+    label: Observable labels

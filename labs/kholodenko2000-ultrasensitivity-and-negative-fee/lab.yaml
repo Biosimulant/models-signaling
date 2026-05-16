@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Kholodenko2000 - Ultrasensitivity and negative feedback bring oscillations
+  in MAPK cascade Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model.state
+  to:
+  - visualisation.signaling_sbml_kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model_state
+- from: signaling_sbml_kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model.summary
+  to:
+  - visualisation.signaling_sbml_kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model_summary
+- from: signaling_sbml_kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model.species_labels
+  to:
+  - visualisation.signaling_sbml_kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+io:
+  inputs:
+  - name: initial_mos_kinase
+    maps_to: signaling_sbml_kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model.initial_mos_kinase
+    label: Initial Mos kinase
+    description: Initial level of Mos kinase. Maps to SBML symbol `MKKK`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_erk2_state
+    maps_to: signaling_sbml_kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model.source_defined_erk2_state
+    label: source-defined ERK2 state
+    description: source-defined ERK2 state. Maps to SBML symbol `MAPK` and is emitted
+      in native SBML units.
+  - name: erk2_p
+    maps_to: signaling_sbml_kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model.erk2_p
+    label: Erk2 P
+    description: Erk2 P. Maps to SBML symbol `MAPK_P` and is emitted in native SBML
+      units.
+  - name: erk2_pp
+    maps_to: signaling_sbml_kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model.erk2_pp
+    label: Erk2 PP
+    description: Erk2 PP. Maps to SBML symbol `MAPK_PP` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_kholodenko2000_ultrasensitivity_and_negative_fee_biomd0000000010_model.species_labels
+    label: Observable labels

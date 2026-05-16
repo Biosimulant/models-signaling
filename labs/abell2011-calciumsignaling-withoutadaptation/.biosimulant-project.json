@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "254d3db7-15b3-4a6c-95b5-8e37158551b1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "925ea22a-0b7a-4dbd-b0cb-59fcb88bfd68",
+  "created_at": "2026-05-15T19:08:08.497087677+00:00",
+  "last_synced_at": "2026-05-16T08:53:42.962736+00:00",
+  "hub_manifest_hash": "66c15d0eeac7009a06c68d59bd04f2e5304ba6fd06cd07882b52383fd97c1315",
+  "package_name": "abell2011-calciumsignaling-withoutadaptation-lab"
+}

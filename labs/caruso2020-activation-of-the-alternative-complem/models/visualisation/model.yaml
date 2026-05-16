@@ -1,0 +1,257 @@
+schema_version: '2.0'
+title: Caruso2020 - Activation of the alternative complement pathway and effects on
+  hemolysis Visualisation
+description: Question-and-answer and chart visualisation for immune signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- complement
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model
+    title: Caruso2020 - Activation of the alternative complement pathway and effects
+      on hemolysis
+    context: metabolic and hormone signaling response
+    question: How does Caruso2020 - Activation of the alternative complement pathway
+      and effects on hemolysis shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      complement_c3: float
+      complement_c3_h2o_fluid: float
+      source_defined_b_state: float
+      complement_c3_h2o_b_fluid: float
+      complement_c3_h2o_h_fluid: float
+      source_defined_h_state: float
+      complement_c3_h2o_cr1_fluid: float
+      source_defined_cr1_state: float
+      complement_factor_bb: float
+      complement_c3_h2o_complement_factor_bb_fluid: float
+      complement_c3_h2o_complement_factor_bb_h_fluid: float
+      source_defined_ba_state: float
+      source_defined_d_state: float
+      complement_c3b_fluid: float
+      h2o: float
+      nf_complement_c3b: float
+      nh_complement_c3b: float
+      complement_c3b_b_fluid: float
+      complement_c3b_h_fluid: float
+      complement_c3b_cr1_fluid: float
+      complement_c3b_complement_factor_bb_fluid: float
+      complement_c3b_complement_factor_bb_h_fluid: float
+      complement_c3b_complement_factor_bb_cr1_fluid: float
+      c3a: float
+      source_defined_i_state: float
+      i_complement_c3b_fluid: float
+      i_complement_c3b_cr1_fluid: float
+      c3dg_fluid: float
+      c5b7_micelle: float
+      h_c5b7_fluid: float
+      c5b8_fluid: float
+      source_defined_c8_state: float
+      source_defined_cn_state: float
+      cn_c5b7_fluid: float
+      source_defined_vn_state: float
+      vn_c5b7_fluid: float
+      source_defined_c9_state: float
+      vn_c5b8_fluid: float
+      vn_c5b9_1_fluid: float
+      cn_c5b8_fluid: float
+      cn_c5b9_1_fluid: float
+      c5b9_1_fluid: float
+      complement_c3b_complement_factor_bb_complement_c3b_host: float
+      complement_c3b_complement_factor_bb_host: float
+      complement_c3b_complement_factor_bb_complement_c3b_cr1_host: float
+      complement_c3b_host: float
+      complement_c3b_complement_factor_bb_complement_c3b_daf_host: float
+      source_defined_daf_state: float
+      complement_c3b_complement_factor_bb_complement_c3b_h_host: float
+      surface_host: float
+      complement_c3b_complement_factor_bb_p_host: float
+      source_defined_p_state: float
+      complement_c3b_complement_factor_bb_complement_c3b_p_host: float
+      complement_c3b_bp_host: float
+      i_complement_c3b_p_host: float
+      i_complement_c3b_host: float
+      complement_c3b_complement_factor_bb_complement_c3b_c5_host: float
+      complement_c3b_complement_factor_bb_complement_c3b_pc5_host: float
+      complement_c3b_complement_factor_bb_complement_c3b_c5b_host: float
+      complement_c3b_complement_factor_bb_complement_c3b_c5b_c6_host: float
+      complement_c3b_complement_factor_bb_complement_c3b_pc5b_c6_host: float
+      source_defined_c7_state: float
+      complement_c3b_complement_factor_bb_complement_c3b_pc5b_host: float
+      c5b: float
+      source_defined_c5_state: float
+      c5a: float
+      source_defined_c6_state: float
+      c5b7_host: float
+      complement_c3b_cr1_host: float
+      complement_c3b_h_host: float
+      complement_c3b_b_host: float
+      complement_c3b_complement_factor_bb_h_host: float
+      complement_c3b_complement_factor_bb_cr1_host: float
+      complement_c3b_complement_factor_bb_daf_host: float
+      i_complement_c3b_cr1_host: float
+      c3dg_host: float
+      c5b8_host: float
+      c5b9_1_host: float
+      c5b9_2_host: float
+      c5b9_3_host: float
+      c5b9_4_host: float
+      c5b9_5_host: float
+      c5b9_6_host: float
+      c5b9_7_host: float
+      c5b9_8_host: float
+      c5b9_9_host: float
+      c5b9_10_host: float
+      c5b9_1_host_2: float
+      c5b9_11_host: float
+      c5b9_12_host: float
+      c5b9_13_host: float
+      c5b9_14_host: float
+      c5b9_15_host: float
+      c5b9_16_host: float
+      c5b9_17_host: float
+      mac_host: float
+      cd59: float
+      cd59c5b9_1_host: float
+      vn_c5b7: float
+      eculizumab: float
+      eculizumab_c5: float
+    species_labels:
+      complement_c3: complement C3
+      complement_c3_h2o_fluid: complement C3 H2O Fluid
+      source_defined_b_state: source-defined B state
+      complement_c3_h2o_b_fluid: complement C3 H2O B Fluid
+      complement_c3_h2o_h_fluid: complement C3 H2O H Fluid
+      source_defined_h_state: source-defined H state
+      complement_c3_h2o_cr1_fluid: complement C3 H2O CR1 Fluid
+      source_defined_cr1_state: source-defined CR1 state
+      complement_factor_bb: complement factor Bb
+      complement_c3_h2o_complement_factor_bb_fluid: complement C3 H2O complement factor
+        Bb Fluid
+      complement_c3_h2o_complement_factor_bb_h_fluid: complement C3 H2O complement
+        factor Bb H Fluid
+      source_defined_ba_state: source-defined BA state
+      source_defined_d_state: source-defined D state
+      complement_c3b_fluid: complement C3b Fluid
+      h2o: H2O
+      nf_complement_c3b: Nf complement C3b
+      nh_complement_c3b: Nh complement C3b
+      complement_c3b_b_fluid: complement C3b B Fluid
+      complement_c3b_h_fluid: complement C3b H Fluid
+      complement_c3b_cr1_fluid: complement C3b CR1 Fluid
+      complement_c3b_complement_factor_bb_fluid: complement C3b complement factor
+        Bb Fluid
+      complement_c3b_complement_factor_bb_h_fluid: complement C3b complement factor
+        Bb H Fluid
+      complement_c3b_complement_factor_bb_cr1_fluid: complement C3b complement factor
+        Bb CR1 Fluid
+      c3a: C3a
+      source_defined_i_state: source-defined I state
+      i_complement_c3b_fluid: I complement C3b Fluid
+      i_complement_c3b_cr1_fluid: I complement C3b CR1 Fluid
+      c3dg_fluid: C3dg Fluid
+      c5b7_micelle: C5b7 Micelle
+      h_c5b7_fluid: H C5b7 Fluid
+      c5b8_fluid: C5b8 Fluid
+      source_defined_c8_state: source-defined C8 state
+      source_defined_cn_state: source-defined CN state
+      cn_c5b7_fluid: Cn C5b7 Fluid
+      source_defined_vn_state: source-defined VN state
+      vn_c5b7_fluid: Vn C5b7 Fluid
+      source_defined_c9_state: source-defined C9 state
+      vn_c5b8_fluid: Vn C5b8 Fluid
+      vn_c5b9_1_fluid: Vn C5b9 1 Fluid
+      cn_c5b8_fluid: Cn C5b8 Fluid
+      cn_c5b9_1_fluid: Cn C5b9 1 Fluid
+      c5b9_1_fluid: C5b9 1 Fluid
+      complement_c3b_complement_factor_bb_complement_c3b_host: complement C3b complement
+        factor Bb complement C3b Host
+      complement_c3b_complement_factor_bb_host: complement C3b complement factor Bb
+        Host
+      complement_c3b_complement_factor_bb_complement_c3b_cr1_host: complement C3b
+        complement factor Bb complement C3b CR1 Host
+      complement_c3b_host: complement C3b Host
+      complement_c3b_complement_factor_bb_complement_c3b_daf_host: complement C3b
+        complement factor Bb complement C3b DAF Host
+      source_defined_daf_state: source-defined DAF state
+      complement_c3b_complement_factor_bb_complement_c3b_h_host: complement C3b complement
+        factor Bb complement C3b H Host
+      surface_host: Surface Host
+      complement_c3b_complement_factor_bb_p_host: complement C3b complement factor
+        Bb P Host
+      source_defined_p_state: source-defined P state
+      complement_c3b_complement_factor_bb_complement_c3b_p_host: complement C3b complement
+        factor Bb complement C3b P Host
+      complement_c3b_bp_host: complement C3b BP Host
+      i_complement_c3b_p_host: I complement C3b P Host
+      i_complement_c3b_host: I complement C3b Host
+      complement_c3b_complement_factor_bb_complement_c3b_c5_host: complement C3b complement
+        factor Bb complement C3b C5 Host
+      complement_c3b_complement_factor_bb_complement_c3b_pc5_host: complement C3b
+        complement factor Bb complement C3b PC5 Host
+      complement_c3b_complement_factor_bb_complement_c3b_c5b_host: complement C3b
+        complement factor Bb complement C3b C5b Host
+      complement_c3b_complement_factor_bb_complement_c3b_c5b_c6_host: complement C3b
+        complement factor Bb complement C3b C5b C6 Host
+      complement_c3b_complement_factor_bb_complement_c3b_pc5b_c6_host: complement
+        C3b complement factor Bb complement C3b Pc5b C6 Host
+      source_defined_c7_state: source-defined C7 state
+      complement_c3b_complement_factor_bb_complement_c3b_pc5b_host: complement C3b
+        complement factor Bb complement C3b Pc5b Host
+      c5b: C5b
+      source_defined_c5_state: source-defined C5 state
+      c5a: C5a
+      source_defined_c6_state: source-defined C6 state
+      c5b7_host: C5b7 Host
+      complement_c3b_cr1_host: complement C3b CR1 Host
+      complement_c3b_h_host: complement C3b H Host
+      complement_c3b_b_host: complement C3b B Host
+      complement_c3b_complement_factor_bb_h_host: complement C3b complement factor
+        Bb H Host
+      complement_c3b_complement_factor_bb_cr1_host: complement C3b complement factor
+        Bb CR1 Host
+      complement_c3b_complement_factor_bb_daf_host: complement C3b complement factor
+        Bb DAF Host
+      i_complement_c3b_cr1_host: I complement C3b CR1 Host
+      c3dg_host: C3dg Host
+      c5b8_host: C5b8 Host
+      c5b9_1_host: C5b9 1 Host
+      c5b9_2_host: C5b9 2 Host
+      c5b9_3_host: C5b9 3 Host
+      c5b9_4_host: C5b9 4 Host
+      c5b9_5_host: C5b9 5 Host
+      c5b9_6_host: C5b9 6 Host
+      c5b9_7_host: C5b9 7 Host
+      c5b9_8_host: C5b9 8 Host
+      c5b9_9_host: C5b9 9 Host
+      c5b9_10_host: C5b9 10 Host
+      c5b9_1_host_2: C5b9 1 Host
+      c5b9_11_host: C5b9 11 Host
+      c5b9_12_host: C5b9 12 Host
+      c5b9_13_host: C5b9 13 Host
+      c5b9_14_host: C5b9 14 Host
+      c5b9_15_host: C5b9 15 Host
+      c5b9_16_host: C5b9 16 Host
+      c5b9_17_host: C5b9 17 Host
+      mac_host: MAC Host
+      cd59: CD59
+      cd59c5b9_1_host: Cd59c5b9 1 Host
+      vn_c5b7: Vn C5b7
+      eculizumab: Eculizumab
+      eculizumab_c5: Eculizumab C5
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Lemon2003_Ca2Dynamics Visualisation
+description: Question-and-answer and chart visualisation for calcium and second-messenger
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_lemon2003_ca2dynamics_model1006230039_model
+    title: Lemon2003_Ca2Dynamics
+    context: calcium second-messenger signaling
+    question: How do calcium-linked states respond in Lemon2003 Ca2Dynamics?
+    visual_scope: calcium second-messenger signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_rs_state: float
+      source_defined_rs_p_state: float
+      source_defined_g_state: float
+      ip3: float
+      source_defined_pip_2_state: float
+      source_defined_c_state: float
+      source_defined_h_state: float
+    species_labels:
+      source_defined_rs_state: Source Defined RS State
+      source_defined_rs_p_state: Source Defined RS P State
+      source_defined_g_state: Source Defined G State
+      ip3: IP3
+      source_defined_pip_2_state: Source Defined PIP 2 State
+      source_defined_c_state: Source Defined C State
+      source_defined_h_state: Source Defined H State
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,117 @@
+schema_version: '2.0'
+title: Sackmann2006 - mating pheromone response pathway of S.cerevisiae Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Sackmann2006 - mating pheromone response pathway of S.cerevisiae.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_sackmann2006_mating_pheromone_response_pathway_o_model1403040000_model
+    title: Sackmann2006 - mating pheromone response pathway of S.cerevisiae
+    context: metabolic and hormone signaling response
+    question: How does Sackmann2006 - mating pheromone response pathway of S.cerevisiae
+      shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      alpha_factor: float
+      ste2_receptor: float
+      receptor_factor_complex: float
+      receptor_complex: float
+      trimer_bound_to_receptor: float
+      g_alpha_gtp: float
+      g_beta_response_parameter_gamma_dimer: float
+      cdc24: float
+      cdc42_at_pm: float
+      ste20: float
+      ste5_scaffold: float
+      ste5_ste11: float
+      source_defined_fus3_state: float
+      ste7_fus3: float
+      mapk_complex1: float
+      ste20_at_pm: float
+      complex3: float
+      complex2: float
+      fus3pp: float
+      complex4: float
+      repr_complex: float
+      compl_without_fus3: float
+      free_ste12: float
+      dig1_dig2: float
+      source_defined_msg5_state: float
+      ste12: float
+      other_genes: float
+      fus3_dephos: float
+      source_defined_bar1_state: float
+      bar1_in_nucleus: float
+      source_defined_far1_state: float
+      inact_far1: float
+      phos_sst2: float
+      source_defined_sst2_state: float
+      far1_in_cytosol: float
+      sst2_in_nucleus: float
+      unphos_kss1: float
+      source_defined_akr1_state: float
+      inact_component: float
+      phos_kss1: float
+      yck1_yck2_at_pm: float
+      inact_receptor: float
+    species_labels:
+      alpha_factor: Alpha Factor
+      ste2_receptor: Ste2 Receptor
+      receptor_factor_complex: Receptor Factor Complex
+      receptor_complex: Receptor Complex
+      trimer_bound_to_receptor: Trimer bound To Receptor
+      g_alpha_gtp: G Alpha GTP
+      g_beta_response_parameter_gamma_dimer: G beta response parameter Gamma Dimer
+      cdc24: Cdc24
+      cdc42_at_pm: Cdc42 At Pm
+      ste20: Ste20
+      ste5_scaffold: Ste5 Scaffold
+      ste5_ste11: Ste5 Ste11
+      source_defined_fus3_state: source-defined FUS3 state
+      ste7_fus3: Ste7 Fus3
+      mapk_complex1: MAPK Complex1
+      ste20_at_pm: Ste20 At Pm
+      complex3: Complex3
+      complex2: Complex2
+      fus3pp: Fus3pp
+      complex4: Complex4
+      repr_complex: Repr Complex
+      compl_without_fus3: Compl Without Fus3
+      free_ste12: free Ste12
+      dig1_dig2: Dig1 Dig2
+      source_defined_msg5_state: source-defined MSG5 state
+      ste12: Ste12
+      other_genes: Other Genes
+      fus3_dephos: Fus3 Dephos
+      source_defined_bar1_state: source-defined BAR1 state
+      bar1_in_nucleus: Bar1 In Nucleus
+      source_defined_far1_state: source-defined FAR1 state
+      inact_far1: Inact Far1
+      phos_sst2: Phos Sst2
+      source_defined_sst2_state: source-defined SST2 state
+      far1_in_cytosol: Far1 In Cytosol
+      sst2_in_nucleus: Sst2 In Nucleus
+      unphos_kss1: Unphos Kss1
+      source_defined_akr1_state: source-defined AKR1 state
+      inact_component: Inact Component
+      phos_kss1: Phos Kss1
+      yck1_yck2_at_pm: Yck1 Yck2 At Pm
+      inact_receptor: Inact Receptor
+io:
+  inputs: []
+  outputs: []

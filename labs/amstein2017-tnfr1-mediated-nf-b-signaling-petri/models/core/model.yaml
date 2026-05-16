@@ -1,0 +1,85 @@
+schema_version: '2.0'
+title: Amstein2017 - TNFR1-mediated Nf-κB signaling, Petri Net
+description: Signaling Amstein2017Tnfr1Mediated Nf BSignaling Petri Model2312010001Model
+  represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL2312010001.
+  When you run it, you can inspect state and compare temporal behavior between baseline
+  and adjusted inputs.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- tnf-signaling
+authors:
+- Biosimulant Team
+- Leonie Amstein
+- Jörg Ackermann
+- Jennifer Scheidel
+- Simone Fulda
+- Ivan Dikic
+upstream:
+  id: biomodels_ebi:MODEL2312010001
+  source_db: biomodels_ebi
+  source_id: MODEL2312010001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2312010001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2312010001?filename=Amstein2017
+    - TNFR1-mediated Nf-kB signaling - Petri Net.xml
+  license: CC0
+biosim:
+  entrypoint: src.amstein2017_tnfr1_mediated_nf_b_signaling_petri:Amstein2017Tnfr1MediatedNfBSignalingPetriModel2312010001Model
+  init_kwargs:
+    model_path: data/MODEL2312010001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_tnf
+    maps_to: signaling_sbml_amstein2017_tnfr1_mediated_nf_b_signaling_petri_model2312010001_model.initial_tnf
+    label: Initial TNF
+    description: Initial level of TNF. Maps to SBML symbol `P5`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_tnf_receptor_1
+    maps_to: signaling_sbml_amstein2017_tnfr1_mediated_nf_b_signaling_petri_model2312010001_model.initial_tnf_receptor_1
+    label: Initial TNF receptor 1
+    description: Initial level of TNF receptor 1. Maps to SBML symbol `P4`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_tnf_receptor_1_tnf
+    maps_to: signaling_sbml_amstein2017_tnfr1_mediated_nf_b_signaling_petri_model2312010001_model.initial_tnf_receptor_1_tnf
+    label: Initial TNF receptor 1 TNF
+    description: Initial level of TNF receptor 1 TNF. Maps to SBML symbol `P6`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: nf_b_n_gen_a20
+    maps_to: signaling_sbml_amstein2017_tnfr1_mediated_nf_b_signaling_petri_model2312010001_model.nf_b_n_gen_a20
+    label: NF B N Gen A20
+    description: NF B N Gen A20. Maps to SBML symbol `P0` and is emitted in native
+      SBML units.
+  - name: nf_b_n_gen_i_b
+    maps_to: signaling_sbml_amstein2017_tnfr1_mediated_nf_b_signaling_petri_model2312010001_model.nf_b_n_gen_i_b
+    label: NF B N Gen I B
+    description: NF B N Gen I B. Maps to SBML symbol `P2` and is emitted in native
+      SBML units.
+  - name: tnf_receptor_1
+    maps_to: signaling_sbml_amstein2017_tnfr1_mediated_nf_b_signaling_petri_model2312010001_model.tnf_receptor_1
+    label: TNF receptor 1
+    description: TNF receptor 1. Maps to SBML symbol `P4` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_amstein2017_tnfr1_mediated_nf_b_signaling_petri_model2312010001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_amstein2017_tnfr1_mediated_nf_b_signaling_petri_model2312010001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_amstein2017_tnfr1_mediated_nf_b_signaling_petri_model2312010001_model.species_labels
+    label: Observable labels

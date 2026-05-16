@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Bhalla2004_PKA_2003
+description: This model consists of receptor-ligand interaction, G-protein activation,
+  Adenylyl cyclase mediated formation of cAMP and activation of PKA in the neuron.
+  It can be used to explore signaling dynamics and compare pathway response across
+  conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- camp-pka
+- gpcr
+- neuroscience
+- physiology
+authors:
+- Biosimulant Team
+- Upinder S Bhalla
+upstream:
+  id: biomodels_ebi:MODEL9079740062
+  source_db: biomodels_ebi
+  source_id: MODEL9079740062
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL9079740062
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9079740062?filename=MODEL9079740062_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bhalla2004_pka_2003:Bhalla2004Pka2003Model9079740062Model
+  init_kwargs:
+    model_path: data/MODEL9079740062.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ac_amp
+    maps_to: signaling_sbml_bhalla2004_pka_2003_model9079740062_model.initial_ac_amp
+    label: Initial AC AMP
+    description: Initial level of AC AMP. Maps to SBML symbol `AC_slash_AMP`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_ac_atp
+    maps_to: signaling_sbml_bhalla2004_pka_2003_model9079740062_model.initial_ac_atp
+    label: Initial AC ATP
+    description: Initial level of AC ATP. Maps to SBML symbol `AC_slash_ATP`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_gs_ligand
+    maps_to: signaling_sbml_bhalla2004_pka_2003_model9079740062_model.initial_gs_ligand
+    label: Initial Gs ligand
+    description: Initial level of Gs ligand. Maps to SBML symbol `Gs_slash_L`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: pka_c_amp_dot_r2c2
+    maps_to: signaling_sbml_bhalla2004_pka_2003_model9079740062_model.pka_c_amp_dot_r2c2
+    label: PKA C AMP Dot R2C2
+    description: PKA C AMP Dot R2C2. Maps to SBML symbol `PKA_slash_cAMP_dot_R2C2`
+      and is emitted in native SBML units.
+  - name: pka_camp2_dot_r2c2
+    maps_to: signaling_sbml_bhalla2004_pka_2003_model9079740062_model.pka_camp2_dot_r2c2
+    label: PKA CAMP2 Dot R2C2
+    description: PKA CAMP2 Dot R2C2. Maps to SBML symbol `PKA_slash_cAMP2_dot_R2C2`
+      and is emitted in native SBML units.
+  - name: pka_camp3_dot_r2c2
+    maps_to: signaling_sbml_bhalla2004_pka_2003_model9079740062_model.pka_camp3_dot_r2c2
+    label: PKA CAMP3 Dot R2C2
+    description: PKA CAMP3 Dot R2C2. Maps to SBML symbol `PKA_slash_cAMP3_dot_R2C2`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_bhalla2004_pka_2003_model9079740062_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_bhalla2004_pka_2003_model9079740062_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_bhalla2004_pka_2003_model9079740062_model.species_labels
+    label: Observable labels

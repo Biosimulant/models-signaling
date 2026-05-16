@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ee2bb99f-b628-4f52-ae32-2a6e360f0d2b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1a7f04f4-94bb-49b6-8728-1a18c8964323",
+  "created_at": "2026-05-16T05:38:37.957310309+00:00",
+  "last_synced_at": "2026-05-16T12:19:35.135072+00:00",
+  "hub_manifest_hash": "692b723e2c741165d8d3367b55ced3696818684fda275f56134cfeb6accc3b99",
+  "package_name": "model1710260002-martinez-guimera2017-generic-redox-signalling-mo"
+}

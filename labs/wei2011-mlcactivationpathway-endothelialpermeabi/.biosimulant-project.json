@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f065746c-573a-4817-a820-313857561c2f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1a3bec1c-90a1-45d4-ae2a-798aae3f72dc",
+  "created_at": "2026-05-16T05:58:29.460965761+00:00",
+  "last_synced_at": "2026-05-16T11:23:10.014063+00:00",
+  "hub_manifest_hash": "bc353de903d98d7b78cfacde4d7468a42117202d08abe26f3adca60994cd6879",
+  "package_name": "wei2011-mlcactivationpathway-endothelialpermeability-lab"
+}

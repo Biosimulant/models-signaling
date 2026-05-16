@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Trares2022 - Crosstalk between the canonical and non-canonical NF-kB pathways,
+  Petri net Lab
+description: Clean Biosimulant lab for NF-kB pathway signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model.state
+  to:
+  - visualisation.signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model_state
+- from: signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model.summary
+  to:
+  - visualisation.signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model_summary
+- from: signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model.species_labels
+  to:
+  - visualisation.signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+io:
+  inputs:
+  - name: initial_cd40
+    maps_to: signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model.initial_cd40
+    label: Initial CD40
+    description: Initial level of CD40. Maps to SBML symbol `P0`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: ikk_complex_c
+    maps_to: signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model.ikk_complex_c
+    label: IKK Complex C
+    description: IKK Complex C. Maps to SBML symbol `P13` and is emitted in native
+      SBML units.
+  - name: ikk_complex
+    maps_to: signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model.ikk_complex
+    label: IKK Complex
+    description: IKK Complex. Maps to SBML symbol `P22` and is emitted in native SBML
+      units.
+  - name: ikk_complex_activated
+    maps_to: signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model.ikk_complex_activated
+    label: IKK Complex Activated
+    description: IKK Complex Activated. Maps to SBML symbol `P24` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_trares2022_crosstalk_between_the_canonical_and_n_model2207210003_model.species_labels
+    label: Observable labels

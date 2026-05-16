@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8ee5cf2e-c874-4155-81d9-c3e3933ebd26",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "68ad9a72-9ea8-479d-bffe-2732ace0683a",
+  "created_at": "2026-05-15T19:08:08.650483390+00:00",
+  "last_synced_at": "2026-05-16T08:45:57.943766+00:00",
+  "hub_manifest_hash": "6f672abb56fbdc327abe003a97988478396b0beab7f66764ba41666c698f0553",
+  "package_name": "asthagiri2001-mapk-asthagiri-adapt-fb-lab"
+}

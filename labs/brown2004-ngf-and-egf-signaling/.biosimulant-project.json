@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "741f8f21-a143-4115-ad23-ab6df5f9628e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c85d0ba6-95a6-40b1-b021-31801bd0f75e",
+  "created_at": "2026-05-15T19:08:09.125151817+00:00",
+  "last_synced_at": "2026-05-16T09:16:37.051870+00:00",
+  "hub_manifest_hash": "6ed64261f833b69edc0513b257e375f3b4f08320f5abeb11a1b56fac675f8c36",
+  "package_name": "brown2004-ngf-and-egf-signaling-lab"
+}

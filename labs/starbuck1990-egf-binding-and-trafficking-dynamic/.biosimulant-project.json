@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b23a025b-f80a-4529-9973-878de8ed504d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6b9c9421-25ca-4264-8577-85e8fbadb1da",
+  "created_at": "2026-05-16T05:58:27.572269011+00:00",
+  "last_synced_at": "2026-05-16T11:10:27.861122+00:00",
+  "hub_manifest_hash": "d01b501f777113b40be2c9c03ab50f0899a91e28147c1118068122f9f15a3083",
+  "package_name": "starbuck1990-egf-binding-and-trafficking-dynamics-in-fibroblast"
+}

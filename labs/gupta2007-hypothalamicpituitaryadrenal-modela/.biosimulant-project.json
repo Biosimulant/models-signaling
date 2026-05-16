@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6720985d-7451-483b-af6b-8c24972f1a50",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1bfb5b1f-65a5-4ff5-9231-1d75802900d4",
+  "created_at": "2026-05-15T19:08:09.763355717+00:00",
+  "last_synced_at": "2026-05-16T09:43:19.795597+00:00",
+  "hub_manifest_hash": "6a88f57f61860b5f86909c1d11e2a89e0b0b263460c18ccee835f493e1065c16",
+  "package_name": "gupta2007-hypothalamicpituitaryadrenal-modela-lab"
+}

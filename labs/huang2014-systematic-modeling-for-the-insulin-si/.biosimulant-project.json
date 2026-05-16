@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "78fdfbba-87ce-47f5-940c-a639ff218639",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "66593cc4-ceda-442b-8755-84e544f63b67",
+  "created_at": "2026-05-15T19:08:10.080514818+00:00",
+  "last_synced_at": "2026-05-16T09:51:10.996048+00:00",
+  "hub_manifest_hash": "3d2b71c0a4775e3e4f537eac8375c9cce4b435c84cc5375e85a21d277da314bd",
+  "package_name": "huang2014-systematic-modeling-for-the-insulin-signaling-network"
+}

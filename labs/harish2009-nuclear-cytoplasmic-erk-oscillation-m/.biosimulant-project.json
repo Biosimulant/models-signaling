@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ff624108-370e-4059-ae5e-29e9ae8d47b5",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "491b815d-858f-4e8b-891d-f78b6fc6511b",
+  "created_at": "2026-05-15T19:08:09.805741372+00:00",
+  "last_synced_at": "2026-05-16T11:32:34.667355+00:00",
+  "hub_manifest_hash": "031e19f0498108541117c87c81285ab4d6008e3ac5067e1961515f261eec6724",
+  "package_name": "harish2009-nuclear-cytoplasmic-erk-oscillation-model-lab"
+}

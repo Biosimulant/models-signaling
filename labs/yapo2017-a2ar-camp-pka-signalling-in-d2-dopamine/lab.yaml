@@ -1,0 +1,78 @@
+schema_version: '2.0'
+title: Yapo2017 - A2AR/cAMP/PKA signalling in D2 dopamine receptor expressing medium-spiny
+  neurons Lab
+description: 'Clean Biosimulant lab for systems signaling model: Yapo2017 - A2AR/cAMP/PKA
+  signalling in D2 dopamine receptor expressing medium-spiny neurons. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.'
+models:
+- alias: signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model.state
+  to:
+  - visualisation.signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model_state
+- from: signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model.summary
+  to:
+  - visualisation.signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model_summary
+- from: signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model.species_labels
+  to:
+  - visualisation.signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- camp-pka
+- gpcr
+- neuroscience
+- physiology
+io:
+  inputs:
+  - name: initial_adenosine
+    maps_to: signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model.initial_adenosine
+    label: Initial adenosine
+    description: Initial level of adenosine. Maps to SBML symbol `Adn`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_amp
+    maps_to: signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model.initial_amp
+    label: Initial AMP
+    description: Initial level of AMP. Maps to SBML symbol `AMP`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_atp
+    maps_to: signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model.initial_atp
+    label: Initial ATP
+    description: Initial level of ATP. Maps to SBML symbol `ATP`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: camp
+    maps_to: signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model.camp
+    label: cAMP
+    description: cAMP. Maps to SBML symbol `cAMP` and is emitted in native SBML units.
+  - name: pde10_c_amp
+    maps_to: signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model.pde10_c_amp
+    label: PDE10 C AMP
+    description: PDE10 C AMP. Maps to SBML symbol `PDE10_cAMP` and is emitted in native
+      SBML units.
+  - name: pkac_amp2
+    maps_to: signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model.pkac_amp2
+    label: Pkac AMP2
+    description: Pkac AMP2. Maps to SBML symbol `PKAcAMP2` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_yapo2017_a2ar_camp_pka_signalling_in_d2_dopamine_model1701170001_model.species_labels
+    label: Observable labels

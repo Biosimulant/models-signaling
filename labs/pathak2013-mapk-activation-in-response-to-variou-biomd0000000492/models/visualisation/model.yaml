@@ -1,0 +1,138 @@
+schema_version: '2.0'
+title: Pathak2013 - MAPK activation in response to various biotic stresses Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- stress-response
+- plant-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000492_model
+    title: Pathak2013 - MAPK activation in response to various biotic stresses
+    context: receptor-to-MAPK cascade signaling
+    question: How does Pathak2013 - MAPK activation in response to various biotic
+      stresses propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      fungal_pathogen: float
+      bacterial_pathogen: float
+      source_defined_lysm_state: float
+      source_defined_prrs_state: float
+      source_defined_fls2_state: float
+      source_defined_lrr_state: float
+      mapkkk: float
+      mapkkk_2: float
+      mapkkk1: float
+      mapkkk18: float
+      mapkkk19: float
+      mapkkk20: float
+      source_defined_edr1_state: float
+      mapkk: float
+      mapkk_2: float
+      mapkk2: float
+      mapkk4: float
+      mapkk5: float
+      mapkk9: float
+      mapk: float
+      mapk_2: float
+      source_defined_mapk2_state: float
+      source_defined_mapk3_state: float
+      source_defined_mapk4_state: float
+      source_defined_mapk6_state: float
+      source_defined_wrky1_state: float
+      source_defined_wrky1_state_2: float
+      source_defined_myb2_state: float
+      source_defined_myb2_state_2: float
+      wrky33: float
+      wrky33_2: float
+      source_defined_wrky6_state: float
+      source_defined_wrky6_state_2: float
+      source_defined_myb4_state: float
+      source_defined_myb4_state_2: float
+      wrky25: float
+      wrky25_2: float
+      wrky12: float
+      wrky12_2: float
+      wrky22: float
+      wrky22_2: float
+      wrky28: float
+      wrky28_2: float
+      wrky29: float
+      wrky29_2: float
+      myb44: float
+      source_defined_nac_state: float
+      source_defined_bzip_state: float
+      source_defined_ap2_state: float
+      response: float
+      source_defined_simk_state: float
+      source_defined_samk_state: float
+    species_labels:
+      fungal_pathogen: Fungal Pathogen
+      bacterial_pathogen: Bacterial Pathogen
+      source_defined_lysm_state: source-defined LYSM state
+      source_defined_prrs_state: source-defined PRRS state
+      source_defined_fls2_state: source-defined FLS2 state
+      source_defined_lrr_state: source-defined LRR state
+      mapkkk: MAPKKK
+      mapkkk_2: MAPKKK
+      mapkkk1: MAPKKK1
+      mapkkk18: MAPKKK18
+      mapkkk19: MAPKKK19
+      mapkkk20: MAPKKK20
+      source_defined_edr1_state: source-defined EDR1 state
+      mapkk: MAPKK
+      mapkk_2: MAPKK
+      mapkk2: MAPKK2
+      mapkk4: MAPKK4
+      mapkk5: MAPKK5
+      mapkk9: MAPKK9
+      mapk: MAPK
+      mapk_2: MAPK
+      source_defined_mapk2_state: source-defined MAPK2 state
+      source_defined_mapk3_state: source-defined MAPK3 state
+      source_defined_mapk4_state: source-defined MAPK4 state
+      source_defined_mapk6_state: source-defined MAPK6 state
+      source_defined_wrky1_state: source-defined WRKY1 state
+      source_defined_wrky1_state_2: source-defined WRKY1 state
+      source_defined_myb2_state: source-defined MYB2 state
+      source_defined_myb2_state_2: source-defined MYB2 state
+      wrky33: WRKY33
+      wrky33_2: WRKY33
+      source_defined_wrky6_state: source-defined WRKY6 state
+      source_defined_wrky6_state_2: source-defined WRKY6 state
+      source_defined_myb4_state: source-defined MYB4 state
+      source_defined_myb4_state_2: source-defined MYB4 state
+      wrky25: WRKY25
+      wrky25_2: WRKY25
+      wrky12: WRKY12
+      wrky12_2: WRKY12
+      wrky22: WRKY22
+      wrky22_2: WRKY22
+      wrky28: WRKY28
+      wrky28_2: WRKY28
+      wrky29: WRKY29
+      wrky29_2: WRKY29
+      myb44: MYB44
+      source_defined_nac_state: source-defined NAC state
+      source_defined_bzip_state: source-defined BZIP state
+      source_defined_ap2_state: source-defined AP2 state
+      response: Response
+      source_defined_simk_state: source-defined SIMK state
+      source_defined_samk_state: source-defined SAMK state
+io:
+  inputs: []
+  outputs: []

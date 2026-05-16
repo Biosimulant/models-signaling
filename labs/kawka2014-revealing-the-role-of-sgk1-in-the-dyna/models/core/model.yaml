@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Kawka2014 - Revealing the role of SGK1 in the dynamics of medulloblastoma using
+  a mathematical model
+description: This is a mathematical model of the Wnt signaling pathway in medulloblastoma
+  comprised of two compartments. Composed of nine ordinary differential equations
+  accounts for the formation and dissociation.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- wnt
+authors:
+- Biosimulant Team
+- Joanna Kawka
+- Dominik Sturm
+- Sabrina Pleier
+- Stefan Pfister
+- Anna Marciniak-Czochra
+upstream:
+  id: biomodels_ebi:MODEL1912090002
+  source_db: biomodels_ebi
+  source_id: MODEL1912090002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1912090002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1912090002?filename=Kawka2014.xml
+  license: CC0
+biosim:
+  entrypoint: src.kawka2014_revealing_the_role_of_sgk1_in_the_dyna:Kawka2014RevealingTheRoleOfSgk1InTheDynaModel1912090002Model
+  init_kwargs:
+    model_path: data/MODEL1912090002.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_sgk1_t
+    maps_to: signaling_sbml_kawka2014_revealing_the_role_of_sgk1_in_the_dyna_model1912090002_model.initial_sgk1_t
+    label: Initial SGK1 T
+    description: Initial level of SGK1 T. Maps to SBML symbol `SGK1_t`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: sgk1_t
+    maps_to: signaling_sbml_kawka2014_revealing_the_role_of_sgk1_in_the_dyna_model1912090002_model.sgk1_t
+    label: SGK1 T
+    description: SGK1 T. Maps to SBML symbol `SGK1_t` and is emitted in native SBML
+      units.
+  - name: sgk1_p
+    maps_to: signaling_sbml_kawka2014_revealing_the_role_of_sgk1_in_the_dyna_model1912090002_model.sgk1_p
+    label: SGK1 P
+    description: SGK1 P. Maps to SBML symbol `SGK1_p` and is emitted in native SBML
+      units.
+  - name: source_defined_myc_t_state
+    maps_to: signaling_sbml_kawka2014_revealing_the_role_of_sgk1_in_the_dyna_model1912090002_model.source_defined_myc_t_state
+    label: source-defined MYC_T state
+    description: source-defined MYC_T state. Maps to SBML symbol `MYC_t` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_kawka2014_revealing_the_role_of_sgk1_in_the_dyna_model1912090002_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_kawka2014_revealing_the_role_of_sgk1_in_the_dyna_model1912090002_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_kawka2014_revealing_the_role_of_sgk1_in_the_dyna_model1912090002_model.species_labels
+    label: Observable labels

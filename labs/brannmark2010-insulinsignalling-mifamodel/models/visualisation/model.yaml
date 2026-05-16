@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Brannmark2010_InsulinSignalling_Mifamodel Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- metabolic-signaling
+- hormone-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model
+    title: Brannmark2010_InsulinSignalling_Mifamodel
+    context: GPCR and cAMP/PKA signaling
+    question: How does Brannmark2010 InsulinSignalling Mifamodel route receptor activity
+      into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      insulin_receptor: float
+      insulin_bound_insulin_receptor: float
+      phosphorylated_insulin_receptor: float
+      internalized_phosphorylated_insulin_receptor: float
+      internalized_insulin_receptor: float
+      irs: float
+      irsip: float
+      response_node_x: float
+      phosphorylated_response_node_x: float
+      v1a: float
+      v1b: float
+      v1c: float
+      v1d: float
+      v1e: float
+      v1g: float
+      v1r: float
+      source_defined_v2_state: float
+      source_defined_vm2_state: float
+      source_defined_v3_state: float
+      source_defined_vm3_state: float
+      simulated_phosphorylated_response_node_x: float
+      internalized_insulin_receptor_amount: float
+      meas_phosphorylated_insulin_receptor: float
+      measdoublestep: float
+      measanna: float
+      measdos_r: float
+    species_labels:
+      insulin_receptor: insulin receptor
+      insulin_bound_insulin_receptor: insulin-bound insulin receptor
+      phosphorylated_insulin_receptor: phosphorylated insulin receptor
+      internalized_phosphorylated_insulin_receptor: internalized phosphorylated insulin
+        receptor
+      internalized_insulin_receptor: internalized insulin receptor
+      irs: IRS
+      irsip: Irsip
+      response_node_x: response node X
+      phosphorylated_response_node_x: phosphorylated response node X
+      v1a: V1a
+      v1b: V1b
+      v1c: V1c
+      v1d: V1d
+      v1e: V1e
+      v1g: V1g
+      v1r: V1r
+      source_defined_v2_state: source-defined V2 state
+      source_defined_vm2_state: source-defined VM2 state
+      source_defined_v3_state: source-defined V3 state
+      source_defined_vm3_state: source-defined VM3 state
+      simulated_phosphorylated_response_node_x: simulated phosphorylated response
+        node X
+      internalized_insulin_receptor_amount: internalized insulin receptor amount
+      meas_phosphorylated_insulin_receptor: Meas phosphorylated insulin receptor
+      measdoublestep: Measdoublestep
+      measanna: Measanna
+      measdos_r: Measdos R
+io:
+  inputs: []
+  outputs: []

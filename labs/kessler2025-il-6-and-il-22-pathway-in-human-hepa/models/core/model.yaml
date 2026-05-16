@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Kessler2025 - IL-6 and IL-22 pathway in human hepatocytes
+description: Signaling Kessler2025Il6And Il22Pathway In Human Hepa Model2509100001Model
+  represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL2509100001.
+  When you run it, you can inspect state and compare temporal behavior between baseline
+  and adjusted inputs.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cytokine-signaling
+- interleukin-signaling
+authors:
+- Biosimulant Team
+- Marcus D Keßler
+- Lara Klemt
+- Marius Kirchner
+- Jörg Ackermann
+- Heiko Mühl
+upstream:
+  id: biomodels_ebi:MODEL2509100001
+  source_db: biomodels_ebi
+  source_id: MODEL2509100001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2509100001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2509100001?filename=kessler2025-IL6_IL22_combined_pathway.xml
+  license: CC0
+biosim:
+  entrypoint: src.kessler2025_il_6_and_il_22_pathway_in_human_hepa:Kessler2025Il6AndIl22PathwayInHumanHepaModel2509100001Model
+  init_kwargs:
+    model_path: data/MODEL2509100001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_il6rc_dimer_shp2
+    maps_to: signaling_sbml_kessler2025_il_6_and_il_22_pathway_in_human_hepa_model2509100001_model.initial_il6rc_dimer_shp2
+    label: Initial IL6RC Dimer SHP2
+    description: Initial level of IL6RC Dimer SHP2. Maps to SBML symbol `P0`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: stat3
+    maps_to: signaling_sbml_kessler2025_il_6_and_il_22_pathway_in_human_hepa_model2509100001_model.stat3
+    label: STAT3
+    description: STAT3. Maps to SBML symbol `P8` and is emitted in native SBML units.
+  - name: stat1
+    maps_to: signaling_sbml_kessler2025_il_6_and_il_22_pathway_in_human_hepa_model2509100001_model.stat1
+    label: STAT1
+    description: STAT1. Maps to SBML symbol `P9` and is emitted in native SBML units.
+  - name: il6rc_dimer_stat1
+    maps_to: signaling_sbml_kessler2025_il_6_and_il_22_pathway_in_human_hepa_model2509100001_model.il6rc_dimer_stat1
+    label: IL6RC Dimer STAT1
+    description: IL6RC Dimer STAT1. Maps to SBML symbol `P11` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_kessler2025_il_6_and_il_22_pathway_in_human_hepa_model2509100001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_kessler2025_il_6_and_il_22_pathway_in_human_hepa_model2509100001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_kessler2025_il_6_and_il_22_pathway_in_human_hepa_model2509100001_model.species_labels
+    label: Observable labels

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9c19b0f6-0d60-4720-b357-6ad557aef471",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "01881018-6a2a-4354-8a4c-bf0a7314f016",
+  "created_at": "2026-05-16T05:38:37.901437129+00:00",
+  "last_synced_at": "2026-05-16T10:15:59.591650+00:00",
+  "hub_manifest_hash": "bb5e193e95ee851b57aee5ba294a5a25402e7b84683cf5c501918897f2bfa87a",
+  "package_name": "markevich2004-mapk-phosphorandommm-lab"
+}

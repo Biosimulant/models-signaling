@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3613465c-ba41-40ae-941a-8a5c377cc1f8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8131749b-031a-4b3a-8187-fc45078c0bd0",
+  "created_at": "2026-05-15T19:08:10.093066445+00:00",
+  "last_synced_at": "2026-05-16T09:52:05.533523+00:00",
+  "hub_manifest_hash": "f356b1fdcd677343e398ed1cf395556ab8ba2b1238df9a98e40444466380e4a2",
+  "package_name": "huarat2016-starvation-induced-ser-thr-protein-kinase-arns-saci-1"
+}

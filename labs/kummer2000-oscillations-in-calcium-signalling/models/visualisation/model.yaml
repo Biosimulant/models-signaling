@@ -1,0 +1,39 @@
+schema_version: '2.0'
+title: Kummer2000 - Oscillations in Calcium Signalling Visualisation
+description: Question-and-answer and chart visualisation for calcium and second-messenger
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_kummer2000_oscillations_in_calcium_signalling_biomd0000000329_model
+    title: Kummer2000 - Oscillations in Calcium Signalling
+    context: calcium second-messenger signaling
+    question: How do calcium-linked states respond in Kummer2000 - Oscillations in
+      Calcium Signalling?
+    visual_scope: calcium second-messenger signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      g_alpha: float
+      active_plc: float
+      calcium: float
+    species_labels:
+      g_alpha: G Alpha
+      active_plc: active PLC
+      calcium: Calcium
+io:
+  inputs: []
+  outputs: []

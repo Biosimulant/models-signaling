@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "06159e8a-09f9-428a-ac48-adc193af5291",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3cee28a0-500e-42e5-8682-77705c686eb9",
+  "created_at": "2026-05-16T05:38:38.016430448+00:00",
+  "last_synced_at": "2026-05-16T10:17:42.827579+00:00",
+  "hub_manifest_hash": "103f16a0d42f6d60eb3ce3d4bc949e6a24550a57583e168ce96041dfd3d8e88e",
+  "package_name": "mazein2013-cholesterol-biosynthesis-pathway-lab"
+}

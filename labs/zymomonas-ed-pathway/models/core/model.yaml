@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Zymomonas ED Pathway
+description: Mathematical Definition symbol/abbreviation Mathematical symbols Keq
+  Equilibrium constant Ki Inhibition constant Km Affinity constant v Predicted enzyme
+  activities Vf Maximal enzyme activities under s. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- biomodels_ebi
+upstream:
+  id: biomodels_ebi:MODEL2008060001
+  source_db: biomodels_ebi
+  source_id: MODEL2008060001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2008060001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2008060001?filename=Zm6_PDC.xml
+  license: CC0
+biosim:
+  entrypoint: src.zymomonas_ed_pathway:ZymomonasEdPathwayModel2008060001Model
+  init_kwargs:
+    model_path: data/MODEL2008060001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_co2ex
+    maps_to: signaling_sbml_zymomonas_ed_pathway_model2008060001_model.initial_co2ex
+    label: Initial Co2ex
+    description: Initial level of Co2ex. Maps to SBML symbol `CO2ex`; exposed as a
+      traceable initial-condition perturbation.
+  - name: initial_glucex
+    maps_to: signaling_sbml_zymomonas_ed_pathway_model2008060001_model.initial_glucex
+    label: Initial Glucex
+    description: Initial level of Glucex. Maps to SBML symbol `GLUCex`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: ethanolex
+    maps_to: signaling_sbml_zymomonas_ed_pathway_model2008060001_model.ethanolex
+    label: Ethanolex
+    description: Ethanolex. Maps to SBML symbol `ETHANOLex` and is emitted in native
+      SBML units.
+  - name: glucex
+    maps_to: signaling_sbml_zymomonas_ed_pathway_model2008060001_model.glucex
+    label: Glucex
+    description: Glucex. Maps to SBML symbol `GLUCex` and is emitted in native SBML
+      units.
+  - name: pyrex
+    maps_to: signaling_sbml_zymomonas_ed_pathway_model2008060001_model.pyrex
+    label: Pyrex
+    description: Pyrex. Maps to SBML symbol `PYRex` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_zymomonas_ed_pathway_model2008060001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_zymomonas_ed_pathway_model2008060001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_zymomonas_ed_pathway_model2008060001_model.species_labels
+    label: Observable labels

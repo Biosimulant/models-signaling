@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c6d0deca-b21a-412a-b304-caaca82637d5",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7185476b-4a75-447f-becf-139beea8c87f",
+  "created_at": "2026-05-15T19:08:08.664253304+00:00",
+  "last_synced_at": "2026-05-16T08:36:36.190832+00:00",
+  "hub_manifest_hash": "c5805e64fedb36ff0db0be862f4796364fa70eae54d410c7a5f6d89fce720953",
+  "package_name": "bachmann2011-jak2-stat5-feedbackcontrol-lab"
+}

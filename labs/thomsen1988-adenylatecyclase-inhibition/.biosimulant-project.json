@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "cf8ffc9d-2205-48dd-882f-ca4b9b1fe203",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "684e1fb4-fbcb-4653-bc93-40aa3a72a446",
+  "created_at": "2026-05-16T05:58:28.183225034+00:00",
+  "last_synced_at": "2026-05-16T11:16:20.029845+00:00",
+  "hub_manifest_hash": "ff6720eef8dcc08154a77d3c2495ef15e286ef4fb9e000fa5dc2de582bb36a25",
+  "package_name": "thomsen1988-adenylatecyclase-inhibition-lab"
+}

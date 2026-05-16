@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Chang2008 - ERK activation, hallucinogenic drugs mediated signalling through
+  serotonin receptors
+description: 'Chang2008 - ERK activation, hallucinogenicdrugs mediated signalling
+  through serotonin receptors This model is described in the article: Towards a quantitative
+  representation of the cell signaling mech. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+- gpcr
+- pharmacology
+authors:
+- Biosimulant Team
+- Chiung-Wen Chang
+- Ethan Poteet
+- John A Schetz
+- Zeynep H Gümüş
+- Harel Weinstein
+upstream:
+  id: biomodels_ebi:MODEL0975191032
+  source_db: biomodels_ebi
+  source_id: MODEL0975191032
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0975191032
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0975191032?filename=MODEL0975191032_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.chang2008_erk_activation_hallucinogenic_drugs_me:Chang2008ErkActivationHallucinogenicDrugsMeModel0975191032Model
+  init_kwargs:
+    model_path: data/MODEL0975191032.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_pip2_state
+    maps_to: signaling_sbml_chang2008_erk_activation_hallucinogenic_drugs_me_model0975191032_model.initial_source_defined_pip2_state
+    label: Initial source-defined PIP2 state
+    description: Initial level of source-defined PIP2 state. Maps to SBML symbol `PIP2`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: cpx_erk_pp_mkp_pp
+    maps_to: signaling_sbml_chang2008_erk_activation_hallucinogenic_drugs_me_model0975191032_model.cpx_erk_pp_mkp_pp
+    label: Cpx ERK PP MKP PP
+    description: Cpx ERK PP MKP PP. Maps to SBML symbol `cpxERK_PP_MKP_PP` and is
+      emitted in native SBML units.
+  - name: cpx_erkp_mkp_pp
+    maps_to: signaling_sbml_chang2008_erk_activation_hallucinogenic_drugs_me_model0975191032_model.cpx_erkp_mkp_pp
+    label: Cpx ERKP MKP PP
+    description: Cpx ERKP MKP PP. Maps to SBML symbol `cpxERKP_MKP_PP` and is emitted
+      in native SBML units.
+  - name: active_erk_mkp_phosphatase_complex
+    maps_to: signaling_sbml_chang2008_erk_activation_hallucinogenic_drugs_me_model0975191032_model.active_erk_mkp_phosphatase_complex
+    label: active ERK-MKP phosphatase complex
+    description: active ERK-MKP phosphatase complex. Maps to SBML symbol `cpxERKP_MKP_PPstar`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_chang2008_erk_activation_hallucinogenic_drugs_me_model0975191032_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_chang2008_erk_activation_hallucinogenic_drugs_me_model0975191032_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_chang2008_erk_activation_hallucinogenic_drugs_me_model0975191032_model.species_labels
+    label: Observable labels

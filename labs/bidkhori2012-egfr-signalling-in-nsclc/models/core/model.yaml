@@ -1,0 +1,85 @@
+schema_version: '2.0'
+title: Bidkhori2012 - EGFR signalling in NSCLC
+description: Bidkhori2012 - EGFR signalling in NSCLC The paper describes and compares
+  two models on EGFR signalling between normal and NSCLC cells. Moreover, it is shown
+  that ERK (MAPK), STAT and Akt factor's acti.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- egfr
+- ras-erk
+- pi3k-akt
+- jak-stat
+- oncology
+authors:
+- Biosimulant Team
+- Gholamreza Bidkhori
+- Ali Moeini
+- Ali Masoudi-Nejad
+upstream:
+  id: biomodels_ebi:BIOMD0000000453
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000453
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000453
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000453?filename=BIOMD0000000453_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bidkhori2012_egfr_signalling_in_nsclc:Bidkhori2012EgfrSignallingInNsclcBiomd0000000453Model
+  init_kwargs:
+    model_path: data/BIOMD0000000453.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_abstract_source_state_k115_level
+    maps_to: signaling_sbml_bidkhori2012_egfr_signalling_in_nsclc_biomd0000000453_model.initial_abstract_source_state_k115_level
+    label: Abstract source state K115
+    description: Abstract source state K115 source parameter. Maps to SBML symbol
+      `mw1df2caba_8e41_4fe5_a1b5_7777eb98ed1c` and preserves the bundled default.
+  - name: initial_abstract_source_state_k121_level
+    maps_to: signaling_sbml_bidkhori2012_egfr_signalling_in_nsclc_biomd0000000453_model.initial_abstract_source_state_k121_level
+    label: Abstract source state K121
+    description: Abstract source state K121 source parameter. Maps to SBML symbol
+      `mw7aba6db3_c7ec_4192_bb5e_0ac4b466c1a5` and preserves the bundled default.
+  - name: initial_abstract_source_state_k46_level
+    maps_to: signaling_sbml_bidkhori2012_egfr_signalling_in_nsclc_biomd0000000453_model.initial_abstract_source_state_k46_level
+    label: Abstract source state K46
+    description: Abstract source state K46 source parameter. Maps to SBML symbol `mwe1743f7b_ca2c_47d4_91d7_aed2748d98c5`
+      and preserves the bundled default.
+  outputs:
+  - name: egf_egfr
+    maps_to: signaling_sbml_bidkhori2012_egfr_signalling_in_nsclc_biomd0000000453_model.egf_egfr
+    label: EGF EGFR
+    description: EGF EGFR. Maps to SBML symbol `mw7eacabf9_d68c_491a_aba2_ec0809a8ecc8`
+      and is emitted in native SBML units.
+  - name: shc_adapter_protein
+    maps_to: signaling_sbml_bidkhori2012_egfr_signalling_in_nsclc_biomd0000000453_model.shc_adapter_protein
+    label: Shc adapter protein
+    description: Shc adapter protein. Maps to SBML symbol `mw3c2e1b43_29ca_491a_93e9_c723a993d6fb`
+      and is emitted in native SBML units.
+  - name: sos_guanine_nucleotide_exchange_factor
+    maps_to: signaling_sbml_bidkhori2012_egfr_signalling_in_nsclc_biomd0000000453_model.sos_guanine_nucleotide_exchange_factor
+    label: SOS guanine-nucleotide exchange factor
+    description: SOS guanine-nucleotide exchange factor. Maps to SBML symbol `mw9dcaa655_a755_426e_a3fa_1ad7c3c45575`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_bidkhori2012_egfr_signalling_in_nsclc_biomd0000000453_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_bidkhori2012_egfr_signalling_in_nsclc_biomd0000000453_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_bidkhori2012_egfr_signalling_in_nsclc_biomd0000000453_model.species_labels
+    label: Observable labels

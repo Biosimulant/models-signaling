@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Kok2020 - IFNalpha-induced signaling in Huh7.5 cells Lab
+description: 'Clean Biosimulant lab for systems signaling model: Kok2020 - IFNalpha-induced
+  signaling in Huh7.5 cells. Values are native SBML quantities; equations, parameters,
+  and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model.state
+  to:
+  - visualisation.signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model_state
+- from: signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model.summary
+  to:
+  - visualisation.signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model_summary
+- from: signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model.species_labels
+  to:
+  - visualisation.signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cytokine-signaling
+- interferon-signaling
+- gpcr
+io:
+  inputs:
+  - name: initial_bind_ifn_level
+    maps_to: signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model.initial_bind_ifn_level
+    label: Bind IFN
+    description: Bind IFN source parameter. Maps to SBML symbol `BindIFN` and preserves
+      the bundled default.
+  - name: initial_dega_rec_ifnby_socs_level
+    maps_to: signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model.initial_dega_rec_ifnby_socs_level
+    label: Dega Rec Ifnby SOCS
+    description: Dega Rec Ifnby SOCS source parameter. Maps to SBML symbol `degaRecIFNBySOCS`
+      and preserves the bundled default.
+  - name: initial_a_rec_ifna
+    maps_to: signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model.initial_a_rec_ifna
+    label: Initial A Rec Ifna
+    description: Initial level of A Rec Ifna. Maps to SBML symbol `aRecIFN`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: stat1c
+    maps_to: signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model.stat1c
+    label: Stat1c
+    description: Stat1c. Maps to SBML symbol `STAT1c` and is emitted in native SBML
+      units.
+  - name: stat2c
+    maps_to: signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model.stat2c
+    label: Stat2c
+    description: Stat2c. Maps to SBML symbol `STAT2c` and is emitted in native SBML
+      units.
+  - name: p_stat1p_stat2c
+    maps_to: signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model.p_stat1p_stat2c
+    label: P Stat1p Stat2c
+    description: P Stat1p Stat2c. Maps to SBML symbol `pSTAT1pSTAT2c` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model.species_labels
+    label: Observable labels

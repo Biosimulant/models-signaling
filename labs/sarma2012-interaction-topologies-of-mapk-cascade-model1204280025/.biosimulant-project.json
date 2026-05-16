@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "98444e37-2247-439e-bfac-b30260d43be5",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "da3a983b-5d53-462a-9732-c2fa1f277805",
+  "created_at": "2026-05-16T05:58:25.615981477+00:00",
+  "last_synced_at": "2026-05-16T10:53:04.260194+00:00",
+  "hub_manifest_hash": "cb8d64c0ad29d10acf09e2ed4413d60a0ea891328a1d843780db0e31debd6ded",
+  "package_name": "sarma2012-interaction-topologies-of-mapk-cascade-m1-k2-useq-shor"
+}

@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Schilling2009 - ERK distributive Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model
+    title: Schilling2009 - ERK distributive
+    context: receptor-to-MAPK cascade signaling
+    question: How does Schilling2009 - ERK distributive propagate receptor or RAS/ERK
+      pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      jak2: float
+      erythropoietin_receptor: float
+      shp1_phosphatase_phosphatase_phosphatase_phosphatase_phosphatase_phosphatase: float
+      ? source_defined_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_state
+      : float
+      raf: float
+      source_defined_mek2_state: float
+      source_defined_mek1_state: float
+      source_defined_erk1_state: float
+      source_defined_erk2_state: float
+      source_defined_phosphorylated_jak2_state: float
+      phospho_erythropoietin_r: float
+      source_defined_mshp1_state: float
+      actshp1: float
+      source_defined_msos_state: float
+      phospho_raf: float
+      ppmek2: float
+      ppmek1: float
+      pperk1: float
+      pperk2: float
+      ? phospho_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor
+      : float
+      source_defined_pmek2_state: float
+      source_defined_pmek1_state: float
+      source_defined_perk1_state: float
+      source_defined_perk2_state: float
+      delay01_mshp1: float
+      delay02_mshp1: float
+      delay03_mshp1: float
+      delay04_mshp1: float
+      delay05_mshp1: float
+      delay06_mshp1: float
+      delay07_mshp1: float
+      delay08_mshp1: float
+      erythropoietin: float
+    species_labels:
+      jak2: JAK2
+      erythropoietin_receptor: Erythropoietin Receptor
+      shp1_phosphatase_phosphatase_phosphatase_phosphatase_phosphatase_phosphatase: SHP1
+        phosphatase Phosphatase Phosphatase Phosphatase Phosphatase Phosphatase
+      ? source_defined_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_state
+      : Source Defined SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange
+        Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor State
+      raf: RAF
+      source_defined_mek2_state: Source Defined MEK2 State
+      source_defined_mek1_state: Source Defined MEK1 State
+      source_defined_erk1_state: Source Defined ERK1 State
+      source_defined_erk2_state: Source Defined ERK2 State
+      source_defined_phosphorylated_jak2_state: Source Defined Phosphorylated JAK2
+        State
+      phospho_erythropoietin_r: Phospho Erythropoietin R
+      source_defined_mshp1_state: Source Defined MSHP1 State
+      actshp1: ACTSHP1
+      source_defined_msos_state: Source Defined MSOS State
+      phospho_raf: Phospho RAF
+      ppmek2: PPMEK2
+      ppmek1: PPMEK1
+      pperk1: PPERK1
+      pperk2: PPERK2
+      ? phospho_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor
+      : Phospho SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange
+        Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor
+      source_defined_pmek2_state: Source Defined PMEK2 State
+      source_defined_pmek1_state: Source Defined PMEK1 State
+      source_defined_perk1_state: Source Defined PERK1 State
+      source_defined_perk2_state: Source Defined PERK2 State
+      delay01_mshp1: DELAY01 MSHP1
+      delay02_mshp1: DELAY02 MSHP1
+      delay03_mshp1: DELAY03 MSHP1
+      delay04_mshp1: DELAY04 MSHP1
+      delay05_mshp1: DELAY05 MSHP1
+      delay06_mshp1: DELAY06 MSHP1
+      delay07_mshp1: DELAY07 MSHP1
+      delay08_mshp1: DELAY08 MSHP1
+      erythropoietin: Erythropoietin
+io:
+  inputs: []
+  outputs: []

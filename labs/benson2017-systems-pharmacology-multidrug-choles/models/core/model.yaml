@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Benson2017 - Systems Pharmacology Multidrug (cholesterol biosynthesis pathway)
+description: 'BensonWattersonetal_SystemsPharmacology_Multidrug This model is described
+  in the article: Is systems pharmacology ready to impact upon therapy development?
+  It can be used to explore signaling dynamics and compare pathway response across
+  conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+- pharmacology
+authors:
+- Biosimulant Team
+- Helen E Benson
+- Steven Watterson
+- Joanna L Sharman
+- Chido P Mpamhanga
+- Andrew Parton
+upstream:
+  id: biomodels_ebi:MODEL1506220000
+  source_db: biomodels_ebi
+  source_id: MODEL1506220000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1506220000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1506220000?filename=MODEL1506220000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.benson2017_systems_pharmacology_multidrug_choles:Benson2017SystemsPharmacologyMultidrugCholesModel1506220000Model
+  init_kwargs:
+    model_path: data/MODEL1506220000.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_rosuvastatin
+    maps_to: signaling_sbml_benson2017_systems_pharmacology_multidrug_choles_model1506220000_model.initial_rosuvastatin
+    label: Initial Rosuvastatin
+    description: Initial level of Rosuvastatin. Maps to SBML symbol `s95`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: rosuvastatin
+    maps_to: signaling_sbml_benson2017_systems_pharmacology_multidrug_choles_model1506220000_model.rosuvastatin
+    label: Rosuvastatin
+    description: Rosuvastatin. Maps to SBML symbol `s95` and is emitted in native
+      SBML units.
+  - name: farnesyl_thiodiphosphate
+    maps_to: signaling_sbml_benson2017_systems_pharmacology_multidrug_choles_model1506220000_model.farnesyl_thiodiphosphate
+    label: Farnesyl Thiodiphosphate
+    description: Farnesyl Thiodiphosphate. Maps to SBML symbol `s96` and is emitted
+      in native SBML units.
+  - name: source_6_fluoromevalonate_5_diphosphate
+    maps_to: signaling_sbml_benson2017_systems_pharmacology_multidrug_choles_model1506220000_model.source_6_fluoromevalonate_5_diphosphate
+    label: 6 Fluoromevalonate 5 Diphosphate
+    description: 6 Fluoromevalonate 5 Diphosphate. Maps to SBML symbol `s98` and is
+      emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_benson2017_systems_pharmacology_multidrug_choles_model1506220000_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_benson2017_systems_pharmacology_multidrug_choles_model1506220000_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_benson2017_systems_pharmacology_multidrug_choles_model1506220000_model.species_labels
+    label: Observable labels

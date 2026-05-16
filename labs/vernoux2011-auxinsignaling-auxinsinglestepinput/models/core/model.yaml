@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Vernoux2011_AuxinSignaling_AuxinSingleStepInput
+description: 'This model is from the article: The auxin signalling network translates
+  dynamic input into robust patterning at the shoot apex. Vernoux T, Brunoud G, Farcot
+  E, Morin V, Van den Daele H, Legrand J, Oli.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- plant-signaling
+authors:
+- Biosimulant Team
+- Teva Vernoux
+- Géraldine Brunoud
+- Etienne Farcot
+- Valérie Morin
+- Hilde Van den Daele
+upstream:
+  id: biomodels_ebi:BIOMD0000000351
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000351
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000351
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000351?filename=BIOMD0000000351_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.vernoux2011_auxinsignaling_auxinsinglestepinput:Vernoux2011AuxinsignalingAuxinsinglestepinputBiomd0000000351Model
+  init_kwargs:
+    model_path: data/BIOMD0000000351.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_auxin
+    maps_to: signaling_sbml_vernoux2011_auxinsignaling_auxinsinglestepinput_biomd0000000351_model.initial_auxin
+    label: Initial Auxin
+    description: Initial level of Auxin. Maps to SBML symbol `aux`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: aux_indole_3_acetic_acid
+    maps_to: signaling_sbml_vernoux2011_auxinsignaling_auxinsinglestepinput_biomd0000000351_model.aux_indole_3_acetic_acid
+    label: Aux indole-3-acetic acid
+    description: Aux indole-3-acetic acid. Maps to SBML symbol `I` and is emitted
+      in native SBML units.
+  - name: auxin_response_factor
+    maps_to: signaling_sbml_vernoux2011_auxinsignaling_auxinsinglestepinput_biomd0000000351_model.auxin_response_factor
+    label: auxin response factor
+    description: auxin response factor. Maps to SBML symbol `A` and is emitted in
+      native SBML units.
+  - name: aux_indole_3_acetic_acid_aux_indole_3_acetic_acid
+    maps_to: signaling_sbml_vernoux2011_auxinsignaling_auxinsinglestepinput_biomd0000000351_model.aux_indole_3_acetic_acid_aux_indole_3_acetic_acid
+    label: Aux indole-3-acetic acid Aux indole-3-acetic acid
+    description: Aux indole-3-acetic acid Aux indole-3-acetic acid. Maps to SBML symbol
+      `D_II` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_vernoux2011_auxinsignaling_auxinsinglestepinput_biomd0000000351_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_vernoux2011_auxinsignaling_auxinsinglestepinput_biomd0000000351_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_vernoux2011_auxinsignaling_auxinsinglestepinput_biomd0000000351_model.species_labels
+    label: Observable labels

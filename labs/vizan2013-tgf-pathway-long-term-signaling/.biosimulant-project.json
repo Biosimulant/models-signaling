@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "868e1abe-582e-4d36-a636-7ea7fcb80d68",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7355556b-ea31-4440-8712-3f3e18fef113",
+  "created_at": "2026-05-16T05:58:28.814637845+00:00",
+  "last_synced_at": "2026-05-16T11:22:15.921312+00:00",
+  "hub_manifest_hash": "2add4f40d541595fdac96daf0a65f1fcabd76711b86f9caeb3f3ed18de9a7c32",
+  "package_name": "vizan2013-tgf-pathway-long-term-signaling-lab"
+}

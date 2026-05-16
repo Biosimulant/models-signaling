@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "41a85460-609a-450b-90e2-6dc0addd544e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "65591900-873f-487a-804c-54067b349e0d",
+  "created_at": "2026-05-15T19:08:09.525232693+00:00",
+  "last_synced_at": "2026-05-16T09:35:45.806023+00:00",
+  "hub_manifest_hash": "59b9e79d0395568ae6909b7f4da0021e041cd2b7cec9559970c904510f6c007d",
+  "package_name": "dupeux2011-abareceptor-monomer-lab"
+}

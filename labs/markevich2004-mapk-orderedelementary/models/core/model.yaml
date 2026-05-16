@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Markevich2004_MAPK_orderedElementary
+description: The model corresponds to the schemas 1 and 2 of Markevich et al 2004,
+  as described in the figure 1 and the supplementary table S1. It can be used to explore
+  signaling dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+authors:
+- Biosimulant Team
+- Nick I Markevich
+- Jan B Hoek
+- Boris N Kholodenko
+upstream:
+  id: biomodels_ebi:BIOMD0000000026
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000026
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000026
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000026?filename=BIOMD0000000026_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.markevich2004_mapk_orderedelementary:Markevich2004MapkOrderedelementaryBiomd0000000026Model
+  init_kwargs:
+    model_path: data/BIOMD0000000026.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_m_state
+    maps_to: signaling_sbml_markevich2004_mapk_orderedelementary_biomd0000000026_model.initial_source_defined_m_state
+    label: Initial source-defined M state
+    description: Initial level of source-defined M state. Maps to SBML symbol `M`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: mapkk
+    maps_to: signaling_sbml_markevich2004_mapk_orderedelementary_biomd0000000026_model.mapkk
+    label: MAPKK
+    description: MAPKK. Maps to SBML symbol `MAPKK` and is emitted in native SBML
+      units.
+  - name: m_mapkk
+    maps_to: signaling_sbml_markevich2004_mapk_orderedelementary_biomd0000000026_model.m_mapkk
+    label: M MAPKK
+    description: M MAPKK. Maps to SBML symbol `M_MAPKK` and is emitted in native SBML
+      units.
+  - name: mp_mapkk
+    maps_to: signaling_sbml_markevich2004_mapk_orderedelementary_biomd0000000026_model.mp_mapkk
+    label: Mp MAPKK
+    description: Mp MAPKK. Maps to SBML symbol `Mp_MAPKK` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_markevich2004_mapk_orderedelementary_biomd0000000026_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_markevich2004_mapk_orderedelementary_biomd0000000026_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_markevich2004_mapk_orderedelementary_biomd0000000026_model.species_labels
+    label: Observable labels

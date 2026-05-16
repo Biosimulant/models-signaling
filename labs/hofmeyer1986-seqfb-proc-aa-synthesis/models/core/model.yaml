@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Hofmeyer1986_SeqFb_Proc_AA_Synthesis
+description: This model is the reaction sequence SEQFB, a model pathway of a branched
+  system with sequential feedback interactions found in bacterial amino acid synthesis.
+  It can be used to explore signaling dynamics and compare pathway response across
+  conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- J H Hofmeyr
+- K J van der Merwe
+upstream:
+  id: biomodels_ebi:BIOMD0000000284
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000284
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000284
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000284?filename=BIOMD0000000284_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hofmeyer1986_seqfb_proc_aa_synthesis:Hofmeyer1986SeqfbProcAaSynthesisBiomd0000000284Model
+  init_kwargs:
+    model_path: data/BIOMD0000000284.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_response_node_x
+    maps_to: signaling_sbml_hofmeyer1986_seqfb_proc_aa_synthesis_biomd0000000284_model.initial_response_node_x
+    label: Initial response node X
+    description: Initial level of response node X. Maps to SBML symbol `X`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_source_defined_y_state
+    maps_to: signaling_sbml_hofmeyer1986_seqfb_proc_aa_synthesis_biomd0000000284_model.initial_source_defined_y_state
+    label: Initial source-defined Y state
+    description: Initial level of source-defined Y state. Maps to SBML symbol `Y`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_z_state
+    maps_to: signaling_sbml_hofmeyer1986_seqfb_proc_aa_synthesis_biomd0000000284_model.initial_source_defined_z_state
+    label: Initial source-defined Z state
+    description: Initial level of source-defined Z state. Maps to SBML symbol `Z`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_a_state
+    maps_to: signaling_sbml_hofmeyer1986_seqfb_proc_aa_synthesis_biomd0000000284_model.source_defined_a_state
+    label: source-defined A state
+    description: source-defined A state. Maps to SBML symbol `A` and is emitted in
+      native SBML units.
+  - name: source_defined_b_state
+    maps_to: signaling_sbml_hofmeyer1986_seqfb_proc_aa_synthesis_biomd0000000284_model.source_defined_b_state
+    label: source-defined B state
+    description: source-defined B state. Maps to SBML symbol `B` and is emitted in
+      native SBML units.
+  - name: source_defined_c_state
+    maps_to: signaling_sbml_hofmeyer1986_seqfb_proc_aa_synthesis_biomd0000000284_model.source_defined_c_state
+    label: source-defined C state
+    description: source-defined C state. Maps to SBML symbol `C` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_hofmeyer1986_seqfb_proc_aa_synthesis_biomd0000000284_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_hofmeyer1986_seqfb_proc_aa_synthesis_biomd0000000284_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_hofmeyer1986_seqfb_proc_aa_synthesis_biomd0000000284_model.species_labels
+    label: Observable labels

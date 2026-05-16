@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5b61d927-1211-4275-bfa9-355410825ceb",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a840e5c0-0d7d-4499-b638-49028f1a6915",
+  "created_at": "2026-05-15T19:08:08.818681264+00:00",
+  "last_synced_at": "2026-05-16T09:04:20.270019+00:00",
+  "hub_manifest_hash": "2d2c4cbb64a443dcc2d77ef273bee46295979af0ed009ac346edcd25f7b136c7",
+  "package_name": "benary2019-controlling-nfkb-dynamics-by-b-trcp-lab"
+}

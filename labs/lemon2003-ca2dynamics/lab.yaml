@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Lemon2003_Ca2Dynamics Lab
+description: Clean Biosimulant lab for calcium and second-messenger signaling. Values
+  are native SBML quantities; equations, parameters, and initial values remain in
+  the bundled source file.
+models:
+- alias: signaling_sbml_lemon2003_ca2dynamics_model1006230039_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_lemon2003_ca2dynamics_model1006230039_model.state
+  to:
+  - visualisation.signaling_sbml_lemon2003_ca2dynamics_model1006230039_model_state
+- from: signaling_sbml_lemon2003_ca2dynamics_model1006230039_model.summary
+  to:
+  - visualisation.signaling_sbml_lemon2003_ca2dynamics_model1006230039_model_summary
+- from: signaling_sbml_lemon2003_ca2dynamics_model1006230039_model.species_labels
+  to:
+  - visualisation.signaling_sbml_lemon2003_ca2dynamics_model1006230039_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+- gpcr
+io:
+  inputs:
+  - name: initial_source_defined_rs_state
+    maps_to: signaling_sbml_lemon2003_ca2dynamics_model1006230039_model.initial_source_defined_rs_state
+    label: Initial source-defined RS state
+    description: Initial level of source-defined RS state. Maps to SBML symbol `RS`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_rs_p_state
+    maps_to: signaling_sbml_lemon2003_ca2dynamics_model1006230039_model.source_defined_rs_p_state
+    label: source-defined RS_P state
+    description: source-defined RS_P state. Maps to SBML symbol `RS_p` and is emitted
+      in native SBML units.
+  - name: ip3
+    maps_to: signaling_sbml_lemon2003_ca2dynamics_model1006230039_model.ip3
+    label: IP3
+    description: IP3. Maps to SBML symbol `IP_3` and is emitted in native SBML units.
+  - name: source_defined_pip_2_state
+    maps_to: signaling_sbml_lemon2003_ca2dynamics_model1006230039_model.source_defined_pip_2_state
+    label: source-defined PIP_2 state
+    description: source-defined PIP_2 state. Maps to SBML symbol `PIP_2` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_lemon2003_ca2dynamics_model1006230039_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_lemon2003_ca2dynamics_model1006230039_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_lemon2003_ca2dynamics_model1006230039_model.species_labels
+    label: Observable labels

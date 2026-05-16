@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0f10087b-4d2e-42ef-a29e-2a43b5dc9b7a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "83c70136-cde9-43b5-8a73-7f98cb38b8ac",
+  "created_at": "2026-05-15T19:08:08.843582475+00:00",
+  "last_synced_at": "2026-05-16T09:05:41.207017+00:00",
+  "hub_manifest_hash": "e3e77feb8a3a80207e35e3f57955a253de884a3dba8a02cb8fe00196e3312a49",
+  "package_name": "benson2017-systems-pharmacology-multidrug-cholesterol-biosynthes"
+}

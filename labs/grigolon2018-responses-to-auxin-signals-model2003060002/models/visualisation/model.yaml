@@ -1,0 +1,41 @@
+schema_version: '2.0'
+title: Grigolon2018 - Responses to auxin signals Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Grigolon2018 - Responses to auxin signals.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- plant-signaling
+- hormone-signaling
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_grigolon2018_responses_to_auxin_signals_model2003060002_model
+    title: Grigolon2018 - Responses to auxin signals
+    context: metabolic and hormone signaling response
+    question: How does Grigolon2018 - Responses to auxin signals shift hormone-linked
+      signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      auxin: float
+      indole_3_acetic_acid: float
+      auxin_response_factor: float
+    species_labels:
+      auxin: Auxin
+      indole_3_acetic_acid: indole-3-acetic acid
+      auxin_response_factor: auxin response factor
+io:
+  inputs: []
+  outputs: []

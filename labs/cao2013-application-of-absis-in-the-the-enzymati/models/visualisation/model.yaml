@@ -1,0 +1,45 @@
+schema_version: '2.0'
+title: Cao2013 - Application of ABSIS in the the enzymatic futile cycle Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Cao2013 - Application of ABSIS in the the enzymatic futile cycle.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_cao2013_application_of_absis_in_the_the_enzymati_biomd0000000487_model
+    title: Cao2013 - Application of ABSIS in the the enzymatic futile cycle
+    context: phosphorylation and regulatory motif dynamics
+    question: How does Cao2013 - Application of ABSIS in the the enzymatic futile
+      cycle express its source-modeled signaling motif over the baseline run?
+    visual_scope: phosphorylation and regulatory motif dynamics
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_s1_state: float
+      source_defined_s2_state: float
+      source_defined_s3_state: float
+      source_defined_s4_state: float
+      source_defined_s5_state: float
+      source_defined_s6_state: float
+    species_labels:
+      source_defined_s1_state: source-defined S1 state
+      source_defined_s2_state: source-defined S2 state
+      source_defined_s3_state: source-defined S3 state
+      source_defined_s4_state: source-defined S4 state
+      source_defined_s5_state: source-defined S5 state
+      source_defined_s6_state: source-defined S6 state
+io:
+  inputs: []
+  outputs: []

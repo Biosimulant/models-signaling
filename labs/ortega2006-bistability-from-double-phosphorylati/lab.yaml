@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Ortega2006 - bistability from double phosphorylation in signal transduction
+  Lab
+description: 'Clean Biosimulant lab for systems signaling model: Ortega2006 - bistability
+  from double phosphorylation in signal transduction. Values are native SBML quantities;
+  equations, parameters, and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model.state
+  to:
+  - visualisation.signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model_state
+- from: signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model.summary
+  to:
+  - visualisation.signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model_summary
+- from: signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model.species_labels
+  to:
+  - visualisation.signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_alpha
+    maps_to: signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model.initial_alpha
+    label: Initial Alpha
+    description: Initial level of Alpha. Maps to SBML symbol `alpha`; exposed as a
+      traceable initial-condition perturbation.
+  outputs:
+  - name: alpha
+    maps_to: signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model.alpha
+    label: Alpha
+    description: Alpha. Maps to SBML symbol `alpha` and is emitted in native SBML
+      units.
+  - name: beta_response_parameter
+    maps_to: signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model.beta_response_parameter
+    label: beta response parameter
+    description: beta response parameter. Maps to SBML symbol `beta` and is emitted
+      in native SBML units.
+  - name: gamma
+    maps_to: signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model.gamma
+    label: Gamma
+    description: Gamma. Maps to SBML symbol `gamma` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model.species_labels
+    label: Observable labels

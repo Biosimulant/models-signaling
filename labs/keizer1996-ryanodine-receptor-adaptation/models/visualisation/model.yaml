@@ -1,0 +1,41 @@
+schema_version: '2.0'
+title: Keizer1996_Ryanodine_receptor_adaptation Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Keizer1996_Ryanodine_receptor_adaptation.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model
+    title: Keizer1996_Ryanodine_receptor_adaptation
+    context: calcium second-messenger signaling
+    question: How do calcium-linked states respond in Keizer1996 Ryanodine receptor
+      adaptation?
+    visual_scope: calcium second-messenger signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_pc1_state: float
+      source_defined_po2_state: float
+      source_defined_po1_state: float
+      source_defined_pc2_state: float
+    species_labels:
+      source_defined_pc1_state: Source Defined PC1 State
+      source_defined_po2_state: Source Defined PO2 State
+      source_defined_po1_state: source-defined PO1 state
+      source_defined_pc2_state: source-defined PC2 state
+io:
+  inputs: []
+  outputs: []

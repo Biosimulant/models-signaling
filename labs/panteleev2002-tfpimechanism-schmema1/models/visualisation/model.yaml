@@ -1,0 +1,49 @@
+schema_version: '2.0'
+title: Panteleev2002_TFPImechanism_schmema1 Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Panteleev2002_TFPImechanism_schmema1.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_panteleev2002_tfpimechanism_schmema1_biomd0000000361_model
+    title: Panteleev2002_TFPImechanism_schmema1
+    context: blood and immune cascade signaling
+    question: How does Panteleev2002 TFPImechanism schmema1 redistribute cascade activity
+      across source-defined species?
+    visual_scope: blood and immune cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      viia_tf: float
+      response_node_x: float
+      viia_tf_x: float
+      viia_tf_xa: float
+      source_defined_xa_state: float
+      source_defined_tfpi_state: float
+      xa_tfpi: float
+      xa_tfpi_viia_tf: float
+    species_labels:
+      viia_tf: Viia TF
+      response_node_x: response node X
+      viia_tf_x: Viia TF X
+      viia_tf_xa: Viia TF Xa
+      source_defined_xa_state: source-defined XA state
+      source_defined_tfpi_state: source-defined TFPI state
+      xa_tfpi: Xa TFPI
+      xa_tfpi_viia_tf: Xa TFPI Viia TF
+io:
+  inputs: []
+  outputs: []

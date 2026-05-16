@@ -1,0 +1,83 @@
+schema_version: '2.0'
+title: Hodgson2018 - TGFbeta signalling and inflammatory response
+description: Signaling Hodgson2018Tgfbeta Signalling And Inflammatory Model1805080001Model
+  captures core biological behavior in the context of signaling, sbml, biomodels_ebi
+  using a biomodels_ebi-sourced OTHER model. When you run it, you can observe state
+  and evaluate how the modeled system changes across runs.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- tgf-beta
+- immune-signaling
+authors:
+- Biosimulant Team
+- David Hodgson
+- Andrew D Rowan
+- Francesco Falciani
+- Carole J Proctor
+upstream:
+  id: biomodels_ebi:MODEL1805080001
+  source_db: biomodels_ebi
+  source_id: MODEL1805080001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1805080001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1805080001?filename=Hodgson2018_Tgfb_signalling_ageing.xml
+  license: CC0
+biosim:
+  entrypoint: src.hodgson2018_tgfbeta_signalling_and_inflammatory:Hodgson2018TgfbetaSignallingAndInflammatoryModel1805080001Model
+  init_kwargs:
+    model_path: data/MODEL1805080001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_sink_species
+    maps_to: signaling_sbml_hodgson2018_tgfbeta_signalling_and_inflammatory_model1805080001_model.initial_sink_species
+    label: Initial sink species
+    description: Initial level of sink species. Maps to SBML symbol `Sink`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_source
+    maps_to: signaling_sbml_hodgson2018_tgfbeta_signalling_and_inflammatory_model1805080001_model.initial_source
+    label: Initial Source
+    description: Initial level of Source. Maps to SBML symbol `Source`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_tgf_beta_a
+    maps_to: signaling_sbml_hodgson2018_tgfbeta_signalling_and_inflammatory_model1805080001_model.initial_tgf_beta_a
+    label: Initial TGF-beta A
+    description: Initial level of TGF-beta A. Maps to SBML symbol `Tgfb_A`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: stat3_nuc
+    maps_to: signaling_sbml_hodgson2018_tgfbeta_signalling_and_inflammatory_model1805080001_model.stat3_nuc
+    label: STAT3 Nuc
+    description: STAT3 Nuc. Maps to SBML symbol `Stat3_nuc` and is emitted in native
+      SBML units.
+  - name: stat3_cyt
+    maps_to: signaling_sbml_hodgson2018_tgfbeta_signalling_and_inflammatory_model1805080001_model.stat3_cyt
+    label: STAT3 Cyt
+    description: STAT3 Cyt. Maps to SBML symbol `Stat3_cyt` and is emitted in native
+      SBML units.
+  - name: smad7
+    maps_to: signaling_sbml_hodgson2018_tgfbeta_signalling_and_inflammatory_model1805080001_model.smad7
+    label: SMAD7
+    description: SMAD7. Maps to SBML symbol `Smad7` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_hodgson2018_tgfbeta_signalling_and_inflammatory_model1805080001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_hodgson2018_tgfbeta_signalling_and_inflammatory_model1805080001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_hodgson2018_tgfbeta_signalling_and_inflammatory_model1805080001_model.species_labels
+    label: Observable labels

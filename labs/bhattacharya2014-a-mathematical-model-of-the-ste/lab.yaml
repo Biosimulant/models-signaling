@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Bhattacharya2014 - A mathematical model of the sterol regulatory element binding
+  protein 2 cholesterol biosynthesis pathway Lab
+description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values
+  are native SBML quantities; equations, parameters, and initial values remain in
+  the bundled source file.
+models:
+- alias: signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model.state
+  to:
+  - visualisation.signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model_state
+- from: signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model.summary
+  to:
+  - visualisation.signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model_summary
+- from: signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model.species_labels
+  to:
+  - visualisation.signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- metabolic-signaling
+io:
+  inputs:
+  - name: initial_source_defined_m_state
+    maps_to: signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model.initial_source_defined_m_state
+    label: Initial source-defined M state
+    description: Initial level of source-defined M state. Maps to SBML symbol `m`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_m_state
+    maps_to: signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model.source_defined_m_state
+    label: source-defined M state
+    description: source-defined M state. Maps to SBML symbol `m` and is emitted in
+      native SBML units.
+  - name: source_defined_h_state
+    maps_to: signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model.source_defined_h_state
+    label: source-defined H state
+    description: source-defined H state. Maps to SBML symbol `h` and is emitted in
+      native SBML units.
+  - name: source_defined_c_state
+    maps_to: signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model.source_defined_c_state
+    label: source-defined C state
+    description: source-defined C state. Maps to SBML symbol `c` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model.species_labels
+    label: Observable labels

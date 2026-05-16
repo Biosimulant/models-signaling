@@ -1,0 +1,41 @@
+schema_version: '2.0'
+title: Gray2016 - The Akt switch model Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Gray2016 - The Akt switch model.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- pi3k-akt
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_gray2016_the_akt_switch_model_biomd0000000854_model
+    title: Gray2016 - The Akt switch model
+    context: receptor-to-MAPK cascade signaling
+    question: How does Gray2016 - The Akt switch model propagate receptor or RAS/ERK
+      pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_ac_state: float
+      source_defined_pc_state: float
+      source_defined_ap_state: float
+      source_defined_pp_state: float
+    species_labels:
+      source_defined_ac_state: source-defined AC state
+      source_defined_pc_state: source-defined PC state
+      source_defined_ap_state: source-defined AP state
+      source_defined_pp_state: source-defined PP state
+io:
+  inputs: []
+  outputs: []

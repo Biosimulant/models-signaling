@@ -1,0 +1,69 @@
+schema_version: '2.0'
+title: Bakshi2020 - Truncated minimal model of alternative pathway of complement system
+  Lab
+description: Clean Biosimulant lab for immune signaling. Values are native SBML quantities;
+  equations, parameters, and initial values remain in the bundled source file.
+models:
+- alias: signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model.state
+  to:
+  - visualisation.signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model_state
+- from: signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model.summary
+  to:
+  - visualisation.signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model_summary
+- from: signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model.species_labels
+  to:
+  - visualisation.signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- complement
+io:
+  inputs:
+  - name: initial_complement_factor_b
+    maps_to: signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model.initial_complement_factor_b
+    label: Initial complement factor B
+    description: Initial level of complement factor B. Maps to SBML symbol `Factor_B`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_complement_factor_d
+    maps_to: signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model.initial_complement_factor_d
+    label: Initial complement factor D
+    description: Initial level of complement factor D. Maps to SBML symbol `Factor_D`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: complement_c3b
+    maps_to: signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model.complement_c3b
+    label: complement C3b
+    description: complement C3b. Maps to SBML symbol `C3b` and is emitted in native
+      SBML units.
+  - name: closed_complement_c3bb_complex
+    maps_to: signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model.closed_complement_c3bb_complex
+    label: closed complement C3bB complex
+    description: closed complement C3bB complex. Maps to SBML symbol `C3bB_closed`
+      and is emitted in native SBML units.
+  - name: open_complement_c3bb_complex
+    maps_to: signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model.open_complement_c3bb_complex
+    label: open complement C3bB complex
+    description: open complement C3bB complex. Maps to SBML symbol `C3bB_open` and
+      is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_bakshi2020_truncated_minimal_model_of_alternativ_biomd0000001016_model.species_labels
+    label: Observable labels

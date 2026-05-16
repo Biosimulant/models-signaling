@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6d3f90c8-b9eb-447d-ad77-1ae6fa8030ee",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c141df4a-5bf8-42f0-9688-86ded9e18dd5",
+  "created_at": "2026-05-16T05:38:38.194141071+00:00",
+  "last_synced_at": "2026-05-16T11:42:57.042117+00:00",
+  "hub_manifest_hash": "7f2ce9bb11986e4520bbca5fdffb7fc439ded7877e30542bde1b4068a2978115",
+  "package_name": "mosbacher2022-yeast-hog-pathway-lab"
+}

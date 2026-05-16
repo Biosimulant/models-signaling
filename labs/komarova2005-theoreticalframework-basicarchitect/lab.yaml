@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Komarova2005_TheoreticalFramework_BasicArchitecture Lab
+description: 'Clean Biosimulant lab for systems signaling model: Komarova2005_TheoreticalFramework_BasicArchitecture.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model.state
+  to:
+  - visualisation.signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model_state
+- from: signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model.summary
+  to:
+  - visualisation.signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model_summary
+- from: signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model.species_labels
+  to:
+  - visualisation.signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_source_defined_x1_state
+    maps_to: signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model.initial_source_defined_x1_state
+    label: Initial source-defined X1 state
+    description: Initial level of source-defined X1 state. Maps to SBML symbol `x1`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_x1_state
+    maps_to: signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model.source_defined_x1_state
+    label: Source Defined X1 State
+    description: Source Defined X1 State. Maps to SBML symbol `x1` and is emitted
+      in native SBML units.
+  - name: source_defined_x2_state
+    maps_to: signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model.source_defined_x2_state
+    label: Source Defined X2 State
+    description: Source Defined X2 State. Maps to SBML symbol `x2` and is emitted
+      in native SBML units.
+  - name: source_defined_y2_state
+    maps_to: signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model.source_defined_y2_state
+    label: Source Defined Y2 State
+    description: Source Defined Y2 State. Maps to SBML symbol `y2` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model.species_labels
+    label: Observable labels

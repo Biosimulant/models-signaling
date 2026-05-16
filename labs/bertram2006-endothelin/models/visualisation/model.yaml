@@ -1,0 +1,41 @@
+schema_version: '2.0'
+title: Bertram2006_Endothelin Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Bertram2006_Endothelin.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- hormone-signaling
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_bertram2006_endothelin_biomd0000000128_model
+    title: Bertram2006_Endothelin
+    context: GPCR and cAMP/PKA signaling
+    question: How does Bertram2006 Endothelin route receptor activity into cAMP/PKA-linked
+      readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      cytosolic_calcium_concentration: float
+      er_calcium_concentration: float
+      camp: float
+    species_labels:
+      cytosolic_calcium_concentration: cytosolic Calcium Concentration
+      er_calcium_concentration: ER Calcium Concentration
+      camp: cAMP
+io:
+  inputs: []
+  outputs: []

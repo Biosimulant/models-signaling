@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a7465bc4-2f2c-40fb-876c-7fd318e09681",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7bafd533-fdf7-41e8-9e12-5fd1884f7afe",
+  "created_at": "2026-05-16T05:58:28.220722026+00:00",
+  "last_synced_at": "2026-05-16T11:16:02.654759+00:00",
+  "hub_manifest_hash": "9486603bf738cc9ea50941d02ddb6fc1a725bd07d268bfd9debe12dba05f626b",
+  "package_name": "thomson2009-unlimited-multistability-in-multisite-phosphorylatio"
+}

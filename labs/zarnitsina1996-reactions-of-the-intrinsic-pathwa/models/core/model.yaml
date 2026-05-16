@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: Zarnitsina1996 - Reactions of the Intrinsic Pathway of Blood Coagulation
+description: Model listing the reactions of the intrinsic pathway as listed in Zarnitsina1996.
+  Publication model is a spatio-termporal mathematical model of blood coagulation.Model
+  used as the example of the numer.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- coagulation
+- physiology
+authors:
+- Biosimulant Team
+- Veronica I Zarnitsina
+- A V Pokhilko
+- F I Ataullakhanov
+upstream:
+  id: biomodels_ebi:MODEL1806140001
+  source_db: biomodels_ebi
+  source_id: MODEL1806140001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1806140001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806140001?filename=Zarnitsina1996.xml
+  license: CC0
+biosim:
+  entrypoint: src.zarnitsina1996_reactions_of_the_intrinsic_pathwa:Zarnitsina1996ReactionsOfTheIntrinsicPathwaModel1806140001Model
+  init_kwargs:
+    model_path: data/MODEL1806140001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_ix_state
+    maps_to: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.initial_source_defined_ix_state
+    label: Initial source-defined IX state
+    description: Initial level of source-defined IX state. Maps to SBML symbol `IX`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: activated_clotting_factor_ix
+    maps_to: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.activated_clotting_factor_ix
+    label: activated clotting factor IX
+    description: activated clotting factor IX. Maps to SBML symbol `IXa` and is emitted
+      in native SBML units.
+  - name: activated_clotting_factor_xi
+    maps_to: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.activated_clotting_factor_xi
+    label: activated clotting factor XI
+    description: activated clotting factor XI. Maps to SBML symbol `XIa` and is emitted
+      in native SBML units.
+  - name: activated_clotting_factor_ix_at
+    maps_to: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.activated_clotting_factor_ix_at
+    label: activated clotting factor IX AT
+    description: activated clotting factor IX AT. Maps to SBML symbol `IXa_AT` and
+      is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.species_labels
+    label: Observable labels

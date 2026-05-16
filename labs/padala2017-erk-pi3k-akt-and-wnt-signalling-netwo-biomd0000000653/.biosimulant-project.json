@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "1d61bcf9-087e-4aeb-9b99-bf1d24ba0e61",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "178b9623-7c72-4e25-9685-157aa7e3af70",
+  "created_at": "2026-05-16T05:46:10.898091121+00:00",
+  "last_synced_at": "2026-05-16T10:34:52.556854+00:00",
+  "hub_manifest_hash": "d83aff5c0c5671ba5f16f2362298a11df57850803fad3099bc55b2b02129073c",
+  "package_name": "padala2017-erk-pi3k-akt-and-wnt-signalling-network-braf-mutated"
+}

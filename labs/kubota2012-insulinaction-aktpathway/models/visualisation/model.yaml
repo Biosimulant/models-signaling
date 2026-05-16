@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Kubota2012_InsulinAction_AKTpathway Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- pi3k-akt
+- metabolic-signaling
+- hormone-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_kubota2012_insulinaction_aktpathway_model1204060000_model
+    title: Kubota2012_InsulinAction_AKTpathway
+    context: receptor-to-MAPK cascade signaling
+    question: How does Kubota2012 InsulinAction AKTpathway propagate receptor or RAS/ERK
+      pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      pro_insulin_receptor_complex: float
+      insulin_receptor_complex: float
+      p2ir_complex: float
+      p1p2ir_complex: float
+      p1ir_complex: float
+      source_defined_pakt_state: float
+      akt: float
+      p_gsk3b: float
+      gsk3b: float
+      pm_tor: float
+      mtor: float
+      p_s6k: float
+      s6k: float
+      source_defined_px_state: float
+      response_node_x: float
+      p_fox01: float
+      fox01: float
+      g6pase: float
+      source_defined_phi_2_state: float
+      source_defined_phi_3_state: float
+      insulin: float
+      source_defined_phi_1_state: float
+      source_defined_phi_4_state: float
+    species_labels:
+      pro_insulin_receptor_complex: Pro insulin receptor Complex
+      insulin_receptor_complex: insulin receptor Complex
+      p2ir_complex: P2ir Complex
+      p1p2ir_complex: P1p2ir Complex
+      p1ir_complex: P1ir Complex
+      source_defined_pakt_state: source-defined PAKT state
+      akt: AKT
+      p_gsk3b: P Gsk3b
+      gsk3b: Gsk3b
+      pm_tor: Pm TOR
+      mtor: mTOR
+      p_s6k: P S6K
+      s6k: S6K
+      source_defined_px_state: source-defined PX state
+      response_node_x: response node X
+      p_fox01: P FOX01
+      fox01: FOX01
+      g6pase: G6pase
+      source_defined_phi_2_state: source-defined PHI_2 state
+      source_defined_phi_3_state: source-defined PHI_3 state
+      insulin: Insulin
+      source_defined_phi_1_state: source-defined PHI_1 state
+      source_defined_phi_4_state: source-defined PHI_4 state
+io:
+  inputs: []
+  outputs: []

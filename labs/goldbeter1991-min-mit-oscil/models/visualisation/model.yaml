@@ -1,0 +1,39 @@
+schema_version: '2.0'
+title: Goldbeter1991 - Min Mit Oscil Visualisation
+description: Question-and-answer and chart visualisation for cell-cycle regulatory
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_goldbeter1991_min_mit_oscil_biomd0000000003_model
+    title: Goldbeter1991 - Min Mit Oscil
+    context: cell-cycle regulatory signaling
+    question: How does Goldbeter1991 - Min Mit Oscil move checkpoint or cycle-control
+      signaling states?
+    visual_scope: cell-cycle regulatory signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      cyclin: float
+      cdc_2_kinase: float
+      cyclin_protease: float
+    species_labels:
+      cyclin: Cyclin
+      cdc_2_kinase: CDC 2 Kinase
+      cyclin_protease: Cyclin Protease
+io:
+  inputs: []
+  outputs: []

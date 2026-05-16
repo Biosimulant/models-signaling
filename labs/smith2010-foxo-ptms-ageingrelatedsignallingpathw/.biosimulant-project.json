@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "93f93dfe-eb69-45d6-8532-cdb896b371ec",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "34d41731-5f81-4b40-89f6-ebcba576359b",
+  "created_at": "2026-05-16T05:58:27.212072326+00:00",
+  "last_synced_at": "2026-05-16T11:49:18.979152+00:00",
+  "hub_manifest_hash": "818eb4f633366fdf165c556a1c69b9ddc303de410513de51d4e2e5270abecf3d",
+  "package_name": "smith2010-foxo-ptms-ageingrelatedsignallingpathway-c-lab"
+}

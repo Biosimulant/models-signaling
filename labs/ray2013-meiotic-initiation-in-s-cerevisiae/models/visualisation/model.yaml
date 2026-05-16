@@ -1,0 +1,45 @@
+schema_version: '2.0'
+title: Ray2013 - Meiotic initiation in S. cerevisiae Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Ray2013 - Meiotic initiation in S. cerevisiae.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_ray2013_meiotic_initiation_in_s_cerevisiae_biomd0000000626_model
+    title: Ray2013 - Meiotic initiation in S. cerevisiae
+    context: cell-cycle regulatory signaling
+    question: How does Ray2013 - Meiotic initiation in S. cerevisiae move checkpoint
+      or cycle-control signaling states?
+    visual_scope: cell-cycle regulatory signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      rim11: float
+      source_defined_pume6_state: float
+      source_defined_psok2_state: float
+      source_defined_ime1_state: float
+      source_defined_pime1_state: float
+      source_defined_ime2_state: float
+    species_labels:
+      rim11: Rim11
+      source_defined_pume6_state: source-defined PUME6 state
+      source_defined_psok2_state: source-defined PSOK2 state
+      source_defined_ime1_state: source-defined IME1 state
+      source_defined_pime1_state: source-defined PIME1 state
+      source_defined_ime2_state: source-defined IME2 state
+io:
+  inputs: []
+  outputs: []

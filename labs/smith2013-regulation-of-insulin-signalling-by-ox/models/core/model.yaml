@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Smith2013 - Regulation of Insulin Signalling by Oxidative Stress
+description: Smith2013 - Regulation of Insulin Signalling by Oxidative Stress The
+  model describes insulin signalling (in rodent adipocytes), which includes in addition
+  to the core pathway, the transcriptional feed. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- stress-response
+- metabolic-signaling
+- hormone-signaling
+authors:
+- Biosimulant Team
+- Graham R Smith
+- Daryl P Shanley
+upstream:
+  id: biomodels_ebi:BIOMD0000000474
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000474
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000474
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000474?filename=BIOMD0000000474_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.smith2013_regulation_of_insulin_signalling_by_ox:Smith2013RegulationOfInsulinSignallingByOxBiomd0000000474Model
+  init_kwargs:
+    model_path: data/BIOMD0000000474.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cytoplasm_foxo1_tot
+    maps_to: signaling_sbml_smith2013_regulation_of_insulin_signalling_by_ox_biomd0000000474_model.initial_cytoplasm_foxo1_tot
+    label: Initial Cytoplasm Foxo1 Tot
+    description: Initial level of Cytoplasm Foxo1 Tot. Maps to SBML symbol `cytoplasm_Foxo1_tot`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_dnabound_foxo1_tot
+    maps_to: signaling_sbml_smith2013_regulation_of_insulin_signalling_by_ox_biomd0000000474_model.initial_dnabound_foxo1_tot
+    label: Initial Dnabound Foxo1 Tot
+    description: Initial level of Dnabound Foxo1 Tot. Maps to SBML symbol `dnabound_Foxo1_tot`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_dusp_dusp_ox
+    maps_to: signaling_sbml_smith2013_regulation_of_insulin_signalling_by_ox_biomd0000000474_model.initial_dusp_dusp_ox
+    label: Initial DUSP DUSP Ox
+    description: Initial level of DUSP DUSP Ox. Maps to SBML symbol `DUSP_plus_DUSP_ox`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: in_r_active
+    maps_to: signaling_sbml_smith2013_regulation_of_insulin_signalling_by_ox_biomd0000000474_model.in_r_active
+    label: In R active
+    description: In R active. Maps to SBML symbol `InR_active` and is emitted in native
+      SBML units.
+  - name: akt
+    maps_to: signaling_sbml_smith2013_regulation_of_insulin_signalling_by_ox_biomd0000000474_model.akt
+    label: AKT
+    description: AKT. Maps to SBML symbol `Akt` and is emitted in native SBML units.
+  - name: source_defined_akt_p2_state
+    maps_to: signaling_sbml_smith2013_regulation_of_insulin_signalling_by_ox_biomd0000000474_model.source_defined_akt_p2_state
+    label: source-defined AKT_P2 state
+    description: source-defined AKT_P2 state. Maps to SBML symbol `Akt_P2` and is
+      emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_smith2013_regulation_of_insulin_signalling_by_ox_biomd0000000474_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_smith2013_regulation_of_insulin_signalling_by_ox_biomd0000000474_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_smith2013_regulation_of_insulin_signalling_by_ox_biomd0000000474_model.species_labels
+    label: Observable labels

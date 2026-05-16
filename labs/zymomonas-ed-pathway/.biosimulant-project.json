@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9c5fbdf3-e298-41f6-96c6-85adc21041a8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "bfa785c4-5162-483d-8072-ce45d54114b9",
+  "created_at": "2026-05-16T05:58:29.842817260+00:00",
+  "last_synced_at": "2026-05-16T11:28:46.170796+00:00",
+  "hub_manifest_hash": "bac47b2fa2c37558e1f2024e2e05fda4fbe1e7450df4a9a3770f674e8619f7a3",
+  "package_name": "zymomonas-ed-pathway-lab"
+}

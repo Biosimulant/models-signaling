@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e8571779-7661-40ec-b5b3-01e8eee42128",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "94481b66-7cf8-471e-95f7-b4d91d0130a2",
+  "created_at": "2026-05-16T05:38:39.177265797+00:00",
+  "last_synced_at": "2026-05-16T12:28:12.462286+00:00",
+  "hub_manifest_hash": "0cfcb58a72f282a3c06d6b8e141ae122b180cea528c5ed30850f6ecad6b273e2",
+  "package_name": "model2010030008-oliveira2020-malonyl-coa-pathway-for-3-hydroxypr"
+}

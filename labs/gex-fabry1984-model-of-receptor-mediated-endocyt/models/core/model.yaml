@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Gex-Fabry1984 - model of receptor-mediated endocytosis of EGF in BALB/c 3T3
+  cells
+description: We present a mathematical model for analyzing, simulating, and quantitating
+  the dynamic and steady-state characteristics of receptor-mediated endocytosis. The
+  basic processes considered by the model a.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+authors:
+- Biosimulant Team
+- M Gex-Fabry
+- C DeLisi
+upstream:
+  id: biomodels_ebi:BIOMD0000000985
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000985
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000985
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000985?filename=Gex-Fabry1984.xml
+  license: CC0
+biosim:
+  entrypoint: src.gex_fabry1984_model_of_receptor_mediated_endocyt:GexFabry1984ModelOfReceptorMediatedEndocytBiomd0000000985Model
+  init_kwargs:
+    model_path: data/BIOMD0000000985.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_internalised_ligand
+    maps_to: signaling_sbml_gex_fabry1984_model_of_receptor_mediated_endocyt_biomd0000000985_model.initial_internalised_ligand
+    label: Initial Internalised Ligand
+    description: Initial level of Internalised Ligand. Maps to SBML symbol `Internalised_Ligand`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_ligand_egf
+    maps_to: signaling_sbml_gex_fabry1984_model_of_receptor_mediated_endocyt_biomd0000000985_model.initial_ligand_egf
+    label: Initial Ligand EGF
+    description: Initial level of Ligand EGF. Maps to SBML symbol `Ligand_EGF`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_receptor_ligand_complex
+    maps_to: signaling_sbml_gex_fabry1984_model_of_receptor_mediated_endocyt_biomd0000000985_model.initial_receptor_ligand_complex
+    label: Initial Receptor Ligand Complex
+    description: Initial level of Receptor Ligand Complex. Maps to SBML symbol `Receptor_Ligand_Complex`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: surface_receptor_external
+    maps_to: signaling_sbml_gex_fabry1984_model_of_receptor_mediated_endocyt_biomd0000000985_model.surface_receptor_external
+    label: Surface Receptor External
+    description: Surface Receptor External. Maps to SBML symbol `Surface_Receptor_External`
+      and is emitted in native SBML units.
+  - name: receptor_ligand_complex
+    maps_to: signaling_sbml_gex_fabry1984_model_of_receptor_mediated_endocyt_biomd0000000985_model.receptor_ligand_complex
+    label: Receptor Ligand Complex
+    description: Receptor Ligand Complex. Maps to SBML symbol `Receptor_Ligand_Complex`
+      and is emitted in native SBML units.
+  - name: internalised_receptors
+    maps_to: signaling_sbml_gex_fabry1984_model_of_receptor_mediated_endocyt_biomd0000000985_model.internalised_receptors
+    label: Internalised Receptors
+    description: Internalised Receptors. Maps to SBML symbol `Internalised_receptors`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_gex_fabry1984_model_of_receptor_mediated_endocyt_biomd0000000985_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_gex_fabry1984_model_of_receptor_mediated_endocyt_biomd0000000985_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_gex_fabry1984_model_of_receptor_mediated_endocyt_biomd0000000985_model.species_labels
+    label: Observable labels

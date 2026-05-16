@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Araujo2016 - Positive feedback in Cdk1 signalling keeps mitotic duration short
+  and constant
+description: 'Araujo2016 - Positive feedback in Cdk1signalling keeps mitotic duration
+  short and constant This model is described in the article: Positive Feedback Keeps
+  Duration of Mitosis Temporally Insulated from. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+authors:
+- Biosimulant Team
+- Ana Rita Araujo
+- Gelens L
+- Rahuman S M Sheriff
+- Silvia D M Santos
+upstream:
+  id: biomodels_ebi:BIOMD0000000657
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000657
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000657
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000657?filename=BIOMD0000000657.xml
+  license: CC0
+biosim:
+  entrypoint: src.araujo2016_positive_feedback_in_cdk1_signalling:Araujo2016PositiveFeedbackInCdk1SignallingBiomd0000000657Model
+  init_kwargs:
+    model_path: data/BIOMD0000000657.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cdk1cyc_b
+    maps_to: signaling_sbml_araujo2016_positive_feedback_in_cdk1_signalling_biomd0000000657_model.initial_cdk1cyc_b
+    label: Initial Cdk1cyc B
+    description: Initial level of Cdk1cyc B. Maps to SBML symbol `Cdk1CycB`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: cdk1cyc_b
+    maps_to: signaling_sbml_araujo2016_positive_feedback_in_cdk1_signalling_biomd0000000657_model.cdk1cyc_b
+    label: Cdk1cyc B
+    description: Cdk1cyc B. Maps to SBML symbol `Cdk1CycB` and is emitted in native
+      SBML units.
+  - name: source_defined_apc_state
+    maps_to: signaling_sbml_araujo2016_positive_feedback_in_cdk1_signalling_biomd0000000657_model.source_defined_apc_state
+    label: source-defined APC state
+    description: source-defined APC state. Maps to SBML symbol `APC` and is emitted
+      in native SBML units.
+  - name: source_defined_cycb_state
+    maps_to: signaling_sbml_araujo2016_positive_feedback_in_cdk1_signalling_biomd0000000657_model.source_defined_cycb_state
+    label: source-defined CYCB state
+    description: source-defined CYCB state. Maps to SBML symbol `CycB` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_araujo2016_positive_feedback_in_cdk1_signalling_biomd0000000657_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_araujo2016_positive_feedback_in_cdk1_signalling_biomd0000000657_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_araujo2016_positive_feedback_in_cdk1_signalling_biomd0000000657_model.species_labels
+    label: Observable labels

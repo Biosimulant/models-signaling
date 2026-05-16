@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "38c3c7b5-2958-4ad3-a0a4-2d381ac9516f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "bab2b21d-d027-498d-a495-58bdfbc495fe",
+  "created_at": "2026-05-15T19:08:09.145318585+00:00",
+  "last_synced_at": "2026-05-16T09:17:10.691531+00:00",
+  "hub_manifest_hash": "9c992138990e7f048a9b17f06ee54ee99e4a6064f22e406b47fab92706ee473f",
+  "package_name": "brummel-ziedins2012-contribution-of-the-pc-pathway-to-thrombin-g"
+}

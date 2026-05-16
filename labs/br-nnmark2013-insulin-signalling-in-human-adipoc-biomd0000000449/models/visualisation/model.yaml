@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Brännmark2013 - Insulin signalling in human adipocytes (diabetic condition)
+  Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+- hormone-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_br_nnmark2013_insulin_signalling_in_human_adipoc_biomd0000000449_model
+    title: Brännmark2013 - Insulin signalling in human adipocytes (diabetic condition)
+    context: metabolic and hormone signaling response
+    question: How does Brännmark2013 - Insulin signalling in human adipocytes (diabetic
+      condition) shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      insulin_receptor: float
+      phosphorylated_insulin_receptor: float
+      insulin_bound_insulin_receptor: float
+      internalized_phosphorylated_insulin_receptor: float
+      internalized_insulin_receptor: float
+      source_defined_irs1_state: float
+      irs1p: float
+      irs1p307: float
+      irs1307: float
+      response_node_x: float
+      phosphorylated_response_node_x: float
+      source_defined_pkb_state: float
+      pkb308p: float
+      pkb473p: float
+      pkb308p473p: float
+      m_torc1: float
+      m_torc1a: float
+      m_torc2: float
+      m_torc2a: float
+      as160: float
+      as160p: float
+      glut4m: float
+      source_defined_glut4_state: float
+      s6k: float
+      s6kp: float
+      source_defined_s6_state: float
+      s6p: float
+    species_labels:
+      insulin_receptor: insulin receptor
+      phosphorylated_insulin_receptor: phosphorylated insulin receptor
+      insulin_bound_insulin_receptor: insulin-bound insulin receptor
+      internalized_phosphorylated_insulin_receptor: internalized phosphorylated insulin
+        receptor
+      internalized_insulin_receptor: internalized insulin receptor
+      source_defined_irs1_state: source-defined IRS1 state
+      irs1p: Irs1p
+      irs1p307: Irs1p307
+      irs1307: IRS1307
+      response_node_x: response node X
+      phosphorylated_response_node_x: phosphorylated response node X
+      source_defined_pkb_state: source-defined PKB state
+      pkb308p: Pkb308p
+      pkb473p: Pkb473p
+      pkb308p473p: Pkb308p473p
+      m_torc1: M TORC1
+      m_torc1a: M Torc1a
+      m_torc2: M TORC2
+      m_torc2a: M Torc2a
+      as160: AS160
+      as160p: As160p
+      glut4m: Glut4m
+      source_defined_glut4_state: source-defined GLUT4 state
+      s6k: S6K
+      s6kp: S6kp
+      source_defined_s6_state: source-defined S6 state
+      s6p: S6p
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,68 @@
+schema_version: '2.0'
+title: Thiaville2016 - Wild type folate pathway model with proposed PanB reaction
+  Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Thiaville2016 - Wild type folate pathway model with proposed PanB reaction.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_thiaville2016_wild_type_folate_pathway_model_wit_biomd0000000639_model
+    title: Thiaville2016 - Wild type folate pathway model with proposed PanB reaction
+    context: metabolic and hormone signaling response
+    question: How does Thiaville2016 - Wild type folate pathway model with proposed
+      PanB reaction shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      h2_hmpt: float
+      atp: float
+      h2_hmpterin_pp: float
+      amp: float
+      source_defined_p_aba_state: float
+      source_defined_ppi_state: float
+      h2_pteroate: float
+      l_glutamate: float
+      phosphate: float
+      adp: float
+      source_defined_dhf_state: float
+      l_serine: float
+      glycine: float
+      source_defined_nadp_state: float
+      nadph: float
+      source_defined_thf_state: float
+      ch2_thf: float
+    species_labels:
+      h2_hmpt: H2 Hmpt
+      atp: ATP
+      h2_hmpterin_pp: H2 Hmpterin PP
+      amp: AMP
+      source_defined_p_aba_state: source-defined P-ABA state
+      source_defined_ppi_state: source-defined PPI state
+      h2_pteroate: H2 Pteroate
+      l_glutamate: L Glutamate
+      phosphate: Phosphate
+      adp: ADP
+      source_defined_dhf_state: source-defined DHF state
+      l_serine: L Serine
+      glycine: Glycine
+      source_defined_nadp_state: source-defined NADP state
+      nadph: NADPH
+      source_defined_thf_state: source-defined THF state
+      ch2_thf: CH2 THF
+io:
+  inputs: []
+  outputs: []

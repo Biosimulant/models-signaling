@@ -1,0 +1,68 @@
+schema_version: '2.0'
+title: Trares2022 - Canonical NF-kB pathway, Petri net Visualisation
+description: Question-and-answer and chart visualisation for NF-kB pathway signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_trares2022_canonical_nf_kb_pathway_petri_net_model2207210001_model
+    title: Trares2022 - Canonical NF-kB pathway, Petri net
+    context: NF-kB activation and feedback signaling
+    question: How does Trares2022 - Canonical NF-kB pathway, Petri net move NF-kB
+      and inhibitor-linked signaling states?
+    visual_scope: NF-kB activation and feedback signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      p50_rel_a_n: float
+      ik_b_phos_ub_p50_rel_a: float
+      cd40: float
+      cd40l: float
+      cd40_cd40l: float
+      source_defined_traf6_state: float
+      cd40_cd40l_traf6: float
+      source_defined_tak1_state: float
+      tak1_activated: float
+      ikkalpha: float
+      source_defined_nemo_state: float
+      ikkbeta: float
+      ikk_complex: float
+      ikk_complex_activated: float
+      ik_b_p50_rel_a: float
+      ik_b_phos_p50_rel_a: float
+      ikb: float
+      p50_rel_a: float
+    species_labels:
+      p50_rel_a_n: P50 Rel A N
+      ik_b_phos_ub_p50_rel_a: Ik B Phos Ub P50 Rel A
+      cd40: CD40
+      cd40l: CD40L
+      cd40_cd40l: CD40 CD40L
+      source_defined_traf6_state: source-defined TRAF6 state
+      cd40_cd40l_traf6: CD40 CD40L TRAF6
+      source_defined_tak1_state: source-defined TAK1 state
+      tak1_activated: TAK1 Activated
+      ikkalpha: Ikkalpha
+      source_defined_nemo_state: source-defined NEMO state
+      ikkbeta: Ikkbeta
+      ikk_complex: IKK Complex
+      ikk_complex_activated: IKK Complex Activated
+      ik_b_p50_rel_a: Ik B P50 Rel A
+      ik_b_phos_p50_rel_a: Ik B Phos P50 Rel A
+      ikb: IkB
+      p50_rel_a: P50 Rel A
+io:
+  inputs: []
+  outputs: []

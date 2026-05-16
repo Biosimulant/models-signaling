@@ -1,0 +1,100 @@
+schema_version: '2.0'
+title: Besozzi2012 - Oscillatory regimes in the Ras/cAMP/PKA pathway in S.cerevisiae
+  Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- ras-erk
+- camp-pka
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model
+    title: Besozzi2012 - Oscillatory regimes in the Ras/cAMP/PKA pathway in S.cerevisiae
+    context: receptor-to-MAPK cascade signaling
+    question: How does Besozzi2012 - Oscillatory regimes in the Ras/cAMP/PKA pathway
+      in S.cerevisiae propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      ras2_gdp: float
+      cdc25: float
+      ras2_gdp_cdc25: float
+      ras2_cdc25: float
+      source_defined_gdp_state: float
+      source_defined_gtp_state: float
+      ras2_gtp_cdc25: float
+      ras2_gtp: float
+      source_defined_ira2_state: float
+      ras2_gtp_ira2: float
+      source_defined_cyr1_state: float
+      ras2_gtp_cyr1: float
+      atp: float
+      camp: float
+      source_defined_pka_state: float
+      c_amp_pka: float
+      iic_amp_pka: float
+      iiic_amp_pka: float
+      ivc_amp_pka: float
+      source_defined_c_state: float
+      r_2c_amp: float
+      source_defined_r_state: float
+      source_defined_r_c_state: float
+      source_defined_pde1_state: float
+      pde1f: float
+      c_amp_pde1f: float
+      amp: float
+      source_defined_ppa2_state: float
+      source_defined_pde2_state: float
+      c_amp_pde2: float
+      cdc25f: float
+      ira2p: float
+      ras2_gtp_ira2p: float
+    species_labels:
+      ras2_gdp: RAS2 GDP
+      cdc25: CDC25
+      ras2_gdp_cdc25: RAS2 GDP CDC25
+      ras2_cdc25: RAS2 CDC25
+      source_defined_gdp_state: Source Defined GDP State
+      source_defined_gtp_state: Source Defined GTP State
+      ras2_gtp_cdc25: RAS2 GTP CDC25
+      ras2_gtp: RAS2 GTP
+      source_defined_ira2_state: Source Defined IRA2 State
+      ras2_gtp_ira2: RAS2 GTP IRA2
+      source_defined_cyr1_state: Source Defined CYR1 State
+      ras2_gtp_cyr1: RAS2 GTP CYR1
+      atp: ATP
+      camp: cAMP
+      source_defined_pka_state: Source Defined PKA State
+      c_amp_pka: C AMP PKA
+      iic_amp_pka: Iic AMP PKA
+      iiic_amp_pka: Iiic AMP PKA
+      ivc_amp_pka: Ivc AMP PKA
+      source_defined_c_state: Source Defined C State
+      r_2c_amp: R 2c AMP
+      source_defined_r_state: Source Defined R State
+      source_defined_r_c_state: Source Defined R C State
+      source_defined_pde1_state: Source Defined PDE1 State
+      pde1f: Pde1f
+      c_amp_pde1f: C AMP Pde1f
+      amp: AMP
+      source_defined_ppa2_state: Source Defined PPA2 State
+      source_defined_pde2_state: Source Defined PDE2 State
+      c_amp_pde2: C AMP PDE2
+      cdc25f: Cdc25f
+      ira2p: Ira2p
+      ras2_gtp_ira2p: RAS2 GTP Ira2p
+io:
+  inputs: []
+  outputs: []

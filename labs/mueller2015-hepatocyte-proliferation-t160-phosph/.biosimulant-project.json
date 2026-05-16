@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4b50df84-5b13-457f-99c5-4003d8e7537b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "da4ebaee-2d03-43b9-88f8-7881c97174f3",
+  "created_at": "2026-05-16T05:38:38.232117848+00:00",
+  "last_synced_at": "2026-05-16T11:44:16.463268+00:00",
+  "hub_manifest_hash": "a24b7b7f16fc7dbbc76c079a001dddc5d66fd38c8a07beea7489ab0095488103",
+  "package_name": "mueller2015-hepatocyte-proliferation-t160-phosphorylation-of-cdk"
+}

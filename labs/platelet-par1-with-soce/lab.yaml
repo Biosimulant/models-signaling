@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Platelet PAR1 with SOCE Lab
+description: 'Clean Biosimulant lab for systems signaling model: Platelet PAR1 with
+  SOCE. Values are native SBML quantities; equations, parameters, and initial values
+  remain in the bundled source file.'
+models:
+- alias: signaling_sbml_platelet_par1_with_soce_model1807190001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_platelet_par1_with_soce_model1807190001_model.state
+  to:
+  - visualisation.signaling_sbml_platelet_par1_with_soce_model1807190001_model_state
+- from: signaling_sbml_platelet_par1_with_soce_model1807190001_model.summary
+  to:
+  - visualisation.signaling_sbml_platelet_par1_with_soce_model1807190001_model_summary
+- from: signaling_sbml_platelet_par1_with_soce_model1807190001_model.species_labels
+  to:
+  - visualisation.signaling_sbml_platelet_par1_with_soce_model1807190001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- platelet-signaling
+- physiology
+io:
+  inputs:
+  - name: initial_calcium_prp
+    maps_to: signaling_sbml_platelet_par1_with_soce_model1807190001_model.initial_calcium_prp
+    label: Initial calcium Prp
+    description: Initial level of calcium Prp. Maps to SBML symbol `species_9`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_par1ap
+    maps_to: signaling_sbml_platelet_par1_with_soce_model1807190001_model.initial_par1ap
+    label: Initial PAR1AP
+    description: Initial level of PAR1AP. Maps to SBML symbol `species_15`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: calcium_cyt
+    maps_to: signaling_sbml_platelet_par1_with_soce_model1807190001_model.calcium_cyt
+    label: calcium Cyt
+    description: calcium Cyt. Maps to SBML symbol `species_1` and is emitted in native
+      SBML units.
+  - name: calcium_prp
+    maps_to: signaling_sbml_platelet_par1_with_soce_model1807190001_model.calcium_prp
+    label: calcium Prp
+    description: calcium Prp. Maps to SBML symbol `species_9` and is emitted in native
+      SBML units.
+  - name: calcium_dts
+    maps_to: signaling_sbml_platelet_par1_with_soce_model1807190001_model.calcium_dts
+    label: calcium Dts
+    description: calcium Dts. Maps to SBML symbol `species_11` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_platelet_par1_with_soce_model1807190001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_platelet_par1_with_soce_model1807190001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_platelet_par1_with_soce_model1807190001_model.species_labels
+    label: Observable labels

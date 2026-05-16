@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Mueller2015 - Hepatocyte proliferation, T160 phosphorylation of CDK2 Visualisation
+description: Question-and-answer and chart visualisation for cell-cycle regulatory
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_mueller2015_hepatocyte_proliferation_t160_phosph_biomd0000000568_model
+    title: Mueller2015 - Hepatocyte proliferation, T160 phosphorylation of CDK2
+    context: cell-cycle regulatory signaling
+    question: How does Mueller2015 - Hepatocyte proliferation, T160 phosphorylation
+      of CDK2 move checkpoint or cycle-control signaling states?
+    visual_scope: cell-cycle regulatory signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      cyto_c2e_t160_u_b: float
+      cyto_c4d1_b: float
+      cyto_p21_b: float
+      cyto_c4d1_b_1_p21_b_1: float
+      cyto_c2e_t160_u_b_1_p21_b_1: float
+      source_defined_hgf_state: float
+      inhp53: float
+      inh_erk: float
+      inh_akt: float
+      inhc4d1: float
+      tot_cyc_ecdk2: float
+      tot_cdk2t160: float
+      tot_cyc_dcdk4: float
+      tot_p21: float
+      cdk2p21: float
+      tot_e2f: float
+      tot_rb: float
+      phos_rb_s788: float
+      phos_rb_s800: float
+      dnacontent: float
+      nuc_c2e_t160_p_b_1_p21_b_1: float
+      nuc_c2e_t160_p_b: float
+      nuc_c2e_t160_u_b_1_p21_b_1: float
+      nuc_c2e_t160_u_b: float
+      nuc_c4d1_b_1_p21_b_1: float
+      nuc_c4d1_b: float
+      nuc_dnapre: float
+      nuc_dnapre1: float
+      nuc_dnapre2: float
+      nuc_dnapre3: float
+      nuc_dnapre4: float
+      nuc_e2f_b_1_rb_s788_p_s800_u_b_1: float
+      nuc_e2f_b_1_rb_s788_u_s800_u_b_1: float
+      nuc_e2f_b: float
+      nuc_p21_b: float
+      nuc_rb_s788_p_s800_p_b: float
+      nuc_rb_s788_p_s800_u_b: float
+      nuc_rb_s788_u_s800_u_b: float
+      nuc_dnapre5: float
+    species_labels:
+      cyto_c2e_t160_u_b: Cyto C2E T160 U B
+      cyto_c4d1_b: Cyto C4D1 B
+      cyto_p21_b: Cyto P21 B
+      cyto_c4d1_b_1_p21_b_1: Cyto C4D1 B 1 P21 B 1
+      cyto_c2e_t160_u_b_1_p21_b_1: Cyto C2E T160 U B 1 P21 B 1
+      source_defined_hgf_state: source-defined HGF state
+      inhp53: Inhp53
+      inh_erk: Inh ERK
+      inh_akt: Inh AKT
+      inhc4d1: Inhc4d1
+      tot_cyc_ecdk2: Tot Cyc ECDK2
+      tot_cdk2t160: Tot CDK2T160
+      tot_cyc_dcdk4: Tot Cyc DCDK4
+      tot_p21: Tot P21
+      cdk2p21: CDK2P21
+      tot_e2f: Tot E2F
+      tot_rb: Tot Rb
+      phos_rb_s788: Phos Rb S788
+      phos_rb_s800: Phos Rb S800
+      dnacontent: Dnacontent
+      nuc_c2e_t160_p_b_1_p21_b_1: Nuc C2E T160 P B 1 P21 B 1
+      nuc_c2e_t160_p_b: Nuc C2E T160 P B
+      nuc_c2e_t160_u_b_1_p21_b_1: Nuc C2E T160 U B 1 P21 B 1
+      nuc_c2e_t160_u_b: Nuc C2E T160 U B
+      nuc_c4d1_b_1_p21_b_1: Nuc C4D1 B 1 P21 B 1
+      nuc_c4d1_b: Nuc C4D1 B
+      nuc_dnapre: Nuc Dnapre
+      nuc_dnapre1: Nuc Dnapre1
+      nuc_dnapre2: Nuc Dnapre2
+      nuc_dnapre3: Nuc Dnapre3
+      nuc_dnapre4: Nuc Dnapre4
+      nuc_e2f_b_1_rb_s788_p_s800_u_b_1: Nuc E2f B 1 Rb S788 P S800 U B 1
+      nuc_e2f_b_1_rb_s788_u_s800_u_b_1: Nuc E2f B 1 Rb S788 U S800 U B 1
+      nuc_e2f_b: Nuc E2f B
+      nuc_p21_b: Nuc P21 B
+      nuc_rb_s788_p_s800_p_b: Nuc Rb S788 P S800 P B
+      nuc_rb_s788_p_s800_u_b: Nuc Rb S788 P S800 U B
+      nuc_rb_s788_u_s800_u_b: Nuc Rb S788 U S800 U B
+      nuc_dnapre5: Nuc Dnapre5
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Sobotta2017 - IL-6-induced JAK1-STAT3-signaling Lab
+description: Clean Biosimulant lab for JAK/STAT cytokine signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model.state
+  to:
+  - visualisation.signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model_state
+- from: signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model.summary
+  to:
+  - visualisation.signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model_summary
+- from: signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model.species_labels
+  to:
+  - visualisation.signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cytokine-signaling
+- jak-stat
+- interleukin-signaling
+io:
+  inputs:
+  - name: initial_input_rux1_level
+    maps_to: signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model.initial_input_rux1_level
+    label: Input Rux1
+    description: Input Rux1 source parameter. Maps to SBML symbol `input_rux1` and
+      preserves the bundled default.
+  - name: initial_input_rux2_level
+    maps_to: signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model.initial_input_rux2_level
+    label: Input Rux2
+    description: Input Rux2 source parameter. Maps to SBML symbol `input_rux2` and
+      preserves the bundled default.
+  - name: initial_input_rux3_level
+    maps_to: signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model.initial_input_rux3_level
+    label: Input Rux3
+    description: Input Rux3 source parameter. Maps to SBML symbol `input_rux3` and
+      preserves the bundled default.
+  outputs:
+  - name: unphosphorylated_receptor
+    maps_to: signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model.unphosphorylated_receptor
+    label: Unphosphorylated Receptor
+    description: Unphosphorylated Receptor. Maps to SBML symbol `JAK1_gp130` and is
+      emitted in native SBML units.
+  - name: phosphorylated_jak1_receptor
+    maps_to: signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model.phosphorylated_jak1_receptor
+    label: Phosphorylated JAK1 Receptor
+    description: Phosphorylated JAK1 Receptor. Maps to SBML symbol `pJAK1_gp130` and
+      is emitted in native SBML units.
+  - name: active_receptor
+    maps_to: signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model.active_receptor
+    label: active Receptor
+    description: active Receptor. Maps to SBML symbol `pJAK1_pgp130` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_sobotta2017_il_6_induced_jak1_stat3_signaling_model2307050001_model.species_labels
+    label: Observable labels

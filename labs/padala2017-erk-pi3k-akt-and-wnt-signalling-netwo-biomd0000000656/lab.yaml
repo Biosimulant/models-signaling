@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Padala2017- ERK, PI3K/Akt and Wnt signalling network (EGFR overexpression)
+  Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model.state
+  to:
+  - visualisation.signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model_state
+- from: signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model.summary
+  to:
+  - visualisation.signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model_summary
+- from: signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model.species_labels
+  to:
+  - visualisation.signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- egfr
+- ras-erk
+- pi3k-akt
+- wnt
+io:
+  inputs:
+  - name: initial_p_egfr
+    maps_to: signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model.initial_p_egfr
+    label: Initial P EGFR
+    description: Initial level of P EGFR. Maps to SBML symbol `pEGFR`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_bound_egfr
+    maps_to: signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model.initial_bound_egfr
+    label: Initial bound EGFR
+    description: Initial level of bound EGFR. Maps to SBML symbol `bEGFR`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_egf
+    maps_to: signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model.initial_egf
+    label: Initial EGF
+    description: Initial level of EGF. Maps to SBML symbol `EGF`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: apc_axin
+    maps_to: signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model.apc_axin
+    label: APC Axin
+    description: APC Axin. Maps to SBML symbol `APCAxin` and is emitted in native
+      SBML units.
+  - name: apc_axin_gsk3b
+    maps_to: signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model.apc_axin_gsk3b
+    label: APC Axin Gsk3b
+    description: APC Axin Gsk3b. Maps to SBML symbol `APCAxinGSK3B` and is emitted
+      in native SBML units.
+  - name: apc_b_catenin
+    maps_to: signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model.apc_b_catenin
+    label: APC B Catenin
+    description: APC B Catenin. Maps to SBML symbol `APCBCatenin` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model.species_labels
+    label: Observable labels

@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Martinez-Guimera2017 - Generic redox signalling model without negative regulation
+  (Model 1) Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Martinez-Guimera2017 - Generic redox signalling model without negative regulation
+  (Model 1).'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- stress-response
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_martinez_guimera2017_generic_redox_signalling_mo_model1710260000_model
+    title: Martinez-Guimera2017 - Generic redox signalling model without negative
+      regulation (Model 1)
+    context: stress-response signaling
+    question: How does Martinez-Guimera2017 - Generic redox signalling model without
+      negative regulation (Model 1) shift stress-response pathway states?
+    visual_scope: stress-response signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      oxidant: float
+      source_defined_aox_state: float
+      nil_source_state: float
+      activator: float
+      sensor: float
+      sensor_ox: float
+      function: float
+      relay: float
+      intermediate: float
+      reductant: float
+      inhibitor: float
+      reductant_ox: float
+    species_labels:
+      oxidant: Oxidant
+      source_defined_aox_state: source-defined AOX state
+      nil_source_state: nil source state
+      activator: Activator
+      sensor: Sensor
+      sensor_ox: Sensor OX
+      function: Function
+      relay: Relay
+      intermediate: Intermediate
+      reductant: Reductant
+      inhibitor: Inhibitor
+      reductant_ox: Reductant OX
+io:
+  inputs: []
+  outputs: []

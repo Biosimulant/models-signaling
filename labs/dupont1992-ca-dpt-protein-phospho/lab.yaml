@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Dupont1992_Ca_dpt_protein_phospho Lab
+description: 'Clean Biosimulant lab for systems signaling model: Dupont1992_Ca_dpt_protein_phospho.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.state
+  to:
+  - visualisation.signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model_state
+- from: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.summary
+  to:
+  - visualisation.signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model_summary
+- from: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.species_labels
+  to:
+  - visualisation.signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_source_defined_z_state
+    maps_to: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.initial_source_defined_z_state
+    label: Initial source-defined Z state
+    description: Initial level of source-defined Z state. Maps to SBML symbol `Z`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: phosphorylated_protein
+    maps_to: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.phosphorylated_protein
+    label: Phosphorylated Protein
+    description: Phosphorylated Protein. Maps to SBML symbol `W_star` and is emitted
+      in native SBML units.
+  - name: total_protein
+    maps_to: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.total_protein
+    label: Total Protein
+    description: Total Protein. Maps to SBML symbol `Wt` and is emitted in native
+      SBML units.
+  - name: source_defined_z_state
+    maps_to: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.source_defined_z_state
+    label: Source Defined Z State
+    description: Source Defined Z State. Maps to SBML symbol `Z` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model.species_labels
+    label: Observable labels

@@ -1,0 +1,240 @@
+schema_version: '2.0'
+title: Bhalla2004_EGFR_MAPK Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- egfr
+- neuroscience
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_bhalla2004_egfr_mapk_model9085850385_model
+    title: Bhalla2004_EGFR_MAPK
+    context: receptor-to-MAPK cascade signaling
+    question: How does Bhalla2004 EGFR MAPK propagate receptor or RAS/ERK pathway
+      activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      pkc_active_pkc_act_raf_pkc_act_raf_cplx: float
+      pkc_active_pkc_inact_gap_pkc_inact_gap_cplx: float
+      pkc_active_pkc_act_gef_pkc_act_gef_cplx: float
+      mapk_active: float
+      mapk_active_mapk_active_feedback_mapk_active_feedback_cplx: float
+      ? mapk_active_phosph_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_phosph_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_cplx
+      : float
+      mapk_craf_1: float
+      mapk_craf_1_active: float
+      mapk_kinase: float
+      mapk: float
+      mapk_craf_1_active_active: float
+      mapk_mapk_tyrosine_site: float
+      active_mapk_kinase: float
+      mapk_mapkk_active_mapkktyr_mapkktyr_cplx: float
+      mapk_mapkk_active_mapkkthr_mapkkthr_cplx: float
+      mapk_kinase_serine_phosphorylation_state: float
+      mapk_raf_gtp_ras_active: float
+      mapk_raf_gtp_ras_active_raf_gtp_ras_active_dot_1_raf_gtp_ras_active_dot_1_cplx: float
+      mapk_raf_gtp_ras_active_raf_gtp_ras_active_dot_2_raf_gtp_ras_active_dot_2_cplx: float
+      source_defined_mkp_1_state: float
+      mkp_1_mkp1_tyrosine_site_deph_mkp1_tyrosine_site_deph_cplx: float
+      mkp_1_mkp1_thr_deph_mkp1_thr_deph_cplx: float
+      pphosphatase2a: float
+      pphosphatase2a_craf_deph_craf_deph_cplx: float
+      pphosphatase2a_mapkk_deph_mapkk_deph_cplx: float
+      pphosphatase2a_mapkk_deph_ser_mapkk_deph_ser_cplx: float
+      pphosphatase2a_craf_active_active_deph_craf_active_active_deph_cplx: float
+      ras_gef_gprot_bg: float
+      ras_gef_gprot_bg_gef_bg_act_ras_gef_bg_act_ras_cplx: float
+      ras_inact_gef: float
+      active_ras_gef: float
+      ras_gef_active_gef_active_act_ras_gef_active_act_ras_cplx: float
+      gtp_bound_ras: float
+      gdp_bound_ras: float
+      active_ras_gap: float
+      ras_gap: float
+      ras_gap_gap_inact_ras_gap_inact_ras_cplx: float
+      ras_inact_gef_active: float
+      ras_calcium_m_gef: float
+      ras_calcium_m_gef_calcium_m_gef_act_ras_calcium_m_gef_act_ras_cplx: float
+      pka_active_pka_phosph_gef_pka_phosph_gef_cplx: float
+      ? shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_active_dot_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein
+      : float
+      ? shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_active_dot_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_ras_gef_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_ras_gef_cplx
+      : float
+      egfr_egfr: float
+      egfr_l_dot_egfr: float
+      ? egfr_l_dot_egfr_phosph_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_phosph_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_cplx
+      : float
+      egfr_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: float
+      egfr_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_active: float
+      egfr_internal_l_dot_egfr: float
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_active_dot_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein
+      : float
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein
+      : float
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein
+      : float
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_active
+      : float
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor
+      : float
+      active_pkc: float
+      ? beta_response_parameter_response_parameter_response_parameter_response_parameter_response_parameter_response_parameter_gamma
+      : float
+      pka_active: float
+      calcium_m_ca4: float
+      egfr_egf: float
+    species_labels:
+      pkc_active_pkc_act_raf_pkc_act_raf_cplx: PKC active PKC Act RAF PKC Act RAF
+        Cplx
+      pkc_active_pkc_inact_gap_pkc_inact_gap_cplx: PKC active PKC Inact GAP PKC Inact
+        GAP Cplx
+      pkc_active_pkc_act_gef_pkc_act_gef_cplx: PKC active PKC Act GEF PKC Act GEF
+        Cplx
+      mapk_active: MAPK active
+      mapk_active_mapk_active_feedback_mapk_active_feedback_cplx: MAPK active MAPK
+        active Feedback MAPK active Feedback Cplx
+      ? mapk_active_phosph_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_phosph_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_cplx
+      : MAPK active Phosph SOS guanine-nucleotide exchange factor Guanine Nucleotide
+        Exchange Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange
+        Factor Guanine Nucleotide Exchange Factor Phosph SOS guanine-nucleotide exchange
+        factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Cplx
+      mapk_craf_1: MAPK Craf 1
+      mapk_craf_1_active: MAPK Craf 1 active
+      mapk_kinase: MAPK Kinase
+      mapk: MAPK
+      mapk_craf_1_active_active: MAPK Craf 1 active active
+      mapk_mapk_tyrosine_site: MAPK MAPK Tyrosine Site
+      active_mapk_kinase: active MAPK Kinase
+      mapk_mapkk_active_mapkktyr_mapkktyr_cplx: MAPK MAPKK active Mapkktyr Mapkktyr
+        Cplx
+      mapk_mapkk_active_mapkkthr_mapkkthr_cplx: MAPK MAPKK active Mapkkthr Mapkkthr
+        Cplx
+      mapk_kinase_serine_phosphorylation_state: MAPK Kinase Serine Phosphorylation
+        State
+      mapk_raf_gtp_ras_active: MAPK RAF GTP RAS active
+      mapk_raf_gtp_ras_active_raf_gtp_ras_active_dot_1_raf_gtp_ras_active_dot_1_cplx: MAPK
+        RAF GTP RAS active RAF GTP RAS active Dot 1 RAF GTP RAS active Dot 1 Cplx
+      mapk_raf_gtp_ras_active_raf_gtp_ras_active_dot_2_raf_gtp_ras_active_dot_2_cplx: MAPK
+        RAF GTP RAS active RAF GTP RAS active Dot 2 RAF GTP RAS active Dot 2 Cplx
+      source_defined_mkp_1_state: Source Defined MKP 1 State
+      mkp_1_mkp1_tyrosine_site_deph_mkp1_tyrosine_site_deph_cplx: MKP 1 MKP1 Tyrosine
+        Site Deph MKP1 Tyrosine Site Deph Cplx
+      mkp_1_mkp1_thr_deph_mkp1_thr_deph_cplx: MKP 1 MKP1 Thr Deph MKP1 Thr Deph Cplx
+      pphosphatase2a: Pphosphatase2a
+      pphosphatase2a_craf_deph_craf_deph_cplx: Pphosphatase2a Craf Deph Craf Deph
+        Cplx
+      pphosphatase2a_mapkk_deph_mapkk_deph_cplx: Pphosphatase2a MAPKK Deph MAPKK Deph
+        Cplx
+      pphosphatase2a_mapkk_deph_ser_mapkk_deph_ser_cplx: Pphosphatase2a MAPKK Deph
+        Ser MAPKK Deph Ser Cplx
+      pphosphatase2a_craf_active_active_deph_craf_active_active_deph_cplx: Pphosphatase2a
+        Craf active active Deph Craf active active Deph Cplx
+      ras_gef_gprot_bg: RAS GEF Gprot Bg
+      ras_gef_gprot_bg_gef_bg_act_ras_gef_bg_act_ras_cplx: RAS GEF Gprot Bg GEF Bg
+        Act RAS GEF Bg Act RAS Cplx
+      ras_inact_gef: RAS Inact GEF
+      active_ras_gef: active RAS GEF
+      ras_gef_active_gef_active_act_ras_gef_active_act_ras_cplx: RAS GEF active GEF
+        active Act RAS GEF active Act RAS Cplx
+      gtp_bound_ras: GTP bound RAS
+      gdp_bound_ras: GDP bound RAS
+      active_ras_gap: active RAS GAP
+      ras_gap: RAS GAP
+      ras_gap_gap_inact_ras_gap_inact_ras_cplx: RAS GAP GAP Inact RAS GAP Inact RAS
+        Cplx
+      ras_inact_gef_active: RAS Inact GEF active
+      ras_calcium_m_gef: RAS Calcium M GEF
+      ras_calcium_m_gef_calcium_m_gef_act_ras_calcium_m_gef_act_ras_cplx: RAS Calcium
+        M GEF Calcium M GEF Act RAS Calcium M GEF Act RAS Cplx
+      pka_active_pka_phosph_gef_pka_phosph_gef_cplx: PKA active PKA Phosph GEF PKA
+        Phosph GEF Cplx
+      ? shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_active_dot_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein
+      : Shc adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein active Dot SOS guanine-nucleotide exchange factor
+        Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine
+        Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Dot Grb2 adapter
+        protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein
+      ? shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_active_dot_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_ras_gef_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_ras_gef_cplx
+      : Shc adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein active Dot SOS guanine-nucleotide exchange factor
+        Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine
+        Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Dot Grb2 adapter
+        protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange
+        Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor Dot RAS GEF SOS guanine-nucleotide exchange
+        factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Dot
+        RAS GEF Cplx
+      egfr_egfr: EGFR EGFR
+      egfr_l_dot_egfr: EGFR L Dot EGFR
+      ? egfr_l_dot_egfr_phosph_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_phosph_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_cplx
+      : EGFR L Dot EGFR Phosph Shc adapter protein Adapter Protein Adapter Protein
+        Adapter Protein Adapter Protein Adapter Protein Phosph Shc adapter protein
+        Adapter Protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein
+        Cplx
+      egfr_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: EGFR
+        Shc adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein
+      egfr_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_active: EGFR
+        Shc adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein active
+      egfr_internal_l_dot_egfr: EGFR Internal L Dot EGFR
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_active_dot_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein
+      : SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine
+        Nucleotide Exchange Factor SOS guanine-nucleotide exchange factor Guanine
+        Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide
+        Exchange Factor Guanine Nucleotide Exchange Factor active Dot Grb2 adapter
+        protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein
+      : SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine
+        Nucleotide Exchange Factor Grb2 adapter protein Adapter Protein Adapter Protein
+        Adapter Protein Adapter Protein Adapter Protein
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_dot_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein
+      : SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine
+        Nucleotide Exchange Factor SOS guanine-nucleotide exchange factor Guanine
+        Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide
+        Exchange Factor Guanine Nucleotide Exchange Factor Dot Grb2 adapter protein
+        Adapter Protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_active
+      : SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine
+        Nucleotide Exchange Factor SOS guanine-nucleotide exchange factor Guanine
+        Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide
+        Exchange Factor Guanine Nucleotide Exchange Factor active
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor
+      : SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine
+        Nucleotide Exchange Factor SOS guanine-nucleotide exchange factor Guanine
+        Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide
+        Exchange Factor Guanine Nucleotide Exchange Factor
+      active_pkc: active PKC
+      ? beta_response_parameter_response_parameter_response_parameter_response_parameter_response_parameter_response_parameter_gamma
+      : beta response parameter Response Parameter Response Parameter Response Parameter
+        Response Parameter Response Parameter Gamma
+      pka_active: PKA active
+      calcium_m_ca4: Calcium M CA4
+      egfr_egf: EGFR EGF
+io:
+  inputs: []
+  outputs: []

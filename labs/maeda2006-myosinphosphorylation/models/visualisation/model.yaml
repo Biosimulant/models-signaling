@@ -1,0 +1,263 @@
+schema_version: '2.0'
+title: Maeda2006_MyosinPhosphorylation Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Maeda2006_MyosinPhosphorylation.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- coagulation
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_maeda2006_myosinphosphorylation_biomd0000000088_model
+    title: Maeda2006_MyosinPhosphorylation
+    context: blood and immune cascade signaling
+    question: How does Maeda2006 MyosinPhosphorylation redistribute cascade activity
+      across source-defined species?
+    visual_scope: blood and immune cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      thrombin: float
+      thrombin_r: float
+      pro_thrombin_r: float
+      thrombin_ligand: float
+      thrombin_r_active: float
+      source_defined_rgs_state: float
+      inositol: float
+      sa40_degraded: float
+      thrombin_r_2: float
+      source_defined_rgs_state_2: float
+      gtp: float
+      g_sub_q_endsub_alpha_gtp: float
+      gdp: float
+      ip3r: float
+      source_3ip3_ip3r: float
+      p115rho_gef: float
+      rho_kinase: float
+      rho_gap: float
+      dag: float
+      ip3: float
+      rho_gap_2: float
+      rho_gtp: float
+      source_defined_pip2_state: float
+      source_defined_pc_state: float
+      rho_gdp: float
+      rho_gef: float
+      rho_gef_active: float
+      rho_gtp_rho_kinase: float
+      calcium_super_2_endsuper_calcium_m: float
+      source_2ca_super_2_endsuper_calcium_m: float
+      source_3ca_super_2_endsuper_calcium_m: float
+      source_4ca_super_2_endsuper_calcium_m: float
+      source_defined_mlck_state: float
+      mlck_calcium_super_2_endsuper_calcium_m: float
+      mlck_2ca_super_2_endsuper_calcium_m: float
+      mlck_3ca_super_2_endsuper_calcium_m: float
+      mlck_4ca_super_2_endsuper_calcium_m: float
+      pkc: float
+      pkc_active1: float
+      pkc_dag: float
+      pkc_active_2: float
+      pkc_active_3: float
+      csa39_degraded: float
+      csa36_degraded: float
+      csa35_degraded: float
+      pkc_active_1_cpi: float
+      pkc_active_2_cpi: float
+      pkc_active_3_cpi: float
+      cpi_17_mypt1_ppase: float
+      cpi_17_mypt1_ppase_2: float
+      cpi_17: float
+      source_defined_mlc_state: float
+      source_defined_mlc_state_2: float
+      rho_kinase_mlc: float
+      rho_kinase_mlc_2: float
+      cpi_17_2: float
+      calcium_super_2_endsuper: float
+      calmodulin: float
+      calcium_super_2_endsuper_store: float
+      g_beta_response_parameter_gamma_1: float
+      g_beta_response_parameter_gamma_2: float
+      plc_beta_response_parameter: float
+      calcium_super_2_endsuper_trunsp: float
+      calcium_super_2_endsuper_pump: float
+      g_sub_12_endsub_alpha_beta_response_parameter_gamma_thrombin_r_active: float
+      p115rho_gef_gtp_alpha: float
+      g_sub_12_endsub_alpha_beta_response_parameter_gamma: float
+      g_sub_12_endsub_alpha_gdp: float
+      g_sub_12_endsub_alpha_gtp: float
+      g_sub_q_endsub_alpha_gdp: float
+      g_sub_q_endsub_alpha_beta_response_parameter_gamma_thrombin_r_active: float
+      g_sub_q_endsub_alpha_beta_response_parameter_gamma: float
+      plc_beta_response_parameter_g_sub_q_endsub_alpha_gtp: float
+      source_2ca_super_2_endsuper_calcium_super_2_endsuper_trunsp: float
+      calcium_super_2_endsuper_pump_calcium_super_2_endsuper: float
+      rho_gtp_rho_kinase_mlc: float
+      rho_gtp_rho_kinase_mlc_2: float
+      source_defined_mlc_state_3: float
+      mypt1_rho_kinase: float
+      mypt1_mlc: float
+      mypt1_mlc_2: float
+      mypt1_mlc_3: float
+      mypt1_mlc_4: float
+      mlck_mlc: float
+      mlck_mlc_2: float
+      mypt1_rho_kinase_2: float
+      mlck_4ca_super_2_endsuper_calcium_m_mlc: float
+      mlck_3ca_super_2_endsuper_calcium_m_mlc: float
+      mlck_4ca_super_2_endsuper_calcium_m_mlc_2: float
+      mlck_3ca_super_2_endsuper_calcium_m_mlc_2: float
+      mlck_2ca_super_2_endsuper_calcium_m_mlc: float
+      mlck_2ca_super_2_endsuper_calcium_m_mlc_2: float
+      mlck_calcium_super_2_endsuper_calcium_m_mlc: float
+      mlck_calcium_super_2_endsuper_calcium_m_mlc_2: float
+      calcium_super_2_endsuper_ext_leak: float
+      calcium_super_2_endsuper_ext: float
+      calcium_super_2_endsuper_int_leak: float
+      plc_beta_response_parameter_g_sub_q_endsub_alpha_gtp_calcium_super_2_endsuper: float
+      pkc_calcium_super_2_endsuper_dag: float
+      pkc_calcium_super_2_endsuper: float
+      plc_beta_response_parameter_g_sub_q_endsub_gtp_calcium_pip2: float
+      plc_beta_response_parameter_calcium_pip2: float
+      plc_beta_response_parameter_calcium_super_2_endsuper: float
+      mypt1_ppase: float
+      mypt1_ppase_2: float
+    species_labels:
+      thrombin: Thrombin
+      thrombin_r: Thrombin R
+      pro_thrombin_r: Pro Thrombin R
+      thrombin_ligand: Thrombin Ligand
+      thrombin_r_active: Thrombin R active
+      source_defined_rgs_state: source-defined RGS state
+      inositol: Inositol
+      sa40_degraded: Sa40 Degraded
+      thrombin_r_2: Thrombin R
+      source_defined_rgs_state_2: source-defined RGS state
+      gtp: GTP
+      g_sub_q_endsub_alpha_gtp: G Sub Q Endsub Alpha GTP
+      gdp: GDP
+      ip3r: IP3R
+      source_3ip3_ip3r: 3IP3 IP3R
+      p115rho_gef: P115rho GEF
+      rho_kinase: Rho Kinase
+      rho_gap: Rho GAP
+      dag: DAG
+      ip3: IP3
+      rho_gap_2: Rho GAP
+      rho_gtp: Rho GTP
+      source_defined_pip2_state: source-defined PIP2 state
+      source_defined_pc_state: source-defined PC state
+      rho_gdp: Rho GDP
+      rho_gef: Rho GEF
+      rho_gef_active: Rho GEF active
+      rho_gtp_rho_kinase: Rho GTP Rho Kinase
+      calcium_super_2_endsuper_calcium_m: calcium Super 2 Endsuper calcium M
+      source_2ca_super_2_endsuper_calcium_m: 2ca Super 2 Endsuper calcium M
+      source_3ca_super_2_endsuper_calcium_m: 3ca Super 2 Endsuper calcium M
+      source_4ca_super_2_endsuper_calcium_m: 4ca Super 2 Endsuper calcium M
+      source_defined_mlck_state: source-defined MLCK state
+      mlck_calcium_super_2_endsuper_calcium_m: MLCK calcium Super 2 Endsuper calcium
+        M
+      mlck_2ca_super_2_endsuper_calcium_m: MLCK 2ca Super 2 Endsuper calcium M
+      mlck_3ca_super_2_endsuper_calcium_m: MLCK 3ca Super 2 Endsuper calcium M
+      mlck_4ca_super_2_endsuper_calcium_m: MLCK 4ca Super 2 Endsuper calcium M
+      pkc: PKC
+      pkc_active1: PKC Active1
+      pkc_dag: PKC DAG
+      pkc_active_2: PKC active 2
+      pkc_active_3: PKC active 3
+      csa39_degraded: Csa39 Degraded
+      csa36_degraded: Csa36 Degraded
+      csa35_degraded: Csa35 Degraded
+      pkc_active_1_cpi: PKC active 1 CPI
+      pkc_active_2_cpi: PKC active 2 CPI
+      pkc_active_3_cpi: PKC active 3 CPI
+      cpi_17_mypt1_ppase: CPI 17 MYPT1 Ppase
+      cpi_17_mypt1_ppase_2: CPI 17 MYPT1 Ppase
+      cpi_17: CPI 17
+      source_defined_mlc_state: source-defined MLC state
+      source_defined_mlc_state_2: source-defined MLC state
+      rho_kinase_mlc: Rho Kinase MLC
+      rho_kinase_mlc_2: Rho Kinase MLC
+      cpi_17_2: CPI 17
+      calcium_super_2_endsuper: calcium Super 2 Endsuper
+      calmodulin: calmodulin
+      calcium_super_2_endsuper_store: calcium Super 2 Endsuper Store
+      g_beta_response_parameter_gamma_1: G beta response parameter Gamma 1
+      g_beta_response_parameter_gamma_2: G beta response parameter Gamma 2
+      plc_beta_response_parameter: PLC beta response parameter
+      calcium_super_2_endsuper_trunsp: calcium Super 2 Endsuper Trunsp
+      calcium_super_2_endsuper_pump: calcium Super 2 Endsuper Pump
+      g_sub_12_endsub_alpha_beta_response_parameter_gamma_thrombin_r_active: G Sub
+        12 Endsub Alpha beta response parameter Gamma Thrombin R active
+      p115rho_gef_gtp_alpha: P115rho GEF GTP Alpha
+      g_sub_12_endsub_alpha_beta_response_parameter_gamma: G Sub 12 Endsub Alpha beta
+        response parameter Gamma
+      g_sub_12_endsub_alpha_gdp: G Sub 12 Endsub Alpha GDP
+      g_sub_12_endsub_alpha_gtp: G Sub 12 Endsub Alpha GTP
+      g_sub_q_endsub_alpha_gdp: G Sub Q Endsub Alpha GDP
+      g_sub_q_endsub_alpha_beta_response_parameter_gamma_thrombin_r_active: G Sub
+        Q Endsub Alpha beta response parameter Gamma Thrombin R active
+      g_sub_q_endsub_alpha_beta_response_parameter_gamma: G Sub Q Endsub Alpha beta
+        response parameter Gamma
+      plc_beta_response_parameter_g_sub_q_endsub_alpha_gtp: PLC beta response parameter
+        G Sub Q Endsub Alpha GTP
+      source_2ca_super_2_endsuper_calcium_super_2_endsuper_trunsp: 2ca Super 2 Endsuper
+        calcium Super 2 Endsuper Trunsp
+      calcium_super_2_endsuper_pump_calcium_super_2_endsuper: calcium Super 2 Endsuper
+        Pump calcium Super 2 Endsuper
+      rho_gtp_rho_kinase_mlc: Rho GTP Rho Kinase MLC
+      rho_gtp_rho_kinase_mlc_2: Rho GTP Rho Kinase MLC
+      source_defined_mlc_state_3: source-defined MLC state
+      mypt1_rho_kinase: MYPT1 Rho Kinase
+      mypt1_mlc: MYPT1 MLC
+      mypt1_mlc_2: MYPT1 MLC
+      mypt1_mlc_3: MYPT1 MLC
+      mypt1_mlc_4: MYPT1 MLC
+      mlck_mlc: MLCK MLC
+      mlck_mlc_2: MLCK MLC
+      mypt1_rho_kinase_2: MYPT1 Rho Kinase
+      mlck_4ca_super_2_endsuper_calcium_m_mlc: MLCK 4ca Super 2 Endsuper calcium M
+        MLC
+      mlck_3ca_super_2_endsuper_calcium_m_mlc: MLCK 3ca Super 2 Endsuper calcium M
+        MLC
+      mlck_4ca_super_2_endsuper_calcium_m_mlc_2: MLCK 4ca Super 2 Endsuper calcium
+        M MLC
+      mlck_3ca_super_2_endsuper_calcium_m_mlc_2: MLCK 3ca Super 2 Endsuper calcium
+        M MLC
+      mlck_2ca_super_2_endsuper_calcium_m_mlc: MLCK 2ca Super 2 Endsuper calcium M
+        MLC
+      mlck_2ca_super_2_endsuper_calcium_m_mlc_2: MLCK 2ca Super 2 Endsuper calcium
+        M MLC
+      mlck_calcium_super_2_endsuper_calcium_m_mlc: MLCK calcium Super 2 Endsuper calcium
+        M MLC
+      mlck_calcium_super_2_endsuper_calcium_m_mlc_2: MLCK calcium Super 2 Endsuper
+        calcium M MLC
+      calcium_super_2_endsuper_ext_leak: calcium Super 2 Endsuper Ext Leak
+      calcium_super_2_endsuper_ext: calcium Super 2 Endsuper Ext
+      calcium_super_2_endsuper_int_leak: calcium Super 2 Endsuper Int Leak
+      plc_beta_response_parameter_g_sub_q_endsub_alpha_gtp_calcium_super_2_endsuper: PLC
+        beta response parameter G Sub Q Endsub Alpha GTP calcium Super 2 Endsuper
+      pkc_calcium_super_2_endsuper_dag: PKC calcium Super 2 Endsuper DAG
+      pkc_calcium_super_2_endsuper: PKC calcium Super 2 Endsuper
+      plc_beta_response_parameter_g_sub_q_endsub_gtp_calcium_pip2: PLC beta response
+        parameter G Sub Q Endsub GTP calcium PIP2
+      plc_beta_response_parameter_calcium_pip2: PLC beta response parameter calcium
+        PIP2
+      plc_beta_response_parameter_calcium_super_2_endsuper: PLC beta response parameter
+        calcium Super 2 Endsuper
+      mypt1_ppase: MYPT1 Ppase
+      mypt1_ppase_2: MYPT1 Ppase
+io:
+  inputs: []
+  outputs: []

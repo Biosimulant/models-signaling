@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "81542420-344b-41e7-9af5-943e410c224a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "deb3a317-a616-432c-a415-c8d3b592a5c3",
+  "created_at": "2026-05-15T19:08:08.930323695+00:00",
+  "last_synced_at": "2026-05-16T09:06:26.542870+00:00",
+  "hub_manifest_hash": "644284cbced692070bfe8b3fa41d6340efd77bf056d922140a135b84c7f33a01",
+  "package_name": "bhalla2002-mkp1-feedback-effects-lab"
+}

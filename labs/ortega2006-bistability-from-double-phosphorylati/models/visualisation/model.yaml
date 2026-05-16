@@ -1,0 +1,40 @@
+schema_version: '2.0'
+title: Ortega2006 - bistability from double phosphorylation in signal transduction
+  Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Ortega2006 - bistability from double phosphorylation in signal transduction.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_ortega2006_bistability_from_double_phosphorylati_biomd0000000258_model
+    title: Ortega2006 - bistability from double phosphorylation in signal transduction
+    context: phosphorylation and regulatory motif dynamics
+    question: How does Ortega2006 - bistability from double phosphorylation in signal
+      transduction express its source-modeled signaling motif over the baseline run?
+    visual_scope: phosphorylation and regulatory motif dynamics
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      alpha: float
+      beta_response_parameter: float
+      gamma: float
+    species_labels:
+      alpha: Alpha
+      beta_response_parameter: beta response parameter
+      gamma: Gamma
+io:
+  inputs: []
+  outputs: []

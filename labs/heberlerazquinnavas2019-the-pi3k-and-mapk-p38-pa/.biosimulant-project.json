@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "51e85f92-f7d6-46df-9652-c97c1a0ba971",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3bfc2b0c-ec56-47d0-ab3c-bfd0b91fe080",
+  "created_at": "2026-05-15T19:08:09.857990370+00:00",
+  "last_synced_at": "2026-05-16T09:47:08.872970+00:00",
+  "hub_manifest_hash": "48125c521b8074696882f390e6aad8ea5c1789a66eb91fc47bfa5bb5b3d2798a",
+  "package_name": "heberlerazquinnavas2019-the-pi3k-and-mapk-p38-pathways-control-s"
+}

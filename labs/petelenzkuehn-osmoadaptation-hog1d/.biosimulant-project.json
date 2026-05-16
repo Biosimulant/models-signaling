@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "441b3486-5ef0-4e5f-acfb-16da478ab536",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b7c9bda3-4455-4456-a60d-031ff460fa2e",
+  "created_at": "2026-05-16T05:49:39.015340682+00:00",
+  "last_synced_at": "2026-05-16T10:40:53.008381+00:00",
+  "hub_manifest_hash": "89bc89decd92d2c10fd3aa35cf0b75e8c0cb337cd30f767d6a830cda7c82e412",
+  "package_name": "petelenzkuehn-osmoadaptation-hog1d-lab"
+}

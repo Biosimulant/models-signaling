@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Smallbone2015 - pathway
+description: Signaling Smallbone2015Pathway Model1503180003Model represents signaling
+  smallbone2015 pathway model1503180003 mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1503180003.
+  When you run it, you can inspect state and compare temporal behavior between baseline
+  and adjusted inputs.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- physiology
+authors:
+- Biosimulant Team
+- Kieran Smallbone and Yunjiao Wang
+upstream:
+  id: biomodels_ebi:MODEL1503180003
+  source_db: biomodels_ebi
+  source_id: MODEL1503180003
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1503180003
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1503180003?filename=MODEL1503180003_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.smallbone2015_pathway:Smallbone2015PathwayModel1503180003Model
+  init_kwargs:
+    model_path: data/MODEL1503180003.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_x0_state
+    maps_to: signaling_sbml_smallbone2015_pathway_model1503180003_model.initial_source_defined_x0_state
+    label: Initial source-defined X0 state
+    description: Initial level of source-defined X0 state. Maps to SBML symbol `X0`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_x4_state
+    maps_to: signaling_sbml_smallbone2015_pathway_model1503180003_model.initial_source_defined_x4_state
+    label: Initial source-defined X4 state
+    description: Initial level of source-defined X4 state. Maps to SBML symbol `X4`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_x0_state
+    maps_to: signaling_sbml_smallbone2015_pathway_model1503180003_model.source_defined_x0_state
+    label: Source Defined X0 State
+    description: Source Defined X0 State. Maps to SBML symbol `X0` and is emitted
+      in native SBML units.
+  - name: source_defined_x1_state
+    maps_to: signaling_sbml_smallbone2015_pathway_model1503180003_model.source_defined_x1_state
+    label: Source Defined X1 State
+    description: Source Defined X1 State. Maps to SBML symbol `X1` and is emitted
+      in native SBML units.
+  - name: source_defined_x2_state
+    maps_to: signaling_sbml_smallbone2015_pathway_model1503180003_model.source_defined_x2_state
+    label: Source Defined X2 State
+    description: Source Defined X2 State. Maps to SBML symbol `X2` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_smallbone2015_pathway_model1503180003_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_smallbone2015_pathway_model1503180003_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_smallbone2015_pathway_model1503180003_model.species_labels
+    label: Observable labels

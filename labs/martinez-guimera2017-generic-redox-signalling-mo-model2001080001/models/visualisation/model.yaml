@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Martinez-Guimera2017 - Generic redox signalling model with negative feedback
+  regulation (Model 2) Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Martinez-Guimera2017 - Generic redox signalling model with negative feedback regulation
+  (Model 2).'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- stress-response
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_martinez_guimera2017_generic_redox_signalling_mo_model2001080001_model
+    title: Martinez-Guimera2017 - Generic redox signalling model with negative feedback
+      regulation (Model 2)
+    context: phosphorylation and regulatory motif dynamics
+    question: How does Martinez-Guimera2017 - Generic redox signalling model with
+      negative feedback regulation (Model 2) express its source-modeled signaling
+      motif over the baseline run?
+    visual_scope: phosphorylation and regulatory motif dynamics
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      oxidant: float
+      source_defined_aox_state: float
+      activator: float
+      sensor: float
+      sensor_ox: float
+      function: float
+      relay: float
+      intermediate: float
+      reductant: float
+      inhibitor: float
+      reductant_ox: float
+      neg_reg: float
+      relay2: float
+      inactive: float
+    species_labels:
+      oxidant: Oxidant
+      source_defined_aox_state: source-defined AOX state
+      activator: Activator
+      sensor: Sensor
+      sensor_ox: Sensor OX
+      function: Function
+      relay: Relay
+      intermediate: Intermediate
+      reductant: Reductant
+      inhibitor: Inhibitor
+      reductant_ox: Reductant OX
+      neg_reg: Neg Reg
+      relay2: Relay2
+      inactive: Inactive
+io:
+  inputs: []
+  outputs: []

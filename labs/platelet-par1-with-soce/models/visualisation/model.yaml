@@ -1,0 +1,100 @@
+schema_version: '2.0'
+title: Platelet PAR1 with SOCE Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Platelet PAR1 with SOCE.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- platelet-signaling
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_platelet_par1_with_soce_model1807190001_model
+    title: Platelet PAR1 with SOCE
+    context: blood and immune cascade signaling
+    question: How does Platelet PAR1 with SOCE redistribute cascade activity across
+      source-defined species?
+    visual_scope: blood and immune cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      calcium_cyt: float
+      ip3: float
+      ip3ra: float
+      ip3ri1: float
+      ip3ri2: float
+      ip3rn: float
+      ip3ro: float
+      ip3rs: float
+      calcium_prp: float
+      delta_psi: float
+      source_defined_so_1_state: float
+      source_defined_so_state: float
+      calcium_dts: float
+      stim_calcium_sensor: float
+      stim_calcium_sensor_calcium: float
+      calcium_mit: float
+      source_defined_tcl_state: float
+      source_defined_top_state: float
+      par1ap: float
+      source_defined_par_state: float
+      source_defined_par_state_2: float
+      par_gq: float
+      par_gq_gdp: float
+      par_gq_gtp: float
+      source_defined_pip2_state: float
+      source_defined_plc_state: float
+      plcgq_gdp: float
+      plcgq_gtp: float
+      plcgq_gtppip2: float
+      gdp: float
+      gq_gdp: float
+      gq_gtp: float
+      gtp: float
+    species_labels:
+      calcium_cyt: calcium Cyt
+      ip3: IP3
+      ip3ra: Ip3ra
+      ip3ri1: Ip3ri1
+      ip3ri2: Ip3ri2
+      ip3rn: Ip3rn
+      ip3ro: Ip3ro
+      ip3rs: Ip3rs
+      calcium_prp: calcium Prp
+      delta_psi: Delta Psi
+      source_defined_so_1_state: source-defined SO_1 state
+      source_defined_so_state: source-defined SO state
+      calcium_dts: calcium Dts
+      stim_calcium_sensor: STIM calcium sensor
+      stim_calcium_sensor_calcium: STIM calcium sensor calcium
+      calcium_mit: calcium Mit
+      source_defined_tcl_state: source-defined TCL state
+      source_defined_top_state: source-defined TOP state
+      par1ap: PAR1AP
+      source_defined_par_state: source-defined PAR state
+      source_defined_par_state_2: source-defined PAR* state
+      par_gq: PAR Gq
+      par_gq_gdp: PAR Gq GDP
+      par_gq_gtp: PAR Gq GTP
+      source_defined_pip2_state: source-defined PIP2 state
+      source_defined_plc_state: source-defined PLC state
+      plcgq_gdp: Plcgq GDP
+      plcgq_gtp: Plcgq GTP
+      plcgq_gtppip2: Plcgq GTPPIP2
+      gdp: GDP
+      gq_gdp: Gq GDP
+      gq_gtp: Gq GTP
+      gtp: GTP
+io:
+  inputs: []
+  outputs: []

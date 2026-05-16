@@ -1,0 +1,113 @@
+schema_version: '2.0'
+title: Huang2014 - Systematic modeling for the insulin signaling network mediated
+  by IRS1 and IRS2 Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- metabolic-signaling
+- hormone-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_huang2014_systematic_modeling_for_the_insulin_si_model1912090001_model
+    title: Huang2014 - Systematic modeling for the insulin signaling network mediated
+      by IRS1 and IRS2
+    context: GPCR and cAMP/PKA signaling
+    question: How does Huang2014 - Systematic modeling for the insulin signaling network
+      mediated by IRS1 and IRS2 route receptor activity into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      x2_receptor: float
+      x6_en_receptor: float
+      x9_irs_1: float
+      x21_irs_2: float
+      x11_pi3k: float
+      x14_pi45p2: float
+      x15_pi34p2: float
+      x13_pi345p3: float
+      x16_akt: float
+      x18_pkr: float
+      x19_pkr_p: float
+      x26_shc_adapter_protein: float
+      x31_gs: float
+      x33_ras_gdp: float
+      x35_mek: float
+      x37_jnk: float
+      x4_i2r_p: float
+      x20_irs_1_ser_p: float
+      x22_irs_2_tyrosine_site_p: float
+      x23_pi3k_irs_2_p: float
+      x38_jnk_p: float
+      x25_active_fox01: float
+      x17_akt_p: float
+      x12_pi3k_irs_1_p: float
+      x1_insulin: float
+      x3_insulin_receptor: float
+      x8_en_insulin_receptor_p: float
+      x7_en_i2r_p: float
+      x10_irs_1_tyrosine_site_p: float
+      x27_irsh: float
+      x5_insulin_receptor_p: float
+      x28_irsh_p: float
+      x29_irsh_gs: float
+      x32_sh_gs: float
+      x30_sh_p: float
+      x34_ras_gtp: float
+      x36_mek_p: float
+      x24_fox01: float
+    species_labels:
+      x2_receptor: X2 Receptor
+      x6_en_receptor: X6 EN Receptor
+      x9_irs_1: X9 IRS 1
+      x21_irs_2: X21 IRS 2
+      x11_pi3k: X11 PI3K
+      x14_pi45p2: X14 PI45P2
+      x15_pi34p2: X15 PI34P2
+      x13_pi345p3: X13 PI345P3
+      x16_akt: X16 AKT
+      x18_pkr: X18 PKR
+      x19_pkr_p: X19 PKR P
+      x26_shc_adapter_protein: X26 Shc adapter protein
+      x31_gs: X31 GS
+      x33_ras_gdp: X33 RAS GDP
+      x35_mek: X35 MEK
+      x37_jnk: X37 JNK
+      x4_i2r_p: X4 I2R P
+      x20_irs_1_ser_p: X20 IRS 1 Ser P
+      x22_irs_2_tyrosine_site_p: X22 IRS 2 tyrosine site P
+      x23_pi3k_irs_2_p: X23 PI3K IRS 2 P
+      x38_jnk_p: X38 JNK P
+      x25_active_fox01: X25 active Fox01
+      x17_akt_p: X17 AKT P
+      x12_pi3k_irs_1_p: X12 PI3K IRS 1 P
+      x1_insulin: X1 Insulin
+      x3_insulin_receptor: X3 insulin receptor
+      x8_en_insulin_receptor_p: X8 EN insulin receptor P
+      x7_en_i2r_p: X7 EN I2R P
+      x10_irs_1_tyrosine_site_p: X10 IRS 1 tyrosine site P
+      x27_irsh: X27 Irsh
+      x5_insulin_receptor_p: X5 insulin receptor P
+      x28_irsh_p: X28 Irsh P
+      x29_irsh_gs: X29 Irsh GS
+      x32_sh_gs: X32 Sh GS
+      x30_sh_p: X30 Sh P
+      x34_ras_gtp: X34 RAS GTP
+      x36_mek_p: X36 MEK P
+      x24_fox01: X24 Fox01
+io:
+  inputs: []
+  outputs: []

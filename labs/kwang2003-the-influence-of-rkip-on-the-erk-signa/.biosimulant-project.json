@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "01c1e409-2dd6-42ee-a525-64e16c3bc2f3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1df8c17d-2761-4d57-bdc7-33cd858b5245",
+  "created_at": "2026-05-15T19:08:10.472123014+00:00",
+  "last_synced_at": "2026-05-16T10:06:36.268723+00:00",
+  "hub_manifest_hash": "12cd202ff9759fad43cce90069527b2ffac3814c69b767ddbbd82fb0fd0cbd5a",
+  "package_name": "kwang2003-the-influence-of-rkip-on-the-erk-signaling-pathway-lab"
+}

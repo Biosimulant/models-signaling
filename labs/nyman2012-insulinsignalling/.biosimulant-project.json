@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "7f8e1b79-6fc5-41be-b2a5-08dd0a600430",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7b764f0c-84c8-4604-85b5-081981e16b1d",
+  "created_at": "2026-05-16T05:38:38.636946103+00:00",
+  "last_synced_at": "2026-05-16T10:26:55.106462+00:00",
+  "hub_manifest_hash": "dbb90c05498e536a18a9e0389b20788f40c3b4f3589ba155894eb7b8b0bfbb73",
+  "package_name": "nyman2012-insulinsignalling-lab"
+}

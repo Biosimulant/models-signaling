@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Abell2011_CalciumSignaling_WithAdaptation Lab
+description: Clean Biosimulant lab for calcium and second-messenger signaling. Values
+  are native SBML quantities; equations, parameters, and initial values remain in
+  the bundled source file.
+models:
+- alias: signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model.state
+  to:
+  - visualisation.signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model_state
+- from: signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model.summary
+  to:
+  - visualisation.signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model_summary
+- from: signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model.species_labels
+  to:
+  - visualisation.signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+io:
+  inputs:
+  - name: initial_intracellular_calcium
+    maps_to: signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model.initial_intracellular_calcium
+    label: Initial intracellular calcium
+    description: Initial level of intracellular calcium. Maps to SBML symbol `CaI`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: intracellular_calcium
+    maps_to: signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model.intracellular_calcium
+    label: intracellular calcium
+    description: intracellular calcium. Maps to SBML symbol `CaI` and is emitted in
+      native SBML units.
+  - name: pmca_calcium_pump
+    maps_to: signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model.pmca_calcium_pump
+    label: PMCA calcium pump
+    description: PMCA calcium pump. Maps to SBML symbol `mwaf195932_a72c_4552_8cf2_b349b15d39c4`
+      and is emitted in native SBML units.
+  - name: serca_calcium_pump
+    maps_to: signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model.serca_calcium_pump
+    label: SERCA calcium pump
+    description: SERCA calcium pump. Maps to SBML symbol `mw0ebc76ad_49d7_4845_8f88_04d443fbe7f3`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model.species_labels
+    label: Observable labels

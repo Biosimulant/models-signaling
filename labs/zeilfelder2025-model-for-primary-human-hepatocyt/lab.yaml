@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Zeilfelder2025 - Model for primary human hepatocytes (PHH) Lab
+description: 'Clean Biosimulant lab for systems signaling model: Zeilfelder2025 -
+  Model for primary human hepatocytes (PHH). Values are native SBML quantities; equations,
+  parameters, and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model.state
+  to:
+  - visualisation.signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model_state
+- from: signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model.summary
+  to:
+  - visualisation.signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model_summary
+- from: signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model.species_labels
+  to:
+  - visualisation.signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cytokine-signaling
+- interleukin-signaling
+- smad
+io:
+  inputs:
+  - name: initial_input_apap_level
+    maps_to: signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model.initial_input_apap_level
+    label: Input Apap
+    description: Input Apap source parameter. Maps to SBML symbol `input_apap` and
+      preserves the bundled default.
+  - name: initial_input_cyclo_level
+    maps_to: signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model.initial_input_cyclo_level
+    label: Input Cyclo
+    description: Input Cyclo source parameter. Maps to SBML symbol `input_cyclo` and
+      preserves the bundled default.
+  - name: initial_input_dcf_level
+    maps_to: signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model.initial_input_dcf_level
+    label: Input Dcf
+    description: Input Dcf source parameter. Maps to SBML symbol `input_dcf` and preserves
+      the bundled default.
+  outputs:
+  - name: inactive_receptor
+    maps_to: signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model.inactive_receptor
+    label: Inactive Receptor
+    description: Inactive Receptor. Maps to SBML symbol `JAK1_gp130` and is emitted
+      in native SBML units.
+  - name: total_phosphorylated_receptor
+    maps_to: signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model.total_phosphorylated_receptor
+    label: Total Phosphorylated Receptor
+    description: Total Phosphorylated Receptor. Maps to SBML symbol `pJAK1_pgp130`
+      and is emitted in native SBML units.
+  - name: unphosphorylated_stat3
+    maps_to: signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model.unphosphorylated_stat3
+    label: Unphosphorylated STAT3
+    description: Unphosphorylated STAT3. Maps to SBML symbol `STAT3` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model.species_labels
+    label: Observable labels

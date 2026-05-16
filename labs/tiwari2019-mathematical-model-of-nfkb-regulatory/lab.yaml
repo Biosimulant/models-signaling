@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: Tiwari2019 - Mathematical model of NFKB regulatory module with TNF and ROS
+  Lab
+description: Clean Biosimulant lab for NF-kB pathway signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model.state
+  to:
+  - visualisation.signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model_state
+- from: signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model.summary
+  to:
+  - visualisation.signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model_summary
+- from: signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model.species_labels
+  to:
+  - visualisation.signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- tnf-signaling
+io:
+  inputs:
+  - name: initial_tnf_receptor_level
+    maps_to: signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model.initial_tnf_receptor_level
+    label: TNF receptor
+    description: TNF receptor source parameter. Maps to SBML symbol `TNF_R` and preserves
+      the bundled default.
+  - name: initial_tnf
+    maps_to: signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model.initial_tnf
+    label: Initial TNF
+    description: Initial level of TNF. Maps to SBML symbol `TNF`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: ikk_active
+    maps_to: signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model.ikk_active
+    label: IKK active
+    description: IKK active. Maps to SBML symbol `IKK_active` and is emitted in native
+      SBML units.
+  - name: ikkactive_ik_b
+    maps_to: signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model.ikkactive_ik_b
+    label: Ikkactive Ik B
+    description: Ikkactive Ik B. Maps to SBML symbol `IKKactive_IkB` and is emitted
+      in native SBML units.
+  - name: ikkactive_ik_b_nfkb
+    maps_to: signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model.ikkactive_ik_b_nfkb
+    label: Ikkactive Ik B NF-kB
+    description: Ikkactive Ik B NF-kB. Maps to SBML symbol `IKKactive_IkB_NFKB` and
+      is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_tiwari2019_mathematical_model_of_nfkb_regulatory_model1911140002_model.species_labels
+    label: Observable labels

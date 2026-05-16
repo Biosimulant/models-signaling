@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Fujita2010_Akt_Signalling_EGFRinhib Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model.state
+  to:
+  - visualisation.signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model_state
+- from: signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model.summary
+  to:
+  - visualisation.signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model_summary
+- from: signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model.species_labels
+  to:
+  - visualisation.signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- egfr
+- pi3k-akt
+- pharmacology
+io:
+  inputs:
+  - name: initial_egf_binding_kb_level
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model.initial_egf_binding_kb_level
+    label: EGF Binding Kb
+    description: EGF Binding Kb source parameter. Maps to SBML symbol `EGF_binding_kb`
+      and preserves the bundled default.
+  - name: initial_egf_binding_kf_level
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model.initial_egf_binding_kf_level
+    label: EGF Binding Kf
+    description: EGF Binding Kf source parameter. Maps to SBML symbol `EGF_binding_kf`
+      and preserves the bundled default.
+  - name: initial_egf_conc_pulse_level
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model.initial_egf_conc_pulse_level
+    label: EGF Conc Pulse
+    description: EGF Conc Pulse source parameter. Maps to SBML symbol `EGF_conc_pulse`
+      and preserves the bundled default.
+  outputs:
+  - name: p_egfr_akt
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model.p_egfr_akt
+    label: P EGFR AKT
+    description: P EGFR AKT. Maps to SBML symbol `pEGFR_Akt` and is emitted in native
+      SBML units.
+  - name: akt
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model.akt
+    label: AKT
+    description: AKT. Maps to SBML symbol `Akt` and is emitted in native SBML units.
+  - name: source_defined_pakt_state
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model.source_defined_pakt_state
+    label: source-defined PAKT state
+    description: source-defined PAKT state. Maps to SBML symbol `pAkt` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model.species_labels
+    label: Observable labels

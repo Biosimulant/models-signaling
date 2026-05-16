@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Khan2018 - Origins of robustness in translational control via eukaryotic translation
+  initiation factor (eIF) 2 Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Khan2018 - Origins of robustness in translational control via eukaryotic translation
+  initiation factor (eIF) 2.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_khan2018_origins_of_robustness_in_translational_model1911120001_model
+    title: Khan2018 - Origins of robustness in translational control via eukaryotic
+      translation initiation factor (eIF) 2
+    context: GPCR and cAMP/PKA signaling
+    question: How does Khan2018 - Origins of robustness in translational control via
+      eukaryotic translation initiation factor (eIF) 2 route receptor activity into
+      cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      e_if2_gdp: float
+      e_if2b: float
+      e_if2_gtp: float
+      source_defined_eif5_state: float
+      e_if5_e_if2_gdp: float
+      e_if5_e_if2b_e_if2_gdp: float
+      e_if2b_e_if2_gdp: float
+      translation: float
+      source_defined_ka_state: float
+      source_defined_k_state: float
+      source_defined_ka_k_state: float
+      e_if2_p: float
+      ka_k_e_if2: float
+      e_if2_p_e_if2b: float
+    species_labels:
+      e_if2_gdp: E IF2 GDP
+      e_if2b: E IF2B
+      e_if2_gtp: E IF2 GTP
+      source_defined_eif5_state: source-defined EIF5 state
+      e_if5_e_if2_gdp: E IF5 E IF2 GDP
+      e_if5_e_if2b_e_if2_gdp: E IF5 E IF2B E IF2 GDP
+      e_if2b_e_if2_gdp: E IF2B E IF2 GDP
+      translation: Translation
+      source_defined_ka_state: source-defined KA state
+      source_defined_k_state: source-defined K state
+      source_defined_ka_k_state: source-defined KA_K state
+      e_if2_p: E IF2 P
+      ka_k_e_if2: KA K E IF2
+      e_if2_p_e_if2b: E IF2 P E IF2B
+io:
+  inputs: []
+  outputs: []

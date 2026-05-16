@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Lee2008 - ERK and PI3K signal integration by Myc Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+- pi3k-akt
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_lee2008_erk_and_pi3k_signal_integration_by_myc_biomd0000000818_model
+    title: Lee2008 - ERK and PI3K signal integration by Myc
+    context: receptor-to-MAPK cascade signaling
+    question: How does Lee2008 - ERK and PI3K signal integration by Myc propagate
+      receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      myc_transcription_factor: float
+      akt: float
+      phosphorylated_akt: float
+      pi3k: float
+      gsk3b: float
+      gsk3bp: float
+      erk: float
+      myc_transcription_factor_ser62: float
+      myc_transcription_factor_thr58: float
+      source_defined_gf_state: float
+      myc_transcription_factor_total: float
+    species_labels:
+      myc_transcription_factor: MYC transcription factor
+      akt: AKT
+      phosphorylated_akt: phosphorylated AKT
+      pi3k: PI3K
+      gsk3b: GSK3B
+      gsk3bp: Gsk3bp
+      erk: ERK
+      myc_transcription_factor_ser62: MYC transcription factor Ser62
+      myc_transcription_factor_thr58: MYC transcription factor Thr58
+      source_defined_gf_state: source-defined GF state
+      myc_transcription_factor_total: MYC transcription factor Total
+io:
+  inputs: []
+  outputs: []

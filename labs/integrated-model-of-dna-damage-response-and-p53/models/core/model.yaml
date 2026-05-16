@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: 'Integrated Model of DNA Damage Response and p53 Signaling in ATM/ATR-Deficient
+  Ataxia Telangiectasia: Exploring the Therapeutic Roles of Possible repurposed drugs'
+description: Comprehensive Model DescriptionOverviewThis model simulates the cellular
+  response to DNA damage under conditions of ATM/ATR deficiency—such as in ataxia
+  telangiectasia—and predicts the potential benef. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- checkpoint-signaling
+- pharmacology
+authors:
+- Biosimulant Team
+- Francesco Pappalardo
+- Giulia Russo
+upstream:
+  id: biomodels_ebi:MODEL2503190002
+  source_db: biomodels_ebi
+  source_id: MODEL2503190002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2503190002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2503190002?filename=AT_ATM_ATR_forDR_v1.xml
+  license: CC0
+biosim:
+  entrypoint: src.integrated_model_of_dna_damage_response_and_p53:IntegratedModelOfDnaDamageResponseAndP53Model2503190002Model
+  init_kwargs:
+    model_path: data/MODEL2503190002.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_ck2_state
+    maps_to: signaling_sbml_integrated_model_of_dna_damage_response_and_p53_model2503190002_model.initial_source_defined_ck2_state
+    label: Initial source-defined CK2 state
+    description: Initial level of source-defined CK2 state. Maps to SBML symbol `CK2`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_keap1
+    maps_to: signaling_sbml_integrated_model_of_dna_damage_response_and_p53_model2503190002_model.initial_keap1
+    label: Initial KEAP1
+    description: Initial level of KEAP1. Maps to SBML symbol `KEAP1`; exposed as a
+      traceable initial-condition perturbation.
+  - name: initial_omaveloxolone
+    maps_to: signaling_sbml_integrated_model_of_dna_damage_response_and_p53_model2503190002_model.initial_omaveloxolone
+    label: Initial Omaveloxolone
+    description: Initial level of Omaveloxolone. Maps to SBML symbol `Omaveloxolone`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: atm_inactive
+    maps_to: signaling_sbml_integrated_model_of_dna_damage_response_and_p53_model2503190002_model.atm_inactive
+    label: ATM Inactive
+    description: ATM Inactive. Maps to SBML symbol `ATM_inactive` and is emitted in
+      native SBML units.
+  - name: atm_active
+    maps_to: signaling_sbml_integrated_model_of_dna_damage_response_and_p53_model2503190002_model.atm_active
+    label: ATM active
+    description: ATM active. Maps to SBML symbol `ATM_active` and is emitted in native
+      SBML units.
+  - name: atr_inactive
+    maps_to: signaling_sbml_integrated_model_of_dna_damage_response_and_p53_model2503190002_model.atr_inactive
+    label: ATR Inactive
+    description: ATR Inactive. Maps to SBML symbol `ATR_inactive` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_integrated_model_of_dna_damage_response_and_p53_model2503190002_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_integrated_model_of_dna_damage_response_and_p53_model2503190002_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_integrated_model_of_dna_damage_response_and_p53_model2503190002_model.species_labels
+    label: Observable labels

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a4ea5a20-f840-495e-a1d2-b6ca5471c666",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b8977025-68dd-48c3-8a36-fcda8c89f12f",
+  "created_at": "2026-05-15T19:08:09.415222298+00:00",
+  "last_synced_at": "2026-05-16T09:25:00.187834+00:00",
+  "hub_manifest_hash": "37d4ed267accfe40e16e83b041b3ef4e1ae082ad96872f297851da0e540565bd",
+  "package_name": "cookson2011-enzymaticqueueingcoupling-lab"
+}

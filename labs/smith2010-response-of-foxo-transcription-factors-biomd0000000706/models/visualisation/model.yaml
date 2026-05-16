@@ -1,0 +1,174 @@
+schema_version: '2.0'
+title: Smith2010 - Response of FOXO Transcription Factors to Post-Translational Modifications
+  (with acetylation pathway) Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Smith2010 - Response of FOXO Transcription Factors to Post-Translational Modifications
+  (with acetylation pathway).'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model
+    title: Smith2010 - Response of FOXO Transcription Factors to Post-Translational
+      Modifications (with acetylation pathway)
+    context: metabolic and hormone signaling response
+    question: How does Smith2010 - Response of FOXO Transcription Factors to Post-Translational
+      Modifications (with acetylation pathway) shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_null_state: float
+      degr_foxo1: float
+      cytoplasm_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated: float
+      nucleus_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated: float
+      dnabound_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated: float
+      cytoplasm_foxo1_unphosphorylated_unacetylated_polyubiquitinated: float
+      nucleus_foxo1_unphosphorylated_unacetylated_polyubiquitinated: float
+      dnabound_foxo1_unphosphorylated_unacetylated_polyubiquitinated: float
+      cytoplasm_foxo1_unphosphorylated_acetylated_notpolyubiquitinated: float
+      nucleus_foxo1_unphosphorylated_acetylated_notpolyubiquitinated: float
+      dnabound_foxo1_unphosphorylated_acetylated_notpolyubiquitinated: float
+      cytoplasm_foxo1_unphosphorylated_acetylated_polyubiquitinated: float
+      nucleus_foxo1_unphosphorylated_acetylated_polyubiquitinated: float
+      dnabound_foxo1_unphosphorylated_acetylated_polyubiquitinated: float
+      cytoplasm_foxo1_phosphorylated_unacetylated_notpolyubiquitinated: float
+      nucleus_foxo1_phosphorylated_unacetylated_notpolyubiquitinated: float
+      dnabound_foxo1_phosphorylated_unacetylated_notpolyubiquitinated: float
+      cytoplasm_foxo1_phosphorylated_unacetylated_polyubiquitinated: float
+      nucleus_foxo1_phosphorylated_unacetylated_polyubiquitinated: float
+      dnabound_foxo1_phosphorylated_unacetylated_polyubiquitinated: float
+      cytoplasm_foxo1_phosphorylated_acetylated_notpolyubiquitinated: float
+      nucleus_foxo1_phosphorylated_acetylated_notpolyubiquitinated: float
+      dnabound_foxo1_phosphorylated_acetylated_notpolyubiquitinated: float
+      cytoplasm_foxo1_phosphorylated_acetylated_polyubiquitinated: float
+      nucleus_foxo1_phosphorylated_acetylated_polyubiquitinated: float
+      dnabound_foxo1_phosphorylated_acetylated_polyubiquitinated: float
+      foxo1_unphosphorylated_tot: float
+      foxo1_phosphorylated_tot: float
+      foxo1_unacetylated_tot: float
+      foxo1_acetylated_tot: float
+      foxo1_unpolyubiquitinated_tot: float
+      foxo1_polyubiquitinated_tot: float
+      cytoplasm_foxo1_tot: float
+      nucleus_foxo1_tot: float
+      dnabound_foxo1_tot: float
+      foxo1_all: float
+      nucleus_rna_inr: float
+      cytoplasm_rna_inr: float
+      cytoplasm_inr: float
+      nucleus_rna_sod2: float
+      cytoplasm_rna_sod2: float
+      cytoplasm_sod2: float
+      e2f1: float
+      akt: float
+      source_defined_sgk_state: float
+      source_defined_cdk2_state: float
+      source_defined_ampk_state: float
+      source_defined_ikkb_state: float
+      source_defined_jnk_state: float
+      pp2a: float
+      cbpp300: float
+      source_defined_sirt1_state: float
+      source_defined_e3_state: float
+      source_defined_usp7_state: float
+      source_defined_scf_state: float
+      proteasome: float
+      foxo1_all_rate: float
+    species_labels:
+      source_defined_null_state: source-defined NULL state
+      degr_foxo1: Degr Foxo1
+      cytoplasm_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated: Cytoplasm
+        Foxo1 Unphosphorylated Unacetylated Notpolyubiquitinated
+      nucleus_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated: Nucleus Foxo1
+        Unphosphorylated Unacetylated Notpolyubiquitinated
+      dnabound_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated: Dnabound
+        Foxo1 Unphosphorylated Unacetylated Notpolyubiquitinated
+      cytoplasm_foxo1_unphosphorylated_unacetylated_polyubiquitinated: Cytoplasm Foxo1
+        Unphosphorylated Unacetylated Polyubiquitinated
+      nucleus_foxo1_unphosphorylated_unacetylated_polyubiquitinated: Nucleus Foxo1
+        Unphosphorylated Unacetylated Polyubiquitinated
+      dnabound_foxo1_unphosphorylated_unacetylated_polyubiquitinated: Dnabound Foxo1
+        Unphosphorylated Unacetylated Polyubiquitinated
+      cytoplasm_foxo1_unphosphorylated_acetylated_notpolyubiquitinated: Cytoplasm
+        Foxo1 Unphosphorylated Acetylated Notpolyubiquitinated
+      nucleus_foxo1_unphosphorylated_acetylated_notpolyubiquitinated: Nucleus Foxo1
+        Unphosphorylated Acetylated Notpolyubiquitinated
+      dnabound_foxo1_unphosphorylated_acetylated_notpolyubiquitinated: Dnabound Foxo1
+        Unphosphorylated Acetylated Notpolyubiquitinated
+      cytoplasm_foxo1_unphosphorylated_acetylated_polyubiquitinated: Cytoplasm Foxo1
+        Unphosphorylated Acetylated Polyubiquitinated
+      nucleus_foxo1_unphosphorylated_acetylated_polyubiquitinated: Nucleus Foxo1 Unphosphorylated
+        Acetylated Polyubiquitinated
+      dnabound_foxo1_unphosphorylated_acetylated_polyubiquitinated: Dnabound Foxo1
+        Unphosphorylated Acetylated Polyubiquitinated
+      cytoplasm_foxo1_phosphorylated_unacetylated_notpolyubiquitinated: Cytoplasm
+        Foxo1 Phosphorylated Unacetylated Notpolyubiquitinated
+      nucleus_foxo1_phosphorylated_unacetylated_notpolyubiquitinated: Nucleus Foxo1
+        Phosphorylated Unacetylated Notpolyubiquitinated
+      dnabound_foxo1_phosphorylated_unacetylated_notpolyubiquitinated: Dnabound Foxo1
+        Phosphorylated Unacetylated Notpolyubiquitinated
+      cytoplasm_foxo1_phosphorylated_unacetylated_polyubiquitinated: Cytoplasm Foxo1
+        Phosphorylated Unacetylated Polyubiquitinated
+      nucleus_foxo1_phosphorylated_unacetylated_polyubiquitinated: Nucleus Foxo1 Phosphorylated
+        Unacetylated Polyubiquitinated
+      dnabound_foxo1_phosphorylated_unacetylated_polyubiquitinated: Dnabound Foxo1
+        Phosphorylated Unacetylated Polyubiquitinated
+      cytoplasm_foxo1_phosphorylated_acetylated_notpolyubiquitinated: Cytoplasm Foxo1
+        Phosphorylated Acetylated Notpolyubiquitinated
+      nucleus_foxo1_phosphorylated_acetylated_notpolyubiquitinated: Nucleus Foxo1
+        Phosphorylated Acetylated Notpolyubiquitinated
+      dnabound_foxo1_phosphorylated_acetylated_notpolyubiquitinated: Dnabound Foxo1
+        Phosphorylated Acetylated Notpolyubiquitinated
+      cytoplasm_foxo1_phosphorylated_acetylated_polyubiquitinated: Cytoplasm Foxo1
+        Phosphorylated Acetylated Polyubiquitinated
+      nucleus_foxo1_phosphorylated_acetylated_polyubiquitinated: Nucleus Foxo1 Phosphorylated
+        Acetylated Polyubiquitinated
+      dnabound_foxo1_phosphorylated_acetylated_polyubiquitinated: Dnabound Foxo1 Phosphorylated
+        Acetylated Polyubiquitinated
+      foxo1_unphosphorylated_tot: Foxo1 Unphosphorylated Tot
+      foxo1_phosphorylated_tot: Foxo1 Phosphorylated Tot
+      foxo1_unacetylated_tot: Foxo1 Unacetylated Tot
+      foxo1_acetylated_tot: Foxo1 Acetylated Tot
+      foxo1_unpolyubiquitinated_tot: Foxo1 Unpolyubiquitinated Tot
+      foxo1_polyubiquitinated_tot: Foxo1 Polyubiquitinated Tot
+      cytoplasm_foxo1_tot: Cytoplasm Foxo1 Tot
+      nucleus_foxo1_tot: Nucleus Foxo1 Tot
+      dnabound_foxo1_tot: Dnabound Foxo1 Tot
+      foxo1_all: Foxo1 All
+      nucleus_rna_inr: Nucleus RNA Inr
+      cytoplasm_rna_inr: Cytoplasm RNA Inr
+      cytoplasm_inr: Cytoplasm Inr
+      nucleus_rna_sod2: Nucleus RNA Sod2
+      cytoplasm_rna_sod2: Cytoplasm RNA Sod2
+      cytoplasm_sod2: Cytoplasm Sod2
+      e2f1: E2F1
+      akt: AKT
+      source_defined_sgk_state: source-defined SGK state
+      source_defined_cdk2_state: source-defined CDK2 state
+      source_defined_ampk_state: source-defined AMPK state
+      source_defined_ikkb_state: source-defined IKKB state
+      source_defined_jnk_state: source-defined JNK state
+      pp2a: PP2A
+      cbpp300: CBPP300
+      source_defined_sirt1_state: source-defined SIRT1 state
+      source_defined_e3_state: source-defined E3 state
+      source_defined_usp7_state: source-defined USP7 state
+      source_defined_scf_state: source-defined SCF state
+      proteasome: Proteasome
+      foxo1_all_rate: Foxo1 All Rate
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9094edf4-a3d1-4c05-8bc9-15ec9022a963",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "52502b3b-5968-4d84-ac67-091f30768a86",
+  "created_at": "2026-05-16T05:38:38.062817496+00:00",
+  "last_synced_at": "2026-05-16T10:19:43.002256+00:00",
+  "hub_manifest_hash": "ea35848bc21da23464e2520b38c1e06b713f138d85ce130219d302c3b4ca7716",
+  "package_name": "mcclean2007-crosstalk-lab"
+}

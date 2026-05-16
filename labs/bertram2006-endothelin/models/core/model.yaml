@@ -1,0 +1,83 @@
+schema_version: '2.0'
+title: Bertram2006_Endothelin
+description: 'The model is according to the paper Endothelin Action on Pituitary Lactotrophs:
+  One Receptor, Many GTP-Binding Proteins Figure 1 has been simulated by MathSBML.
+  It can be used to explore signaling dynamics and compare pathway response across
+  conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- hormone-signaling
+- physiology
+authors:
+- Biosimulant Team
+- Richard Bertram
+- Tabak J
+- Natalia Toporikova
+- Marc E Freeman
+upstream:
+  id: biomodels_ebi:BIOMD0000000128
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000128
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000128
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000128?filename=BIOMD0000000128_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bertram2006_endothelin:Bertram2006EndothelinBiomd0000000128Model
+  init_kwargs:
+    model_path: data/BIOMD0000000128.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_c_amplow_level
+    maps_to: signaling_sbml_bertram2006_endothelin_biomd0000000128_model.initial_c_amplow_level
+    label: C Amplow
+    description: C Amplow source parameter. Maps to SBML symbol `cAMPlow` and preserves
+      the bundled default.
+  - name: initial_cytosolic_calcium_concentration
+    maps_to: signaling_sbml_bertram2006_endothelin_biomd0000000128_model.initial_cytosolic_calcium_concentration
+    label: Initial cytosolic Calcium Concentration
+    description: Initial level of cytosolic Calcium Concentration. Maps to SBML symbol
+      `c`; exposed as a traceable initial-condition perturbation.
+  - name: initial_er_calcium_concentration
+    maps_to: signaling_sbml_bertram2006_endothelin_biomd0000000128_model.initial_er_calcium_concentration
+    label: Initial ER Calcium Concentration
+    description: Initial level of ER Calcium Concentration. Maps to SBML symbol `cer`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: cytosolic_calcium_concentration
+    maps_to: signaling_sbml_bertram2006_endothelin_biomd0000000128_model.cytosolic_calcium_concentration
+    label: cytosolic Calcium Concentration
+    description: cytosolic Calcium Concentration. Maps to SBML symbol `c` and is emitted
+      in native SBML units.
+  - name: er_calcium_concentration
+    maps_to: signaling_sbml_bertram2006_endothelin_biomd0000000128_model.er_calcium_concentration
+    label: ER Calcium Concentration
+    description: ER Calcium Concentration. Maps to SBML symbol `cer` and is emitted
+      in native SBML units.
+  - name: camp
+    maps_to: signaling_sbml_bertram2006_endothelin_biomd0000000128_model.camp
+    label: cAMP
+    description: cAMP. Maps to SBML symbol `cAMP` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_bertram2006_endothelin_biomd0000000128_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_bertram2006_endothelin_biomd0000000128_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_bertram2006_endothelin_biomd0000000128_model.species_labels
+    label: Observable labels

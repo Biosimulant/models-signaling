@@ -1,0 +1,49 @@
+schema_version: '2.0'
+title: Gerard2013 - Model 3 - Embryonic-type eukaryotic Cell Cycle regulation based
+  on negative feedback between Cdk/cyclin and APC and competitive inhibition between
+  Cdk/cyclin and securin for polyubiquitylation_1 Visualisation
+description: Question-and-answer and chart visualisation for cell-cycle regulatory
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_gerard2013_model_3_embryonic_type_eukaryotic_cel_biomd0000000938_model
+    title: Gerard2013 - Model 3 - Embryonic-type eukaryotic Cell Cycle regulation
+      based on negative feedback between Cdk/cyclin and APC and competitive inhibition
+      between Cdk/cyclin and securin for polyubiquitylation_1
+    context: cell-cycle regulatory signaling
+    question: How does Gerard2013 - Model 3 - Embryonic-type eukaryotic Cell Cycle
+      regulation based on negative feedback between Cdk/cyclin and APC and competitive
+      inhibition between Cdk/cyclin and securin for polyubiquitylation 1 move checkpoint
+      or cycle-control signaling states?
+    visual_scope: cell-cycle regulatory signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_cdk_state: float
+      anaphase_promoting_complex_phosphorylated: float
+      securin: float
+      anaphase_promoting_complex: float
+      anaphase_promoting_complex_total: float
+    species_labels:
+      source_defined_cdk_state: source-defined CDK state
+      anaphase_promoting_complex_phosphorylated: Anaphase Promoting Complex Phosphorylated
+      securin: Securin
+      anaphase_promoting_complex: Anaphase Promoting Complex
+      anaphase_promoting_complex_total: Anaphase Promoting Complex Total
+io:
+  inputs: []
+  outputs: []

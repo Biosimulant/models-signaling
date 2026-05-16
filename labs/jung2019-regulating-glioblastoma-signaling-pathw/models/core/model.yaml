@@ -1,0 +1,85 @@
+schema_version: '2.0'
+title: Jung2019 - Regulating glioblastoma signaling pathways and anti-invasion therapy
+  - core control model
+description: This model is based on paper:Strategies in regulating glioblastoma signaling
+  pathways and anti-invasion therapyAbstract:Glioblastoma multiforme is one of the
+  most invasive type of glial tumors, which. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- oncology
+- pharmacology
+authors:
+- Biosimulant Team
+- Eunok Jung
+- Aurelio A de Los Reyes V
+- Kurt Jan A Pumares
+- Yangjin Kim
+upstream:
+  id: biomodels_ebi:BIOMD0000000828
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000828
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000828
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000828?filename=Jung2019
+    model.xml
+  license: CC0
+biosim:
+  entrypoint: src.jung2019_regulating_glioblastoma_signaling_pathw:Jung2019RegulatingGlioblastomaSignalingPathwBiomd0000000828Model
+  init_kwargs:
+    model_path: data/BIOMD0000000828.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_delta_d
+    maps_to: signaling_sbml_jung2019_regulating_glioblastoma_signaling_pathw_biomd0000000828_model.initial_delta_d
+    label: Initial Delta D
+    description: Initial level of Delta D. Maps to SBML symbol `deltaD`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_drug_d
+    maps_to: signaling_sbml_jung2019_regulating_glioblastoma_signaling_pathw_biomd0000000828_model.initial_drug_d
+    label: Initial Drug D
+    description: Initial level of Drug D. Maps to SBML symbol `Drug_D`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_glucose_g
+    maps_to: signaling_sbml_jung2019_regulating_glioblastoma_signaling_pathw_biomd0000000828_model.initial_glucose_g
+    label: Initial Glucose G
+    description: Initial level of Glucose G. Maps to SBML symbol `Glucose_G`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: glucose_g
+    maps_to: signaling_sbml_jung2019_regulating_glioblastoma_signaling_pathw_biomd0000000828_model.glucose_g
+    label: Glucose G
+    description: Glucose G. Maps to SBML symbol `Glucose_G` and is emitted in native
+      SBML units.
+  - name: drug_d
+    maps_to: signaling_sbml_jung2019_regulating_glioblastoma_signaling_pathw_biomd0000000828_model.drug_d
+    label: Drug D
+    description: Drug D. Maps to SBML symbol `Drug_D` and is emitted in native SBML
+      units.
+  - name: mi_r_451_m
+    maps_to: signaling_sbml_jung2019_regulating_glioblastoma_signaling_pathw_biomd0000000828_model.mi_r_451_m
+    label: Mi R 451 M
+    description: Mi R 451 M. Maps to SBML symbol `miR_451_M` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_jung2019_regulating_glioblastoma_signaling_pathw_biomd0000000828_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_jung2019_regulating_glioblastoma_signaling_pathw_biomd0000000828_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_jung2019_regulating_glioblastoma_signaling_pathw_biomd0000000828_model.species_labels
+    label: Observable labels

@@ -1,0 +1,145 @@
+schema_version: '2.0'
+title: Smith2010_Foxo_PTMs_AgeingRelatedSignallingPathway_C Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Smith2010_Foxo_PTMs_AgeingRelatedSignallingPathway_C.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_smith2010_foxo_ptms_ageingrelatedsignallingpathw_model1112260002_model
+    title: Smith2010_Foxo_PTMs_AgeingRelatedSignallingPathway_C
+    context: metabolic and hormone signaling response
+    question: How does Smith2010 Foxo PTMs AgeingRelatedSignallingPathway C shift
+      hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_null_state: float
+      degr_foxo1: float
+      cytoplasm_foxo1_pa0_pd0_pub0: float
+      nucleus_foxo1_pa0_pd0_pub0: float
+      dnabound_foxo1_pa0_pd0_pub0: float
+      cytoplasm_foxo1_pa0_pd0_pub1: float
+      nucleus_foxo1_pa0_pd0_pub1: float
+      dnabound_foxo1_pa0_pd0_pub1: float
+      cytoplasm_foxo1_pa0_pd1_pub0: float
+      nucleus_foxo1_pa0_pd1_pub0: float
+      dnabound_foxo1_pa0_pd1_pub0: float
+      cytoplasm_foxo1_pa0_pd1_pub1: float
+      nucleus_foxo1_pa0_pd1_pub1: float
+      dnabound_foxo1_pa0_pd1_pub1: float
+      cytoplasm_foxo1_pa1_pd0_pub0: float
+      nucleus_foxo1_pa1_pd0_pub0: float
+      dnabound_foxo1_pa1_pd0_pub0: float
+      cytoplasm_foxo1_pa1_pd0_pub1: float
+      nucleus_foxo1_pa1_pd0_pub1: float
+      dnabound_foxo1_pa1_pd0_pub1: float
+      cytoplasm_foxo1_pa1_pd1_pub0: float
+      nucleus_foxo1_pa1_pd1_pub0: float
+      dnabound_foxo1_pa1_pd1_pub0: float
+      cytoplasm_foxo1_pa1_pd1_pub1: float
+      nucleus_foxo1_pa1_pd1_pub1: float
+      dnabound_foxo1_pa1_pd1_pub1: float
+      foxo1_pa0_tot: float
+      foxo1_pa1_tot: float
+      foxo1_pd0_tot: float
+      foxo1_pd1_tot: float
+      foxo1_pub0_tot: float
+      foxo1_pub1_tot: float
+      cytoplasm_foxo1_tot: float
+      nucleus_foxo1_tot: float
+      dnabound_foxo1_tot: float
+      foxo1_all: float
+      nucleus_rna_inr: float
+      cytoplasm_rna_inr: float
+      cytoplasm_inr: float
+      nucleus_rna_sod2: float
+      cytoplasm_rna_sod2: float
+      cytoplasm_sod2: float
+      e2f1: float
+      akt: float
+      source_defined_sgk_state: float
+      source_defined_cdk2_state: float
+      source_defined_ampk_state: float
+      source_defined_ikkb_state: float
+      source_defined_jnk_state: float
+      pp2a: float
+      cbpp300: float
+      source_defined_sirt1_state: float
+      source_defined_e3_state: float
+      source_defined_usp7_state: float
+      source_defined_scf_state: float
+      proteasome: float
+    species_labels:
+      source_defined_null_state: Source Defined NULL State
+      degr_foxo1: Degr FOXO1
+      cytoplasm_foxo1_pa0_pd0_pub0: Cytoplasm FOXO1 PA0 PD0 PUB0
+      nucleus_foxo1_pa0_pd0_pub0: Nucleus FOXO1 PA0 PD0 PUB0
+      dnabound_foxo1_pa0_pd0_pub0: Dnabound FOXO1 PA0 PD0 PUB0
+      cytoplasm_foxo1_pa0_pd0_pub1: Cytoplasm FOXO1 PA0 PD0 PUB1
+      nucleus_foxo1_pa0_pd0_pub1: Nucleus FOXO1 PA0 PD0 PUB1
+      dnabound_foxo1_pa0_pd0_pub1: Dnabound FOXO1 PA0 PD0 PUB1
+      cytoplasm_foxo1_pa0_pd1_pub0: Cytoplasm FOXO1 PA0 PD1 PUB0
+      nucleus_foxo1_pa0_pd1_pub0: Nucleus FOXO1 PA0 PD1 PUB0
+      dnabound_foxo1_pa0_pd1_pub0: Dnabound FOXO1 PA0 PD1 PUB0
+      cytoplasm_foxo1_pa0_pd1_pub1: Cytoplasm FOXO1 PA0 PD1 PUB1
+      nucleus_foxo1_pa0_pd1_pub1: Nucleus FOXO1 PA0 PD1 PUB1
+      dnabound_foxo1_pa0_pd1_pub1: Dnabound FOXO1 PA0 PD1 PUB1
+      cytoplasm_foxo1_pa1_pd0_pub0: Cytoplasm FOXO1 PA1 PD0 PUB0
+      nucleus_foxo1_pa1_pd0_pub0: Nucleus FOXO1 PA1 PD0 PUB0
+      dnabound_foxo1_pa1_pd0_pub0: Dnabound FOXO1 PA1 PD0 PUB0
+      cytoplasm_foxo1_pa1_pd0_pub1: Cytoplasm FOXO1 PA1 PD0 PUB1
+      nucleus_foxo1_pa1_pd0_pub1: Nucleus FOXO1 PA1 PD0 PUB1
+      dnabound_foxo1_pa1_pd0_pub1: Dnabound FOXO1 PA1 PD0 PUB1
+      cytoplasm_foxo1_pa1_pd1_pub0: Cytoplasm FOXO1 PA1 PD1 PUB0
+      nucleus_foxo1_pa1_pd1_pub0: Nucleus FOXO1 PA1 PD1 PUB0
+      dnabound_foxo1_pa1_pd1_pub0: Dnabound FOXO1 PA1 PD1 PUB0
+      cytoplasm_foxo1_pa1_pd1_pub1: Cytoplasm FOXO1 PA1 PD1 PUB1
+      nucleus_foxo1_pa1_pd1_pub1: Nucleus FOXO1 PA1 PD1 PUB1
+      dnabound_foxo1_pa1_pd1_pub1: Dnabound FOXO1 PA1 PD1 PUB1
+      foxo1_pa0_tot: FOXO1 PA0 Tot
+      foxo1_pa1_tot: FOXO1 PA1 Tot
+      foxo1_pd0_tot: FOXO1 PD0 Tot
+      foxo1_pd1_tot: FOXO1 PD1 Tot
+      foxo1_pub0_tot: FOXO1 PUB0 Tot
+      foxo1_pub1_tot: FOXO1 PUB1 Tot
+      cytoplasm_foxo1_tot: Cytoplasm FOXO1 Tot
+      nucleus_foxo1_tot: Nucleus FOXO1 Tot
+      dnabound_foxo1_tot: Dnabound FOXO1 Tot
+      foxo1_all: FOXO1 All
+      nucleus_rna_inr: Nucleus RNA Inr
+      cytoplasm_rna_inr: Cytoplasm RNA Inr
+      cytoplasm_inr: Cytoplasm Inr
+      nucleus_rna_sod2: Nucleus RNA SOD2
+      cytoplasm_rna_sod2: Cytoplasm RNA SOD2
+      cytoplasm_sod2: Cytoplasm SOD2
+      e2f1: E2F1
+      akt: AKT
+      source_defined_sgk_state: Source Defined SGK State
+      source_defined_cdk2_state: Source Defined CDK2 State
+      source_defined_ampk_state: Source Defined AMPK State
+      source_defined_ikkb_state: Source Defined IKKB State
+      source_defined_jnk_state: Source Defined JNK State
+      pp2a: PP2A
+      cbpp300: CBPP300
+      source_defined_sirt1_state: Source Defined SIRT1 State
+      source_defined_e3_state: Source Defined E3 State
+      source_defined_usp7_state: Source Defined USP7 State
+      source_defined_scf_state: Source Defined SCF State
+      proteasome: Proteasome
+io:
+  inputs: []
+  outputs: []

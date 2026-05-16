@@ -1,0 +1,278 @@
+schema_version: '2.0'
+title: Bidkhori2012 - normal EGFR signalling Visualisation
+description: Question-and-answer and chart visualisation for JAK/STAT cytokine signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- egfr
+- ras-erk
+- pi3k-akt
+- jak-stat
+- oncology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_bidkhori2012_normal_egfr_signalling_biomd0000000452_model
+    title: Bidkhori2012 - normal EGFR signalling
+    context: JAK/STAT receptor-to-transcription signaling
+    question: How does Bidkhori2012 - normal EGFR signalling transmit cytokine receptor
+      activity into STAT pathway states?
+    visual_scope: JAK/STAT receptor-to-transcription signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      egf: float
+      egfr: float
+      egf_egfr: float
+      egf_egfr2: float
+      p_egf_egfr2: float
+      cbl_ubiquitin_ligase: float
+      shc_adapter_protein: float
+      p_egf_egfr2_shc_adapter_protein: float
+      source_defined_shp_state: float
+      p_egf_egfr2_shp2: float
+      p_egf_egfr2_p_shc_adapter_protein: float
+      source_defined_pshc_state: float
+      p_shc_adapter_protein_shp2: float
+      grb2_adapter_protein: float
+      p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein: float
+      p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_shp2: float
+      sos_guanine_nucleotide_exchange_factor: float
+      p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_cbl_ubiquitin_ligase: float
+      grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      p_egf_egfr2_grb2_adapter_protein: float
+      p_egf_egfr2_grb2_adapter_protein_shp2: float
+      p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_cbl_ubiquitin_ligase: float
+      ras_gdp: float
+      p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      ras_gtp: float
+      p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      ras_gap: float
+      ras_gtp_ras_gap: float
+      p_egf_egfr2_ras_gap: float
+      p_egf_egfr2_ras_gap_ras_gtp: float
+      p_egf_egfr2_ras_gap_shp2: float
+      raf1: float
+      raf1_ras_gtp: float
+      raf1active: float
+      mek: float
+      raf1active_mek: float
+      source_defined_pmek_state: float
+      raf1active_p_mek: float
+      pp_mek: float
+      erk: float
+      pp_mek_erk: float
+      perk_kinase: float
+      pp_mek_p_erk: float
+      pp_erk: float
+      source_defined_pase_state: float
+      raf1active_pase: float
+      source_defined_pase2_state: float
+      pp_mek_pase2: float
+      p_mek_pase2: float
+      source_defined_pase3_state: float
+      p_erk_pase3: float
+      pp_erk_pase3: float
+      pp_erk_p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      source_defined_psos_state: float
+      pp_erk_p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      pro_egfr: float
+      p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_cbl_ubiquitin_ligase_epn: float
+      source_defined_epn_state: float
+      p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_cbl_ubiquitin_ligase_epn: float
+      p_egf_egfr2_cbl_ubiquitin_ligase: float
+      p_egf_egfr2_cbl_ubiquitin_ligase_epn: float
+      pi3k: float
+      p_egf_egfr2_pi3k: float
+      p_egf_egfr2_p_pi3k: float
+      p_pi3k: float
+      source_defined_tp4_state: float
+      tp4_p_pi3k: float
+      tp4_pi3k: float
+      source_defined_pip2_state: float
+      p_pi3k_pip2: float
+      source_defined_pip3_state: float
+      akt: float
+      source_defined_aktm_state: float
+      source_defined_pdk1_state: float
+      aktm_pdk1: float
+      p_aktm_pdk1: float
+      p_aktm: float
+      source_defined_pakt_state: float
+      p_akt_takt: float
+      akt_takt: float
+      source_defined_takt_state: float
+      p_aktm_takt: float
+      aktm_takt: float
+      p_aktm_pdk1_takt: float
+      aktm_pdk1_takt: float
+      p_akt_total: float
+      p_raf1active: float
+      stat3c: float
+      p_egf_egfr2_stat3c: float
+      p_stat3c: float
+      p_egf_egfr2_p_stat3c: float
+      source_defined_pp1_state: float
+      p_stat3c_pp1: float
+      p_stat3c_p_stat3c_pp1: float
+      p_stat3c_p_stat3c: float
+      stat3c_p_stat3c: float
+      p_stat3n_p_stat3n: float
+      p_stat3n: float
+      source_defined_pp2_state: float
+      p_stat3n_p_stat3n_pp2: float
+      stat3n_p_stat3n: float
+      stat3n: float
+      p_stat3n_pp2: float
+      p_egf_egfr2_stat3c_cbl_ubiquitin_ligase: float
+      p_egf_egfr2_stat3c_cbl_ubiquitin_ligase_epn: float
+      p_egf_egfr2_pi3k_cbl_ubiquitin_ligase: float
+      p_egf_egfr2_pi3k_cbl_ubiquitin_ligase_epn: float
+    species_labels:
+      egf: EGF
+      egfr: EGFR
+      egf_egfr: EGF EGFR
+      egf_egfr2: EGF EGFR2
+      p_egf_egfr2: P EGF EGFR2
+      cbl_ubiquitin_ligase: Cbl ubiquitin ligase
+      shc_adapter_protein: Shc adapter protein
+      p_egf_egfr2_shc_adapter_protein: P EGF EGFR2 Shc adapter protein
+      source_defined_shp_state: source-defined SHP state
+      p_egf_egfr2_shp2: P EGF EGFR2 SHP2
+      p_egf_egfr2_p_shc_adapter_protein: P EGF EGFR2 P Shc adapter protein
+      source_defined_pshc_state: source-defined PSHC state
+      p_shc_adapter_protein_shp2: P Shc adapter protein SHP2
+      grb2_adapter_protein: Grb2 adapter protein
+      p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein: P EGF EGFR2 P Shc adapter
+        protein Grb2 adapter protein
+      p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_shp2: P EGF EGFR2 P Shc
+        adapter protein Grb2 adapter protein SHP2
+      sos_guanine_nucleotide_exchange_factor: SOS guanine-nucleotide exchange factor
+      p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: P
+        EGF EGFR2 P Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_cbl_ubiquitin_ligase: P
+        EGF EGFR2 P Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor Cbl ubiquitin ligase
+      grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Grb2 adapter protein
+        SOS guanine-nucleotide exchange factor
+      p_egf_egfr2_grb2_adapter_protein: P EGF EGFR2 Grb2 adapter protein
+      p_egf_egfr2_grb2_adapter_protein_shp2: P EGF EGFR2 Grb2 adapter protein SHP2
+      p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: P EGF
+        EGFR2 Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_cbl_ubiquitin_ligase: P
+        EGF EGFR2 Grb2 adapter protein SOS guanine-nucleotide exchange factor Cbl
+        ubiquitin ligase
+      ras_gdp: RAS GDP
+      p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: P
+        EGF EGFR2 P Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      ras_gtp: RAS GTP
+      p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: P
+        EGF EGFR2 Grb2 adapter protein SOS guanine-nucleotide exchange factor RAS
+        GDP
+      ras_gap: RAS GAP
+      ras_gtp_ras_gap: RAS GTP RAS GAP
+      p_egf_egfr2_ras_gap: P EGF EGFR2 RAS GAP
+      p_egf_egfr2_ras_gap_ras_gtp: P EGF EGFR2 RAS GAP RAS GTP
+      p_egf_egfr2_ras_gap_shp2: P EGF EGFR2 RAS GAP SHP2
+      raf1: RAF1
+      raf1_ras_gtp: RAF1 RAS GTP
+      raf1active: Raf1active
+      mek: MEK
+      raf1active_mek: Raf1active MEK
+      source_defined_pmek_state: source-defined PMEK state
+      raf1active_p_mek: Raf1active P MEK
+      pp_mek: Pp MEK
+      erk: ERK
+      pp_mek_erk: Pp MEK ERK
+      perk_kinase: PERK kinase
+      pp_mek_p_erk: Pp MEK P ERK
+      pp_erk: Pp ERK
+      source_defined_pase_state: source-defined PASE state
+      raf1active_pase: Raf1active Pase
+      source_defined_pase2_state: source-defined PASE2 state
+      pp_mek_pase2: Pp MEK Pase2
+      p_mek_pase2: P MEK Pase2
+      source_defined_pase3_state: source-defined PASE3 state
+      p_erk_pase3: P ERK Pase3
+      pp_erk_pase3: Pp ERK Pase3
+      pp_erk_p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Pp
+        ERK P EGF EGFR2 P Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      source_defined_psos_state: source-defined PSOS state
+      pp_erk_p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Pp
+        ERK P EGF EGFR2 Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      pro_egfr: Pro EGFR
+      p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_cbl_ubiquitin_ligase_epn: P
+        EGF EGFR2 P Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor Cbl ubiquitin ligase Epn
+      source_defined_epn_state: source-defined EPN state
+      p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_cbl_ubiquitin_ligase_epn: P
+        EGF EGFR2 Grb2 adapter protein SOS guanine-nucleotide exchange factor Cbl
+        ubiquitin ligase Epn
+      p_egf_egfr2_cbl_ubiquitin_ligase: P EGF EGFR2 Cbl ubiquitin ligase
+      p_egf_egfr2_cbl_ubiquitin_ligase_epn: P EGF EGFR2 Cbl ubiquitin ligase Epn
+      pi3k: PI3K
+      p_egf_egfr2_pi3k: P EGF EGFR2 PI3K
+      p_egf_egfr2_p_pi3k: P EGF EGFR2 P PI3K
+      p_pi3k: P PI3K
+      source_defined_tp4_state: source-defined TP4 state
+      tp4_p_pi3k: TP4 P PI3K
+      tp4_pi3k: TP4 PI3K
+      source_defined_pip2_state: source-defined PIP2 state
+      p_pi3k_pip2: P PI3K PIP2
+      source_defined_pip3_state: source-defined PIP3 state
+      akt: AKT
+      source_defined_aktm_state: source-defined AKTM state
+      source_defined_pdk1_state: source-defined PDK1 state
+      aktm_pdk1: Aktm PDK1
+      p_aktm_pdk1: P Aktm PDK1
+      p_aktm: P Aktm
+      source_defined_pakt_state: source-defined PAKT state
+      p_akt_takt: P AKT Takt
+      akt_takt: AKT Takt
+      source_defined_takt_state: source-defined TAKT state
+      p_aktm_takt: P Aktm Takt
+      aktm_takt: Aktm Takt
+      p_aktm_pdk1_takt: P Aktm PDK1 Takt
+      aktm_pdk1_takt: Aktm PDK1 Takt
+      p_akt_total: P AKT Total
+      p_raf1active: P Raf1active
+      stat3c: Stat3c
+      p_egf_egfr2_stat3c: P EGF EGFR2 Stat3c
+      p_stat3c: P Stat3c
+      p_egf_egfr2_p_stat3c: P EGF EGFR2 P Stat3c
+      source_defined_pp1_state: source-defined PP1 state
+      p_stat3c_pp1: P Stat3c PP1
+      p_stat3c_p_stat3c_pp1: P Stat3c P Stat3c PP1
+      p_stat3c_p_stat3c: P Stat3c P Stat3c
+      stat3c_p_stat3c: Stat3c P Stat3c
+      p_stat3n_p_stat3n: P Stat3n P Stat3n
+      p_stat3n: P Stat3n
+      source_defined_pp2_state: source-defined PP2 state
+      p_stat3n_p_stat3n_pp2: P Stat3n P Stat3n PP2
+      stat3n_p_stat3n: Stat3n P Stat3n
+      stat3n: Stat3n
+      p_stat3n_pp2: P Stat3n PP2
+      p_egf_egfr2_stat3c_cbl_ubiquitin_ligase: P EGF EGFR2 Stat3c Cbl ubiquitin ligase
+      p_egf_egfr2_stat3c_cbl_ubiquitin_ligase_epn: P EGF EGFR2 Stat3c Cbl ubiquitin
+        ligase Epn
+      p_egf_egfr2_pi3k_cbl_ubiquitin_ligase: P EGF EGFR2 PI3K Cbl ubiquitin ligase
+      p_egf_egfr2_pi3k_cbl_ubiquitin_ligase_epn: P EGF EGFR2 PI3K Cbl ubiquitin ligase
+        Epn
+io:
+  inputs: []
+  outputs: []

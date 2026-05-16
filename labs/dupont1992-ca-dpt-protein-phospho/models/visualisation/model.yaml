@@ -1,0 +1,41 @@
+schema_version: '2.0'
+title: Dupont1992_Ca_dpt_protein_phospho Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Dupont1992_Ca_dpt_protein_phospho.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_dupont1992_ca_dpt_protein_phospho_biomd0000000113_model
+    title: Dupont1992_Ca_dpt_protein_phospho
+    context: phosphorylation and regulatory motif dynamics
+    question: How does Dupont1992 Ca dpt protein phospho express its source-modeled
+      signaling motif over the baseline run?
+    visual_scope: phosphorylation and regulatory motif dynamics
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_z_state: float
+      source_defined_y_state: float
+      total_protein: float
+      phosphorylated_protein: float
+    species_labels:
+      source_defined_z_state: Source Defined Z State
+      source_defined_y_state: Source Defined Y State
+      total_protein: Total Protein
+      phosphorylated_protein: Phosphorylated Protein
+io:
+  inputs: []
+  outputs: []

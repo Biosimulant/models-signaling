@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Mukhopadhyay2013 - T cell receptor proximal signaling reveals emergent ultrasensitivity
+description: 'Mukhopadhyay2013 - T cell receptor proximalsignaling reveals emergent
+  ultrasensitivity This model is described in the article: Systems model of T cell
+  receptor proximal signaling reveals emergent ultr. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- immune-signaling
+authors:
+- Biosimulant Team
+- Himadri Mukhopadhyay
+- Shaun-Paul Cordoba
+- Philip K Maini
+- P Anton van der Merwe
+- Omer Dushek
+upstream:
+  id: biomodels_ebi:MODEL1604100000
+  source_db: biomodels_ebi
+  source_id: MODEL1604100000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1604100000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1604100000?filename=MODEL1604100000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.mukhopadhyay2013_t_cell_receptor_proximal_signal:Mukhopadhyay2013TCellReceptorProximalSignalModel1604100000Model
+  init_kwargs:
+    model_path: data/MODEL1604100000.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_s_y1_u_y2_u_y3_u_b_0
+    maps_to: signaling_sbml_mukhopadhyay2013_t_cell_receptor_proximal_signal_model1604100000_model.initial_s_y1_u_y2_u_y3_u_b_0
+    label: Initial S Y1 U Y2 U Y3 U B 0
+    description: Initial level of S Y1 U Y2 U Y3 U B 0. Maps to SBML symbol `S1`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: s_y1_u_y2_u_y3_u_b_0
+    maps_to: signaling_sbml_mukhopadhyay2013_t_cell_receptor_proximal_signal_model1604100000_model.s_y1_u_y2_u_y3_u_b_0
+    label: S Y1 U Y2 U Y3 U B 0
+    description: S Y1 U Y2 U Y3 U B 0. Maps to SBML symbol `S1` and is emitted in
+      native SBML units.
+  - name: source_defined_e_b_state
+    maps_to: signaling_sbml_mukhopadhyay2013_t_cell_receptor_proximal_signal_model1604100000_model.source_defined_e_b_state
+    label: source-defined E(B) state
+    description: source-defined E(B) state. Maps to SBML symbol `S2` and is emitted
+      in native SBML units.
+  - name: source_defined_f_b_state
+    maps_to: signaling_sbml_mukhopadhyay2013_t_cell_receptor_proximal_signal_model1604100000_model.source_defined_f_b_state
+    label: source-defined F(B) state
+    description: source-defined F(B) state. Maps to SBML symbol `S3` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_mukhopadhyay2013_t_cell_receptor_proximal_signal_model1604100000_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_mukhopadhyay2013_t_cell_receptor_proximal_signal_model1604100000_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_mukhopadhyay2013_t_cell_receptor_proximal_signal_model1604100000_model.species_labels
+    label: Observable labels

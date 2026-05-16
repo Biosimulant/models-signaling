@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9f3ac5a4-fb04-4309-90b3-2f64260a2bd3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4bdf57d5-8c14-4c24-afb3-0fbbcdbc3aa4",
+  "created_at": "2026-05-16T05:58:26.868988345+00:00",
+  "last_synced_at": "2026-05-16T11:03:45.516474+00:00",
+  "hub_manifest_hash": "a497361d0b9b6b86e75f17f3df1495c8dacfe9b8c3f55c0b4e75d2269579f448",
+  "package_name": "schilling2009-erk-distributive-lab"
+}

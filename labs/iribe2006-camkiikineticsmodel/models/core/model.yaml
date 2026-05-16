@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Iribe2006_CaMKIIkineticsModel
+description: 'This a model from the article: Modulatory effect of calmodulin-dependent
+  kinase II (CaMKII) on sarcoplasmicreticulum Ca2+ handling and interval-force relations:
+  a modelling study. It can be used to explore signaling dynamics and compare pathway
+  response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+- neuroscience
+authors:
+- Biosimulant Team
+- Gentaro Iribe
+- Peter Kohl
+- Denis Noble
+upstream:
+  id: biomodels_ebi:MODEL1006230085
+  source_db: biomodels_ebi
+  source_id: MODEL1006230085
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230085
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230085?filename=MODEL1006230085_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.iribe2006_camkiikineticsmodel:Iribe2006CamkiikineticsmodelModel1006230085Model
+  init_kwargs:
+    model_path: data/MODEL1006230085.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_v_membrane_potential
+    maps_to: signaling_sbml_iribe2006_camkiikineticsmodel_model1006230085_model.initial_v_membrane_potential
+    label: Initial V Membrane Potential
+    description: Initial level of V Membrane Potential. Maps to SBML symbol `V_membrane_potential`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: f_calcium_map_kinase
+    maps_to: signaling_sbml_iribe2006_camkiikineticsmodel_model1006230085_model.f_calcium_map_kinase
+    label: F calcium MAP kinase
+    description: F calcium MAP kinase. Maps to SBML symbol `F_CaMK` and is emitted
+      in native SBML units.
+  - name: f_srca_ry_r
+    maps_to: signaling_sbml_iribe2006_camkiikineticsmodel_model1006230085_model.f_srca_ry_r
+    label: F Srca Ry R
+    description: F Srca Ry R. Maps to SBML symbol `F_SRCa_RyR` and is emitted in native
+      SBML units.
+  - name: cmdn_calcium
+    maps_to: signaling_sbml_iribe2006_camkiikineticsmodel_model1006230085_model.cmdn_calcium
+    label: Cmdn calcium
+    description: Cmdn calcium. Maps to SBML symbol `Cmdn_Ca` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_iribe2006_camkiikineticsmodel_model1006230085_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_iribe2006_camkiikineticsmodel_model1006230085_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_iribe2006_camkiikineticsmodel_model1006230085_model.species_labels
+    label: Observable labels

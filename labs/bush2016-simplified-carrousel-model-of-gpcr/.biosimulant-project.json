@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4f113933-a397-47bc-8f25-0af5c520a134",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7045946e-86a9-49a6-ab27-673ce3375356",
+  "created_at": "2026-05-15T19:08:09.175282531+00:00",
+  "last_synced_at": "2026-05-16T09:18:10.313186+00:00",
+  "hub_manifest_hash": "b0e95fb377f422738df6a358da3409d23f3a1e7f70188b8eba793cf1a8ecf9c5",
+  "package_name": "bush2016-simplified-carrousel-model-of-gpcr-lab"
+}

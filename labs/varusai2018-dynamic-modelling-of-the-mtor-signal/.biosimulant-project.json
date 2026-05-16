@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "1d67fb25-2325-4a8b-a24d-693894346ad6",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1bb27b5b-b0b6-4c35-be7e-cd9d6566148d",
+  "created_at": "2026-05-16T05:58:28.617460465+00:00",
+  "last_synced_at": "2026-05-16T11:20:25.174768+00:00",
+  "hub_manifest_hash": "40544d8680da424bb03f2db2d787bb3feb9f193ca3d7b1cb12c3cc7204805272",
+  "package_name": "varusai2018-dynamic-modelling-of-the-mtor-signalling-network-rev"
+}

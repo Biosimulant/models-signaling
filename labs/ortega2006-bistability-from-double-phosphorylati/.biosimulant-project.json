@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "569f102a-5569-47c0-bf66-b6aa4213e490",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e9fbb57f-a817-41ce-9e9a-cb1dc5ae7b47",
+  "created_at": "2026-05-16T05:46:10.750473791+00:00",
+  "last_synced_at": "2026-05-16T10:32:33.757481+00:00",
+  "hub_manifest_hash": "c7aa8c898e0097158b83f16d25a067f6845585059b2a22ea74d7e8bfbef2edff",
+  "package_name": "ortega2006-bistability-from-double-phosphorylation-in-signal-tra"
+}

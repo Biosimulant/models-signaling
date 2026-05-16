@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Kofahl2004_PheromonePathway Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Kofahl2004_PheromonePathway.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_kofahl2004_pheromonepathway_biomd0000000032_model
+    title: Kofahl2004_PheromonePathway
+    context: metabolic and hormone signaling response
+    question: How does Kofahl2004 PheromonePathway shift hormone-linked signaling
+      readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      factor: float
+      source_defined_ste2_state: float
+      ste2active: float
+      source_defined_g_beta_state: float
+      source_defined_g_gtp_state: float
+      source_defined_gbeta_state: float
+      source_defined_g_gdp_state: float
+      complex_c: float
+      complex_d: float
+      source_defined_ste5_state: float
+      ste11: float
+      complex_a: float
+      source_defined_ste7_state: float
+      source_defined_fus3_state: float
+      complex_b: float
+      ste20: float
+      complex_e: float
+      complex_f: float
+      complex_g: float
+      complex_h: float
+      complex_i: float
+      complex_l: float
+      fus3pp: float
+      complex_k: float
+      ste12: float
+      ste12active: float
+      source_defined_bar1_state: float
+      bar1active: float
+      bar1active_ex: float
+      source_defined_far1_state: float
+      far1pp: float
+      far1ubiquitin: float
+      complex_m: float
+      complex_n: float
+      cdc28: float
+      source_defined_sst2_state: float
+      source_defined_p_state: float
+    species_labels:
+      factor: Factor
+      source_defined_ste2_state: Source Defined STE2 State
+      ste2active: Ste2active
+      source_defined_g_beta_state: source-defined GΑΒΓ state
+      source_defined_g_gtp_state: source-defined GΑGTP state
+      source_defined_gbeta_state: source-defined GΒΓ state
+      source_defined_g_gdp_state: source-defined GΑGDP state
+      complex_c: Complex C
+      complex_d: Complex D
+      source_defined_ste5_state: Source Defined STE5 State
+      ste11: STE11
+      complex_a: Complex A
+      source_defined_ste7_state: Source Defined STE7 State
+      source_defined_fus3_state: Source Defined FUS3 State
+      complex_b: Complex B
+      ste20: STE20
+      complex_e: Complex E
+      complex_f: Complex F
+      complex_g: Complex G
+      complex_h: Complex H
+      complex_i: Complex I
+      complex_l: Complex L
+      fus3pp: Fus3pp
+      complex_k: Complex K
+      ste12: STE12
+      ste12active: Ste12active
+      source_defined_bar1_state: Source Defined BAR1 State
+      bar1active: Bar1active
+      bar1active_ex: Bar1active Ex
+      source_defined_far1_state: Source Defined FAR1 State
+      far1pp: Far1pp
+      far1ubiquitin: Far1ubiquitin
+      complex_m: Complex M
+      complex_n: Complex N
+      cdc28: CDC28
+      source_defined_sst2_state: Source Defined SST2 State
+      source_defined_p_state: Source Defined P State
+io:
+  inputs: []
+  outputs: []

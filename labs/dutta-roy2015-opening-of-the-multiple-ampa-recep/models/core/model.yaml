@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Dutta-Roy2015 - Opening of the multiple AMPA receptor conductance states
+description: 'Dutta-Roy2015 - Opening of the multiple AMPAreceptor conductance states
+  This model is described in the article: Ligand-dependent opening of the multiple
+  AMPA receptor conductance States: a concerted m. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+authors:
+- Biosimulant Team
+- Ranjita Dutta-Roy
+- Christian Rosenmund
+- Stuart J Edelstein
+- Nicolas Le Novère
+upstream:
+  id: biomodels_ebi:BIOMD0000000569
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000569
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000569
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000569?filename=BIOMD0000000569_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.dutta_roy2015_opening_of_the_multiple_ampa_recep:DuttaRoy2015OpeningOfTheMultipleAmpaRecepBiomd0000000569Model
+  init_kwargs:
+    model_path: data/BIOMD0000000569.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_b0_state
+    maps_to: signaling_sbml_dutta_roy2015_opening_of_the_multiple_ampa_recep_biomd0000000569_model.initial_source_defined_b0_state
+    label: Initial source-defined B0 state
+    description: Initial level of source-defined B0 state. Maps to SBML symbol `B0`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: glutamate
+    maps_to: signaling_sbml_dutta_roy2015_opening_of_the_multiple_ampa_recep_biomd0000000569_model.glutamate
+    label: glutamate
+    description: glutamate. Maps to SBML symbol `glu` and is emitted in native SBML
+      units.
+  - name: source_defined_b0_state
+    maps_to: signaling_sbml_dutta_roy2015_opening_of_the_multiple_ampa_recep_biomd0000000569_model.source_defined_b0_state
+    label: source-defined B0 state
+    description: source-defined B0 state. Maps to SBML symbol `B0` and is emitted
+      in native SBML units.
+  - name: source_defined_s0_state
+    maps_to: signaling_sbml_dutta_roy2015_opening_of_the_multiple_ampa_recep_biomd0000000569_model.source_defined_s0_state
+    label: source-defined S0 state
+    description: source-defined S0 state. Maps to SBML symbol `S0` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_dutta_roy2015_opening_of_the_multiple_ampa_recep_biomd0000000569_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_dutta_roy2015_opening_of_the_multiple_ampa_recep_biomd0000000569_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_dutta_roy2015_opening_of_the_multiple_ampa_recep_biomd0000000569_model.species_labels
+    label: Observable labels

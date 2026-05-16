@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Wei2011_MLCactivationPathway_EndothelialPermeability
+description: 'This model is from the article: An Integrated Mathematical Model of
+  Thrombin-, Histamine-and VEGF-Mediated Signalling in Endothelial Permeability. Wei
+  X, Han B, Zhang J, Liu X, Tan C, Jiang Y, Low B,.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- coagulation
+authors:
+- Biosimulant Team
+- X N Wei
+- B C Han
+- J X Zhang
+- X H Liu
+- C Y Tan
+upstream:
+  id: biomodels_ebi:MODEL1102210000
+  source_db: biomodels_ebi
+  source_id: MODEL1102210000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1102210000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1102210000?filename=MODEL1102210000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.wei2011_mlcactivationpathway_endothelialpermeabi:Wei2011MlcactivationpathwayEndothelialpermeabiModel1102210000Model
+  init_kwargs:
+    model_path: data/MODEL1102210000.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ca2plus_1
+    maps_to: signaling_sbml_wei2011_mlcactivationpathway_endothelialpermeabi_model1102210000_model.initial_ca2plus_1
+    label: Initial Ca2plus 1
+    description: Initial level of Ca2plus 1. Maps to SBML symbol `Ca2plus_1`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_thrombin
+    maps_to: signaling_sbml_wei2011_mlcactivationpathway_endothelialpermeabi_model1102210000_model.initial_thrombin
+    label: Initial Thrombin
+    description: Initial level of Thrombin. Maps to SBML symbol `thrombin`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_ca2plus
+    maps_to: signaling_sbml_wei2011_mlcactivationpathway_endothelialpermeabi_model1102210000_model.initial_ca2plus
+    label: Initial Ca2plus
+    description: Initial level of Ca2plus. Maps to SBML symbol `Ca2plus`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: ca2plus_1
+    maps_to: signaling_sbml_wei2011_mlcactivationpathway_endothelialpermeabi_model1102210000_model.ca2plus_1
+    label: Ca2plus 1
+    description: Ca2plus 1. Maps to SBML symbol `Ca2plus_1` and is emitted in native
+      SBML units.
+  - name: ca2plus_2
+    maps_to: signaling_sbml_wei2011_mlcactivationpathway_endothelialpermeabi_model1102210000_model.ca2plus_2
+    label: Ca2plus 2
+    description: Ca2plus 2. Maps to SBML symbol `Ca2plus_2` and is emitted in native
+      SBML units.
+  - name: ca2plus_3
+    maps_to: signaling_sbml_wei2011_mlcactivationpathway_endothelialpermeabi_model1102210000_model.ca2plus_3
+    label: Ca2plus 3
+    description: Ca2plus 3. Maps to SBML symbol `Ca2plus_3` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_wei2011_mlcactivationpathway_endothelialpermeabi_model1102210000_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_wei2011_mlcactivationpathway_endothelialpermeabi_model1102210000_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_wei2011_mlcactivationpathway_endothelialpermeabi_model1102210000_model.species_labels
+    label: Observable labels

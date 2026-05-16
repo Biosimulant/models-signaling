@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "fb87a08a-dfc1-4d88-80d2-4d2a0552ca40",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "eb516f32-7ad9-4309-9ba9-bbb4bf376f2c",
+  "created_at": "2026-05-16T05:38:38.464640663+00:00",
+  "last_synced_at": "2026-05-16T10:24:17.254599+00:00",
+  "hub_manifest_hash": "f22d978957ebfb30a8b5ef3558ff631fa481e3a9e84cece8f287e1cb84b9d912",
+  "package_name": "nakakuki2010-cellfatedecision-mechanistic-lab"
+}

@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Ajay_Bhalla_2007_Bistable Lab
+description: 'Clean Biosimulant lab for systems signaling model: Ajay_Bhalla_2007_Bistable.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model.state
+  to:
+  - visualisation.signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model_state
+- from: signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model.summary
+  to:
+  - visualisation.signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model_summary
+- from: signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model.species_labels
+  to:
+  - visualisation.signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_calcium_input
+    maps_to: signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model.initial_calcium_input
+    label: Initial calcium Input
+    description: Initial level of calcium Input. Maps to SBML symbol `Ca_input`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_dag
+    maps_to: signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model.initial_dag
+    label: Initial DAG
+    description: Initial level of DAG. Maps to SBML symbol `DAG`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_ip3
+    maps_to: signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model.initial_ip3
+    label: Initial IP3
+    description: Initial level of IP3. Maps to SBML symbol `IP3`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: calcium_bound_pkc
+    maps_to: signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model.calcium_bound_pkc
+    label: Calcium bound PKC
+    description: Calcium bound PKC. Maps to SBML symbol `PKC_slash_PKC_minus_Ca` and
+      is emitted in native SBML units.
+  - name: arachidonic_acid_active_calcium_bound_pkc
+    maps_to: signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model.arachidonic_acid_active_calcium_bound_pkc
+    label: Arachidonic Acid active Calcium bound PKC
+    description: Arachidonic Acid active Calcium bound PKC. Maps to SBML symbol `PKC_slash_PKC_minus_Ca_minus_AA_star_`
+      and is emitted in native SBML units.
+  - name: membrane_active_calcium_bound_pkc
+    maps_to: signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model.membrane_active_calcium_bound_pkc
+    label: Membrane active Calcium bound PKC
+    description: Membrane active Calcium bound PKC. Maps to SBML symbol `PKC_slash_PKC_minus_Ca_minus_memb_star_`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model.species_labels
+    label: Observable labels

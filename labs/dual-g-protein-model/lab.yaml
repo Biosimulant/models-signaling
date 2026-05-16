@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Dual G protein Model Lab
+description: 'Clean Biosimulant lab for systems signaling model: Dual G protein Model.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_dual_g_protein_model_model2306210001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_dual_g_protein_model_model2306210001_model.state
+  to:
+  - visualisation.signaling_sbml_dual_g_protein_model_model2306210001_model_state
+- from: signaling_sbml_dual_g_protein_model_model2306210001_model.summary
+  to:
+  - visualisation.signaling_sbml_dual_g_protein_model_model2306210001_model_summary
+- from: signaling_sbml_dual_g_protein_model_model2306210001_model.species_labels
+  to:
+  - visualisation.signaling_sbml_dual_g_protein_model_model2306210001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+io:
+  inputs:
+  - name: initial_ligand_conc_added_level
+    maps_to: signaling_sbml_dual_g_protein_model_model2306210001_model.initial_ligand_conc_added_level
+    label: Ligand Conc Added
+    description: Ligand Conc Added source parameter. Maps to SBML symbol `LigandConcAdded`
+      and preserves the bundled default.
+  outputs:
+  - name: inactive_ligand_receptor_complex
+    maps_to: signaling_sbml_dual_g_protein_model_model2306210001_model.inactive_ligand_receptor_complex
+    label: inactive ligand-receptor complex
+    description: inactive ligand-receptor complex. Maps to SBML symbol `LRi` and is
+      emitted in native SBML units.
+  - name: active_ligand_receptor_complex
+    maps_to: signaling_sbml_dual_g_protein_model_model2306210001_model.active_ligand_receptor_complex
+    label: active ligand-receptor complex
+    description: active ligand-receptor complex. Maps to SBML symbol `LRa` and is
+      emitted in native SBML units.
+  - name: source_defined_rig1_state
+    maps_to: signaling_sbml_dual_g_protein_model_model2306210001_model.source_defined_rig1_state
+    label: source-defined RIG1 state
+    description: source-defined RIG1 state. Maps to SBML symbol `RiG1` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_dual_g_protein_model_model2306210001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_dual_g_protein_model_model2306210001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_dual_g_protein_model_model2306210001_model.species_labels
+    label: Observable labels

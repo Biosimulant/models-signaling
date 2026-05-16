@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2b3fe0ca-321c-40a0-9840-fe9b4630033d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c37e5d45-deba-4a66-beaa-3808d09fe28a",
+  "created_at": "2026-05-15T19:08:09.666213114+00:00",
+  "last_synced_at": "2026-05-16T09:40:40.110657+00:00",
+  "hub_manifest_hash": "f7bc2f8ed7fdfd39c0a8704eba7c6fb7969dd3d7b0e81c21261f777029f4b24c",
+  "package_name": "goldbeter2007-somitogenesis-switch-lab"
+}

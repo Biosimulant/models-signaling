@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8a12447f-93bf-46d7-b239-47105cbf4988",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c15d32fd-ddda-49f0-9744-2a8aace44839",
+  "created_at": "2026-05-15T19:08:08.694191541+00:00",
+  "last_synced_at": "2026-05-16T08:55:30.504146+00:00",
+  "hub_manifest_hash": "664979953e3980e2ac8d719f1f12b844d05fafebf69b1d1f98170bd2007b0dac",
+  "package_name": "bakshi2020-properdin-model-of-alternative-pathway-of-complement"
+}

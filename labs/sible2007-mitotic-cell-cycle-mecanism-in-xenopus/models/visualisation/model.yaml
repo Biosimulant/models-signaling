@@ -1,0 +1,69 @@
+schema_version: '2.0'
+title: Sible2007 - Mitotic cell cycle mecanism in Xenopus Laevis Visualisation
+description: Question-and-answer and chart visualisation for cell-cycle regulatory
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model
+    title: Sible2007 - Mitotic cell cycle mecanism in Xenopus Laevis
+    context: cell-cycle regulatory signaling
+    question: How does Sible2007 - Mitotic cell cycle mecanism in Xenopus Laevis move
+      checkpoint or cycle-control signaling states?
+    visual_scope: cell-cycle regulatory signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      cdc25: float
+      cdc25_phosphorylated: float
+      cyclin_cdk1_mpf: float
+      cyclin_cdk1_pre_mpf: float
+      source_defined_wee1_state: float
+      wee1_phosphorylated: float
+      cyclin: float
+      source_defined_cdk1_state: float
+      source_defined_ie_state: float
+      ie_phosphorylated: float
+      apc_active: float
+      cdk1_total: float
+      cdc25_total: float
+      wee1_total: float
+      ie_total: float
+      apc_total: float
+      ppase: float
+      cyclin_total: float
+    species_labels:
+      cdc25: Cdc25
+      cdc25_phosphorylated: Cdc25 Phosphorylated
+      cyclin_cdk1_mpf: Cyclin Cdk1 MPF
+      cyclin_cdk1_pre_mpf: Cyclin Cdk1 Pre MPF
+      source_defined_wee1_state: source-defined WEE1 state
+      wee1_phosphorylated: Wee1 Phosphorylated
+      cyclin: Cyclin
+      source_defined_cdk1_state: source-defined CDK1 state
+      source_defined_ie_state: source-defined IE state
+      ie_phosphorylated: IE Phosphorylated
+      apc_active: APC active
+      cdk1_total: Cdk1 Total
+      cdc25_total: Cdc25 Total
+      wee1_total: Wee1 Total
+      ie_total: IE Total
+      apc_total: APC Total
+      ppase: Ppase
+      cyclin_total: Cyclin Total
+io:
+  inputs: []
+  outputs: []

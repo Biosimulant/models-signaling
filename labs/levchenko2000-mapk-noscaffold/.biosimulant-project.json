@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a1ce4333-1511-47f4-99c9-ace5a0ff7358",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "adc4aac4-a86d-4547-8dff-30428ce01d29",
+  "created_at": "2026-05-15T19:08:10.542944327+00:00",
+  "last_synced_at": "2026-05-16T11:37:46.046416+00:00",
+  "hub_manifest_hash": "25db5155df9a42d8ccb8b76498e483cc3cd83c800d3146e80bad832157e39ac3",
+  "package_name": "levchenko2000-mapk-noscaffold-lab"
+}

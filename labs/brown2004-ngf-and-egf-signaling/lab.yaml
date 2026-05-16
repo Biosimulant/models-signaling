@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Brown2004 - NGF and EGF signaling Lab
+description: 'Clean Biosimulant lab for systems signaling model: Brown2004 - NGF and
+  EGF signaling. Values are native SBML quantities; equations, parameters, and initial
+  values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model.state
+  to:
+  - visualisation.signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model_state
+- from: signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model.summary
+  to:
+  - visualisation.signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model_summary
+- from: signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model.species_labels
+  to:
+  - visualisation.signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- neuroscience
+io:
+  inputs:
+  - name: initial_source_defined_kegf_state_level
+    maps_to: signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model.initial_source_defined_kegf_state_level
+    label: source-defined KEGF state
+    description: source-defined KEGF state source parameter. Maps to SBML symbol `kEGF`
+      and preserves the bundled default.
+  - name: initial_km_egf_level
+    maps_to: signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model.initial_km_egf_level
+    label: Km EGF
+    description: Km EGF source parameter. Maps to SBML symbol `KmEGF` and preserves
+      the bundled default.
+  - name: initial_krb_egf_level
+    maps_to: signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model.initial_krb_egf_level
+    label: Krb EGF
+    description: Krb EGF source parameter. Maps to SBML symbol `krbEGF` and preserves
+      the bundled default.
+  outputs:
+  - name: free_egfreceptor
+    maps_to: signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model.free_egfreceptor
+    label: free Egfreceptor
+    description: free Egfreceptor. Maps to SBML symbol `freeEGFReceptor` and is emitted
+      in native SBML units.
+  - name: bound_egfreceptor
+    maps_to: signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model.bound_egfreceptor
+    label: bound Egfreceptor
+    description: bound Egfreceptor. Maps to SBML symbol `boundEGFReceptor` and is
+      emitted in native SBML units.
+  - name: free_ngfreceptor
+    maps_to: signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model.free_ngfreceptor
+    label: free Ngfreceptor
+    description: free Ngfreceptor. Maps to SBML symbol `freeNGFReceptor` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model.species_labels
+    label: Observable labels

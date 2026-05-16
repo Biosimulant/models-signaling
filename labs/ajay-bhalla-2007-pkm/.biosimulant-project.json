@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "484611a2-4c7b-4384-86aa-bc1b48bd1a25",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9db7bab6-7871-4899-ab72-3cd43cc4f560",
+  "created_at": "2026-05-15T19:08:08.560630263+00:00",
+  "last_synced_at": "2026-05-16T08:31:47.487708+00:00",
+  "hub_manifest_hash": "f2731b8238c467968e5cdda7d21e1adc7023c4623dc103e64f29ee77dee95941",
+  "package_name": "ajay-bhalla-2007-pkm-lab"
+}

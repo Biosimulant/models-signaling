@@ -1,0 +1,37 @@
+schema_version: '2.0'
+title: Dasgupta2020 - Reduced model of receptor clusturing and aggregation Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Dasgupta2020 - Reduced model of receptor clusturing and aggregation.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_dasgupta2020_reduced_model_of_receptor_clusturin_biomd0000000973_model
+    title: Dasgupta2020 - Reduced model of receptor clusturing and aggregation
+    context: GPCR and cAMP/PKA signaling
+    question: How does Dasgupta2020 - Reduced model of receptor clusturing and aggregation
+      route receptor activity into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_p_state: float
+      source_defined_n_state: float
+    species_labels:
+      source_defined_p_state: source-defined P state
+      source_defined_n_state: source-defined N state
+io:
+  inputs: []
+  outputs: []

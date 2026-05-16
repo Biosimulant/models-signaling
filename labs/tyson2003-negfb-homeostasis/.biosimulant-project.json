@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "7e1b22b9-5ee3-4ff1-a849-59db8d5d3fe0",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d2a013f6-55c4-42ef-a7d8-739bfd3985fd",
+  "created_at": "2026-05-16T05:58:28.523166888+00:00",
+  "last_synced_at": "2026-05-16T11:19:36.579194+00:00",
+  "hub_manifest_hash": "ba9637994400bf27c497c953b3c802fe0f0efb2dc36ff28a39cbbd4e87a43d9c",
+  "package_name": "tyson2003-negfb-homeostasis-lab"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ee89bc6e-520b-4f40-84d3-c69737e8dd5f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8fd5c4ba-937c-4a3a-842a-7c14d82648f5",
+  "created_at": "2026-05-15T19:08:09.826398430+00:00",
+  "last_synced_at": "2026-05-16T09:45:10.149925+00:00",
+  "hub_manifest_hash": "abbacd33a9981da582cfb13cb7d97f419c09274a57191fafef7fb45120f9409f",
+  "package_name": "hayashi1999-nosynth-phospho-lab"
+}

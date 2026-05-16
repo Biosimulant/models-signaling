@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Trares2022 - Canonical NF-kB pathway, Petri net
+description: Signaling Trares2022Canonical Nf Kb Pathway Petri Net Model2207210001Model
+  captures core biological behavior in the context of signaling, sbml, biomodels_ebi
+  using a biomodels_ebi-sourced OTHER model. When you run it, you can observe state
+  and evaluate how the modeled system changes across runs.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+authors:
+- Biosimulant Team
+- Kira Trares
+- Jörg Ackermann
+- Ina Koch
+upstream:
+  id: biomodels_ebi:MODEL2207210001
+  source_db: biomodels_ebi
+  source_id: MODEL2207210001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2207210001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2207210001?filename=Trares2022
+    - Canonical NF-kB pathway - Petri net.xml
+  license: CC0
+biosim:
+  entrypoint: src.trares2022_canonical_nf_kb_pathway_petri_net:Trares2022CanonicalNfKbPathwayPetriNetModel2207210001Model
+  init_kwargs:
+    model_path: data/MODEL2207210001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_p50_rel_a_n
+    maps_to: signaling_sbml_trares2022_canonical_nf_kb_pathway_petri_net_model2207210001_model.initial_p50_rel_a_n
+    label: Initial P50 Rel A N
+    description: Initial level of P50 Rel A N. Maps to SBML symbol `P0`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: ikk_complex
+    maps_to: signaling_sbml_trares2022_canonical_nf_kb_pathway_petri_net_model2207210001_model.ikk_complex
+    label: IKK Complex
+    description: IKK Complex. Maps to SBML symbol `P12` and is emitted in native SBML
+      units.
+  - name: ikk_complex_activated
+    maps_to: signaling_sbml_trares2022_canonical_nf_kb_pathway_petri_net_model2207210001_model.ikk_complex_activated
+    label: IKK Complex Activated
+    description: IKK Complex Activated. Maps to SBML symbol `P13` and is emitted in
+      native SBML units.
+  - name: p50_rel_a_n
+    maps_to: signaling_sbml_trares2022_canonical_nf_kb_pathway_petri_net_model2207210001_model.p50_rel_a_n
+    label: P50 Rel A N
+    description: P50 Rel A N. Maps to SBML symbol `P0` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_trares2022_canonical_nf_kb_pathway_petri_net_model2207210001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_trares2022_canonical_nf_kb_pathway_petri_net_model2207210001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_trares2022_canonical_nf_kb_pathway_petri_net_model2207210001_model.species_labels
+    label: Observable labels

@@ -1,0 +1,349 @@
+schema_version: '2.0'
+title: Sasagawa2005_MAPK Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_sasagawa2005_mapk_biomd0000000049_model
+    title: Sasagawa2005_MAPK
+    context: receptor-to-MAPK cascade signaling
+    question: How does Sasagawa2005 MAPK propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      egfr: float
+      l_egfr: float
+      l_egfr_dimer: float
+      ? source_defined_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_state
+      : float
+      l_dp_egfr: float
+      ? phospho_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor
+      : float
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein
+      : float
+      grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: float
+      source_defined_dok_state: float
+      phospho_dok: float
+      source_defined_crk_state: float
+      source_defined_frs2_state: float
+      shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: float
+      ? phospho_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein
+      : float
+      rap1_gdp: float
+      mek: float
+      source_defined_mkp3_state: float
+      phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr: float
+      dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase: float
+      b_raf_rap1_gtp: float
+      ? phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase
+      : float
+      pfrs2_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase: float
+      shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr: float
+      source_defined_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_state: float
+      ras_gap: float
+      source_defined_c_raf_state: float
+      source_defined_b_raf_state: float
+      erk: float
+      pp2a: float
+      ras_gdp: float
+      rap1gap: float
+      c3g: float
+      source_defined_ngfr_state: float
+      phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: float
+      pfrs2_dp_egfr: float
+      phospho_trk_a_endo: float
+      mek_erk: float
+      phospho_mek_erk: float
+      ? frs2_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiq
+      : float
+      ? crk_c3g_pfrs2_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase
+      : float
+      ? phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiq
+      : float
+      crk_c3g_pfrs2_dp_egfr: float
+      ? grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiq
+      : float
+      ? grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase
+      : float
+      ? shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiq
+      : float
+      dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiq: float
+      proteasome: float
+      ? grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein
+      : float
+      ? shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase
+      : float
+      ? grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr
+      : float
+      source_defined_pfrs2_state: float
+      frs2_dp_egfr: float
+      phospho_dok_ras_gap: float
+      phospho_mek: float
+      frs2_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase: float
+      ? pfrs2_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiq
+      : float
+      ras_gtp: float
+      ? crk_c3g_pfrs2_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiq
+      : float
+      c_raf_ras_gtp: float
+      b_raf_ras_gtp: float
+      pp_mek: float
+      pp_erk: float
+      phospho_trk_a: float
+      crk_c3g: float
+      rap1_gtp: float
+      l_ngfr: float
+      pp_mek_erk: float
+      dpp_erk: float
+      shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_phospho_trk_a: float
+      shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_phospho_trk_a_endo: float
+      phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_phospho_trk_a: float
+      pfrs2_phospho_trk_a: float
+      frs2_phospho_trk_a: float
+      ? phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_phospho_trk_a_endo
+      : float
+      frs2_phospho_trk_a_endo: float
+      pfrs2_phospho_trk_a_endo: float
+      crk_c3g_pfrs2_phospho_trk_a_endo: float
+      ? grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_phospho_trk_a
+      : float
+      crk_c3g_pfrs2_phospho_trk_a: float
+      ? grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_phospho_trk_a_endo
+      : float
+      c_raf_ras_gtp_mek: float
+      c_raf_ras_gtp_phospho_mek: float
+      c_raf_ras_gtp_mek_erk: float
+      c_raf_ras_gtp_phospho_mek_erk: float
+      b_raf_ras_gtp_mek: float
+      b_raf_ras_gtp_phospho_mek: float
+      b_raf_ras_gtp_mek_erk: float
+      b_raf_ras_gtp_phospho_mek_erk: float
+      b_raf_rap1_gtp_mek: float
+      b_raf_rap1_gtp_phospho_mek: float
+      b_raf_rap1_gtp_mek_erk: float
+      b_raf_rap1_gtp_phospho_mek_erk: float
+      pp_erk_mkp3: float
+      dpp_erk_mkp3: float
+      pro_trk_a: float
+      source_defined_nerve_growth_factor_state: float
+      egf: float
+      pro_egfr: float
+      degradation: float
+    species_labels:
+      egfr: EGFR
+      l_egfr: L EGFR
+      l_egfr_dimer: L EGFR Dimer
+      ? source_defined_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_state
+      : Source Defined SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange
+        Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor State
+      l_dp_egfr: L Dp EGFR
+      ? phospho_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor
+      : Phospho SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange
+        Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein
+      : SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine
+        Nucleotide Exchange Factor Grb2 adapter protein Adapter Protein Adapter Protein
+        Adapter Protein Adapter Protein Adapter Protein
+      grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: Grb2
+        adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein
+        Adapter Protein
+      source_defined_dok_state: Source Defined DOK State
+      phospho_dok: Phospho Dok
+      source_defined_crk_state: Source Defined CRK State
+      source_defined_frs2_state: Source Defined FRS2 State
+      shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: Shc
+        adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein
+        Adapter Protein
+      ? phospho_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein
+      : Phospho SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange
+        Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor Grb2 adapter protein Adapter Protein Adapter
+        Protein Adapter Protein Adapter Protein Adapter Protein
+      rap1_gdp: RAP1 GDP
+      mek: MEK
+      source_defined_mkp3_state: Source Defined MKP3 State
+      phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr: Phospho
+        Shc adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein Dp EGFR
+      dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase: Dp
+        EGFR C Cbl ubiquitin ligase Ubiquitin Ligase Ubiquitin Ligase Ubiquitin Ligase
+        Ubiquitin Ligase Ubiquitin Ligase
+      b_raf_rap1_gtp: B RAF RAP1 GTP
+      ? phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase
+      : Phospho Shc adapter protein Adapter Protein Adapter Protein Adapter Protein
+        Adapter Protein Adapter Protein Dp EGFR C Cbl ubiquitin ligase Ubiquitin Ligase
+        Ubiquitin Ligase Ubiquitin Ligase Ubiquitin Ligase Ubiquitin Ligase
+      pfrs2_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase: PFRS2
+        Dp EGFR C Cbl ubiquitin ligase Ubiquitin Ligase Ubiquitin Ligase Ubiquitin
+        Ligase Ubiquitin Ligase Ubiquitin Ligase
+      shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr: Shc
+        adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein
+        Adapter Protein Dp EGFR
+      source_defined_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_state: Source
+        Defined C Cbl ubiquitin ligase Ubiquitin Ligase Ubiquitin Ligase Ubiquitin
+        Ligase Ubiquitin Ligase State
+      ras_gap: RAS GAP
+      source_defined_c_raf_state: Source Defined C RAF State
+      source_defined_b_raf_state: Source Defined B RAF State
+      erk: ERK
+      pp2a: PP2A
+      ras_gdp: RAS GDP
+      rap1gap: Rap1gap
+      c3g: C3G
+      source_defined_ngfr_state: Source Defined NGFR State
+      phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein: Phospho
+        Shc adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein
+      pfrs2_dp_egfr: PFRS2 Dp EGFR
+      phospho_trk_a_endo: Phospho Trk A Endo
+      mek_erk: MEK ERK
+      phospho_mek_erk: Phospho MEK ERK
+      ? frs2_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiq
+      : FRS2 Dp EGFR C Cbl ubiquitin ligase Ubiquitin Ligase Ubiquitin Ligase Ubiquitin
+        Ligase Ubiquitin Ligase Ubiquitin Ligase Ubiq
+      ? crk_c3g_pfrs2_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase
+      : Crk C3G PFRS2 Dp EGFR C Cbl ubiquitin ligase Ubiquitin Ligase Ubiquitin Ligase
+        Ubiquitin Ligase Ubiquitin Ligase Ubiquitin Ligase
+      ? phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiq
+      : Phospho Shc adapter protein Adapter Protein Adapter Protein Adapter Protein
+        Adapter Protein Adapter Protein Dp EGFR C Cbl ubiquitin ligase Ubiquitin Ligase
+        Ubiquitin Ligase Ubiquitin Ligase Ubiquitin Ligase Ubiquitin Ligase Ubiq
+      crk_c3g_pfrs2_dp_egfr: Crk C3G PFRS2 Dp EGFR
+      ? grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiq
+      : Grb2 adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein SOS guanine-nucleotide exchange factor Guanine Nucleotide
+        Exchange Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange
+        Factor Guanine Nucleotide Exchange Factor Phospho Shc adapter protein Adapter
+        Protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein Dp
+        EGFR C Cbl ubiquitin ligase Ubiquitin Ligase Ubiquitin Ligase Ubiquitin Ligase
+        Ubiquitin Ligase Ubiquitin Ligase Ubiq
+      ? grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase
+      : Grb2 adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein SOS guanine-nucleotide exchange factor Guanine Nucleotide
+        Exchange Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange
+        Factor Guanine Nucleotide Exchange Factor Phospho Shc adapter protein Adapter
+        Protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein Dp
+        EGFR C Cbl ubiquitin ligase Ubiquitin Ligase Ubiquitin Ligase Ubiquitin Ligase
+        Ubiquitin Ligase Ubiquitin Ligase
+      ? shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiq
+      : Shc adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein Dp EGFR C Cbl ubiquitin ligase Ubiquitin Ligase Ubiquitin
+        Ligase Ubiquitin Ligase Ubiquitin Ligase Ubiquitin Ligase Ubiq
+      dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiq: Dp
+        EGFR C Cbl ubiquitin ligase Ubiquitin Ligase Ubiquitin Ligase Ubiquitin Ligase
+        Ubiquitin Ligase Ubiquitin Ligase Ubiq
+      proteasome: Proteasome
+      ? grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein
+      : Grb2 adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein SOS guanine-nucleotide exchange factor Guanine Nucleotide
+        Exchange Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange
+        Factor Guanine Nucleotide Exchange Factor Phospho Shc adapter protein Adapter
+        Protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein
+      ? shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase
+      : Shc adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein Dp EGFR C Cbl ubiquitin ligase Ubiquitin Ligase Ubiquitin
+        Ligase Ubiquitin Ligase Ubiquitin Ligase Ubiquitin Ligase
+      ? grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_dp_egfr
+      : Grb2 adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein SOS guanine-nucleotide exchange factor Guanine Nucleotide
+        Exchange Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange
+        Factor Guanine Nucleotide Exchange Factor Phospho Shc adapter protein Adapter
+        Protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein Dp
+        EGFR
+      source_defined_pfrs2_state: Source Defined PFRS2 State
+      frs2_dp_egfr: FRS2 Dp EGFR
+      phospho_dok_ras_gap: Phospho Dok RAS GAP
+      phospho_mek: Phospho MEK
+      frs2_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase: FRS2
+        Dp EGFR C Cbl ubiquitin ligase Ubiquitin Ligase Ubiquitin Ligase Ubiquitin
+        Ligase Ubiquitin Ligase Ubiquitin Ligase
+      ? pfrs2_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiq
+      : PFRS2 Dp EGFR C Cbl ubiquitin ligase Ubiquitin Ligase Ubiquitin Ligase Ubiquitin
+        Ligase Ubiquitin Ligase Ubiquitin Ligase Ubiq
+      ras_gtp: RAS GTP
+      ? crk_c3g_pfrs2_dp_egfr_c_cbl_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiquitin_ligase_ubiq
+      : Crk C3G PFRS2 Dp EGFR C Cbl ubiquitin ligase Ubiquitin Ligase Ubiquitin Ligase
+        Ubiquitin Ligase Ubiquitin Ligase Ubiquitin Ligase Ubiq
+      c_raf_ras_gtp: C RAF RAS GTP
+      b_raf_ras_gtp: B RAF RAS GTP
+      pp_mek: Pp MEK
+      pp_erk: Pp ERK
+      phospho_trk_a: Phospho Trk A
+      crk_c3g: Crk C3G
+      rap1_gtp: RAP1 GTP
+      l_ngfr: L NGFR
+      pp_mek_erk: Pp MEK ERK
+      dpp_erk: Dpp ERK
+      shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_phospho_trk_a: Shc
+        adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein
+        Adapter Protein Phospho Trk A
+      shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_phospho_trk_a_endo: Shc
+        adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein
+        Adapter Protein Phospho Trk A Endo
+      phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_phospho_trk_a: Phospho
+        Shc adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein Phospho Trk A
+      pfrs2_phospho_trk_a: PFRS2 Phospho Trk A
+      frs2_phospho_trk_a: FRS2 Phospho Trk A
+      ? phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_phospho_trk_a_endo
+      : Phospho Shc adapter protein Adapter Protein Adapter Protein Adapter Protein
+        Adapter Protein Adapter Protein Phospho Trk A Endo
+      frs2_phospho_trk_a_endo: FRS2 Phospho Trk A Endo
+      pfrs2_phospho_trk_a_endo: PFRS2 Phospho Trk A Endo
+      crk_c3g_pfrs2_phospho_trk_a_endo: Crk C3G PFRS2 Phospho Trk A Endo
+      ? grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_phospho_trk_a
+      : Grb2 adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein SOS guanine-nucleotide exchange factor Guanine Nucleotide
+        Exchange Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange
+        Factor Guanine Nucleotide Exchange Factor Phospho Shc adapter protein Adapter
+        Protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein Phospho
+        Trk A
+      crk_c3g_pfrs2_phospho_trk_a: Crk C3G PFRS2 Phospho Trk A
+      ? grb2_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_phospho_shc_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_adapter_protein_phospho_trk_a_endo
+      : Grb2 adapter protein Adapter Protein Adapter Protein Adapter Protein Adapter
+        Protein Adapter Protein SOS guanine-nucleotide exchange factor Guanine Nucleotide
+        Exchange Factor Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange
+        Factor Guanine Nucleotide Exchange Factor Phospho Shc adapter protein Adapter
+        Protein Adapter Protein Adapter Protein Adapter Protein Adapter Protein Phospho
+        Trk A Endo
+      c_raf_ras_gtp_mek: C RAF RAS GTP MEK
+      c_raf_ras_gtp_phospho_mek: C RAF RAS GTP Phospho MEK
+      c_raf_ras_gtp_mek_erk: C RAF RAS GTP MEK ERK
+      c_raf_ras_gtp_phospho_mek_erk: C RAF RAS GTP Phospho MEK ERK
+      b_raf_ras_gtp_mek: B RAF RAS GTP MEK
+      b_raf_ras_gtp_phospho_mek: B RAF RAS GTP Phospho MEK
+      b_raf_ras_gtp_mek_erk: B RAF RAS GTP MEK ERK
+      b_raf_ras_gtp_phospho_mek_erk: B RAF RAS GTP Phospho MEK ERK
+      b_raf_rap1_gtp_mek: B RAF RAP1 GTP MEK
+      b_raf_rap1_gtp_phospho_mek: B RAF RAP1 GTP Phospho MEK
+      b_raf_rap1_gtp_mek_erk: B RAF RAP1 GTP MEK ERK
+      b_raf_rap1_gtp_phospho_mek_erk: B RAF RAP1 GTP Phospho MEK ERK
+      pp_erk_mkp3: Pp ERK MKP3
+      dpp_erk_mkp3: Dpp ERK MKP3
+      pro_trk_a: Pro Trk A
+      source_defined_nerve_growth_factor_state: Source Defined Nerve Growth Factor
+        State
+      egf: EGF
+      pro_egfr: Pro EGFR
+      degradation: Degradation
+io:
+  inputs: []
+  outputs: []

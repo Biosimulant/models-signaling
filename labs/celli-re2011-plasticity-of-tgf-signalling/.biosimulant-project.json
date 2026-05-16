@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0b81773f-0ce3-48f2-9be2-330f336ea067",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "56f447af-f464-4319-9160-6d27729797cc",
+  "created_at": "2026-05-15T19:08:09.272362968+00:00",
+  "last_synced_at": "2026-05-16T09:21:43.502669+00:00",
+  "hub_manifest_hash": "8f799dd85817a56cd4587af8ce10cf0a694d2101e72073da4324bfb7742ebcb4",
+  "package_name": "celli-re2011-plasticity-of-tgf-signalling-lab"
+}

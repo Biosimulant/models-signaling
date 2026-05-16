@@ -1,0 +1,91 @@
+schema_version: '2.0'
+title: DallePezze2012 - TSC-independent mTORC2 regulation Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  DallePezze2012 - TSC-independent mTORC2 regulation.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mtor
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model
+    title: DallePezze2012 - TSC-independent mTORC2 regulation
+    context: phosphorylation and regulatory motif dynamics
+    question: How does DallePezze2012 - TSC-independent mTORC2 regulation express
+      its source-modeled signaling motif over the baseline run?
+    visual_scope: phosphorylation and regulatory motif dynamics
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      insulin_receptor_beta_response_parameter: float
+      insulin_receptor_beta_response_parameter_p_y1146: float
+      insulin_receptor_beta_response_parameter_refractory: float
+      insulin: float
+      amino_acids: float
+      sink_species: float
+      m_torc2: float
+      m_torc1_p_s2448: float
+      m_torc1: float
+      irs1_p_s636_pi3k: float
+      irs1_p_pi3k: float
+      m_torc2_p_s2481: float
+      p70s6k_p_t389: float
+      irs1_pi3k: float
+      akt_p_t308: float
+      tsc_clx: float
+      pras40: float
+      pras40_p_s183: float
+      pras40_p_t246: float
+      akt: float
+      akt_p_t308_p_s473: float
+      p70s6k: float
+      tsc_p_clx: float
+      source_defined_pdk2_state: float
+      pdk2_p: float
+      pi3k_variant_p: float
+      pi3k_variant: float
+      pi3k: float
+    species_labels:
+      insulin_receptor_beta_response_parameter: insulin receptor beta response parameter
+      insulin_receptor_beta_response_parameter_p_y1146: insulin receptor beta response
+        parameter P Y1146
+      insulin_receptor_beta_response_parameter_refractory: insulin receptor beta response
+        parameter Refractory
+      insulin: Insulin
+      amino_acids: Amino Acids
+      sink_species: sink species
+      m_torc2: M TORC2
+      m_torc1_p_s2448: M TORC1 P S2448
+      m_torc1: M TORC1
+      irs1_p_s636_pi3k: IRS1 P S636 PI3K
+      irs1_p_pi3k: IRS1 P PI3K
+      m_torc2_p_s2481: M TORC2 P S2481
+      p70s6k_p_t389: P70s6k P T389
+      irs1_pi3k: IRS1 PI3K
+      akt_p_t308: AKT P T308
+      tsc_clx: TSC Clx
+      pras40: PRAS40
+      pras40_p_s183: PRAS40 P S183
+      pras40_p_t246: PRAS40 P T246
+      akt: AKT
+      akt_p_t308_p_s473: AKT P T308 P S473
+      p70s6k: P70s6k
+      tsc_p_clx: TSC P Clx
+      source_defined_pdk2_state: source-defined PDK2 state
+      pdk2_p: PDK2 P
+      pi3k_variant_p: PI3K Variant P
+      pi3k_variant: PI3K Variant
+      pi3k: PI3K
+io:
+  inputs: []
+  outputs: []

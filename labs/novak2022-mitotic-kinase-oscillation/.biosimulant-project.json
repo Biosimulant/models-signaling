@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d7235172-4129-4668-a443-74dcaf37309d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "94f79f81-3235-41aa-a6be-e57426fdc6a3",
+  "created_at": "2026-05-16T05:38:38.619520778+00:00",
+  "last_synced_at": "2026-05-16T10:26:38.790720+00:00",
+  "hub_manifest_hash": "090ff762e87397950a3bbd8a8589bc8ee23b7d31154a4e502b8728a5e3ddedf9",
+  "package_name": "novak2022-mitotic-kinase-oscillation-lab"
+}

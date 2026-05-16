@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Fujita2010_Akt_Signalling_NGF Lab
+description: 'Clean Biosimulant lab for systems signaling model: Fujita2010_Akt_Signalling_NGF.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.state
+  to:
+  - visualisation.signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model_state
+- from: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.summary
+  to:
+  - visualisation.signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model_summary
+- from: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.species_labels
+  to:
+  - visualisation.signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- pi3k-akt
+- neuroscience
+io:
+  inputs:
+  - name: initial_p_akt_scale_factor_level
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.initial_p_akt_scale_factor_level
+    label: P AKT Scale Factor
+    description: P AKT Scale Factor source parameter. Maps to SBML symbol `pAkt_scaleFactor`
+      and preserves the bundled default.
+  - name: initial_nerve_growth_factor
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.initial_nerve_growth_factor
+    label: Initial nerve growth factor
+    description: Initial level of nerve growth factor. Maps to SBML symbol `NGF`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_pro_trk_a
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.initial_pro_trk_a
+    label: Initial Pro Trk A
+    description: Initial level of Pro Trk A. Maps to SBML symbol `pro_TrkA`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: p_trk_a_akt
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.p_trk_a_akt
+    label: P Trk A AKT
+    description: P Trk A AKT. Maps to SBML symbol `pTrkA_Akt` and is emitted in native
+      SBML units.
+  - name: akt
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.akt
+    label: AKT
+    description: AKT. Maps to SBML symbol `Akt` and is emitted in native SBML units.
+  - name: source_defined_pakt_state
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.source_defined_pakt_state
+    label: source-defined PAKT state
+    description: source-defined PAKT state. Maps to SBML symbol `pAkt` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.species_labels
+    label: Observable labels

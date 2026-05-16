@@ -1,0 +1,61 @@
+schema_version: '2.0'
+title: Ouyang2014 - photomorphogenic UV-B signalling network Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Ouyang2014 - photomorphogenic UV-B signalling network.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- plant-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model
+    title: Ouyang2014 - photomorphogenic UV-B signalling network
+    context: plant signaling response
+    question: How does Ouyang2014 - photomorphogenic UV-B signalling network respond
+      through its source-defined plant signaling states?
+    visual_scope: plant signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_cs_state: float
+      source_defined_cd_state: float
+      source_defined_cdcs_state: float
+      uvr8m: float
+      source_defined_ucs_state: float
+      uvr8d: float
+      source_defined_rup_state: float
+      source_defined_ur_state: float
+      uvr8_m: float
+      source_defined_cop1_state: float
+      source_defined_hy5_state: float
+      source_defined_fhy3_state: float
+      source_defined_dwd_state: float
+      source_defined_cdw_state: float
+    species_labels:
+      source_defined_cs_state: source-defined CS state
+      source_defined_cd_state: source-defined CD state
+      source_defined_cdcs_state: source-defined CDCS state
+      uvr8m: UVR8M
+      source_defined_ucs_state: source-defined UCS state
+      uvr8d: UVR8D
+      source_defined_rup_state: source-defined RUP state
+      source_defined_ur_state: source-defined UR state
+      uvr8_m: UVR8 M
+      source_defined_cop1_state: source-defined COP1 state
+      source_defined_hy5_state: source-defined HY5 state
+      source_defined_fhy3_state: source-defined FHY3 state
+      source_defined_dwd_state: source-defined DWD state
+      source_defined_cdw_state: source-defined CDW state
+io:
+  inputs: []
+  outputs: []

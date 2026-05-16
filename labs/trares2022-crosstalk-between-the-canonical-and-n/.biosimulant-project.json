@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d7adaed7-1d55-493b-a6e7-215acc426ffc",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "de892f5a-3b0e-42a4-a39c-ba163c1a3b5e",
+  "created_at": "2026-05-16T05:58:28.381080948+00:00",
+  "last_synced_at": "2026-05-16T11:17:42.979362+00:00",
+  "hub_manifest_hash": "206715aa35df1b8c196cc91a5f840537e9dd28005d55b332c83ec14673b05158",
+  "package_name": "trares2022-crosstalk-between-the-canonical-and-non-canonical-nf"
+}

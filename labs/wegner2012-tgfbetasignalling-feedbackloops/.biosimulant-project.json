@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "825060f7-8a2e-4d22-b4cc-c409f7358cd7",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "203f5425-4c19-417c-a13e-90cbaa3fe813",
+  "created_at": "2026-05-16T05:58:29.385611907+00:00",
+  "last_synced_at": "2026-05-16T11:22:53.602081+00:00",
+  "hub_manifest_hash": "62763ec11d61950160ac4ad8d60a392eb94d2396dc0967f13aa92766c7a337f4",
+  "package_name": "wegner2012-tgfbetasignalling-feedbackloops-lab"
+}

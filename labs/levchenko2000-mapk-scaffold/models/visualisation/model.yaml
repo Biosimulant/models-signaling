@@ -1,0 +1,204 @@
+schema_version: '2.0'
+title: Levchenko2000_MAPK_Scaffold Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_levchenko2000_mapk_scaffold_biomd0000000014_model
+    title: Levchenko2000_MAPK_Scaffold
+    context: receptor-to-MAPK cascade signaling
+    question: How does Levchenko2000 MAPK Scaffold propagate receptor or RAS/ERK pathway
+      activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      mapk_phosphatase: float
+      mek_phosphatase: float
+      raf_kinase: float
+      raf_phosphatase: float
+      mapk: float
+      mapk_p: float
+      mapk_pp: float
+      mek: float
+      source_defined_mek_p_state: float
+      mek_pp: float
+      raf: float
+      source_defined_raf_p_state: float
+      mapk_mek_pp: float
+      mapk_p_mek_pp: float
+      mek_raf_p: float
+      mek_p_raf_p: float
+      mapk_p_mapkpase: float
+      mapk_pp_mapkpase: float
+      mek_p_mekpase: float
+      mek_pp_mekpase: float
+      raf_rafk: float
+      raf_p_rafpase: float
+      scaffold: float
+      scaffold_raf: float
+      scaffold_raf_p: float
+      scaffold_mek: float
+      scaffold_mek_raf: float
+      scaffold_mek_raf_p: float
+      scaffold_mek_p: float
+      scaffold_mek_p_raf: float
+      scaffold_mek_p_raf_p: float
+      scaffold_mek_pp: float
+      scaffold_mek_pp_raf: float
+      scaffold_mek_pp_raf_p: float
+      scaffold_mapk: float
+      scaffold_mapk_raf: float
+      scaffold_mapk_raf_p: float
+      scaffold_mapk_mek: float
+      scaffold_mapk_mek_raf: float
+      scaffold_mapk_mek_raf_p: float
+      scaffold_mapk_mek_p: float
+      scaffold_mapk_mek_p_raf: float
+      scaffold_mapk_mek_p_raf_p: float
+      scaffold_mapk_mek_pp: float
+      scaffold_mapk_mek_pp_raf: float
+      scaffold_mapk_mek_pp_raf_p: float
+      scaffold_mapk_p: float
+      scaffold_mapk_p_raf: float
+      scaffold_mapk_p_raf_p: float
+      scaffold_mapk_p_mek: float
+      scaffold_mapk_p_mek_raf: float
+      scaffold_mapk_p_mek_raf_p: float
+      scaffold_mapk_p_mek_p: float
+      scaffold_mapk_p_mek_p_raf: float
+      scaffold_mapk_p_mek_p_raf_p: float
+      scaffold_mapk_p_mek_pp: float
+      scaffold_mapk_p_mek_pp_raf: float
+      scaffold_mapk_p_mek_pp_raf_p: float
+      scaffold_mapk_pp: float
+      scaffold_mapk_pp_raf: float
+      scaffold_mapk_pp_raf_p: float
+      scaffold_mapk_pp_mek: float
+      scaffold_mapk_pp_mek_raf: float
+      scaffold_mapk_pp_mek_raf_p: float
+      scaffold_mapk_pp_mek_p: float
+      scaffold_mapk_pp_mek_p_raf: float
+      scaffold_mapk_pp_mek_p_raf_p: float
+      scaffold_mapk_pp_mek_pp: float
+      scaffold_mapk_pp_mek_pp_raf: float
+      scaffold_mapk_pp_mek_pp_raf_p: float
+      scaffold_raf_2: float
+      scaffold_mek_raf_2: float
+      scaffold_mek_p_raf_2: float
+      scaffold_mek_pp_raf_2: float
+      scaffold_mapk_raf_2: float
+      scaffold_mapk_mek_raf_2: float
+      scaffold_mapk_mek_p_raf_2: float
+      scaffold_mapk_mek_pp_raf_2: float
+      scaffold_mapk_p_raf_2: float
+      scaffold_mapk_p_mek_raf_2: float
+      scaffold_mapk_p_mek_p_raf_2: float
+      scaffold_mapk_p_mek_pp_raf_2: float
+      scaffold_mapk_pp_raf_2: float
+      scaffold_mapk_pp_mek_raf_2: float
+      scaffold_mapk_pp_mek_p_raf_2: float
+      scaffold_mapk_pp_mek_pp_raf_2: float
+    species_labels:
+      mapk_phosphatase: MAPK Phosphatase
+      mek_phosphatase: MEK Phosphatase
+      raf_kinase: RAF Kinase
+      raf_phosphatase: RAF Phosphatase
+      mapk: MAPK
+      mapk_p: MAPK P
+      mapk_pp: MAPK PP
+      mek: MEK
+      source_defined_mek_p_state: source-defined MEK-P state
+      mek_pp: MEK PP
+      raf: RAF
+      source_defined_raf_p_state: source-defined RAF-P state
+      mapk_mek_pp: MAPK MEK PP
+      mapk_p_mek_pp: MAPK P MEK PP
+      mek_raf_p: MEK RAF P
+      mek_p_raf_p: MEK P RAF P
+      mapk_p_mapkpase: MAPK P Mapkpase
+      mapk_pp_mapkpase: MAPK PP Mapkpase
+      mek_p_mekpase: MEK P Mekpase
+      mek_pp_mekpase: MEK PP Mekpase
+      raf_rafk: RAF RAFK
+      raf_p_rafpase: RAF P Rafpase
+      scaffold: Scaffold
+      scaffold_raf: Scaffold RAF
+      scaffold_raf_p: Scaffold RAF P
+      scaffold_mek: Scaffold MEK
+      scaffold_mek_raf: Scaffold MEK RAF
+      scaffold_mek_raf_p: Scaffold MEK RAF P
+      scaffold_mek_p: Scaffold MEK P
+      scaffold_mek_p_raf: Scaffold MEK P RAF
+      scaffold_mek_p_raf_p: Scaffold MEK P RAF P
+      scaffold_mek_pp: Scaffold MEK PP
+      scaffold_mek_pp_raf: Scaffold MEK PP RAF
+      scaffold_mek_pp_raf_p: Scaffold MEK PP RAF P
+      scaffold_mapk: Scaffold MAPK
+      scaffold_mapk_raf: Scaffold MAPK RAF
+      scaffold_mapk_raf_p: Scaffold MAPK RAF P
+      scaffold_mapk_mek: Scaffold MAPK MEK
+      scaffold_mapk_mek_raf: Scaffold MAPK MEK RAF
+      scaffold_mapk_mek_raf_p: Scaffold MAPK MEK RAF P
+      scaffold_mapk_mek_p: Scaffold MAPK MEK P
+      scaffold_mapk_mek_p_raf: Scaffold MAPK MEK P RAF
+      scaffold_mapk_mek_p_raf_p: Scaffold MAPK MEK P RAF P
+      scaffold_mapk_mek_pp: Scaffold MAPK MEK PP
+      scaffold_mapk_mek_pp_raf: Scaffold MAPK MEK PP RAF
+      scaffold_mapk_mek_pp_raf_p: Scaffold MAPK MEK PP RAF P
+      scaffold_mapk_p: Scaffold MAPK P
+      scaffold_mapk_p_raf: Scaffold MAPK P RAF
+      scaffold_mapk_p_raf_p: Scaffold MAPK P RAF P
+      scaffold_mapk_p_mek: Scaffold MAPK P MEK
+      scaffold_mapk_p_mek_raf: Scaffold MAPK P MEK RAF
+      scaffold_mapk_p_mek_raf_p: Scaffold MAPK P MEK RAF P
+      scaffold_mapk_p_mek_p: Scaffold MAPK P MEK P
+      scaffold_mapk_p_mek_p_raf: Scaffold MAPK P MEK P RAF
+      scaffold_mapk_p_mek_p_raf_p: Scaffold MAPK P MEK P RAF P
+      scaffold_mapk_p_mek_pp: Scaffold MAPK P MEK PP
+      scaffold_mapk_p_mek_pp_raf: Scaffold MAPK P MEK PP RAF
+      scaffold_mapk_p_mek_pp_raf_p: Scaffold MAPK P MEK PP RAF P
+      scaffold_mapk_pp: Scaffold MAPK PP
+      scaffold_mapk_pp_raf: Scaffold MAPK PP RAF
+      scaffold_mapk_pp_raf_p: Scaffold MAPK PP RAF P
+      scaffold_mapk_pp_mek: Scaffold MAPK PP MEK
+      scaffold_mapk_pp_mek_raf: Scaffold MAPK PP MEK RAF
+      scaffold_mapk_pp_mek_raf_p: Scaffold MAPK PP MEK RAF P
+      scaffold_mapk_pp_mek_p: Scaffold MAPK PP MEK P
+      scaffold_mapk_pp_mek_p_raf: Scaffold MAPK PP MEK P RAF
+      scaffold_mapk_pp_mek_p_raf_p: Scaffold MAPK PP MEK P RAF P
+      scaffold_mapk_pp_mek_pp: Scaffold MAPK PP MEK PP
+      scaffold_mapk_pp_mek_pp_raf: Scaffold MAPK PP MEK PP RAF
+      scaffold_mapk_pp_mek_pp_raf_p: Scaffold MAPK PP MEK PP RAF P
+      scaffold_raf_2: Scaffold RAF
+      scaffold_mek_raf_2: Scaffold MEK RAF
+      scaffold_mek_p_raf_2: Scaffold MEK P RAF
+      scaffold_mek_pp_raf_2: Scaffold MEK PP RAF
+      scaffold_mapk_raf_2: Scaffold MAPK RAF
+      scaffold_mapk_mek_raf_2: Scaffold MAPK MEK RAF
+      scaffold_mapk_mek_p_raf_2: Scaffold MAPK MEK P RAF
+      scaffold_mapk_mek_pp_raf_2: Scaffold MAPK MEK PP RAF
+      scaffold_mapk_p_raf_2: Scaffold MAPK P RAF
+      scaffold_mapk_p_mek_raf_2: Scaffold MAPK P MEK RAF
+      scaffold_mapk_p_mek_p_raf_2: Scaffold MAPK P MEK P RAF
+      scaffold_mapk_p_mek_pp_raf_2: Scaffold MAPK P MEK PP RAF
+      scaffold_mapk_pp_raf_2: Scaffold MAPK PP RAF
+      scaffold_mapk_pp_mek_raf_2: Scaffold MAPK PP MEK RAF
+      scaffold_mapk_pp_mek_p_raf_2: Scaffold MAPK PP MEK P RAF
+      scaffold_mapk_pp_mek_pp_raf_2: Scaffold MAPK PP MEK PP RAF
+io:
+  inputs: []
+  outputs: []

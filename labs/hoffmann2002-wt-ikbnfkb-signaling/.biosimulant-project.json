@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b82a78d0-c965-4bd7-ae2c-3e57ef34067d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c5d2cfee-759a-4668-9b67-ba1a662fa730",
+  "created_at": "2026-05-15T19:08:10.014882489+00:00",
+  "last_synced_at": "2026-05-16T09:49:47.966582+00:00",
+  "hub_manifest_hash": "959bc1f48127e1af5d4e774bac81c6bb3797e8c8018f300091154a2619e238ad",
+  "package_name": "hoffmann2002-wt-ikbnfkb-signaling-lab"
+}

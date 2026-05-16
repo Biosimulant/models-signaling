@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Neumann2010_CD95Stimulation_NFkB_Apoptosis Visualisation
+description: Question-and-answer and chart visualisation for NF-kB pathway signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- apoptosis
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model
+    title: Neumann2010_CD95Stimulation_NFkB_Apoptosis
+    context: NF-kB activation and feedback signaling
+    question: How does Neumann2010 CD95Stimulation NFkB Apoptosis move NF-kB and inhibitor-linked
+      signaling states?
+    visual_scope: NF-kB activation and feedback signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_l_state: float
+      source_defined_l_rf_state: float
+      source_defined_l_rf_c8_state: float
+      l_rf_fl: float
+      l_rf_fs: float
+      p43_p41: float
+      complement_c3: float
+      source_defined_c8_state: float
+      source_defined_c8_state_2: float
+      complement_c3_2: float
+      p43_flip: float
+      nf_k_b_ik_b: float
+      nf_k_b_ik_b_p: float
+      p43_flip_ikk: float
+      nfkb: float
+      source_defined_rf_state: float
+      source_defined_fl_state: float
+      source_defined_fs_state: float
+      source_defined_ikk_state: float
+      l_rf_c8_fs: float
+      l_rf_fl_fl: float
+      l_rf_fl_fs: float
+      l_rf_fs_fs: float
+    species_labels:
+      source_defined_l_state: source-defined L state
+      source_defined_l_rf_state: source-defined L_RF state
+      source_defined_l_rf_c8_state: source-defined L_RF_C8 state
+      l_rf_fl: L RF FL
+      l_rf_fs: L RF FS
+      p43_p41: P43 P41
+      complement_c3: complement C3
+      source_defined_c8_state: source-defined C8 state
+      source_defined_c8_state_2: source-defined C8* state
+      complement_c3_2: complement C3
+      p43_flip: P43 FLIP
+      nf_k_b_ik_b: NF K B Ik B
+      nf_k_b_ik_b_p: NF K B Ik B P
+      p43_flip_ikk: P43 FLIP IKK
+      nfkb: NF-kB
+      source_defined_rf_state: source-defined RF state
+      source_defined_fl_state: source-defined FL state
+      source_defined_fs_state: source-defined FS state
+      source_defined_ikk_state: source-defined IKK state
+      l_rf_c8_fs: L RF C8 FS
+      l_rf_fl_fl: L RF FL FL
+      l_rf_fl_fs: L RF FL FS
+      l_rf_fs_fs: L RF FS FS
+io:
+  inputs: []
+  outputs: []

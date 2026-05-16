@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4d04ea53-688d-4540-bbad-2dde3e637fba",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a0044a82-fb2d-45fc-980c-403304a547c0",
+  "created_at": "2026-05-16T05:58:29.646028792+00:00",
+  "last_synced_at": "2026-05-16T11:26:32.786829+00:00",
+  "hub_manifest_hash": "d4965308d45a6872527f0d7860206335c59883c6a1e6d8a33e06fad0d0734c6e",
+  "package_name": "yapo2017-camp-pka-signalling-in-d1-dopamine-receptor-expressing"
+}

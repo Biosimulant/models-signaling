@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Sasagawa2005_MAPK
+description: 'This a model from the article: Prediction and validation of the distinct
+  dynamics of transient and sustained ERK activation. Sasagawa S, Ozaki Y, Fujita
+  K, Kuroda S Nat.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+authors:
+- Biosimulant Team
+- Satoru Sasagawa
+- Yu-ichi Ozaki
+- Kazuhiro Fujita
+- Shinya Kuroda
+upstream:
+  id: biomodels_ebi:BIOMD0000000049
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000049
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000049
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000049?filename=BIOMD0000000049_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.sasagawa2005_mapk:Sasagawa2005MapkBiomd0000000049Model
+  init_kwargs:
+    model_path: data/BIOMD0000000049.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_degradation
+    maps_to: signaling_sbml_sasagawa2005_mapk_biomd0000000049_model.initial_degradation
+    label: Initial Degradation
+    description: Initial level of Degradation. Maps to SBML symbol `degradation`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_egf
+    maps_to: signaling_sbml_sasagawa2005_mapk_biomd0000000049_model.initial_egf
+    label: Initial EGF
+    description: Initial level of EGF. Maps to SBML symbol `EGF`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_nerve_growth_factor
+    maps_to: signaling_sbml_sasagawa2005_mapk_biomd0000000049_model.initial_nerve_growth_factor
+    label: Initial nerve growth factor
+    description: Initial level of nerve growth factor. Maps to SBML symbol `NGF`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: ras_gap
+    maps_to: signaling_sbml_sasagawa2005_mapk_biomd0000000049_model.ras_gap
+    label: RAS GAP
+    description: RAS GAP. Maps to SBML symbol `RasGAP` and is emitted in native SBML
+      units.
+  - name: erk
+    maps_to: signaling_sbml_sasagawa2005_mapk_biomd0000000049_model.erk
+    label: ERK
+    description: ERK. Maps to SBML symbol `ERK` and is emitted in native SBML units.
+  - name: ras_gdp
+    maps_to: signaling_sbml_sasagawa2005_mapk_biomd0000000049_model.ras_gdp
+    label: RAS GDP
+    description: RAS GDP. Maps to SBML symbol `Ras_GDP` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_sasagawa2005_mapk_biomd0000000049_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_sasagawa2005_mapk_biomd0000000049_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_sasagawa2005_mapk_biomd0000000049_model.species_labels
+    label: Observable labels

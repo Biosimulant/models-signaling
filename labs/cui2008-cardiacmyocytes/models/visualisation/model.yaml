@@ -1,0 +1,91 @@
+schema_version: '2.0'
+title: Cui2008_CardiacMyocytes Visualisation
+description: Question-and-answer and chart visualisation for calcium and second-messenger
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model
+    title: Cui2008_CardiacMyocytes
+    context: calcium second-messenger signaling
+    question: How do calcium-linked states respond in Cui2008 CardiacMyocytes?
+    visual_scope: calcium second-messenger signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_bmk1_state: float
+      source_defined_mrna_state: float
+      nfatc: float
+      nfatn: float
+      nfatpc: float
+      nfatpn: float
+      gsk3betac: float
+      gsk3betan: float
+      source_defined_canc_state: float
+      calcium_nc_star: float
+      calcium_nn_star: float
+      source_defined_cann_state: float
+      source_defined_calmodulin_state: float
+      calcium_mca: float
+      source_defined_mcip_state: float
+      mcipp: float
+      mcippp: float
+      source_defined_comp1_state: float
+      source_defined_comp2_state: float
+      source_defined_comp3_state: float
+      abstract_source_state_p1433: float
+      mcip_bmk1: float
+      mcipp_calcium_nc_star: float
+      mcipp_gsk3betac: float
+      mcippp_calcium_nc_star: float
+      nfatpc_calcium_nc_star: float
+      nfatc_gsk3betac: float
+      nfatpn_calcium_nn_star: float
+      nfatn_gsk3betan: float
+    species_labels:
+      source_defined_bmk1_state: Source Defined BMK1 State
+      source_defined_mrna_state: Source Defined MRNA State
+      nfatc: Nfatc
+      nfatn: Nfatn
+      nfatpc: Nfatpc
+      nfatpn: Nfatpn
+      gsk3betac: Gsk3betac
+      gsk3betan: Gsk3betan
+      source_defined_canc_state: Source Defined CANC State
+      calcium_nc_star: Calcium Nc Star
+      calcium_nn_star: Calcium Nn Star
+      source_defined_cann_state: Source Defined CANN State
+      source_defined_calmodulin_state: Source Defined Calmodulin State
+      calcium_mca: Calcium Mca
+      source_defined_mcip_state: Source Defined MCIP State
+      mcipp: Mcipp
+      mcippp: Mcippp
+      source_defined_comp1_state: Source Defined COMP1 State
+      source_defined_comp2_state: Source Defined COMP2 State
+      source_defined_comp3_state: Source Defined COMP3 State
+      abstract_source_state_p1433: Abstract Source State P1433
+      mcip_bmk1: MCIP BMK1
+      mcipp_calcium_nc_star: Mcipp Calcium Nc Star
+      mcipp_gsk3betac: Mcipp Gsk3betac
+      mcippp_calcium_nc_star: Mcippp Calcium Nc Star
+      nfatpc_calcium_nc_star: Nfatpc Calcium Nc Star
+      nfatc_gsk3betac: Nfatc Gsk3betac
+      nfatpn_calcium_nn_star: Nfatpn Calcium Nn Star
+      nfatn_gsk3betan: Nfatn Gsk3betan
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Yugi2014 - Insulin induced signalling (PFKL phosphorylation) - model 1
+description: Yugi2014 - Insulin induced signalling (PFKLphosphorylation) - model 1
+  Insulin induces phosphorylation and activation of liver-type phosphofructokinase
+  1, which thereby controls a key reaction in glyco. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+- hormone-signaling
+authors:
+- Biosimulant Team
+- Katsuyuki Yugi
+- Hiroyuki Kubota
+- Yu Toyoshima
+- Rei Noguchi
+- Kentaro Kawata
+upstream:
+  id: biomodels_ebi:BIOMD0000000540
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000540
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000540
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000540?filename=BIOMD0000000540_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.yugi2014_insulin_induced_signalling_pfkl_phospho:Yugi2014InsulinInducedSignallingPfklPhosphoBiomd0000000540Model
+  init_kwargs:
+    model_path: data/BIOMD0000000540.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_f6p_proxy
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000540_model.initial_f6p_proxy
+    label: Initial F6P Proxy
+    description: Initial level of F6P Proxy. Maps to SBML symbol `s22`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_pfkl_state
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000540_model.source_defined_pfkl_state
+    label: source-defined PFKL state
+    description: source-defined PFKL state. Maps to SBML symbol `s1` and is emitted
+      in native SBML units.
+  - name: fbpase
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000540_model.fbpase
+    label: Fbpase
+    description: Fbpase. Maps to SBML symbol `s2` and is emitted in native SBML units.
+  - name: f6p
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000540_model.f6p
+    label: F6P
+    description: F6P. Maps to SBML symbol `s3` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000540_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000540_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000540_model.species_labels
+    label: Observable labels

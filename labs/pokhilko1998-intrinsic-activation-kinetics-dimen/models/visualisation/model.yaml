@@ -1,0 +1,41 @@
+schema_version: '2.0'
+title: Pokhilko1998 - Intrinsic Activation Kinetics (Dimensional Model) Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Pokhilko1998 - Intrinsic Activation Kinetics (Dimensional Model).'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- coagulation
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model
+    title: Pokhilko1998 - Intrinsic Activation Kinetics (Dimensional Model)
+    context: blood and immune cascade signaling
+    question: How does Pokhilko1998 - Intrinsic Activation Kinetics (Dimensional Model)
+      redistribute cascade activity across source-defined species?
+    visual_scope: blood and immune cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      response_node_x: float
+      source_defined_y_state: float
+      source_defined_z_state: float
+      source_defined_s_state: float
+    species_labels:
+      response_node_x: response node X
+      source_defined_y_state: source-defined Y state
+      source_defined_z_state: source-defined Z state
+      source_defined_s_state: source-defined S state
+io:
+  inputs: []
+  outputs: []

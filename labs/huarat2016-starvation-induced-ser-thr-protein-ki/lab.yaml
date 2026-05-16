@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Huarat2016 -Starvation-induced Ser/Thr protein kinase ArnS (Saci_1181) (Model
+  14) Lab
+description: 'Clean Biosimulant lab for systems signaling model: Huarat2016 -Starvation-induced
+  Ser/Thr protein kinase ArnS (Saci_1181) (Model 14). Values are native SBML quantities;
+  equations, parameters, and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.state
+  to:
+  - visualisation.signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model_state
+- from: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.summary
+  to:
+  - visualisation.signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model_summary
+- from: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.species_labels
+  to:
+  - visualisation.signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- camp-pka
+io:
+  inputs:
+  - name: initial_source_defined_arns_state
+    maps_to: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.initial_source_defined_arns_state
+    label: Initial source-defined ARNS state
+    description: Initial level of source-defined ARNS state. Maps to SBML symbol `saci1181`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_nfb_state
+    maps_to: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.source_defined_nfb_state
+    label: source-defined NFB state
+    description: source-defined NFB state. Maps to SBML symbol `nFB` and is emitted
+      in native SBML units.
+  - name: source_defined_nfb2_state
+    maps_to: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.source_defined_nfb2_state
+    label: source-defined NFB2 state
+    description: source-defined NFB2 state. Maps to SBML symbol `nFB2` and is emitted
+      in native SBML units.
+  - name: source_defined_arns_state
+    maps_to: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.source_defined_arns_state
+    label: source-defined ARNS state
+    description: source-defined ARNS state. Maps to SBML symbol `saci1181` and is
+      emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.species_labels
+    label: Observable labels

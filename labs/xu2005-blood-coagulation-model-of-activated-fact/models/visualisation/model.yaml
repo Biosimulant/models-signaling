@@ -1,0 +1,50 @@
+schema_version: '2.0'
+title: Xu2005 - Blood Coagulation Model of Activated Factors of Extrinsic Pathway
+  and TFPI Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Xu2005 - Blood Coagulation Model of Activated Factors of Extrinsic Pathway and TFPI.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- coagulation
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_xu2005_blood_coagulation_model_of_activated_fact_model1806130002_model
+    title: Xu2005 - Blood Coagulation Model of Activated Factors of Extrinsic Pathway
+      and TFPI
+    context: metabolic and hormone signaling response
+    question: How does Xu2005 - Blood Coagulation Model of Activated Factors of Extrinsic
+      Pathway and TFPI shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_x1_state: float
+      source_defined_x2_state: float
+      source_defined_x3_state: float
+      source_defined_x4_state: float
+      source_defined_x5_state: float
+      source_defined_x6_state: float
+      source_defined_x7_state: float
+    species_labels:
+      source_defined_x1_state: source-defined X1 state
+      source_defined_x2_state: source-defined X2 state
+      source_defined_x3_state: source-defined X3 state
+      source_defined_x4_state: source-defined X4 state
+      source_defined_x5_state: source-defined X5 state
+      source_defined_x6_state: source-defined X6 state
+      source_defined_x7_state: source-defined X7 state
+io:
+  inputs: []
+  outputs: []

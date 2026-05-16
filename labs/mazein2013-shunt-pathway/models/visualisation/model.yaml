@@ -1,0 +1,202 @@
+schema_version: '2.0'
+title: Mazein2013 - Shunt pathway Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Mazein2013 - Shunt pathway.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_mazein2013_shunt_pathway_model1409170003_model
+    title: Mazein2013 - Shunt pathway
+    context: metabolic and hormone signaling response
+    question: How does Mazein2013 - Shunt pathway shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      tm7sf2: float
+      cyp51a1: float
+      source_defined_lss_state: float
+      source_defined_sqle_state: float
+      source_defined_ebp_state: float
+      sc5d: float
+      source_defined_dhcr7_state: float
+      desmosterol: float
+      source_7_dehydrodesmosterol: float
+      source_5_alpha_cholesta_7_24_dien_3_beta_response_parameter_ol: float
+      zymosterol: float
+      zymosterone: float
+      source_4_alpha_carboxyzymosterol: float
+      source_4_alpha_formyl_5_alpha_cholesta_8_24_dien_3_beta_response_parameter_ol: float
+      source_4_alpha_hydroxymethyl_5_alpha_cholesta_8_24_dien_3_beta_response_parameter_ol: float
+      source_4_alpha_methylzymosterol: float
+      source_3_keto_4_alpha_methylzymosterol: float
+      source_4_alpha_carboxy_4_beta_response_parameter_methylzymosterol: float
+      lanosterol: float
+      squalene_2_3_epoxide: float
+      squalene: float
+      source_4_alpha_formyl_4_beta_response_parameter_methyl_5_alpha_cholesta_8_24_dien_3_beta_response_parameter_ol: float
+      source_4_alpha_hydroxymethyl_4_beta_response_parameter_methyl_5_alpha_cholesta_8_24_dien_3_beta_response_parameter_ol: float
+      source_14_dimethyllanosterol: float
+      source_4_4_dimethyl_5_alpha_cholesta_8_14_24_trien_3_beta_response_parameter_ol: float
+      source_32_hydroxylanosterol: float
+      source_32_oxolanosterol: float
+      source_24_25_dihydrolanosterole: float
+      source_4_4_dimethyl_14_alpha_formyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol: float
+      source_4_4_dimethyl_14_alpha_hydroxymethyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol: float
+      source_4_4_dimethyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol: float
+      source_4_4_dimethyl_5_alpha_cholest_8_en_2_beta_response_parameter_ol: float
+      source_4_alpha_carboxy_4_beta_response_parameter_methyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol: float
+      source_4_alpha_formyl_4_beta_response_parameter_methyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol: float
+      source_4_alpha_hydroxymethyl_4_beta_response_parameter_methyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol: float
+      source_4_alpha_methyl_5_alpha_cholest_8_en_3_beta_response_parameter_one: float
+      source_4_alpha_methyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol: float
+      source_4_alpha_carboxymethyl_5_alpha_cholesta_8_en_3_beta_response_parameter_ol: float
+      source_4_alpha_formyl_5_alpha_cholesta_8_en_3_beta_response_parameter_ol: float
+      source_4_alpha_carboxy_5_alpha_cholesta_8_en_3_beta_response_parameter_ol: float
+      source_5_alpha_cholest_8_en_3_one: float
+      source_5_alpha_cholest_8_en_3_beta_response_parameter_ol: float
+      lathosterol: float
+      source_7_dehydroxycholesterol: float
+      cyp27a1: float
+      cyp3a4: float
+      ch25h: float
+      cyp7a1: float
+      cyp46a1: float
+      cholesterol: float
+      source_24_hydroxycholesterol: float
+      source_7_alpha_hydroxycholesterol: float
+      source_4_beta_response_parameter_hydroxycholesterol: float
+      source_25_xydroxycholesterol: float
+      source_25_hydroxycholesterol: float
+      source_27_hydroxycholesterol: float
+      cholesterol_2: float
+      source_24_s_25_epoxycholesterol: float
+      source_24_s_25_epoxylathosterol: float
+      source_24_s_25_epoxy_7_dehydrocholesterol: float
+      source_24_s_25_epoxyzymosterol: float
+      source_24_s_25_epoxylanosterol: float
+      source_2_3_22_23_dioxidosqualene: float
+      source_4_4_dimethyl_3_beta_response_parameter_hydroxy_5_alpha_cholesta_8_14_dien_24_s_25_epoxide: float
+      source_4_4_dimethyl_3_beta_response_parameter_hydroxy_5_alpha_cholest_8_en_24_s_25_epoxide: float
+      nsdhl: float
+      source_defined_msmo1_state: float
+      dhcr24: float
+      hsd17b7: float
+    species_labels:
+      tm7sf2: TM7SF2
+      cyp51a1: CYP51A1
+      source_defined_lss_state: source-defined LSS state
+      source_defined_sqle_state: source-defined SQLE state
+      source_defined_ebp_state: source-defined EBP state
+      sc5d: SC5D
+      source_defined_dhcr7_state: source-defined DHCR7 state
+      desmosterol: Desmosterol
+      source_7_dehydrodesmosterol: 7 Dehydrodesmosterol
+      source_5_alpha_cholesta_7_24_dien_3_beta_response_parameter_ol: 5 Alpha Cholesta
+        7 24 Dien 3 beta response parameter Ol
+      zymosterol: Zymosterol
+      zymosterone: Zymosterone
+      source_4_alpha_carboxyzymosterol: 4 Alpha Carboxyzymosterol
+      source_4_alpha_formyl_5_alpha_cholesta_8_24_dien_3_beta_response_parameter_ol: 4
+        Alpha Formyl 5 Alpha Cholesta 8 24 Dien 3 beta response parameter Ol
+      source_4_alpha_hydroxymethyl_5_alpha_cholesta_8_24_dien_3_beta_response_parameter_ol: 4
+        Alpha Hydroxymethyl 5 Alpha Cholesta 8 24 Dien 3 beta response parameter Ol
+      source_4_alpha_methylzymosterol: 4 Alpha Methylzymosterol
+      source_3_keto_4_alpha_methylzymosterol: 3 Keto 4 Alpha Methylzymosterol
+      source_4_alpha_carboxy_4_beta_response_parameter_methylzymosterol: 4 Alpha Carboxy
+        4 beta response parameter Methylzymosterol
+      lanosterol: Lanosterol
+      squalene_2_3_epoxide: Squalene 2 3 Epoxide
+      squalene: Squalene
+      source_4_alpha_formyl_4_beta_response_parameter_methyl_5_alpha_cholesta_8_24_dien_3_beta_response_parameter_ol: 4
+        Alpha Formyl 4 beta response parameter Methyl 5 Alpha Cholesta 8 24 Dien 3
+        beta response parameter Ol
+      source_4_alpha_hydroxymethyl_4_beta_response_parameter_methyl_5_alpha_cholesta_8_24_dien_3_beta_response_parameter_ol: 4
+        Alpha Hydroxymethyl 4 beta response parameter Methyl 5 Alpha Cholesta 8 24
+        Dien 3 beta response parameter Ol
+      source_14_dimethyllanosterol: 14 Dimethyllanosterol
+      source_4_4_dimethyl_5_alpha_cholesta_8_14_24_trien_3_beta_response_parameter_ol: 4
+        4 Dimethyl 5 Alpha Cholesta 8 14 24 Trien 3 beta response parameter Ol
+      source_32_hydroxylanosterol: 32 Hydroxylanosterol
+      source_32_oxolanosterol: 32 Oxolanosterol
+      source_24_25_dihydrolanosterole: 24 25 Dihydrolanosterole
+      source_4_4_dimethyl_14_alpha_formyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol: 4
+        4 Dimethyl 14 Alpha Formyl 5 Alpha Cholest 8 En 3 beta response parameter
+        Ol
+      source_4_4_dimethyl_14_alpha_hydroxymethyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol: 4
+        4 Dimethyl 14 Alpha Hydroxymethyl 5 Alpha Cholest 8 En 3 beta response parameter
+        Ol
+      source_4_4_dimethyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol: 4 4 Dimethyl
+        5 Alpha Cholest 8 En 3 beta response parameter Ol
+      source_4_4_dimethyl_5_alpha_cholest_8_en_2_beta_response_parameter_ol: 4 4 Dimethyl
+        5 Alpha Cholest 8 En 2 beta response parameter Ol
+      source_4_alpha_carboxy_4_beta_response_parameter_methyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol: 4
+        Alpha Carboxy 4 beta response parameter Methyl 5 Alpha Cholest 8 En 3 beta
+        response parameter Ol
+      source_4_alpha_formyl_4_beta_response_parameter_methyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol: 4
+        Alpha Formyl 4 beta response parameter Methyl 5 Alpha Cholest 8 En 3 beta
+        response parameter Ol
+      source_4_alpha_hydroxymethyl_4_beta_response_parameter_methyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol: 4
+        Alpha Hydroxymethyl 4 beta response parameter Methyl 5 Alpha Cholest 8 En
+        3 beta response parameter Ol
+      source_4_alpha_methyl_5_alpha_cholest_8_en_3_beta_response_parameter_one: 4
+        Alpha Methyl 5 Alpha Cholest 8 En 3 beta response parameter One
+      source_4_alpha_methyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol: 4 Alpha
+        Methyl 5 Alpha Cholest 8 En 3 beta response parameter Ol
+      source_4_alpha_carboxymethyl_5_alpha_cholesta_8_en_3_beta_response_parameter_ol: 4
+        Alpha Carboxymethyl 5 Alpha Cholesta 8 En 3 beta response parameter Ol
+      source_4_alpha_formyl_5_alpha_cholesta_8_en_3_beta_response_parameter_ol: 4
+        Alpha Formyl 5 Alpha Cholesta 8 En 3 beta response parameter Ol
+      source_4_alpha_carboxy_5_alpha_cholesta_8_en_3_beta_response_parameter_ol: 4
+        Alpha Carboxy 5 Alpha Cholesta 8 En 3 beta response parameter Ol
+      source_5_alpha_cholest_8_en_3_one: 5 Alpha Cholest 8 En 3 One
+      source_5_alpha_cholest_8_en_3_beta_response_parameter_ol: 5 Alpha Cholest 8
+        En 3 beta response parameter Ol
+      lathosterol: Lathosterol
+      source_7_dehydroxycholesterol: 7 Dehydroxycholesterol
+      cyp27a1: CYP27A1
+      cyp3a4: CYP3A4
+      ch25h: CH25H
+      cyp7a1: CYP7A1
+      cyp46a1: CYP46A1
+      cholesterol: Cholesterol
+      source_24_hydroxycholesterol: 24 Hydroxycholesterol
+      source_7_alpha_hydroxycholesterol: 7 Alpha Hydroxycholesterol
+      source_4_beta_response_parameter_hydroxycholesterol: 4 beta response parameter
+        Hydroxycholesterol
+      source_25_xydroxycholesterol: 25 Xydroxycholesterol
+      source_25_hydroxycholesterol: 25 Hydroxycholesterol
+      source_27_hydroxycholesterol: 27 Hydroxycholesterol
+      cholesterol_2: Cholesterol
+      source_24_s_25_epoxycholesterol: 24 S 25 Epoxycholesterol
+      source_24_s_25_epoxylathosterol: 24 S 25 Epoxylathosterol
+      source_24_s_25_epoxy_7_dehydrocholesterol: 24 S 25 Epoxy 7 Dehydrocholesterol
+      source_24_s_25_epoxyzymosterol: 24 S 25 Epoxyzymosterol
+      source_24_s_25_epoxylanosterol: 24 S 25 Epoxylanosterol
+      source_2_3_22_23_dioxidosqualene: 2 3 22 23 Dioxidosqualene
+      source_4_4_dimethyl_3_beta_response_parameter_hydroxy_5_alpha_cholesta_8_14_dien_24_s_25_epoxide: 4
+        4 Dimethyl 3 beta response parameter Hydroxy 5 Alpha Cholesta 8 14 Dien 24
+        S 25 Epoxide
+      source_4_4_dimethyl_3_beta_response_parameter_hydroxy_5_alpha_cholest_8_en_24_s_25_epoxide: 4
+        4 Dimethyl 3 beta response parameter Hydroxy 5 Alpha Cholest 8 En 24 S 25
+        Epoxide
+      nsdhl: NSDHL
+      source_defined_msmo1_state: source-defined MSMO1 state
+      dhcr24: DHCR24
+      hsd17b7: HSD17B7
+io:
+  inputs: []
+  outputs: []

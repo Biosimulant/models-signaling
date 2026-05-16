@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "db21a668-cbf2-44e4-9635-e6717b06525c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "67501c52-5b69-4766-b14a-848dc2b17a1a",
+  "created_at": "2026-05-15T19:08:09.676393122+00:00",
+  "last_synced_at": "2026-05-16T09:40:19.428040+00:00",
+  "hub_manifest_hash": "096745d9f64360dcc8a65f861489cd9228501a00e848c59fefa13a237b4c43d1",
+  "package_name": "goldbeter2013-oscillatory-activity-of-cyclin-dependent-kinases-i"
+}

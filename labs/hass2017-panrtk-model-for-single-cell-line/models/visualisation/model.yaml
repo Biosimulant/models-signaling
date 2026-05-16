@@ -1,0 +1,151 @@
+schema_version: '2.0'
+title: PanRTK model for single cell line Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  PanRTK model for single cell line.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model
+    title: PanRTK model for single cell line
+    context: GPCR and cAMP/PKA signaling
+    question: How does PanRTK model for single cell line route receptor activity into
+      cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      dose_egf: float
+      dose_hgf: float
+      rtkph: float
+      dose_igf1: float
+      dose_heregulin: float
+      egfr: float
+      egfr_egf: float
+      p_egfrd: float
+      p_egfri: float
+      p_egfri_ph: float
+      egfri: float
+      source_defined_erbb2_state: float
+      p_erb_b2: float
+      p_erb_b2i: float
+      erb_b2i: float
+      p_erb_b2i_ph: float
+      p_erb_b12: float
+      p_erb_b12i: float
+      p_erb_b12i_ph: float
+      source_defined_erbb3_state: float
+      erb_b3_heregulin: float
+      p_erb_b3d: float
+      p_erb_b3i: float
+      p_erb_b3i_ph: float
+      erb_b3i: float
+      p_erb_b13: float
+      p_erb_b13i: float
+      p_erb_b13i_ph: float
+      p_erb_b32: float
+      p_erb_b32i: float
+      p_erb_b32i_ph: float
+      igf1r: float
+      igf1r_igf1: float
+      p_igf1rd: float
+      p_igf1ri: float
+      p_igf1ri_ph: float
+      igf1ri: float
+      source_defined_met_state: float
+      met_hgf: float
+      p_metd: float
+      p_meti: float
+      p_meti_ph: float
+      source_defined_meti_state: float
+      p_met_erb_b3: float
+      p_met_erb_b3i: float
+      p_met_erb_b3i_ph: float
+      p_met_egfr: float
+      p_met_egfri: float
+      p_met_egfri_ph: float
+      mek: float
+      source_defined_pmek_state: float
+      erk: float
+      perk_kinase: float
+      akt: float
+      source_defined_pakt_state: float
+      s6k1: float
+      p_s6k1: float
+      source_defined_s6_state: float
+      source_defined_ps6_state: float
+    species_labels:
+      dose_egf: Dose EGF
+      dose_hgf: Dose HGF
+      rtkph: Rtkph
+      dose_igf1: Dose IGF1
+      dose_heregulin: Dose heregulin
+      egfr: EGFR
+      egfr_egf: EGFR EGF
+      p_egfrd: P Egfrd
+      p_egfri: P Egfri
+      p_egfri_ph: P Egfri Ph
+      egfri: Egfri
+      source_defined_erbb2_state: source-defined ERBB2 state
+      p_erb_b2: P Erb B2
+      p_erb_b2i: P Erb B2i
+      erb_b2i: Erb B2i
+      p_erb_b2i_ph: P Erb B2i Ph
+      p_erb_b12: P Erb B12
+      p_erb_b12i: P Erb B12i
+      p_erb_b12i_ph: P Erb B12i Ph
+      source_defined_erbb3_state: source-defined ERBB3 state
+      erb_b3_heregulin: Erb B3 heregulin
+      p_erb_b3d: P Erb B3d
+      p_erb_b3i: P Erb B3i
+      p_erb_b3i_ph: P Erb B3i Ph
+      erb_b3i: Erb B3i
+      p_erb_b13: P Erb B13
+      p_erb_b13i: P Erb B13i
+      p_erb_b13i_ph: P Erb B13i Ph
+      p_erb_b32: P Erb B32
+      p_erb_b32i: P Erb B32i
+      p_erb_b32i_ph: P Erb B32i Ph
+      igf1r: IGF1R
+      igf1r_igf1: IGF1R IGF1
+      p_igf1rd: P Igf1rd
+      p_igf1ri: P Igf1ri
+      p_igf1ri_ph: P Igf1ri Ph
+      igf1ri: Igf1ri
+      source_defined_met_state: source-defined MET state
+      met_hgf: Met HGF
+      p_metd: P Metd
+      p_meti: P Meti
+      p_meti_ph: P Meti Ph
+      source_defined_meti_state: source-defined METI state
+      p_met_erb_b3: P Met Erb B3
+      p_met_erb_b3i: P Met Erb B3i
+      p_met_erb_b3i_ph: P Met Erb B3i Ph
+      p_met_egfr: P Met EGFR
+      p_met_egfri: P Met Egfri
+      p_met_egfri_ph: P Met Egfri Ph
+      mek: MEK
+      source_defined_pmek_state: source-defined PMEK state
+      erk: ERK
+      perk_kinase: PERK kinase
+      akt: AKT
+      source_defined_pakt_state: source-defined PAKT state
+      s6k1: S6K1
+      p_s6k1: P S6K1
+      source_defined_s6_state: source-defined S6 state
+      source_defined_ps6_state: source-defined PS6 state
+io:
+  inputs: []
+  outputs: []

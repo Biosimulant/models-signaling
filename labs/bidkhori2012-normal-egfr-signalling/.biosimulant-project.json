@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f70a53a1-f4eb-461c-94ac-34725cb8b6a2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5bd14b49-0420-4c27-8d9d-a7bb61c66e11",
+  "created_at": "2026-05-15T19:08:09.034363901+00:00",
+  "last_synced_at": "2026-05-16T09:08:03.643053+00:00",
+  "hub_manifest_hash": "7872d886be8cb51a7ba9aba58c9bd5c35641860203c1ce7446d4948b9b28ccb7",
+  "package_name": "bidkhori2012-normal-egfr-signalling-lab"
+}

@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Oliveira2020 - Beta-Alanine pathway for 3-hydroxypropionate production from
+  glycerol
+description: Beta-Alanine pathway for 3-hydroxypropionate production from glycerol.
+  It can be used to explore signaling dynamics and compare pathway response across
+  conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Alexandre Oliveira
+- Joana Rodrigues
+- Eugénio Campos Ferreira
+- Lígia Rodrigues
+- Oscar Dias
+upstream:
+  id: biomodels_ebi:MODEL2010030003
+  source_db: biomodels_ebi
+  source_id: MODEL2010030003
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2010030003
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2010030003?filename=3HP_Gly_Ba.xml
+  license: CC0
+biosim:
+  entrypoint: src.oliveira2020_beta_alanine_pathway_for_3_hydroxyp_model2010030003:Oliveira2020BetaAlaninePathwayFor3HydroxypModel2010030003Model
+  init_kwargs:
+    model_path: data/MODEL2010030003.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_coenzyme_a
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_3_hydroxyp_model2010030003_model.initial_coenzyme_a
+    label: Initial coenzyme A
+    description: Initial level of coenzyme A. Maps to SBML symbol `COA`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_cysteine
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_3_hydroxyp_model2010030003_model.initial_cysteine
+    label: Initial cysteine
+    description: Initial level of cysteine. Maps to SBML symbol `CYS`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_h2o
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_3_hydroxyp_model2010030003_model.initial_h2o
+    label: Initial H2O
+    description: Initial level of H2O. Maps to SBML symbol `H2O`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: camp
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_3_hydroxyp_model2010030003_model.camp
+    label: cAMP
+    description: cAMP. Maps to SBML symbol `CAMP` and is emitted in native SBML units.
+  - name: accoa
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_3_hydroxyp_model2010030003_model.accoa
+    label: ACCOA
+    description: ACCOA. Maps to SBML symbol `ACCOA` and is emitted in native SBML
+      units.
+  - name: source_defined_aco_state
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_3_hydroxyp_model2010030003_model.source_defined_aco_state
+    label: source-defined ACO state
+    description: source-defined ACO state. Maps to SBML symbol `ACO` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_3_hydroxyp_model2010030003_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_3_hydroxyp_model2010030003_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_3_hydroxyp_model2010030003_model.species_labels
+    label: Observable labels

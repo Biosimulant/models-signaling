@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Zeilfelder2025 - Model for primary human hepatocytes (PHH) Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Zeilfelder2025 - Model for primary human hepatocytes (PHH).'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cytokine-signaling
+- interleukin-signaling
+- smad
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_zeilfelder2025_model_for_primary_human_hepatocyt_model2503270002_model
+    title: Zeilfelder2025 - Model for primary human hepatocytes (PHH)
+    context: growth-control pathway signaling
+    question: How does Zeilfelder2025 - Model for primary human hepatocytes (PHH)
+      shift developmental or growth-control pathway states?
+    visual_scope: growth-control pathway signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      inactive_receptor: float
+      total_phosphorylated_receptor: float
+      unphosphorylated_stat3: float
+      active_cytoplasmic_stat3: float
+      active_nuclear_stat3: float
+      socs3_transcriptional_delay: float
+      socs3_transcriptional_delay_2: float
+      socs3_transcriptional_delay_3: float
+      socs3_transcriptional_delay_4: float
+      socs3_transcriptional_delay_5: float
+      socs3_m_rna: float
+      socs3_protein: float
+      hamp_transcriptional_delay: float
+      hamp_transcriptional_delay_2: float
+      hamp_transcriptional_delay_3: float
+      hamp_transcriptional_delay_4: float
+      hamp_transcriptional_delay_5: float
+      hamp_transcriptional_delay_6: float
+      hamp_transcriptional_delay_7: float
+      hamp_m_rna: float
+    species_labels:
+      inactive_receptor: Inactive Receptor
+      total_phosphorylated_receptor: Total Phosphorylated Receptor
+      unphosphorylated_stat3: Unphosphorylated STAT3
+      active_cytoplasmic_stat3: active Cytoplasmic STAT3
+      active_nuclear_stat3: active nuclear STAT3
+      socs3_transcriptional_delay: SOCS3 Transcriptional Delay
+      socs3_transcriptional_delay_2: SOCS3 Transcriptional Delay 2
+      socs3_transcriptional_delay_3: SOCS3 Transcriptional Delay 3
+      socs3_transcriptional_delay_4: SOCS3 Transcriptional Delay 4
+      socs3_transcriptional_delay_5: SOCS3 Transcriptional Delay 5
+      socs3_m_rna: SOCS3 M RNA
+      socs3_protein: SOCS3 Protein
+      hamp_transcriptional_delay: HAMP Transcriptional Delay
+      hamp_transcriptional_delay_2: HAMP Transcriptional Delay 2
+      hamp_transcriptional_delay_3: HAMP Transcriptional Delay 3
+      hamp_transcriptional_delay_4: HAMP Transcriptional Delay 4
+      hamp_transcriptional_delay_5: HAMP Transcriptional Delay 5
+      hamp_transcriptional_delay_6: HAMP Transcriptional Delay 6
+      hamp_transcriptional_delay_7: HAMP Transcriptional Delay 7
+      hamp_m_rna: HAMP M RNA
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Park2019 - IL7 receptor signaling in T cells Lab
+description: Clean Biosimulant lab for immune signaling. Values are native SBML quantities;
+  equations, parameters, and initial values remain in the bundled source file.
+models:
+- alias: signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model.state
+  to:
+  - visualisation.signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model_state
+- from: signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model.summary
+  to:
+  - visualisation.signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model_summary
+- from: signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model.species_labels
+  to:
+  - visualisation.signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cytokine-signaling
+- interleukin-signaling
+- gpcr
+- immune-signaling
+io:
+  inputs:
+  - name: initial_il7ra
+    maps_to: signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model.initial_il7ra
+    label: Initial Il7ra
+    description: Initial level of Il7ra. Maps to SBML symbol `IL7Ra`; exposed as a
+      traceable initial-condition perturbation.
+  outputs:
+  - name: il7ra
+    maps_to: signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model.il7ra
+    label: Il7ra
+    description: Il7ra. Maps to SBML symbol `IL7Ra` and is emitted in native SBML
+      units.
+  - name: il15rbeta
+    maps_to: signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model.il15rbeta
+    label: Il15rbeta
+    description: Il15rbeta. Maps to SBML symbol `IL15Rbeta` and is emitted in native
+      SBML units.
+  - name: gamma_c
+    maps_to: signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model.gamma_c
+    label: Gamma C
+    description: Gamma C. Maps to SBML symbol `gamma_c` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model.species_labels
+    label: Observable labels

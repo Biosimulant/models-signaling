@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Zi2011_TGF-beta_Pathway Visualisation
+description: Question-and-answer and chart visualisation for developmental and growth-control
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- tgf-beta
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_zi2011_tgf_beta_pathway_biomd0000000342_model
+    title: Zi2011_TGF-beta_Pathway
+    context: metabolic and hormone signaling response
+    question: How does Zi2011 TGF-beta Pathway shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      tgf_beta_response_parameter_ex: float
+      t1r_surf: float
+      t1r_endo: float
+      t2r_surf: float
+      t2r_endo: float
+      lrc_surf: float
+      lrc_endo: float
+      smad2c: float
+      smad2n: float
+      smad4c: float
+      smad4n: float
+      psmad2c: float
+      psmad2_psmad2_c: float
+      psmad2_smad4_c: float
+      psmad2n: float
+      psmad2_psmad2_n: float
+      psmad2_smad4_n: float
+      tgf_beta_response_parameter_endo: float
+      tgf_beta_response_parameter_ns: float
+    species_labels:
+      tgf_beta_response_parameter_ex: TGF beta response parameter Ex
+      t1r_surf: T1R Surf
+      t1r_endo: T1R Endo
+      t2r_surf: T2R Surf
+      t2r_endo: T2R Endo
+      lrc_surf: LRC Surf
+      lrc_endo: LRC Endo
+      smad2c: Smad2c
+      smad2n: Smad2n
+      smad4c: Smad4c
+      smad4n: Smad4n
+      psmad2c: Psmad2c
+      psmad2_psmad2_c: Psmad2 Psmad2 C
+      psmad2_smad4_c: Psmad2 Smad4 C
+      psmad2n: Psmad2n
+      psmad2_psmad2_n: Psmad2 Psmad2 N
+      psmad2_smad4_n: Psmad2 Smad4 N
+      tgf_beta_response_parameter_endo: TGF beta response parameter Endo
+      tgf_beta_response_parameter_ns: TGF beta response parameter Ns
+io:
+  inputs: []
+  outputs: []

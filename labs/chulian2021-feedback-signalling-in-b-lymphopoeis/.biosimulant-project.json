@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "fe06786f-56b7-42f1-9b31-b5afbaec531d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9610809e-4d66-477b-9ae9-aa001bd9f40e",
+  "created_at": "2026-05-15T19:08:09.389275465+00:00",
+  "last_synced_at": "2026-05-16T09:23:44.731042+00:00",
+  "hub_manifest_hash": "c7670e566a6943c4aa00da54314ae84fa230bdcd5a9b300ebe55d4b3990e4474",
+  "package_name": "chulian2021-feedback-signalling-in-b-lymphopoeisis-lab"
+}

@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Brummel-Ziedins2012 - Contribution of the PC pathway to thrombin generation
+description: Mathematical model of the blood coagulation cascade including meizothrombin,
+  protein C, thrombomodulin, factor VIIIa fragments, partially proteolyzed factor
+  Va species and inactive factor Va fragments. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- coagulation
+- physiology
+authors:
+- Biosimulant Team
+- Kathleen E Brummel-Ziedins
+- Thomas Orfeo
+- Peter W Callas
+- Matthew Gissel
+- Kenneth G Mann
+upstream:
+  id: biomodels_ebi:MODEL1807180002
+  source_db: biomodels_ebi
+  source_id: MODEL1807180002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1807180002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807180002?filename=Brummel-Ziedins2012.xml
+  license: CC0
+biosim:
+  entrypoint: src.brummel_ziedins2012_contribution_of_the_pc_pathw:BrummelZiedins2012ContributionOfThePcPathwModel1807180002Model
+  init_kwargs:
+    model_path: data/MODEL1807180002.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_tf_state
+    maps_to: signaling_sbml_brummel_ziedins2012_contribution_of_the_pc_pathw_model1807180002_model.initial_source_defined_tf_state
+    label: Initial source-defined TF state
+    description: Initial level of source-defined TF state. Maps to SBML symbol `TF`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: viii_ica1
+    maps_to: signaling_sbml_brummel_ziedins2012_contribution_of_the_pc_pathw_model1807180002_model.viii_ica1
+    label: VIII Ica1
+    description: VIII Ica1. Maps to SBML symbol `VIII_Ica1` and is emitted in native
+      SBML units.
+  - name: source_defined_lca1_state
+    maps_to: signaling_sbml_brummel_ziedins2012_contribution_of_the_pc_pathw_model1807180002_model.source_defined_lca1_state
+    label: source-defined LCA1 state
+    description: source-defined LCA1 state. Maps to SBML symbol `LCA1` and is emitted
+      in native SBML units.
+  - name: apc_lca1
+    maps_to: signaling_sbml_brummel_ziedins2012_contribution_of_the_pc_pathw_model1807180002_model.apc_lca1
+    label: APC LCA1
+    description: APC LCA1. Maps to SBML symbol `APC_LCA1` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_brummel_ziedins2012_contribution_of_the_pc_pathw_model1807180002_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_brummel_ziedins2012_contribution_of_the_pc_pathw_model1807180002_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_brummel_ziedins2012_contribution_of_the_pc_pathw_model1807180002_model.species_labels
+    label: Observable labels

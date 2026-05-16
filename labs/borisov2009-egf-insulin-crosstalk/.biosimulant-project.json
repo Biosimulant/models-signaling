@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "11730cc1-2225-4db4-9dfe-d66e7e59078b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "be7d259f-e038-41af-bb21-5cfda0b152f4",
+  "created_at": "2026-05-15T19:08:09.052677759+00:00",
+  "last_synced_at": "2026-05-16T09:08:12.338445+00:00",
+  "hub_manifest_hash": "5ae7e08df508cf47e8a9fae5d9bab7edc732685514588ea1500ead87862b4199",
+  "package_name": "borisov2009-egf-insulin-crosstalk-lab"
+}

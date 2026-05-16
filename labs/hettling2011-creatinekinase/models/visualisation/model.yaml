@@ -1,0 +1,53 @@
+schema_version: '2.0'
+title: Hettling2011_CreatineKinase Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Hettling2011_CreatineKinase.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_hettling2011_creatinekinase_biomd0000000408_model
+    title: Hettling2011_CreatineKinase
+    context: metabolic and hormone signaling response
+    question: How does Hettling2011 CreatineKinase shift hormone-linked signaling
+      readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      intracellular_adp: float
+      intracellular_atp: float
+      intracellular_creatine: float
+      source_defined_pcri_state: float
+      source_defined_pcr_state: float
+      adp: float
+      atp: float
+      source_defined_cr_state: float
+      source_defined_p_ii_state: float
+      source_defined_p_i_state: float
+    species_labels:
+      intracellular_adp: intracellular ADP
+      intracellular_atp: intracellular ATP
+      intracellular_creatine: intracellular creatine
+      source_defined_pcri_state: source-defined PCRI state
+      source_defined_pcr_state: source-defined PCR state
+      adp: ADP
+      atp: ATP
+      source_defined_cr_state: source-defined CR state
+      source_defined_p_ii_state: source-defined P_II state
+      source_defined_p_i_state: source-defined P_I state
+io:
+  inputs: []
+  outputs: []

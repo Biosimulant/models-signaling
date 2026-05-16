@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: Smallbone2015 - forced pathway Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Smallbone2015 - forced pathway.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_smallbone2015_forced_pathway_model1503180004_model
+    title: Smallbone2015 - forced pathway
+    context: metabolic and hormone signaling response
+    question: How does Smallbone2015 - forced pathway shift hormone-linked signaling
+      readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_x0_state: float
+      source_defined_x1_state: float
+      source_defined_x2_state: float
+      source_defined_x3_state: float
+      source_defined_x4_state: float
+    species_labels:
+      source_defined_x0_state: Source Defined X0 State
+      source_defined_x1_state: Source Defined X1 State
+      source_defined_x2_state: Source Defined X2 State
+      source_defined_x3_state: Source Defined X3 State
+      source_defined_x4_state: Source Defined X4 State
+io:
+  inputs: []
+  outputs: []

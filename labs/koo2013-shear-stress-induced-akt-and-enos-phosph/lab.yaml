@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Koo2013 - Shear stress induced AKT and eNOS phosphorylation - Model 2 Lab
+description: 'Clean Biosimulant lab for systems signaling model: Koo2013 - Shear stress
+  induced AKT and eNOS phosphorylation - Model 2. Values are native SBML quantities;
+  equations, parameters, and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model.state
+  to:
+  - visualisation.signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model_state
+- from: signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model.summary
+  to:
+  - visualisation.signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model_summary
+- from: signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model.species_labels
+  to:
+  - visualisation.signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- pi3k-akt
+- stress-response
+io:
+  inputs:
+  - name: initial_shear_stress
+    maps_to: signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model.initial_shear_stress
+    label: Initial Shear Stress
+    description: Initial level of Shear Stress. Maps to SBML symbol `s119`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: akt
+    maps_to: signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model.akt
+    label: AKT
+    description: AKT. Maps to SBML symbol `s16` and is emitted in native SBML units.
+  - name: p_akt_pi3p
+    maps_to: signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model.p_akt_pi3p
+    label: P AKT PI3P
+    description: P AKT PI3P. Maps to SBML symbol `s26` and is emitted in native SBML
+      units.
+  - name: pp_akt_pi3p
+    maps_to: signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model.pp_akt_pi3p
+    label: Pp AKT PI3P
+    description: Pp AKT PI3P. Maps to SBML symbol `s27` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model.species_labels
+    label: Observable labels

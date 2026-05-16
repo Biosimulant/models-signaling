@@ -1,0 +1,44 @@
+schema_version: '2.0'
+title: Sneyd2002_IP3_Receptor Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Sneyd2002_IP3_Receptor.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_sneyd2002_ip3_receptor_biomd0000000057_model
+    title: Sneyd2002_IP3_Receptor
+    context: calcium second-messenger signaling
+    question: How do calcium-linked states respond in Sneyd2002 IP3 Receptor?
+    visual_scope: calcium second-messenger signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      receptor: float
+      open_state: float
+      inactivated_state_1: float
+      shut_state: float
+      activated_state: float
+      inactivated_state_2: float
+    species_labels:
+      receptor: Receptor
+      open_state: open State
+      inactivated_state_1: Inactivated State 1
+      shut_state: Shut State
+      activated_state: Activated State
+      inactivated_state_2: Inactivated State 2
+io:
+  inputs: []
+  outputs: []

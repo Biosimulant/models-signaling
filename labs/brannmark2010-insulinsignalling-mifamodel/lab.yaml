@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Brannmark2010_InsulinSignalling_Mifamodel Lab
+description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values
+  are native SBML quantities; equations, parameters, and initial values remain in
+  the bundled source file.
+models:
+- alias: signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model.state
+  to:
+  - visualisation.signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model_state
+- from: signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model.summary
+  to:
+  - visualisation.signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model_summary
+- from: signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model.species_labels
+  to:
+  - visualisation.signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- metabolic-signaling
+- hormone-signaling
+io:
+  inputs:
+  - name: initial_internalized_insulin_receptor_amount
+    maps_to: signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model.initial_internalized_insulin_receptor_amount
+    label: Initial internalized insulin receptor amount
+    description: Initial level of internalized insulin receptor amount. Maps to SBML
+      symbol `intamount`; exposed as a traceable initial-condition perturbation.
+  - name: initial_internalized_insulin_receptor
+    maps_to: signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model.initial_internalized_insulin_receptor
+    label: Initial internalized insulin receptor
+    description: Initial level of internalized insulin receptor. Maps to SBML symbol
+      `IRi`; exposed as a traceable initial-condition perturbation.
+  - name: initial_insulin_bound_insulin_receptor
+    maps_to: signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model.initial_insulin_bound_insulin_receptor
+    label: Initial insulin-bound insulin receptor
+    description: Initial level of insulin-bound insulin receptor. Maps to SBML symbol
+      `IRins`; exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: insulin_bound_insulin_receptor
+    maps_to: signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model.insulin_bound_insulin_receptor
+    label: insulin-bound insulin receptor
+    description: insulin-bound insulin receptor. Maps to SBML symbol `IRins` and is
+      emitted in native SBML units.
+  - name: phosphorylated_insulin_receptor
+    maps_to: signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model.phosphorylated_insulin_receptor
+    label: phosphorylated insulin receptor
+    description: phosphorylated insulin receptor. Maps to SBML symbol `IRp` and is
+      emitted in native SBML units.
+  - name: internalized_phosphorylated_insulin_receptor
+    maps_to: signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model.internalized_phosphorylated_insulin_receptor
+    label: internalized phosphorylated insulin receptor
+    description: internalized phosphorylated insulin receptor. Maps to SBML symbol
+      `IRip` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_brannmark2010_insulinsignalling_mifamodel_biomd0000000343_model.species_labels
+    label: Observable labels

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9848be35-fe7b-4c7e-a2c3-a14224fa9af9",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7662474c-4a06-4697-81de-fd97a005fedd",
+  "created_at": "2026-05-15T19:08:09.639430950+00:00",
+  "last_synced_at": "2026-05-16T09:38:37.605922+00:00",
+  "hub_manifest_hash": "4de1ab507b04481d2eda5989e39bda7af6e4932fe46bb53fa38e891037263fd0",
+  "package_name": "goldbeter1991-min-mit-oscil-expl-inact-lab"
+}

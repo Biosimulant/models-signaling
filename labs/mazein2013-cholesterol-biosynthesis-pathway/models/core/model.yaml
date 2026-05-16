@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Mazein2013 - Cholesterol biosynthesis pathway
+description: Signaling Mazein2013Cholesterol Biosynthesis Pathway Model1409170000Model
+  captures core biological behavior in the context of signaling, sbml, biomodels_ebi
+  using a biomodels_ebi-sourced OTHER model. When you run it, you can observe state
+  and evaluate how the modeled system changes across runs.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+authors:
+- Biosimulant Team
+- Alexander Mazein
+- Steven Watterson
+- Wei-Yuan Hsieh
+- William J Griffiths
+- Peter Ghazal
+upstream:
+  id: biomodels_ebi:MODEL1409170000
+  source_db: biomodels_ebi
+  source_id: MODEL1409170000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1409170000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1409170000?filename=MODEL1409170000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.mazein2013_cholesterol_biosynthesis_pathway:Mazein2013CholesterolBiosynthesisPathwayModel1409170000Model
+  init_kwargs:
+    model_path: data/MODEL1409170000.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_acety_co_a
+    maps_to: signaling_sbml_mazein2013_cholesterol_biosynthesis_pathway_model1409170000_model.initial_acety_co_a
+    label: Initial Acety Co A
+    description: Initial level of Acety Co A. Maps to SBML symbol `s1`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_acat2_state
+    maps_to: signaling_sbml_mazein2013_cholesterol_biosynthesis_pathway_model1409170000_model.source_defined_acat2_state
+    label: source-defined ACAT2 state
+    description: source-defined ACAT2 state. Maps to SBML symbol `s80` and is emitted
+      in native SBML units.
+  - name: acety_co_a
+    maps_to: signaling_sbml_mazein2013_cholesterol_biosynthesis_pathway_model1409170000_model.acety_co_a
+    label: Acety Co A
+    description: Acety Co A. Maps to SBML symbol `s1` and is emitted in native SBML
+      units.
+  - name: acetoacetyl_co_a
+    maps_to: signaling_sbml_mazein2013_cholesterol_biosynthesis_pathway_model1409170000_model.acetoacetyl_co_a
+    label: Acetoacetyl Co A
+    description: Acetoacetyl Co A. Maps to SBML symbol `s2` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_mazein2013_cholesterol_biosynthesis_pathway_model1409170000_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_mazein2013_cholesterol_biosynthesis_pathway_model1409170000_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_mazein2013_cholesterol_biosynthesis_pathway_model1409170000_model.species_labels
+    label: Observable labels

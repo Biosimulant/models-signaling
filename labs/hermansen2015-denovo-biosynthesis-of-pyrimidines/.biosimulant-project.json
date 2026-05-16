@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2b7f2bc3-4e26-4fe6-8a48-7b2dd8d9520e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "61cb6099-7443-4636-9beb-268c8454cb66",
+  "created_at": "2026-05-15T19:08:09.911689613+00:00",
+  "last_synced_at": "2026-05-16T09:47:40.633203+00:00",
+  "hub_manifest_hash": "bb6787b2c5a2e89a0795a048012c210427aa0bb38848ebd0394697f6b73b0355",
+  "package_name": "hermansen2015-denovo-biosynthesis-of-pyrimidines-in-yeast-lab"
+}

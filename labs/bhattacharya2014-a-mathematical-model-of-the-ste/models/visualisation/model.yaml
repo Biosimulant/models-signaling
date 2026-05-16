@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: Bhattacharya2014 - A mathematical model of the sterol regulatory element binding
+  protein 2 cholesterol biosynthesis pathway Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- metabolic-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_bhattacharya2014_a_mathematical_model_of_the_ste_biomd0000000890_model
+    title: Bhattacharya2014 - A mathematical model of the sterol regulatory element
+      binding protein 2 cholesterol biosynthesis pathway
+    context: GPCR and cAMP/PKA signaling
+    question: How does Bhattacharya2014 - A mathematical model of the sterol regulatory
+      element binding protein 2 cholesterol biosynthesis pathway route receptor activity
+      into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_m_state: float
+      source_defined_h_state: float
+      source_defined_c_state: float
+    species_labels:
+      source_defined_m_state: source-defined M state
+      source_defined_h_state: source-defined H state
+      source_defined_c_state: source-defined C state
+io:
+  inputs: []
+  outputs: []

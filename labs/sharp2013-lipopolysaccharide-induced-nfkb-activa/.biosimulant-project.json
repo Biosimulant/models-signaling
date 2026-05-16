@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4282a331-ea2b-4a25-a154-e5a52fa779da",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2a9f168a-4258-41b5-8f00-2c9870d72e1b",
+  "created_at": "2026-05-16T05:58:26.998247904+00:00",
+  "last_synced_at": "2026-05-16T11:02:51.111710+00:00",
+  "hub_manifest_hash": "fd3c24247e2705e2bd1ab1b9e822f5ad187b6f7e877900719536e252c6190ec1",
+  "package_name": "sharp2013-lipopolysaccharide-induced-nfkb-activation-lab"
+}

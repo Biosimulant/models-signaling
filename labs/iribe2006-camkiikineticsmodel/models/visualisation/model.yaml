@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Iribe2006_CaMKIIkineticsModel Visualisation
+description: Question-and-answer and chart visualisation for calcium and second-messenger
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+- neuroscience
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_iribe2006_camkiikineticsmodel_model1006230085_model
+    title: Iribe2006_CaMKIIkineticsModel
+    context: calcium second-messenger signaling
+    question: How do calcium-linked states respond in Iribe2006 CaMKIIkineticsModel?
+    visual_scope: calcium second-messenger signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      v_membrane_potential: float
+      source_defined_m_state: float
+      source_defined_h_state: float
+      response_node_x: float
+      source_defined_s_state: float
+      source_defined_r_state: float
+      source_defined_d_state: float
+      source_defined_f_state: float
+      f_calcium_map_kinase: float
+      source_defined_f_1_state: float
+      source_defined_f_2_state: float
+      f_srca_ry_r: float
+      cmdn_calcium: float
+      trpn_calcium: float
+      intracellular_calcium: float
+      source_defined_calcium_sr_state: float
+      source_defined_na_i_state: float
+      source_defined_k_i_state: float
+      source_defined_n_0_state: float
+      source_defined_p_0_state: float
+      source_defined_p_1_state: float
+      source_defined_p_2_state: float
+      source_defined_p_3_state: float
+    species_labels:
+      v_membrane_potential: V Membrane Potential
+      source_defined_m_state: Source Defined M State
+      source_defined_h_state: Source Defined H State
+      response_node_x: Response Node X
+      source_defined_s_state: Source Defined S State
+      source_defined_r_state: Source Defined R State
+      source_defined_d_state: Source Defined D State
+      source_defined_f_state: Source Defined F State
+      f_calcium_map_kinase: F Calcium MAP Kinase
+      source_defined_f_1_state: Source Defined F 1 State
+      source_defined_f_2_state: Source Defined F 2 State
+      f_srca_ry_r: F Srca Ry R
+      cmdn_calcium: Cmdn Calcium
+      trpn_calcium: Trpn Calcium
+      intracellular_calcium: Intracellular Calcium
+      source_defined_calcium_sr_state: Source Defined Calcium SR State
+      source_defined_na_i_state: Source Defined NA I State
+      source_defined_k_i_state: Source Defined K I State
+      source_defined_n_0_state: Source Defined N 0 State
+      source_defined_p_0_state: Source Defined P 0 State
+      source_defined_p_1_state: Source Defined P 1 State
+      source_defined_p_2_state: Source Defined P 2 State
+      source_defined_p_3_state: Source Defined P 3 State
+io:
+  inputs: []
+  outputs: []

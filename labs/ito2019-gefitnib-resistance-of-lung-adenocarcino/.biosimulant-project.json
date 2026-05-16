@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "10b1f8d7-3251-4f4e-9e56-502ac9f28bb3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "eb1a2b9a-a191-428e-ac09-93c194804f51",
+  "created_at": "2026-05-15T19:08:10.171750983+00:00",
+  "last_synced_at": "2026-05-16T09:54:06.378998+00:00",
+  "hub_manifest_hash": "0dd834bccc9fa1278f2eb475749cb3ee59952b7e1a5ab4ec2ffced9107badb90",
+  "package_name": "ito2019-gefitnib-resistance-of-lung-adenocarcinoma-caused-by-met"
+}

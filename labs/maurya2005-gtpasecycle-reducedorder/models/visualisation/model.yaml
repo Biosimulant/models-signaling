@@ -1,0 +1,67 @@
+schema_version: '2.0'
+title: Maurya2005_GTPaseCycle_reducedOrder Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Maurya2005_GTPaseCycle_reducedOrder.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_maurya2005_gtpasecycle_reducedorder_biomd0000000085_model
+    title: Maurya2005_GTPaseCycle_reducedOrder
+    context: phosphorylation and regulatory motif dynamics
+    question: How does Maurya2005 GTPaseCycle reducedOrder express its source-modeled
+      signaling motif over the baseline run?
+    visual_scope: phosphorylation and regulatory motif dynamics
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_a_state: float
+      source_defined_g_state: float
+      source_defined_ga_state: float
+      source_defined_t_state: float
+      source_defined_r_state: float
+      source_defined_g_t_state: float
+      source_defined_gd_state: float
+      source_defined_pi_state: float
+      source_defined_d_state: float
+      source_defined_rg_state: float
+      source_defined_rg_t_state: float
+      source_defined_g_at_state: float
+      source_defined_gad_state: float
+      source_defined_rgd_state: float
+      source_defined_rga_state: float
+      source_defined_rg_at_state: float
+      source_defined_rgad_state: float
+    species_labels:
+      source_defined_a_state: source-defined A state
+      source_defined_g_state: source-defined G state
+      source_defined_ga_state: source-defined GA state
+      source_defined_t_state: source-defined T state
+      source_defined_r_state: source-defined R state
+      source_defined_g_t_state: source-defined G*T state
+      source_defined_gd_state: source-defined GD state
+      source_defined_pi_state: source-defined PI state
+      source_defined_d_state: source-defined D state
+      source_defined_rg_state: source-defined RG state
+      source_defined_rg_t_state: source-defined RG*T state
+      source_defined_g_at_state: source-defined G*AT state
+      source_defined_gad_state: source-defined GAD state
+      source_defined_rgd_state: source-defined RGD state
+      source_defined_rga_state: source-defined RGA state
+      source_defined_rg_at_state: source-defined RG*AT state
+      source_defined_rgad_state: source-defined RGAD state
+io:
+  inputs: []
+  outputs: []

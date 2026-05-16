@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "25325fe7-73d3-4866-a73b-a56b8abb5ae2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "77ad2751-f4d7-46d4-a7a7-f85686e2ba70",
+  "created_at": "2026-05-15T19:08:10.274551360+00:00",
+  "last_synced_at": "2026-05-16T09:57:32.417040+00:00",
+  "hub_manifest_hash": "b385a356cd179ad736f37d414aefb30a9eea2420560343d413988090311f95fa",
+  "package_name": "kessler2025-il-6-and-il-22-pathway-in-human-hepatocytes-lab"
+}

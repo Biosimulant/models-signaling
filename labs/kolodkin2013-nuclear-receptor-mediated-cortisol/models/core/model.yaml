@@ -1,0 +1,83 @@
+schema_version: '2.0'
+title: Kolodkin2013 - Nuclear receptor-mediated cortisol signalling network
+description: 'Kolodkin2013 - Nuclear receptor-mediatedcortisol signalling network
+  This model is described in the article: Optimization of stress response through
+  the nuclear receptor-mediated cortisol signalling ne. It can be used to explore
+  signaling dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- stress-response
+authors:
+- Biosimulant Team
+- Alexey Kolodkin
+- Nilgun Sahin
+- Anna Phillips
+- Steve R Hood
+- Frank J Bruggeman
+upstream:
+  id: biomodels_ebi:BIOMD0000000576
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000576
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000576
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000576?filename=BIOMD0000000576_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kolodkin2013_nuclear_receptor_mediated_cortisol:Kolodkin2013NuclearReceptorMediatedCortisolBiomd0000000576Model
+  init_kwargs:
+    model_path: data/BIOMD0000000576.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cort_degr
+    maps_to: signaling_sbml_kolodkin2013_nuclear_receptor_mediated_cortisol_biomd0000000576_model.initial_cort_degr
+    label: Initial Cort Degr
+    description: Initial level of Cort Degr. Maps to SBML symbol `s10`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_cort_added
+    maps_to: signaling_sbml_kolodkin2013_nuclear_receptor_mediated_cortisol_biomd0000000576_model.initial_cort_added
+    label: Initial Cort Added
+    description: Initial level of Cort Added. Maps to SBML symbol `CortAdded`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_cortisone
+    maps_to: signaling_sbml_kolodkin2013_nuclear_receptor_mediated_cortisol_biomd0000000576_model.initial_cortisone
+    label: Initial Cortisone
+    description: Initial level of Cortisone. Maps to SBML symbol `Cortisone`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_s_rna_state
+    maps_to: signaling_sbml_kolodkin2013_nuclear_receptor_mediated_cortisol_biomd0000000576_model.source_defined_s_rna_state
+    label: source-defined S_RNA state
+    description: source-defined S_RNA state. Maps to SBML symbol `s28` and is emitted
+      in native SBML units.
+  - name: s_prot
+    maps_to: signaling_sbml_kolodkin2013_nuclear_receptor_mediated_cortisol_biomd0000000576_model.s_prot
+    label: S PROT
+    description: S PROT. Maps to SBML symbol `s36` and is emitted in native SBML units.
+  - name: pxr_gene
+    maps_to: signaling_sbml_kolodkin2013_nuclear_receptor_mediated_cortisol_biomd0000000576_model.pxr_gene
+    label: PXR GENE
+    description: PXR GENE. Maps to SBML symbol `s46` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_kolodkin2013_nuclear_receptor_mediated_cortisol_biomd0000000576_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_kolodkin2013_nuclear_receptor_mediated_cortisol_biomd0000000576_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_kolodkin2013_nuclear_receptor_mediated_cortisol_biomd0000000576_model.species_labels
+    label: Observable labels

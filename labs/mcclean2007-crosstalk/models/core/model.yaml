@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: McClean2007_CrossTalk
+description: This model encoded according to the paper Cross-talk and decision making
+  in MAP kinase pathways. Supplementary Figure 2 has been reproduced by COPASI4.0.20
+  (development) using parameter scan method.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+authors:
+- Biosimulant Team
+- Megan N McClean
+- Areez Mody
+- James R Broach
+- Sharad Ramanathan
+upstream:
+  id: biomodels_ebi:BIOMD0000000116
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000116
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000116
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000116?filename=BIOMD0000000116_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.mcclean2007_crosstalk:Mcclean2007CrosstalkBiomd0000000116Model
+  init_kwargs:
+    model_path: data/BIOMD0000000116.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_x1p
+    maps_to: signaling_sbml_mcclean2007_crosstalk_biomd0000000116_model.initial_x1p
+    label: Initial X1p
+    description: Initial level of X1p. Maps to SBML symbol `species_0`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: x1p
+    maps_to: signaling_sbml_mcclean2007_crosstalk_biomd0000000116_model.x1p
+    label: X1p
+    description: X1p. Maps to SBML symbol `species_0` and is emitted in native SBML
+      units.
+  - name: x2p
+    maps_to: signaling_sbml_mcclean2007_crosstalk_biomd0000000116_model.x2p
+    label: X2p
+    description: X2p. Maps to SBML symbol `species_1` and is emitted in native SBML
+      units.
+  - name: x3p
+    maps_to: signaling_sbml_mcclean2007_crosstalk_biomd0000000116_model.x3p
+    label: X3p
+    description: X3p. Maps to SBML symbol `species_2` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_mcclean2007_crosstalk_biomd0000000116_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_mcclean2007_crosstalk_biomd0000000116_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_mcclean2007_crosstalk_biomd0000000116_model.species_labels
+    label: Observable labels

@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Neves2008 - Role of cell shape and size in controlling intracellular signalling
+  Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Neves2008 - Role of cell shape and size in controlling intracellular signalling.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_neves2008_role_of_cell_shape_and_size_in_control_biomd0000000182_model
+    title: Neves2008 - Role of cell shape and size in controlling intracellular signalling
+    context: GPCR and cAMP/PKA signaling
+    question: How does Neves2008 - Role of cell shape and size in controlling intracellular
+      signalling route receptor activity into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      ac_active_cyto_mem: float
+      g_gdp_cyto: float
+      g_protein_cyto: float
+      g_a_s_cyto: float
+      grk_bg_cyto: float
+      iso_bar_p_cyto_mem: float
+      pde4_cyto: float
+      atp_cyto: float
+      ac_pka_cyto_mem: float
+      r2c2_cyto: float
+      pp_pde_cyto: float
+      bar_cyto_mem: float
+      bar_g_cyto_mem: float
+      iso_extra: float
+      iso_bar_cyto_mem: float
+      mapk_active_cyto: float
+      mek_cyto: float
+      mek_active_cyto: float
+      b_raf_active_cyto: float
+      bg_cyto: float
+      b_raf_cyto: float
+      pka_cyto: float
+      ac_cyto_mem: float
+      amp_cyto: float
+      grk_cyto: float
+      pp2a_cyto: float
+      mapk_cyto: float
+      ptp_cyto: float
+      ptp_pka_cyto: float
+      c_r2c2_cyto: float
+      c2_r2c2_cyto: float
+      complement_complement_complement_complement_complement_complement_c3_r2c2_cyto: float
+      iso_bar_g_cyto_mem: float
+      pde_high_km_cyto: float
+      c_amp_cyto: float
+      ptp_pp_cyto: float
+      pde4_p_cyto: float
+    species_labels:
+      ac_active_cyto_mem: AC active Cyto Mem
+      g_gdp_cyto: G GDP Cyto
+      g_protein_cyto: G Protein Cyto
+      g_a_s_cyto: G A S Cyto
+      grk_bg_cyto: GRK Bg Cyto
+      iso_bar_p_cyto_mem: Iso BAR P Cyto Mem
+      pde4_cyto: PDE4 Cyto
+      atp_cyto: ATP Cyto
+      ac_pka_cyto_mem: AC PKA Cyto Mem
+      r2c2_cyto: R2C2 Cyto
+      pp_pde_cyto: PP PDE Cyto
+      bar_cyto_mem: BAR Cyto Mem
+      bar_g_cyto_mem: BAR G Cyto Mem
+      iso_extra: Iso Extra
+      iso_bar_cyto_mem: Iso BAR Cyto Mem
+      mapk_active_cyto: MAPK active Cyto
+      mek_cyto: MEK Cyto
+      mek_active_cyto: MEK active Cyto
+      b_raf_active_cyto: B RAF active Cyto
+      bg_cyto: Bg Cyto
+      b_raf_cyto: B RAF Cyto
+      pka_cyto: PKA Cyto
+      ac_cyto_mem: AC Cyto Mem
+      amp_cyto: AMP Cyto
+      grk_cyto: GRK Cyto
+      pp2a_cyto: PP2A Cyto
+      mapk_cyto: MAPK Cyto
+      ptp_cyto: PTP Cyto
+      ptp_pka_cyto: PTP PKA Cyto
+      c_r2c2_cyto: C R2C2 Cyto
+      c2_r2c2_cyto: C2 R2C2 Cyto
+      complement_complement_complement_complement_complement_complement_c3_r2c2_cyto: Complement
+        Complement Complement Complement Complement complement C3 R2C2 Cyto
+      iso_bar_g_cyto_mem: Iso BAR G Cyto Mem
+      pde_high_km_cyto: PDE High Km Cyto
+      c_amp_cyto: C AMP Cyto
+      ptp_pp_cyto: PTP PP Cyto
+      pde4_p_cyto: PDE4 P Cyto
+io:
+  inputs: []
+  outputs: []

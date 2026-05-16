@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Jung2019 - egulating glioblastoma signaling pathways and anti-invasion therapy
+  cell cycle dynamics model Lab
+description: Clean Biosimulant lab for cell-cycle regulatory signaling. Values are
+  native SBML quantities; equations, parameters, and initial values remain in the
+  bundled source file.
+models:
+- alias: signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model.state
+  to:
+  - visualisation.signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model_state
+- from: signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model.summary
+  to:
+  - visualisation.signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model_summary
+- from: signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model.species_labels
+  to:
+  - visualisation.signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+- oncology
+- pharmacology
+io:
+  inputs:
+  - name: initial_delta_d
+    maps_to: signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model.initial_delta_d
+    label: Initial Delta D
+    description: Initial level of Delta D. Maps to SBML symbol `deltaD`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_mass_s
+    maps_to: signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model.initial_mass_s
+    label: Initial Mass S
+    description: Initial level of Mass S. Maps to SBML symbol `mass_s`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_drug_d
+    maps_to: signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model.initial_drug_d
+    label: Initial Drug D
+    description: Initial level of Drug D. Maps to SBML symbol `Drug_D`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: glucose_g
+    maps_to: signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model.glucose_g
+    label: Glucose G
+    description: Glucose G. Maps to SBML symbol `Glucose_G` and is emitted in native
+      SBML units.
+  - name: drug_d
+    maps_to: signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model.drug_d
+    label: Drug D
+    description: Drug D. Maps to SBML symbol `Drug_D` and is emitted in native SBML
+      units.
+  - name: mi_r_451_m
+    maps_to: signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model.mi_r_451_m
+    label: Mi R 451 M
+    description: Mi R 451 M. Maps to SBML symbol `miR_451_M` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model.species_labels
+    label: Observable labels

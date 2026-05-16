@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Besozzi2012 - Oscillatory regimes in the Ras/cAMP/PKA pathway in S.cerevisiae
+  Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model.state
+  to:
+  - visualisation.signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model_state
+- from: signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model.summary
+  to:
+  - visualisation.signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model_summary
+- from: signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model.species_labels
+  to:
+  - visualisation.signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- ras-erk
+- camp-pka
+io:
+  inputs:
+  - name: initial_atp
+    maps_to: signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model.initial_atp
+    label: Initial ATP
+    description: Initial level of ATP. Maps to SBML symbol `ATP`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_gdp
+    maps_to: signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model.initial_gdp
+    label: Initial GDP
+    description: Initial level of GDP. Maps to SBML symbol `GDP`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_gtp
+    maps_to: signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model.initial_gtp
+    label: Initial GTP
+    description: Initial level of GTP. Maps to SBML symbol `GTP`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: ras2_gdp
+    maps_to: signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model.ras2_gdp
+    label: RAS2 GDP
+    description: RAS2 GDP. Maps to SBML symbol `Ras2_GDP` and is emitted in native
+      SBML units.
+  - name: ras2_gdp_cdc25
+    maps_to: signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model.ras2_gdp_cdc25
+    label: RAS2 GDP CDC25
+    description: RAS2 GDP CDC25. Maps to SBML symbol `Ras2_GDP_Cdc25` and is emitted
+      in native SBML units.
+  - name: ras2_cdc25
+    maps_to: signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model.ras2_cdc25
+    label: RAS2 CDC25
+    description: RAS2 CDC25. Maps to SBML symbol `Ras2_Cdc25` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_besozzi2012_oscillatory_regimes_in_the_ras_camp_biomd0000000478_model.species_labels
+    label: Observable labels

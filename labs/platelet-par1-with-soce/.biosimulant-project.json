@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8f33f184-7db6-46a9-8834-405a4e57746f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ad41f7d2-d31b-47e7-9a7e-79c394132ff5",
+  "created_at": "2026-05-16T05:49:39.263295140+00:00",
+  "last_synced_at": "2026-05-16T10:42:09.622861+00:00",
+  "hub_manifest_hash": "56c18282f47ad570e6ab89fe346c53b44ba1dfda33aacc202ceba47c7efca703",
+  "package_name": "platelet-par1-with-soce-lab"
+}

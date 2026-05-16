@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ec733235-90e8-40b3-a68a-70f176909707",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6ec7e744-c953-490c-bc25-027d54688280",
+  "created_at": "2026-05-16T05:51:46.026534133+00:00",
+  "last_synced_at": "2026-05-16T10:42:47.447316+00:00",
+  "hub_manifest_hash": "6cceac17567534c8ffa6525b9395d18dfe05a50b86eab0c859a7f4617a81f0f4",
+  "package_name": "pokhilko2013-toc1-signalling-in-arabidopsis-circadian-clock-lab"
+}

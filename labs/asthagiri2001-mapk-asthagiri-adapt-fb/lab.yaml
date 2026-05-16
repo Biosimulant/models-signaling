@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Asthagiri2001_MAPK_Asthagiri_adapt_fb Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model.state
+  to:
+  - visualisation.signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model_state
+- from: signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model.summary
+  to:
+  - visualisation.signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model_summary
+- from: signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model.species_labels
+  to:
+  - visualisation.signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+io:
+  inputs:
+  - name: initial_source_defined_l_state
+    maps_to: signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model.initial_source_defined_l_state
+    label: Initial source-defined L state
+    description: Initial level of source-defined L state. Maps to SBML symbol `L`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: c_active
+    maps_to: signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model.c_active
+    label: C active
+    description: C active. Maps to SBML symbol `C_star_` and is emitted in native
+      SBML units.
+  - name: c_active_a1
+    maps_to: signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model.c_active_a1
+    label: C active A1
+    description: C active A1. Maps to SBML symbol `C_star_A1` and is emitted in native
+      SBML units.
+  - name: a1a2
+    maps_to: signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model.a1a2
+    label: A1A2
+    description: A1A2. Maps to SBML symbol `A1A2` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model.species_labels
+    label: Observable labels

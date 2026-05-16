@@ -1,0 +1,84 @@
+schema_version: '2.0'
+title: Kholodenko1999 - EGFR signaling Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- egfr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_kholodenko1999_egfr_signaling_biomd0000000048_model
+    title: Kholodenko1999 - EGFR signaling
+    context: receptor-to-MAPK cascade signaling
+    question: How does Kholodenko1999 - EGFR signaling propagate receptor or RAS/ERK
+      pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      epidermal_growth_factor: float
+      egfr: float
+      egf_egfr: float
+      egf_egfr_2: float
+      egf_egfr_2_p: float
+      source_defined_plcg_state: float
+      egf_egfr_2_plcg: float
+      egf_egfr_2_plcg_p: float
+      plcg_p: float
+      grb2_adapter_protein: float
+      egf_egfr_2_grb2_adapter_protein: float
+      sos_guanine_nucleotide_exchange_factor: float
+      egf_egfr_2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      shc_adapter_protein: float
+      egf_egfr_2_shc_adapter_protein: float
+      egf_egfr_shc_adapter_protein_p: float
+      source_defined_shc_p_state: float
+      egf_egfr_2_shc_adapter_protein_grb2_adapter_protein: float
+      shc_adapter_protein_grb2_adapter_protein: float
+      egf_egfr_2_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      plcg_p_i: float
+    species_labels:
+      epidermal_growth_factor: Epidermal Growth Factor
+      egfr: EGFR
+      egf_egfr: EGF EGFR
+      egf_egfr_2: EGF EGFR 2
+      egf_egfr_2_p: EGF EGFR 2 P
+      source_defined_plcg_state: source-defined PLCG state
+      egf_egfr_2_plcg: EGF EGFR 2 Plcg
+      egf_egfr_2_plcg_p: EGF EGFR 2 Plcg P
+      plcg_p: Plcg P
+      grb2_adapter_protein: Grb2 adapter protein
+      egf_egfr_2_grb2_adapter_protein: EGF EGFR 2 Grb2 adapter protein
+      sos_guanine_nucleotide_exchange_factor: SOS guanine-nucleotide exchange factor
+      egf_egfr_2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: EGF
+        EGFR 2 Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Grb2 adapter protein
+        SOS guanine-nucleotide exchange factor
+      shc_adapter_protein: Shc adapter protein
+      egf_egfr_2_shc_adapter_protein: EGF EGFR 2 Shc adapter protein
+      egf_egfr_shc_adapter_protein_p: EGF EGFR Shc adapter protein P
+      source_defined_shc_p_state: source-defined SHC-P state
+      egf_egfr_2_shc_adapter_protein_grb2_adapter_protein: EGF EGFR 2 Shc adapter
+        protein Grb2 adapter protein
+      shc_adapter_protein_grb2_adapter_protein: Shc adapter protein Grb2 adapter protein
+      egf_egfr_2_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: EGF
+        EGFR 2 Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide exchange
+        factor
+      shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Shc
+        adapter protein Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      plcg_p_i: Plcg P I
+io:
+  inputs: []
+  outputs: []

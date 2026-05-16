@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Konrath2023_genotoxic_stress_induced_IKK_NFkB_signaling Visualisation
+description: Question-and-answer and chart visualisation for NF-kB pathway signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- checkpoint-signaling
+- stress-response
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_konrath2023_genotoxic_stress_induced_ikk_nfkb_si_model2307130001_model
+    title: Konrath2023_genotoxic_stress_induced_IKK_NFkB_signaling
+    context: NF-kB activation and feedback signaling
+    question: How does Konrath2023 genotoxic stress induced IKK NFkB signaling move
+      NF-kB and inhibitor-linked signaling states?
+    visual_scope: NF-kB activation and feedback signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_bs_p_state: float
+      source_defined_parp1_state: float
+      parp1dsb_b: float
+      parp1_b: float
+      parparp1_b: float
+      parparp1: float
+      source_defined_bs_m_state: float
+      source_defined_mrn_state: float
+      source_defined_mrn_b_state: float
+      amrn_b: float
+      source_defined_atm_n_state: float
+      phospho_atm_n: float
+      source_defined_ikkg_state: float
+      source_defined_sig_state: float
+      sp_ikkg_n: float
+      source_defined_traf6_state: float
+      source_defined_at_state: float
+      source_defined_att_state: float
+      source_defined_tak1_state: float
+      phospho_ikk: float
+    species_labels:
+      source_defined_bs_p_state: Source Defined BS P State
+      source_defined_parp1_state: Source Defined PARP1 State
+      parp1dsb_b: PARP1DSB B
+      parp1_b: PARP1 B
+      parparp1_b: PARPARP1 B
+      parparp1: PARPARP1
+      source_defined_bs_m_state: Source Defined BS M State
+      source_defined_mrn_state: Source Defined MRN State
+      source_defined_mrn_b_state: Source Defined MRN B State
+      amrn_b: AMRN B
+      source_defined_atm_n_state: Source Defined ATM N State
+      phospho_atm_n: Phospho ATM N
+      source_defined_ikkg_state: Source Defined IKKG State
+      source_defined_sig_state: Source Defined SIG State
+      sp_ikkg_n: Sp Ikkg N
+      source_defined_traf6_state: Source Defined TRAF6 State
+      source_defined_at_state: Source Defined AT State
+      source_defined_att_state: Source Defined ATT State
+      source_defined_tak1_state: Source Defined TAK1 State
+      phospho_ikk: Phospho IKK
+io:
+  inputs: []
+  outputs: []

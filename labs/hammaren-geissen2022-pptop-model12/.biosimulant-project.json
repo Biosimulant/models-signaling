@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "608ebf8d-20b8-40e4-b789-0e8c6e83d2e0",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ac76f016-5ddc-44c2-945a-fac584658cea",
+  "created_at": "2026-05-15T19:08:09.787758096+00:00",
+  "last_synced_at": "2026-05-16T09:44:08.527318+00:00",
+  "hub_manifest_hash": "d5b2fa55daee9396d63a2e7dfe31d882eb359b4366d26b66590ff55ae306a0b1",
+  "package_name": "hammaren-geissen2022-pptop-model12-lab"
+}

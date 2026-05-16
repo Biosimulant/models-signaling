@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "22eb2877-ded4-4c64-a772-a0b268d946f3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fab9e3ca-6d5a-482b-a1a2-0ca033b4b069",
+  "created_at": "2026-05-15T19:08:10.661165196+00:00",
+  "last_synced_at": "2026-05-16T10:13:58.864487+00:00",
+  "hub_manifest_hash": "f7bdb393485f6890fabbfccddd473ad5d9456555ae613e28f61313e7eecb6f94",
+  "package_name": "markevich2004-mapk-double-phosphorylation-ordered-michaelis-ment"
+}

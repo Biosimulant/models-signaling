@@ -1,0 +1,41 @@
+schema_version: '2.0'
+title: Araujo2016 - Positive feedback in Cdk1 signalling keeps mitotic duration short
+  and constant Visualisation
+description: Question-and-answer and chart visualisation for cell-cycle regulatory
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_araujo2016_positive_feedback_in_cdk1_signalling_biomd0000000657_model
+    title: Araujo2016 - Positive feedback in Cdk1 signalling keeps mitotic duration
+      short and constant
+    context: cell-cycle regulatory signaling
+    question: How does Araujo2016 - Positive feedback in Cdk1 signalling keeps mitotic
+      duration short and constant move checkpoint or cycle-control signaling states?
+    visual_scope: cell-cycle regulatory signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      cdk1cyc_b: float
+      source_defined_apc_state: float
+      source_defined_cycb_state: float
+    species_labels:
+      cdk1cyc_b: Cdk1cyc B
+      source_defined_apc_state: source-defined APC state
+      source_defined_cycb_state: source-defined CYCB state
+io:
+  inputs: []
+  outputs: []

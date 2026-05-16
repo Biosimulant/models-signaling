@@ -1,0 +1,62 @@
+schema_version: '2.0'
+title: Fujita2010_Akt_Signalling_EGFRinhib Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- egfr
+- pi3k-akt
+- pharmacology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_fujita2010_akt_signalling_egfrinhib_biomd0000000264_model
+    title: Fujita2010_Akt_Signalling_EGFRinhib
+    context: receptor-to-MAPK cascade signaling
+    question: How does Fujita2010 Akt Signalling EGFRinhib propagate receptor or RAS/ERK
+      pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      egf: float
+      egfr: float
+      p_egfr: float
+      p_egfr_akt: float
+      akt: float
+      source_defined_pakt_state: float
+      source_defined_s6_state: float
+      p_akt_s6: float
+      source_defined_ps6_state: float
+      pro_egfr: float
+      egf_egfr: float
+      egfr_i: float
+      egf_egfr_i: float
+      inhibitor: float
+    species_labels:
+      egf: EGF
+      egfr: EGFR
+      p_egfr: P EGFR
+      p_egfr_akt: P EGFR AKT
+      akt: AKT
+      source_defined_pakt_state: source-defined PAKT state
+      source_defined_s6_state: source-defined S6 state
+      p_akt_s6: P AKT S6
+      source_defined_ps6_state: source-defined PS6 state
+      pro_egfr: Pro EGFR
+      egf_egfr: EGF EGFR
+      egfr_i: EGFR I
+      egf_egfr_i: EGF EGFR I
+      inhibitor: Inhibitor
+io:
+  inputs: []
+  outputs: []

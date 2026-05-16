@@ -1,0 +1,118 @@
+schema_version: '2.0'
+title: Kolodkin2013 - Nuclear receptor-mediated cortisol signalling network Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Kolodkin2013 - Nuclear receptor-mediated cortisol signalling network.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- stress-response
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_kolodkin2013_nuclear_receptor_mediated_cortisol_biomd0000000576_model
+    title: Kolodkin2013 - Nuclear receptor-mediated cortisol signalling network
+    context: GPCR and cAMP/PKA signaling
+    question: How does Kolodkin2013 - Nuclear receptor-mediated cortisol signalling
+      network route receptor activity into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_s_rna_state: float
+      s_prot: float
+      pxr_gene: float
+      pxr_rna: float
+      pxr_prot: float
+      abstract_source_state_s30: float
+      gr_gene: float
+      gr_rna: float
+      gr_prot: float
+      source_defined_cort_state: float
+      cyp_gene: float
+      cyp_prot: float
+      cyp_rna: float
+      tat_rna: float
+      grgene_grprot_cort: float
+      cypgene_pxrprot_cort: float
+      pxrgene_grprot_cort: float
+      grprot_cort: float
+      pxrprot_cort: float
+      tatgene_grprot_cort: float
+      tat_gene: float
+      cort_degr: float
+      cortisone: float
+      tat_prot: float
+      ligand2: float
+      pxrprot_ligand2: float
+      cypgene_pxrprot_ligand2: float
+      source_defined_dex_state: float
+      grprot_dex: float
+      pxrprot_dex: float
+      dex_degr: float
+      cypgene_pxrprot_dex: float
+      pxrgene_grprot_dex: float
+      grgene_grprot_dex: float
+      tatgene_grprot_dex: float
+      cort_out: float
+      dexout: float
+      source_defined_cbg_state: float
+      cbg_cort_out: float
+      source_defined_alb_state: float
+      alb_cort_out: float
+      cort_added: float
+    species_labels:
+      source_defined_s_rna_state: source-defined S_RNA state
+      s_prot: S PROT
+      pxr_gene: PXR GENE
+      pxr_rna: PXR RNA
+      pxr_prot: PXR PROT
+      abstract_source_state_s30: Abstract source state S30
+      gr_gene: GR GENE
+      gr_rna: GR RNA
+      gr_prot: GR PROT
+      source_defined_cort_state: source-defined CORT state
+      cyp_gene: CYP GENE
+      cyp_prot: CYP PROT
+      cyp_rna: CYP RNA
+      tat_rna: TAT RNA
+      grgene_grprot_cort: Grgene Grprot Cort
+      cypgene_pxrprot_cort: Cypgene Pxrprot Cort
+      pxrgene_grprot_cort: Pxrgene Grprot Cort
+      grprot_cort: Grprot Cort
+      pxrprot_cort: Pxrprot Cort
+      tatgene_grprot_cort: Tatgene Grprot Cort
+      tat_gene: TAT GENE
+      cort_degr: Cort Degr
+      cortisone: Cortisone
+      tat_prot: TAT PROT
+      ligand2: Ligand2
+      pxrprot_ligand2: Pxrprot Ligand2
+      cypgene_pxrprot_ligand2: Cypgene Pxrprot Ligand2
+      source_defined_dex_state: source-defined DEX state
+      grprot_dex: Grprot DEX
+      pxrprot_dex: Pxrprot DEX
+      dex_degr: DEX Degr
+      cypgene_pxrprot_dex: Cypgene Pxrprot DEX
+      pxrgene_grprot_dex: Pxrgene Grprot DEX
+      grgene_grprot_dex: Grgene Grprot DEX
+      tatgene_grprot_dex: Tatgene Grprot DEX
+      cort_out: Cort OUT
+      dexout: Dexout
+      source_defined_cbg_state: source-defined CBG state
+      cbg_cort_out: CBG Cort OUT
+      source_defined_alb_state: source-defined ALB state
+      alb_cort_out: Alb Cort OUT
+      cort_added: Cort Added
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Sible2007 - Mitotic cell cycle mecanism in Xenopus Laevis Lab
+description: Clean Biosimulant lab for cell-cycle regulatory signaling. Values are
+  native SBML quantities; equations, parameters, and initial values remain in the
+  bundled source file.
+models:
+- alias: signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model.state
+  to:
+  - visualisation.signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model_state
+- from: signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model.summary
+  to:
+  - visualisation.signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model_summary
+- from: signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model.species_labels
+  to:
+  - visualisation.signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+io:
+  inputs:
+  - name: initial_apc_total
+    maps_to: signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model.initial_apc_total
+    label: Initial APC Total
+    description: Initial level of APC Total. Maps to SBML symbol `APC_total`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_cdc25
+    maps_to: signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model.initial_cdc25
+    label: Initial Cdc25
+    description: Initial level of Cdc25. Maps to SBML symbol `Cdc25`; exposed as a
+      traceable initial-condition perturbation.
+  - name: initial_cdc25_total
+    maps_to: signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model.initial_cdc25_total
+    label: Initial Cdc25 Total
+    description: Initial level of Cdc25 Total. Maps to SBML symbol `Cdc25_total`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: cdc25_phosphorylated
+    maps_to: signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model.cdc25_phosphorylated
+    label: Cdc25 Phosphorylated
+    description: Cdc25 Phosphorylated. Maps to SBML symbol `Cdc25_phosphorylated`
+      and is emitted in native SBML units.
+  - name: wee1_phosphorylated
+    maps_to: signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model.wee1_phosphorylated
+    label: Wee1 Phosphorylated
+    description: Wee1 Phosphorylated. Maps to SBML symbol `Wee1_phosphorylated` and
+      is emitted in native SBML units.
+  - name: ie_phosphorylated
+    maps_to: signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model.ie_phosphorylated
+    label: IE Phosphorylated
+    description: IE Phosphorylated. Maps to SBML symbol `IE_phosphorylated` and is
+      emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_sible2007_mitotic_cell_cycle_mecanism_in_xenopus_biomd0000000942_model.species_labels
+    label: Observable labels

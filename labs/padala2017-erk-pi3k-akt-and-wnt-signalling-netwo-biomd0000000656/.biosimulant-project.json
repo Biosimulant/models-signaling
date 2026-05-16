@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "70f65219-deba-4f26-913f-3877c8252eb0",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b770bda6-a67c-4096-be97-f34525def1e3",
+  "created_at": "2026-05-16T05:46:11.014338842+00:00",
+  "last_synced_at": "2026-05-16T10:36:20.258883+00:00",
+  "hub_manifest_hash": "d9593a2934d4c7fc5c207faa88c59d0d42315869757132504321166f0da16826",
+  "package_name": "padala2017-erk-pi3k-akt-and-wnt-signalling-network-egfr-overexpr"
+}

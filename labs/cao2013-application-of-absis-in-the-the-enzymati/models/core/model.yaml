@@ -1,0 +1,68 @@
+schema_version: '2.0'
+title: Cao2013 - Application of ABSIS in the the enzymatic futile cycle
+description: Michael Samoilov, Sergey Plyasunov & Adam P. It can be used to explore
+  signaling dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Youfang Cao
+- Jie Liang
+upstream:
+  id: biomodels_ebi:BIOMD0000000487
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000487
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000487
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000487?filename=BIOMD0000000487_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.cao2013_application_of_absis_in_the_the_enzymati:Cao2013ApplicationOfAbsisInTheTheEnzymatiBiomd0000000487Model
+  init_kwargs:
+    model_path: data/BIOMD0000000487.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_s1_state
+    maps_to: signaling_sbml_cao2013_application_of_absis_in_the_the_enzymati_biomd0000000487_model.initial_source_defined_s1_state
+    label: Initial source-defined S1 state
+    description: Initial level of source-defined S1 state. Maps to SBML symbol `S1`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_s1_state
+    maps_to: signaling_sbml_cao2013_application_of_absis_in_the_the_enzymati_biomd0000000487_model.source_defined_s1_state
+    label: source-defined S1 state
+    description: source-defined S1 state. Maps to SBML symbol `S1` and is emitted
+      in native SBML units.
+  - name: source_defined_s2_state
+    maps_to: signaling_sbml_cao2013_application_of_absis_in_the_the_enzymati_biomd0000000487_model.source_defined_s2_state
+    label: source-defined S2 state
+    description: source-defined S2 state. Maps to SBML symbol `S2` and is emitted
+      in native SBML units.
+  - name: source_defined_s3_state
+    maps_to: signaling_sbml_cao2013_application_of_absis_in_the_the_enzymati_biomd0000000487_model.source_defined_s3_state
+    label: source-defined S3 state
+    description: source-defined S3 state. Maps to SBML symbol `S3` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_cao2013_application_of_absis_in_the_the_enzymati_biomd0000000487_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_cao2013_application_of_absis_in_the_the_enzymati_biomd0000000487_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_cao2013_application_of_absis_in_the_the_enzymati_biomd0000000487_model.species_labels
+    label: Observable labels

@@ -1,0 +1,69 @@
+schema_version: '2.0'
+title: Panteleev2002_TFPImechanism_schmema1
+description: Mikhail A. It can be used to explore signaling dynamics and compare pathway
+  response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Mikhail A Panteleev
+- Veronica I Zarnitsina
+- Fazoil I Ataullakhanov
+upstream:
+  id: biomodels_ebi:BIOMD0000000361
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000361
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000361
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000361?filename=BIOMD0000000361_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.panteleev2002_tfpimechanism_schmema1:Panteleev2002TfpimechanismSchmema1Biomd0000000361Model
+  init_kwargs:
+    model_path: data/BIOMD0000000361.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_viia_tf
+    maps_to: signaling_sbml_panteleev2002_tfpimechanism_schmema1_biomd0000000361_model.initial_viia_tf
+    label: Initial Viia TF
+    description: Initial level of Viia TF. Maps to SBML symbol `VIIa_TF`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: viia_tf
+    maps_to: signaling_sbml_panteleev2002_tfpimechanism_schmema1_biomd0000000361_model.viia_tf
+    label: Viia TF
+    description: Viia TF. Maps to SBML symbol `VIIa_TF` and is emitted in native SBML
+      units.
+  - name: viia_tf_x
+    maps_to: signaling_sbml_panteleev2002_tfpimechanism_schmema1_biomd0000000361_model.viia_tf_x
+    label: Viia TF X
+    description: Viia TF X. Maps to SBML symbol `VIIa_TF_X` and is emitted in native
+      SBML units.
+  - name: viia_tf_xa
+    maps_to: signaling_sbml_panteleev2002_tfpimechanism_schmema1_biomd0000000361_model.viia_tf_xa
+    label: Viia TF Xa
+    description: Viia TF Xa. Maps to SBML symbol `VIIa_TF_Xa` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_panteleev2002_tfpimechanism_schmema1_biomd0000000361_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_panteleev2002_tfpimechanism_schmema1_biomd0000000361_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_panteleev2002_tfpimechanism_schmema1_biomd0000000361_model.species_labels
+    label: Observable labels

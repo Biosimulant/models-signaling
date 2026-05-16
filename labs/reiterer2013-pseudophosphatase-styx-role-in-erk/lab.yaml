@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Reiterer2013 - pseudophosphatase STYX role in ERK signalling Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model.state
+  to:
+  - visualisation.signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model_state
+- from: signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model.summary
+  to:
+  - visualisation.signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model_summary
+- from: signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model.species_labels
+  to:
+  - visualisation.signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+io:
+  inputs:
+  - name: initial_cytosolic_phosphorylated_erk
+    maps_to: signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model.initial_cytosolic_phosphorylated_erk
+    label: Initial cytosolic phosphorylated ERK
+    description: Initial level of cytosolic phosphorylated ERK. Maps to SBML symbol
+      `ERKc`; exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: cytosolic_phosphorylated_erk
+    maps_to: signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model.cytosolic_phosphorylated_erk
+    label: cytosolic phosphorylated ERK
+    description: cytosolic phosphorylated ERK. Maps to SBML symbol `ERKc` and is emitted
+      in native SBML units.
+  - name: p_erkc
+    maps_to: signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model.p_erkc
+    label: P Erkc
+    description: P Erkc. Maps to SBML symbol `pERKc` and is emitted in native SBML
+      units.
+  - name: pp_erkc
+    maps_to: signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model.pp_erkc
+    label: Pp Erkc
+    description: Pp Erkc. Maps to SBML symbol `ppERKc` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model.species_labels
+    label: Observable labels

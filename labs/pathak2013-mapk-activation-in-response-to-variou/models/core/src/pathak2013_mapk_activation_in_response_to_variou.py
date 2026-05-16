@@ -1,0 +1,152 @@
+# SPDX-FileCopyrightText: 2026-present Biosimulant Team
+# SPDX-License-Identifier: MIT
+"""Tellurium-backed SBML wrapper for Pathak2013 - MAPK activation in response to various abiotic stresses."""
+
+from __future__ import annotations
+
+from biosim.contrib.sbml import TelluriumSBMLBioModule
+
+
+class Pathak2013MapkActivationInResponseToVariouModel(TelluriumSBMLBioModule):
+    """Faithful Tellurium execution of the bundled SBML source model."""
+
+    _SBML_ID = 'BIOMD0000000491'
+    _TITLE = 'Pathak2013 - MAPK activation in response to various abiotic stresses'
+    _TIME_UNIT = "model_time"
+    _OBSERVABLE_STRATEGY = 'species'
+    _EXPOSE_INTEGRATION_STEP_INPUT = False
+    _HEADLINE_OUTPUTS = {'mapkkk': ('s13',
+                'substance',
+                'MAPKKK. Maps to SBML symbol `s13` and is emitted in native SBML units.'),
+     'mapkkk_2': ('s14',
+                  'substance',
+                  'MAPKKK. Maps to SBML symbol `s14` and is emitted in native SBML units.'),
+     'mapkkk1': ('s15',
+                 'substance',
+                 'MAPKKK1. Maps to SBML symbol `s15` and is emitted in native SBML units.')}
+    _INITIAL_CONDITION_INPUTS = {'initial_cold_stress_input': ('s1',
+                                   0.0,
+                                   'native SBML value',
+                                   'Initial level of cold stress input. Maps to SBML symbol `s1`; '
+                                   'exposed as a traceable initial-condition perturbation.')}
+    _PARAMETER_INPUTS = {}
+    _SPECIES_LABELS = {'s1': 'cold stress input',
+     's2': 'source-defined SALT state',
+     's3': 'Drought',
+     's4': 'H2O2',
+     's5': 'Heavy Metal',
+     's6': 'Ethylene',
+     's7': 'source-defined RLKS state',
+     's8': 'source-defined LRR state',
+     's9': 'source-defined CRKS state',
+     's10': 'Lec RK2',
+     's11': 'source-defined ETR1 state',
+     's12': 'source-defined ETR2 state',
+     's13': 'MAPKKK',
+     's14': 'MAPKKK',
+     's15': 'MAPKKK1',
+     's16': 'source-defined CTR1 state',
+     's17': 'MAPKK',
+     's18': 'MAPKK',
+     's27': 'MAPK',
+     's28': 'MAPK',
+     's19': 'MAPKK1',
+     's20': 'MAPKK2',
+     's21': 'MAPKK3',
+     's22': 'MAPKK4',
+     's23': 'MAPKK5',
+     's24': 'MAPKK6',
+     's25': 'MAPKK7',
+     's26': 'MAPKK9',
+     's29': 'source-defined MAPK2 state',
+     's30': 'source-defined MAPK3 state',
+     's31': 'source-defined MAPK4 state',
+     's32': 'source-defined MAPK6 state',
+     's33': 'source-defined WRKY1 state',
+     's34': 'source-defined WRKY1 state',
+     's35': 'WRKY12',
+     's36': 'WRKY12',
+     's37': 'source-defined WRKY8 state',
+     's38': 'source-defined WRKY8 state',
+     's39': 'WRKY25',
+     's40': 'WRKY25',
+     's41': 'WRKY22',
+     's42': 'WRKY22',
+     's43': 'WRKY29',
+     's44': 'WRKY29',
+     's45': 'WRKY33',
+     's46': 'WRKY33',
+     's47': 'WRKY28',
+     's48': 'WRKY28',
+     's49': 'source-defined MYB2 state',
+     's50': 'source-defined MYB2 state',
+     's51': 'source-defined MYB4 state',
+     's52': 'source-defined MYB4 state',
+     's53': 'MYB44',
+     's54': 'source-defined NAC state',
+     's55': 'source-defined BZIP state',
+     's56': 'source-defined AP2 state',
+     's57': 'Response'}
+    _STATE_OUTPUT_ALIASES = {'s1': 'cold_stress_input',
+     's2': 'source_defined_salt_state',
+     's3': 'drought',
+     's4': 'h2o2',
+     's5': 'heavy_metal',
+     's6': 'ethylene',
+     's7': 'source_defined_rlks_state',
+     's8': 'source_defined_lrr_state',
+     's9': 'source_defined_crks_state',
+     's10': 'lec_rk2',
+     's11': 'source_defined_etr1_state',
+     's12': 'source_defined_etr2_state',
+     's13': 'mapkkk',
+     's14': 'mapkkk_2',
+     's15': 'mapkkk1',
+     's16': 'source_defined_ctr1_state',
+     's17': 'mapkk',
+     's18': 'mapkk_2',
+     's27': 'mapk',
+     's28': 'mapk_2',
+     's19': 'mapkk1',
+     's20': 'mapkk2',
+     's21': 'mapkk3',
+     's22': 'mapkk4',
+     's23': 'mapkk5',
+     's24': 'mapkk6',
+     's25': 'mapkk7',
+     's26': 'mapkk9',
+     's29': 'source_defined_mapk2_state',
+     's30': 'source_defined_mapk3_state',
+     's31': 'source_defined_mapk4_state',
+     's32': 'source_defined_mapk6_state',
+     's33': 'source_defined_wrky1_state',
+     's34': 'source_defined_wrky1_state_2',
+     's35': 'wrky12',
+     's36': 'wrky12_2',
+     's37': 'source_defined_wrky8_state',
+     's38': 'source_defined_wrky8_state_2',
+     's39': 'wrky25',
+     's40': 'wrky25_2',
+     's41': 'wrky22',
+     's42': 'wrky22_2',
+     's43': 'wrky29',
+     's44': 'wrky29_2',
+     's45': 'wrky33',
+     's46': 'wrky33_2',
+     's47': 'wrky28',
+     's48': 'wrky28_2',
+     's49': 'source_defined_myb2_state',
+     's50': 'source_defined_myb2_state_2',
+     's51': 'source_defined_myb4_state',
+     's52': 'source_defined_myb4_state_2',
+     's53': 'myb44',
+     's54': 'source_defined_nac_state',
+     's55': 'source_defined_bzip_state',
+     's56': 'source_defined_ap2_state',
+     's57': 'response'}
+
+    def __init__(self, model_path: str = 'data/BIOMD0000000491.xml', integration_step: float = 0.01) -> None:
+        super().__init__(model_path=model_path, integration_step=integration_step)
+
+
+Pathak2013MapkActivationInResponseToVariouBiomd0000000491Model = Pathak2013MapkActivationInResponseToVariouModel

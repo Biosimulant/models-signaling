@@ -1,0 +1,53 @@
+schema_version: '2.0'
+title: Kawka2014 - Revealing the role of SGK1 in the dynamics of medulloblastoma using
+  a mathematical model Visualisation
+description: Question-and-answer and chart visualisation for developmental and growth-control
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- wnt
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_kawka2014_revealing_the_role_of_sgk1_in_the_dyna_model1912090002_model
+    title: Kawka2014 - Revealing the role of SGK1 in the dynamics of medulloblastoma
+      using a mathematical model
+    context: growth-control pathway signaling
+    question: How does Kawka2014 - Revealing the role of SGK1 in the dynamics of medulloblastoma
+      using a mathematical model shift developmental or growth-control pathway states?
+    visual_scope: growth-control pathway signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      sgk1_t: float
+      sgk1_p: float
+      source_defined_myc_t_state: float
+      c_myc_transcription_factor_pc: float
+      c_myc_transcription_factor_pn: float
+      gsk3beta_c: float
+      gsk3beta_occ: float
+      sgk1_occ: float
+      gsk3beta_n: float
+    species_labels:
+      sgk1_t: SGK1 T
+      sgk1_p: SGK1 P
+      source_defined_myc_t_state: source-defined MYC_T state
+      c_myc_transcription_factor_pc: C MYC transcription factor Pc
+      c_myc_transcription_factor_pn: C MYC transcription factor Pn
+      gsk3beta_c: Gsk3beta C
+      gsk3beta_occ: Gsk3beta Occ
+      sgk1_occ: SGK1 Occ
+      gsk3beta_n: Gsk3beta N
+io:
+  inputs: []
+  outputs: []

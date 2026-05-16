@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Koo2013 - Shear stress induced AKT and eNOS phosphorylation - Model 2 Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Koo2013 - Shear stress induced AKT and eNOS phosphorylation - Model 2.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- pi3k-akt
+- stress-response
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_koo2013_shear_stress_induced_akt_and_enos_phosph_biomd0000000465_model
+    title: Koo2013 - Shear stress induced AKT and eNOS phosphorylation - Model 2
+    context: receptor-to-MAPK cascade signaling
+    question: How does Koo2013 - Shear stress induced AKT and eNOS phosphorylation
+      - Model 2 propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_pdk1_state: float
+      pp2a: float
+      akt: float
+      pi3p: float
+      source_defined_pten_state: float
+      source_defined_pip2_state: float
+      p_pi3k: float
+      pi3k: float
+      source_defined_time_state: float
+      source_defined_pdk2_state: float
+      pdk1_cyto: float
+      p_akt_pi3p: float
+      pp_akt_pi3p: float
+      akt_pi3p: float
+      shear_stress: float
+    species_labels:
+      source_defined_pdk1_state: source-defined PDK1 state
+      pp2a: PP2A
+      akt: AKT
+      pi3p: PI3P
+      source_defined_pten_state: source-defined PTEN state
+      source_defined_pip2_state: source-defined PIP2 state
+      p_pi3k: P PI3K
+      pi3k: PI3K
+      source_defined_time_state: source-defined TIME state
+      source_defined_pdk2_state: source-defined PDK2 state
+      pdk1_cyto: PDK1 Cyto
+      p_akt_pi3p: P AKT PI3P
+      pp_akt_pi3p: Pp AKT PI3P
+      akt_pi3p: AKT PI3P
+      shear_stress: Shear Stress
+io:
+  inputs: []
+  outputs: []

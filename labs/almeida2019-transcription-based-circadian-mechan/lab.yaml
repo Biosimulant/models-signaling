@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Almeida2019 - Transcription-based circadian mechanism controls the duration
+  of molecular clock states in response to signaling inputs Lab
+description: Clean Biosimulant lab for circadian regulatory signaling. Values are
+  native SBML quantities; equations, parameters, and initial values remain in the
+  bundled source file.
+models:
+- alias: signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model.state
+  to:
+  - visualisation.signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model_state
+- from: signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model.summary
+  to:
+  - visualisation.signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model_summary
+- from: signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model.species_labels
+  to:
+  - visualisation.signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- circadian
+io:
+  inputs:
+  - name: initial_source_defined_bmal1_state
+    maps_to: signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model.initial_source_defined_bmal1_state
+    label: Initial source-defined BMAL1 state
+    description: Initial level of source-defined BMAL1 state. Maps to SBML symbol
+      `BMAL1`; exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_bmal1_state
+    maps_to: signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model.source_defined_bmal1_state
+    label: source-defined BMAL1 state
+    description: source-defined BMAL1 state. Maps to SBML symbol `BMAL1` and is emitted
+      in native SBML units.
+  - name: source_defined_ror_state
+    maps_to: signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model.source_defined_ror_state
+    label: source-defined ROR state
+    description: source-defined ROR state. Maps to SBML symbol `ROR` and is emitted
+      in native SBML units.
+  - name: source_defined_rev_state
+    maps_to: signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model.source_defined_rev_state
+    label: source-defined REV state
+    description: source-defined REV state. Maps to SBML symbol `REV` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_almeida2019_transcription_based_circadian_mechan_biomd0000000839_model.species_labels
+    label: Observable labels

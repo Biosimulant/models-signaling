@@ -1,0 +1,84 @@
+schema_version: '2.0'
+title: Bakshi2020 - Properdin model of alternative pathway of complement system
+description: This model is based on the publication:'Mathematical Modelling of Alternative
+  Pathway of Complement System'.Suruchi Bakshi, Fraser Cunningham, Eva-Maria Nichols,
+  Marta Biedzka-Sarek, Jessica Neisen, S. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- complement
+authors:
+- Biosimulant Team
+- Suruchi Bakshi
+- Fraser Cunningham
+- Eva-Maria Nichols
+- Marta Biedzka-Sarek
+- Jessica Neisen
+upstream:
+  id: biomodels_ebi:BIOMD0000001018
+  source_db: biomodels_ebi
+  source_id: BIOMD0000001018
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001018
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001018?filename=Bakshi2020
+    properdin model.xml
+  license: CC0
+biosim:
+  entrypoint: src.bakshi2020_properdin_model_of_alternative_pathwa:Bakshi2020ProperdinModelOfAlternativePathwaBiomd0000001018Model
+  init_kwargs:
+    model_path: data/BIOMD0000001018.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_complement_c3b_total
+    maps_to: signaling_sbml_bakshi2020_properdin_model_of_alternative_pathwa_biomd0000001018_model.initial_complement_c3b_total
+    label: Initial complement C3b Total
+    description: Initial level of complement C3b Total. Maps to SBML symbol `C3b_total`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_complement_c3b_b_closed_total
+    maps_to: signaling_sbml_bakshi2020_properdin_model_of_alternative_pathwa_biomd0000001018_model.initial_complement_c3b_b_closed_total
+    label: Initial complement C3b B closed Total
+    description: Initial level of complement C3b B closed Total. Maps to SBML symbol
+      `C3bB_closed_total`; exposed as a traceable initial-condition perturbation.
+  - name: initial_complement_c3b_b_open_total
+    maps_to: signaling_sbml_bakshi2020_properdin_model_of_alternative_pathwa_biomd0000001018_model.initial_complement_c3b_b_open_total
+    label: Initial complement C3b B open Total
+    description: Initial level of complement C3b B open Total. Maps to SBML symbol
+      `C3bB_open_total`; exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: complement_c3b
+    maps_to: signaling_sbml_bakshi2020_properdin_model_of_alternative_pathwa_biomd0000001018_model.complement_c3b
+    label: complement C3b
+    description: complement C3b. Maps to SBML symbol `C3b` and is emitted in native
+      SBML units.
+  - name: closed_complement_c3bb_complex
+    maps_to: signaling_sbml_bakshi2020_properdin_model_of_alternative_pathwa_biomd0000001018_model.closed_complement_c3bb_complex
+    label: closed complement C3bB complex
+    description: closed complement C3bB complex. Maps to SBML symbol `C3bB_closed`
+      and is emitted in native SBML units.
+  - name: open_complement_c3bb_complex
+    maps_to: signaling_sbml_bakshi2020_properdin_model_of_alternative_pathwa_biomd0000001018_model.open_complement_c3bb_complex
+    label: open complement C3bB complex
+    description: open complement C3bB complex. Maps to SBML symbol `C3bB_open` and
+      is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_bakshi2020_properdin_model_of_alternative_pathwa_biomd0000001018_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_bakshi2020_properdin_model_of_alternative_pathwa_biomd0000001018_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_bakshi2020_properdin_model_of_alternative_pathwa_biomd0000001018_model.species_labels
+    label: Observable labels

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6aef700a-be94-40ac-bfe8-da529f822abc",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c854942c-7016-4c7b-893d-3bea66d3f50f",
+  "created_at": "2026-05-16T05:58:29.773487373+00:00",
+  "last_synced_at": "2026-05-16T11:27:39.959820+00:00",
+  "hub_manifest_hash": "59bdd8018f9bb7739486adccc7536908dfd9312d4f89d9ddb4044e3a6fc11c18",
+  "package_name": "zeilfelder2025-model-for-primary-human-hepatocytes-phh-lab"
+}

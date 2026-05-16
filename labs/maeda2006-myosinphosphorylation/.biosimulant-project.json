@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "dc09b177-3626-4e6f-bfd6-d5ee62007f09",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6358b15e-c363-452b-a415-ab3b67c6440d",
+  "created_at": "2026-05-15T19:08:10.651835268+00:00",
+  "last_synced_at": "2026-05-16T10:13:17.438685+00:00",
+  "hub_manifest_hash": "7e4e891d0446bfaa2593ebdbc5023a3dd3ca08a6fe00e2e5392d4d1c13736e90",
+  "package_name": "maeda2006-myosinphosphorylation-lab"
+}

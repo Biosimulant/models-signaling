@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b39b8d11-b869-4921-9e9c-0f3085118d6b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0571a37e-f47b-4f82-b77c-46f856e3c683",
+  "created_at": "2026-05-15T19:08:09.872492615+00:00",
+  "last_synced_at": "2026-05-16T12:18:09.513662+00:00",
+  "hub_manifest_hash": "03f7eb557d3136de160046df01d2e89ce44fa42f51fd4493e37fbb7f91943c86",
+  "package_name": "model2001030002-heberlerazquinnavas2019-the-pi3k-and-mapk-p38-pa"
+}

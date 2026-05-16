@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Benary2015 - feedback regulation of beta-catenin pathway by HOS and FWD1 Visualisation
+description: Question-and-answer and chart visualisation for developmental and growth-control
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- wnt
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_benary2015_feedback_regulation_of_beta_catenin_p_model1908050003_model
+    title: Benary2015 - feedback regulation of beta-catenin pathway by HOS and FWD1
+    context: metabolic and hormone signaling response
+    question: How does Benary2015 - feedback regulation of beta-catenin pathway by
+      HOS and FWD1 shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_dsh_i_state: float
+      source_defined_dsh_a_state: float
+      apc_axin_gsk3: float
+      apc_axin_gsk3_2: float
+      source_defined_gsk3_state: float
+      apc_axin: float
+      source_defined_apc_state: float
+      b_catenin_apc_axin_gsk3: float
+      b_catenin_apc_axin_gsk3_2: float
+      b_catenin: float
+      b_catenin_2: float
+      source_defined_axin_state: float
+      source_defined_tcf_state: float
+      b_catenin_tcf: float
+      b_catenin_apc: float
+      source_defined_wnt_state: float
+      hos_m_rna: float
+      source_defined_hos_state: float
+      crd_bp_m_rna: float
+      crd_bp: float
+      fwd1_m_rna: float
+      source_defined_fwd1_state: float
+      b_catenin_apc_axin_gsk3_hos: float
+      b_catenin_apc_axin_gsk3_fwd1: float
+    species_labels:
+      source_defined_dsh_i_state: source-defined DSH_I state
+      source_defined_dsh_a_state: source-defined DSH_A state
+      apc_axin_gsk3: APC Axin GSK3
+      apc_axin_gsk3_2: APC Axin GSK3
+      source_defined_gsk3_state: source-defined GSK3 state
+      apc_axin: APC Axin
+      source_defined_apc_state: source-defined APC state
+      b_catenin_apc_axin_gsk3: B Catenin APC Axin GSK3
+      b_catenin_apc_axin_gsk3_2: B Catenin APC Axin GSK3
+      b_catenin: B Catenin
+      b_catenin_2: B Catenin
+      source_defined_axin_state: source-defined AXIN state
+      source_defined_tcf_state: source-defined TCF state
+      b_catenin_tcf: B Catenin TCF
+      b_catenin_apc: B Catenin APC
+      source_defined_wnt_state: source-defined WNT state
+      hos_m_rna: HOS M RNA
+      source_defined_hos_state: source-defined HOS state
+      crd_bp_m_rna: CRD BP M RNA
+      crd_bp: CRD BP
+      fwd1_m_rna: FWD1 M RNA
+      source_defined_fwd1_state: source-defined FWD1 state
+      b_catenin_apc_axin_gsk3_hos: B Catenin APC Axin GSK3 HOS
+      b_catenin_apc_axin_gsk3_fwd1: B Catenin APC Axin GSK3 FWD1
+io:
+  inputs: []
+  outputs: []

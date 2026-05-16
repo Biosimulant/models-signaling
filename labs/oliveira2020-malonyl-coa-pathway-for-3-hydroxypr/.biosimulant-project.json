@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b0822bd7-9a5d-4a57-ba95-b320dc6ee929",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f1adbfa3-0a31-4f4a-83b5-79f6ca54e60c",
+  "created_at": "2026-05-16T05:38:39.116995505+00:00",
+  "last_synced_at": "2026-05-16T10:32:17.675660+00:00",
+  "hub_manifest_hash": "c0deb25e84c47621f346c7be16ed86f6e72dcda94236c6526c9c436638680745",
+  "package_name": "oliveira2020-malonyl-coa-pathway-for-3-hydroxypropionate-product"
+}

@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Harish2009 - nuclear–cytoplasmic ERK oscillation model
+description: This model is based on the supplementary material of the publication
+  “Rapid and sustained nuclear–cytoplasmic ERK oscillations induced by epidermal growth
+  factor This model is an Antimony version of t. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- egfr
+- ras-erk
+authors:
+- Biosimulant Team
+- Harish Shankaran
+- Danielle L Ippolito
+- William B Chrisler
+- Haluk Resat
+- Nikki Bollinger
+upstream:
+  id: biomodels_ebi:MODEL2306170002
+  source_db: biomodels_ebi
+  source_id: MODEL2306170002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2306170002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2306170002?filename=Model
+    of nuclear_cytoplasmic ERK oscillations induced by epidermal growth factor.xml
+  license: CC0
+biosim:
+  entrypoint: src.harish2009_nuclear_cytoplasmic_erk_oscillation_m:Harish2009NuclearCytoplasmicErkOscillationMModel2306170002Model
+  init_kwargs:
+    model_path: data/MODEL2306170002.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_e1_mos_kinase
+    maps_to: signaling_sbml_harish2009_nuclear_cytoplasmic_erk_oscillation_m_model2306170002_model.initial_e1_mos_kinase
+    label: Initial E1 Mos kinase
+    description: Initial level of E1 Mos kinase. Maps to SBML symbol `E1_MKKK`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: cytosolic_phosphorylated_erk
+    maps_to: signaling_sbml_harish2009_nuclear_cytoplasmic_erk_oscillation_m_model2306170002_model.cytosolic_phosphorylated_erk
+    label: cytosolic Phosphorylated ERK
+    description: cytosolic Phosphorylated ERK. Maps to SBML symbol `ERK_c` and is
+      emitted in native SBML units.
+  - name: pp_mapk_kinase_erk_c
+    maps_to: signaling_sbml_harish2009_nuclear_cytoplasmic_erk_oscillation_m_model2306170002_model.pp_mapk_kinase_erk_c
+    label: PP MAPK Kinase ERK C
+    description: PP MAPK Kinase ERK C. Maps to SBML symbol `PP_MKK_ERK_c` and is emitted
+      in native SBML units.
+  - name: p_erk_c
+    maps_to: signaling_sbml_harish2009_nuclear_cytoplasmic_erk_oscillation_m_model2306170002_model.p_erk_c
+    label: P ERK C
+    description: P ERK C. Maps to SBML symbol `P_ERK_c` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_harish2009_nuclear_cytoplasmic_erk_oscillation_m_model2306170002_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_harish2009_nuclear_cytoplasmic_erk_oscillation_m_model2306170002_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_harish2009_nuclear_cytoplasmic_erk_oscillation_m_model2306170002_model.species_labels
+    label: Observable labels

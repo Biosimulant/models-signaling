@@ -1,0 +1,1429 @@
+schema_version: '2.0'
+title: Chen2009 - ErbB Signaling Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Chen2009 - ErbB Signaling.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model
+    title: Chen2009 - ErbB Signaling
+    context: receptor-to-MAPK cascade signaling
+    question: How does Chen2009 - ErbB Signaling propagate receptor or RAS/ERK pathway
+      activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      egf: float
+      erb_b1_atp: float
+      egf_erb_b1_atp: float
+      erb_b2_erb_b3: float
+      erb_b3_erb_b2_p: float
+      erb_b2_erb_b4: float
+      erb_b4_erb_b2_p: float
+      erb_b1_inh: float
+      egf_erb_b1_inh: float
+      egf_erb_b1_atp_egf_erb_b1_inh: float
+      source_2_egf_erb_b1_inh: float
+      source_2_egf_erb_b1_atp: float
+      egf_erb_b1_atp_2: float
+      source_2_egf_erb_b1_atp_2: float
+      source_defined_erbb2_state: float
+      egf_erb_b1_erb_b2: float
+      source_defined_erbb3_state: float
+      egf_erb_b1_erb_b3: float
+      source_defined_erbb4_state: float
+      egf_erb_b1_erb_b4: float
+      source_defined_erbb2_state_2: float
+      egf_erb_b1_erb_b2_2: float
+      source_defined_erbb3_state_2: float
+      egf_erb_b1_erb_b3_2: float
+      source_defined_erbb4_state_2: float
+      egf_erb_b1_erb_b4_2: float
+      egf_erb_b1_inh_er_b2: float
+      egf_erb_b1_inh_er_b3: float
+      egf_erb_b1_inh_er_b4: float
+      erb_b2_inh: float
+      egf_erb_b1_erb_b2_inh: float
+      erb_b4_inh: float
+      egf_erb_b1_erb_b3_p_inh: float
+      erb_b3_inh: float
+      egf_erb_b1_erb_b3_p_inh_2: float
+      atp_1_2e9: float
+      egf_erb_b1_erb_b2_atp: float
+      egf_erb_b1_erb_b3_atp: float
+      egf_erb_b1_erb_b4_atp: float
+      source_2_egf_erb_b1_atp_3: float
+      source_2_egf_erb_b1_atp_full_active: float
+      egf_erb_b1_erb_b2_atp_2: float
+      egf_erb_b1_erb_b3_atp_2: float
+      egf_erb_b1_erb_b4_atp_2: float
+      erb_b2_erb_b2_p: float
+      erb_b2_erb_b2_p_atp: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_atp: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_atp: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_atp: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_atp: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_atp: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_atp: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_atp: float
+      heregulin_erb_b3_erb_b1: float
+      heregulin_erb_b3_erb_b1_atp: float
+      heregulin_erb_b4_erb_b1: float
+      heregulin_erb_b4_erb_b1_atp: float
+      heregulin_erb_b4_erb_b2: float
+      heregulin_erb_b4_erb_b2_atp: float
+      heregulin_erb_b3_erb_b2: float
+      heregulin_erb_b3_erb_b2_atp: float
+      heregulin_erb_b3_erb_b2_2: float
+      heregulin_erb_b3_erb_b2_atp_2: float
+      heregulin_erb_b4_erb_b2_2: float
+      heregulin_erb_b4_erb_b2_atp_2: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein: float
+      source_defined_cpp_state: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_c_pp: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_c_pp: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_c_pp: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_c_pp: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_c_pp: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_c_pp: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_c_pp: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_c_pp: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_c_pp: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_c_pp: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_c_pp: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_c_pp: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_c_pp: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_c_pp: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: float
+      source_defined_cpp_state_2: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_2: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_2: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_2: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_2: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_2: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_2: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_2: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_2: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_2: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_2: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_2: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_2: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_2: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_2: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: float
+      erb_b1_atp_2: float
+      source_2_egf_erb_b1_p: float
+      source_2_egf_erb_b1_p_2: float
+      source_2_egf_erb_b1_p_gap: float
+      source_2_egf_erb_b1_p_gap_2: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_2: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_2: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_2: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_2: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p: float
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_2: float
+      erb_b2_inh_2: float
+      erb_b4_inh_2: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p: float
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_2: float
+      erb_b1_erb_b2_p: float
+      erb_b1_erb_b2_p_2: float
+      erb_b1_erb_b3_p: float
+      erb_b1_erb_b3_p_2: float
+      erb_b1_erb_b4_p: float
+      erb_b1_erb_b4_p_2: float
+      source_2_erb_b2_p: float
+      source_2_erb_b2_p_2: float
+      erb_b3_erb_b2_p_2: float
+      erb_b4_erb_b2_p_2: float
+      source_2_erb_b2_p_gap: float
+      source_2_erb_b2_p_gap_2: float
+      source_2_erb_b2_p_gap_shc_adapter_protein: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_2: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_p: float
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_2: float
+      source_defined_gap_state: float
+      erb_b1_erb_b2_p_gap: float
+      erb_b1_erb_b3_p_gap: float
+      erb_b1_erb_b4_p_gap: float
+      erb_b1_erb_b2_p_gap_2: float
+      erb_b1_erb_b3_p_gap_2: float
+      erb_b1_erb_b4_p_gap_2: float
+      erb_b3_erb_b2_p_gap: float
+      erb_b4_erb_b2_p_gap: float
+      erb_b3_erb_b2_p_gap_2: float
+      erb_b4_erb_b2_p_gap_2: float
+      egf_2: float
+      heregulin: float
+      heregulin_erb_b3: float
+      grb2_adapter_protein: float
+      source_defined_shc_p_state: float
+      shc_adapter_protein_p_grb2_adapter_protein: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_2: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_2: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_2: float
+      sos_guanine_nucleotide_exchange_factor: float
+      ras_gdp: float
+      ras_gtp: float
+      ras_gtp_i: float
+      ras_activated_gtp: float
+      ras_activated_gtp_i: float
+      shc_adapter_protein: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein: float
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_2: float
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_2: float
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_2: float
+      raf: float
+      raf_ras_gtp: float
+      raf_ras_gtp_i: float
+      raf_p_i: float
+      source_defined_raf_p_state: float
+      shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      source_defined_pase1_state: float
+      raf_p_pase1_i: float
+      raf_p_pase1: float
+      mek_p_i: float
+      mek_p_raf_p_i: float
+      mek: float
+      mek_raf_p_i: float
+      mek_raf_p: float
+      source_defined_mek_p_state: float
+      mek_p_raf_p: float
+      mek_pp: float
+      mek_pp_i: float
+      source_defined_pase2_state: float
+      mek_pp_pase2_i: float
+      mek_pp_pase2: float
+      mek_p_pase2: float
+      mek_p_pase2_i: float
+      erk: float
+      erk_mek_pp: float
+      source_defined_erk_p_state: float
+      erk_p_mek_pp: float
+      mek_pp_erk: float
+      erk_p_i: float
+      mek_pp_erk_p: float
+      erk_pp: float
+      erk_pp_i: float
+      source_defined_pase3_state: float
+      erk_pp_pase3: float
+      erk_pp_pase3_i: float
+      erk_p_pase3: float
+      erk_p_pase3_i: float
+      r_degraded: float
+      source_2_erb_b2: float
+      egf_degraded: float
+      heregulin_erb_b3_erb_b1_2: float
+      heregulin_erb_b4_erb_b1_2: float
+      erb_b3_erb_b2: float
+      erb_b4_erb_b2: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_erk_pp: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_erk_pp_2: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_erk_pp: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_erk_pp_2: float
+      erk_pp_sos_guanine_nucleotide_exchange_factor: float
+      erk_pp_sos_guanine_nucleotide_exchange_factor_i: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_p: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_p: float
+      source_defined_sos_p_state: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_p_2: float
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_p_2: float
+      pi3k: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_p: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_p_pi3k: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_pi3k: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_p: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_pi3k: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_p: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_p: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k: float
+      source_defined_pip3_state: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2_2: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2_3: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2_4: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2_5: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2_6: float
+      akt: float
+      phosphorylated_ip3_akt: float
+      phosphorylated_akt: float
+      phosphorylated_ip3_akt_p: float
+      source_defined_pdk1_state: float
+      phosphorylated_ip3_akt_p_pdk1: float
+      phosphorylated_ip3_akt_pdk1: float
+      phosphorylated_ip3_pdk1: float
+      akt_p_p: float
+      source_defined_pase4_state: float
+      akt_p_p_pase4: float
+      akt_p_pase4: float
+      rtk_pase: float
+      erb_b1_erb_b3_p_rtk_pase: float
+      erb_b1_erb_b4_p_rtk_pase: float
+      source_2_egf_erb_b1_p_rtk_pase: float
+      source_2_erb_b2_p_rtk_pase: float
+      erb_b2_erb_b3_p_rtk_pase: float
+      erb_b2_erb_b4_p_rtk_pase: float
+      erb_b1_erb_b2_p_rtk_pase: float
+      erb_b2_p: float
+      source_defined_erbb1_state: float
+      source_defined_inh_state: float
+      egf_erb_b1_p: float
+      erb_b3_p: float
+      erb_b4_p: float
+      erb_b2_erb_b2_inh: float
+      erb_b3_erb_b2_inh: float
+      erb_b4_erb_b2_inh: float
+      erb_b4_inh_erb_b2: float
+      source_defined_shp_state: float
+      source_defined_pip2_state: float
+      phosphorylated_ip3_shp: float
+      source_defined_pten_state: float
+      phosphorylated_ip3_pten: float
+      source_defined_gab1_state: float
+      pi3k_2: float
+      source_defined_shp2_state: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_p_shp2: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_shp2: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_shp2: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_p_shp2: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_shp2: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_p_shp2: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_p_shp2: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_p_erk_pp: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_p_erk_pp_i: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp_i: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_erk_pp: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_erk_pp_i: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_erk_pp: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_erk_pp_i: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp_i: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp_i: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp_i: float
+      erb_b3_4_erb_b2_gab1_p: float
+      source_2_erb_b2_2_gab1_p: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_2: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_2: float
+      erb_b1_erb_b_gab1_p: float
+      source_2_egf_erb_b1_gab1_p: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_pp: float
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_p_pi3k_ras_gdp: float
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_ras_gdp: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_pi3k_ras_gdp: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_pi3k_ras_gdp: float
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_ras_gdp: float
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_ras_gdp: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_ras_gdp: float
+      akt_p_p_raf_p_ser: float
+      akt_p_p_raf_p_ser_i: float
+      raf_p_ser: float
+      mkp_deg: float
+      pase9t: float
+      source_2_egf_erb_b1_gab1_p_pase9t: float
+      source_2_erb_b2_2_gab1_p_pase9t: float
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_pase9t: float
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_pase9t: float
+      erb_b3_4_erb_b2_gab1_p_pase9t: float
+      erb_b1_erb_b_gab1_p_pase9t: float
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_pp_pase9t: float
+      heregulin_2: float
+      heregulin_erb_b3_2: float
+      heregulin_erb_b4: float
+      heregulin_erb_b4_2: float
+      erb_b1_h: float
+      erb_b1_h_inh: float
+      egf_erb_b1_h_inh: float
+      egf_erb_b1_atp_egf_erb_b1_h_inh: float
+      source_2_egf_erb_b1_h_inh: float
+      erb_b1_h_atp: float
+      egf_erb_b1_h_atp: float
+      erb_b1_h_atp_2: float
+      egf_erb_b1_atp_egf_erb_b1_inh_half_active: float
+      egf_erb_b1_atp_egf_erb_b1_h_inh_half_active: float
+      egf_erb_b1_atp_egf_erb_b1_h_atp: float
+      egf_erb_b1_inh_egf_erb_b1_h_atp: float
+      source_2_egf_erb_b1_h_atp_full_active: float
+      egf_erb_b1_atp_egf_erb_b1_h_inh_2: float
+      egf_erb_b1_inh_egf_erb_b1_h_inh: float
+      egf_erb_b1_atp_egf_erb_b1_h_atp_full_active: float
+      egf_erb_b1_inh_egf_erb_b1_h_atp_half_active: float
+      source_2_egf_erb_b1_h_atp_full_active_2: float
+      egf_erb_b1_atp_egf_erb_b1_h_inh_half_active_2: float
+    species_labels:
+      egf: EGF
+      erb_b1_atp: Erb B1 ATP
+      egf_erb_b1_atp: EGF Erb B1 ATP
+      erb_b2_erb_b3: Erb B2 Erb B3
+      erb_b3_erb_b2_p: Erb B3 Erb B2 P
+      erb_b2_erb_b4: Erb B2 Erb B4
+      erb_b4_erb_b2_p: Erb B4 Erb B2 P
+      erb_b1_inh: Erb B1 Inh
+      egf_erb_b1_inh: EGF Erb B1 Inh
+      egf_erb_b1_atp_egf_erb_b1_inh: EGF Erb B1 ATP EGF Erb B1 Inh
+      source_2_egf_erb_b1_inh: 2 EGF Erb B1 Inh
+      source_2_egf_erb_b1_atp: 2 EGF Erb B1 ATP
+      egf_erb_b1_atp_2: EGF Erb B1 ATP
+      source_2_egf_erb_b1_atp_2: 2 EGF Erb B1 ATP
+      source_defined_erbb2_state: source-defined ERBB2 state
+      egf_erb_b1_erb_b2: EGF Erb B1 Erb B2
+      source_defined_erbb3_state: source-defined ERBB3 state
+      egf_erb_b1_erb_b3: EGF Erb B1 Erb B3
+      source_defined_erbb4_state: source-defined ERBB4 state
+      egf_erb_b1_erb_b4: EGF Erb B1 Erb B4
+      source_defined_erbb2_state_2: source-defined ERBB2 state
+      egf_erb_b1_erb_b2_2: EGF Erb B1 Erb B2
+      source_defined_erbb3_state_2: source-defined ERBB3 state
+      egf_erb_b1_erb_b3_2: EGF Erb B1 Erb B3
+      source_defined_erbb4_state_2: source-defined ERBB4 state
+      egf_erb_b1_erb_b4_2: EGF Erb B1 Erb B4
+      egf_erb_b1_inh_er_b2: EGF Erb B1 Inh Er B2
+      egf_erb_b1_inh_er_b3: EGF Erb B1 Inh Er B3
+      egf_erb_b1_inh_er_b4: EGF Erb B1 Inh Er B4
+      erb_b2_inh: Erb B2 Inh
+      egf_erb_b1_erb_b2_inh: EGF Erb B1 Erb B2 Inh
+      erb_b4_inh: Erb B4 Inh
+      egf_erb_b1_erb_b3_p_inh: EGF Erb B1 Erb B3 P Inh
+      erb_b3_inh: Erb B3 Inh
+      egf_erb_b1_erb_b3_p_inh_2: EGF Erb B1 Erb B3 P Inh
+      atp_1_2e9: ATP 1 2e9
+      egf_erb_b1_erb_b2_atp: EGF Erb B1 Erb B2 ATP
+      egf_erb_b1_erb_b3_atp: EGF Erb B1 Erb B3 ATP
+      egf_erb_b1_erb_b4_atp: EGF Erb B1 Erb B4 ATP
+      source_2_egf_erb_b1_atp_3: 2 EGF Erb B1 ATP
+      source_2_egf_erb_b1_atp_full_active: 2 EGF Erb B1 ATP Full active
+      egf_erb_b1_erb_b2_atp_2: EGF Erb B1 Erb B2 ATP
+      egf_erb_b1_erb_b3_atp_2: EGF Erb B1 Erb B3 ATP
+      egf_erb_b1_erb_b4_atp_2: EGF Erb B1 Erb B4 ATP
+      erb_b2_erb_b2_p: Erb B2 Erb B2 P
+      erb_b2_erb_b2_p_atp: Erb B2 Erb B2 P ATP
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1: Erb B1 Erb B2 P GAP Grb2 adapter
+        protein Gab1
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_atp: Erb B1 Erb B2 P GAP Grb2
+        adapter protein Gab1 ATP
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1: Erb B1 Erb B3 P GAP Grb2 adapter
+        protein Gab1
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_atp: Erb B1 Erb B3 P GAP Grb2
+        adapter protein Gab1 ATP
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1: Erb B1 Erb B4 P GAP Grb2 adapter
+        protein Gab1
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_atp: Erb B1 Erb B4 P GAP Grb2
+        adapter protein Gab1 ATP
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1: 2 Erb B2 P GAP Grb2 adapter
+        protein Gab1
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_atp: 2 Erb B2 P GAP Grb2 adapter
+        protein Gab1 ATP
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1: Erb B3 Erb B2 P GAP Grb2 adapter
+        protein Gab1
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_atp: Erb B3 Erb B2 P GAP Grb2
+        adapter protein Gab1 ATP
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1: Erb B4 Erb B2 P GAP Grb2 adapter
+        protein Gab1
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_atp: Erb B4 Erb B2 P GAP Grb2
+        adapter protein Gab1 ATP
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1: 2 EGF Erb B1 P GAP Grb2
+        adapter protein Gab1
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_atp: 2 EGF Erb B1 P GAP
+        Grb2 adapter protein Gab1 ATP
+      heregulin_erb_b3_erb_b1: heregulin Erb B3 Erb B1
+      heregulin_erb_b3_erb_b1_atp: heregulin Erb B3 Erb B1 ATP
+      heregulin_erb_b4_erb_b1: heregulin Erb B4 Erb B1
+      heregulin_erb_b4_erb_b1_atp: heregulin Erb B4 Erb B1 ATP
+      heregulin_erb_b4_erb_b2: heregulin Erb B4 Erb B2
+      heregulin_erb_b4_erb_b2_atp: heregulin Erb B4 Erb B2 ATP
+      heregulin_erb_b3_erb_b2: heregulin Erb B3 Erb B2
+      heregulin_erb_b3_erb_b2_atp: heregulin Erb B3 Erb B2 ATP
+      heregulin_erb_b3_erb_b2_2: heregulin Erb B3 Erb B2
+      heregulin_erb_b3_erb_b2_atp_2: heregulin Erb B3 Erb B2 ATP
+      heregulin_erb_b4_erb_b2_2: heregulin Erb B4 Erb B2
+      heregulin_erb_b4_erb_b2_atp_2: heregulin Erb B4 Erb B2 ATP
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein: 2 EGF Erb B1 P GAP Grb2 adapter
+        protein
+      source_defined_cpp_state: source-defined CPP state
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_c_pp: 2 EGF Erb B1 P GAP Grb2
+        adapter protein C PP
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: 2
+        EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: 2
+        EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        C PP
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: 2
+        EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: 2
+        EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP C PP
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: 2
+        EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: 2
+        EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP C PP
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein: 2 EGF
+        Erb B1 P GAP Shc adapter protein P Grb2 adapter protein
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_c_pp: 2
+        EGF Erb B1 P GAP Shc adapter protein P Grb2 adapter protein C PP
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: 2
+        EGF Erb B1 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: 2
+        EGF Erb B1 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor C PP
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: 2
+        EGF Erb B1 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: 2
+        EGF Erb B1 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP C PP
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: 2
+        EGF Erb B1 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: 2
+        EGF Erb B1 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP C PP
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein: Erb B1 Erb B2
+        P GAP Shc adapter protein P Grb2 adapter protein
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_c_pp: Erb B1
+        Erb B2 P GAP Shc adapter protein P Grb2 adapter protein C PP
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein: Erb B1 Erb B3
+        P GAP Shc adapter protein P Grb2 adapter protein
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_c_pp: Erb B1
+        Erb B3 P GAP Shc adapter protein P Grb2 adapter protein C PP
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein: Erb B1 Erb B4
+        P GAP Shc adapter protein P Grb2 adapter protein
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_c_pp: Erb B1
+        Erb B4 P GAP Shc adapter protein P Grb2 adapter protein C PP
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Erb
+        B1 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: Erb
+        B1 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor C PP
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Erb
+        B1 Erb B3 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: Erb
+        B1 Erb B3 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor C PP
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Erb
+        B1 Erb B4 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: Erb
+        B1 Erb B4 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor C PP
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: Erb
+        B1 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: Erb
+        B1 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP C PP
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: Erb
+        B1 Erb B3 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: Erb
+        B1 Erb B3 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP C PP
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: Erb
+        B1 Erb B4 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: Erb
+        B1 Erb B4 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP C PP
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: Erb
+        B1 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: Erb
+        B1 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP C PP
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: Erb
+        B1 Erb B3 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: Erb
+        B1 Erb B3 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP C PP
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: Erb
+        B1 Erb B4 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: Erb
+        B1 Erb B4 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP C PP
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein: Erb B1 Erb B2 P GAP Grb2 adapter protein
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_c_pp: Erb B1 Erb B2 P GAP Grb2 adapter
+        protein C PP
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein: Erb B1 Erb B3 P GAP Grb2 adapter protein
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_c_pp: Erb B1 Erb B3 P GAP Grb2 adapter
+        protein C PP
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein: Erb B1 Erb B4 P GAP Grb2 adapter protein
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_c_pp: Erb B1 Erb B4 P GAP Grb2 adapter
+        protein C PP
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: Erb
+        B1 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: Erb
+        B1 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP C PP
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: Erb
+        B1 Erb B3 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: Erb
+        B1 Erb B3 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP C PP
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: Erb
+        B1 Erb B4 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: Erb
+        B1 Erb B4 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP C PP
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: Erb
+        B1 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: Erb
+        B1 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP C PP
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: Erb
+        B1 Erb B3 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: Erb
+        B1 Erb B3 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP C PP
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: Erb
+        B1 Erb B4 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: Erb
+        B1 Erb B4 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP C PP
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Erb
+        B1 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: Erb
+        B1 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        C PP
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Erb
+        B1 Erb B3 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: Erb
+        B1 Erb B3 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        C PP
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Erb
+        B1 Erb B4 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: Erb
+        B1 Erb B4 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        C PP
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein: 2 Erb B2 P
+        GAP Shc adapter protein P Grb2 adapter protein
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_c_pp: 2 Erb
+        B2 P GAP Shc adapter protein P Grb2 adapter protein C PP
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: 2
+        Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: 2
+        Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor C PP
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: 2
+        Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: 2
+        Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP C PP
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: 2
+        Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: 2
+        Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP C PP
+      source_2_erb_b2_p_gap_grb2_adapter_protein: 2 Erb B2 P GAP Grb2 adapter protein
+      source_2_erb_b2_p_gap_grb2_adapter_protein_c_pp: 2 Erb B2 P GAP Grb2 adapter
+        protein C PP
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: 2
+        Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: 2
+        Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor C
+        PP
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: 2
+        Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor RAS
+        GDP
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: 2
+        Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor RAS
+        GDP C PP
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: 2
+        Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor RAS
+        GTP
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: 2
+        Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor RAS
+        GTP C PP
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein: Erb B3 Erb B2
+        P GAP Shc adapter protein P Grb2 adapter protein
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_c_pp: Erb B3
+        Erb B2 P GAP Shc adapter protein P Grb2 adapter protein C PP
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein: Erb B4 Erb B2
+        P GAP Shc adapter protein P Grb2 adapter protein
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_c_pp: Erb B4
+        Erb B2 P GAP Shc adapter protein P Grb2 adapter protein C PP
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Erb
+        B4 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: Erb
+        B4 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor C PP
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: Erb
+        B3 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: Erb
+        B3 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP C PP
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: Erb
+        B4 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: Erb
+        B4 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP C PP
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: Erb
+        B3 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: Erb
+        B3 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP C PP
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: Erb
+        B4 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: Erb
+        B4 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP C PP
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein: Erb B3 Erb B2 P GAP Grb2 adapter protein
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_c_pp: Erb B3 Erb B2 P GAP Grb2 adapter
+        protein C PP
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Erb
+        B3 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: Erb
+        B3 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor C PP
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein: Erb B4 Erb B2 P GAP Grb2 adapter protein
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_c_pp: Erb B4 Erb B2 P GAP Grb2 adapter
+        protein C PP
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Erb
+        B3 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: Erb
+        B3 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        C PP
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Erb
+        B4 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_c_pp: Erb
+        B4 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        C PP
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: Erb
+        B3 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: Erb
+        B3 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP C PP
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: Erb
+        B4 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp: Erb
+        B4 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP C PP
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: Erb
+        B3 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: Erb
+        B3 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP C PP
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: Erb
+        B4 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_c_pp: Erb
+        B4 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP C PP
+      source_defined_cpp_state_2: source-defined CPP state
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: Erb
+        B4 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: Erb
+        B3 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: Erb
+        B4 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: Erb
+        B3 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: Erb
+        B4 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: Erb
+        B3 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_2: Erb B4 Erb B2 P GAP Grb2 adapter
+        protein
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: Erb
+        B3 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_2: Erb B3 Erb B2 P GAP Grb2 adapter
+        protein
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: Erb
+        B4 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: Erb
+        B3 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: Erb
+        B4 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: Erb
+        B3 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: Erb
+        B4 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_2: Erb B4 Erb
+        B2 P GAP Shc adapter protein P Grb2 adapter protein
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_2: Erb B3 Erb
+        B2 P GAP Shc adapter protein P Grb2 adapter protein
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: 2
+        Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor RAS
+        GTP
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: 2
+        Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor RAS
+        GDP
+      source_2_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: 2
+        Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      source_2_erb_b2_p_gap_grb2_adapter_protein_2: 2 Erb B2 P GAP Grb2 adapter protein
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: 2
+        Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: 2
+        Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: 2
+        Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_2: 2 Erb B2
+        P GAP Shc adapter protein P Grb2 adapter protein
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: Erb
+        B1 Erb B4 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: Erb
+        B1 Erb B3 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: Erb
+        B1 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: Erb
+        B1 Erb B4 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: Erb
+        B1 Erb B3 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: Erb
+        B1 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: Erb
+        B1 Erb B4 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: Erb
+        B1 Erb B3 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: Erb
+        B1 Erb B2 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_2: Erb B1 Erb B4 P GAP Grb2 adapter
+        protein
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_2: Erb B1 Erb B3 P GAP Grb2 adapter
+        protein
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_2: Erb B1 Erb B2 P GAP Grb2 adapter
+        protein
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: Erb
+        B1 Erb B4 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: Erb
+        B1 Erb B3 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: Erb
+        B1 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: Erb
+        B1 Erb B4 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: Erb
+        B1 Erb B3 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: Erb
+        B1 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: Erb
+        B1 Erb B4 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: Erb
+        B1 Erb B3 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: Erb
+        B1 Erb B2 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_grb2_adapter_protein_2: Erb B1 Erb
+        B4 P GAP Shc adapter protein P Grb2 adapter protein
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_grb2_adapter_protein_2: Erb B1 Erb
+        B3 P GAP Shc adapter protein P Grb2 adapter protein
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_grb2_adapter_protein_2: Erb B1 Erb
+        B2 P GAP Shc adapter protein P Grb2 adapter protein
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: 2
+        EGF Erb B1 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: 2
+        EGF Erb B1 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: 2
+        EGF Erb B1 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_2: 2 EGF
+        Erb B1 P GAP Shc adapter protein P Grb2 adapter protein
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_2: 2
+        EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GTP
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_2: 2
+        EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        RAS GDP
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_2: 2 EGF Erb B1 P GAP Grb2 adapter
+        protein
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_2: 2
+        EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      erb_b1_atp_2: Erb B1 ATP
+      source_2_egf_erb_b1_p: 2 EGF Erb B1 P
+      source_2_egf_erb_b1_p_2: 2 EGF Erb B1 P
+      source_2_egf_erb_b1_p_gap: 2 EGF Erb B1 P GAP
+      source_2_egf_erb_b1_p_gap_2: 2 EGF Erb B1 P GAP
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein: 2 EGF Erb B1 P GAP Shc adapter
+        protein
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_2: 2 EGF Erb B1 P GAP Shc adapter
+        protein
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p: 2 EGF Erb B1 P GAP Shc adapter
+        protein P
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_2: 2 EGF Erb B1 P GAP Shc adapter
+        protein P
+      erb_b3_erb_b2_p_gap_shc_adapter_protein: Erb B3 Erb B2 P GAP Shc adapter protein
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_2: Erb B3 Erb B2 P GAP Shc adapter protein
+      erb_b4_erb_b2_p_gap_shc_adapter_protein: Erb B4 Erb B2 P GAP Shc adapter protein
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_2: Erb B4 Erb B2 P GAP Shc adapter protein
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p: Erb B3 Erb B2 P GAP Shc adapter protein
+        P
+      erb_b3_erb_b2_p_gap_shc_adapter_protein_p_2: Erb B3 Erb B2 P GAP Shc adapter
+        protein P
+      erb_b2_inh_2: Erb B2 Inh
+      erb_b4_inh_2: Erb B4 Inh
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p: Erb B4 Erb B2 P GAP Shc adapter protein
+        P
+      erb_b4_erb_b2_p_gap_shc_adapter_protein_p_2: Erb B4 Erb B2 P GAP Shc adapter
+        protein P
+      erb_b1_erb_b2_p: Erb B1 Erb B2 P
+      erb_b1_erb_b2_p_2: Erb B1 Erb B2 P
+      erb_b1_erb_b3_p: Erb B1 Erb B3 P
+      erb_b1_erb_b3_p_2: Erb B1 Erb B3 P
+      erb_b1_erb_b4_p: Erb B1 Erb B4 P
+      erb_b1_erb_b4_p_2: Erb B1 Erb B4 P
+      source_2_erb_b2_p: 2 Erb B2 P
+      source_2_erb_b2_p_2: 2 Erb B2 P
+      erb_b3_erb_b2_p_2: Erb B3 Erb B2 P
+      erb_b4_erb_b2_p_2: Erb B4 Erb B2 P
+      source_2_erb_b2_p_gap: 2 Erb B2 P GAP
+      source_2_erb_b2_p_gap_2: 2 Erb B2 P GAP
+      source_2_erb_b2_p_gap_shc_adapter_protein: 2 Erb B2 P GAP Shc adapter protein
+      source_2_erb_b2_p_gap_shc_adapter_protein_2: 2 Erb B2 P GAP Shc adapter protein
+      source_2_erb_b2_p_gap_shc_adapter_protein_p: 2 Erb B2 P GAP Shc adapter protein
+        P
+      source_2_erb_b2_p_gap_shc_adapter_protein_p_2: 2 Erb B2 P GAP Shc adapter protein
+        P
+      source_defined_gap_state: source-defined GAP state
+      erb_b1_erb_b2_p_gap: Erb B1 Erb B2 P GAP
+      erb_b1_erb_b3_p_gap: Erb B1 Erb B3 P GAP
+      erb_b1_erb_b4_p_gap: Erb B1 Erb B4 P GAP
+      erb_b1_erb_b2_p_gap_2: Erb B1 Erb B2 P GAP
+      erb_b1_erb_b3_p_gap_2: Erb B1 Erb B3 P GAP
+      erb_b1_erb_b4_p_gap_2: Erb B1 Erb B4 P GAP
+      erb_b3_erb_b2_p_gap: Erb B3 Erb B2 P GAP
+      erb_b4_erb_b2_p_gap: Erb B4 Erb B2 P GAP
+      erb_b3_erb_b2_p_gap_2: Erb B3 Erb B2 P GAP
+      erb_b4_erb_b2_p_gap_2: Erb B4 Erb B2 P GAP
+      egf_2: EGF
+      heregulin: heregulin
+      heregulin_erb_b3: heregulin Erb B3
+      grb2_adapter_protein: Grb2 adapter protein
+      source_defined_shc_p_state: source-defined (SHC_P) state
+      shc_adapter_protein_p_grb2_adapter_protein: Shc adapter protein P Grb2 adapter
+        protein
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p: Erb B1 Erb B2 P GAP Shc adapter protein
+        P
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p: Erb B1 Erb B3 P GAP Shc adapter protein
+        P
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p: Erb B1 Erb B4 P GAP Shc adapter protein
+        P
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_p_2: Erb B1 Erb B2 P GAP Shc adapter
+        protein P
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_p_2: Erb B1 Erb B3 P GAP Shc adapter
+        protein P
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_p_2: Erb B1 Erb B4 P GAP Shc adapter
+        protein P
+      sos_guanine_nucleotide_exchange_factor: SOS guanine-nucleotide exchange factor
+      ras_gdp: RAS GDP
+      ras_gtp: RAS GTP
+      ras_gtp_i: RAS GTP I
+      ras_activated_gtp: RAS Activated GTP
+      ras_activated_gtp_i: RAS Activated GTP I
+      shc_adapter_protein: Shc adapter protein
+      erb_b1_erb_b2_p_gap_shc_adapter_protein: Erb B1 Erb B2 P GAP Shc adapter protein
+      erb_b1_erb_b3_p_gap_shc_adapter_protein: Erb B1 Erb B3 P GAP Shc adapter protein
+      erb_b1_erb_b4_p_gap_shc_adapter_protein: Erb B1 Erb B4 P GAP Shc adapter protein
+      erb_b1_erb_b2_p_gap_shc_adapter_protein_2: Erb B1 Erb B2 P GAP Shc adapter protein
+      erb_b1_erb_b3_p_gap_shc_adapter_protein_2: Erb B1 Erb B3 P GAP Shc adapter protein
+      erb_b1_erb_b4_p_gap_shc_adapter_protein_2: Erb B1 Erb B4 P GAP Shc adapter protein
+      raf: RAF
+      raf_ras_gtp: RAF RAS GTP
+      raf_ras_gtp_i: RAF RAS GTP I
+      raf_p_i: RAF P I
+      source_defined_raf_p_state: source-defined RAF_P state
+      shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Shc
+        adapter protein P Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Grb2 adapter protein
+        SOS guanine-nucleotide exchange factor
+      source_defined_pase1_state: source-defined PASE1 state
+      raf_p_pase1_i: RAF P Pase1 I
+      raf_p_pase1: RAF P Pase1
+      mek_p_i: MEK P I
+      mek_p_raf_p_i: MEK P RAF P I
+      mek: MEK
+      mek_raf_p_i: MEK RAF P I
+      mek_raf_p: MEK RAF P
+      source_defined_mek_p_state: source-defined MEK_P state
+      mek_p_raf_p: MEK P RAF P
+      mek_pp: MEK PP
+      mek_pp_i: MEK PP I
+      source_defined_pase2_state: source-defined PASE2 state
+      mek_pp_pase2_i: MEK PP Pase2 I
+      mek_pp_pase2: MEK PP Pase2
+      mek_p_pase2: MEK P Pase2
+      mek_p_pase2_i: MEK P Pase2 I
+      erk: ERK
+      erk_mek_pp: ERK MEK PP
+      source_defined_erk_p_state: source-defined ERK_P state
+      erk_p_mek_pp: ERK P MEK PP
+      mek_pp_erk: MEK PP ERK
+      erk_p_i: ERK P I
+      mek_pp_erk_p: MEK PP ERK P
+      erk_pp: ERK PP
+      erk_pp_i: ERK PP I
+      source_defined_pase3_state: source-defined PASE3 state
+      erk_pp_pase3: ERK PP Pase3
+      erk_pp_pase3_i: ERK PP Pase3 I
+      erk_p_pase3: ERK P Pase3
+      erk_p_pase3_i: ERK P Pase3 I
+      r_degraded: R Degraded
+      source_2_erb_b2: 2 Erb B2
+      egf_degraded: EGF Degraded
+      heregulin_erb_b3_erb_b1_2: heregulin Erb B3 Erb B1
+      heregulin_erb_b4_erb_b1_2: heregulin Erb B4 Erb B1
+      erb_b3_erb_b2: Erb B3 Erb B2
+      erb_b4_erb_b2: Erb B4 Erb B2
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_erk_pp: 2
+        EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        ERK PP
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_erk_pp_2: 2
+        EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        ERK PP
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_erk_pp: 2
+        EGF Erb B1 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor ERK PP
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_erk_pp_2: 2
+        EGF Erb B1 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor ERK PP
+      erk_pp_sos_guanine_nucleotide_exchange_factor: ERK PP SOS guanine-nucleotide
+        exchange factor
+      erk_pp_sos_guanine_nucleotide_exchange_factor_i: ERK PP SOS guanine-nucleotide
+        exchange factor I
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_p: 2
+        EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        P
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_p: 2
+        EGF Erb B1 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor P
+      source_defined_sos_p_state: source-defined SOS_P state
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_p_2: 2
+        EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+        P
+      source_2_egf_erb_b1_p_gap_shc_adapter_protein_p_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_p_2: 2
+        EGF Erb B1 P GAP Shc adapter protein P Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor P
+      pi3k: PI3K
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_p: 2 EGF Erb B1 P GAP Grb2
+        adapter protein Gab1 P
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_p_pi3k: 2 EGF Erb B1 P GAP
+        Grb2 adapter protein Gab1 P PI3K
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p: Erb B1 Erb B4 P GAP Grb2 adapter
+        protein Gab1 P
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_pi3k: Erb B1 Erb B4 P GAP Grb2
+        adapter protein Gab1 P PI3K
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_p: Erb B1 Erb B2 P GAP Grb2 adapter
+        protein Gab1 P
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k: Erb B1 Erb B2 P GAP Grb2
+        adapter protein Gab1 P PI3K
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p: Erb B1 Erb B3 P GAP Grb2 adapter
+        protein Gab1 P
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_pi3k: Erb B1 Erb B3 P GAP Grb2
+        adapter protein Gab1 P PI3K
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_p: 2 Erb B2 P GAP Grb2 adapter
+        protein Gab1 P
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k: 2 Erb B2 P GAP Grb2
+        adapter protein Gab1 P PI3K
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p: Erb B3 Erb B2 P GAP Grb2 adapter
+        protein Gab1 P
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k: Erb B3 Erb B2 P GAP Grb2
+        adapter protein Gab1 P PI3K
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_p: Erb B4 Erb B2 P GAP Grb2 adapter
+        protein Gab1 P
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k: Erb B4 Erb B2 P GAP Grb2
+        adapter protein Gab1 P PI3K
+      source_defined_pip3_state: source-defined PIP3 state
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2: Erb B3 Erb B2 P GAP
+        Grb2 adapter protein Gab1 P PI3K PIP2
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2: 2 Erb B2 P GAP
+        Grb2 adapter protein Gab1 P PI3K PIP2
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2: 2 EGF Erb B1
+        P GAP Grb2 adapter protein Gab1 P PI3K PIP2
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2: Erb B1 Erb B2 P GAP
+        Grb2 adapter protein Gab1 P PI3K PIP2
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2: Erb B1 Erb B3 P GAP
+        Grb2 adapter protein Gab1 P PI3K PIP2
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2: Erb B1 Erb B4 P GAP
+        Grb2 adapter protein Gab1 P PI3K PIP2
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2_2: Erb B3 Erb B2 P
+        GAP Grb2 adapter protein Gab1 P PI3K PIP2 2
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2_3: Erb B3 Erb B2 P
+        GAP Grb2 adapter protein Gab1 P PI3K PIP2 3
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2_4: Erb B3 Erb B2 P
+        GAP Grb2 adapter protein Gab1 P PI3K PIP2 4
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2_5: Erb B3 Erb B2 P
+        GAP Grb2 adapter protein Gab1 P PI3K PIP2 5
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_pip2_6: Erb B3 Erb B2 P
+        GAP Grb2 adapter protein Gab1 P PI3K PIP2 6
+      akt: AKT
+      phosphorylated_ip3_akt: phosphorylated IP3 AKT
+      phosphorylated_akt: phosphorylated AKT
+      phosphorylated_ip3_akt_p: phosphorylated IP3 AKT P
+      source_defined_pdk1_state: source-defined PDK1 state
+      phosphorylated_ip3_akt_p_pdk1: phosphorylated IP3 AKT P PDK1
+      phosphorylated_ip3_akt_pdk1: phosphorylated IP3 AKT PDK1
+      phosphorylated_ip3_pdk1: phosphorylated IP3 PDK1
+      akt_p_p: AKT P P
+      source_defined_pase4_state: source-defined PASE4 state
+      akt_p_p_pase4: AKT P P Pase4
+      akt_p_pase4: AKT P Pase4
+      rtk_pase: RTK Pase
+      erb_b1_erb_b3_p_rtk_pase: Erb B1 Erb B3 P RTK Pase
+      erb_b1_erb_b4_p_rtk_pase: Erb B1 Erb B4 P RTK Pase
+      source_2_egf_erb_b1_p_rtk_pase: 2 EGF Erb B1 P RTK Pase
+      source_2_erb_b2_p_rtk_pase: 2 Erb B2 P RTK Pase
+      erb_b2_erb_b3_p_rtk_pase: Erb B2 Erb B3 P RTK Pase
+      erb_b2_erb_b4_p_rtk_pase: Erb B2 Erb B4 P RTK Pase
+      erb_b1_erb_b2_p_rtk_pase: Erb B1 Erb B2 P RTK Pase
+      erb_b2_p: Erb B2 P
+      source_defined_erbb1_state: source-defined ERBB1 state
+      source_defined_inh_state: source-defined INH state
+      egf_erb_b1_p: EGF Erb B1 P
+      erb_b3_p: Erb B3 P
+      erb_b4_p: Erb B4 P
+      erb_b2_erb_b2_inh: Erb B2 Erb B2 Inh
+      erb_b3_erb_b2_inh: Erb B3 Erb B2 Inh
+      erb_b4_erb_b2_inh: Erb B4 Erb B2 Inh
+      erb_b4_inh_erb_b2: Erb B4 Inh Erb B2
+      source_defined_shp_state: source-defined SHP state
+      source_defined_pip2_state: source-defined PIP2 state
+      phosphorylated_ip3_shp: phosphorylated IP3 Shp
+      source_defined_pten_state: source-defined PTEN state
+      phosphorylated_ip3_pten: phosphorylated IP3 PTEN
+      source_defined_gab1_state: source-defined GAB1 state
+      pi3k_2: PI3K
+      source_defined_shp2_state: source-defined SHP2 state
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_p_shp2: Erb B1 Erb B2 P GAP Grb2
+        adapter protein Gab1 P Shp2
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_shp2: Erb B1 Erb B3 P GAP Grb2
+        adapter protein Gab1 P Shp2
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_shp2: Erb B1 Erb B4 P GAP Grb2
+        adapter protein Gab1 P Shp2
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_p_shp2: 2 Erb B2 P GAP Grb2
+        adapter protein Gab1 P Shp2
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_shp2: Erb B3 Erb B2 P GAP Grb2
+        adapter protein Gab1 P Shp2
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_p_shp2: Erb B4 Erb B2 P GAP Grb2
+        adapter protein Gab1 P Shp2
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_p_shp2: 2 EGF Erb B1 P GAP
+        Grb2 adapter protein Gab1 P Shp2
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_p_erk_pp: 2 EGF Erb B1 P
+        GAP Grb2 adapter protein Gab1 P ERK PP
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_p_erk_pp_i: 2 EGF Erb B1
+        P GAP Grb2 adapter protein Gab1 P ERK PP I
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp: Erb B1 Erb B2 P GAP
+        Grb2 adapter protein Gab1 P ERK PP
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp_i: Erb B1 Erb B2 P GAP
+        Grb2 adapter protein Gab1 P ERK PP I
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_erk_pp: Erb B1 Erb B3 P GAP
+        Grb2 adapter protein Gab1 P ERK PP
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_erk_pp_i: Erb B1 Erb B3 P GAP
+        Grb2 adapter protein Gab1 P ERK PP I
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_erk_pp: Erb B1 Erb B4 P GAP
+        Grb2 adapter protein Gab1 P ERK PP
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_erk_pp_i: Erb B1 Erb B4 P GAP
+        Grb2 adapter protein Gab1 P ERK PP I
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp: 2 Erb B2 P GAP Grb2
+        adapter protein Gab1 P ERK PP
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp_i: 2 Erb B2 P GAP Grb2
+        adapter protein Gab1 P ERK PP I
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp: Erb B3 Erb B2 P GAP
+        Grb2 adapter protein Gab1 P ERK PP
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp_i: Erb B3 Erb B2 P GAP
+        Grb2 adapter protein Gab1 P ERK PP I
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp: Erb B4 Erb B2 P GAP
+        Grb2 adapter protein Gab1 P ERK PP
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_p_erk_pp_i: Erb B4 Erb B2 P GAP
+        Grb2 adapter protein Gab1 P ERK PP I
+      erb_b3_4_erb_b2_gab1_p: Erb B3 4 Erb B2 Gab1 P
+      source_2_erb_b2_2_gab1_p: 2 Erb B2 2 Gab1 P
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_2: Erb B1 Erb B4 P GAP Grb2
+        adapter protein Gab1 P
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_2: Erb B1 Erb B3 P GAP Grb2
+        adapter protein Gab1 P
+      erb_b1_erb_b_gab1_p: Erb B1 Erb B Gab1 P
+      source_2_egf_erb_b1_gab1_p: 2 EGF Erb B1 Gab1 P
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_pp: Erb B4 Erb B2 P GAP Grb2 adapter
+        protein Gab1 PP
+      source_2_egf_erb_b1_p_gap_grb2_adapter_protein_gab1_p_pi3k_ras_gdp: 2 EGF Erb
+        B1 P GAP Grb2 adapter protein Gab1 P PI3K RAS GDP
+      erb_b1_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_ras_gdp: Erb B1 Erb B2
+        P GAP Grb2 adapter protein Gab1 P PI3K RAS GDP
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_pi3k_ras_gdp: Erb B1 Erb B3
+        P GAP Grb2 adapter protein Gab1 P PI3K RAS GDP
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_pi3k_ras_gdp: Erb B1 Erb B4
+        P GAP Grb2 adapter protein Gab1 P PI3K RAS GDP
+      source_2_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_ras_gdp: 2 Erb B2 P GAP
+        Grb2 adapter protein Gab1 P PI3K RAS GDP
+      erb_b3_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_ras_gdp: Erb B3 Erb B2
+        P GAP Grb2 adapter protein Gab1 P PI3K RAS GDP
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_p_pi3k_ras_gdp: Erb B4 Erb B2
+        P GAP Grb2 adapter protein Gab1 P PI3K RAS GDP
+      akt_p_p_raf_p_ser: AKT P P RAF P Ser
+      akt_p_p_raf_p_ser_i: AKT P P RAF P Ser I
+      raf_p_ser: RAF P Ser
+      mkp_deg: MKP Deg
+      pase9t: Pase9t
+      source_2_egf_erb_b1_gab1_p_pase9t: 2 EGF Erb B1 Gab1 P Pase9t
+      source_2_erb_b2_2_gab1_p_pase9t: 2 Erb B2 2 Gab1 P Pase9t
+      erb_b1_erb_b3_p_gap_grb2_adapter_protein_gab1_p_pase9t: Erb B1 Erb B3 P GAP
+        Grb2 adapter protein Gab1 P Pase9t
+      erb_b1_erb_b4_p_gap_grb2_adapter_protein_gab1_p_pase9t: Erb B1 Erb B4 P GAP
+        Grb2 adapter protein Gab1 P Pase9t
+      erb_b3_4_erb_b2_gab1_p_pase9t: Erb B3 4 Erb B2 Gab1 P Pase9t
+      erb_b1_erb_b_gab1_p_pase9t: Erb B1 Erb B Gab1 P Pase9t
+      erb_b4_erb_b2_p_gap_grb2_adapter_protein_gab1_pp_pase9t: Erb B4 Erb B2 P GAP
+        Grb2 adapter protein Gab1 PP Pase9t
+      heregulin_2: heregulin
+      heregulin_erb_b3_2: heregulin Erb B3
+      heregulin_erb_b4: heregulin Erb B4
+      heregulin_erb_b4_2: heregulin Erb B4
+      erb_b1_h: Erb B1 H
+      erb_b1_h_inh: Erb B1 H Inh
+      egf_erb_b1_h_inh: EGF Erb B1 H Inh
+      egf_erb_b1_atp_egf_erb_b1_h_inh: EGF Erb B1 ATP EGF Erb B1 H Inh
+      source_2_egf_erb_b1_h_inh: 2 EGF Erb B1 H Inh
+      erb_b1_h_atp: Erb B1 H ATP
+      egf_erb_b1_h_atp: EGF Erb B1 H ATP
+      erb_b1_h_atp_2: Erb B1 H ATP
+      egf_erb_b1_atp_egf_erb_b1_inh_half_active: EGF Erb B1 ATP EGF Erb B1 Inh Half
+        active
+      egf_erb_b1_atp_egf_erb_b1_h_inh_half_active: EGF Erb B1 ATP EGF Erb B1 H Inh
+        Half active
+      egf_erb_b1_atp_egf_erb_b1_h_atp: EGF Erb B1 ATP EGF Erb B1 H ATP
+      egf_erb_b1_inh_egf_erb_b1_h_atp: EGF Erb B1 Inh EGF Erb B1 H ATP
+      source_2_egf_erb_b1_h_atp_full_active: 2 EGF Erb B1 H ATP Full active
+      egf_erb_b1_atp_egf_erb_b1_h_inh_2: EGF Erb B1 ATP EGF Erb B1 H Inh
+      egf_erb_b1_inh_egf_erb_b1_h_inh: EGF Erb B1 Inh EGF Erb B1 H Inh
+      egf_erb_b1_atp_egf_erb_b1_h_atp_full_active: EGF Erb B1 ATP EGF Erb B1 H ATP
+        Full active
+      egf_erb_b1_inh_egf_erb_b1_h_atp_half_active: EGF Erb B1 Inh EGF Erb B1 H ATP
+        Half active
+      source_2_egf_erb_b1_h_atp_full_active_2: 2 EGF Erb B1 H ATP Full active
+      egf_erb_b1_atp_egf_erb_b1_h_inh_half_active_2: EGF Erb B1 ATP EGF Erb B1 H Inh
+        Half active
+io:
+  inputs: []
+  outputs: []

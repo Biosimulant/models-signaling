@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Brännmark2013 - Insulin signalling in human adipocytes (diabetic condition)
+description: Brännmark2013 - Insulin signalling in human adipocytes (diabetic condition)
+  The paper describes insulin signalling in human adipocytes under normal and diabetic
+  states using mathematical models based. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+- hormone-signaling
+authors:
+- Biosimulant Team
+- Cecilia Brännmark
+- Elin Nyman
+- Siri Fagerholm
+- Linnéa Bergenholm
+- Eva-Maria Ekstrand
+upstream:
+  id: biomodels_ebi:BIOMD0000000449
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000449
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000449
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000449?filename=BIOMD0000000449_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.br_nnmark2013_insulin_signalling_in_human_adipoc_biomd0000000449:BrNnmark2013InsulinSignallingInHumanAdipocBiomd0000000449Model
+  init_kwargs:
+    model_path: data/BIOMD0000000449.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_insulin_level
+    maps_to: signaling_sbml_br_nnmark2013_insulin_signalling_in_human_adipoc_biomd0000000449_model.initial_insulin_level
+    label: Insulin
+    description: Insulin source parameter. Maps to SBML symbol `insulin` and preserves
+      the bundled default.
+  - name: initial_scale_glucose_level
+    maps_to: signaling_sbml_br_nnmark2013_insulin_signalling_in_human_adipoc_biomd0000000449_model.initial_scale_glucose_level
+    label: Scale GLUCOSE
+    description: Scale GLUCOSE source parameter. Maps to SBML symbol `scaleGLUCOSE`
+      and preserves the bundled default.
+  outputs:
+  - name: phosphorylated_insulin_receptor
+    maps_to: signaling_sbml_br_nnmark2013_insulin_signalling_in_human_adipoc_biomd0000000449_model.phosphorylated_insulin_receptor
+    label: phosphorylated insulin receptor
+    description: phosphorylated insulin receptor. Maps to SBML symbol `IRp` and is
+      emitted in native SBML units.
+  - name: insulin_bound_insulin_receptor
+    maps_to: signaling_sbml_br_nnmark2013_insulin_signalling_in_human_adipoc_biomd0000000449_model.insulin_bound_insulin_receptor
+    label: insulin-bound insulin receptor
+    description: insulin-bound insulin receptor. Maps to SBML symbol `IRins` and is
+      emitted in native SBML units.
+  - name: internalized_phosphorylated_insulin_receptor
+    maps_to: signaling_sbml_br_nnmark2013_insulin_signalling_in_human_adipoc_biomd0000000449_model.internalized_phosphorylated_insulin_receptor
+    label: internalized phosphorylated insulin receptor
+    description: internalized phosphorylated insulin receptor. Maps to SBML symbol
+      `IRip` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_br_nnmark2013_insulin_signalling_in_human_adipoc_biomd0000000449_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_br_nnmark2013_insulin_signalling_in_human_adipoc_biomd0000000449_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_br_nnmark2013_insulin_signalling_in_human_adipoc_biomd0000000449_model.species_labels
+    label: Observable labels

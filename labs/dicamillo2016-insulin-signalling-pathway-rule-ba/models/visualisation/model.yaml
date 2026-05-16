@@ -1,0 +1,173 @@
+schema_version: '2.0'
+title: DiCamillo2016 - Insulin signalling pathway - Rule-based model Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+- hormone-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_dicamillo2016_insulin_signalling_pathway_rule_ba_biomd0000000833_model
+    title: DiCamillo2016 - Insulin signalling pathway - Rule-based model
+    context: metabolic and hormone signaling response
+    question: How does DiCamillo2016 - Insulin signalling pathway - Rule-based model
+      shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_i_bs_state: float
+      insulin_receptor_npxy_y999_u_alpha_beta_response_parameter_loc_m: float
+      insulin_receptor_npxy_y999_u_alpha_beta_response_parameter_loc_c: float
+      irs1_s636_u_y_u_y896_yxxm: float
+      pi3k_sh2: float
+      pi3k_variant_y_u: float
+      pi45: float
+      pi345: float
+      pi34: float
+      pkc_t410_u: float
+      glut4_loc_c: float
+      glut4_loc_m: float
+      amino_acids: float
+      ampk_t172_u: float
+      akt_s474_u_t309_u: float
+      m_torc1_s2448_u: float
+      m_torc2_s2481_u: float
+      p70s6k_t389_u: float
+      tsc1_tsc2_s1387_u_t1462_p: float
+      gs_sh2_state_a: float
+      ras_gap_bs: float
+      shp2_sh2: float
+      src_state_i: float
+      ras_state_gdp: float
+      raf_state_i: float
+      mek_s218_s222_u: float
+      erk_t202_t185_u_y204_y187_u: float
+      synth_g4: float
+      synth_insulin_receptor: float
+      i_bs_1_insulin_receptor_npxy_y999_u_alpha_1_beta_response_parameter_loc_m: float
+      source_defined_degr_state: float
+      irs1_s636_u_y_p_y896_yxxm: float
+      irs1_s636_p_y_u_y896_yxxm: float
+      akt_s474_u_t309_p: float
+      pkc_t410_p: float
+      pi3k_variant_y_p: float
+      ampk_t172_p: float
+      akt_s474_p_t309_u: float
+      tsc1_tsc2_s1387_p_t1462_u: float
+      m_torc1_s2448_p: float
+      m_torc2_s2481_p: float
+      p70s6k_t389_p: float
+      src_state_a: float
+      ras_state_gtp: float
+      raf_state_a: float
+      mek_s218_s222_p: float
+      erk_t202_t185_p_y204_y187_u: float
+      gs_sh2_state_i: float
+      i_bs_1_insulin_receptor_npxy_y999_p_alpha_1_beta_response_parameter_loc_m: float
+      irs1_s636_u_y_p_y896_yxxm_1_pi3k_sh2_1: float
+      akt_s474_p_t309_p: float
+      gs_sh2_1_state_a_irs1_s636_u_y_p_y896_1_yxxm: float
+      irs1_s636_u_y_p_y896_1_yxxm_shp2_sh2_1: float
+      raf_state_aa: float
+      erk_t202_t185_p_y204_y187_p: float
+      i_bs_1_i_bs_2_insulin_receptor_npxy_y999_p_alpha_1_beta_response_parameter_2_loc_m: float
+      i_bs_1_insulin_receptor_npxy_y999_p_alpha_1_beta_response_parameter_loc_c: float
+      i_bs_1_insulin_receptor_npxy_2_y999_p_alpha_1_beta_response_parameter_loc_m_ras_gap_bs_2: float
+      gs_sh2_1_state_a_irs1_s636_u_y_p_y896_1_yxxm_2_pi3k_sh2_2: float
+      i_bs_1_i_bs_2_insulin_receptor_npxy_y999_p_alpha_1_beta_response_parameter_2_loc_c: float
+      i_bs_1_i_bs_2_insulin_receptor_npxy_3_y999_p_alpha_1_beta_response_parameter_2_loc_m_ras_gap_bs_3: float
+    species_labels:
+      source_defined_i_bs_state: source-defined I(BS) state
+      insulin_receptor_npxy_y999_u_alpha_beta_response_parameter_loc_m: insulin receptor
+        NPXY Y999 U Alpha beta response parameter Loc M
+      insulin_receptor_npxy_y999_u_alpha_beta_response_parameter_loc_c: insulin receptor
+        NPXY Y999 U Alpha beta response parameter Loc C
+      irs1_s636_u_y_u_y896_yxxm: IRS1 S636 U Y U Y896 YXXM
+      pi3k_sh2: PI3K SH2
+      pi3k_variant_y_u: PI3K Variant Y U
+      pi45: PI45
+      pi345: PI345
+      pi34: PI34
+      pkc_t410_u: PKC T410 U
+      glut4_loc_c: GLUT4 Loc C
+      glut4_loc_m: GLUT4 Loc M
+      amino_acids: Amino Acids
+      ampk_t172_u: AMPK T172 U
+      akt_s474_u_t309_u: AKT S474 U T309 U
+      m_torc1_s2448_u: M TORC1 S2448 U
+      m_torc2_s2481_u: M TORC2 S2481 U
+      p70s6k_t389_u: P70s6k T389 U
+      tsc1_tsc2_s1387_u_t1462_p: TSC1 TSC2 S1387 U T1462 P
+      gs_sh2_state_a: GS SH2 State A
+      ras_gap_bs: RAS GAP Bs
+      shp2_sh2: SHP2 SH2
+      src_state_i: Src State I
+      ras_state_gdp: RAS State GDP
+      raf_state_i: RAF State I
+      mek_s218_s222_u: MEK S218 S222 U
+      erk_t202_t185_u_y204_y187_u: ERK T202 T185 U Y204 Y187 U
+      synth_g4: Synth G4
+      synth_insulin_receptor: Synth insulin receptor
+      i_bs_1_insulin_receptor_npxy_y999_u_alpha_1_beta_response_parameter_loc_m: I
+        Bs 1 insulin receptor NPXY Y999 U Alpha 1 beta response parameter Loc M
+      source_defined_degr_state: source-defined DEGR() state
+      irs1_s636_u_y_p_y896_yxxm: IRS1 S636 U Y P Y896 YXXM
+      irs1_s636_p_y_u_y896_yxxm: IRS1 S636 P Y U Y896 YXXM
+      akt_s474_u_t309_p: AKT S474 U T309 P
+      pkc_t410_p: PKC T410 P
+      pi3k_variant_y_p: PI3K Variant Y P
+      ampk_t172_p: AMPK T172 P
+      akt_s474_p_t309_u: AKT S474 P T309 U
+      tsc1_tsc2_s1387_p_t1462_u: TSC1 TSC2 S1387 P T1462 U
+      m_torc1_s2448_p: M TORC1 S2448 P
+      m_torc2_s2481_p: M TORC2 S2481 P
+      p70s6k_t389_p: P70s6k T389 P
+      src_state_a: Src State A
+      ras_state_gtp: RAS State GTP
+      raf_state_a: RAF State A
+      mek_s218_s222_p: MEK S218 S222 P
+      erk_t202_t185_p_y204_y187_u: ERK T202 T185 P Y204 Y187 U
+      gs_sh2_state_i: GS SH2 State I
+      i_bs_1_insulin_receptor_npxy_y999_p_alpha_1_beta_response_parameter_loc_m: I
+        Bs 1 insulin receptor NPXY Y999 P Alpha 1 beta response parameter Loc M
+      irs1_s636_u_y_p_y896_yxxm_1_pi3k_sh2_1: IRS1 S636 U Y P Y896 YXXM 1 PI3K SH2
+        1
+      akt_s474_p_t309_p: AKT S474 P T309 P
+      gs_sh2_1_state_a_irs1_s636_u_y_p_y896_1_yxxm: GS SH2 1 State A IRS1 S636 U Y
+        P Y896 1 YXXM
+      irs1_s636_u_y_p_y896_1_yxxm_shp2_sh2_1: IRS1 S636 U Y P Y896 1 YXXM SHP2 SH2
+        1
+      raf_state_aa: RAF State Aa
+      erk_t202_t185_p_y204_y187_p: ERK T202 T185 P Y204 Y187 P
+      i_bs_1_i_bs_2_insulin_receptor_npxy_y999_p_alpha_1_beta_response_parameter_2_loc_m: I
+        Bs 1 I Bs 2 insulin receptor NPXY Y999 P Alpha 1 beta response parameter 2
+        Loc M
+      i_bs_1_insulin_receptor_npxy_y999_p_alpha_1_beta_response_parameter_loc_c: I
+        Bs 1 insulin receptor NPXY Y999 P Alpha 1 beta response parameter Loc C
+      i_bs_1_insulin_receptor_npxy_2_y999_p_alpha_1_beta_response_parameter_loc_m_ras_gap_bs_2: I
+        Bs 1 insulin receptor NPXY 2 Y999 P Alpha 1 beta response parameter Loc M
+        RAS GAP Bs 2
+      gs_sh2_1_state_a_irs1_s636_u_y_p_y896_1_yxxm_2_pi3k_sh2_2: GS SH2 1 State A
+        IRS1 S636 U Y P Y896 1 YXXM 2 PI3K SH2 2
+      i_bs_1_i_bs_2_insulin_receptor_npxy_y999_p_alpha_1_beta_response_parameter_2_loc_c: I
+        Bs 1 I Bs 2 insulin receptor NPXY Y999 P Alpha 1 beta response parameter 2
+        Loc C
+      i_bs_1_i_bs_2_insulin_receptor_npxy_3_y999_p_alpha_1_beta_response_parameter_2_loc_m_ras_gap_bs_3: I
+        Bs 1 I Bs 2 insulin receptor NPXY 3 Y999 P Alpha 1 beta response parameter
+        2 Loc M RAS GAP Bs 3
+io:
+  inputs: []
+  outputs: []

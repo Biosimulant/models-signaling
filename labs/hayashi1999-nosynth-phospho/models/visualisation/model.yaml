@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Hayashi1999_NOSynth_Phospho Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Hayashi1999_NOSynth_Phospho.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- neuroscience
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model
+    title: Hayashi1999_NOSynth_Phospho
+    context: phosphorylation and regulatory motif dynamics
+    question: How does Hayashi1999 NOSynth Phospho express its source-modeled signaling
+      motif over the baseline run?
+    visual_scope: phosphorylation and regulatory motif dynamics
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      nos_nnos: float
+      nos_nos_active: float
+      nos_calcium_calcium_mn_nos: float
+      nos_calcium_calcium_mn_nos_kenz_kenz_cplx: float
+      nos_no: float
+      nos_cit: float
+      nos_larg: float
+      nos_calcium_mkiv_kenz_kenz_cplx: float
+      nos_calcium_mkiialpha_kenz_kenz_cplx: float
+      nos_calcium_mkialpha_kenz_kenz_cplx: float
+      nos_calcium_mkiv: float
+      nos_calcium_mkiialpha: float
+      nos_calcium_mkialpha: float
+      nos_calcium_m_ca4: float
+    species_labels:
+      nos_nnos: NOS NNOS
+      nos_nos_active: NOS NOS active
+      nos_calcium_calcium_mn_nos: NOS Calcium Calcium Mn NOS
+      nos_calcium_calcium_mn_nos_kenz_kenz_cplx: NOS Calcium Calcium Mn NOS Kenz Kenz
+        Cplx
+      nos_no: NOS NO
+      nos_cit: NOS Cit
+      nos_larg: NOS Larg
+      nos_calcium_mkiv_kenz_kenz_cplx: NOS Calcium MKIV Kenz Kenz Cplx
+      nos_calcium_mkiialpha_kenz_kenz_cplx: NOS Calcium Mkiialpha Kenz Kenz Cplx
+      nos_calcium_mkialpha_kenz_kenz_cplx: NOS Calcium Mkialpha Kenz Kenz Cplx
+      nos_calcium_mkiv: NOS Calcium MKIV
+      nos_calcium_mkiialpha: NOS Calcium Mkiialpha
+      nos_calcium_mkialpha: NOS Calcium Mkialpha
+      nos_calcium_m_ca4: NOS Calcium M CA4
+io:
+  inputs: []
+  outputs: []

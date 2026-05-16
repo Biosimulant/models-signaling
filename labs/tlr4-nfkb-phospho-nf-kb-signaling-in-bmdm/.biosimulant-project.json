@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4ec27e98-95af-4e9d-b3e1-7678834a171f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "91bea0d3-3521-4533-a929-58a78972196c",
+  "created_at": "2026-05-16T05:58:28.319564880+00:00",
+  "last_synced_at": "2026-05-16T11:17:13.583122+00:00",
+  "hub_manifest_hash": "13955f07b4e7aef3cee11279b6592fa1731209ef84937318b275c350e7d13a92",
+  "package_name": "tlr4-nfkb-phospho-nf-kb-signaling-in-bmdm-lab"
+}

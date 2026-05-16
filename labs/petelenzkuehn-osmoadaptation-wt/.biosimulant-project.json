@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "04b55136-18c4-4f8b-a8cb-70e89debab76",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f2c728a7-050b-4168-bfa6-af26ac1d1a84",
+  "created_at": "2026-05-16T05:49:39.118360067+00:00",
+  "last_synced_at": "2026-05-16T10:41:20.575666+00:00",
+  "hub_manifest_hash": "5f06d83017c397a20f6353fb88f8ed550d5581271a7cf4fdebb651b91625a216",
+  "package_name": "petelenzkuehn-osmoadaptation-wt-lab"
+}

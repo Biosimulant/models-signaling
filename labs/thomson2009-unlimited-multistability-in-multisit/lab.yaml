@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Thomson2009 – Unlimited multistability in multisite phosphorylation systems
+  Lab
+description: 'Clean Biosimulant lab for systems signaling model: Thomson2009 – Unlimited
+  multistability in multisite phosphorylation systems. Values are native SBML quantities;
+  equations, parameters, and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model.state
+  to:
+  - visualisation.signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model_state
+- from: signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model.summary
+  to:
+  - visualisation.signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model_summary
+- from: signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model.species_labels
+  to:
+  - visualisation.signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_source_defined_e_state
+    maps_to: signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model.initial_source_defined_e_state
+    label: Initial source-defined E state
+    description: Initial level of source-defined E state. Maps to SBML symbol `E`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_es0_state
+    maps_to: signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model.source_defined_es0_state
+    label: Source Defined ES0 State
+    description: Source Defined ES0 State. Maps to SBML symbol `ES0` and is emitted
+      in native SBML units.
+  - name: source_defined_es1_state
+    maps_to: signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model.source_defined_es1_state
+    label: Source Defined ES1 State
+    description: Source Defined ES1 State. Maps to SBML symbol `ES1` and is emitted
+      in native SBML units.
+  - name: source_defined_es2_state
+    maps_to: signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model.source_defined_es2_state
+    label: Source Defined ES2 State
+    description: Source Defined ES2 State. Maps to SBML symbol `ES2` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_thomson2009_unlimited_multistability_in_multisit_model2002110001_model.species_labels
+    label: Observable labels

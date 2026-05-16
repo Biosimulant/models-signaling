@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e1dc61bc-3ab7-4ee0-bb82-938c18eaed1b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a24c3af8-9466-4414-83c7-c9ec3f3a4251",
+  "created_at": "2026-05-16T05:38:38.950753698+00:00",
+  "last_synced_at": "2026-05-16T12:25:35.197819+00:00",
+  "hub_manifest_hash": "eed2bf848ffb951ff2492990c789f7a0bbef528787cffecbc8cc9b2636bc2267",
+  "package_name": "model2010030005-oliveira2020-glycerol-pathway-for-3-hydroxypropi"
+}

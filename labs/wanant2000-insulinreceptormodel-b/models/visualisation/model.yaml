@@ -1,0 +1,53 @@
+schema_version: '2.0'
+title: Wanant2000_InsulinReceptorModel_B Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- metabolic-signaling
+- hormone-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_wanant2000_insulinreceptormodel_b_model1201140006_model
+    title: Wanant2000_InsulinReceptorModel_B
+    context: GPCR and cAMP/PKA signaling
+    question: How does Wanant2000 InsulinReceptorModel B route receptor activity into
+      cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_x1_state: float
+      source_defined_x2_state: float
+      source_defined_x3_state: float
+      source_defined_x4_state: float
+      source_defined_x5_state: float
+      source_defined_x6_state: float
+      source_defined_x7_state: float
+      source_defined_x8_state: float
+      source_defined_x9_state: float
+    species_labels:
+      source_defined_x1_state: Source Defined X1 State
+      source_defined_x2_state: Source Defined X2 State
+      source_defined_x3_state: Source Defined X3 State
+      source_defined_x4_state: Source Defined X4 State
+      source_defined_x5_state: Source Defined X5 State
+      source_defined_x6_state: Source Defined X6 State
+      source_defined_x7_state: Source Defined X7 State
+      source_defined_x8_state: Source Defined X8 State
+      source_defined_x9_state: Source Defined X9 State
+io:
+  inputs: []
+  outputs: []

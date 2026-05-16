@@ -1,0 +1,83 @@
+schema_version: '2.0'
+title: Reiterer2013 - pseudophosphatase STYX role in ERK signalling Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_reiterer2013_pseudophosphatase_styx_role_in_erk_biomd0000000557_model
+    title: Reiterer2013 - pseudophosphatase STYX role in ERK signalling
+    context: receptor-to-MAPK cascade signaling
+    question: How does Reiterer2013 - pseudophosphatase STYX role in ERK signalling
+      propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      cytosolic_phosphorylated_erk: float
+      p_erkc: float
+      pp_erkc: float
+      erk_pp_mekc: float
+      p_erk_pp_mekc: float
+      duspc: float
+      p_erk_duspc: float
+      pp_erk_duspc: float
+      nuclear_phosphorylated_erk: float
+      p_erkn: float
+      pp_erkn: float
+      p_erk_duspn: float
+      pp_erk_duspn: float
+      styxn: float
+      erk_styxn: float
+      p_erk_styxn: float
+      pp_erk_styxn: float
+      duspn: float
+      duspn_2: float
+      u_pp_mekc_tot: float
+      pp_mekc_tot: float
+      erkc_obs: float
+      p_erkc_obs: float
+      pp_erkc_obs: float
+      erk_pp_mekc_obs: float
+    species_labels:
+      cytosolic_phosphorylated_erk: cytosolic phosphorylated ERK
+      p_erkc: P Erkc
+      pp_erkc: Pp Erkc
+      erk_pp_mekc: ERK Pp Mekc
+      p_erk_pp_mekc: P ERK Pp Mekc
+      duspc: Duspc
+      p_erk_duspc: P ERK Duspc
+      pp_erk_duspc: Pp ERK Duspc
+      nuclear_phosphorylated_erk: nuclear phosphorylated ERK
+      p_erkn: P Erkn
+      pp_erkn: Pp Erkn
+      p_erk_duspn: P ERK Duspn
+      pp_erk_duspn: Pp ERK Duspn
+      styxn: Styxn
+      erk_styxn: ERK Styxn
+      p_erk_styxn: P ERK Styxn
+      pp_erk_styxn: Pp ERK Styxn
+      duspn: Duspn
+      duspn_2: Duspn
+      u_pp_mekc_tot: U Pp Mekc Tot
+      pp_mekc_tot: Pp Mekc Tot
+      erkc_obs: Erkc Obs
+      p_erkc_obs: P Erkc Obs
+      pp_erkc_obs: Pp Erkc Obs
+      erk_pp_mekc_obs: ERK Pp Mekc Obs
+io:
+  inputs: []
+  outputs: []

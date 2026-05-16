@@ -1,0 +1,39 @@
+schema_version: '2.0'
+title: Goldbeter1996 - Cyclin Cdc2 kinase Oscillations Visualisation
+description: Question-and-answer and chart visualisation for cell-cycle regulatory
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_goldbeter1996_cyclin_cdc2_kinase_oscillations_biomd0000000729_model
+    title: Goldbeter1996 - Cyclin Cdc2 kinase Oscillations
+    context: cell-cycle regulatory signaling
+    question: How does Goldbeter1996 - Cyclin Cdc2 kinase Oscillations move checkpoint
+      or cycle-control signaling states?
+    visual_scope: cell-cycle regulatory signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_c_state: float
+      source_defined_m_state: float
+      response_node_x: float
+    species_labels:
+      source_defined_c_state: source-defined C state
+      source_defined_m_state: source-defined M state
+      response_node_x: response node X
+io:
+  inputs: []
+  outputs: []

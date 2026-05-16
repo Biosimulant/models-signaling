@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f2294745-2e8d-4104-bb58-5dd6df899ea2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d51b6651-a489-487e-9e1c-2bb497e30a6c",
+  "created_at": "2026-05-15T19:08:10.489341625+00:00",
+  "last_synced_at": "2026-05-16T10:05:24.551118+00:00",
+  "hub_manifest_hash": "c6b7f52032a6556c5702f2a3d1f704ac210977720208407901ca56ddf25f59f8",
+  "package_name": "lee2003-roles-of-apc-and-axin-in-wnt-pathway-without-regulatory"
+}

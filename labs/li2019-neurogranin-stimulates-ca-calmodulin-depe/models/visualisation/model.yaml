@@ -1,0 +1,343 @@
+schema_version: '2.0'
+title: Li2019 - Neurogranin stimulates Ca/calmodulin-dependent kinase II by inhibiting
+  Calcineurin Visualisation
+description: Question-and-answer and chart visualisation for calcium and second-messenger
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+- neuroscience
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_li2019_neurogranin_stimulates_ca_calmodulin_depe_model1903010001_model
+    title: Li2019 - Neurogranin stimulates Ca/calmodulin-dependent kinase II by inhibiting
+      Calcineurin
+    context: calcium second-messenger signaling
+    question: How do calcium-linked states respond in Li2019 - Neurogranin stimulates
+      Ca/calmodulin-dependent kinase II by inhibiting Calcineurin?
+    visual_scope: calcium second-messenger signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      calcium_m_rr_0_0: float
+      calcium_m_rr_0_calcium_nca4: float
+      calcium_m_rr_0_calcium_mkii: float
+      calcium_m_rr_0_calcium_mkiip: float
+      calcium_m_rr_a_0: float
+      calcium_m_rr_a_calcium_nca4: float
+      calcium_m_rr_a_calcium_mkii: float
+      calcium_m_rr_a_calcium_mkiip: float
+      calcium_m_rr_b_0: float
+      calcium_m_rr_b_calcium_nca4: float
+      calcium_m_rr_b_calcium_mkii: float
+      calcium_m_rr_b_calcium_mkiip: float
+      calcium_m_rr_c_0: float
+      calcium_m_rr_c_calcium_nca4: float
+      calcium_m_rr_c_calcium_mkii: float
+      calcium_m_rr_c_calcium_mkiip: float
+      calcium_m_rr_d_0: float
+      calcium_m_rr_d_calcium_nca4: float
+      calcium_m_rr_d_calcium_mkii: float
+      calcium_m_rr_d_calcium_mkiip: float
+      calcium_m_rr_ab_0: float
+      calcium_m_rr_ab_calcium_nca4: float
+      calcium_m_rr_ab_calcium_mkii: float
+      calcium_m_rr_ab_calcium_mkiip: float
+      calcium_m_rr_ac_0: float
+      calcium_m_rr_ac_calcium_nca4: float
+      calcium_m_rr_ac_calcium_mkii: float
+      calcium_m_rr_ac_calcium_mkiip: float
+      calcium_m_rr_ad_0: float
+      calcium_m_rr_ad_calcium_nca4: float
+      calcium_m_rr_ad_calcium_mkii: float
+      calcium_m_rr_ad_calcium_mkiip: float
+      calcium_m_rr_bc_0: float
+      calcium_m_rr_bc_calcium_nca4: float
+      calcium_m_rr_bc_calcium_mkii: float
+      calcium_m_rr_bc_calcium_mkiip: float
+      calcium_m_rr_bd_0: float
+      calcium_m_rr_bd_calcium_nca4: float
+      calcium_m_rr_bd_calcium_mkii: float
+      calcium_m_rr_bd_calcium_mkiip: float
+      calcium_m_rr_cd_0: float
+      calcium_m_rr_cd_calcium_nca4: float
+      calcium_m_rr_cd_calcium_mkii: float
+      calcium_m_rr_cd_calcium_mkiip: float
+      calcium_m_rr_abc_0: float
+      calcium_m_rr_abc_calcium_nca4: float
+      calcium_m_rr_abc_calcium_mkii: float
+      calcium_m_rr_abc_calcium_mkiip: float
+      calcium_m_rr_abd_0: float
+      calcium_m_rr_abd_calcium_nca4: float
+      calcium_m_rr_abd_calcium_mkii: float
+      calcium_m_rr_abd_calcium_mkiip: float
+      calcium_m_rr_acd_0: float
+      calcium_m_rr_acd_calcium_nca4: float
+      calcium_m_rr_acd_calcium_mkii: float
+      calcium_m_rr_acd_calcium_mkiip: float
+      calcium_m_rr_bcd_0: float
+      calcium_m_rr_bcd_calcium_nca4: float
+      calcium_m_rr_bcd_calcium_mkii: float
+      calcium_m_rr_bcd_calcium_mkiip: float
+      calcium_m_rr_abcd_0: float
+      calcium_m_rr_abcd_calcium_nca4: float
+      calcium_m_rr_abcd_calcium_mkii: float
+      calcium_m_rr_abcd_calcium_mkiip: float
+      calcium_m_rt_0_0: float
+      calcium_m_rt_0_ng: float
+      calcium_m_rt_a_0: float
+      calcium_m_rt_a_ng: float
+      calcium_m_rt_b_0: float
+      calcium_m_rt_b_ng: float
+      calcium_m_rt_c_0: float
+      calcium_m_rt_c_ng: float
+      calcium_m_rt_d_0: float
+      calcium_m_rt_d_ng: float
+      calcium_m_rt_ab_0: float
+      calcium_m_rt_ab_ng: float
+      calcium_m_rt_ac_0: float
+      calcium_m_rt_ac_ng: float
+      calcium_m_rt_ad_0: float
+      calcium_m_rt_ad_ng: float
+      calcium_m_rt_bc_0: float
+      calcium_m_rt_bc_ng: float
+      calcium_m_rt_bd_0: float
+      calcium_m_rt_bd_ng: float
+      calcium_m_rt_cd_0: float
+      calcium_m_rt_cd_ng: float
+      calcium_m_rt_abc_0: float
+      calcium_m_rt_abc_ng: float
+      calcium_m_rt_abd_0: float
+      calcium_m_rt_abd_ng: float
+      calcium_m_rt_acd_0: float
+      calcium_m_rt_acd_ng: float
+      calcium_m_rt_bcd_0: float
+      calcium_m_rt_bcd_ng: float
+      calcium_m_rt_abcd_0: float
+      calcium_m_rt_abcd_ng: float
+      calcium_m_tr_0_0: float
+      calcium_m_tr_a_0: float
+      calcium_m_tr_b_0: float
+      calcium_m_tr_c_0: float
+      calcium_m_tr_d_0: float
+      calcium_m_tr_ab_0: float
+      calcium_m_tr_ac_0: float
+      calcium_m_tr_ad_0: float
+      calcium_m_tr_bc_0: float
+      calcium_m_tr_bd_0: float
+      calcium_m_tr_cd_0: float
+      calcium_m_tr_abc_0: float
+      calcium_m_tr_abd_0: float
+      calcium_m_tr_acd_0: float
+      calcium_m_tr_bcd_0: float
+      calcium_m_tr_abcd_0: float
+      calcium_m_tt_0_0: float
+      calcium_m_tt_0_ng: float
+      calcium_m_tt_a_0: float
+      calcium_m_tt_a_ng: float
+      calcium_m_tt_b_0: float
+      calcium_m_tt_b_ng: float
+      calcium_m_tt_c_0: float
+      calcium_m_tt_c_ng: float
+      calcium_m_tt_d_0: float
+      calcium_m_tt_d_ng: float
+      calcium_m_tt_ab_0: float
+      calcium_m_tt_ab_ng: float
+      calcium_m_tt_ac_0: float
+      calcium_m_tt_ac_ng: float
+      calcium_m_tt_ad_0: float
+      calcium_m_tt_ad_ng: float
+      calcium_m_tt_bc_0: float
+      calcium_m_tt_bc_ng: float
+      calcium_m_tt_bd_0: float
+      calcium_m_tt_bd_ng: float
+      calcium_m_tt_cd_0: float
+      calcium_m_tt_cd_ng: float
+      calcium_m_tt_abc_0: float
+      calcium_m_tt_abc_ng: float
+      calcium_m_tt_abd_0: float
+      calcium_m_tt_abd_ng: float
+      calcium_m_tt_acd_0: float
+      calcium_m_tt_acd_ng: float
+      calcium_m_tt_bcd_0: float
+      calcium_m_tt_bcd_ng: float
+      calcium_m_tt_abcd_0: float
+      calcium_m_tt_abcd_ng: float
+      calcium: float
+      source_defined_ng_state: float
+      calcium_nca4: float
+      calcium_mkii: float
+      calcium_mkiip: float
+      calcium_nca3: float
+      source_defined_can_state: float
+      calcium_nuclear_calcium: float
+      calcium_nca2: float
+    species_labels:
+      calcium_m_rr_0_0: calcium M RR 0 0
+      calcium_m_rr_0_calcium_nca4: calcium M RR 0 calcium Nca4
+      calcium_m_rr_0_calcium_mkii: calcium M RR 0 calcium MKII
+      calcium_m_rr_0_calcium_mkiip: calcium M RR 0 calcium Mkiip
+      calcium_m_rr_a_0: calcium M RR A 0
+      calcium_m_rr_a_calcium_nca4: calcium M RR A calcium Nca4
+      calcium_m_rr_a_calcium_mkii: calcium M RR A calcium MKII
+      calcium_m_rr_a_calcium_mkiip: calcium M RR A calcium Mkiip
+      calcium_m_rr_b_0: calcium M RR B 0
+      calcium_m_rr_b_calcium_nca4: calcium M RR B calcium Nca4
+      calcium_m_rr_b_calcium_mkii: calcium M RR B calcium MKII
+      calcium_m_rr_b_calcium_mkiip: calcium M RR B calcium Mkiip
+      calcium_m_rr_c_0: calcium M RR C 0
+      calcium_m_rr_c_calcium_nca4: calcium M RR C calcium Nca4
+      calcium_m_rr_c_calcium_mkii: calcium M RR C calcium MKII
+      calcium_m_rr_c_calcium_mkiip: calcium M RR C calcium Mkiip
+      calcium_m_rr_d_0: calcium M RR D 0
+      calcium_m_rr_d_calcium_nca4: calcium M RR D calcium Nca4
+      calcium_m_rr_d_calcium_mkii: calcium M RR D calcium MKII
+      calcium_m_rr_d_calcium_mkiip: calcium M RR D calcium Mkiip
+      calcium_m_rr_ab_0: calcium M RR Ab 0
+      calcium_m_rr_ab_calcium_nca4: calcium M RR Ab calcium Nca4
+      calcium_m_rr_ab_calcium_mkii: calcium M RR Ab calcium MKII
+      calcium_m_rr_ab_calcium_mkiip: calcium M RR Ab calcium Mkiip
+      calcium_m_rr_ac_0: calcium M RR Ac 0
+      calcium_m_rr_ac_calcium_nca4: calcium M RR Ac calcium Nca4
+      calcium_m_rr_ac_calcium_mkii: calcium M RR Ac calcium MKII
+      calcium_m_rr_ac_calcium_mkiip: calcium M RR Ac calcium Mkiip
+      calcium_m_rr_ad_0: calcium M RR Ad 0
+      calcium_m_rr_ad_calcium_nca4: calcium M RR Ad calcium Nca4
+      calcium_m_rr_ad_calcium_mkii: calcium M RR Ad calcium MKII
+      calcium_m_rr_ad_calcium_mkiip: calcium M RR Ad calcium Mkiip
+      calcium_m_rr_bc_0: calcium M RR Bc 0
+      calcium_m_rr_bc_calcium_nca4: calcium M RR Bc calcium Nca4
+      calcium_m_rr_bc_calcium_mkii: calcium M RR Bc calcium MKII
+      calcium_m_rr_bc_calcium_mkiip: calcium M RR Bc calcium Mkiip
+      calcium_m_rr_bd_0: calcium M RR Bd 0
+      calcium_m_rr_bd_calcium_nca4: calcium M RR Bd calcium Nca4
+      calcium_m_rr_bd_calcium_mkii: calcium M RR Bd calcium MKII
+      calcium_m_rr_bd_calcium_mkiip: calcium M RR Bd calcium Mkiip
+      calcium_m_rr_cd_0: calcium M RR Cd 0
+      calcium_m_rr_cd_calcium_nca4: calcium M RR Cd calcium Nca4
+      calcium_m_rr_cd_calcium_mkii: calcium M RR Cd calcium MKII
+      calcium_m_rr_cd_calcium_mkiip: calcium M RR Cd calcium Mkiip
+      calcium_m_rr_abc_0: calcium M RR Abc 0
+      calcium_m_rr_abc_calcium_nca4: calcium M RR Abc calcium Nca4
+      calcium_m_rr_abc_calcium_mkii: calcium M RR Abc calcium MKII
+      calcium_m_rr_abc_calcium_mkiip: calcium M RR Abc calcium Mkiip
+      calcium_m_rr_abd_0: calcium M RR Abd 0
+      calcium_m_rr_abd_calcium_nca4: calcium M RR Abd calcium Nca4
+      calcium_m_rr_abd_calcium_mkii: calcium M RR Abd calcium MKII
+      calcium_m_rr_abd_calcium_mkiip: calcium M RR Abd calcium Mkiip
+      calcium_m_rr_acd_0: calcium M RR Acd 0
+      calcium_m_rr_acd_calcium_nca4: calcium M RR Acd calcium Nca4
+      calcium_m_rr_acd_calcium_mkii: calcium M RR Acd calcium MKII
+      calcium_m_rr_acd_calcium_mkiip: calcium M RR Acd calcium Mkiip
+      calcium_m_rr_bcd_0: calcium M RR Bcd 0
+      calcium_m_rr_bcd_calcium_nca4: calcium M RR Bcd calcium Nca4
+      calcium_m_rr_bcd_calcium_mkii: calcium M RR Bcd calcium MKII
+      calcium_m_rr_bcd_calcium_mkiip: calcium M RR Bcd calcium Mkiip
+      calcium_m_rr_abcd_0: calcium M RR Abcd 0
+      calcium_m_rr_abcd_calcium_nca4: calcium M RR Abcd calcium Nca4
+      calcium_m_rr_abcd_calcium_mkii: calcium M RR Abcd calcium MKII
+      calcium_m_rr_abcd_calcium_mkiip: calcium M RR Abcd calcium Mkiip
+      calcium_m_rt_0_0: calcium M RT 0 0
+      calcium_m_rt_0_ng: calcium M RT 0 Ng
+      calcium_m_rt_a_0: calcium M RT A 0
+      calcium_m_rt_a_ng: calcium M RT A Ng
+      calcium_m_rt_b_0: calcium M RT B 0
+      calcium_m_rt_b_ng: calcium M RT B Ng
+      calcium_m_rt_c_0: calcium M RT C 0
+      calcium_m_rt_c_ng: calcium M RT C Ng
+      calcium_m_rt_d_0: calcium M RT D 0
+      calcium_m_rt_d_ng: calcium M RT D Ng
+      calcium_m_rt_ab_0: calcium M RT Ab 0
+      calcium_m_rt_ab_ng: calcium M RT Ab Ng
+      calcium_m_rt_ac_0: calcium M RT Ac 0
+      calcium_m_rt_ac_ng: calcium M RT Ac Ng
+      calcium_m_rt_ad_0: calcium M RT Ad 0
+      calcium_m_rt_ad_ng: calcium M RT Ad Ng
+      calcium_m_rt_bc_0: calcium M RT Bc 0
+      calcium_m_rt_bc_ng: calcium M RT Bc Ng
+      calcium_m_rt_bd_0: calcium M RT Bd 0
+      calcium_m_rt_bd_ng: calcium M RT Bd Ng
+      calcium_m_rt_cd_0: calcium M RT Cd 0
+      calcium_m_rt_cd_ng: calcium M RT Cd Ng
+      calcium_m_rt_abc_0: calcium M RT Abc 0
+      calcium_m_rt_abc_ng: calcium M RT Abc Ng
+      calcium_m_rt_abd_0: calcium M RT Abd 0
+      calcium_m_rt_abd_ng: calcium M RT Abd Ng
+      calcium_m_rt_acd_0: calcium M RT Acd 0
+      calcium_m_rt_acd_ng: calcium M RT Acd Ng
+      calcium_m_rt_bcd_0: calcium M RT Bcd 0
+      calcium_m_rt_bcd_ng: calcium M RT Bcd Ng
+      calcium_m_rt_abcd_0: calcium M RT Abcd 0
+      calcium_m_rt_abcd_ng: calcium M RT Abcd Ng
+      calcium_m_tr_0_0: calcium M TR 0 0
+      calcium_m_tr_a_0: calcium M TR A 0
+      calcium_m_tr_b_0: calcium M TR B 0
+      calcium_m_tr_c_0: calcium M TR C 0
+      calcium_m_tr_d_0: calcium M TR D 0
+      calcium_m_tr_ab_0: calcium M TR Ab 0
+      calcium_m_tr_ac_0: calcium M TR Ac 0
+      calcium_m_tr_ad_0: calcium M TR Ad 0
+      calcium_m_tr_bc_0: calcium M TR Bc 0
+      calcium_m_tr_bd_0: calcium M TR Bd 0
+      calcium_m_tr_cd_0: calcium M TR Cd 0
+      calcium_m_tr_abc_0: calcium M TR Abc 0
+      calcium_m_tr_abd_0: calcium M TR Abd 0
+      calcium_m_tr_acd_0: calcium M TR Acd 0
+      calcium_m_tr_bcd_0: calcium M TR Bcd 0
+      calcium_m_tr_abcd_0: calcium M TR Abcd 0
+      calcium_m_tt_0_0: calcium M TT 0 0
+      calcium_m_tt_0_ng: calcium M TT 0 Ng
+      calcium_m_tt_a_0: calcium M TT A 0
+      calcium_m_tt_a_ng: calcium M TT A Ng
+      calcium_m_tt_b_0: calcium M TT B 0
+      calcium_m_tt_b_ng: calcium M TT B Ng
+      calcium_m_tt_c_0: calcium M TT C 0
+      calcium_m_tt_c_ng: calcium M TT C Ng
+      calcium_m_tt_d_0: calcium M TT D 0
+      calcium_m_tt_d_ng: calcium M TT D Ng
+      calcium_m_tt_ab_0: calcium M TT Ab 0
+      calcium_m_tt_ab_ng: calcium M TT Ab Ng
+      calcium_m_tt_ac_0: calcium M TT Ac 0
+      calcium_m_tt_ac_ng: calcium M TT Ac Ng
+      calcium_m_tt_ad_0: calcium M TT Ad 0
+      calcium_m_tt_ad_ng: calcium M TT Ad Ng
+      calcium_m_tt_bc_0: calcium M TT Bc 0
+      calcium_m_tt_bc_ng: calcium M TT Bc Ng
+      calcium_m_tt_bd_0: calcium M TT Bd 0
+      calcium_m_tt_bd_ng: calcium M TT Bd Ng
+      calcium_m_tt_cd_0: calcium M TT Cd 0
+      calcium_m_tt_cd_ng: calcium M TT Cd Ng
+      calcium_m_tt_abc_0: calcium M TT Abc 0
+      calcium_m_tt_abc_ng: calcium M TT Abc Ng
+      calcium_m_tt_abd_0: calcium M TT Abd 0
+      calcium_m_tt_abd_ng: calcium M TT Abd Ng
+      calcium_m_tt_acd_0: calcium M TT Acd 0
+      calcium_m_tt_acd_ng: calcium M TT Acd Ng
+      calcium_m_tt_bcd_0: calcium M TT Bcd 0
+      calcium_m_tt_bcd_ng: calcium M TT Bcd Ng
+      calcium_m_tt_abcd_0: calcium M TT Abcd 0
+      calcium_m_tt_abcd_ng: calcium M TT Abcd Ng
+      calcium: calcium
+      source_defined_ng_state: source-defined NG state
+      calcium_nca4: calcium Nca4
+      calcium_mkii: calcium MKII
+      calcium_mkiip: calcium Mkiip
+      calcium_nca3: calcium Nca3
+      source_defined_can_state: source-defined CAN state
+      calcium_nuclear_calcium: calcium nuclear calcium
+      calcium_nca2: calcium Nca2
+io:
+  inputs: []
+  outputs: []

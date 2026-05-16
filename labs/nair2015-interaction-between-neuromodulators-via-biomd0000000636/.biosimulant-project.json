@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e2988670-0b96-4dbd-bff9-154f41b1ba4e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "027ca72a-2c49-4884-bc92-b5ff8a4c0cd4",
+  "created_at": "2026-05-16T05:38:38.415965852+00:00",
+  "last_synced_at": "2026-05-16T12:22:19.051862+00:00",
+  "hub_manifest_hash": "b969dfdc3bf50fa94f26ac2f8d2a4e8ab4b7eb51972fb90f98df18c31c92a874",
+  "package_name": "biomd0000000636-nair2015-interaction-between-neuromodulators-via"
+}

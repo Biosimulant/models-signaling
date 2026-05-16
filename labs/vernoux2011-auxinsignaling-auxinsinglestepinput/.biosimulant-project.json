@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "faf63880-54f8-4eaa-92b1-d434f01fc61d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "696cb879-1bc7-4630-a997-50ceea11fb6e",
+  "created_at": "2026-05-16T05:58:28.748791456+00:00",
+  "last_synced_at": "2026-05-16T11:21:44.970338+00:00",
+  "hub_manifest_hash": "29a080797a7fc1ec5a5d3f3a72d35f69ffda77a4b61dd37f2393bbe13195bd5a",
+  "package_name": "vernoux2011-auxinsignaling-auxinsinglestepinput-lab"
+}

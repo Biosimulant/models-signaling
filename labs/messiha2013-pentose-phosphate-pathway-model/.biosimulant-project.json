@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b3e20be0-f143-4fd9-816a-2afde7345830",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "cf657965-5c39-4aad-a74a-aa55d834c63b",
+  "created_at": "2026-05-16T05:38:38.084526518+00:00",
+  "last_synced_at": "2026-05-16T10:19:59.984785+00:00",
+  "hub_manifest_hash": "8a2e6869b901a89914ed24a431098fc41f9e04015195d153ebb0ded185f2bc9a",
+  "package_name": "messiha2013-pentose-phosphate-pathway-model-lab"
+}

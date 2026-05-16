@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c88aa75e-299e-474d-bd60-e0496134430a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3c7ba909-b0c5-4f72-8f22-2a1cb880a429",
+  "created_at": "2026-05-16T05:58:27.255824199+00:00",
+  "last_synced_at": "2026-05-16T11:08:36.580372+00:00",
+  "hub_manifest_hash": "7c3c030a452e46d78dd4e58329c3bfb156906ca4d506d5d7912239cf4bf4d9b2",
+  "package_name": "smith2010-response-of-foxo-transcription-factors-to-post-transla"
+}

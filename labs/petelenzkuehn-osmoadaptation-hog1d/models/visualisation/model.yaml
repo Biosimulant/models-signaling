@@ -1,0 +1,91 @@
+schema_version: '2.0'
+title: PetelenzKuehn_osmoadaptation_hog1D Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  PetelenzKuehn_osmoadaptation_hog1D.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- stress-response
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_petelenzkuehn_osmoadaptation_hog1d_biomd0000000606_model
+    title: PetelenzKuehn_osmoadaptation_hog1D
+    context: phosphorylation and regulatory motif dynamics
+    question: How does PetelenzKuehn osmoadaptation hog1D express its source-modeled
+      signaling motif over the baseline run?
+    visual_scope: phosphorylation and regulatory motif dynamics
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      glycerol_i: float
+      intracellular_concentration_input: float
+      glucose_i: float
+      g6p: float
+      trehalose: float
+      f16dp: float
+      f26dp: float
+      triose_p: float
+      source_defined_gpd1_state: float
+      pyruvate: float
+      acetate_i: float
+      ethanol_i: float
+      source_defined_hog1_state: float
+      hog1pp: float
+      pfk2627a: float
+      pfk2627i: float
+      source_defined_aog_state: float
+      gpd1m_rna: float
+      stl1m_rna: float
+      source_defined_stl1_state: float
+      source_defined_aogi_state: float
+      fps1r: float
+      biomass: float
+      cellvol: float
+      glycerol_e: float
+      glucose_e: float
+      acetate_e: float
+      ethanol_e: float
+      trehalose_e: float
+    species_labels:
+      glycerol_i: Glycerol I
+      intracellular_concentration_input: intracellular concentration input
+      glucose_i: Glucose I
+      g6p: G6P
+      trehalose: Trehalose
+      f16dp: F16DP
+      f26dp: F26DP
+      triose_p: Triose P
+      source_defined_gpd1_state: source-defined GPD1 state
+      pyruvate: Pyruvate
+      acetate_i: Acetate I
+      ethanol_i: Ethanol I
+      source_defined_hog1_state: source-defined HOG1 state
+      hog1pp: Hog1pp
+      pfk2627a: Pfk2627a
+      pfk2627i: Pfk2627i
+      source_defined_aog_state: source-defined AOG state
+      gpd1m_rna: Gpd1m RNA
+      stl1m_rna: Stl1m RNA
+      source_defined_stl1_state: source-defined STL1 state
+      source_defined_aogi_state: source-defined AOGI state
+      fps1r: Fps1r
+      biomass: Biomass
+      cellvol: Cellvol
+      glycerol_e: Glycerol E
+      glucose_e: Glucose E
+      acetate_e: Acetate E
+      ethanol_e: Ethanol E
+      trehalose_e: Trehalose E
+io:
+  inputs: []
+  outputs: []

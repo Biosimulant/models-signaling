@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Mosbacher2022 - Yeast HOG pathway Lab
+description: 'Clean Biosimulant lab for systems signaling model: Mosbacher2022 - Yeast
+  HOG pathway. Values are native SBML quantities; equations, parameters, and initial
+  values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model.state
+  to:
+  - visualisation.signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model_state
+- from: signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model.summary
+  to:
+  - visualisation.signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model_summary
+- from: signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model.species_labels
+  to:
+  - visualisation.signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_heximide_factor_level
+    maps_to: signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model.initial_heximide_factor_level
+    label: Heximide Factor
+    description: Heximide Factor source parameter. Maps to SBML symbol `heximide_factor`
+      and preserves the bundled default.
+  - name: initial_macia_factor_level
+    maps_to: signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model.initial_macia_factor_level
+    label: Macia Factor
+    description: Macia Factor source parameter. Maps to SBML symbol `macia_factor`
+      and preserves the bundled default.
+  - name: initial_ptp2_factor_level
+    maps_to: signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model.initial_ptp2_factor_level
+    label: Ptp2 Factor
+    description: Ptp2 Factor source parameter. Maps to SBML symbol `Ptp2_factor` and
+      preserves the bundled default.
+  outputs:
+  - name: sln1_phosphorylated
+    maps_to: signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model.sln1_phosphorylated
+    label: Sln1 Phosphorylated
+    description: Sln1 Phosphorylated. Maps to SBML symbol `Sln1_phosphorylated` and
+      is emitted in native SBML units.
+  - name: sln1p_phosphorylated
+    maps_to: signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model.sln1p_phosphorylated
+    label: Sln1p Phosphorylated
+    description: Sln1p Phosphorylated. Maps to SBML symbol `Sln1P_phosphorylated`
+      and is emitted in native SBML units.
+  - name: ssk1_phosphorylated
+    maps_to: signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model.ssk1_phosphorylated
+    label: Ssk1 Phosphorylated
+    description: Ssk1 Phosphorylated. Maps to SBML symbol `Ssk1_phosphorylated` and
+      is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_mosbacher2022_yeast_hog_pathway_model2206230001_model.species_labels
+    label: Observable labels

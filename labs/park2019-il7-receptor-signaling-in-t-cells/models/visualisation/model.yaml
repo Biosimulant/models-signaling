@@ -1,0 +1,53 @@
+schema_version: '2.0'
+title: Park2019 - IL7 receptor signaling in T cells Visualisation
+description: Question-and-answer and chart visualisation for immune signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cytokine-signaling
+- interleukin-signaling
+- gpcr
+- immune-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_park2019_il7_receptor_signaling_in_t_cells_biomd0000000803_model
+    title: Park2019 - IL7 receptor signaling in T cells
+    context: GPCR and cAMP/PKA signaling
+    question: How does Park2019 - IL7 receptor signaling in T cells route receptor
+      activity into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      il7ra: float
+      il15rbeta: float
+      gamma_c: float
+      il7ru: float
+      il15ru: float
+      il7rb: float
+      il15rb: float
+      source_defined_il7_state: float
+      il15: float
+    species_labels:
+      il7ra: Il7ra
+      il15rbeta: Il15rbeta
+      gamma_c: Gamma C
+      il7ru: Il7ru
+      il15ru: Il15ru
+      il7rb: Il7rb
+      il15rb: Il15rb
+      source_defined_il7_state: source-defined IL7 state
+      il15: IL15
+io:
+  inputs: []
+  outputs: []

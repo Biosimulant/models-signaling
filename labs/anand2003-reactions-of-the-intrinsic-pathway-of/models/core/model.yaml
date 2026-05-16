@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Anand2003 - Reactions of the Intrinsic Pathway of Blood Coagulation with Platelet
+  Activation
+description: Inhomogeneous blood coagulation model. Encoded model contains reactions
+  of the intrinsic pathway with platelet activation.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- coagulation
+- platelet-signaling
+- physiology
+authors:
+- Biosimulant Team
+- M. Anand
+- K. Rajagopal
+- K. R. Rajagopal
+upstream:
+  id: biomodels_ebi:MODEL1806130003
+  source_db: biomodels_ebi
+  source_id: MODEL1806130003
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1806130003
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806130003?filename=Anand2003.xml
+  license: CC0
+biosim:
+  entrypoint: src.anand2003_reactions_of_the_intrinsic_pathway_of:Anand2003ReactionsOfTheIntrinsicPathwayOfModel1806130003Model
+  init_kwargs:
+    model_path: data/MODEL1806130003.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_ix_state
+    maps_to: signaling_sbml_anand2003_reactions_of_the_intrinsic_pathway_of_model1806130003_model.initial_source_defined_ix_state
+    label: Initial source-defined IX state
+    description: Initial level of source-defined IX state. Maps to SBML symbol `IX`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: activated_clotting_factor_ix
+    maps_to: signaling_sbml_anand2003_reactions_of_the_intrinsic_pathway_of_model1806130003_model.activated_clotting_factor_ix
+    label: activated clotting factor IX
+    description: activated clotting factor IX. Maps to SBML symbol `IXa` and is emitted
+      in native SBML units.
+  - name: activated_clotting_factor_xi
+    maps_to: signaling_sbml_anand2003_reactions_of_the_intrinsic_pathway_of_model1806130003_model.activated_clotting_factor_xi
+    label: activated clotting factor XI
+    description: activated clotting factor XI. Maps to SBML symbol `XIa` and is emitted
+      in native SBML units.
+  - name: atiii
+    maps_to: signaling_sbml_anand2003_reactions_of_the_intrinsic_pathway_of_model1806130003_model.atiii
+    label: ATIII
+    description: ATIII. Maps to SBML symbol `ATIII` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_anand2003_reactions_of_the_intrinsic_pathway_of_model1806130003_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_anand2003_reactions_of_the_intrinsic_pathway_of_model1806130003_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_anand2003_reactions_of_the_intrinsic_pathway_of_model1806130003_model.species_labels
+    label: Observable labels

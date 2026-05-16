@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Bray1993_chemotaxis
+description: 'This version of the model is very close to the version described in
+  the paper with one exception: the binding of aspartate to the various receptor complexes,
+  as well as the formation of the different. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+authors:
+- Biosimulant Team
+- D Bray
+- R B Bourret
+- M I Simon
+upstream:
+  id: biomodels_ebi:BIOMD0000000404
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000404
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000404
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000404?filename=BIOMD0000000404_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bray1993_chemotaxis:Bray1993ChemotaxisBiomd0000000404Model
+  init_kwargs:
+    model_path: data/BIOMD0000000404.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_aspartate_ligand
+    maps_to: signaling_sbml_bray1993_chemotaxis_biomd0000000404_model.initial_aspartate_ligand
+    label: Initial aspartate ligand
+    description: Initial level of aspartate ligand. Maps to SBML symbol `asp`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_atp
+    maps_to: signaling_sbml_bray1993_chemotaxis_biomd0000000404_model.initial_atp
+    label: Initial ATP
+    description: Initial level of ATP. Maps to SBML symbol `species_1`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_source_defined_ni_state
+    maps_to: signaling_sbml_bray1993_chemotaxis_biomd0000000404_model.initial_source_defined_ni_state
+    label: Initial source-defined NI state
+    description: Initial level of source-defined NI state. Maps to SBML symbol `ni`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: aspartate_ligand
+    maps_to: signaling_sbml_bray1993_chemotaxis_biomd0000000404_model.aspartate_ligand
+    label: aspartate ligand
+    description: aspartate ligand. Maps to SBML symbol `asp` and is emitted in native
+      SBML units.
+  - name: total_aspartate_bound_receptor
+    maps_to: signaling_sbml_bray1993_chemotaxis_biomd0000000404_model.total_aspartate_bound_receptor
+    label: total aspartate-bound receptor
+    description: total aspartate-bound receptor. Maps to SBML symbol `Tasp` and is
+      emitted in native SBML units.
+  - name: total_inactive_receptor_state_ni
+    maps_to: signaling_sbml_bray1993_chemotaxis_biomd0000000404_model.total_inactive_receptor_state_ni
+    label: total inactive receptor state Ni
+    description: total inactive receptor state Ni. Maps to SBML symbol `Tni` and is
+      emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_bray1993_chemotaxis_biomd0000000404_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_bray1993_chemotaxis_biomd0000000404_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_bray1993_chemotaxis_biomd0000000404_model.species_labels
+    label: Observable labels

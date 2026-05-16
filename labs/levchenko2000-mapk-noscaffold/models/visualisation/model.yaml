@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Levchenko2000_MAPK_noScaffold Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model
+    title: Levchenko2000_MAPK_noScaffold
+    context: receptor-to-MAPK cascade signaling
+    question: How does Levchenko2000 MAPK noScaffold propagate receptor or RAS/ERK
+      pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      mapk: float
+      mapk_mek_pp: float
+      mapk_p: float
+      mapk_phosphatase: float
+      mapk_p_mapkpase: float
+      mapk_p_mek_pp: float
+      mapk_pp: float
+      mapk_pp_mapkpase: float
+      mek: float
+      source_defined_mek_p_state: float
+      mek_phosphatase: float
+      mek_p_mekpase: float
+      mek_pp: float
+      mek_pp_mekpase: float
+      mek_p_raf_p: float
+      mek_raf_p: float
+      raf: float
+      source_defined_rafk_state: float
+      source_defined_raf_p_state: float
+      raf_phosphatase: float
+      raf_p_rafpase: float
+      raf_rafk: float
+    species_labels:
+      mapk: MAPK
+      mapk_mek_pp: MAPK MEK PP
+      mapk_p: MAPK P
+      mapk_phosphatase: MAPK Phosphatase
+      mapk_p_mapkpase: MAPK P Mapkpase
+      mapk_p_mek_pp: MAPK P MEK PP
+      mapk_pp: MAPK PP
+      mapk_pp_mapkpase: MAPK PP Mapkpase
+      mek: MEK
+      source_defined_mek_p_state: source-defined MEK-P state
+      mek_phosphatase: MEK Phosphatase
+      mek_p_mekpase: MEK P Mekpase
+      mek_pp: MEK PP
+      mek_pp_mekpase: MEK PP Mekpase
+      mek_p_raf_p: MEK P RAF P
+      mek_raf_p: MEK RAF P
+      raf: RAF
+      source_defined_rafk_state: source-defined RAFK state
+      source_defined_raf_p_state: source-defined RAF-P state
+      raf_phosphatase: RAF Phosphatase
+      raf_p_rafpase: RAF P Rafpase
+      raf_rafk: RAF RAFK
+io:
+  inputs: []
+  outputs: []

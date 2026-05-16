@@ -1,0 +1,213 @@
+schema_version: '2.0'
+title: Ajay_Bhalla_2007_Bistable Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Ajay_Bhalla_2007_Bistable.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_ajay_bhalla_2007_bistable_model9147091146_model
+    title: Ajay_Bhalla_2007_Bistable
+    context: phosphorylation and regulatory motif dynamics
+    question: How does Ajay Bhalla 2007 Bistable express its source-modeled signaling
+      motif over the baseline run?
+    visual_scope: phosphorylation and regulatory motif dynamics
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      calcium_bound_pkc: float
+      dag_and_arachidonic_acid_active_pkc: float
+      arachidonic_acid_active_calcium_bound_pkc: float
+      membrane_active_calcium_bound_pkc: float
+      membrane_active_dag_bound_pkc: float
+      basal_active_pkc: float
+      arachidonic_acid_active_pkc: float
+      calcium_and_dag_bound_pkc: float
+      dag_bound_pkc: float
+      dag_and_arachidonic_acid_bound_pkc: float
+      cytosolic_pkc: float
+      source_defined_aa_state: float
+      cytosolic_pla2: float
+      calcium_activated_pla2: float
+      pla2_pla2_calcium_active_kenz_kenz_cplx: float
+      pip2_bound_active_pla2: float
+      pla2_pip2_pla2_active_kenz_kenz_cplx: float
+      pip2_and_calcium_bound_active_pla2: float
+      pla2_pip2_calcium_pla2_active_kenz_kenz_cplx: float
+      dag_and_calcium_bound_active_pla2: float
+      pla2_dag_calcium_pla2_active_kenz_kenz_cplx: float
+      calcium_bound_active_pla2: float
+      pla2_pla2_active_calcium_kenz_kenz_cplx: float
+      active_pla2: float
+      mapk_craf_1: float
+      mapk_craf_1_active: float
+      mapk_kinase: float
+      mapk: float
+      mapk_craf_1_active_active: float
+      mapk_mapk_tyrosine_site: float
+      active_mapk_kinase: float
+      mapk_mapkk_active_mapkktyr_mapkktyr_cplx: float
+      mapk_mapkk_active_mapkkthr_mapkkthr_cplx: float
+      mapk_kinase_serine_phosphorylation_state: float
+      mapk_raf_gtp_ras: float
+      mapk_raf_gtp_ras_raf_gtp_ras_dot_1_raf_gtp_ras_dot_1_cplx: float
+      mapk_raf_gtp_ras_raf_gtp_ras_dot_2_raf_gtp_ras_dot_2_cplx: float
+      mapk_raf_active_gtp_ras: float
+      mapk_raf_active_gtp_ras_raf_active_gtp_ras_dot_1_raf_active_gtp_ras_dot_1_cplx: float
+      mapk_raf_active_gtp_ras_raf_active_gtp_ras_dot_2_raf_active_gtp_ras_dot_2_cplx: float
+      ras_inact_gef: float
+      ras_inact_gef_basal_gef_activity_basal_gef_activity_cplx: float
+      active_ras_gef: float
+      ras_gef_active_gef_active_act_ras_gef_active_act_ras_cplx: float
+      gtp_bound_ras: float
+      gdp_bound_ras: float
+      active_ras_gap: float
+      ras_gap: float
+      ras_gap_gap_inact_ras_gap_inact_ras_cplx: float
+      ras_calcium_m_gef: float
+      ras_calcium_m_gef_calcium_m_gef_act_ras_calcium_m_gef_act_ras_cplx: float
+      calcium: float
+      pkc_active_pkc_act_raf_pkc_act_raf_cplx: float
+      pkc_active_pkc_inact_gap_pkc_inact_gap_cplx: float
+      pkc_active_pkc_act_gef_pkc_act_gef_cplx: float
+      pkc_active_phosph_ac2_phosph_ac2_cplx: float
+      mapk_active: float
+      mapk_active_mapk_active_mapk_active_cplx: float
+      mapk_active_mapk_active_feedback_mapk_active_feedback_cplx: float
+      source_defined_mkp_1_state: float
+      mkp_1_mkp1_tyrosine_site_deph_mkp1_tyrosine_site_deph_cplx: float
+      mkp_1_mkp1_thr_deph_mkp1_thr_deph_cplx: float
+      pphosphatase2a: float
+      pphosphatase2a_craf_deph_craf_deph_cplx: float
+      pphosphatase2a_mapkk_deph_mapkk_deph_cplx: float
+      pphosphatase2a_mapkk_deph_ser_mapkk_deph_ser_cplx: float
+      pphosphatase2a_craf_active_active_deph_craf_active_active_deph_cplx: float
+      calcium_m_calcium_m: float
+      calcium_m_calcium_m_ca3: float
+      calcium_m_calcium_m_tr2_ca2: float
+      calcium_m_calcium_m_ca4: float
+      pla2_apc: float
+      temp_pip2: float
+      dag: float
+      ip3: float
+      calcium_input: float
+      active_pkc: float
+    species_labels:
+      calcium_bound_pkc: Calcium bound PKC
+      dag_and_arachidonic_acid_active_pkc: DAG And Arachidonic Acid active PKC
+      arachidonic_acid_active_calcium_bound_pkc: Arachidonic Acid active Calcium bound
+        PKC
+      membrane_active_calcium_bound_pkc: Membrane active Calcium bound PKC
+      membrane_active_dag_bound_pkc: Membrane active DAG bound PKC
+      basal_active_pkc: Basal active PKC
+      arachidonic_acid_active_pkc: Arachidonic Acid active PKC
+      calcium_and_dag_bound_pkc: Calcium And DAG bound PKC
+      dag_bound_pkc: DAG bound PKC
+      dag_and_arachidonic_acid_bound_pkc: DAG And Arachidonic Acid bound PKC
+      cytosolic_pkc: cytosolic PKC
+      source_defined_aa_state: Source Defined AA State
+      cytosolic_pla2: cytosolic PLA2
+      calcium_activated_pla2: Calcium Activated PLA2
+      pla2_pla2_calcium_active_kenz_kenz_cplx: PLA2 PLA2 Calcium active Kenz Kenz
+        Cplx
+      pip2_bound_active_pla2: PIP2 bound active PLA2
+      pla2_pip2_pla2_active_kenz_kenz_cplx: PLA2 PIP2 PLA2 active Kenz Kenz Cplx
+      pip2_and_calcium_bound_active_pla2: PIP2 And Calcium bound active PLA2
+      pla2_pip2_calcium_pla2_active_kenz_kenz_cplx: PLA2 PIP2 Calcium PLA2 active
+        Kenz Kenz Cplx
+      dag_and_calcium_bound_active_pla2: DAG And Calcium bound active PLA2
+      pla2_dag_calcium_pla2_active_kenz_kenz_cplx: PLA2 DAG Calcium PLA2 active Kenz
+        Kenz Cplx
+      calcium_bound_active_pla2: Calcium bound active PLA2
+      pla2_pla2_active_calcium_kenz_kenz_cplx: PLA2 PLA2 active Calcium Kenz Kenz
+        Cplx
+      active_pla2: active PLA2
+      mapk_craf_1: MAPK Craf 1
+      mapk_craf_1_active: MAPK Craf 1 active
+      mapk_kinase: MAPK Kinase
+      mapk: MAPK
+      mapk_craf_1_active_active: MAPK Craf 1 active active
+      mapk_mapk_tyrosine_site: MAPK MAPK Tyrosine Site
+      active_mapk_kinase: active MAPK Kinase
+      mapk_mapkk_active_mapkktyr_mapkktyr_cplx: MAPK MAPKK active Mapkktyr Mapkktyr
+        Cplx
+      mapk_mapkk_active_mapkkthr_mapkkthr_cplx: MAPK MAPKK active Mapkkthr Mapkkthr
+        Cplx
+      mapk_kinase_serine_phosphorylation_state: MAPK Kinase Serine Phosphorylation
+        State
+      mapk_raf_gtp_ras: MAPK RAF GTP RAS
+      mapk_raf_gtp_ras_raf_gtp_ras_dot_1_raf_gtp_ras_dot_1_cplx: MAPK RAF GTP RAS
+        RAF GTP RAS Dot 1 RAF GTP RAS Dot 1 Cplx
+      mapk_raf_gtp_ras_raf_gtp_ras_dot_2_raf_gtp_ras_dot_2_cplx: MAPK RAF GTP RAS
+        RAF GTP RAS Dot 2 RAF GTP RAS Dot 2 Cplx
+      mapk_raf_active_gtp_ras: MAPK RAF active GTP RAS
+      mapk_raf_active_gtp_ras_raf_active_gtp_ras_dot_1_raf_active_gtp_ras_dot_1_cplx: MAPK
+        RAF active GTP RAS RAF active GTP RAS Dot 1 RAF active GTP RAS Dot 1 Cplx
+      mapk_raf_active_gtp_ras_raf_active_gtp_ras_dot_2_raf_active_gtp_ras_dot_2_cplx: MAPK
+        RAF active GTP RAS RAF active GTP RAS Dot 2 RAF active GTP RAS Dot 2 Cplx
+      ras_inact_gef: RAS Inact GEF
+      ras_inact_gef_basal_gef_activity_basal_gef_activity_cplx: RAS Inact GEF Basal
+        GEF Activity Basal GEF Activity Cplx
+      active_ras_gef: active RAS GEF
+      ras_gef_active_gef_active_act_ras_gef_active_act_ras_cplx: RAS GEF active GEF
+        active Act RAS GEF active Act RAS Cplx
+      gtp_bound_ras: GTP bound RAS
+      gdp_bound_ras: GDP bound RAS
+      active_ras_gap: active RAS GAP
+      ras_gap: RAS GAP
+      ras_gap_gap_inact_ras_gap_inact_ras_cplx: RAS GAP GAP Inact RAS GAP Inact RAS
+        Cplx
+      ras_calcium_m_gef: RAS Calcium M GEF
+      ras_calcium_m_gef_calcium_m_gef_act_ras_calcium_m_gef_act_ras_cplx: RAS Calcium
+        M GEF Calcium M GEF Act RAS Calcium M GEF Act RAS Cplx
+      calcium: Calcium
+      pkc_active_pkc_act_raf_pkc_act_raf_cplx: PKC active PKC Act RAF PKC Act RAF
+        Cplx
+      pkc_active_pkc_inact_gap_pkc_inact_gap_cplx: PKC active PKC Inact GAP PKC Inact
+        GAP Cplx
+      pkc_active_pkc_act_gef_pkc_act_gef_cplx: PKC active PKC Act GEF PKC Act GEF
+        Cplx
+      pkc_active_phosph_ac2_phosph_ac2_cplx: PKC active Phosph AC2 Phosph AC2 Cplx
+      mapk_active: MAPK active
+      mapk_active_mapk_active_mapk_active_cplx: MAPK active MAPK active MAPK active
+        Cplx
+      mapk_active_mapk_active_feedback_mapk_active_feedback_cplx: MAPK active MAPK
+        active Feedback MAPK active Feedback Cplx
+      source_defined_mkp_1_state: Source Defined MKP 1 State
+      mkp_1_mkp1_tyrosine_site_deph_mkp1_tyrosine_site_deph_cplx: MKP 1 MKP1 Tyrosine
+        Site Deph MKP1 Tyrosine Site Deph Cplx
+      mkp_1_mkp1_thr_deph_mkp1_thr_deph_cplx: MKP 1 MKP1 Thr Deph MKP1 Thr Deph Cplx
+      pphosphatase2a: Pphosphatase2a
+      pphosphatase2a_craf_deph_craf_deph_cplx: Pphosphatase2a Craf Deph Craf Deph
+        Cplx
+      pphosphatase2a_mapkk_deph_mapkk_deph_cplx: Pphosphatase2a MAPKK Deph MAPKK Deph
+        Cplx
+      pphosphatase2a_mapkk_deph_ser_mapkk_deph_ser_cplx: Pphosphatase2a MAPKK Deph
+        Ser MAPKK Deph Ser Cplx
+      pphosphatase2a_craf_active_active_deph_craf_active_active_deph_cplx: Pphosphatase2a
+        Craf active active Deph Craf active active Deph Cplx
+      calcium_m_calcium_m: Calcium M Calcium M
+      calcium_m_calcium_m_ca3: Calcium M Calcium M CA3
+      calcium_m_calcium_m_tr2_ca2: Calcium M Calcium M TR2 CA2
+      calcium_m_calcium_m_ca4: Calcium M Calcium M CA4
+      pla2_apc: PLA2 APC
+      temp_pip2: Temp PIP2
+      dag: DAG
+      ip3: IP3
+      calcium_input: Calcium Input
+      active_pkc: active PKC
+io:
+  inputs: []
+  outputs: []

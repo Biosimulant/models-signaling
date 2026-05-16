@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9b5d4b2f-0bed-44ca-a58f-4a060986f42b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9a0fb1eb-db8a-4227-9a8d-d9ceb79cd294",
+  "created_at": "2026-05-15T19:08:10.242887879+00:00",
+  "last_synced_at": "2026-05-16T09:56:15.617398+00:00",
+  "hub_manifest_hash": "81ce5502d60b9ab1128152b01648d31d7b3484ebda7a7317fa176732c0ab8030",
+  "package_name": "keizer1996-ryanodine-receptor-adaptation-lab"
+}

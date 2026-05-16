@@ -1,0 +1,273 @@
+schema_version: '2.0'
+title: Chang2008 - ERK activation, hallucinogenic drugs mediated signalling through
+  serotonin receptors Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+- gpcr
+- pharmacology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_chang2008_erk_activation_hallucinogenic_drugs_me_model0975191032_model
+    title: Chang2008 - ERK activation, hallucinogenic drugs mediated signalling through
+      serotonin receptors
+    context: receptor-to-MAPK cascade signaling
+    question: How does Chang2008 - ERK activation, hallucinogenic drugs mediated signalling
+      through serotonin receptors propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_tcb_state: float
+      cpx_erk_pp_mkp_pp: float
+      cpx_erkp_mkp_pp: float
+      active_erk_mkp_phosphatase_complex: float
+      rafstarstar: float
+      cpx_mekpp_pp2a: float
+      cpx_rafstarstar_pp2a: float
+      cpx_erkpp_rafstar: float
+      cpx_rafstar_pp2a: float
+      erk_pp: float
+      cpx_erkp_mekpp: float
+      cpx_erk_mek_pp: float
+      mek_pp: float
+      cpx_erk_mkp_pp: float
+      source_defined_mkp_state: float
+      pla2star_calcium: float
+      pla2_calcium: float
+      cpx_erkpp_mkp: float
+      pla2star: float
+      cpx_erkpp_pla2star: float
+      calcium: float
+      source_defined_pla2_state: float
+      mkp_pp: float
+      source_defined_erk_p_state: float
+      erk: float
+      cpx_mekp_rafstar: float
+      cpx_mekp_pp2a: float
+      pp2a: float
+      source_defined_mek_p_state: float
+      cpx_mek_rafstar: float
+      mek: float
+      rafstar: float
+      cpx_ras_gtp_raf: float
+      raf: float
+      ras_gtp: float
+      ras_gap: float
+      ras_gdp: float
+      source_defined_pip2_state: float
+      source_defined_pi_state: float
+      source_defined_rgs4_state: float
+      cpx_rgs4_gq_a_gtp: float
+      cpx_a_2ar_gq: float
+      cpx2ar_gqtrimer: float
+      ht2ar: float
+      ht2ar_internal: float
+      a_2ar_i_deg: float
+      cpx_a_2ar_internal: float
+      cpx_a_2ar: float
+      gq_trimer: float
+      gq_a_gtp: float
+      gq_betagamma: float
+      gq_a_gdp: float
+      source_defined_plcb_state: float
+      plcb_gq_a_gtp: float
+      plcb_calcium: float
+      plcb_calcium_gq_a_gtp: float
+      ip3: float
+      dag: float
+      pkc: float
+      pkc_calcium: float
+      pkc_dag: float
+      pkc_dag_aa: float
+      source_defined_apc_state: float
+      source_defined_aa_state: float
+      pkc_calcium_aa: float
+      pkc_aa: float
+      pip2_pla2_calcium: float
+      ras_gef: float
+      ras_gef_star: float
+      ras_gap_star: float
+      pip2_pla2: float
+      pkc_calcium_dag: float
+      pkc_calcium_dagactive: float
+      pkc_dag_aaactive: float
+      source_defined_pa_state: float
+      source_defined_pi_state_2: float
+      source_defined_pip_state: float
+      pi3k: float
+      gi_br_pi3k: float
+      pi3kstar: float
+      pip2_pi3kstar: float
+      source_defined_pip3_state: float
+      source_defined_src_state: float
+      cpx_src_phosphorylated_ip3: float
+      src_star: float
+      source_defined_csk_state: float
+      cpx_csk_srcstar: float
+      source_defined_pten_state: float
+      cpx_pten_phosphorylated_ip3: float
+      cpx_a_ht1ar_internal: float
+      a_ht1r_i_deg: float
+      ht1ar_internal: float
+      ht1ar: float
+      cpx_a_ht1ar: float
+      gitrimer: float
+      cpx_ht1ar_gitrimer: float
+      cpx_a_r1a_gi: float
+      gi_betagamma: float
+      gi_a_gtp: float
+      gi_a_gdp: float
+      cpx_rgs4_gi_a_gtp_1: float
+      rgs4_1: float
+      shc_adapter_protein: float
+      serotonin: float
+      grb2_adapter_protein: float
+      sos_guanine_nucleotide_exchange_factor: float
+      shc_adapter_protein_star: float
+      shcstar_grb2_adapter_protein: float
+      grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      shcstar_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      cpx_ras_gdp_shcstar_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_p: float
+      ketanserin: float
+      cpx_ketanserin_2ar: float
+      cpx_ketanserin_2argq: float
+      product_x: float
+    species_labels:
+      source_defined_tcb_state: source-defined TCB state
+      cpx_erk_pp_mkp_pp: Cpx ERK PP MKP PP
+      cpx_erkp_mkp_pp: Cpx ERKP MKP PP
+      active_erk_mkp_phosphatase_complex: active ERK-MKP phosphatase complex
+      rafstarstar: Rafstarstar
+      cpx_mekpp_pp2a: Cpx MEKPP PP2A
+      cpx_rafstarstar_pp2a: Cpx Rafstarstar PP2A
+      cpx_erkpp_rafstar: Cpx ERKPP Rafstar
+      cpx_rafstar_pp2a: Cpx Rafstar PP2A
+      erk_pp: ERK PP
+      cpx_erkp_mekpp: Cpx ERKP MEKPP
+      cpx_erk_mek_pp: Cpx ERK MEK PP
+      mek_pp: MEK PP
+      cpx_erk_mkp_pp: Cpx ERK MKP PP
+      source_defined_mkp_state: source-defined MKP state
+      pla2star_calcium: Pla2star calcium
+      pla2_calcium: PLA2 calcium
+      cpx_erkpp_mkp: Cpx ERKPP MKP
+      pla2star: Pla2star
+      cpx_erkpp_pla2star: Cpx ERKPP Pla2star
+      calcium: calcium
+      source_defined_pla2_state: source-defined PLA2 state
+      mkp_pp: MKP PP
+      source_defined_erk_p_state: source-defined ERK_P state
+      erk: ERK
+      cpx_mekp_rafstar: Cpx MEKP Rafstar
+      cpx_mekp_pp2a: Cpx MEKP PP2A
+      pp2a: PP2A
+      source_defined_mek_p_state: source-defined MEK_P state
+      cpx_mek_rafstar: Cpx MEK Rafstar
+      mek: MEK
+      rafstar: Rafstar
+      cpx_ras_gtp_raf: Cpx RAS GTP RAF
+      raf: RAF
+      ras_gtp: RAS GTP
+      ras_gap: RAS GAP
+      ras_gdp: RAS GDP
+      source_defined_pip2_state: source-defined PIP2 state
+      source_defined_pi_state: source-defined PI state
+      source_defined_rgs4_state: source-defined RGS4 state
+      cpx_rgs4_gq_a_gtp: Cpx RGS4 Gq A GTP
+      cpx_a_2ar_gq: Cpx A 2AR Gq
+      cpx2ar_gqtrimer: Cpx2ar Gqtrimer
+      ht2ar: Ht2ar
+      ht2ar_internal: Ht2ar Internal
+      a_2ar_i_deg: A 2AR I Deg
+      cpx_a_2ar_internal: Cpx A 2AR Internal
+      cpx_a_2ar: Cpx A 2AR
+      gq_trimer: Gq Trimer
+      gq_a_gtp: Gq A GTP
+      gq_betagamma: Gq Betagamma
+      gq_a_gdp: Gq A GDP
+      source_defined_plcb_state: source-defined PLCB state
+      plcb_gq_a_gtp: Plcb Gq A GTP
+      plcb_calcium: Plcb calcium
+      plcb_calcium_gq_a_gtp: Plcb calcium Gq A GTP
+      ip3: IP3
+      dag: DAG
+      pkc: PKC
+      pkc_calcium: PKC calcium
+      pkc_dag: PKC DAG
+      pkc_dag_aa: PKC DAG AA
+      source_defined_apc_state: source-defined APC state
+      source_defined_aa_state: source-defined AA state
+      pkc_calcium_aa: PKC calcium AA
+      pkc_aa: PKC AA
+      pip2_pla2_calcium: PIP2 PLA2 calcium
+      ras_gef: RAS GEF
+      ras_gef_star: RAS GEF Star
+      ras_gap_star: RAS GAP Star
+      pip2_pla2: PIP2 PLA2
+      pkc_calcium_dag: PKC calcium DAG
+      pkc_calcium_dagactive: PKC calcium Dagactive
+      pkc_dag_aaactive: PKC DAG Aaactive
+      source_defined_pa_state: source-defined PA state
+      source_defined_pi_state_2: source-defined PI state
+      source_defined_pip_state: source-defined PIP state
+      pi3k: PI3K
+      gi_br_pi3k: Gi Br PI3K
+      pi3kstar: Pi3kstar
+      pip2_pi3kstar: PIP2 Pi3kstar
+      source_defined_pip3_state: source-defined PIP3 state
+      source_defined_src_state: source-defined SRC state
+      cpx_src_phosphorylated_ip3: Cpx Src phosphorylated IP3
+      src_star: Src Star
+      source_defined_csk_state: source-defined CSK state
+      cpx_csk_srcstar: Cpx Csk Srcstar
+      source_defined_pten_state: source-defined PTEN state
+      cpx_pten_phosphorylated_ip3: Cpx PTEN phosphorylated IP3
+      cpx_a_ht1ar_internal: Cpx A HT1AR Internal
+      a_ht1r_i_deg: A HT1R I Deg
+      ht1ar_internal: HT1AR Internal
+      ht1ar: HT1AR
+      cpx_a_ht1ar: Cpx A HT1AR
+      gitrimer: Gitrimer
+      cpx_ht1ar_gitrimer: Cpx HT1AR Gitrimer
+      cpx_a_r1a_gi: Cpx A R1A Gi
+      gi_betagamma: Gi Betagamma
+      gi_a_gtp: Gi A GTP
+      gi_a_gdp: Gi A GDP
+      cpx_rgs4_gi_a_gtp_1: Cpx RGS4 Gi A GTP 1
+      rgs4_1: RGS4 1
+      shc_adapter_protein: Shc adapter protein
+      serotonin: Serotonin
+      grb2_adapter_protein: Grb2 adapter protein
+      sos_guanine_nucleotide_exchange_factor: SOS guanine-nucleotide exchange factor
+      shc_adapter_protein_star: Shc adapter protein Star
+      shcstar_grb2_adapter_protein: Shcstar Grb2 adapter protein
+      grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Grb2 adapter protein
+        SOS guanine-nucleotide exchange factor
+      shcstar_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Shcstar
+        Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      cpx_ras_gdp_shcstar_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Cpx
+        RAS GDP Shcstar Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_p: Grb2 adapter
+        protein SOS guanine-nucleotide exchange factor P
+      ketanserin: Ketanserin
+      cpx_ketanserin_2ar: Cpx Ketanserin 2AR
+      cpx_ketanserin_2argq: Cpx Ketanserin 2argq
+      product_x: Product X
+io:
+  inputs: []
+  outputs: []

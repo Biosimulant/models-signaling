@@ -1,0 +1,41 @@
+schema_version: '2.0'
+title: Tyson2003_Mutual_Activation Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Tyson2003_Mutual_Activation.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_tyson2003_mutual_activation_biomd0000000311_model
+    title: Tyson2003_Mutual_Activation
+    context: phosphorylation and regulatory motif dynamics
+    question: How does Tyson2003 Mutual Activation express its source-modeled signaling
+      motif over the baseline run?
+    visual_scope: phosphorylation and regulatory motif dynamics
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_r_state: float
+      source_defined_s_state: float
+      source_defined_ep_state: float
+      source_defined_e_state: float
+    species_labels:
+      source_defined_r_state: Source Defined R State
+      source_defined_s_state: Source Defined S State
+      source_defined_ep_state: Source Defined EP State
+      source_defined_e_state: Source Defined E State
+io:
+  inputs: []
+  outputs: []

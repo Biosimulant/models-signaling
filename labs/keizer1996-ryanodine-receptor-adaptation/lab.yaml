@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Keizer1996_Ryanodine_receptor_adaptation Lab
+description: 'Clean Biosimulant lab for systems signaling model: Keizer1996_Ryanodine_receptor_adaptation.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model.state
+  to:
+  - visualisation.signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model_state
+- from: signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model.summary
+  to:
+  - visualisation.signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model_summary
+- from: signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model.species_labels
+  to:
+  - visualisation.signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+io:
+  inputs:
+  - name: initial_source_defined_pc1_state
+    maps_to: signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model.initial_source_defined_pc1_state
+    label: Initial source-defined PC1 state
+    description: Initial level of source-defined PC1 state. Maps to SBML symbol `Pc1`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_pc1_state
+    maps_to: signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model.source_defined_pc1_state
+    label: Source Defined PC1 State
+    description: Source Defined PC1 State. Maps to SBML symbol `Pc1` and is emitted
+      in native SBML units.
+  - name: source_defined_po2_state
+    maps_to: signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model.source_defined_po2_state
+    label: Source Defined PO2 State
+    description: Source Defined PO2 State. Maps to SBML symbol `Po2` and is emitted
+      in native SBML units.
+  - name: source_defined_po1_state
+    maps_to: signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model.source_defined_po1_state
+    label: source-defined PO1 state
+    description: source-defined PO1 state. Maps to SBML symbol `Po1` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_keizer1996_ryanodine_receptor_adaptation_biomd0000000060_model.species_labels
+    label: Observable labels

@@ -1,0 +1,85 @@
+schema_version: '2.0'
+title: Huang1996 - Ultrasensitivity in MAPK cascade Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_huang1996_ultrasensitivity_in_mapk_cascade_biomd0000000009_model
+    title: Huang1996 - Ultrasensitivity in MAPK cascade
+    context: receptor-to-MAPK cascade signaling
+    question: How does Huang1996 - Ultrasensitivity in MAPK cascade propagate receptor
+      or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      mapkkk_activator_ras: float
+      mapkkk_inactivator: float
+      mos_kinase: float
+      source_defined_mos_p_state: float
+      source_defined_mek1_state: float
+      mek1_p: float
+      mek1_pp: float
+      source_defined_erk2_state: float
+      erk2_p: float
+      erk2_pp: float
+      mapk_pase: float
+      mapkk_pase: float
+      e1_mos_kinase: float
+      e2_mos_kinase_p: float
+      p_mos_kinase_mek1: float
+      p_mos_kinase_p_mek1: float
+      pp_mek1_erk2: float
+      pp_mek1_p_erk2: float
+      mapkk_pase_pp_mek1: float
+      mapkk_pase_p_mek1: float
+      mapk_pase_pp_erk2: float
+      mapk_pase_p_erk2: float
+      k_pp_norm: float
+      kk_pp_norm: float
+      kkk_p_norm: float
+      relative_maximal_k_pp: float
+    species_labels:
+      mapkkk_activator_ras: MAPKKK Activator RAS
+      mapkkk_inactivator: MAPKKK Inactivator
+      mos_kinase: Mos kinase
+      source_defined_mos_p_state: source-defined MOS-P state
+      source_defined_mek1_state: source-defined MEK1 state
+      mek1_p: Mek1 P
+      mek1_pp: Mek1 PP
+      source_defined_erk2_state: source-defined ERK2 state
+      erk2_p: Erk2 P
+      erk2_pp: Erk2 PP
+      mapk_pase: MAPK Pase
+      mapkk_pase: MAPKK Pase
+      e1_mos_kinase: E1 Mos kinase
+      e2_mos_kinase_p: E2 Mos kinase P
+      p_mos_kinase_mek1: P Mos kinase Mek1
+      p_mos_kinase_p_mek1: P Mos kinase P Mek1
+      pp_mek1_erk2: PP Mek1 Erk2
+      pp_mek1_p_erk2: PP Mek1 P Erk2
+      mapkk_pase_pp_mek1: MAPKK Pase PP Mek1
+      mapkk_pase_p_mek1: MAPKK Pase P Mek1
+      mapk_pase_pp_erk2: MAPK Pase PP Erk2
+      mapk_pase_p_erk2: MAPK Pase P Erk2
+      k_pp_norm: K PP Norm
+      kk_pp_norm: KK PP Norm
+      kkk_p_norm: KKK P Norm
+      relative_maximal_k_pp: Relative Maximal K PP
+io:
+  inputs: []
+  outputs: []

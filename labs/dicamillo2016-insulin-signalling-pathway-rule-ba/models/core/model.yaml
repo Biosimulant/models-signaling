@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: DiCamillo2016 - Insulin signalling pathway - Rule-based model
+description: Barbara Di Camillo, Azzurra Carlon, Federica Eduati & Gianna Maria Toffolo.
+  It can be used to explore signaling dynamics and compare pathway response across
+  conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+- hormone-signaling
+authors:
+- Biosimulant Team
+- Barbara Di Camillo
+- Azzurra Carlon
+- Federica Eduati
+- Gianna Maria Toffolo
+upstream:
+  id: biomodels_ebi:BIOMD0000000833
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000833
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000833
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000833?filename=DiCamillo2016.xml
+  license: CC0
+biosim:
+  entrypoint: src.dicamillo2016_insulin_signalling_pathway_rule_ba:Dicamillo2016InsulinSignallingPathwayRuleBaBiomd0000000833Model
+  init_kwargs:
+    model_path: data/BIOMD0000000833.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_amino_acids_input
+    maps_to: signaling_sbml_dicamillo2016_insulin_signalling_pathway_rule_ba_biomd0000000833_model.initial_amino_acids_input
+    label: Amino Acids Input
+    description: Amino Acids Input source parameter. Maps to SBML symbol `Amino_Acids_input`
+      and preserves the bundled default.
+  outputs:
+  - name: akt_s474_u_t309_u
+    maps_to: signaling_sbml_dicamillo2016_insulin_signalling_pathway_rule_ba_biomd0000000833_model.akt_s474_u_t309_u
+    label: AKT S474 U T309 U
+    description: AKT S474 U T309 U. Maps to SBML symbol `S15` and is emitted in native
+      SBML units.
+  - name: gs_sh2_state_a
+    maps_to: signaling_sbml_dicamillo2016_insulin_signalling_pathway_rule_ba_biomd0000000833_model.gs_sh2_state_a
+    label: GS SH2 State A
+    description: GS SH2 State A. Maps to SBML symbol `S20` and is emitted in native
+      SBML units.
+  - name: ras_gap_bs
+    maps_to: signaling_sbml_dicamillo2016_insulin_signalling_pathway_rule_ba_biomd0000000833_model.ras_gap_bs
+    label: RAS GAP Bs
+    description: RAS GAP Bs. Maps to SBML symbol `S21` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_dicamillo2016_insulin_signalling_pathway_rule_ba_biomd0000000833_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_dicamillo2016_insulin_signalling_pathway_rule_ba_biomd0000000833_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_dicamillo2016_insulin_signalling_pathway_rule_ba_biomd0000000833_model.species_labels
+    label: Observable labels

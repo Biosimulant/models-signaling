@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Brown2004 - NGF and EGF signaling Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Brown2004 - NGF and EGF signaling.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- neuroscience
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_brown2004_ngf_and_egf_signaling_biomd0000000033_model
+    title: Brown2004 - NGF and EGF signaling
+    context: receptor-to-MAPK cascade signaling
+    question: How does Brown2004 - NGF and EGF signaling propagate receptor or RAS/ERK
+      pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      egf: float
+      source_defined_nerve_growth_factor_state: float
+      free_egfreceptor: float
+      bound_egfreceptor: float
+      free_ngfreceptor: float
+      bound_ngfreceptor: float
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_inactive
+      : float
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_active
+      : float
+      p90rsk_inactive: float
+      p90rsk_active: float
+      ras_inactive: float
+      ras_active: float
+      active_ras_gap: float
+      raf1inactive: float
+      raf1active: float
+      braf_inactive: float
+      braf_active: float
+      mek_inactive: float
+      mek_active: float
+      erk_inactive: float
+      erk_active: float
+      pi3kinactive: float
+      pi3kactive: float
+      akt_inactive: float
+      akt_active: float
+      c3ginactive: float
+      c3gactive: float
+      rap1inactive: float
+      rap1active: float
+      rap_gap_active: float
+      pp2aactive: float
+      raf1pptase: float
+    species_labels:
+      egf: EGF
+      source_defined_nerve_growth_factor_state: Source Defined Nerve Growth Factor
+        State
+      free_egfreceptor: free Egfreceptor
+      bound_egfreceptor: bound Egfreceptor
+      free_ngfreceptor: free Ngfreceptor
+      bound_ngfreceptor: bound Ngfreceptor
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_inactive
+      : SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine
+        Nucleotide Exchange Factor Inactive
+      ? sos_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_guanine_nucleotide_exchange_factor_active
+      : SOS guanine-nucleotide exchange factor Guanine Nucleotide Exchange Factor
+        Guanine Nucleotide Exchange Factor Guanine Nucleotide Exchange Factor Guanine
+        Nucleotide Exchange Factor active
+      p90rsk_inactive: P90rsk Inactive
+      p90rsk_active: P90rsk active
+      ras_inactive: RAS Inactive
+      ras_active: RAS active
+      active_ras_gap: active RAS GAP
+      raf1inactive: Raf1inactive
+      raf1active: Raf1active
+      braf_inactive: Braf Inactive
+      braf_active: Braf active
+      mek_inactive: MEK Inactive
+      mek_active: MEK active
+      erk_inactive: ERK Inactive
+      erk_active: ERK active
+      pi3kinactive: Pi3kinactive
+      pi3kactive: Pi3kactive
+      akt_inactive: AKT Inactive
+      akt_active: AKT active
+      c3ginactive: C3ginactive
+      c3gactive: C3gactive
+      rap1inactive: Rap1inactive
+      rap1active: Rap1active
+      rap_gap_active: Rap Gap active
+      pp2aactive: Pp2aactive
+      raf1pptase: Raf1pptase
+io:
+  inputs: []
+  outputs: []

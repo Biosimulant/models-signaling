@@ -1,0 +1,41 @@
+schema_version: '2.0'
+title: Becker2010_EpoR_AuxiliaryModel Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Becker2010_EpoR_AuxiliaryModel.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_becker2010_epor_auxiliarymodel_biomd0000000272_model
+    title: Becker2010_EpoR_AuxiliaryModel
+    context: GPCR and cAMP/PKA signaling
+    question: How does Becker2010 EpoR AuxiliaryModel route receptor activity into
+      cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      epo_receptor: float
+      source_defined_sav_state: float
+      sav_erythropoietin_r: float
+      sav_erythropoietin_ri: float
+    species_labels:
+      epo_receptor: EPO receptor
+      source_defined_sav_state: source-defined SAV state
+      sav_erythropoietin_r: Sav erythropoietin R
+      sav_erythropoietin_ri: Sav erythropoietin Ri
+io:
+  inputs: []
+  outputs: []

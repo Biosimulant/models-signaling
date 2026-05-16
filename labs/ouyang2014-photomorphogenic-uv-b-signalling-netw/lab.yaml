@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Ouyang2014 - photomorphogenic UV-B signalling network Lab
+description: 'Clean Biosimulant lab for systems signaling model: Ouyang2014 - photomorphogenic
+  UV-B signalling network. Values are native SBML quantities; equations, parameters,
+  and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model.state
+  to:
+  - visualisation.signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model_state
+- from: signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model.summary
+  to:
+  - visualisation.signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model_summary
+- from: signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model.species_labels
+  to:
+  - visualisation.signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- plant-signaling
+io:
+  inputs:
+  - name: initial_source_defined_uv_state_level
+    maps_to: signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model.initial_source_defined_uv_state_level
+    label: source-defined UV state
+    description: source-defined UV state source parameter. Maps to SBML symbol `UV`
+      and preserves the bundled default.
+  - name: initial_uvr8_m
+    maps_to: signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model.initial_uvr8_m
+    label: Initial UVR8 M
+    description: Initial level of UVR8 M. Maps to SBML symbol `UVR8_M`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_uvr8d
+    maps_to: signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model.initial_uvr8d
+    label: Initial UVR8D
+    description: Initial level of UVR8D. Maps to SBML symbol `UVR8D`; exposed as a
+      traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_cdcs_state
+    maps_to: signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model.source_defined_cdcs_state
+    label: source-defined CDCS state
+    description: source-defined CDCS state. Maps to SBML symbol `CDCS` and is emitted
+      in native SBML units.
+  - name: uvr8m
+    maps_to: signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model.uvr8m
+    label: UVR8M
+    description: UVR8M. Maps to SBML symbol `UVR8M` and is emitted in native SBML
+      units.
+  - name: source_defined_ucs_state
+    maps_to: signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model.source_defined_ucs_state
+    label: source-defined UCS state
+    description: source-defined UCS state. Maps to SBML symbol `UCS` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_ouyang2014_photomorphogenic_uv_b_signalling_netw_biomd0000000545_model.species_labels
+    label: Observable labels

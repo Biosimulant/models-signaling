@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Gupta2007_HypothalamicPituitaryAdrenal_ModelA
+description: 'This a model from the article: Inclusion of the glucocorticoid receptor
+  in a hypothalamic pituitary adrenalaxis model reveals bistability. Gupta S, Aslakson
+  E, Gurbaxani BM, Vernon SD.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- hormone-signaling
+- physiology
+authors:
+- Biosimulant Team
+- Shakti Gupta
+- Eric Aslakson
+- Brian M Gurbaxani
+- Suzanne D Vernon
+upstream:
+  id: biomodels_ebi:MODEL1006230111
+  source_db: biomodels_ebi
+  source_id: MODEL1006230111
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230111
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230111?filename=MODEL1006230111_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.gupta2007_hypothalamicpituitaryadrenal_modela:Gupta2007HypothalamicpituitaryadrenalModelaModel1006230111Model
+  init_kwargs:
+    model_path: data/MODEL1006230111.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_c_state
+    maps_to: signaling_sbml_gupta2007_hypothalamicpituitaryadrenal_modela_model1006230111_model.initial_source_defined_c_state
+    label: Initial source-defined C state
+    description: Initial level of source-defined C state. Maps to SBML symbol `c`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_c_state
+    maps_to: signaling_sbml_gupta2007_hypothalamicpituitaryadrenal_modela_model1006230111_model.source_defined_c_state
+    label: source-defined C state
+    description: source-defined C state. Maps to SBML symbol `c` and is emitted in
+      native SBML units.
+  - name: source_defined_a_state
+    maps_to: signaling_sbml_gupta2007_hypothalamicpituitaryadrenal_modela_model1006230111_model.source_defined_a_state
+    label: source-defined A state
+    description: source-defined A state. Maps to SBML symbol `a` and is emitted in
+      native SBML units.
+  - name: source_defined_r_state
+    maps_to: signaling_sbml_gupta2007_hypothalamicpituitaryadrenal_modela_model1006230111_model.source_defined_r_state
+    label: source-defined R state
+    description: source-defined R state. Maps to SBML symbol `r` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_gupta2007_hypothalamicpituitaryadrenal_modela_model1006230111_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_gupta2007_hypothalamicpituitaryadrenal_modela_model1006230111_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_gupta2007_hypothalamicpituitaryadrenal_modela_model1006230111_model.species_labels
+    label: Observable labels

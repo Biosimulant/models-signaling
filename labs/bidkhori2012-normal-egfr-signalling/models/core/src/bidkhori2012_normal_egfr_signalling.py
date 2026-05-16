@@ -1,0 +1,292 @@
+# SPDX-FileCopyrightText: 2026-present Biosimulant Team
+# SPDX-License-Identifier: MIT
+"""Tellurium-backed SBML wrapper for Bidkhori2012 - normal EGFR signalling."""
+
+from __future__ import annotations
+
+from biosim.contrib.sbml import TelluriumSBMLBioModule
+
+
+class Bidkhori2012NormalEgfrSignallingModel(TelluriumSBMLBioModule):
+    """Faithful Tellurium execution of the bundled SBML source model."""
+
+    _SBML_ID = 'BIOMD0000000452'
+    _TITLE = 'Bidkhori2012 - normal EGFR signalling'
+    _TIME_UNIT = "model_time"
+    _OBSERVABLE_STRATEGY = 'species'
+    _EXPOSE_INTEGRATION_STEP_INPUT = False
+    _HEADLINE_OUTPUTS = {'egf_egfr': ('mw7eacabf9_d68c_491a_aba2_ec0809a8ecc8',
+                  'native SBML value',
+                  'EGF EGFR. Maps to SBML symbol `mw7eacabf9_d68c_491a_aba2_ec0809a8ecc8` and is '
+                  'emitted in native SBML units.'),
+     'shc_adapter_protein': ('mw3c2e1b43_29ca_491a_93e9_c723a993d6fb',
+                             'native SBML value',
+                             'Shc adapter protein. Maps to SBML symbol '
+                             '`mw3c2e1b43_29ca_491a_93e9_c723a993d6fb` and is emitted in native SBML '
+                             'units.'),
+     'sos_guanine_nucleotide_exchange_factor': ('mw9dcaa655_a755_426e_a3fa_1ad7c3c45575',
+                                                'native SBML value',
+                                                'SOS guanine-nucleotide exchange factor. Maps to SBML '
+                                                'symbol `mw9dcaa655_a755_426e_a3fa_1ad7c3c45575` and '
+                                                'is emitted in native SBML units.')}
+    _INITIAL_CONDITION_INPUTS = {}
+    _PARAMETER_INPUTS = {'initial_abstract_source_state_k115_level': ('mw1df2caba_8e41_4fe5_a1b5_7777eb98ed1c',
+                                                  0.005,
+                                                  'native SBML value',
+                                                  'Abstract source state K115 source parameter. Maps '
+                                                  'to SBML symbol '
+                                                  '`mw1df2caba_8e41_4fe5_a1b5_7777eb98ed1c` and '
+                                                  'preserves the bundled default.'),
+     'initial_abstract_source_state_k121_level': ('mw7aba6db3_c7ec_4192_bb5e_0ac4b466c1a5',
+                                                  0.005,
+                                                  'native SBML value',
+                                                  'Abstract source state K121 source parameter. Maps '
+                                                  'to SBML symbol '
+                                                  '`mw7aba6db3_c7ec_4192_bb5e_0ac4b466c1a5` and '
+                                                  'preserves the bundled default.'),
+     'initial_abstract_source_state_k46_level': ('mwe1743f7b_ca2c_47d4_91d7_aed2748d98c5',
+                                                 2.661,
+                                                 'native SBML value',
+                                                 'Abstract source state K46 source parameter. Maps to '
+                                                 'SBML symbol `mwe1743f7b_ca2c_47d4_91d7_aed2748d98c5` '
+                                                 'and preserves the bundled default.')}
+    _SPECIES_LABELS = {'mwe2fff28d_182c_4a1c_9882_f17774c0958a': 'EGF',
+     'mw93907b2d_53db_4080_9e3f_3eb304441ab9': 'EGFR',
+     'mw7eacabf9_d68c_491a_aba2_ec0809a8ecc8': 'EGF EGFR',
+     'mwa8f2e7b2_0927_4ab4_a817_dddc43bb4fa3': 'EGF EGFR2',
+     'mwbfcf6773_1915_432c_b1d2_1f246094cc74': 'P EGF EGFR2',
+     'mw19122f7d_f92e_4dc0_922f_6b681db65b0b': 'Cbl ubiquitin ligase',
+     'mw3c2e1b43_29ca_491a_93e9_c723a993d6fb': 'Shc adapter protein',
+     'mw5198d3c2_879c_4f0d_b4f8_cd40efe0b1cf': 'P EGF EGFR2 Shc adapter protein',
+     'mwe57c3282_5935_405c_8c0b_7fadb7a5de17': 'source-defined SHP state',
+     'mw954e8fcb_ac0a_459d_8878_f19080208a17': 'P EGF EGFR2 SHP2',
+     'mwa98802cb_c977_4fe0_9e67_5000904c2c36': 'P EGF EGFR2 P Shc adapter protein',
+     'mwa0349407_8187_48fc_9e94_5698ccc4e06d': 'source-defined PSHC state',
+     'mwf9999977_6f0e_4e35_9b73_75587f3448e9': 'P Shc adapter protein SHP2',
+     'mwf430a579_ecbf_48ba_80c2_06e455808f2a': 'Grb2 adapter protein',
+     'mw504578d8_96c3_471f_8a7e_8c14e7535d3d': 'P EGF EGFR2 P Shc adapter protein Grb2 adapter protein',
+     'mw45ab688a_6467_4a3e_a779_2118fa84d69e': 'P EGF EGFR2 P Shc adapter protein Grb2 adapter protein '
+                                               'SHP2',
+     'mw9dcaa655_a755_426e_a3fa_1ad7c3c45575': 'SOS guanine-nucleotide exchange factor',
+     'mwfbda4e09_0cbb_49bc_ae69_f88b7a79ed21': 'P EGF EGFR2 P Shc adapter protein Grb2 adapter protein '
+                                               'SOS guanine-nucleotide exchange factor',
+     'mwb1bc2058_e6d8_4680_9e6c_d27bb366cde0': 'P EGF EGFR2 P Shc adapter protein Grb2 adapter protein '
+                                               'SOS guanine-nucleotide exchange factor Cbl ubiquitin '
+                                               'ligase',
+     'mw1093b3af_1864_4ba3_a541_6009a9921282': 'Grb2 adapter protein SOS guanine-nucleotide exchange '
+                                               'factor',
+     'mwd9462e5b_a272_4b66_ab66_fde9266b1a43': 'P EGF EGFR2 Grb2 adapter protein',
+     'mw925b938a_fe73_4664_ba6f_e72e57780891': 'P EGF EGFR2 Grb2 adapter protein SHP2',
+     'mwf8cc7834_bf4f_4ccd_8235_d0890badf0f6': 'P EGF EGFR2 Grb2 adapter protein SOS '
+                                               'guanine-nucleotide exchange factor',
+     'mw481cd12b_61ba_44e5_93bf_8b88c6c4a4e7': 'P EGF EGFR2 Grb2 adapter protein SOS '
+                                               'guanine-nucleotide exchange factor Cbl ubiquitin '
+                                               'ligase',
+     'mw8f5a7b5c_ca4c_4a4c_85b1_e5d640c426bf': 'RAS GDP',
+     'mwf40d6176_abfc_4a30_886f_83a19fcffc48': 'P EGF EGFR2 P Shc adapter protein Grb2 adapter protein '
+                                               'SOS guanine-nucleotide exchange factor RAS GDP',
+     'mwa54a9c38_c98b_45e5_8432_4119fb777e44': 'RAS GTP',
+     'mw28464aad_8013_4a23_ae09_a406954859a6': 'P EGF EGFR2 Grb2 adapter protein SOS '
+                                               'guanine-nucleotide exchange factor RAS GDP',
+     'mw7cff9a0e_094d_498e_bf7f_7b162c61d63a': 'RAS GAP',
+     'mwdf82303e_323f_4c51_a858_56a59233cd98': 'RAS GTP RAS GAP',
+     'mwd39388fd_4f85_4d1c_b2a3_37857c595a2d': 'P EGF EGFR2 RAS GAP',
+     'mwd7bf31ba_b05c_4c45_bb2f_6a2468a2a507': 'P EGF EGFR2 RAS GAP RAS GTP',
+     'mwbf5cb039_b830_4282_aa22_a3dda6272ec1': 'P EGF EGFR2 RAS GAP SHP2',
+     'mw66ac98c4_7e7b_4071_954d_43eb17584220': 'RAF1',
+     'mw83de7813_4941_45a6_a320_a551165bf22a': 'RAF1 RAS GTP',
+     'mwaff92910_ed3d_40b9_a29c_e4866167e828': 'Raf1active',
+     'mw0834731b_0477_4217_a53b_30cef851191b': 'MEK',
+     'mw4628f984_eb87_4922_9760_4975095ce6eb': 'Raf1active MEK',
+     'mw9b25f809_18a1_4c14_8f4b_cf18e6d93c28': 'source-defined PMEK state',
+     'mw12ba4000_d452_420c_be63_96d2848aca32': 'Raf1active P MEK',
+     'mwf816df4c_4593_4d23_990f_0d7c15ddde5d': 'Pp MEK',
+     'mw7e23b961_186b_47a0_a8b5_5e9957766792': 'ERK',
+     'mwcedf8ecd_67bd_4b91_aa04_d58782dec2a4': 'Pp MEK ERK',
+     'mwcc894c94_0ddf_42cc_913e_cdcc4d471d94': 'PERK kinase',
+     'mw6cb74b27_ffef_49bb_8ffb_622d552caa9e': 'Pp MEK P ERK',
+     'mwd784228d_0cb5_468a_ac70_02d8f04b3d9c': 'Pp ERK',
+     'mwbaaeb210_4806_4076_9d60_219f4ed945b6': 'source-defined PASE state',
+     'mw19a33ad5_5ba4_46c7_84eb_c1287f02bcd5': 'Raf1active Pase',
+     'mwf9e2a044_7774_400b_a74e_a111b4a21f30': 'source-defined PASE2 state',
+     'mwcb572fe2_c3ac_40e7_8141_da7d55fce18a': 'Pp MEK Pase2',
+     'mwa0acc0ac_5fac_4a42_a3be_e36db44994b0': 'P MEK Pase2',
+     'mwd087f76b_65dc_47f1_ba21_c43774457686': 'source-defined PASE3 state',
+     'mw35f5adaa_d1c0_433c_817d_76e317f4cb15': 'P ERK Pase3',
+     'mwa7e3103a_6394_472c_b0f4_8ed527f68604': 'Pp ERK Pase3',
+     'mw5babe3d5_a9af_4dfd_ac01_35474ef64af2': 'Pp ERK P EGF EGFR2 P Shc adapter protein Grb2 adapter '
+                                               'protein SOS guanine-nucleotide exchange factor',
+     'mw31ac308f_da36_4f73_830f_67f3e5b945d9': 'source-defined PSOS state',
+     'mw31261227_9cd6_4059_a0bb_04dbf4888080': 'Pp ERK P EGF EGFR2 Grb2 adapter protein SOS '
+                                               'guanine-nucleotide exchange factor',
+     'mw0a0ca6ba_cb28_44c7_a0c0_1593cb720966': 'Pro EGFR',
+     'mw06b8aada_c92a_48eb_8ee7_af3778cfe62f': 'P EGF EGFR2 P Shc adapter protein Grb2 adapter protein '
+                                               'SOS guanine-nucleotide exchange factor Cbl ubiquitin '
+                                               'ligase Epn',
+     'mwb2366216_0b3c_4f28_8303_fec92c68dd57': 'source-defined EPN state',
+     'mw1d5948e7_5504_4224_9d71_227911b4f1ee': 'P EGF EGFR2 Grb2 adapter protein SOS '
+                                               'guanine-nucleotide exchange factor Cbl ubiquitin '
+                                               'ligase Epn',
+     'mwec1b368b_8f73_47eb_9636_9956389836eb': 'P EGF EGFR2 Cbl ubiquitin ligase',
+     'mwa455ec7e_1a12_4659_95a2_a5695d09ca60': 'P EGF EGFR2 Cbl ubiquitin ligase Epn',
+     'mw2ba1db9a_4483_44fa_a3a2_b4a5ea66898c': 'PI3K',
+     'mw0dc4e5eb_4366_4799_bebc_cfcffe5c06f5': 'P EGF EGFR2 PI3K',
+     'mw1e591998_65c0_484e_8a3b_537a38d94de1': 'P EGF EGFR2 P PI3K',
+     'mw78e207c4_4faf_4b48_8e22_1ee666e9cc4c': 'P PI3K',
+     'mwfc4a9c3d_3ebb_4033_8b7d_f4d7613d2078': 'source-defined TP4 state',
+     'mwbd6bb050_89bd_41df_8cea_d2e1fb77bafe': 'TP4 P PI3K',
+     'mw7033dfd6_53c5_433b_a132_f8cb34dea20f': 'TP4 PI3K',
+     'mwb561d9f3_a9ed_4bdb_8d40_87be5cc3237a': 'source-defined PIP2 state',
+     'mw014cc419_b720_4b90_9192_2ec6e706c87d': 'P PI3K PIP2',
+     'mwd7f41594_8377_4e2e_9528_45d5a82ffdb4': 'source-defined PIP3 state',
+     'mwcef73e0e_d195_4077_ae71_723664ee1602': 'AKT',
+     'mw62bf5275_ce02_4e86_b3b6_3f87a335e1de': 'source-defined AKTM state',
+     'mw6e01967b_3e2a_433d_bec6_9f9cf3ba243c': 'source-defined PDK1 state',
+     'mw6353aa36_d4a4_4254_8a1f_1f7f571d4233': 'Aktm PDK1',
+     'mwc1935afc_56b1_4a87_923c_ae6d82455d80': 'P Aktm PDK1',
+     'mw3d81860d_d786_4fcc_b8bb_64f1a2d7739d': 'P Aktm',
+     'mw16796ffe_4764_4a9f_942e_149f42c1cd28': 'source-defined PAKT state',
+     'mwa6e82fc9_a0ce_461c_93c8_17f3c807c1a1': 'P AKT Takt',
+     'mw236a3250_4c96_4f6e_b94c_ab3d12852801': 'AKT Takt',
+     'mw11a8b702_b8ac_4513_b4aa_063e51089812': 'source-defined TAKT state',
+     'mw1a0cb97a_b657_430b_963c_92217f643081': 'P Aktm Takt',
+     'mw9b937ca3_0d82_46d5_8f5a_0f9701002797': 'Aktm Takt',
+     'mw57a44eb0_ace7_4294_905a_219e87d3c281': 'P Aktm PDK1 Takt',
+     'mwd746a5d5_5e65_4a4c_9f84_0e4a3cb7d2fc': 'Aktm PDK1 Takt',
+     'mwa6994523_5d45_4000_af0c_3e94073bf183': 'P AKT Total',
+     'mwdf92bdc0_f426_45b0_9ad0_876521f41312': 'P Raf1active',
+     'mw13abe2a6_9905_40e5_8c23_3fc8834b572a': 'Stat3c',
+     'mw2fd710a6_7fe2_4484_bca6_59c187bade8b': 'P EGF EGFR2 Stat3c',
+     'mwb6a9aa2c_62e7_410f_9c33_dbe36dfcc4af': 'P Stat3c',
+     'mw341082a0_8017_4cc7_9d00_b1211a196072': 'P EGF EGFR2 P Stat3c',
+     'mwcea1f1c1_2f85_4af1_98ea_ef14cf580c09': 'source-defined PP1 state',
+     'mwdc34472c_a6f9_4002_951d_e0e8da64eb42': 'P Stat3c PP1',
+     'mw472d5cb9_120e_4f60_bbae_1ae2552837dd': 'P Stat3c P Stat3c PP1',
+     'mw4f575c55_7dff_45d7_94ad_cda9621d5b63': 'P Stat3c P Stat3c',
+     'mwd2c465fb_eea7_499a_8ea4_f318a64cb9ee': 'Stat3c P Stat3c',
+     'mw4110f531_7513_4786_8896_7c9d969ff558': 'P Stat3n P Stat3n',
+     'mwe3fd7f65_b0d1_44d9_b6f3_d2f7d332f664': 'P Stat3n',
+     'mw0e1be972_fded_4bff_a93d_091ec942485f': 'source-defined PP2 state',
+     'mw0facb8f2_95cf_4ddf_a959_b24ba64f320b': 'P Stat3n P Stat3n PP2',
+     'mw9686f53e_d343_45fd_b441_9c992219546a': 'Stat3n P Stat3n',
+     'mw960bddeb_e567_46dd_b2f3_ed5e6a5c7972': 'Stat3n',
+     'mw8c85ff7f_6368_4b11_a2ed_ce83481b55e6': 'P Stat3n PP2',
+     'mw548c81c2_c626_4df8_9177_a1a6fc3d4ce8': 'P EGF EGFR2 Stat3c Cbl ubiquitin ligase',
+     'mw142e6dc4_ec15_459d_a184_6b20be04f08d': 'P EGF EGFR2 Stat3c Cbl ubiquitin ligase Epn',
+     'mw2c47ae3f_06d9_40ec_a252_535db0ae5caa': 'P EGF EGFR2 PI3K Cbl ubiquitin ligase',
+     'mwd32d108b_49c2_4df2_9b67_d6c6b84f54b9': 'P EGF EGFR2 PI3K Cbl ubiquitin ligase Epn'}
+    _STATE_OUTPUT_ALIASES = {'mwe2fff28d_182c_4a1c_9882_f17774c0958a': 'egf',
+     'mw93907b2d_53db_4080_9e3f_3eb304441ab9': 'egfr',
+     'mw7eacabf9_d68c_491a_aba2_ec0809a8ecc8': 'egf_egfr',
+     'mwa8f2e7b2_0927_4ab4_a817_dddc43bb4fa3': 'egf_egfr2',
+     'mwbfcf6773_1915_432c_b1d2_1f246094cc74': 'p_egf_egfr2',
+     'mw19122f7d_f92e_4dc0_922f_6b681db65b0b': 'cbl_ubiquitin_ligase',
+     'mw3c2e1b43_29ca_491a_93e9_c723a993d6fb': 'shc_adapter_protein',
+     'mw5198d3c2_879c_4f0d_b4f8_cd40efe0b1cf': 'p_egf_egfr2_shc_adapter_protein',
+     'mwe57c3282_5935_405c_8c0b_7fadb7a5de17': 'source_defined_shp_state',
+     'mw954e8fcb_ac0a_459d_8878_f19080208a17': 'p_egf_egfr2_shp2',
+     'mwa98802cb_c977_4fe0_9e67_5000904c2c36': 'p_egf_egfr2_p_shc_adapter_protein',
+     'mwa0349407_8187_48fc_9e94_5698ccc4e06d': 'source_defined_pshc_state',
+     'mwf9999977_6f0e_4e35_9b73_75587f3448e9': 'p_shc_adapter_protein_shp2',
+     'mwf430a579_ecbf_48ba_80c2_06e455808f2a': 'grb2_adapter_protein',
+     'mw504578d8_96c3_471f_8a7e_8c14e7535d3d': 'p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein',
+     'mw45ab688a_6467_4a3e_a779_2118fa84d69e': 'p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_shp2',
+     'mw9dcaa655_a755_426e_a3fa_1ad7c3c45575': 'sos_guanine_nucleotide_exchange_factor',
+     'mwfbda4e09_0cbb_49bc_ae69_f88b7a79ed21': 'p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor',
+     'mwb1bc2058_e6d8_4680_9e6c_d27bb366cde0': 'p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_cbl_ubiquitin_ligase',
+     'mw1093b3af_1864_4ba3_a541_6009a9921282': 'grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor',
+     'mwd9462e5b_a272_4b66_ab66_fde9266b1a43': 'p_egf_egfr2_grb2_adapter_protein',
+     'mw925b938a_fe73_4664_ba6f_e72e57780891': 'p_egf_egfr2_grb2_adapter_protein_shp2',
+     'mwf8cc7834_bf4f_4ccd_8235_d0890badf0f6': 'p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor',
+     'mw481cd12b_61ba_44e5_93bf_8b88c6c4a4e7': 'p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_cbl_ubiquitin_ligase',
+     'mw8f5a7b5c_ca4c_4a4c_85b1_e5d640c426bf': 'ras_gdp',
+     'mwf40d6176_abfc_4a30_886f_83a19fcffc48': 'p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp',
+     'mwa54a9c38_c98b_45e5_8432_4119fb777e44': 'ras_gtp',
+     'mw28464aad_8013_4a23_ae09_a406954859a6': 'p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp',
+     'mw7cff9a0e_094d_498e_bf7f_7b162c61d63a': 'ras_gap',
+     'mwdf82303e_323f_4c51_a858_56a59233cd98': 'ras_gtp_ras_gap',
+     'mwd39388fd_4f85_4d1c_b2a3_37857c595a2d': 'p_egf_egfr2_ras_gap',
+     'mwd7bf31ba_b05c_4c45_bb2f_6a2468a2a507': 'p_egf_egfr2_ras_gap_ras_gtp',
+     'mwbf5cb039_b830_4282_aa22_a3dda6272ec1': 'p_egf_egfr2_ras_gap_shp2',
+     'mw66ac98c4_7e7b_4071_954d_43eb17584220': 'raf1',
+     'mw83de7813_4941_45a6_a320_a551165bf22a': 'raf1_ras_gtp',
+     'mwaff92910_ed3d_40b9_a29c_e4866167e828': 'raf1active',
+     'mw0834731b_0477_4217_a53b_30cef851191b': 'mek',
+     'mw4628f984_eb87_4922_9760_4975095ce6eb': 'raf1active_mek',
+     'mw9b25f809_18a1_4c14_8f4b_cf18e6d93c28': 'source_defined_pmek_state',
+     'mw12ba4000_d452_420c_be63_96d2848aca32': 'raf1active_p_mek',
+     'mwf816df4c_4593_4d23_990f_0d7c15ddde5d': 'pp_mek',
+     'mw7e23b961_186b_47a0_a8b5_5e9957766792': 'erk',
+     'mwcedf8ecd_67bd_4b91_aa04_d58782dec2a4': 'pp_mek_erk',
+     'mwcc894c94_0ddf_42cc_913e_cdcc4d471d94': 'perk_kinase',
+     'mw6cb74b27_ffef_49bb_8ffb_622d552caa9e': 'pp_mek_p_erk',
+     'mwd784228d_0cb5_468a_ac70_02d8f04b3d9c': 'pp_erk',
+     'mwbaaeb210_4806_4076_9d60_219f4ed945b6': 'source_defined_pase_state',
+     'mw19a33ad5_5ba4_46c7_84eb_c1287f02bcd5': 'raf1active_pase',
+     'mwf9e2a044_7774_400b_a74e_a111b4a21f30': 'source_defined_pase2_state',
+     'mwcb572fe2_c3ac_40e7_8141_da7d55fce18a': 'pp_mek_pase2',
+     'mwa0acc0ac_5fac_4a42_a3be_e36db44994b0': 'p_mek_pase2',
+     'mwd087f76b_65dc_47f1_ba21_c43774457686': 'source_defined_pase3_state',
+     'mw35f5adaa_d1c0_433c_817d_76e317f4cb15': 'p_erk_pase3',
+     'mwa7e3103a_6394_472c_b0f4_8ed527f68604': 'pp_erk_pase3',
+     'mw5babe3d5_a9af_4dfd_ac01_35474ef64af2': 'pp_erk_p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor',
+     'mw31ac308f_da36_4f73_830f_67f3e5b945d9': 'source_defined_psos_state',
+     'mw31261227_9cd6_4059_a0bb_04dbf4888080': 'pp_erk_p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor',
+     'mw0a0ca6ba_cb28_44c7_a0c0_1593cb720966': 'pro_egfr',
+     'mw06b8aada_c92a_48eb_8ee7_af3778cfe62f': 'p_egf_egfr2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_cbl_ubiquitin_ligase_epn',
+     'mwb2366216_0b3c_4f28_8303_fec92c68dd57': 'source_defined_epn_state',
+     'mw1d5948e7_5504_4224_9d71_227911b4f1ee': 'p_egf_egfr2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_cbl_ubiquitin_ligase_epn',
+     'mwec1b368b_8f73_47eb_9636_9956389836eb': 'p_egf_egfr2_cbl_ubiquitin_ligase',
+     'mwa455ec7e_1a12_4659_95a2_a5695d09ca60': 'p_egf_egfr2_cbl_ubiquitin_ligase_epn',
+     'mw2ba1db9a_4483_44fa_a3a2_b4a5ea66898c': 'pi3k',
+     'mw0dc4e5eb_4366_4799_bebc_cfcffe5c06f5': 'p_egf_egfr2_pi3k',
+     'mw1e591998_65c0_484e_8a3b_537a38d94de1': 'p_egf_egfr2_p_pi3k',
+     'mw78e207c4_4faf_4b48_8e22_1ee666e9cc4c': 'p_pi3k',
+     'mwfc4a9c3d_3ebb_4033_8b7d_f4d7613d2078': 'source_defined_tp4_state',
+     'mwbd6bb050_89bd_41df_8cea_d2e1fb77bafe': 'tp4_p_pi3k',
+     'mw7033dfd6_53c5_433b_a132_f8cb34dea20f': 'tp4_pi3k',
+     'mwb561d9f3_a9ed_4bdb_8d40_87be5cc3237a': 'source_defined_pip2_state',
+     'mw014cc419_b720_4b90_9192_2ec6e706c87d': 'p_pi3k_pip2',
+     'mwd7f41594_8377_4e2e_9528_45d5a82ffdb4': 'source_defined_pip3_state',
+     'mwcef73e0e_d195_4077_ae71_723664ee1602': 'akt',
+     'mw62bf5275_ce02_4e86_b3b6_3f87a335e1de': 'source_defined_aktm_state',
+     'mw6e01967b_3e2a_433d_bec6_9f9cf3ba243c': 'source_defined_pdk1_state',
+     'mw6353aa36_d4a4_4254_8a1f_1f7f571d4233': 'aktm_pdk1',
+     'mwc1935afc_56b1_4a87_923c_ae6d82455d80': 'p_aktm_pdk1',
+     'mw3d81860d_d786_4fcc_b8bb_64f1a2d7739d': 'p_aktm',
+     'mw16796ffe_4764_4a9f_942e_149f42c1cd28': 'source_defined_pakt_state',
+     'mwa6e82fc9_a0ce_461c_93c8_17f3c807c1a1': 'p_akt_takt',
+     'mw236a3250_4c96_4f6e_b94c_ab3d12852801': 'akt_takt',
+     'mw11a8b702_b8ac_4513_b4aa_063e51089812': 'source_defined_takt_state',
+     'mw1a0cb97a_b657_430b_963c_92217f643081': 'p_aktm_takt',
+     'mw9b937ca3_0d82_46d5_8f5a_0f9701002797': 'aktm_takt',
+     'mw57a44eb0_ace7_4294_905a_219e87d3c281': 'p_aktm_pdk1_takt',
+     'mwd746a5d5_5e65_4a4c_9f84_0e4a3cb7d2fc': 'aktm_pdk1_takt',
+     'mwa6994523_5d45_4000_af0c_3e94073bf183': 'p_akt_total',
+     'mwdf92bdc0_f426_45b0_9ad0_876521f41312': 'p_raf1active',
+     'mw13abe2a6_9905_40e5_8c23_3fc8834b572a': 'stat3c',
+     'mw2fd710a6_7fe2_4484_bca6_59c187bade8b': 'p_egf_egfr2_stat3c',
+     'mwb6a9aa2c_62e7_410f_9c33_dbe36dfcc4af': 'p_stat3c',
+     'mw341082a0_8017_4cc7_9d00_b1211a196072': 'p_egf_egfr2_p_stat3c',
+     'mwcea1f1c1_2f85_4af1_98ea_ef14cf580c09': 'source_defined_pp1_state',
+     'mwdc34472c_a6f9_4002_951d_e0e8da64eb42': 'p_stat3c_pp1',
+     'mw472d5cb9_120e_4f60_bbae_1ae2552837dd': 'p_stat3c_p_stat3c_pp1',
+     'mw4f575c55_7dff_45d7_94ad_cda9621d5b63': 'p_stat3c_p_stat3c',
+     'mwd2c465fb_eea7_499a_8ea4_f318a64cb9ee': 'stat3c_p_stat3c',
+     'mw4110f531_7513_4786_8896_7c9d969ff558': 'p_stat3n_p_stat3n',
+     'mwe3fd7f65_b0d1_44d9_b6f3_d2f7d332f664': 'p_stat3n',
+     'mw0e1be972_fded_4bff_a93d_091ec942485f': 'source_defined_pp2_state',
+     'mw0facb8f2_95cf_4ddf_a959_b24ba64f320b': 'p_stat3n_p_stat3n_pp2',
+     'mw9686f53e_d343_45fd_b441_9c992219546a': 'stat3n_p_stat3n',
+     'mw960bddeb_e567_46dd_b2f3_ed5e6a5c7972': 'stat3n',
+     'mw8c85ff7f_6368_4b11_a2ed_ce83481b55e6': 'p_stat3n_pp2',
+     'mw548c81c2_c626_4df8_9177_a1a6fc3d4ce8': 'p_egf_egfr2_stat3c_cbl_ubiquitin_ligase',
+     'mw142e6dc4_ec15_459d_a184_6b20be04f08d': 'p_egf_egfr2_stat3c_cbl_ubiquitin_ligase_epn',
+     'mw2c47ae3f_06d9_40ec_a252_535db0ae5caa': 'p_egf_egfr2_pi3k_cbl_ubiquitin_ligase',
+     'mwd32d108b_49c2_4df2_9b67_d6c6b84f54b9': 'p_egf_egfr2_pi3k_cbl_ubiquitin_ligase_epn'}
+
+    def __init__(self, model_path: str = 'data/BIOMD0000000452.xml', integration_step: float = 0.01) -> None:
+        super().__init__(model_path=model_path, integration_step=integration_step)
+
+
+Bidkhori2012NormalEgfrSignallingBiomd0000000452Model = Bidkhori2012NormalEgfrSignallingModel

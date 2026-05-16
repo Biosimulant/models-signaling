@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Abell2011_CalciumSignaling_WithoutAdaptation
+description: 'This model is from the article: Parallel adaptive feedback enhances
+  reliability of the Ca2+ signaling system. Abell E, Ahrends R, Bandara S, Park BO,
+  Teruel MN.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+authors:
+- Biosimulant Team
+- Ellen Abell
+- Robert Ahrends
+- Samuel Bandara
+- Byung Ouk Park
+- Mary N Teruel
+upstream:
+  id: biomodels_ebi:BIOMD0000000354
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000354
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000354
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000354?filename=BIOMD0000000354_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.abell2011_calciumsignaling_withoutadaptation:Abell2011CalciumsignalingWithoutadaptationBiomd0000000354Model
+  init_kwargs:
+    model_path: data/BIOMD0000000354.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_intracellular_calcium
+    maps_to: signaling_sbml_abell2011_calciumsignaling_withoutadaptation_biomd0000000354_model.initial_intracellular_calcium
+    label: Initial intracellular calcium
+    description: Initial level of intracellular calcium. Maps to SBML symbol `CaI`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: intracellular_calcium
+    maps_to: signaling_sbml_abell2011_calciumsignaling_withoutadaptation_biomd0000000354_model.intracellular_calcium
+    label: intracellular calcium
+    description: intracellular calcium. Maps to SBML symbol `CaI` and is emitted in
+      native SBML units.
+  - name: extracellular_calcium
+    maps_to: signaling_sbml_abell2011_calciumsignaling_withoutadaptation_biomd0000000354_model.extracellular_calcium
+    label: extracellular calcium
+    description: extracellular calcium. Maps to SBML symbol `CaO` and is emitted in
+      native SBML units.
+  - name: stored_calcium
+    maps_to: signaling_sbml_abell2011_calciumsignaling_withoutadaptation_biomd0000000354_model.stored_calcium
+    label: stored calcium
+    description: stored calcium. Maps to SBML symbol `CaS` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_abell2011_calciumsignaling_withoutadaptation_biomd0000000354_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_abell2011_calciumsignaling_withoutadaptation_biomd0000000354_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_abell2011_calciumsignaling_withoutadaptation_biomd0000000354_model.species_labels
+    label: Observable labels

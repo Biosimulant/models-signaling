@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "84fc5970-8a89-466f-98cc-930e5f8e16d3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "06c8ef61-2af0-4ba9-a060-85d0a17203f4",
+  "created_at": "2026-05-16T05:49:39.149000145+00:00",
+  "last_synced_at": "2026-05-16T10:41:42.281389+00:00",
+  "hub_manifest_hash": "79605ffaeb8c6845a9a9355e459d534eac4770933805ece611b90f3536307bf7",
+  "package_name": "phosphatase-activities-on-pi-3-4-5-p3-and-pi-3-4-p2-lab"
+}

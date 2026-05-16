@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2e0954f8-78ad-4268-83fe-6b53782c6be9",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "88be2004-926f-43fa-966a-cb606bf4c6ac",
+  "created_at": "2026-05-15T19:08:10.127108168+00:00",
+  "last_synced_at": "2026-05-16T09:52:21.026755+00:00",
+  "hub_manifest_hash": "3debfc94e4450492ed2d4d51d875a0c2ff1a559b7f8e183fee7e5d8d8a415b1b",
+  "package_name": "ihekwaba2004-nfkb-sensitivity-lab"
+}

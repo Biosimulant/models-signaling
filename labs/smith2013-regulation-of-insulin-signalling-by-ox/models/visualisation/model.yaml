@@ -1,0 +1,295 @@
+schema_version: '2.0'
+title: Smith2013 - Regulation of Insulin Signalling by Oxidative Stress Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- stress-response
+- metabolic-signaling
+- hormone-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_smith2013_regulation_of_insulin_signalling_by_ox_biomd0000000474_model
+    title: Smith2013 - Regulation of Insulin Signalling by Oxidative Stress
+    context: metabolic and hormone signaling response
+    question: How does Smith2013 - Regulation of Insulin Signalling by Oxidative Stress
+      shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_ins_state: float
+      source_defined_inr_state: float
+      ins_in_r: float
+      ins_in_r_p: float
+      ins_2_in_r_p: float
+      cytoplasm_in_r: float
+      cytoplasm_ins_2_in_r_p: float
+      cytoplasm_ins_in_r_p: float
+      in_r_tot: float
+      in_r_bound: float
+      in_r_active: float
+      ptp1b: float
+      irs1_tyrosine_site_p_pi3k: float
+      pi345p3: float
+      source_defined_pip2_state: float
+      pi345p3_mol: float
+      pip2_mol: float
+      akt: float
+      source_defined_akt_p2_state: float
+      pkc: float
+      source_defined_pkc_p_state: float
+      as160: float
+      as160_p: float
+      cytoplasm_glut4: float
+      cellsurface_glut4: float
+      source_defined_pten_state: float
+      pp2a: float
+      extracellular_ros: float
+      ptp1b_ox: float
+      ptp1b_ptp1b_ox: float
+      pten_ox: float
+      pten_pten_ox: float
+      source_defined_ros_state: float
+      source_defined_gsh_state: float
+      source_defined_gssg_state: float
+      cytoplasm_sod2: float
+      nox_inact: float
+      source_defined_nox_state: float
+      nox_deact: float
+      nox_total: float
+      source_defined_mt_state: float
+      source_defined_irs1_state: float
+      irs1_tyrosine_site_p: float
+      irs1_poly_ser_p: float
+      irs1_tyrosine_site_p_poly_ser_p: float
+      irs_total: float
+      pi3k: float
+      source_defined_jnk_p_state: float
+      source_defined_ikk_p_state: float
+      source_defined_jnk_state: float
+      jnk_jnk_p: float
+      source_defined_ikk_state: float
+      ikk_ikk_p: float
+      source_defined_dusp_state: float
+      dusp_ox: float
+      dusp_dusp_ox: float
+      cytoplasm_foxo1_pa0_pd0_pe0_p_ub0: float
+      nucleus_foxo1_pa0_pd0_pe0_p_ub0: float
+      dnabound_foxo1_pa0_pd0_pe0_p_ub0: float
+      cytoplasm_foxo1_pa0_pd0_pe0_p_ub1: float
+      nucleus_foxo1_pa0_pd0_pe0_p_ub1: float
+      dnabound_foxo1_pa0_pd0_pe0_p_ub1: float
+      cytoplasm_foxo1_pa0_pd0_pe1_p_ub0: float
+      nucleus_foxo1_pa0_pd0_pe1_p_ub0: float
+      dnabound_foxo1_pa0_pd0_pe1_p_ub0: float
+      cytoplasm_foxo1_pa0_pd0_pe1_p_ub1: float
+      nucleus_foxo1_pa0_pd0_pe1_p_ub1: float
+      dnabound_foxo1_pa0_pd0_pe1_p_ub1: float
+      cytoplasm_foxo1_pa0_pd1_pe0_p_ub0: float
+      nucleus_foxo1_pa0_pd1_pe0_p_ub0: float
+      dnabound_foxo1_pa0_pd1_pe0_p_ub0: float
+      cytoplasm_foxo1_pa0_pd1_pe0_p_ub1: float
+      nucleus_foxo1_pa0_pd1_pe0_p_ub1: float
+      dnabound_foxo1_pa0_pd1_pe0_p_ub1: float
+      cytoplasm_foxo1_pa0_pd1_pe1_p_ub0: float
+      nucleus_foxo1_pa0_pd1_pe1_p_ub0: float
+      dnabound_foxo1_pa0_pd1_pe1_p_ub0: float
+      cytoplasm_foxo1_pa0_pd1_pe1_p_ub1: float
+      nucleus_foxo1_pa0_pd1_pe1_p_ub1: float
+      dnabound_foxo1_pa0_pd1_pe1_p_ub1: float
+      cytoplasm_foxo1_pa1_pd0_pe0_p_ub0: float
+      nucleus_foxo1_pa1_pd0_pe0_p_ub0: float
+      dnabound_foxo1_pa1_pd0_pe0_p_ub0: float
+      cytoplasm_foxo1_pa1_pd0_pe0_p_ub1: float
+      nucleus_foxo1_pa1_pd0_pe0_p_ub1: float
+      dnabound_foxo1_pa1_pd0_pe0_p_ub1: float
+      cytoplasm_foxo1_pa1_pd0_pe1_p_ub0: float
+      nucleus_foxo1_pa1_pd0_pe1_p_ub0: float
+      dnabound_foxo1_pa1_pd0_pe1_p_ub0: float
+      cytoplasm_foxo1_pa1_pd0_pe1_p_ub1: float
+      nucleus_foxo1_pa1_pd0_pe1_p_ub1: float
+      dnabound_foxo1_pa1_pd0_pe1_p_ub1: float
+      cytoplasm_foxo1_pa1_pd1_pe0_p_ub0: float
+      nucleus_foxo1_pa1_pd1_pe0_p_ub0: float
+      dnabound_foxo1_pa1_pd1_pe0_p_ub0: float
+      cytoplasm_foxo1_pa1_pd1_pe0_p_ub1: float
+      nucleus_foxo1_pa1_pd1_pe0_p_ub1: float
+      dnabound_foxo1_pa1_pd1_pe0_p_ub1: float
+      cytoplasm_foxo1_pa1_pd1_pe1_p_ub0: float
+      nucleus_foxo1_pa1_pd1_pe1_p_ub0: float
+      dnabound_foxo1_pa1_pd1_pe1_p_ub0: float
+      cytoplasm_foxo1_pa1_pd1_pe1_p_ub1: float
+      nucleus_foxo1_pa1_pd1_pe1_p_ub1: float
+      dnabound_foxo1_pa1_pd1_pe1_p_ub1: float
+      foxo1_pa0_tot: float
+      foxo1_pa1_tot: float
+      foxo1_pd0_tot: float
+      foxo1_pd1_tot: float
+      foxo1_pe0_tot: float
+      foxo1_pe1_tot: float
+      foxo1_p_ub0_tot: float
+      foxo1_p_ub1_tot: float
+      cytoplasm_foxo1_tot: float
+      nucleus_foxo1_tot: float
+      dnabound_foxo1_tot: float
+      foxo1_all: float
+      nucleus_rna_in_r: float
+      cytoplasm_rna_in_r: float
+      nucleus_rna_sod2: float
+      cytoplasm_rna_sod2: float
+      e2f1: float
+      source_defined_sgk_state: float
+      source_defined_cdk2_state: float
+      source_defined_ampk_state: float
+      cbpp300: float
+      source_defined_sirt1_state: float
+      source_defined_e3_state: float
+      source_defined_usp7_state: float
+      source_defined_scf_state: float
+      proteasome: float
+    species_labels:
+      source_defined_ins_state: source-defined INS state
+      source_defined_inr_state: source-defined INR state
+      ins_in_r: Ins In R
+      ins_in_r_p: Ins In R P
+      ins_2_in_r_p: Ins 2 In R P
+      cytoplasm_in_r: Cytoplasm In R
+      cytoplasm_ins_2_in_r_p: Cytoplasm Ins 2 In R P
+      cytoplasm_ins_in_r_p: Cytoplasm Ins In R P
+      in_r_tot: In R Tot
+      in_r_bound: In R bound
+      in_r_active: In R active
+      ptp1b: PTP1B
+      irs1_tyrosine_site_p_pi3k: IRS1 tyrosine site P PI3K
+      pi345p3: PI345P3
+      source_defined_pip2_state: source-defined PIP2 state
+      pi345p3_mol: PI345P3 Mol
+      pip2_mol: PIP2 Mol
+      akt: AKT
+      source_defined_akt_p2_state: source-defined AKT_P2 state
+      pkc: PKC
+      source_defined_pkc_p_state: source-defined PKC_P state
+      as160: AS160
+      as160_p: AS160 P
+      cytoplasm_glut4: Cytoplasm GLUT4
+      cellsurface_glut4: Cellsurface GLUT4
+      source_defined_pten_state: source-defined PTEN state
+      pp2a: PP2A
+      extracellular_ros: Extracellular ROS
+      ptp1b_ox: PTP1B Ox
+      ptp1b_ptp1b_ox: PTP1B PTP1B Ox
+      pten_ox: PTEN Ox
+      pten_pten_ox: PTEN PTEN Ox
+      source_defined_ros_state: source-defined ROS state
+      source_defined_gsh_state: source-defined GSH state
+      source_defined_gssg_state: source-defined GSSG state
+      cytoplasm_sod2: Cytoplasm SOD2
+      nox_inact: NOX Inact
+      source_defined_nox_state: source-defined NOX state
+      nox_deact: NOX Deact
+      nox_total: NOX Total
+      source_defined_mt_state: source-defined MT state
+      source_defined_irs1_state: source-defined IRS1 state
+      irs1_tyrosine_site_p: IRS1 tyrosine site P
+      irs1_poly_ser_p: IRS1 Poly Ser P
+      irs1_tyrosine_site_p_poly_ser_p: IRS1 tyrosine site P Poly Ser P
+      irs_total: IRS Total
+      pi3k: PI3K
+      source_defined_jnk_p_state: source-defined JNK_P state
+      source_defined_ikk_p_state: source-defined IKK_P state
+      source_defined_jnk_state: source-defined JNK state
+      jnk_jnk_p: JNK JNK P
+      source_defined_ikk_state: source-defined IKK state
+      ikk_ikk_p: IKK IKK P
+      source_defined_dusp_state: source-defined DUSP state
+      dusp_ox: DUSP Ox
+      dusp_dusp_ox: DUSP DUSP Ox
+      cytoplasm_foxo1_pa0_pd0_pe0_p_ub0: Cytoplasm Foxo1 Pa0 Pd0 Pe0 P Ub0
+      nucleus_foxo1_pa0_pd0_pe0_p_ub0: Nucleus Foxo1 Pa0 Pd0 Pe0 P Ub0
+      dnabound_foxo1_pa0_pd0_pe0_p_ub0: Dnabound Foxo1 Pa0 Pd0 Pe0 P Ub0
+      cytoplasm_foxo1_pa0_pd0_pe0_p_ub1: Cytoplasm Foxo1 Pa0 Pd0 Pe0 P Ub1
+      nucleus_foxo1_pa0_pd0_pe0_p_ub1: Nucleus Foxo1 Pa0 Pd0 Pe0 P Ub1
+      dnabound_foxo1_pa0_pd0_pe0_p_ub1: Dnabound Foxo1 Pa0 Pd0 Pe0 P Ub1
+      cytoplasm_foxo1_pa0_pd0_pe1_p_ub0: Cytoplasm Foxo1 Pa0 Pd0 Pe1 P Ub0
+      nucleus_foxo1_pa0_pd0_pe1_p_ub0: Nucleus Foxo1 Pa0 Pd0 Pe1 P Ub0
+      dnabound_foxo1_pa0_pd0_pe1_p_ub0: Dnabound Foxo1 Pa0 Pd0 Pe1 P Ub0
+      cytoplasm_foxo1_pa0_pd0_pe1_p_ub1: Cytoplasm Foxo1 Pa0 Pd0 Pe1 P Ub1
+      nucleus_foxo1_pa0_pd0_pe1_p_ub1: Nucleus Foxo1 Pa0 Pd0 Pe1 P Ub1
+      dnabound_foxo1_pa0_pd0_pe1_p_ub1: Dnabound Foxo1 Pa0 Pd0 Pe1 P Ub1
+      cytoplasm_foxo1_pa0_pd1_pe0_p_ub0: Cytoplasm Foxo1 Pa0 Pd1 Pe0 P Ub0
+      nucleus_foxo1_pa0_pd1_pe0_p_ub0: Nucleus Foxo1 Pa0 Pd1 Pe0 P Ub0
+      dnabound_foxo1_pa0_pd1_pe0_p_ub0: Dnabound Foxo1 Pa0 Pd1 Pe0 P Ub0
+      cytoplasm_foxo1_pa0_pd1_pe0_p_ub1: Cytoplasm Foxo1 Pa0 Pd1 Pe0 P Ub1
+      nucleus_foxo1_pa0_pd1_pe0_p_ub1: Nucleus Foxo1 Pa0 Pd1 Pe0 P Ub1
+      dnabound_foxo1_pa0_pd1_pe0_p_ub1: Dnabound Foxo1 Pa0 Pd1 Pe0 P Ub1
+      cytoplasm_foxo1_pa0_pd1_pe1_p_ub0: Cytoplasm Foxo1 Pa0 Pd1 Pe1 P Ub0
+      nucleus_foxo1_pa0_pd1_pe1_p_ub0: Nucleus Foxo1 Pa0 Pd1 Pe1 P Ub0
+      dnabound_foxo1_pa0_pd1_pe1_p_ub0: Dnabound Foxo1 Pa0 Pd1 Pe1 P Ub0
+      cytoplasm_foxo1_pa0_pd1_pe1_p_ub1: Cytoplasm Foxo1 Pa0 Pd1 Pe1 P Ub1
+      nucleus_foxo1_pa0_pd1_pe1_p_ub1: Nucleus Foxo1 Pa0 Pd1 Pe1 P Ub1
+      dnabound_foxo1_pa0_pd1_pe1_p_ub1: Dnabound Foxo1 Pa0 Pd1 Pe1 P Ub1
+      cytoplasm_foxo1_pa1_pd0_pe0_p_ub0: Cytoplasm Foxo1 Pa1 Pd0 Pe0 P Ub0
+      nucleus_foxo1_pa1_pd0_pe0_p_ub0: Nucleus Foxo1 Pa1 Pd0 Pe0 P Ub0
+      dnabound_foxo1_pa1_pd0_pe0_p_ub0: Dnabound Foxo1 Pa1 Pd0 Pe0 P Ub0
+      cytoplasm_foxo1_pa1_pd0_pe0_p_ub1: Cytoplasm Foxo1 Pa1 Pd0 Pe0 P Ub1
+      nucleus_foxo1_pa1_pd0_pe0_p_ub1: Nucleus Foxo1 Pa1 Pd0 Pe0 P Ub1
+      dnabound_foxo1_pa1_pd0_pe0_p_ub1: Dnabound Foxo1 Pa1 Pd0 Pe0 P Ub1
+      cytoplasm_foxo1_pa1_pd0_pe1_p_ub0: Cytoplasm Foxo1 Pa1 Pd0 Pe1 P Ub0
+      nucleus_foxo1_pa1_pd0_pe1_p_ub0: Nucleus Foxo1 Pa1 Pd0 Pe1 P Ub0
+      dnabound_foxo1_pa1_pd0_pe1_p_ub0: Dnabound Foxo1 Pa1 Pd0 Pe1 P Ub0
+      cytoplasm_foxo1_pa1_pd0_pe1_p_ub1: Cytoplasm Foxo1 Pa1 Pd0 Pe1 P Ub1
+      nucleus_foxo1_pa1_pd0_pe1_p_ub1: Nucleus Foxo1 Pa1 Pd0 Pe1 P Ub1
+      dnabound_foxo1_pa1_pd0_pe1_p_ub1: Dnabound Foxo1 Pa1 Pd0 Pe1 P Ub1
+      cytoplasm_foxo1_pa1_pd1_pe0_p_ub0: Cytoplasm Foxo1 Pa1 Pd1 Pe0 P Ub0
+      nucleus_foxo1_pa1_pd1_pe0_p_ub0: Nucleus Foxo1 Pa1 Pd1 Pe0 P Ub0
+      dnabound_foxo1_pa1_pd1_pe0_p_ub0: Dnabound Foxo1 Pa1 Pd1 Pe0 P Ub0
+      cytoplasm_foxo1_pa1_pd1_pe0_p_ub1: Cytoplasm Foxo1 Pa1 Pd1 Pe0 P Ub1
+      nucleus_foxo1_pa1_pd1_pe0_p_ub1: Nucleus Foxo1 Pa1 Pd1 Pe0 P Ub1
+      dnabound_foxo1_pa1_pd1_pe0_p_ub1: Dnabound Foxo1 Pa1 Pd1 Pe0 P Ub1
+      cytoplasm_foxo1_pa1_pd1_pe1_p_ub0: Cytoplasm Foxo1 Pa1 Pd1 Pe1 P Ub0
+      nucleus_foxo1_pa1_pd1_pe1_p_ub0: Nucleus Foxo1 Pa1 Pd1 Pe1 P Ub0
+      dnabound_foxo1_pa1_pd1_pe1_p_ub0: Dnabound Foxo1 Pa1 Pd1 Pe1 P Ub0
+      cytoplasm_foxo1_pa1_pd1_pe1_p_ub1: Cytoplasm Foxo1 Pa1 Pd1 Pe1 P Ub1
+      nucleus_foxo1_pa1_pd1_pe1_p_ub1: Nucleus Foxo1 Pa1 Pd1 Pe1 P Ub1
+      dnabound_foxo1_pa1_pd1_pe1_p_ub1: Dnabound Foxo1 Pa1 Pd1 Pe1 P Ub1
+      foxo1_pa0_tot: Foxo1 Pa0 Tot
+      foxo1_pa1_tot: Foxo1 Pa1 Tot
+      foxo1_pd0_tot: Foxo1 Pd0 Tot
+      foxo1_pd1_tot: Foxo1 Pd1 Tot
+      foxo1_pe0_tot: Foxo1 Pe0 Tot
+      foxo1_pe1_tot: Foxo1 Pe1 Tot
+      foxo1_p_ub0_tot: Foxo1 P Ub0 Tot
+      foxo1_p_ub1_tot: Foxo1 P Ub1 Tot
+      cytoplasm_foxo1_tot: Cytoplasm Foxo1 Tot
+      nucleus_foxo1_tot: Nucleus Foxo1 Tot
+      dnabound_foxo1_tot: Dnabound Foxo1 Tot
+      foxo1_all: Foxo1 All
+      nucleus_rna_in_r: Nucleus RNA In R
+      cytoplasm_rna_in_r: Cytoplasm RNA In R
+      nucleus_rna_sod2: Nucleus RNA SOD2
+      cytoplasm_rna_sod2: Cytoplasm RNA SOD2
+      e2f1: E2F1
+      source_defined_sgk_state: source-defined SGK state
+      source_defined_cdk2_state: source-defined CDK2 state
+      source_defined_ampk_state: source-defined AMPK state
+      cbpp300: CBPP300
+      source_defined_sirt1_state: source-defined SIRT1 state
+      source_defined_e3_state: source-defined E3 state
+      source_defined_usp7_state: source-defined USP7 state
+      source_defined_scf_state: source-defined SCF state
+      proteasome: Proteasome
+io:
+  inputs: []
+  outputs: []

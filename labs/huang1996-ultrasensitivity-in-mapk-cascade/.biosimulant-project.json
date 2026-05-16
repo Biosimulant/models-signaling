@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a91df0be-ffd3-4c7d-b40e-2d4415534994",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "bab31435-02db-4834-b8ef-b9028db54a96",
+  "created_at": "2026-05-15T19:08:10.065402867+00:00",
+  "last_synced_at": "2026-05-16T09:51:21.698934+00:00",
+  "hub_manifest_hash": "7072c57c0a32f803d7d7ee299e4d12e4304b91bee04862121eb2531cf17e8d3b",
+  "package_name": "huang1996-ultrasensitivity-in-mapk-cascade-lab"
+}

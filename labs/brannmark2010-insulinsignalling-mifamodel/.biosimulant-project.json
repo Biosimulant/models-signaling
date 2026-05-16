@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "7506b7c8-09c1-49fa-bdf4-6eb2d8c70ef1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5ad148ed-c866-49c6-ad7e-16b21490cb38",
+  "created_at": "2026-05-15T19:08:09.099416650+00:00",
+  "last_synced_at": "2026-05-16T09:15:24.318195+00:00",
+  "hub_manifest_hash": "e182b627c9e403ea5119d26bd59a9fbab0cb354655c0780826d35eea4c9faf2f",
+  "package_name": "brannmark2010-insulinsignalling-mifamodel-lab"
+}

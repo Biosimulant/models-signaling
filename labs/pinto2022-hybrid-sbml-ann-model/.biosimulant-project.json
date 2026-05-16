@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d3fc6ca1-d36f-4aae-91fd-1ffd129f2214",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8cee6321-0f28-4ba3-99b2-2dc38d1222b0",
+  "created_at": "2026-05-16T05:49:39.220926333+00:00",
+  "last_synced_at": "2026-05-16T10:41:56.963587+00:00",
+  "hub_manifest_hash": "f0ec03b67b325f5a44d5f7df05db487c982185b31caa99a566a0718bac776e79",
+  "package_name": "pinto2022-hybrid-sbml-ann-model-lab"
+}

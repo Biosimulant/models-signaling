@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Dual G protein Model Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Dual G protein Model.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_dual_g_protein_model_model2306210001_model
+    title: Dual G protein Model
+    context: GPCR and cAMP/PKA signaling
+    question: How does Dual G protein Model route receptor activity into cAMP/PKA-linked
+      readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_l_state: float
+      inactive_ligand_receptor_complex: float
+      source_defined_ri_state: float
+      source_defined_ra_state: float
+      active_ligand_receptor_complex: float
+      source_defined_g1_state: float
+      source_defined_rig1_state: float
+      source_defined_lrig1_state: float
+      source_defined_rag1_state: float
+      source_defined_lrag1_state: float
+      source_defined_g2_state: float
+      source_defined_rig2_state: float
+      source_defined_lrig2_state: float
+      source_defined_rag2_state: float
+      source_defined_lrag2_state: float
+      g1a_gtp: float
+      g_beta_gamma_complex: float
+      g2a_gtp: float
+      g1a_gdp: float
+      g2a_gdp: float
+    species_labels:
+      source_defined_l_state: source-defined L state
+      inactive_ligand_receptor_complex: inactive ligand-receptor complex
+      source_defined_ri_state: source-defined RI state
+      source_defined_ra_state: source-defined RA state
+      active_ligand_receptor_complex: active ligand-receptor complex
+      source_defined_g1_state: source-defined G1 state
+      source_defined_rig1_state: source-defined RIG1 state
+      source_defined_lrig1_state: source-defined LRIG1 state
+      source_defined_rag1_state: source-defined RAG1 state
+      source_defined_lrag1_state: source-defined LRAG1 state
+      source_defined_g2_state: source-defined G2 state
+      source_defined_rig2_state: source-defined RIG2 state
+      source_defined_lrig2_state: source-defined LRIG2 state
+      source_defined_rag2_state: source-defined RAG2 state
+      source_defined_lrag2_state: source-defined LRAG2 state
+      g1a_gtp: G1a GTP
+      g_beta_gamma_complex: G beta-gamma complex
+      g2a_gtp: G2a GTP
+      g1a_gdp: G1a GDP
+      g2a_gdp: G2a GDP
+io:
+  inputs: []
+  outputs: []

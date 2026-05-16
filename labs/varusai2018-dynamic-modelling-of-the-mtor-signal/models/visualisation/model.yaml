@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Varusai2018 - Dynamic modelling of the mTOR signalling network reveals complex
+  emergent behaviours conferred by DEPTOR Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Varusai2018 - Dynamic modelling of the mTOR signalling network reveals complex emergent
+  behaviours conferred by DEPTOR.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mtor
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_varusai2018_dynamic_modelling_of_the_mtor_signal_biomd0000000823_model
+    title: Varusai2018 - Dynamic modelling of the mTOR signalling network reveals
+      complex emergent behaviours conferred by DEPTOR
+    context: GPCR and cAMP/PKA signaling
+    question: How does Varusai2018 - Dynamic modelling of the mTOR signalling network
+      reveals complex emergent behaviours conferred by DEPTOR route receptor activity
+      into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      insulin_receptor: float
+      source_defined_pir_state: float
+      irs: float
+      source_defined_pirs_state: float
+      source_defined_iirs_state: float
+      akt: float
+      source_defined_pakt_state: float
+      m_torc1: float
+      pm_torc1: float
+      m_torc2: float
+      pm_torc2: float
+      im_torc2: float
+      m_torc1_deptor: float
+      m_torc2_deptor: float
+      deptor: float
+      p_deptor: float
+    species_labels:
+      insulin_receptor: insulin receptor
+      source_defined_pir_state: source-defined PIR state
+      irs: IRS
+      source_defined_pirs_state: source-defined PIRS state
+      source_defined_iirs_state: source-defined IIRS state
+      akt: AKT
+      source_defined_pakt_state: source-defined PAKT state
+      m_torc1: M TORC1
+      pm_torc1: Pm TORC1
+      m_torc2: M TORC2
+      pm_torc2: Pm TORC2
+      im_torc2: Im TORC2
+      m_torc1_deptor: M TORC1 DEPTOR
+      m_torc2_deptor: M TORC2 DEPTOR
+      deptor: DEPTOR
+      p_deptor: P DEPTOR
+io:
+  inputs: []
+  outputs: []

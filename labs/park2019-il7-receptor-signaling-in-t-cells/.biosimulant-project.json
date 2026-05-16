@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d7c92521-049d-434e-90fb-5d1265ef5b6d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1dc461e5-f9ab-46fb-be50-ce12fffdc61a",
+  "created_at": "2026-05-16T05:46:11.104205473+00:00",
+  "last_synced_at": "2026-05-16T10:37:46.364002+00:00",
+  "hub_manifest_hash": "36f23b2d06fe6959fc148be7db575f24a16f03f6ebab2eb2ef6c789c6ca4b025",
+  "package_name": "park2019-il7-receptor-signaling-in-t-cells-lab"
+}

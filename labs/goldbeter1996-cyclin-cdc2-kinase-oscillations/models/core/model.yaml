@@ -1,0 +1,69 @@
+schema_version: '2.0'
+title: Goldbeter1996 - Cyclin Cdc2 kinase Oscillations
+description: We consider a minimal cascade model previously proposed for the mitotic
+  oscillator driving the embryonic cell division cycle. The model is based on a bicyclic
+  phosphorylation-dephosphorylation cascade.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+authors:
+- Biosimulant Team
+- A Goldbeter
+- J M Guilmot
+upstream:
+  id: biomodels_ebi:BIOMD0000000729
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000729
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000729
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000729?filename=Goldbeter1996.xml
+  license: CC0
+biosim:
+  entrypoint: src.goldbeter1996_cyclin_cdc2_kinase_oscillations:Goldbeter1996CyclinCdc2KinaseOscillationsBiomd0000000729Model
+  init_kwargs:
+    model_path: data/BIOMD0000000729.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_c_state
+    maps_to: signaling_sbml_goldbeter1996_cyclin_cdc2_kinase_oscillations_biomd0000000729_model.initial_source_defined_c_state
+    label: Initial source-defined C state
+    description: Initial level of source-defined C state. Maps to SBML symbol `C`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_c_state
+    maps_to: signaling_sbml_goldbeter1996_cyclin_cdc2_kinase_oscillations_biomd0000000729_model.source_defined_c_state
+    label: source-defined C state
+    description: source-defined C state. Maps to SBML symbol `C` and is emitted in
+      native SBML units.
+  - name: source_defined_m_state
+    maps_to: signaling_sbml_goldbeter1996_cyclin_cdc2_kinase_oscillations_biomd0000000729_model.source_defined_m_state
+    label: source-defined M state
+    description: source-defined M state. Maps to SBML symbol `M` and is emitted in
+      native SBML units.
+  - name: response_node_x
+    maps_to: signaling_sbml_goldbeter1996_cyclin_cdc2_kinase_oscillations_biomd0000000729_model.response_node_x
+    label: response node X
+    description: response node X. Maps to SBML symbol `X` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_goldbeter1996_cyclin_cdc2_kinase_oscillations_biomd0000000729_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_goldbeter1996_cyclin_cdc2_kinase_oscillations_biomd0000000729_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_goldbeter1996_cyclin_cdc2_kinase_oscillations_biomd0000000729_model.species_labels
+    label: Observable labels

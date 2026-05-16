@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Haugh2004_hGH Lab
+description: 'Clean Biosimulant lab for systems signaling model: Haugh2004_hGH. Values
+  are native SBML quantities; equations, parameters, and initial values remain in
+  the bundled source file.'
+models:
+- alias: signaling_sbml_haugh2004_hgh_model0848676877_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_haugh2004_hgh_model0848676877_model.state
+  to:
+  - visualisation.signaling_sbml_haugh2004_hgh_model0848676877_model_state
+- from: signaling_sbml_haugh2004_hgh_model0848676877_model.summary
+  to:
+  - visualisation.signaling_sbml_haugh2004_hgh_model0848676877_model_summary
+- from: signaling_sbml_haugh2004_hgh_model0848676877_model.species_labels
+  to:
+  - visualisation.signaling_sbml_haugh2004_hgh_model0848676877_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- hormone-signaling
+- physiology
+io:
+  inputs:
+  - name: initial_source_defined_c_state
+    maps_to: signaling_sbml_haugh2004_hgh_model0848676877_model.initial_source_defined_c_state
+    label: Initial source-defined C state
+    description: Initial level of source-defined C state. Maps to SBML symbol `C`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_c_state
+    maps_to: signaling_sbml_haugh2004_hgh_model0848676877_model.source_defined_c_state
+    label: source-defined C state
+    description: source-defined C state. Maps to SBML symbol `C` and is emitted in
+      native SBML units.
+  - name: source_defined_d_state
+    maps_to: signaling_sbml_haugh2004_hgh_model0848676877_model.source_defined_d_state
+    label: source-defined D state
+    description: source-defined D state. Maps to SBML symbol `D` and is emitted in
+      native SBML units.
+  - name: source_defined_r_state
+    maps_to: signaling_sbml_haugh2004_hgh_model0848676877_model.source_defined_r_state
+    label: source-defined R state
+    description: source-defined R state. Maps to SBML symbol `R` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_haugh2004_hgh_model0848676877_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_haugh2004_hgh_model0848676877_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_haugh2004_hgh_model0848676877_model.species_labels
+    label: Observable labels

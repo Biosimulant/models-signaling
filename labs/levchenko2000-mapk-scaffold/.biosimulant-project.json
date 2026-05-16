@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "409158a6-8797-4be8-8d5c-7e5368d74611",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "adf421ac-c83b-4e03-9dda-e6277c5ad20b",
+  "created_at": "2026-05-15T19:08:10.566728459+00:00",
+  "last_synced_at": "2026-05-16T10:11:55.164963+00:00",
+  "hub_manifest_hash": "cc595e2dd0644bd0e137babf520e8651879b93132cf1381306b12447cfe5fa25",
+  "package_name": "levchenko2000-mapk-scaffold-lab"
+}

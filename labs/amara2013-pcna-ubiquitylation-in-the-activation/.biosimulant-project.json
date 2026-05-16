@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d04d44a3-a618-4230-ac18-a587885c1daa",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f649889e-566c-4479-9049-dd07ee99530e",
+  "created_at": "2026-05-15T19:08:08.591296248+00:00",
+  "last_synced_at": "2026-05-16T08:54:39.386101+00:00",
+  "hub_manifest_hash": "730cd2d2ed470613894a9275dfe0b81c982618c04bcdf5e8b5826b321a49ff0e",
+  "package_name": "amara2013-pcna-ubiquitylation-in-the-activation-of-prr-pathway-l"
+}

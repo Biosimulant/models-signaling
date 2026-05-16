@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2fecdf13-66e4-42da-ad16-6dbb1a2702a0",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "93598050-8b25-4cf4-ae38-1919642e4704",
+  "created_at": "2026-05-15T19:08:09.454690588+00:00",
+  "last_synced_at": "2026-05-16T09:34:05.988010+00:00",
+  "hub_manifest_hash": "323f39851f0c1732638706627e142bb088e183ca8c030e1b21b89e1129c4782a",
+  "package_name": "dallepezze2012-tsc-independent-mtorc2-regulation-lab"
+}

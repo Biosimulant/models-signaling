@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "850cb002-10f7-43f1-8176-f40afc109ae4",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c185b231-30b6-4e20-9d3f-150a2f808076",
+  "created_at": "2026-05-16T05:46:11.276815617+00:00",
+  "last_synced_at": "2026-05-16T10:39:53.857898+00:00",
+  "hub_manifest_hash": "6e92b47d6db16c66f0a2ee7774f66476064b7911faefb944f88d57df0edc7106",
+  "package_name": "perrett2014-gnrh-pulse-erk-activity-lab"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8894ea71-31f7-4fe8-8216-504b2e24fa79",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "89907ce9-2662-4ae5-88d6-e6c999499b9e",
+  "created_at": "2026-05-15T19:08:10.425739372+00:00",
+  "last_synced_at": "2026-05-16T10:02:50.298091+00:00",
+  "hub_manifest_hash": "f13d029969cd8ce53ff05919889b664d38b5fb96f5741f3594528cf7bb453b8a",
+  "package_name": "konrath2023-genotoxic-stress-induced-ikk-nfkb-signaling-lab"
+}

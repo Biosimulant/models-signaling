@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Muller2008 - Simplified MAPK activation Dynamics (Model B)
+description: 'Muller2008 - Simplified MAPK activation Dynamics (Model B) Simplified
+  mathematical model (model B)for predicting MAPK signal expression. This model is
+  described in the article: Network topology determ.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+authors:
+- Biosimulant Team
+- Melissa Muller
+- Mandri Obeyesekere
+- Gordon B Mills
+- Prahlad T Ram
+upstream:
+  id: biomodels_ebi:BIOMD0000000664
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000664
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000664
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000664?filename=BIOMD0000000664_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.muller2008_simplified_mapk_activation_dynamics_m:Muller2008SimplifiedMapkActivationDynamicsMBiomd0000000664Model
+  init_kwargs:
+    model_path: data/BIOMD0000000664.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_g1_state
+    maps_to: signaling_sbml_muller2008_simplified_mapk_activation_dynamics_m_biomd0000000664_model.initial_source_defined_g1_state
+    label: Initial source-defined G1 state
+    description: Initial level of source-defined G1 state. Maps to SBML symbol `g1_0`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_g2_state
+    maps_to: signaling_sbml_muller2008_simplified_mapk_activation_dynamics_m_biomd0000000664_model.initial_source_defined_g2_state
+    label: Initial source-defined G2 state
+    description: Initial level of source-defined G2 state. Maps to SBML symbol `g2_0`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: mapk
+    maps_to: signaling_sbml_muller2008_simplified_mapk_activation_dynamics_m_biomd0000000664_model.mapk
+    label: MAPK
+    description: MAPK. Maps to SBML symbol `MAPK` and is emitted in native SBML units.
+  - name: c_raf_inactive
+    maps_to: signaling_sbml_muller2008_simplified_mapk_activation_dynamics_m_biomd0000000664_model.c_raf_inactive
+    label: C RAF Inactive
+    description: C RAF Inactive. Maps to SBML symbol `C_Raf_inactive` and is emitted
+      in native SBML units.
+  - name: source_defined_fgfr_state
+    maps_to: signaling_sbml_muller2008_simplified_mapk_activation_dynamics_m_biomd0000000664_model.source_defined_fgfr_state
+    label: source-defined FGFR state
+    description: source-defined FGFR state. Maps to SBML symbol `FGFR` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_muller2008_simplified_mapk_activation_dynamics_m_biomd0000000664_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_muller2008_simplified_mapk_activation_dynamics_m_biomd0000000664_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_muller2008_simplified_mapk_activation_dynamics_m_biomd0000000664_model.species_labels
+    label: Observable labels

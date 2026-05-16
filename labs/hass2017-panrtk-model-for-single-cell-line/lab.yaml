@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: PanRTK model for single cell line Lab
+description: 'Clean Biosimulant lab for systems signaling model: PanRTK model for
+  single cell line. Values are native SBML quantities; equations, parameters, and
+  initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.state
+  to:
+  - visualisation.signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model_state
+- from: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.summary
+  to:
+  - visualisation.signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model_summary
+- from: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.species_labels
+  to:
+  - visualisation.signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+io:
+  inputs:
+  - name: initial_akt_activation_p_egfr_level
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.initial_akt_activation_p_egfr_level
+    label: AKT Activation P EGFR
+    description: AKT Activation P EGFR source parameter. Maps to SBML symbol `AKT_activation_pEGFR`
+      and preserves the bundled default.
+  - name: initial_akt_activation_p_met_egfr_level
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.initial_akt_activation_p_met_egfr_level
+    label: AKT Activation P Met EGFR
+    description: AKT Activation P Met EGFR source parameter. Maps to SBML symbol `AKT_activation_pMetEGFR`
+      and preserves the bundled default.
+  - name: initial_egf_k_d_level
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.initial_egf_k_d_level
+    label: EGF K D
+    description: EGF K D source parameter. Maps to SBML symbol `EGF_kD` and preserves
+      the bundled default.
+  outputs:
+  - name: erk
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.erk
+    label: ERK
+    description: ERK. Maps to SBML symbol `ERK` and is emitted in native SBML units.
+  - name: perk_kinase
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.perk_kinase
+    label: PERK kinase
+    description: PERK kinase. Maps to SBML symbol `pERK` and is emitted in native
+      SBML units.
+  - name: akt
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.akt
+    label: AKT
+    description: AKT. Maps to SBML symbol `AKT` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.species_labels
+    label: Observable labels

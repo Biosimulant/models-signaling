@@ -1,0 +1,49 @@
+schema_version: '2.0'
+title: Jung2019 - Regulating glioblastoma signaling pathways and anti-invasion therapy
+  - core control model Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Jung2019 - Regulating glioblastoma signaling pathways and anti-invasion therapy
+  - core control model.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- oncology
+- pharmacology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_jung2019_regulating_glioblastoma_signaling_pathw_biomd0000000828_model
+    title: Jung2019 - Regulating glioblastoma signaling pathways and anti-invasion
+      therapy - core control model
+    context: metabolic and hormone signaling response
+    question: How does Jung2019 - Regulating glioblastoma signaling pathways and anti-invasion
+      therapy - core control model shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      glucose_g: float
+      drug_d: float
+      mi_r_451_m: float
+      ampk_a: float
+      m_tor_r: float
+      delta_d: float
+    species_labels:
+      glucose_g: Glucose G
+      drug_d: Drug D
+      mi_r_451_m: Mi R 451 M
+      ampk_a: AMPK A
+      m_tor_r: M TOR R
+      delta_d: Delta D
+io:
+  inputs: []
+  outputs: []

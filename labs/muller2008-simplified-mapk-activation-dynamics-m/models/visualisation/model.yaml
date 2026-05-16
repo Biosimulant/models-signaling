@@ -1,0 +1,48 @@
+schema_version: '2.0'
+title: Muller2008 - Simplified MAPK activation Dynamics (Model B) Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_muller2008_simplified_mapk_activation_dynamics_m_biomd0000000664_model
+    title: Muller2008 - Simplified MAPK activation Dynamics (Model B)
+    context: receptor-to-MAPK cascade signaling
+    question: How does Muller2008 - Simplified MAPK activation Dynamics (Model B)
+      propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_fgfr_state: float
+      source_defined_msh_state: float
+      source_defined_b_raf_state: float
+      mapk: float
+      c_raf_inactive: float
+      source_defined_g2_state: float
+      source_defined_c_raf_state: float
+      source_defined_g1_state: float
+    species_labels:
+      source_defined_fgfr_state: source-defined FGFR state
+      source_defined_msh_state: source-defined MSH state
+      source_defined_b_raf_state: source-defined B-RAF state
+      mapk: MAPK
+      c_raf_inactive: C RAF Inactive
+      source_defined_g2_state: source-defined G2 state
+      source_defined_c_raf_state: source-defined C-RAF state
+      source_defined_g1_state: source-defined G1 state
+io:
+  inputs: []
+  outputs: []

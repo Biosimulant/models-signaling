@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Hetmanski2019 - Mechanochemical signaling controlled rear retraction of migrating
+  cell Lab
+description: 'Clean Biosimulant lab for systems signaling model: Hetmanski2019 - Mechanochemical
+  signaling controlled rear retraction of migrating cell. Values are native SBML quantities;
+  equations, parameters, and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_hetmanski2019_mechanochemical_signaling_controll_model1908290001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_hetmanski2019_mechanochemical_signaling_controll_model1908290001_model.state
+  to:
+  - visualisation.signaling_sbml_hetmanski2019_mechanochemical_signaling_controll_model1908290001_model_state
+- from: signaling_sbml_hetmanski2019_mechanochemical_signaling_controll_model1908290001_model.summary
+  to:
+  - visualisation.signaling_sbml_hetmanski2019_mechanochemical_signaling_controll_model1908290001_model_summary
+- from: signaling_sbml_hetmanski2019_mechanochemical_signaling_controll_model1908290001_model.species_labels
+  to:
+  - visualisation.signaling_sbml_hetmanski2019_mechanochemical_signaling_controll_model1908290001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_rho_agdp
+    maps_to: signaling_sbml_hetmanski2019_mechanochemical_signaling_controll_model1908290001_model.initial_rho_agdp
+    label: Initial Rho Agdp
+    description: Initial level of Rho Agdp. Maps to SBML symbol `RhoAgdp`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: actinf
+    maps_to: signaling_sbml_hetmanski2019_mechanochemical_signaling_controll_model1908290001_model.actinf
+    label: Actinf
+    description: Actinf. Maps to SBML symbol `Actinf` and is emitted in native SBML
+      units.
+  - name: p_mlca
+    maps_to: signaling_sbml_hetmanski2019_mechanochemical_signaling_controll_model1908290001_model.p_mlca
+    label: P Mlca
+    description: P Mlca. Maps to SBML symbol `pMLCa` and is emitted in native SBML
+      units.
+  - name: cavi_src
+    maps_to: signaling_sbml_hetmanski2019_mechanochemical_signaling_controll_model1908290001_model.cavi_src
+    label: Cavi Src
+    description: Cavi Src. Maps to SBML symbol `Cavi_Src` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_hetmanski2019_mechanochemical_signaling_controll_model1908290001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_hetmanski2019_mechanochemical_signaling_controll_model1908290001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_hetmanski2019_mechanochemical_signaling_controll_model1908290001_model.species_labels
+    label: Observable labels

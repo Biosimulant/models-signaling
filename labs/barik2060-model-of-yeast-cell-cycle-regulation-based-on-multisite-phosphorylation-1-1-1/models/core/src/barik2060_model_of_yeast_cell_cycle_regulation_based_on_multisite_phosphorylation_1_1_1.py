@@ -1,0 +1,177 @@
+# SPDX-FileCopyrightText: 2026-present Biosimulant Team
+# SPDX-License-Identifier: MIT
+"""Tellurium-backed SBML wrapper for A model of yeast cell-cycle regulation based on multisite phosphorylation_1_1_1."""
+
+from __future__ import annotations
+
+from biosim.contrib.sbml import TelluriumSBMLBioModule
+
+
+class Barik2060ModelOfYeastCellCycleRegulationBasedOnMultisitePhosphorylation111Model(TelluriumSBMLBioModule):
+    """Faithful Tellurium execution of the bundled SBML source model."""
+
+    _SBML_ID = 'MODEL1812060001'
+    _TITLE = 'A model of yeast cell-cycle regulation based on multisite phosphorylation_1_1_1'
+    _TIME_UNIT = "model_time"
+    _OBSERVABLE_STRATEGY = 'species'
+    _EXPOSE_INTEGRATION_STEP_INPUT = False
+    _HEADLINE_OUTPUTS = {'cln3_cyclin': ('Cln3',
+                     'native SBML value',
+                     'Cln3 cyclin. Maps to SBML symbol `Cln3` and is emitted in native SBML units.'),
+     'mitotic_clb_cyclin': ('ClbM',
+                            'native SBML value',
+                            'mitotic Clb cyclin. Maps to SBML symbol `ClbM` and is emitted in native '
+                            'SBML units.'),
+     's_phase_clb_cyclin': ('ClbS',
+                            'native SBML value',
+                            'S-phase Clb cyclin. Maps to SBML symbol `ClbS` and is emitted in native '
+                            'SBML units.')}
+    _INITIAL_CONDITION_INPUTS = {'initial_cdc14_phosphatase': ('Cdc14',
+                                   1.664,
+                                   'native SBML value',
+                                   'Initial level of Cdc14 phosphatase. Maps to SBML symbol `Cdc14`; '
+                                   'exposed as a traceable initial-condition perturbation.'),
+     'initial_cdh1_cell_cycle_regulator': ('Cdh1',
+                                           176.4816,
+                                           'native SBML value',
+                                           'Initial level of Cdh1 cell-cycle regulator. Maps to SBML '
+                                           'symbol `Cdh1`; exposed as a traceable initial-condition '
+                                           'perturbation.'),
+     'initial_cdh1p1': ('Cdh1P1',
+                        25.4719,
+                        'native SBML value',
+                        'Initial level of Cdh1p1. Maps to SBML symbol `Cdh1P1`; exposed as a traceable '
+                        'initial-condition perturbation.')}
+    _PARAMETER_INPUTS = {}
+    _SPECIES_LABELS = {'V': 'source-defined V state',
+     'Cln3': 'Cln3 cyclin',
+     'ClbM': 'mitotic Clb cyclin',
+     'ClbS': 'S-phase Clb cyclin',
+     'Cdc14': 'Cdc14 phosphatase',
+     'SBF': 'source-defined SBF state',
+     'SBFP1': 'source-defined SBFP1 state',
+     'SBFP4': 'source-defined SBFP4 state',
+     'Hbf': 'source-defined HBF state',
+     'Whi5': 'source-defined WHI5 state',
+     'Whi5P1': 'Whi5p1',
+     'Whi5P6': 'Whi5p6',
+     'Hi5': 'source-defined HI5 state',
+     'Net1': 'source-defined NET1 state',
+     'Net1P1': 'Net1p1',
+     'Net1P8': 'Net1p8',
+     'RENT': 'source-defined RENT state',
+     'RENTP1': 'RENTP1',
+     'RENTP5': 'RENTP5',
+     'Ht1': 'source-defined HT1 state',
+     'Cmp': 'source-defined CMP state',
+     'CmpP1': 'source-defined CMPP1 state',
+     'CmpP2': 'source-defined CMPP2 state',
+     'Cdh1': 'Cdh1 cell-cycle regulator',
+     'Cdh1P1': 'Cdh1p1',
+     'Cdh1P10': 'Cdh1p10',
+     'Mn3': 'source-defined MN3 state',
+     'MbM': 'source-defined MBM state',
+     'Ga': 'source-defined GA state',
+     'MbS': 'source-defined MBS state',
+     'Mc14': 'Mc14',
+     'Mhbf': 'source-defined MHBF state',
+     'Mi5': 'source-defined MI5 state',
+     'Mt1': 'source-defined MT1 state',
+     'Mht1': 'source-defined MHT1 state',
+     'Mh1': 'source-defined MH1 state',
+     'Net1RTotal': 'Net1rtotal',
+     'RentTotal': 'Rent Total',
+     'Cdh1PTotal': 'Cdh1ptotal',
+     'SBFP2': 'source-defined SBFP2 state',
+     'SBFP3': 'source-defined SBFP3 state',
+     'Whi5P2': 'Whi5p2',
+     'Whi5P3': 'Whi5p3',
+     'Whi5P4': 'Whi5p4',
+     'Whi5P5': 'Whi5p5',
+     'Net1P2': 'Net1p2',
+     'Net1P3': 'Net1p3',
+     'Net1P4': 'Net1p4',
+     'Net1P5': 'Net1p5',
+     'Net1P6': 'Net1p6',
+     'Net1P7': 'Net1p7',
+     'RENTP2': 'RENTP2',
+     'RENTP3': 'RENTP3',
+     'RENTP4': 'RENTP4',
+     'Cdh1P2': 'Cdh1p2',
+     'Cdh1P3': 'Cdh1p3',
+     'Cdh1P4': 'Cdh1p4',
+     'Cdh1P5': 'Cdh1p5',
+     'Cdh1P6': 'Cdh1p6',
+     'Cdh1P7': 'Cdh1p7',
+     'Cdh1P8': 'Cdh1p8',
+     'Cdh1P9': 'Cdh1p9',
+     'Mhi5': 'source-defined MHI5 state'}
+    _STATE_OUTPUT_ALIASES = {'V': 'source_defined_v_state',
+     'Cln3': 'cln3_cyclin',
+     'ClbM': 'mitotic_clb_cyclin',
+     'ClbS': 's_phase_clb_cyclin',
+     'Cdc14': 'cdc14_phosphatase',
+     'SBF': 'source_defined_sbf_state',
+     'SBFP1': 'source_defined_sbfp1_state',
+     'SBFP4': 'source_defined_sbfp4_state',
+     'Hbf': 'source_defined_hbf_state',
+     'Whi5': 'source_defined_whi5_state',
+     'Whi5P1': 'whi5p1',
+     'Whi5P6': 'whi5p6',
+     'Hi5': 'source_defined_hi5_state',
+     'Net1': 'source_defined_net1_state',
+     'Net1P1': 'net1p1',
+     'Net1P8': 'net1p8',
+     'RENT': 'source_defined_rent_state',
+     'RENTP1': 'rentp1',
+     'RENTP5': 'rentp5',
+     'Ht1': 'source_defined_ht1_state',
+     'Cmp': 'source_defined_cmp_state',
+     'CmpP1': 'source_defined_cmpp1_state',
+     'CmpP2': 'source_defined_cmpp2_state',
+     'Cdh1': 'cdh1_cell_cycle_regulator',
+     'Cdh1P1': 'cdh1p1',
+     'Cdh1P10': 'cdh1p10',
+     'Mn3': 'source_defined_mn3_state',
+     'MbM': 'source_defined_mbm_state',
+     'Ga': 'source_defined_ga_state',
+     'MbS': 'source_defined_mbs_state',
+     'Mc14': 'mc14',
+     'Mhbf': 'source_defined_mhbf_state',
+     'Mi5': 'source_defined_mi5_state',
+     'Mt1': 'source_defined_mt1_state',
+     'Mht1': 'source_defined_mht1_state',
+     'Mh1': 'source_defined_mh1_state',
+     'Net1RTotal': 'net1rtotal',
+     'RentTotal': 'rent_total',
+     'Cdh1PTotal': 'cdh1ptotal',
+     'SBFP2': 'source_defined_sbfp2_state',
+     'SBFP3': 'source_defined_sbfp3_state',
+     'Whi5P2': 'whi5p2',
+     'Whi5P3': 'whi5p3',
+     'Whi5P4': 'whi5p4',
+     'Whi5P5': 'whi5p5',
+     'Net1P2': 'net1p2',
+     'Net1P3': 'net1p3',
+     'Net1P4': 'net1p4',
+     'Net1P5': 'net1p5',
+     'Net1P6': 'net1p6',
+     'Net1P7': 'net1p7',
+     'RENTP2': 'rentp2',
+     'RENTP3': 'rentp3',
+     'RENTP4': 'rentp4',
+     'Cdh1P2': 'cdh1p2',
+     'Cdh1P3': 'cdh1p3',
+     'Cdh1P4': 'cdh1p4',
+     'Cdh1P5': 'cdh1p5',
+     'Cdh1P6': 'cdh1p6',
+     'Cdh1P7': 'cdh1p7',
+     'Cdh1P8': 'cdh1p8',
+     'Cdh1P9': 'cdh1p9',
+     'Mhi5': 'source_defined_mhi5_state'}
+
+    def __init__(self, model_path: str = 'data/MODEL1812060001.xml', integration_step: float = 0.01) -> None:
+        super().__init__(model_path=model_path, integration_step=integration_step)
+
+
+AModelOfYeastCellCycleRegulationBasedOnModel1812060001Model = Barik2060ModelOfYeastCellCycleRegulationBasedOnMultisitePhosphorylation111Model

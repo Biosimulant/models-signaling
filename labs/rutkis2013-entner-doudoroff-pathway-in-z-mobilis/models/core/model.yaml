@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Rutkis2013 - Entner-Doudoroff pathway in Z.mobilis
+description: 'The model corresponds to the third columns (model simulations) in tables
+  3 and 5 of publication (PMID: 24085837, DOI: 10.1099/mic.0.071340-0)Mathematical
+  Definition symbol/abbreviation Mathematical sy. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Reinis Rutkis
+- Uldis Kalnenieks
+- Stalidzans E
+- David A Fell
+upstream:
+  id: biomodels_ebi:MODEL1409050000
+  source_db: biomodels_ebi
+  source_id: MODEL1409050000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1409050000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1409050000?filename=MODEL1409050000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.rutkis2013_entner_doudoroff_pathway_in_z_mobilis:Rutkis2013EntnerDoudoroffPathwayInZMobilisModel1409050000Model
+  init_kwargs:
+    model_path: data/MODEL1409050000.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_co2_state
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050000_model.initial_source_defined_co2_state
+    label: Initial source-defined CO2 state
+    description: Initial level of source-defined CO2 state. Maps to SBML symbol `CO2`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_ethanolex
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050000_model.initial_ethanolex
+    label: Initial Ethanolex
+    description: Initial level of Ethanolex. Maps to SBML symbol `species_1`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_glucex
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050000_model.initial_glucex
+    label: Initial Glucex
+    description: Initial level of Glucex. Maps to SBML symbol `GLCo`; exposed as a
+      traceable initial-condition perturbation.
+  outputs:
+  - name: ethanolex
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050000_model.ethanolex
+    label: Ethanolex
+    description: Ethanolex. Maps to SBML symbol `species_1` and is emitted in native
+      SBML units.
+  - name: glucex
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050000_model.glucex
+    label: Glucex
+    description: Glucex. Maps to SBML symbol `GLCo` and is emitted in native SBML
+      units.
+  - name: gluccy
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050000_model.gluccy
+    label: Gluccy
+    description: Gluccy. Maps to SBML symbol `GLCi` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050000_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050000_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050000_model.species_labels
+    label: Observable labels

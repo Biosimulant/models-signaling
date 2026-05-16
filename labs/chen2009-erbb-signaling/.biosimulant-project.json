@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b0c5e49a-7b52-4a21-bca2-dc8e4a68dc5f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d53fcff3-4c64-4525-a758-9dee0b08e830",
+  "created_at": "2026-05-15T19:08:09.377172588+00:00",
+  "last_synced_at": "2026-05-16T09:32:57.758414+00:00",
+  "hub_manifest_hash": "fc0b9f5872b330415a691dafccdbb979e18d6e8409740d39be4666832fea09a0",
+  "package_name": "chen2009-erbb-signaling-lab"
+}

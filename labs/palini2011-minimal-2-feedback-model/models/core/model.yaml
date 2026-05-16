@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Palini2011_Minimal_2_Feedback_Model
+description: 'This is the model of the minmal 2 feedback switch described in the article:
+  Synthetic conversion of a graded receptor signal into a tunable, reversible switch.
+  It can be used to explore signaling dynamics and compare pathway response across
+  conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+authors:
+- Biosimulant Team
+- Santhosh Palani
+- Casim A Sarkar
+upstream:
+  id: biomodels_ebi:BIOMD0000000325
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000325
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000325
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000325?filename=BIOMD0000000325_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.palini2011_minimal_2_feedback_model:Palini2011Minimal2FeedbackModelBiomd0000000325Model
+  init_kwargs:
+    model_path: data/BIOMD0000000325.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_l_state
+    maps_to: signaling_sbml_palini2011_minimal_2_feedback_model_biomd0000000325_model.initial_source_defined_l_state
+    label: Initial source-defined L state
+    description: Initial level of source-defined L state. Maps to SBML symbol `L`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_l_state
+    maps_to: signaling_sbml_palini2011_minimal_2_feedback_model_biomd0000000325_model.source_defined_l_state
+    label: Source Defined L State
+    description: Source Defined L State. Maps to SBML symbol `L` and is emitted in
+      native SBML units.
+  - name: source_defined_r_state
+    maps_to: signaling_sbml_palini2011_minimal_2_feedback_model_biomd0000000325_model.source_defined_r_state
+    label: Source Defined R State
+    description: Source Defined R State. Maps to SBML symbol `R` and is emitted in
+      native SBML units.
+  - name: source_defined_c_state
+    maps_to: signaling_sbml_palini2011_minimal_2_feedback_model_biomd0000000325_model.source_defined_c_state
+    label: Source Defined C State
+    description: Source Defined C State. Maps to SBML symbol `C` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_palini2011_minimal_2_feedback_model_biomd0000000325_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_palini2011_minimal_2_feedback_model_biomd0000000325_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_palini2011_minimal_2_feedback_model_biomd0000000325_model.species_labels
+    label: Observable labels

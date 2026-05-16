@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: Huang1996 - Ultrasensitivity in MAPK cascade
+description: Huang1996 - Ultrasensitivity in MAPK cascade The temporal sequence of
+  kinase activation, from MAPKKK (activated RAF) to the final effector MAPK (activated
+  ERK), is described here. It can be used to explore signaling dynamics and compare
+  pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+authors:
+- Biosimulant Team
+- C Y Huang
+- J E Ferrell
+upstream:
+  id: biomodels_ebi:BIOMD0000000009
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000009
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000009
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000009?filename=BIOMD0000000009_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.huang1996_ultrasensitivity_in_mapk_cascade:Huang1996UltrasensitivityInMapkCascadeBiomd0000000009Model
+  init_kwargs:
+    model_path: data/BIOMD0000000009.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_mapkkk_activator_ras
+    maps_to: signaling_sbml_huang1996_ultrasensitivity_in_mapk_cascade_biomd0000000009_model.initial_mapkkk_activator_ras
+    label: Initial MAPKKK Activator RAS
+    description: Initial level of MAPKKK Activator RAS. Maps to SBML symbol `E1`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: mapkkk_activator_ras
+    maps_to: signaling_sbml_huang1996_ultrasensitivity_in_mapk_cascade_biomd0000000009_model.mapkkk_activator_ras
+    label: MAPKKK Activator RAS
+    description: MAPKKK Activator RAS. Maps to SBML symbol `E1` and is emitted in
+      native SBML units.
+  - name: mapkkk_inactivator
+    maps_to: signaling_sbml_huang1996_ultrasensitivity_in_mapk_cascade_biomd0000000009_model.mapkkk_inactivator
+    label: MAPKKK Inactivator
+    description: MAPKKK Inactivator. Maps to SBML symbol `E2` and is emitted in native
+      SBML units.
+  - name: source_defined_erk2_state
+    maps_to: signaling_sbml_huang1996_ultrasensitivity_in_mapk_cascade_biomd0000000009_model.source_defined_erk2_state
+    label: source-defined ERK2 state
+    description: source-defined ERK2 state. Maps to SBML symbol `K` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_huang1996_ultrasensitivity_in_mapk_cascade_biomd0000000009_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_huang1996_ultrasensitivity_in_mapk_cascade_biomd0000000009_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_huang1996_ultrasensitivity_in_mapk_cascade_biomd0000000009_model.species_labels
+    label: Observable labels

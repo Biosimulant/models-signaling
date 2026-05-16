@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6c4d561d-9139-4cc0-88ee-e0cdc6027382",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0bbff9ca-1731-4f26-accb-7c18ea39f6fd",
+  "created_at": "2026-05-16T05:49:39.283848092+00:00",
+  "last_synced_at": "2026-05-16T10:42:21.648692+00:00",
+  "hub_manifest_hash": "eb9fbcd7a2a7ecd7f642207c7832fd86811290d083e6f78778d127199e4b5c11",
+  "package_name": "pokhilko1998-intrinsic-activation-kinetics-dimensional-model-lab"
+}

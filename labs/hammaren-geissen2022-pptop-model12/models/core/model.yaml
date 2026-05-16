@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Hammaren-Geissen2022_PPToP_Model12
+description: The model encodes the general biological process of protein synthesis
+  and post-translational modification (PTM, such as protein phosphorylation), viewed
+  through the eyes of a specific, widely-used exp. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Henrik M Hammarén
+- Eva-Maria Geissen
+- Clement M Potel
+- Martin Beck
+- Mikhail M Savitski
+upstream:
+  id: biomodels_ebi:BIOMD0000001078
+  source_db: biomodels_ebi
+  source_id: BIOMD0000001078
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001078
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001078?filename=Hammaren-Geissen2022_PPToP_Model12_withParameterSets.xml
+  license: CC0
+biosim:
+  entrypoint: src.hammaren_geissen2022_pptop_model12:HammarenGeissen2022PptopModel12Biomd0000001078Model
+  init_kwargs:
+    model_path: data/BIOMD0000001078.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_pp_new
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.initial_pp_new
+    label: Initial Pp New
+    description: Initial level of Pp New. Maps to SBML symbol `Pp_new`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_pu_new
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.initial_pu_new
+    label: Initial Pu New
+    description: Initial level of Pu New. Maps to SBML symbol `Pu_new`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: pu_old
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.pu_old
+    label: Pu Old
+    description: Pu Old. Maps to SBML symbol `Pu` and is emitted in native SBML units.
+  - name: pp_old
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.pp_old
+    label: Pp Old
+    description: Pp Old. Maps to SBML symbol `Pp` and is emitted in native SBML units.
+  - name: pu_new
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.pu_new
+    label: Pu New
+    description: Pu New. Maps to SBML symbol `Pu_new` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.species_labels
+    label: Observable labels

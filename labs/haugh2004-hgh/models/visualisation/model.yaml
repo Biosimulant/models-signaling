@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: Haugh2004_hGH Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Haugh2004_hGH.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- hormone-signaling
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_haugh2004_hgh_model0848676877_model
+    title: Haugh2004_hGH
+    context: GPCR and cAMP/PKA signaling
+    question: How does Haugh2004 hGH route receptor activity into cAMP/PKA-linked
+      readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_c_state: float
+      source_defined_d_state: float
+      source_defined_r_state: float
+      source_defined_ri_state: float
+    species_labels:
+      source_defined_c_state: Source Defined C State
+      source_defined_d_state: Source Defined D State
+      source_defined_r_state: Source Defined R State
+      source_defined_ri_state: Source Defined RI State
+io:
+  inputs: []
+  outputs: []

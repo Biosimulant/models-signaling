@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Martinez-Guimera2017 - Generic redox signalling model with negative feedback
+  regulation (Model 2)
+description: 'Martinez-Guimera2017 - Generic redox signalling model with negative
+  feedback regulation (Model 2) This model is described in the article: ''Molecular
+  habituation'' as a potential mechanism of gradual ho. It can be used to explore
+  signaling dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- stress-response
+authors:
+- Biosimulant Team
+- Alvaro Martinez Guimera
+- Ciaran M Welsh
+- Carole J Proctor
+- Anne McArdle
+- Daryl P Shanley
+upstream:
+  id: biomodels_ebi:MODEL2001080001
+  source_db: biomodels_ebi
+  source_id: MODEL2001080001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2001080001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2001080001?filename=model2.xml
+  license: CC0
+biosim:
+  entrypoint: src.martinez_guimera2017_generic_redox_signalling_mo_model2001080001:MartinezGuimera2017GenericRedoxSignallingMoModel2001080001Model
+  init_kwargs:
+    model_path: data/MODEL2001080001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_inhibitor
+    maps_to: signaling_sbml_martinez_guimera2017_generic_redox_signalling_mo_model2001080001_model.initial_inhibitor
+    label: Initial Inhibitor
+    description: Initial level of Inhibitor. Maps to SBML symbol `Inhibitor`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: inactive
+    maps_to: signaling_sbml_martinez_guimera2017_generic_redox_signalling_mo_model2001080001_model.inactive
+    label: Inactive
+    description: Inactive. Maps to SBML symbol `Inactive` and is emitted in native
+      SBML units.
+  - name: oxidant
+    maps_to: signaling_sbml_martinez_guimera2017_generic_redox_signalling_mo_model2001080001_model.oxidant
+    label: Oxidant
+    description: Oxidant. Maps to SBML symbol `Oxidant` and is emitted in native SBML
+      units.
+  - name: source_defined_aox_state
+    maps_to: signaling_sbml_martinez_guimera2017_generic_redox_signalling_mo_model2001080001_model.source_defined_aox_state
+    label: source-defined AOX state
+    description: source-defined AOX state. Maps to SBML symbol `AOX` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_martinez_guimera2017_generic_redox_signalling_mo_model2001080001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_martinez_guimera2017_generic_redox_signalling_mo_model2001080001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_martinez_guimera2017_generic_redox_signalling_mo_model2001080001_model.species_labels
+    label: Observable labels

@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Beard2005_Mitochondrial_Respiration Lab
+description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values
+  are native SBML quantities; equations, parameters, and initial values remain in
+  the bundled source file.
+models:
+- alias: signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model.state
+  to:
+  - visualisation.signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model_state
+- from: signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model.summary
+  to:
+  - visualisation.signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model_summary
+- from: signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model.species_labels
+  to:
+  - visualisation.signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- stress-response
+- metabolic-signaling
+io:
+  inputs:
+  - name: initial_source_defined_h_x_state
+    maps_to: signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model.initial_source_defined_h_x_state
+    label: Initial source-defined H_X state
+    description: Initial level of source-defined H_X state. Maps to SBML symbol `H_x`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_h_x_state
+    maps_to: signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model.source_defined_h_x_state
+    label: source-defined H_X state
+    description: source-defined H_X state. Maps to SBML symbol `H_x` and is emitted
+      in native SBML units.
+  - name: source_defined_k_x_state
+    maps_to: signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model.source_defined_k_x_state
+    label: source-defined K_X state
+    description: source-defined K_X state. Maps to SBML symbol `K_x` and is emitted
+      in native SBML units.
+  - name: source_defined_mg_x_state
+    maps_to: signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model.source_defined_mg_x_state
+    label: source-defined MG_X state
+    description: source-defined MG_X state. Maps to SBML symbol `Mg_x` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model.species_labels
+    label: Observable labels

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2db1c50e-5081-4c16-8377-222cd9ee8e15",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "afde436f-c56a-43a2-a8e9-75c52ae8db86",
+  "created_at": "2026-05-16T05:46:11.085078045+00:00",
+  "last_synced_at": "2026-05-16T10:38:01.221085+00:00",
+  "hub_manifest_hash": "eb46f157ae2c0936477f636e4bb2e60972b1159fe92a238df7cfededc2d58707",
+  "package_name": "panteleev2002-tfpimechanism-schmema2-lab"
+}

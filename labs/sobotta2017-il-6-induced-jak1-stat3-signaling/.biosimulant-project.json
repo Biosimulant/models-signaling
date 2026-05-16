@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "dd940bd7-a007-4b21-8557-fac5449554f1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a599de05-18fe-4ecc-9d1f-feab94eab520",
+  "created_at": "2026-05-16T05:58:27.542355967+00:00",
+  "last_synced_at": "2026-05-16T11:10:11.955094+00:00",
+  "hub_manifest_hash": "aabc14f2d278eb1d5bf47aa3f128150990ddc0e4348d900792fc0aab9dca022a",
+  "package_name": "sobotta2017-il-6-induced-jak1-stat3-signaling-lab"
+}

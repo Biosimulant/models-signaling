@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Markevich2004_MAPK_orderedElementary Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_markevich2004_mapk_orderedelementary_biomd0000000026_model
+    title: Markevich2004_MAPK_orderedElementary
+    context: receptor-to-MAPK cascade signaling
+    question: How does Markevich2004 MAPK orderedElementary propagate receptor or
+      RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_m_state: float
+      source_defined_mp_state: float
+      dual_phosphorylated_mapk: float
+      mapkk: float
+      source_defined_mkp_state: float
+      m_mapkk: float
+      mp_mapkk: float
+      dual_phosphorylated_mapk_mkp: float
+      mp_mkp: float
+      mp_mkp_2: float
+      source_defined_m_mkp_state: float
+    species_labels:
+      source_defined_m_state: Source Defined M State
+      source_defined_mp_state: Source Defined MP State
+      dual_phosphorylated_mapk: Dual Phosphorylated MAPK
+      mapkk: MAPKK
+      source_defined_mkp_state: source-defined MKP state
+      m_mapkk: M MAPKK
+      mp_mapkk: Mp MAPKK
+      dual_phosphorylated_mapk_mkp: dual-phosphorylated MAPK MKP
+      mp_mkp: Mp MKP
+      mp_mkp_2: Mp MKP
+      source_defined_m_mkp_state: source-defined M_MKP state
+io:
+  inputs: []
+  outputs: []

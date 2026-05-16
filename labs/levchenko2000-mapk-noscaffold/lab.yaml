@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Levchenko2000_MAPK_noScaffold Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.state
+  to:
+  - visualisation.signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model_state
+- from: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.summary
+  to:
+  - visualisation.signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model_summary
+- from: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.species_labels
+  to:
+  - visualisation.signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+io:
+  inputs:
+  - name: initial_mapk
+    maps_to: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.initial_mapk
+    label: Initial MAPK
+    description: Initial level of MAPK. Maps to SBML symbol `MAPK`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: mapk
+    maps_to: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.mapk
+    label: MAPK
+    description: MAPK. Maps to SBML symbol `MAPK` and is emitted in native SBML units.
+  - name: mapk_mek_pp
+    maps_to: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.mapk_mek_pp
+    label: MAPK MEK PP
+    description: MAPK MEK PP. Maps to SBML symbol `MAPKMEKpp` and is emitted in native
+      SBML units.
+  - name: mapk_p
+    maps_to: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.mapk_p
+    label: MAPK P
+    description: MAPK P. Maps to SBML symbol `MAPKp` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_levchenko2000_mapk_noscaffold_biomd0000000011_model.species_labels
+    label: Observable labels

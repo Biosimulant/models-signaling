@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0d16fc14-a885-48e4-93eb-58ed11fb9114",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0fdec733-309d-408f-93dd-03ff870d46c7",
+  "created_at": "2026-05-16T05:38:38.438796110+00:00",
+  "last_synced_at": "2026-05-16T10:23:59.472992+00:00",
+  "hub_manifest_hash": "c060e7120270f45bd513e5c10a3a48245e1ae5055365df76345df1004430b6ec",
+  "package_name": "nakakuki2010-cellfatedecision-core-lab"
+}

@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Pokhilko2013 - TOC1 signalling in Arabidopsis circadian clock Lab
+description: Clean Biosimulant lab for circadian regulatory signaling. Values are
+  native SBML quantities; equations, parameters, and initial values remain in the
+  bundled source file.
+models:
+- alias: signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model.state
+  to:
+  - visualisation.signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model_state
+- from: signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model.summary
+  to:
+  - visualisation.signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model_summary
+- from: signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model.species_labels
+  to:
+  - visualisation.signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- circadian
+- plant-signaling
+io:
+  inputs:
+  - name: initial_c_abar_m
+    maps_to: signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model.initial_c_abar_m
+    label: Initial C ABAR M
+    description: Initial level of C ABAR M. Maps to SBML symbol `species_1`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: c_abar_m
+    maps_to: signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model.c_abar_m
+    label: C ABAR M
+    description: C ABAR M. Maps to SBML symbol `species_1` and is emitted in native
+      SBML units.
+  - name: c_pp2c
+    maps_to: signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model.c_pp2c
+    label: C PP2C
+    description: C PP2C. Maps to SBML symbol `species_2` and is emitted in native
+      SBML units.
+  - name: c_sn_rk2
+    maps_to: signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model.c_sn_rk2
+    label: C Sn RK2
+    description: C Sn RK2. Maps to SBML symbol `species_3` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model.species_labels
+    label: Observable labels

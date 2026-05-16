@@ -1,0 +1,115 @@
+schema_version: '2.0'
+title: Mazein2013 - Cholesterol biosynthesis pathway Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_mazein2013_cholesterol_biosynthesis_pathway_model1409170000_model
+    title: Mazein2013 - Cholesterol biosynthesis pathway
+    context: metabolic and hormone signaling response
+    question: How does Mazein2013 - Cholesterol biosynthesis pathway shift hormone-linked
+      signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      acety_co_a: float
+      acetoacetyl_co_a: float
+      source_3_hydroxy_3_methylglutaryl_co_a: float
+      mevalonate: float
+      acetoacetate: float
+      hmgcr: float
+      hmgcl: float
+      source_defined_akat1_state: float
+      hmgcs2: float
+      mevalonate_p: float
+      source_defined_mvk_state: float
+      mevalonate_pp: float
+      source_defined_pmvk_state: float
+      isopentenyl_pp: float
+      source_defined_mvd_state: float
+      dimethylallyl_pp: float
+      geranyl_pp: float
+      presqualene_pp: float
+      squalene: float
+      source_defined_fdps_state: float
+      source_defined_ggps1_state: float
+      source_defined_idi2_state: float
+      source_defined_idi1_state: float
+      source_defined_fdft1_state: float
+      geranylgeranyl_pp: float
+      farnesyl_pp: float
+      hmgcs1: float
+      source_defined_acat2_state: float
+      source_defined_akat1_state_2: float
+      acetoacetate_2: float
+      acety_co_a_2: float
+      hmgcl_2: float
+      hmgcr_2: float
+      acetoacetyl_co_a_2: float
+      hmgcs2_2: float
+      source_3_hydroxy_3_methylglutaryl_co_a_2: float
+      mevalonate_2: float
+      farnesyl_pp_2: float
+      source_3_hydroxy_3_methylglutaryl_co_a_3: float
+      acety_co_a_3: float
+      acetoacetyl_co_a_3: float
+    species_labels:
+      acety_co_a: Acety Co A
+      acetoacetyl_co_a: Acetoacetyl Co A
+      source_3_hydroxy_3_methylglutaryl_co_a: 3 Hydroxy 3 Methylglutaryl Co A
+      mevalonate: Mevalonate
+      acetoacetate: Acetoacetate
+      hmgcr: HMGCR
+      hmgcl: HMGCL
+      source_defined_akat1_state: source-defined AKAT1 state
+      hmgcs2: HMGCS2
+      mevalonate_p: Mevalonate P
+      source_defined_mvk_state: source-defined MVK state
+      mevalonate_pp: Mevalonate PP
+      source_defined_pmvk_state: source-defined PMVK state
+      isopentenyl_pp: Isopentenyl PP
+      source_defined_mvd_state: source-defined MVD state
+      dimethylallyl_pp: Dimethylallyl PP
+      geranyl_pp: Geranyl PP
+      presqualene_pp: Presqualene PP
+      squalene: Squalene
+      source_defined_fdps_state: source-defined FDPS state
+      source_defined_ggps1_state: source-defined GGPS1 state
+      source_defined_idi2_state: source-defined IDI2 state
+      source_defined_idi1_state: source-defined IDI1 state
+      source_defined_fdft1_state: source-defined FDFT1 state
+      geranylgeranyl_pp: Geranylgeranyl PP
+      farnesyl_pp: Farnesyl PP
+      hmgcs1: HMGCS1
+      source_defined_acat2_state: source-defined ACAT2 state
+      source_defined_akat1_state_2: source-defined AKAT1 state
+      acetoacetate_2: Acetoacetate
+      acety_co_a_2: Acety Co A
+      hmgcl_2: HMGCL
+      hmgcr_2: HMGCR
+      acetoacetyl_co_a_2: Acetoacetyl Co A
+      hmgcs2_2: HMGCS2
+      source_3_hydroxy_3_methylglutaryl_co_a_2: 3 Hydroxy 3 Methylglutaryl Co A
+      mevalonate_2: Mevalonate
+      farnesyl_pp_2: Farnesyl PP
+      source_3_hydroxy_3_methylglutaryl_co_a_3: 3 Hydroxy 3 Methylglutaryl Co A
+      acety_co_a_3: Acety Co A
+      acetoacetyl_co_a_3: Acetoacetyl Co A
+io:
+  inputs: []
+  outputs: []

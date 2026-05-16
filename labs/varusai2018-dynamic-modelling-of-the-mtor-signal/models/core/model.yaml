@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: Varusai2018 - Dynamic modelling of the mTOR signalling network reveals complex
+  emergent behaviours conferred by DEPTOR
+description: This is a mathematical describing the effect that DEP domain-containing
+  mTOR-interacting protein (DEPTOR) has on the mammalian target of rapamycin (mTOR)
+  signalling network. It can be used to explore signaling dynamics and compare pathway
+  response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mtor
+- gpcr
+authors:
+- Biosimulant Team
+- Thawfeek M Varusai
+- Lan K Nguyen
+upstream:
+  id: biomodels_ebi:BIOMD0000000823
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000823
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000823
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000823?filename=Varusai2018.xml
+  license: CC0
+biosim:
+  entrypoint: src.varusai2018_dynamic_modelling_of_the_mtor_signal:Varusai2018DynamicModellingOfTheMtorSignalBiomd0000000823Model
+  init_kwargs:
+    model_path: data/BIOMD0000000823.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_insulin_receptor
+    maps_to: signaling_sbml_varusai2018_dynamic_modelling_of_the_mtor_signal_biomd0000000823_model.initial_insulin_receptor
+    label: Initial insulin receptor
+    description: Initial level of insulin receptor. Maps to SBML symbol `IR`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: akt
+    maps_to: signaling_sbml_varusai2018_dynamic_modelling_of_the_mtor_signal_biomd0000000823_model.akt
+    label: AKT
+    description: AKT. Maps to SBML symbol `Akt` and is emitted in native SBML units.
+  - name: source_defined_pakt_state
+    maps_to: signaling_sbml_varusai2018_dynamic_modelling_of_the_mtor_signal_biomd0000000823_model.source_defined_pakt_state
+    label: source-defined PAKT state
+    description: source-defined PAKT state. Maps to SBML symbol `pAkt` and is emitted
+      in native SBML units.
+  - name: source_defined_pir_state
+    maps_to: signaling_sbml_varusai2018_dynamic_modelling_of_the_mtor_signal_biomd0000000823_model.source_defined_pir_state
+    label: source-defined PIR state
+    description: source-defined PIR state. Maps to SBML symbol `pIR` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_varusai2018_dynamic_modelling_of_the_mtor_signal_biomd0000000823_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_varusai2018_dynamic_modelling_of_the_mtor_signal_biomd0000000823_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_varusai2018_dynamic_modelling_of_the_mtor_signal_biomd0000000823_model.species_labels
+    label: Observable labels

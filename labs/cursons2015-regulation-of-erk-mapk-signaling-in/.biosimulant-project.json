@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0fcdabe8-c7f2-4309-944d-f6eb838ad676",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5db42724-264d-4160-9d5b-4d73f22fb8a6",
+  "created_at": "2026-05-15T19:08:09.440583592+00:00",
+  "last_synced_at": "2026-05-16T09:26:06.853317+00:00",
+  "hub_manifest_hash": "909022442958abef78fe5592922023057cf850c02441207f84c08ab15dd7f81c",
+  "package_name": "cursons2015-regulation-of-erk-mapk-signaling-in-human-epidermis"
+}

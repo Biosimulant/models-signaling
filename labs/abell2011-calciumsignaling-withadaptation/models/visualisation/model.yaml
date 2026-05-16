@@ -1,0 +1,50 @@
+schema_version: '2.0'
+title: Abell2011_CalciumSignaling_WithAdaptation Visualisation
+description: Question-and-answer and chart visualisation for calcium and second-messenger
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_abell2011_calciumsignaling_withadaptation_biomd0000000355_model
+    title: Abell2011_CalciumSignaling_WithAdaptation
+    context: calcium second-messenger signaling
+    question: How do calcium-linked states respond in Abell2011 CalciumSignaling WithAdaptation?
+    visual_scope: calcium second-messenger signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      intracellular_calcium: float
+      ip3: float
+      source_defined_g_state: float
+      pmca_calcium_pump: float
+      serca_calcium_pump: float
+      stim_calcium_sensor: float
+      extracellular_calcium: float
+      calmodulin: float
+      stored_calcium: float
+    species_labels:
+      intracellular_calcium: intracellular calcium
+      ip3: IP3
+      source_defined_g_state: source-defined G state
+      pmca_calcium_pump: PMCA calcium pump
+      serca_calcium_pump: SERCA calcium pump
+      stim_calcium_sensor: STIM calcium sensor
+      extracellular_calcium: extracellular calcium
+      calmodulin: calmodulin
+      stored_calcium: stored calcium
+io:
+  inputs: []
+  outputs: []

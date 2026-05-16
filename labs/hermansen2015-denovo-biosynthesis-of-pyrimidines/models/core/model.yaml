@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Hermansen2015 - denovo biosynthesis of pyrimidines in yeast
+description: 'Hermansen2015 - denovo biosynthesis of pyrimidines in yeast This model
+  is described in the article: Characterizing selective pressures on the pathway for
+  de novo biosynthesis of pyrimidines in yeast. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Russell A Hermansen
+- Brian K Mannakee
+- Wolfgang Knecht
+- David A Liberles
+- Ryan N Gutenkunst
+upstream:
+  id: biomodels_ebi:BIOMD0000000590
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000590
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000590
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000590?filename=BIOMD0000000590_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hermansen2015_denovo_biosynthesis_of_pyrimidines:Hermansen2015DenovoBiosynthesisOfPyrimidinesBiomd0000000590Model
+  init_kwargs:
+    model_path: data/BIOMD0000000590.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_cp_state
+    maps_to: signaling_sbml_hermansen2015_denovo_biosynthesis_of_pyrimidines_biomd0000000590_model.initial_source_defined_cp_state
+    label: Initial source-defined CP state
+    description: Initial level of source-defined CP state. Maps to SBML symbol `cp`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: calcium
+    maps_to: signaling_sbml_hermansen2015_denovo_biosynthesis_of_pyrimidines_biomd0000000590_model.calcium
+    label: calcium
+    description: calcium. Maps to SBML symbol `ca` and is emitted in native SBML units.
+  - name: dihydroorotate
+    maps_to: signaling_sbml_hermansen2015_denovo_biosynthesis_of_pyrimidines_biomd0000000590_model.dihydroorotate
+    label: dihydroorotate
+    description: dihydroorotate. Maps to SBML symbol `dho` and is emitted in native
+      SBML units.
+  - name: orotate
+    maps_to: signaling_sbml_hermansen2015_denovo_biosynthesis_of_pyrimidines_biomd0000000590_model.orotate
+    label: orotate
+    description: orotate. Maps to SBML symbol `oro` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_hermansen2015_denovo_biosynthesis_of_pyrimidines_biomd0000000590_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_hermansen2015_denovo_biosynthesis_of_pyrimidines_biomd0000000590_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_hermansen2015_denovo_biosynthesis_of_pyrimidines_biomd0000000590_model.species_labels
+    label: Observable labels

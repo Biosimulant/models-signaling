@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Markevich2004_MAPK_orderedMM2kinases Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model.state
+  to:
+  - visualisation.signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model_state
+- from: signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model.summary
+  to:
+  - visualisation.signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model_summary
+- from: signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model.species_labels
+  to:
+  - visualisation.signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+io:
+  inputs:
+  - name: initial_source_defined_m_state
+    maps_to: signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model.initial_source_defined_m_state
+    label: Initial source-defined M state
+    description: Initial level of source-defined M state. Maps to SBML symbol `M`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: mapkk1
+    maps_to: signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model.mapkk1
+    label: MAPKK1
+    description: MAPKK1. Maps to SBML symbol `MAPKK1` and is emitted in native SBML
+      units.
+  - name: mapkk2
+    maps_to: signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model.mapkk2
+    label: MAPKK2
+    description: MAPKK2. Maps to SBML symbol `MAPKK2` and is emitted in native SBML
+      units.
+  - name: dual_phosphorylated_mapk
+    maps_to: signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model.dual_phosphorylated_mapk
+    label: Dual Phosphorylated MAPK
+    description: Dual Phosphorylated MAPK. Maps to SBML symbol `Mpp` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model.species_labels
+    label: Observable labels

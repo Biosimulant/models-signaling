@@ -1,0 +1,102 @@
+schema_version: '2.0'
+title: 'Integrated Model of DNA Damage Response and p53 Signaling in ATM/ATR-Deficient
+  Ataxia Telangiectasia: Exploring the Therapeutic Roles of Possible repurposed drugs
+  Visualisation'
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Integrated Model of DNA Damage Response and p53 Signaling in ATM/ATR-Deficient Ataxia
+  Telangiectasia: Exploring the Therapeutic Roles of Possible repurposed drugs.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- checkpoint-signaling
+- pharmacology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_integrated_model_of_dna_damage_response_and_p53_model2503190002_model
+    title: 'Integrated Model of DNA Damage Response and p53 Signaling in ATM/ATR-Deficient
+      Ataxia Telangiectasia: Exploring the Therapeutic Roles of Possible repurposed
+      drugs'
+    context: cell-cycle regulatory signaling
+    question: 'How does Integrated Model of DNA Damage Response and p53 Signaling
+      in ATM/ATR-Deficient Ataxia Telangiectasia: Exploring the Therapeutic Roles
+      of Possible repurposed drugs move checkpoint or cycle-control signaling states?'
+    visual_scope: cell-cycle regulatory signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      atm_inactive: float
+      atm_active: float
+      atr_inactive: float
+      atr_active: float
+      dna_damage: float
+      p53_inactive: float
+      p53_active: float
+      hdac4_inactive: float
+      hdac4_active: float
+      hdac4_phospho: float
+      pp2a: float
+      i2pp2a: float
+      pp2a_i2pp2a: float
+      topbp1_inactive: float
+      topbp1_active: float
+      source_defined_ck2_state: float
+      chk1_inactive: float
+      chk1_active: float
+      chk2_inactive: float
+      chk2_active: float
+      nrf2_inactive: float
+      nrf2_active: float
+      keap1: float
+      nrf2_degraded: float
+      omaveloxolone: float
+      spermidine: float
+      autophagy_inactive: float
+      autophagy_active: float
+      abstract_source_state_p21: float
+      source_defined_bax_state: float
+      source_defined_puma_state: float
+    species_labels:
+      atm_inactive: ATM Inactive
+      atm_active: ATM active
+      atr_inactive: ATR Inactive
+      atr_active: ATR active
+      dna_damage: DNA Damage
+      p53_inactive: P53 Inactive
+      p53_active: P53 active
+      hdac4_inactive: HDAC4 Inactive
+      hdac4_active: HDAC4 active
+      hdac4_phospho: HDAC4 Phospho
+      pp2a: PP2A
+      i2pp2a: I2PP2A
+      pp2a_i2pp2a: PP2A I2PP2A
+      topbp1_inactive: TOPBP1 Inactive
+      topbp1_active: TOPBP1 active
+      source_defined_ck2_state: source-defined CK2 state
+      chk1_inactive: CHK1 Inactive
+      chk1_active: CHK1 active
+      chk2_inactive: CHK2 Inactive
+      chk2_active: CHK2 active
+      nrf2_inactive: NRF2 Inactive
+      nrf2_active: NRF2 active
+      keap1: KEAP1
+      nrf2_degraded: NRF2 Degraded
+      omaveloxolone: Omaveloxolone
+      spermidine: Spermidine
+      autophagy_inactive: Autophagy Inactive
+      autophagy_active: Autophagy active
+      abstract_source_state_p21: Abstract source state P21
+      source_defined_bax_state: source-defined BAX state
+      source_defined_puma_state: source-defined PUMA state
+io:
+  inputs: []
+  outputs: []

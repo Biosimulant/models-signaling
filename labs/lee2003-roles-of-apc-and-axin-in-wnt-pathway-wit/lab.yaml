@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Lee2003 - Roles of APC and Axin in Wnt Pathway (without regulatory loop) Lab
+description: Clean Biosimulant lab for developmental and growth-control signaling.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.
+models:
+- alias: signaling_sbml_lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model.state
+  to:
+  - visualisation.signaling_sbml_lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model_state
+- from: signaling_sbml_lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model.summary
+  to:
+  - visualisation.signaling_sbml_lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model_summary
+- from: signaling_sbml_lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model.species_labels
+  to:
+  - visualisation.signaling_sbml_lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- wnt
+io:
+  inputs:
+  - name: initial_source_defined_w_state
+    maps_to: signaling_sbml_lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model.initial_source_defined_w_state
+    label: Initial source-defined W state
+    description: Initial level of source-defined W state. Maps to SBML symbol `W`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: b_catenin_apc_axin_gsk3
+    maps_to: signaling_sbml_lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model.b_catenin_apc_axin_gsk3
+    label: B Catenin APC Axin GSK3
+    description: B Catenin APC Axin GSK3. Maps to SBML symbol `B_catenin_APC__axin__GSK3`
+      and is emitted in native SBML units.
+  - name: b_catenin_apc_axin_gsk3_2
+    maps_to: signaling_sbml_lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model.b_catenin_apc_axin_gsk3_2
+    label: B Catenin APC Axin GSK3
+    description: B Catenin APC Axin GSK3. Maps to SBML symbol `B_catenin__APC__axin__GSK3`
+      and is emitted in native SBML units.
+  - name: b_catenin
+    maps_to: signaling_sbml_lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model.b_catenin
+    label: B Catenin
+    description: B Catenin. Maps to SBML symbol `B_catenin` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_lee2003_roles_of_apc_and_axin_in_wnt_pathway_wit_biomd0000000658_model.species_labels
+    label: Observable labels

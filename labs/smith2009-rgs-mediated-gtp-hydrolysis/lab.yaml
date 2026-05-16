@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Smith2009 - RGS mediated GTP hydrolysis Lab
+description: 'Clean Biosimulant lab for systems signaling model: Smith2009 - RGS mediated
+  GTP hydrolysis. Values are native SBML quantities; equations, parameters, and initial
+  values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model.state
+  to:
+  - visualisation.signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model_state
+- from: signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model.summary
+  to:
+  - visualisation.signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model_summary
+- from: signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model.species_labels
+  to:
+  - visualisation.signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+io:
+  inputs:
+  - name: initial_ligand_conc_level
+    maps_to: signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model.initial_ligand_conc_level
+    label: Ligand Conc
+    description: Ligand Conc source parameter. Maps to SBML symbol `Ligand_conc` and
+      preserves the bundled default.
+  outputs:
+  - name: source_defined_gabg_state
+    maps_to: signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model.source_defined_gabg_state
+    label: source-defined GABG state
+    description: source-defined GABG state. Maps to SBML symbol `Gabg` and is emitted
+      in native SBML units.
+  - name: rgabg
+    maps_to: signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model.rgabg
+    label: Rgabg
+    description: Rgabg. Maps to SBML symbol `RGabg` and is emitted in native SBML
+      units.
+  - name: rgabg_l
+    maps_to: signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model.rgabg_l
+    label: Rgabg L
+    description: Rgabg L. Maps to SBML symbol `RGabgL` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model.species_labels
+    label: Observable labels

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "157714e1-810b-435c-b0b8-284f73cee8f7",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3762e597-4e3d-4874-bac9-2aab7ca2244c",
+  "created_at": "2026-05-15T19:08:10.322663205+00:00",
+  "last_synced_at": "2026-05-16T09:59:29.361206+00:00",
+  "hub_manifest_hash": "d6b38c3c2d45d7c152ef5451dee2112016323e0a90e5c8da884110588eaf5868",
+  "package_name": "koch2005-sucrose-breakdown-pathway-petri-net-lab"
+}

@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Scaramellini1997 - Two-receptor:One-transducer (2R1T) model for analysis of
+  interactions between agonists
+description: The two-receptor:one-transducerm odel (Leff, 1987) is here extended to
+  analyze interactions between agonistsd isplaying E/[A] curves of different shapes,
+  by incorporating slope factors into the separa. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+authors:
+- Biosimulant Team
+- C Scaramellini
+- G Bennett
+- P Leff
+upstream:
+  id: biomodels_ebi:BIOMD0000001008
+  source_db: biomodels_ebi
+  source_id: BIOMD0000001008
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001008
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001008?filename=Scaramellini1997.xml
+  license: CC0
+biosim:
+  entrypoint: src.scaramellini1997_two_receptor_one_transducer_2r1:Scaramellini1997TwoReceptorOneTransducer2r1Biomd0000001008Model
+  init_kwargs:
+    model_path: data/BIOMD0000001008.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_effect
+    maps_to: signaling_sbml_scaramellini1997_two_receptor_one_transducer_2r1_biomd0000001008_model.initial_effect
+    label: Initial Effect
+    description: Initial level of Effect. Maps to SBML symbol `Effect`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_mediator_a1
+    maps_to: signaling_sbml_scaramellini1997_two_receptor_one_transducer_2r1_biomd0000001008_model.initial_mediator_a1
+    label: Initial Mediator A1
+    description: Initial level of Mediator A1. Maps to SBML symbol `Mediator_A1`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_mediator_a2
+    maps_to: signaling_sbml_scaramellini1997_two_receptor_one_transducer_2r1_biomd0000001008_model.initial_mediator_a2
+    label: Initial Mediator A2
+    description: Initial level of Mediator A2. Maps to SBML symbol `Mediator_A2`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: mediator_a1
+    maps_to: signaling_sbml_scaramellini1997_two_receptor_one_transducer_2r1_biomd0000001008_model.mediator_a1
+    label: Mediator A1
+    description: Mediator A1. Maps to SBML symbol `Mediator_A1` and is emitted in
+      native SBML units.
+  - name: mediator_a2
+    maps_to: signaling_sbml_scaramellini1997_two_receptor_one_transducer_2r1_biomd0000001008_model.mediator_a2
+    label: Mediator A2
+    description: Mediator A2. Maps to SBML symbol `Mediator_A2` and is emitted in
+      native SBML units.
+  - name: agonist_1
+    maps_to: signaling_sbml_scaramellini1997_two_receptor_one_transducer_2r1_biomd0000001008_model.agonist_1
+    label: Agonist 1
+    description: Agonist 1. Maps to SBML symbol `Agonist_1` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_scaramellini1997_two_receptor_one_transducer_2r1_biomd0000001008_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_scaramellini1997_two_receptor_one_transducer_2r1_biomd0000001008_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_scaramellini1997_two_receptor_one_transducer_2r1_biomd0000001008_model.species_labels
+    label: Observable labels

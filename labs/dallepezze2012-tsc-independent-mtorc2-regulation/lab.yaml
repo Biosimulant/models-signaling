@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: DallePezze2012 - TSC-independent mTORC2 regulation Lab
+description: 'Clean Biosimulant lab for systems signaling model: DallePezze2012 -
+  TSC-independent mTORC2 regulation. Values are native SBML quantities; equations,
+  parameters, and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model.state
+  to:
+  - visualisation.signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model_state
+- from: signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model.summary
+  to:
+  - visualisation.signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model_summary
+- from: signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model.species_labels
+  to:
+  - visualisation.signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mtor
+io:
+  inputs:
+  - name: initial_amino_acids
+    maps_to: signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model.initial_amino_acids
+    label: Initial Amino Acids
+    description: Initial level of Amino Acids. Maps to SBML symbol `species_28`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_insulin
+    maps_to: signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model.initial_insulin
+    label: Initial Insulin
+    description: Initial level of Insulin. Maps to SBML symbol `species_41`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_pi3k
+    maps_to: signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model.initial_pi3k
+    label: Initial PI3K
+    description: Initial level of PI3K. Maps to SBML symbol `species_23`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: akt_p_t308
+    maps_to: signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model.akt_p_t308
+    label: AKT P T308
+    description: AKT P T308. Maps to SBML symbol `species_3` and is emitted in native
+      SBML units.
+  - name: pras40
+    maps_to: signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model.pras40
+    label: PRAS40
+    description: PRAS40. Maps to SBML symbol `species_9` and is emitted in native
+      SBML units.
+  - name: pras40_p_s183
+    maps_to: signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model.pras40_p_s183
+    label: PRAS40 P S183
+    description: PRAS40 P S183. Maps to SBML symbol `species_12` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_dallepezze2012_tsc_independent_mtorc2_regulation_biomd0000000581_model.species_labels
+    label: Observable labels

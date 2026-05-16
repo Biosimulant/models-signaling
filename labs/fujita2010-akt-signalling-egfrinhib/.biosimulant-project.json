@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "901c1c5f-8340-43e8-b249-f6741a48a20e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2a03e70d-a071-4aac-8ff3-de9bdc4a5c59",
+  "created_at": "2026-05-15T19:08:09.577211442+00:00",
+  "last_synced_at": "2026-05-16T09:37:03.259939+00:00",
+  "hub_manifest_hash": "9b19f9013d052dd73b7737f3bc13f676f9c0eec991ab1227c56c623dbb140075",
+  "package_name": "fujita2010-akt-signalling-egfrinhib-lab"
+}

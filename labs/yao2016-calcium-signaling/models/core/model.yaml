@@ -1,0 +1,69 @@
+schema_version: '2.0'
+title: Yao2016_Calcium_Signaling
+description: 'Yao2016_Calcium_Signaling This model is described in the article: Distinct
+  cellular states determine calcium signaling response Jason Yao, Anna Pilko, Roy
+  Wollman Molecular Systems Biology Abstract: T. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+authors:
+- Biosimulant Team
+- Jason Yao
+- Anna Pilko
+- Roy Wollman
+upstream:
+  id: biomodels_ebi:MODEL1611150001
+  source_db: biomodels_ebi
+  source_id: MODEL1611150001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1611150001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1611150001?filename=MODEL1611150001_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.yao2016_calcium_signaling:Yao2016CalciumSignalingModel1611150001Model
+  init_kwargs:
+    model_path: data/MODEL1611150001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_plc_state
+    maps_to: signaling_sbml_yao2016_calcium_signaling_model1611150001_model.initial_source_defined_plc_state
+    label: Initial source-defined PLC state
+    description: Initial level of source-defined PLC state. Maps to SBML symbol `PLC`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: calcium
+    maps_to: signaling_sbml_yao2016_calcium_signaling_model1611150001_model.calcium
+    label: Calcium
+    description: Calcium. Maps to SBML symbol `ca` and is emitted in native SBML units.
+  - name: source_defined_plc_state
+    maps_to: signaling_sbml_yao2016_calcium_signaling_model1611150001_model.source_defined_plc_state
+    label: Source Defined PLC State
+    description: Source Defined PLC State. Maps to SBML symbol `PLC` and is emitted
+      in native SBML units.
+  - name: ip3
+    maps_to: signaling_sbml_yao2016_calcium_signaling_model1611150001_model.ip3
+    label: IP3
+    description: IP3. Maps to SBML symbol `IP3` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_yao2016_calcium_signaling_model1611150001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_yao2016_calcium_signaling_model1611150001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_yao2016_calcium_signaling_model1611150001_model.species_labels
+    label: Observable labels

@@ -1,0 +1,67 @@
+schema_version: '2.0'
+title: Hammaren-Geissen2022_PPToP_Model12 Lab
+description: 'Clean Biosimulant lab for systems signaling model: Hammaren-Geissen2022_PPToP_Model12.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.state
+  to:
+  - visualisation.signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model_state
+- from: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.summary
+  to:
+  - visualisation.signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model_summary
+- from: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.species_labels
+  to:
+  - visualisation.signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_pp_new
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.initial_pp_new
+    label: Initial Pp New
+    description: Initial level of Pp New. Maps to SBML symbol `Pp_new`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_pu_new
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.initial_pu_new
+    label: Initial Pu New
+    description: Initial level of Pu New. Maps to SBML symbol `Pu_new`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: pu_old
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.pu_old
+    label: Pu Old
+    description: Pu Old. Maps to SBML symbol `Pu` and is emitted in native SBML units.
+  - name: pp_old
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.pp_old
+    label: Pp Old
+    description: Pp Old. Maps to SBML symbol `Pp` and is emitted in native SBML units.
+  - name: pu_new
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.pu_new
+    label: Pu New
+    description: Pu New. Maps to SBML symbol `Pu_new` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_hammaren_geissen2022_pptop_model12_biomd0000001078_model.species_labels
+    label: Observable labels

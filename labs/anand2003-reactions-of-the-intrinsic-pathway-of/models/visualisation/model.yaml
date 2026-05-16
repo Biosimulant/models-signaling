@@ -1,0 +1,118 @@
+schema_version: '2.0'
+title: Anand2003 - Reactions of the Intrinsic Pathway of Blood Coagulation with Platelet
+  Activation Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Anand2003 - Reactions of the Intrinsic Pathway of Blood Coagulation with Platelet
+  Activation.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- coagulation
+- platelet-signaling
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_anand2003_reactions_of_the_intrinsic_pathway_of_model1806130003_model
+    title: Anand2003 - Reactions of the Intrinsic Pathway of Blood Coagulation with
+      Platelet Activation
+    context: metabolic and hormone signaling response
+    question: How does Anand2003 - Reactions of the Intrinsic Pathway of Blood Coagulation
+      with Platelet Activation shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_ix_state: float
+      activated_clotting_factor_ix: float
+      activated_clotting_factor_xi: float
+      atiii: float
+      activated_clotting_factor_ix_atiii: float
+      source_defined_iia_state: float
+      source_defined_viii_state: float
+      viiia: float
+      viiia_i: float
+      source_defined_apc_state: float
+      source_defined_v_state: float
+      source_defined_va_state: float
+      source_defined_va_i_state: float
+      source_defined_ap_state: float
+      viiia_activated_clotting_factor_ix_ap: float
+      viiia_activated_clotting_factor_ix: float
+      va_xa_ap: float
+      source_defined_xa_state: float
+      source_defined_va_xa_state: float
+      response_node_x: float
+      xa_atiii: float
+      source_defined_tfpi_state: float
+      xa_tfpi: float
+      source_defined_ii_state: float
+      iia_atiii: float
+      source_defined_pc_state: float
+      apc_l1at: float
+      l1at: float
+      source_defined_i_state: float
+      source_defined_ia_state: float
+      source_defined_ia_i_state: float
+      source_defined_pla_state: float
+      source_defined_xi_state: float
+      source_defined_xia_i_state: float
+      source_defined_rp_state: float
+      source_defined_pls_state: float
+      t_pa_ia: float
+      l2ap: float
+      pla_l2ap: float
+      source_defined_tpa_state: float
+    species_labels:
+      source_defined_ix_state: source-defined IX state
+      activated_clotting_factor_ix: activated clotting factor IX
+      activated_clotting_factor_xi: activated clotting factor XI
+      atiii: ATIII
+      activated_clotting_factor_ix_atiii: activated clotting factor IX ATIII
+      source_defined_iia_state: source-defined IIA state
+      source_defined_viii_state: source-defined VIII state
+      viiia: Viiia
+      viiia_i: Viiia I
+      source_defined_apc_state: source-defined APC state
+      source_defined_v_state: source-defined V state
+      source_defined_va_state: source-defined VA state
+      source_defined_va_i_state: source-defined VA_I state
+      source_defined_ap_state: source-defined AP state
+      viiia_activated_clotting_factor_ix_ap: Viiia activated clotting factor IX AP
+      viiia_activated_clotting_factor_ix: Viiia activated clotting factor IX
+      va_xa_ap: Va Xa AP
+      source_defined_xa_state: source-defined XA state
+      source_defined_va_xa_state: source-defined VA_XA state
+      response_node_x: response node X
+      xa_atiii: Xa ATIII
+      source_defined_tfpi_state: source-defined TFPI state
+      xa_tfpi: Xa TFPI
+      source_defined_ii_state: source-defined II state
+      iia_atiii: Iia ATIII
+      source_defined_pc_state: source-defined PC state
+      apc_l1at: APC L1AT
+      l1at: L1AT
+      source_defined_i_state: source-defined I state
+      source_defined_ia_state: source-defined IA state
+      source_defined_ia_i_state: source-defined IA_I state
+      source_defined_pla_state: source-defined PLA state
+      source_defined_xi_state: source-defined XI state
+      source_defined_xia_i_state: source-defined XIA_I state
+      source_defined_rp_state: source-defined RP state
+      source_defined_pls_state: source-defined PLS state
+      t_pa_ia: T PA Ia
+      l2ap: L2AP
+      pla_l2ap: PLA L2AP
+      source_defined_tpa_state: source-defined TPA state
+io:
+  inputs: []
+  outputs: []

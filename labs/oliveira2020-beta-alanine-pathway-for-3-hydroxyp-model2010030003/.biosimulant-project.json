@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8dbfadd8-a366-495e-b9b5-47dad8f9444c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8364afab-d465-47ed-90aa-74b71b337d1c",
+  "created_at": "2026-05-16T05:38:38.736839901+00:00",
+  "last_synced_at": "2026-05-16T12:23:24.702003+00:00",
+  "hub_manifest_hash": "c065b099353e227e4d6249f0ab2efccf5ba1c0572594e89f4fba50727f457b11",
+  "package_name": "model2010030003-oliveira2020-beta-alanine-pathway-for-3-hydroxyp"
+}

@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Huang2014 - Systematic modeling for the insulin signaling network mediated
+  by IRS1 and IRS2
+description: This is a mathematical model is which is a combination of systemic models
+  for the insulin signaling network as mediated by insulin receptor substrate (IRS)
+  1 and 2. It can be used to explore signaling dynamics and compare pathway response
+  across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- metabolic-signaling
+- hormone-signaling
+authors:
+- Biosimulant Team
+- Can Huang
+- Ming Wu
+- Jun Du
+- Di Liu
+- Christina Chan
+upstream:
+  id: biomodels_ebi:MODEL1912090001
+  source_db: biomodels_ebi
+  source_id: MODEL1912090001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1912090001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1912090001?filename=Huang2014.xml
+  license: CC0
+biosim:
+  entrypoint: src.huang2014_systematic_modeling_for_the_insulin_si:Huang2014SystematicModelingForTheInsulinSiModel1912090001Model
+  init_kwargs:
+    model_path: data/MODEL1912090001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_x1_insulin
+    maps_to: signaling_sbml_huang2014_systematic_modeling_for_the_insulin_si_model1912090001_model.initial_x1_insulin
+    label: Initial X1 Insulin
+    description: Initial level of X1 Insulin. Maps to SBML symbol `x1_Insulin`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: x2_receptor
+    maps_to: signaling_sbml_huang2014_systematic_modeling_for_the_insulin_si_model1912090001_model.x2_receptor
+    label: X2 Receptor
+    description: X2 Receptor. Maps to SBML symbol `x2_Receptor` and is emitted in
+      native SBML units.
+  - name: x6_en_receptor
+    maps_to: signaling_sbml_huang2014_systematic_modeling_for_the_insulin_si_model1912090001_model.x6_en_receptor
+    label: X6 EN Receptor
+    description: X6 EN Receptor. Maps to SBML symbol `x6_EN_Receptor` and is emitted
+      in native SBML units.
+  - name: x16_akt
+    maps_to: signaling_sbml_huang2014_systematic_modeling_for_the_insulin_si_model1912090001_model.x16_akt
+    label: X16 AKT
+    description: X16 AKT. Maps to SBML symbol `x16_AKT` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_huang2014_systematic_modeling_for_the_insulin_si_model1912090001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_huang2014_systematic_modeling_for_the_insulin_si_model1912090001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_huang2014_systematic_modeling_for_the_insulin_si_model1912090001_model.species_labels
+    label: Observable labels

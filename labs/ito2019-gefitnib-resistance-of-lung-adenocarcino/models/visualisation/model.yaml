@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Ito2019 - gefitnib resistance of lung adenocarcinoma caused by MET amplification
+  Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Ito2019 - gefitnib resistance of lung adenocarcinoma caused by MET amplification.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- oncology
+- pharmacology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model
+    title: Ito2019 - gefitnib resistance of lung adenocarcinoma caused by MET amplification
+    context: receptor-to-MAPK cascade signaling
+    question: How does Ito2019 - gefitnib resistance of lung adenocarcinoma caused
+      by MET amplification propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      x_1_egfr: float
+      x_4_egfr_egfr: float
+      x_2_erb_b3: float
+      x_6_erb_b3_erb_b3: float
+      x_5_egfr_erb_b3: float
+      x_3_met: float
+      x_7_met_met: float
+      x_10_p_met_met: float
+      x_8_p_egfr_erb_b3: float
+      x_9_p_erb_b3_erb_b3: float
+    species_labels:
+      x_1_egfr: X 1 EGFR
+      x_4_egfr_egfr: X 4 EGFR EGFR
+      x_2_erb_b3: X 2 Erb B3
+      x_6_erb_b3_erb_b3: X 6 Erb B3 Erb B3
+      x_5_egfr_erb_b3: X 5 EGFR Erb B3
+      x_3_met: X 3 MET
+      x_7_met_met: X 7 MET MET
+      x_10_p_met_met: X 10 P MET MET
+      x_8_p_egfr_erb_b3: X 8 P EGFR Erb B3
+      x_9_p_erb_b3_erb_b3: X 9 P Erb B3 Erb B3
+io:
+  inputs: []
+  outputs: []

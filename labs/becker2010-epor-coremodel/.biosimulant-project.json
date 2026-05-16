@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f9c94bfa-ecaf-4285-95a1-e5dbc15cdbe4",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e9dba9fb-5707-45ff-9c89-e4def96d5259",
+  "created_at": "2026-05-15T19:08:08.771201625+00:00",
+  "last_synced_at": "2026-05-16T09:04:19.566486+00:00",
+  "hub_manifest_hash": "7ed4975685b11786daae58b4b7d3423966a0eefa1f118358527579603e1f0bd9",
+  "package_name": "becker2010-epor-coremodel-lab"
+}

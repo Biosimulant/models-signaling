@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Vaseghi1999_Pentose_PP_yeast
+description: 'Model as described in: In vivo dynamics of the pentose phosphate pathway
+  in Saccharomyces cerevisiae Vaseghi S, Baumeister A, Rizzi M, Reuss M. It can be
+  used to explore signaling dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- S Vaseghi
+- A Baumeister
+- M Rizzi
+- M Reuss
+upstream:
+  id: biomodels_ebi:MODEL1004070001
+  source_db: biomodels_ebi
+  source_id: MODEL1004070001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1004070001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1004070001?filename=MODEL1004070001_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.vaseghi1999_pentose_pp_yeast:Vaseghi1999PentosePpYeastModel1004070001Model
+  init_kwargs:
+    model_path: data/MODEL1004070001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_fructose_6_phosphate
+    maps_to: signaling_sbml_vaseghi1999_pentose_pp_yeast_model1004070001_model.initial_fructose_6_phosphate
+    label: Initial Fructose 6 Phosphate
+    description: Initial level of Fructose 6 Phosphate. Maps to SBML symbol `C_F6P`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_glucose_6_phosphate
+    maps_to: signaling_sbml_vaseghi1999_pentose_pp_yeast_model1004070001_model.initial_glucose_6_phosphate
+    label: Initial Glucose 6 Phosphate
+    description: Initial level of Glucose 6 Phosphate. Maps to SBML symbol `C_G6P`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_glyceraldehyde_3_phosphate
+    maps_to: signaling_sbml_vaseghi1999_pentose_pp_yeast_model1004070001_model.initial_glyceraldehyde_3_phosphate
+    label: Initial Glyceraldehyde 3 Phosphate
+    description: Initial level of Glyceraldehyde 3 Phosphate. Maps to SBML symbol
+      `C_GAP`; exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: glucose_6_phosphate
+    maps_to: signaling_sbml_vaseghi1999_pentose_pp_yeast_model1004070001_model.glucose_6_phosphate
+    label: Glucose 6 Phosphate
+    description: Glucose 6 Phosphate. Maps to SBML symbol `C_G6P` and is emitted in
+      native SBML units.
+  - name: source_6_phosphogluconate
+    maps_to: signaling_sbml_vaseghi1999_pentose_pp_yeast_model1004070001_model.source_6_phosphogluconate
+    label: 6 Phosphogluconate
+    description: 6 Phosphogluconate. Maps to SBML symbol `C_6PG` and is emitted in
+      native SBML units.
+  - name: ribulose_5_phosphate
+    maps_to: signaling_sbml_vaseghi1999_pentose_pp_yeast_model1004070001_model.ribulose_5_phosphate
+    label: Ribulose 5 Phosphate
+    description: Ribulose 5 Phosphate. Maps to SBML symbol `C_Ru5P` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_vaseghi1999_pentose_pp_yeast_model1004070001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_vaseghi1999_pentose_pp_yeast_model1004070001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_vaseghi1999_pentose_pp_yeast_model1004070001_model.species_labels
+    label: Observable labels

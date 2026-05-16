@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: Gupta2007_HypothalamicPituitaryAdrenal_ModelA Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Gupta2007_HypothalamicPituitaryAdrenal_ModelA.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- hormone-signaling
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_gupta2007_hypothalamicpituitaryadrenal_modela_model1006230111_model
+    title: Gupta2007_HypothalamicPituitaryAdrenal_ModelA
+    context: GPCR and cAMP/PKA signaling
+    question: How does Gupta2007 HypothalamicPituitaryAdrenal ModelA route receptor
+      activity into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_c_state: float
+      source_defined_a_state: float
+      source_defined_r_state: float
+      source_defined_o_state: float
+    species_labels:
+      source_defined_c_state: Source Defined C State
+      source_defined_a_state: Source Defined A State
+      source_defined_r_state: Source Defined R State
+      source_defined_o_state: Source Defined O State
+io:
+  inputs: []
+  outputs: []

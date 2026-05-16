@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Smith2009 - RGS mediated GTP hydrolysis Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Smith2009 - RGS mediated GTP hydrolysis.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_smith2009_rgs_mediated_gtp_hydrolysis_biomd0000000439_model
+    title: Smith2009 - RGS mediated GTP hydrolysis
+    context: GPCR and cAMP/PKA signaling
+    question: How does Smith2009 - RGS mediated GTP hydrolysis route receptor activity
+      into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_r_state: float
+      source_defined_l_state: float
+      source_defined_rl_state: float
+      source_defined_gabg_state: float
+      rgabg: float
+      rgabg_l: float
+      ga_gtp: float
+      g_beta_gamma_complex: float
+      source_defined_rgs_state: float
+      rgsga_gtp: float
+      ga_gdpp: float
+      effector: float
+      ga_gtpeffector: float
+      inert_ga_gtp: float
+      rgsinert_ga_gtp: float
+      ga_gdp: float
+      source_defined_p_state: float
+      source_defined_z1_state: float
+      source_defined_z2_state: float
+      source_defined_z3_state: float
+    species_labels:
+      source_defined_r_state: source-defined R state
+      source_defined_l_state: source-defined L state
+      source_defined_rl_state: source-defined RL state
+      source_defined_gabg_state: source-defined GABG state
+      rgabg: Rgabg
+      rgabg_l: Rgabg L
+      ga_gtp: Ga GTP
+      g_beta_gamma_complex: G beta-gamma complex
+      source_defined_rgs_state: source-defined RGS state
+      rgsga_gtp: Rgsga GTP
+      ga_gdpp: Ga GDPP
+      effector: Effector
+      ga_gtpeffector: Ga Gtpeffector
+      inert_ga_gtp: Inert Ga GTP
+      rgsinert_ga_gtp: Rgsinert Ga GTP
+      ga_gdp: Ga GDP
+      source_defined_p_state: source-defined P state
+      source_defined_z1_state: source-defined Z1 state
+      source_defined_z2_state: source-defined Z2 state
+      source_defined_z3_state: source-defined Z3 state
+io:
+  inputs: []
+  outputs: []

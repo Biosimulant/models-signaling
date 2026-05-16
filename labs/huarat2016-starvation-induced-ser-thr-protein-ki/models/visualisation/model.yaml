@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Huarat2016 -Starvation-induced Ser/Thr protein kinase ArnS (Saci_1181) (Model
+  14) Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Huarat2016 -Starvation-induced Ser/Thr protein kinase ArnS (Saci_1181) (Model 14).'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- camp-pka
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model
+    title: Huarat2016 -Starvation-induced Ser/Thr protein kinase ArnS (Saci_1181)
+      (Model 14)
+    context: GPCR and cAMP/PKA signaling
+    question: How does Huarat2016 -Starvation-induced Ser/Thr protein kinase ArnS
+      (Saci 1181) (Model 14) route receptor activity into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_arns_state: float
+      source_defined_arns_state_2: float
+      source_defined_arnr_state: float
+      source_defined_arnr_state_2: float
+      source_defined_nfb_state: float
+      source_defined_flab_state: float
+      abf_r_p: float
+      source_defined_abfr_state: float
+      source_defined_flab_state_2: float
+      source_defined_nfb2_state: float
+    species_labels:
+      source_defined_arns_state: source-defined ARNS state
+      source_defined_arns_state_2: source-defined ARNS state
+      source_defined_arnr_state: source-defined ARNR state
+      source_defined_arnr_state_2: source-defined ARNR state
+      source_defined_nfb_state: source-defined NFB state
+      source_defined_flab_state: source-defined FLAB state
+      abf_r_p: Abf R P
+      source_defined_abfr_state: source-defined ABFR state
+      source_defined_flab_state_2: source-defined FLAB state
+      source_defined_nfb2_state: source-defined NFB2 state
+io:
+  inputs: []
+  outputs: []

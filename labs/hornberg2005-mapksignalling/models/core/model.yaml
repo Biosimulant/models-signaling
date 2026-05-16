@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Hornberg2005 - MAPKsignalling
+description: Hornberg2005 - MAPKsignalling Large model of the ERK signallingnetwork.
+  Results from this model were used to generate a simplifiedversion of the network.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+authors:
+- Biosimulant Team
+- Jorrit J Hornberg
+- Bernd Binder
+- Frank J Bruggeman
+- Birgit Schoeberl
+- Reinhart Heinrich
+upstream:
+  id: biomodels_ebi:BIOMD0000000667
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000667
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000667
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000667?filename=BIOMD0000000667_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hornberg2005_mapksignalling:Hornberg2005MapksignallingBiomd0000000667Model
+  init_kwargs:
+    model_path: data/BIOMD0000000667.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_egf
+    maps_to: signaling_sbml_hornberg2005_mapksignalling_biomd0000000667_model.initial_egf
+    label: Initial EGF
+    description: Initial level of EGF. Maps to SBML symbol `EGF`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_egf_egfr
+    maps_to: signaling_sbml_hornberg2005_mapksignalling_biomd0000000667_model.initial_egf_egfr
+    label: Initial EGF EGFR
+    description: Initial level of EGF EGFR. Maps to SBML symbol `EGF_EGFR`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_egf_egfr_2
+    maps_to: signaling_sbml_hornberg2005_mapksignalling_biomd0000000667_model.initial_egf_egfr_2
+    label: Initial EGF EGFR 2
+    description: Initial level of EGF EGFR 2. Maps to SBML symbol `_EGF_EGFR_2`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: egf_egfri_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp
+    maps_to: signaling_sbml_hornberg2005_mapksignalling_biomd0000000667_model.egf_egfri_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp
+    label: EGF Egfri 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      RAS GDP
+    description: EGF Egfri 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange
+      factor RAS GDP. Maps to SBML symbol `_EGF_EGFRi__2_GAP_Grb2_Sos_Ras_GDP` and
+      is emitted in native SBML units.
+  - name: egf_egfri_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp
+    maps_to: signaling_sbml_hornberg2005_mapksignalling_biomd0000000667_model.egf_egfri_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp
+    label: EGF Egfri 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      RAS GTP
+    description: EGF Egfri 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange
+      factor RAS GTP. Maps to SBML symbol `_EGF_EGFRi__2_GAP_Grb2_Sos_Ras_GTP` and
+      is emitted in native SBML units.
+  - name: ras_gdp
+    maps_to: signaling_sbml_hornberg2005_mapksignalling_biomd0000000667_model.ras_gdp
+    label: RAS GDP
+    description: RAS GDP. Maps to SBML symbol `Ras_GDP` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_hornberg2005_mapksignalling_biomd0000000667_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_hornberg2005_mapksignalling_biomd0000000667_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_hornberg2005_mapksignalling_biomd0000000667_model.species_labels
+    label: Observable labels

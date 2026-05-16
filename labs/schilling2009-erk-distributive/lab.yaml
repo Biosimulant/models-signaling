@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Schilling2009 - ERK distributive Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model.state
+  to:
+  - visualisation.signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model_state
+- from: signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model.summary
+  to:
+  - visualisation.signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model_summary
+- from: signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model.species_labels
+  to:
+  - visualisation.signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+io:
+  inputs:
+  - name: initial_jak2
+    maps_to: signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model.initial_jak2
+    label: Initial JAK2
+    description: Initial level of JAK2. Maps to SBML symbol `JAK2`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: source_defined_erk1_state
+    maps_to: signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model.source_defined_erk1_state
+    label: Source Defined ERK1 State
+    description: Source Defined ERK1 State. Maps to SBML symbol `ERK1` and is emitted
+      in native SBML units.
+  - name: source_defined_erk2_state
+    maps_to: signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model.source_defined_erk2_state
+    label: Source Defined ERK2 State
+    description: Source Defined ERK2 State. Maps to SBML symbol `ERK2` and is emitted
+      in native SBML units.
+  - name: pperk1
+    maps_to: signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model.pperk1
+    label: PPERK1
+    description: PPERK1. Maps to SBML symbol `ppERK1` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_schilling2009_erk_distributive_biomd0000000270_model.species_labels
+    label: Observable labels

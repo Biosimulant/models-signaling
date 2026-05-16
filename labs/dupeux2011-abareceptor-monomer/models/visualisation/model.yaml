@@ -1,0 +1,49 @@
+schema_version: '2.0'
+title: Dupeux2011_ABAreceptor_Monomer Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Dupeux2011_ABAreceptor_Monomer.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_dupeux2011_abareceptor_monomer_model1202030001_model
+    title: Dupeux2011_ABAreceptor_Monomer
+    context: GPCR and cAMP/PKA signaling
+    question: How does Dupeux2011 ABAreceptor Monomer route receptor activity into
+      cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      s0_0: float
+      source_defined_h_h_r_r_state: float
+      source_defined_h_r_state: float
+      source_defined_h_r_r_state: float
+      s0_4: float
+      source_defined_p_h_r_state: float
+      s0_6: float
+      source_defined_r_r_state: float
+    species_labels:
+      s0_0: S0 0
+      source_defined_h_h_r_r_state: source-defined H.H.R.R state
+      source_defined_h_r_state: source-defined H.R state
+      source_defined_h_r_r_state: source-defined H.R.R state
+      s0_4: S0 4
+      source_defined_p_h_r_state: source-defined P.H.R state
+      s0_6: S0 6
+      source_defined_r_r_state: source-defined R.R state
+io:
+  inputs: []
+  outputs: []

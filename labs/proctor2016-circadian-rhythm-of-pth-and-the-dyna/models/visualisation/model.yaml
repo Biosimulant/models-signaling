@@ -1,0 +1,117 @@
+schema_version: '2.0'
+title: Proctor2016 - Circadian rhythm of PTH and the dynamics of signaling molecules
+  on bone remodeling Visualisation
+description: Question-and-answer and chart visualisation for circadian regulatory
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- circadian
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_proctor2016_circadian_rhythm_of_pth_and_the_dyna_biomd0000000612_model
+    title: Proctor2016 - Circadian rhythm of PTH and the dynamics of signaling molecules
+      on bone remodeling
+    context: metabolic and hormone signaling response
+    question: How does Proctor2016 - Circadian rhythm of PTH and the dynamics of signaling
+      molecules on bone remodeling shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_bone_state: float
+      source_defined_hsc_state: float
+      source_defined_ob_m_state: float
+      source_defined_ob_p_state: float
+      ob_p_tgf_beta_response_parameter_response_parameter_response_parameter_response_parameter_response_parameter_a: float
+      ob_pro: float
+      source_defined_ocl_m_state: float
+      source_defined_ocl_p_state: float
+      ocl_p_rankl: float
+      source_defined_ocy_a_state: float
+      source_defined_ocy_i_state: float
+      ocy_i_pth: float
+      source_defined_msc_state: float
+      source_defined_load_state: float
+      source_defined_mcsf_state: float
+      ob_m_pth: float
+      ob_p_pth: float
+      source_defined_opg_state: float
+      opg_rankl: float
+      source_defined_pth_state: float
+      rankl: float
+      source_defined_sost_state: float
+      tgf_beta_response_parameter_response_parameter_response_parameter_response_parameter_response_parameter_a: float
+      tgf_beta_response_parameter_response_parameter_response_parameter_response_parameter_response_parameter_i: float
+      source_defined_wnt_a_state: float
+      source_defined_wnt_i_state: float
+      source: float
+      sink_species_species_species_species_species_species: float
+      response_node_x: float
+      newbone: float
+      source_defined_bax_state: float
+      bax_bcl2: float
+      source_defined_bcl2_state: float
+      source_defined_creb_state: float
+      creb_p: float
+      creb_runx2: float
+      source_defined_runx2_state: float
+    species_labels:
+      source_defined_bone_state: Source Defined BONE State
+      source_defined_hsc_state: Source Defined HSC State
+      source_defined_ob_m_state: Source Defined OB M State
+      source_defined_ob_p_state: Source Defined OB P State
+      ob_p_tgf_beta_response_parameter_response_parameter_response_parameter_response_parameter_response_parameter_a: Ob
+        P TGF beta response parameter Response Parameter Response Parameter Response
+        Parameter Response Parameter A
+      ob_pro: Ob Pro
+      source_defined_ocl_m_state: Source Defined OCL M State
+      source_defined_ocl_p_state: Source Defined OCL P State
+      ocl_p_rankl: Ocl P RANKL
+      source_defined_ocy_a_state: Source Defined OCY A State
+      source_defined_ocy_i_state: Source Defined OCY I State
+      ocy_i_pth: Ocy I PTH
+      source_defined_msc_state: Source Defined MSC State
+      source_defined_load_state: Source Defined LOAD State
+      source_defined_mcsf_state: Source Defined MCSF State
+      ob_m_pth: Ob M PTH
+      ob_p_pth: Ob P PTH
+      source_defined_opg_state: Source Defined OPG State
+      opg_rankl: OPG RANKL
+      source_defined_pth_state: Source Defined PTH State
+      rankl: RANKL
+      source_defined_sost_state: Source Defined SOST State
+      tgf_beta_response_parameter_response_parameter_response_parameter_response_parameter_response_parameter_a: TGF
+        beta response parameter Response Parameter Response Parameter Response Parameter
+        Response Parameter A
+      tgf_beta_response_parameter_response_parameter_response_parameter_response_parameter_response_parameter_i: TGF
+        beta response parameter Response Parameter Response Parameter Response Parameter
+        Response Parameter I
+      source_defined_wnt_a_state: Source Defined WNT A State
+      source_defined_wnt_i_state: Source Defined WNT I State
+      source: Source
+      sink_species_species_species_species_species_species: sink species Species Species
+        Species Species Species
+      response_node_x: Response Node X
+      newbone: Newbone
+      source_defined_bax_state: Source Defined BAX State
+      bax_bcl2: Bax BCL2
+      source_defined_bcl2_state: Source Defined BCL2 State
+      source_defined_creb_state: Source Defined CREB State
+      creb_p: CREB P
+      creb_runx2: CREB RUNX2
+      source_defined_runx2_state: Source Defined RUNX2 State
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Goldbeter1991 - Min Mit Oscil, Expl Inact Lab
+description: Clean Biosimulant lab for cell-cycle regulatory signaling. Values are
+  native SBML quantities; equations, parameters, and initial values remain in the
+  bundled source file.
+models:
+- alias: signaling_sbml_goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model.state
+  to:
+  - visualisation.signaling_sbml_goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model_state
+- from: signaling_sbml_goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model.summary
+  to:
+  - visualisation.signaling_sbml_goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model_summary
+- from: signaling_sbml_goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model.species_labels
+  to:
+  - visualisation.signaling_sbml_goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+io:
+  inputs:
+  - name: initial_cyclin
+    maps_to: signaling_sbml_goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model.initial_cyclin
+    label: Initial Cyclin
+    description: Initial level of Cyclin. Maps to SBML symbol `C`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: active_cdc_2_kinase
+    maps_to: signaling_sbml_goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model.active_cdc_2_kinase
+    label: active CDC 2 Kinase
+    description: active CDC 2 Kinase. Maps to SBML symbol `M` and is emitted in native
+      SBML units.
+  - name: active_cyclin_protease
+    maps_to: signaling_sbml_goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model.active_cyclin_protease
+    label: active Cyclin Protease
+    description: active Cyclin Protease. Maps to SBML symbol `X` and is emitted in
+      native SBML units.
+  - name: inactive_cdc_2_kinase
+    maps_to: signaling_sbml_goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model.inactive_cdc_2_kinase
+    label: Inactive CDC 2 Kinase
+    description: Inactive CDC 2 Kinase. Maps to SBML symbol `MI` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_goldbeter1991_min_mit_oscil_expl_inact_biomd0000000004_model.species_labels
+    label: Observable labels

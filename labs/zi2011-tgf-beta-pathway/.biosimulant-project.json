@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "67221e0e-23b5-40d5-93ec-c054825b2c7d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1789e912-48ac-41a1-879e-3d0d98460d08",
+  "created_at": "2026-05-16T05:58:29.803921827+00:00",
+  "last_synced_at": "2026-05-16T11:27:56.351094+00:00",
+  "hub_manifest_hash": "254746729772250814ea0f18e42c70d50b8537d6c173d0461cbb26a8fd62f6ff",
+  "package_name": "zi2011-tgf-beta-pathway-lab"
+}

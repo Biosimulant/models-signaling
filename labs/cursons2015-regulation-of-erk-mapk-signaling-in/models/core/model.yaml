@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Cursons2015 - Regulation of ERK-MAPK signaling in human epidermis
+description: Cursons2015 - Regulation of ERK-MAPKsignaling in human epidermis Model
+  comparing the abundance ofphosphorylated MAPK signalling proteins and calcium signalling
+  inthe epidermis. It can be used to explore signaling dynamics and compare pathway
+  response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+- calcium-signaling
+- gpcr
+authors:
+- Biosimulant Team
+- Joseph Cursons
+- Jerry Gao
+- Daniel G Hurley
+- Cristin G Print
+- P Rod Dunbar
+upstream:
+  id: biomodels_ebi:BIOMD0000000659
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000659
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000659
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000659?filename=BIOMD0000000659_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.cursons2015_regulation_of_erk_mapk_signaling_in:Cursons2015RegulationOfErkMapkSignalingInBiomd0000000659Model
+  init_kwargs:
+    model_path: data/BIOMD0000000659.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_calcium_amp_level
+    maps_to: signaling_sbml_cursons2015_regulation_of_erk_mapk_signaling_in_biomd0000000659_model.initial_calcium_amp_level
+    label: calcium AMP
+    description: calcium AMP source parameter. Maps to SBML symbol `numCaInputAmp`
+      and preserves the bundled default.
+  - name: initial_calcium_baseline_level
+    maps_to: signaling_sbml_cursons2015_regulation_of_erk_mapk_signaling_in_biomd0000000659_model.initial_calcium_baseline_level
+    label: calcium Baseline
+    description: calcium Baseline source parameter. Maps to SBML symbol `numCaInputBaseline`
+      and preserves the bundled default.
+  - name: initial_calcium_m_amp_level
+    maps_to: signaling_sbml_cursons2015_regulation_of_erk_mapk_signaling_in_biomd0000000659_model.initial_calcium_m_amp_level
+    label: calcium M AMP
+    description: calcium M AMP source parameter. Maps to SBML symbol `numCaMInputAmp`
+      and preserves the bundled default.
+  outputs:
+  - name: cytosolic_phosphorylated_erk
+    maps_to: signaling_sbml_cursons2015_regulation_of_erk_mapk_signaling_in_biomd0000000659_model.cytosolic_phosphorylated_erk
+    label: cytosolic phosphorylated ERK
+    description: cytosolic phosphorylated ERK. Maps to SBML symbol `pERK_cyto` and
+      is emitted in native SBML units.
+  - name: nuclear_phosphorylated_erk
+    maps_to: signaling_sbml_cursons2015_regulation_of_erk_mapk_signaling_in_biomd0000000659_model.nuclear_phosphorylated_erk
+    label: nuclear phosphorylated ERK
+    description: nuclear phosphorylated ERK. Maps to SBML symbol `pERK_nuc` and is
+      emitted in native SBML units.
+  - name: calmodulin
+    maps_to: signaling_sbml_cursons2015_regulation_of_erk_mapk_signaling_in_biomd0000000659_model.calmodulin
+    label: calmodulin
+    description: calmodulin. Maps to SBML symbol `CaM_memb` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_cursons2015_regulation_of_erk_mapk_signaling_in_biomd0000000659_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_cursons2015_regulation_of_erk_mapk_signaling_in_biomd0000000659_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_cursons2015_regulation_of_erk_mapk_signaling_in_biomd0000000659_model.species_labels
+    label: Observable labels

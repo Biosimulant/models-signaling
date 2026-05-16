@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Dupeux2011_ABAreceptor_Monomer
+description: 'This model is from the article: A thermodynamic switch modulates abscisic
+  acid receptor sensitivity. Dupeux F, Santiago J, Betz K, Twycross J, Park SY, Rodriguez
+  L, Gonzalez-Guzman M, Jensen MR, Krasn.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+authors:
+- Biosimulant Team
+- Florine Dupeux
+- Julia Santiago
+- Katja Betz
+- Jamie Twycross
+- Sang-Youl Park
+upstream:
+  id: biomodels_ebi:MODEL1202030001
+  source_db: biomodels_ebi
+  source_id: MODEL1202030001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1202030001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1202030001?filename=MODEL1202030001_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.dupeux2011_abareceptor_monomer:Dupeux2011AbareceptorMonomerModel1202030001Model
+  init_kwargs:
+    model_path: data/MODEL1202030001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_s0_0
+    maps_to: signaling_sbml_dupeux2011_abareceptor_monomer_model1202030001_model.initial_s0_0
+    label: Initial S0 0
+    description: Initial level of S0 0. Maps to SBML symbol `s0_0`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: source_defined_h_h_r_r_state
+    maps_to: signaling_sbml_dupeux2011_abareceptor_monomer_model1202030001_model.source_defined_h_h_r_r_state
+    label: source-defined H.H.R.R state
+    description: source-defined H.H.R.R state. Maps to SBML symbol `s0_1` and is emitted
+      in native SBML units.
+  - name: source_defined_h_r_state
+    maps_to: signaling_sbml_dupeux2011_abareceptor_monomer_model1202030001_model.source_defined_h_r_state
+    label: source-defined H.R state
+    description: source-defined H.R state. Maps to SBML symbol `s0_2` and is emitted
+      in native SBML units.
+  - name: source_defined_h_r_r_state
+    maps_to: signaling_sbml_dupeux2011_abareceptor_monomer_model1202030001_model.source_defined_h_r_r_state
+    label: source-defined H.R.R state
+    description: source-defined H.R.R state. Maps to SBML symbol `s0_3` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_dupeux2011_abareceptor_monomer_model1202030001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_dupeux2011_abareceptor_monomer_model1202030001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_dupeux2011_abareceptor_monomer_model1202030001_model.species_labels
+    label: Observable labels

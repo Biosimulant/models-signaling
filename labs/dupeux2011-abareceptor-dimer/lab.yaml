@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Dupeux2011_ABAreceptor_Dimer Lab
+description: 'Clean Biosimulant lab for systems signaling model: Dupeux2011_ABAreceptor_Dimer.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model.state
+  to:
+  - visualisation.signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model_state
+- from: signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model.summary
+  to:
+  - visualisation.signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model_summary
+- from: signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model.species_labels
+  to:
+  - visualisation.signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+io:
+  inputs:
+  - name: initial_s0_0
+    maps_to: signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model.initial_s0_0
+    label: Initial S0 0
+    description: Initial level of S0 0. Maps to SBML symbol `s0_0`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: h_h_ra_ra
+    maps_to: signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model.h_h_ra_ra
+    label: H H RA RA
+    description: H H RA RA. Maps to SBML symbol `s0_1` and is emitted in native SBML
+      units.
+  - name: h_h_rb_rb
+    maps_to: signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model.h_h_rb_rb
+    label: H H RB RB
+    description: H H RB RB. Maps to SBML symbol `s0_2` and is emitted in native SBML
+      units.
+  - name: source_defined_h_ra_state
+    maps_to: signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model.source_defined_h_ra_state
+    label: source-defined H.RA state
+    description: source-defined H.RA state. Maps to SBML symbol `s0_3` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_dupeux2011_abareceptor_dimer_model1202030000_model.species_labels
+    label: Observable labels

@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Tyson2003_NegFB_Homeostasis Lab
+description: 'Clean Biosimulant lab for systems signaling model: Tyson2003_NegFB_Homeostasis.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model.state
+  to:
+  - visualisation.signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model_state
+- from: signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model.summary
+  to:
+  - visualisation.signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model_summary
+- from: signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model.species_labels
+  to:
+  - visualisation.signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_source_defined_e_state
+    maps_to: signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model.initial_source_defined_e_state
+    label: Initial source-defined E state
+    description: Initial level of source-defined E state. Maps to SBML symbol `E`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_ep_state
+    maps_to: signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model.initial_source_defined_ep_state
+    label: Initial source-defined EP state
+    description: Initial level of source-defined EP state. Maps to SBML symbol `Ep`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_s_state
+    maps_to: signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model.initial_source_defined_s_state
+    label: Initial source-defined S state
+    description: Initial level of source-defined S state. Maps to SBML symbol `S`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_r_state
+    maps_to: signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model.source_defined_r_state
+    label: Source Defined R State
+    description: Source Defined R State. Maps to SBML symbol `R` and is emitted in
+      native SBML units.
+  - name: source_defined_s_state
+    maps_to: signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model.source_defined_s_state
+    label: Source Defined S State
+    description: Source Defined S State. Maps to SBML symbol `S` and is emitted in
+      native SBML units.
+  - name: source_defined_ep_state
+    maps_to: signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model.source_defined_ep_state
+    label: Source Defined EP State
+    description: Source Defined EP State. Maps to SBML symbol `Ep` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_tyson2003_negfb_homeostasis_biomd0000000309_model.species_labels
+    label: Observable labels

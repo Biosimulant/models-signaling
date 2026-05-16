@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Fujita2010_Akt_Signalling_EGF
+description: EGF dependent Akt pathway model made by Kazuhiro A. It can be used to
+  explore signaling dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- pi3k-akt
+authors:
+- Biosimulant Team
+- Kazuhiro A Fujita
+- Yu Toyoshima
+- Shinsuke Uda
+- Yu-ichi Ozaki
+- Hiroyuki Kubota
+upstream:
+  id: biomodels_ebi:BIOMD0000000262
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000262
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000262
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000262?filename=BIOMD0000000262_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.fujita2010_akt_signalling_egf:Fujita2010AktSignallingEgfBiomd0000000262Model
+  init_kwargs:
+    model_path: data/BIOMD0000000262.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_egf_conc_impulse_level
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.initial_egf_conc_impulse_level
+    label: EGF Conc Impulse
+    description: EGF Conc Impulse source parameter. Maps to SBML symbol `EGF_conc_impulse`
+      and preserves the bundled default.
+  - name: initial_egf_conc_ramp_level
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.initial_egf_conc_ramp_level
+    label: EGF Conc Ramp
+    description: EGF Conc Ramp source parameter. Maps to SBML symbol `EGF_conc_ramp`
+      and preserves the bundled default.
+  - name: initial_egf_conc_step_level
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.initial_egf_conc_step_level
+    label: EGF Conc Step
+    description: EGF Conc Step source parameter. Maps to SBML symbol `EGF_conc_step`
+      and preserves the bundled default.
+  outputs:
+  - name: p_egfr_akt
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.p_egfr_akt
+    label: P EGFR AKT
+    description: P EGFR AKT. Maps to SBML symbol `pEGFR_Akt` and is emitted in native
+      SBML units.
+  - name: akt
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.akt
+    label: AKT
+    description: AKT. Maps to SBML symbol `Akt` and is emitted in native SBML units.
+  - name: source_defined_pakt_state
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.source_defined_pakt_state
+    label: source-defined PAKT state
+    description: source-defined PAKT state. Maps to SBML symbol `pAkt` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_fujita2010_akt_signalling_egf_biomd0000000262_model.species_labels
+    label: Observable labels

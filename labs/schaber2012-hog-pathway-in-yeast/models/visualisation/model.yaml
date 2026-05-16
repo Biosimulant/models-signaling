@@ -1,0 +1,62 @@
+schema_version: '2.0'
+title: Schaber2012 - Hog pathway in yeast Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_schaber2012_hog_pathway_in_yeast_biomd0000000429_model
+    title: Schaber2012 - Hog pathway in yeast
+    context: receptor-to-MAPK cascade signaling
+    question: How does Schaber2012 - Hog pathway in yeast propagate receptor or RAS/ERK
+      pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      glyin: float
+      source_defined_hog1_state: float
+      hog1pp: float
+      source_defined_pbs2_state: float
+      pbs2p: float
+      phosphatase: float
+      protein: float
+      source_defined_rna_state: float
+      hog1p: float
+      source_defined_sho1_state: float
+      sho1pbs2p: float
+      hog1ppactive: float
+      glyex: float
+      source_defined_fps1_state: float
+      fps1p: float
+    species_labels:
+      glyin: Glyin
+      source_defined_hog1_state: source-defined HOG1 state
+      hog1pp: Hog1pp
+      source_defined_pbs2_state: source-defined PBS2 state
+      pbs2p: Pbs2p
+      phosphatase: Phosphatase
+      protein: Protein
+      source_defined_rna_state: source-defined RNA state
+      hog1p: Hog1p
+      source_defined_sho1_state: source-defined SHO1 state
+      sho1pbs2p: Sho1pbs2p
+      hog1ppactive: Hog1ppactive
+      glyex: Glyex
+      source_defined_fps1_state: source-defined FPS1 state
+      fps1p: Fps1p
+io:
+  inputs: []
+  outputs: []

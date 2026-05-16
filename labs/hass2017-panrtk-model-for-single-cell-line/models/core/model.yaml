@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: PanRTK model for single cell line
+description: Hass2017-PanRTK model for single cellline The model structure comprisesheterodimerization
+  and receptor trafficking as described in detailin the article below. It can be used
+  to explore signaling dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+authors:
+- Biosimulant Team
+- Helge Hass
+- Kristina Masson
+- Sibylle Wohlgemuth
+- Violette Paragas
+- John E Allen
+upstream:
+  id: biomodels_ebi:MODEL1708210000
+  source_db: biomodels_ebi
+  source_id: MODEL1708210000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1708210000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1708210000?filename=MODEL1708210000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hass2017_panrtk_model_for_single_cell_line:PanrtkModelForSingleCellLineModel1708210000Model
+  init_kwargs:
+    model_path: data/MODEL1708210000.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_akt_activation_p_egfr_level
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.initial_akt_activation_p_egfr_level
+    label: AKT Activation P EGFR
+    description: AKT Activation P EGFR source parameter. Maps to SBML symbol `AKT_activation_pEGFR`
+      and preserves the bundled default.
+  - name: initial_akt_activation_p_met_egfr_level
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.initial_akt_activation_p_met_egfr_level
+    label: AKT Activation P Met EGFR
+    description: AKT Activation P Met EGFR source parameter. Maps to SBML symbol `AKT_activation_pMetEGFR`
+      and preserves the bundled default.
+  - name: initial_egf_k_d_level
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.initial_egf_k_d_level
+    label: EGF K D
+    description: EGF K D source parameter. Maps to SBML symbol `EGF_kD` and preserves
+      the bundled default.
+  outputs:
+  - name: erk
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.erk
+    label: ERK
+    description: ERK. Maps to SBML symbol `ERK` and is emitted in native SBML units.
+  - name: perk_kinase
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.perk_kinase
+    label: PERK kinase
+    description: PERK kinase. Maps to SBML symbol `pERK` and is emitted in native
+      SBML units.
+  - name: akt
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.akt
+    label: AKT
+    description: AKT. Maps to SBML symbol `AKT` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_panrtk_model_for_single_cell_line_model1708210000_model.species_labels
+    label: Observable labels

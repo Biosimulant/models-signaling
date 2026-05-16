@@ -1,0 +1,78 @@
+schema_version: '2.0'
+title: Trares2022 - Non-canonical NF-kB pathway, Petri net Visualisation
+description: Question-and-answer and chart visualisation for NF-kB pathway signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_trares2022_non_canonical_nf_kb_pathway_petri_net_model2207210002_model
+    title: Trares2022 - Non-canonical NF-kB pathway, Petri net
+    context: NF-kB activation and feedback signaling
+    question: How does Trares2022 - Non-canonical NF-kB pathway, Petri net move NF-kB
+      and inhibitor-linked signaling states?
+    visual_scope: NF-kB activation and feedback signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_nik_state: float
+      cd40: float
+      cd40l: float
+      ikkalpha: float
+      otud7b_traf3_ub: float
+      cd40_cd40l: float
+      nik_stab: float
+      source_defined_traf2_state: float
+      source_defined_traf3_state: float
+      source_defined_tbk1_state: float
+      c_iap1_2: float
+      ikkalpha_phos_nik_stab: float
+      traf2_traf3_c_iap1_2: float
+      nik_phos: float
+      traf2_ub: float
+      p100_phos_rel_b: float
+      c_iap1_2_ub: float
+      p100_rel_b: float
+      p52_rel_b: float
+      traf3_ub: float
+      p100_phos_ub_rel_b: float
+      otud7b: float
+      traf3_deg: float
+    species_labels:
+      source_defined_nik_state: source-defined NIK state
+      cd40: CD40
+      cd40l: CD40L
+      ikkalpha: Ikkalpha
+      otud7b_traf3_ub: OTUD7B TRAF3 Ub
+      cd40_cd40l: CD40 CD40L
+      nik_stab: NIK Stab
+      source_defined_traf2_state: source-defined TRAF2 state
+      source_defined_traf3_state: source-defined TRAF3 state
+      source_defined_tbk1_state: source-defined TBK1 state
+      c_iap1_2: C IAP1 2
+      ikkalpha_phos_nik_stab: Ikkalpha Phos NIK Stab
+      traf2_traf3_c_iap1_2: TRAF2 TRAF3 C IAP1 2
+      nik_phos: NIK Phos
+      traf2_ub: TRAF2 Ub
+      p100_phos_rel_b: P100 Phos Rel B
+      c_iap1_2_ub: C IAP1 2 Ub
+      p100_rel_b: P100 Rel B
+      p52_rel_b: P52 Rel B
+      traf3_ub: TRAF3 Ub
+      p100_phos_ub_rel_b: P100 Phos Ub Rel B
+      otud7b: OTUD7B
+      traf3_deg: TRAF3 Deg
+io:
+  inputs: []
+  outputs: []

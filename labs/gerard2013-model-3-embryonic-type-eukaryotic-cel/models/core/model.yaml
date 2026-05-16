@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Gerard2013 - Model 3 - Embryonic-type eukaryotic Cell Cycle regulation based
+  on negative feedback between Cdk/cyclin and APC and competitive inhibition between
+  Cdk/cyclin and securin for polyubiquitylation_1
+description: The eukaryotic cell cycle is characterized by alternating oscillations
+  in the activities of cyclin-dependent kinase (Cdk) and the anaphase-promoting complex
+  (APC). It can be used to explore signaling dynamics and compare pathway response
+  across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+authors:
+- Biosimulant Team
+- Claude Gérard
+- John J Tyson
+- Béla Novák
+upstream:
+  id: biomodels_ebi:BIOMD0000000938
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000938
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000938
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000938?filename=Gerard2013.xml
+  license: CC0
+biosim:
+  entrypoint: src.gerard2013_model_3_embryonic_type_eukaryotic_cel:Gerard2013Model3EmbryonicTypeEukaryoticCelBiomd0000000938Model
+  init_kwargs:
+    model_path: data/BIOMD0000000938.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_anaphase_promoting_complex
+    maps_to: signaling_sbml_gerard2013_model_3_embryonic_type_eukaryotic_cel_biomd0000000938_model.initial_anaphase_promoting_complex
+    label: Initial Anaphase Promoting Complex
+    description: Initial level of Anaphase Promoting Complex. Maps to SBML symbol
+      `Anaphase_promoting_complex`; exposed as a traceable initial-condition perturbation.
+  - name: initial_anaphase_promoting_complex_total
+    maps_to: signaling_sbml_gerard2013_model_3_embryonic_type_eukaryotic_cel_biomd0000000938_model.initial_anaphase_promoting_complex_total
+    label: Initial Anaphase Promoting Complex Total
+    description: Initial level of Anaphase Promoting Complex Total. Maps to SBML symbol
+      `Anaphase_promoting_complex_total`; exposed as a traceable initial-condition
+      perturbation.
+  outputs:
+  - name: anaphase_promoting_complex_phosphorylated
+    maps_to: signaling_sbml_gerard2013_model_3_embryonic_type_eukaryotic_cel_biomd0000000938_model.anaphase_promoting_complex_phosphorylated
+    label: Anaphase Promoting Complex Phosphorylated
+    description: Anaphase Promoting Complex Phosphorylated. Maps to SBML symbol `Anaphase_promoting_complex_Phosphorylated`
+      and is emitted in native SBML units.
+  - name: anaphase_promoting_complex
+    maps_to: signaling_sbml_gerard2013_model_3_embryonic_type_eukaryotic_cel_biomd0000000938_model.anaphase_promoting_complex
+    label: Anaphase Promoting Complex
+    description: Anaphase Promoting Complex. Maps to SBML symbol `Anaphase_promoting_complex`
+      and is emitted in native SBML units.
+  - name: anaphase_promoting_complex_total
+    maps_to: signaling_sbml_gerard2013_model_3_embryonic_type_eukaryotic_cel_biomd0000000938_model.anaphase_promoting_complex_total
+    label: Anaphase Promoting Complex Total
+    description: Anaphase Promoting Complex Total. Maps to SBML symbol `Anaphase_promoting_complex_total`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_gerard2013_model_3_embryonic_type_eukaryotic_cel_biomd0000000938_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_gerard2013_model_3_embryonic_type_eukaryotic_cel_biomd0000000938_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_gerard2013_model_3_embryonic_type_eukaryotic_cel_biomd0000000938_model.species_labels
+    label: Observable labels

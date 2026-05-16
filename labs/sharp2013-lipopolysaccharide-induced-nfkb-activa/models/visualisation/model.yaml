@@ -1,0 +1,136 @@
+schema_version: '2.0'
+title: Sharp2013 - Lipopolysaccharide induced NFkB activation Visualisation
+description: Question-and-answer and chart visualisation for NF-kB pathway signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- tlr-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_sharp2013_lipopolysaccharide_induced_nfkb_activa_biomd0000000489_model
+    title: Sharp2013 - Lipopolysaccharide induced NFkB activation
+    context: NF-kB activation and feedback signaling
+    question: How does Sharp2013 - Lipopolysaccharide induced NFkB activation move
+      NF-kB and inhibitor-linked signaling states?
+    visual_scope: NF-kB activation and feedback signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      cd14: float
+      source_defined_irak4_state: float
+      source_defined_lbp_state: float
+      source_defined_lps_state: float
+      lps_lbp_cd14_tlr4_tirap_my_d88_irak4: float
+      my_d88: float
+      tirap: float
+      source_defined_tlr4_state: float
+      source_defined_irak1_state: float
+      source_defined_traf6_state: float
+      traf6_irak1_p: float
+      tak1_tab1_tab2: float
+      tak1_tab1_tab2_traf6: float
+      source_defined_ikk_state: float
+      source_defined_ikk_p_state: float
+      source_defined_rip1_state: float
+      source_defined_tram_state: float
+      source_defined_trif_state: float
+      source_defined_irf3_state: float
+      irf3_p: float
+      irf3_p_nuc: float
+      source_defined_tnfa_state: float
+      tnf_receptor_1: float
+      tradd: float
+      source_defined_traf2_state: float
+      tnfa_tnf_receptor_1_traf2_tradd_rip1: float
+      source_defined_ikba_state: float
+      ik_ba_nfk_b: float
+      nfkb: float
+      ikk_p_ik_ba_nfk_b: float
+      source_defined_ikbb_state: float
+      ik_complement_factor_bb_nfk_b: float
+      ikk_p_ik_complement_factor_bb_nfk_b: float
+      source_defined_ikbe_state: float
+      ik_be_nfk_b: float
+      ikk_p_ik_be_nfk_b: float
+      nfk_b_nuc: float
+      ik_ba_nuc: float
+      ik_ba_nfk_b_nuc: float
+      ik_complement_factor_bb_nuc: float
+      ik_complement_factor_bb_nfk_b_nuc: float
+      ik_be_nuc: float
+      ik_be_nfk_b_nuc: float
+      ik_ba_m_rna: float
+      ik_complement_factor_bb_m_rna: float
+      ik_be_m_rna: float
+      ikk_p_ik_ba: float
+      ikk_p_ik_complement_factor_bb: float
+      ikk_p_ik_be: float
+      lps_lbp_cd14_tlr4_rip1_tram_trif_tbk_ikke: float
+      tbk1_ikke: float
+    species_labels:
+      cd14: CD14
+      source_defined_irak4_state: source-defined IRAK4 state
+      source_defined_lbp_state: source-defined LBP state
+      source_defined_lps_state: source-defined LPS state
+      lps_lbp_cd14_tlr4_tirap_my_d88_irak4: LPS LBP CD14 TLR4 TIRAP My D88 IRAK4
+      my_d88: My D88
+      tirap: TIRAP
+      source_defined_tlr4_state: source-defined TLR4 state
+      source_defined_irak1_state: source-defined IRAK1 state
+      source_defined_traf6_state: source-defined TRAF6 state
+      traf6_irak1_p: TRAF6 IRAK1 P
+      tak1_tab1_tab2: TAK1 TAB1 TAB2
+      tak1_tab1_tab2_traf6: TAK1 TAB1 TAB2 TRAF6
+      source_defined_ikk_state: source-defined IKK state
+      source_defined_ikk_p_state: source-defined IKK[P] state
+      source_defined_rip1_state: source-defined RIP1 state
+      source_defined_tram_state: source-defined TRAM state
+      source_defined_trif_state: source-defined TRIF state
+      source_defined_irf3_state: source-defined IRF3 state
+      irf3_p: IRF3 P
+      irf3_p_nuc: IRF3 P Nuc
+      source_defined_tnfa_state: source-defined TNFA state
+      tnf_receptor_1: TNF receptor 1
+      tradd: TRADD
+      source_defined_traf2_state: source-defined TRAF2 state
+      tnfa_tnf_receptor_1_traf2_tradd_rip1: Tnfa TNF receptor 1 TRAF2 TRADD RIP1
+      source_defined_ikba_state: source-defined IKBA state
+      ik_ba_nfk_b: Ik Ba Nfk B
+      nfkb: NF-kB
+      ikk_p_ik_ba_nfk_b: IKK P Ik Ba Nfk B
+      source_defined_ikbb_state: source-defined IKBB state
+      ik_complement_factor_bb_nfk_b: Ik complement factor Bb Nfk B
+      ikk_p_ik_complement_factor_bb_nfk_b: IKK P Ik complement factor Bb Nfk B
+      source_defined_ikbe_state: source-defined IKBE state
+      ik_be_nfk_b: Ik Be Nfk B
+      ikk_p_ik_be_nfk_b: IKK P Ik Be Nfk B
+      nfk_b_nuc: Nfk B Nuc
+      ik_ba_nuc: Ik Ba Nuc
+      ik_ba_nfk_b_nuc: Ik Ba Nfk B Nuc
+      ik_complement_factor_bb_nuc: Ik complement factor Bb Nuc
+      ik_complement_factor_bb_nfk_b_nuc: Ik complement factor Bb Nfk B Nuc
+      ik_be_nuc: Ik Be Nuc
+      ik_be_nfk_b_nuc: Ik Be Nfk B Nuc
+      ik_ba_m_rna: Ik Ba M RNA
+      ik_complement_factor_bb_m_rna: Ik complement factor Bb M RNA
+      ik_be_m_rna: Ik Be M RNA
+      ikk_p_ik_ba: IKK P Ik Ba
+      ikk_p_ik_complement_factor_bb: IKK P Ik complement factor Bb
+      ikk_p_ik_be: IKK P Ik Be
+      lps_lbp_cd14_tlr4_rip1_tram_trif_tbk_ikke: LPS LBP CD14 TLR4 RIP1 TRAM TRIF
+        TBK Ikke
+      tbk1_ikke: TBK1 Ikke
+io:
+  inputs: []
+  outputs: []

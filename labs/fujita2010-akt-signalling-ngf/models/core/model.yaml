@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Fujita2010_Akt_Signalling_NGF
+description: NGF dependent Akt pathway model made by Kazuhiro A. It can be used to
+  explore signaling dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- pi3k-akt
+- neuroscience
+authors:
+- Biosimulant Team
+- Kazuhiro A Fujita
+- Yu Toyoshima
+- Shinsuke Uda
+- Yu-ichi Ozaki
+- Hiroyuki Kubota
+upstream:
+  id: biomodels_ebi:BIOMD0000000263
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000263
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000263
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000263?filename=BIOMD0000000263_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.fujita2010_akt_signalling_ngf:Fujita2010AktSignallingNgfBiomd0000000263Model
+  init_kwargs:
+    model_path: data/BIOMD0000000263.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_p_akt_scale_factor_level
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.initial_p_akt_scale_factor_level
+    label: P AKT Scale Factor
+    description: P AKT Scale Factor source parameter. Maps to SBML symbol `pAkt_scaleFactor`
+      and preserves the bundled default.
+  - name: initial_nerve_growth_factor
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.initial_nerve_growth_factor
+    label: Initial nerve growth factor
+    description: Initial level of nerve growth factor. Maps to SBML symbol `NGF`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_pro_trk_a
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.initial_pro_trk_a
+    label: Initial Pro Trk A
+    description: Initial level of Pro Trk A. Maps to SBML symbol `pro_TrkA`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: p_trk_a_akt
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.p_trk_a_akt
+    label: P Trk A AKT
+    description: P Trk A AKT. Maps to SBML symbol `pTrkA_Akt` and is emitted in native
+      SBML units.
+  - name: akt
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.akt
+    label: AKT
+    description: AKT. Maps to SBML symbol `Akt` and is emitted in native SBML units.
+  - name: source_defined_pakt_state
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.source_defined_pakt_state
+    label: source-defined PAKT state
+    description: source-defined PAKT state. Maps to SBML symbol `pAkt` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_fujita2010_akt_signalling_ngf_biomd0000000263_model.species_labels
+    label: Observable labels

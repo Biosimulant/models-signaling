@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "af943a6a-afd5-455b-b14f-3c90c167e91d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5c6d984a-763c-420e-ba9b-9a278b77017f",
+  "created_at": "2026-05-15T19:08:08.907691018+00:00",
+  "last_synced_at": "2026-05-16T09:05:29.204992+00:00",
+  "hub_manifest_hash": "2a86c23cc042c203d734c79a6870606764fb1c8f66fed36981abdcd5c7683063",
+  "package_name": "bhalla2002-camp-pathway-lab"
+}

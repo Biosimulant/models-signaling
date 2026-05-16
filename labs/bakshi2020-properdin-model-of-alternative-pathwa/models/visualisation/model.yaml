@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Bakshi2020 - Properdin model of alternative pathway of complement system Visualisation
+description: Question-and-answer and chart visualisation for immune signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- complement
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_bakshi2020_properdin_model_of_alternative_pathwa_biomd0000001018_model
+    title: Bakshi2020 - Properdin model of alternative pathway of complement system
+    context: metabolic and hormone signaling response
+    question: How does Bakshi2020 - Properdin model of alternative pathway of complement
+      system shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      complement_c3: float
+      complement_c3b: float
+      closed_complement_c3bb_complex: float
+      open_complement_c3bb_complex: float
+      complement_c3b_complement_factor_bb: float
+      complement_c3b_complement_factor_bb_h: float
+      complement_factor_bb: float
+      complement_factor_h: float
+      complement_factor_b: float
+      complement_c3b_h: float
+      factor_i: float
+      inactive_complement_ic3b: float
+      complement_factor_d: float
+      properdin: float
+      complement_c3b_bp_closed: float
+      complement_c3b_bp_open: float
+      complement_c3b_complement_factor_bb_p: float
+      complement_c3b_p: float
+      complement_c3b_total: float
+      complement_c3b_b_closed_total: float
+      complement_c3b_b_open_total: float
+      complement_c3b_complement_factor_bb_total: float
+    species_labels:
+      complement_c3: complement C3
+      complement_c3b: complement C3b
+      closed_complement_c3bb_complex: closed complement C3bB complex
+      open_complement_c3bb_complex: open complement C3bB complex
+      complement_c3b_complement_factor_bb: complement C3b complement factor Bb
+      complement_c3b_complement_factor_bb_h: complement C3b complement factor Bb H
+      complement_factor_bb: complement factor Bb
+      complement_factor_h: complement factor H
+      complement_factor_b: complement factor B
+      complement_c3b_h: complement C3b H
+      factor_i: Factor I
+      inactive_complement_ic3b: inactive complement iC3b
+      complement_factor_d: complement factor D
+      properdin: Properdin
+      complement_c3b_bp_closed: complement C3b BP closed
+      complement_c3b_bp_open: complement C3b BP open
+      complement_c3b_complement_factor_bb_p: complement C3b complement factor Bb P
+      complement_c3b_p: complement C3b P
+      complement_c3b_total: complement C3b Total
+      complement_c3b_b_closed_total: complement C3b B closed Total
+      complement_c3b_b_open_total: complement C3b B open Total
+      complement_c3b_complement_factor_bb_total: complement C3b complement factor
+        Bb Total
+io:
+  inputs: []
+  outputs: []

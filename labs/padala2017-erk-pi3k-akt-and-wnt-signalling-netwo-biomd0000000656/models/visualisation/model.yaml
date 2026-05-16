@@ -1,0 +1,145 @@
+schema_version: '2.0'
+title: Padala2017- ERK, PI3K/Akt and Wnt signalling network (EGFR overexpression)
+  Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- egfr
+- ras-erk
+- pi3k-akt
+- wnt
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_padala2017_erk_pi3k_akt_and_wnt_signalling_netwo_biomd0000000656_model
+    title: Padala2017- ERK, PI3K/Akt and Wnt signalling network (EGFR overexpression)
+    context: receptor-to-MAPK cascade signaling
+    question: How does Padala2017- ERK, PI3K/Akt and Wnt signalling network (EGFR
+      overexpression) propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_apc_state: float
+      apc_axin: float
+      apc_axin_gsk3b: float
+      apc_b_catenin: float
+      akt: float
+      source_defined_axin_state: float
+      b_catenin: float
+      source_defined_braf_state: float
+      c3g: float
+      source_defined_dsha_state: float
+      source_defined_dshi_state: float
+      egf: float
+      erk: float
+      gsk3b: float
+      mek: float
+      p90rsk: float
+      pi3k: float
+      source_defined_pip2_state: float
+      source_defined_pip3_state: float
+      source_defined_pkcd_state: float
+      pp2a: float
+      source_defined_pten_state: float
+      source_defined_rkip_state: float
+      raf1: float
+      raf_pptase: float
+      source_defined_rap1_state: float
+      rap1_gap: float
+      ras: float
+      ras_gap: float
+      sos_guanine_nucleotide_exchange_factor: float
+      source_defined_tcf_state: float
+      b_catenin_tcf: float
+      response_node_x: float
+      bound_egfr: float
+      free_egfr: float
+      p_apc_p_axin_gsk3b: float
+      p_apc_p_axin_gsk3b_b_catenin: float
+      p_apc_p_axin_gsk3b_pb_catenin: float
+      source_defined_pakt_state: float
+      pb_catenin: float
+      pb_raf: float
+      p_c3g: float
+      p_egfr: float
+      perk_kinase: float
+      p_gsk3b: float
+      source_defined_pmek_state: float
+      p_p90rsk: float
+      p_pi3k: float
+      p_rkip: float
+      source_defined_praf1_state: float
+      source_defined_prap1_state: float
+      source_defined_pras_state: float
+      source_defined_psos_state: float
+      source_defined_null_state: float
+    species_labels:
+      source_defined_apc_state: source-defined APC state
+      apc_axin: APC Axin
+      apc_axin_gsk3b: APC Axin Gsk3b
+      apc_b_catenin: APC B Catenin
+      akt: AKT
+      source_defined_axin_state: source-defined AXIN state
+      b_catenin: B Catenin
+      source_defined_braf_state: source-defined BRAF state
+      c3g: C3G
+      source_defined_dsha_state: source-defined DSHA state
+      source_defined_dshi_state: source-defined DSHI state
+      egf: EGF
+      erk: ERK
+      gsk3b: Gsk3b
+      mek: MEK
+      p90rsk: P90rsk
+      pi3k: PI3K
+      source_defined_pip2_state: source-defined PIP2 state
+      source_defined_pip3_state: source-defined PIP3 state
+      source_defined_pkcd_state: source-defined PKCD state
+      pp2a: PP2A
+      source_defined_pten_state: source-defined PTEN state
+      source_defined_rkip_state: source-defined RKIP state
+      raf1: RAF1
+      raf_pptase: RAF Pptase
+      source_defined_rap1_state: source-defined RAP1 state
+      rap1_gap: Rap1 Gap
+      ras: RAS
+      ras_gap: RAS Gap
+      sos_guanine_nucleotide_exchange_factor: SOS guanine-nucleotide exchange factor
+      source_defined_tcf_state: source-defined TCF state
+      b_catenin_tcf: B Catenin TCF
+      response_node_x: response node X
+      bound_egfr: bound EGFR
+      free_egfr: free EGFR
+      p_apc_p_axin_gsk3b: P APC P Axin Gsk3b
+      p_apc_p_axin_gsk3b_b_catenin: P APC P Axin Gsk3b B Catenin
+      p_apc_p_axin_gsk3b_pb_catenin: P APC P Axin Gsk3b Pb Catenin
+      source_defined_pakt_state: source-defined PAKT state
+      pb_catenin: Pb Catenin
+      pb_raf: Pb RAF
+      p_c3g: P C3G
+      p_egfr: P EGFR
+      perk_kinase: PERK kinase
+      p_gsk3b: P Gsk3b
+      source_defined_pmek_state: source-defined PMEK state
+      p_p90rsk: P P90rsk
+      p_pi3k: P PI3K
+      p_rkip: P RKIP
+      source_defined_praf1_state: source-defined PRAF1 state
+      source_defined_prap1_state: source-defined PRAP1 state
+      source_defined_pras_state: source-defined PRAS state
+      source_defined_psos_state: source-defined PSOS state
+      source_defined_null_state: source-defined NULL state
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Ito2019 - gefitnib resistance of lung adenocarcinoma caused by MET amplification
+  Lab
+description: 'Clean Biosimulant lab for systems signaling model: Ito2019 - gefitnib
+  resistance of lung adenocarcinoma caused by MET amplification. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.'
+models:
+- alias: signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model.state
+  to:
+  - visualisation.signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model_state
+- from: signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model.summary
+  to:
+  - visualisation.signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model_summary
+- from: signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model.species_labels
+  to:
+  - visualisation.signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- oncology
+- pharmacology
+io:
+  inputs:
+  - name: initial_x_1_egfr
+    maps_to: signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model.initial_x_1_egfr
+    label: Initial X 1 EGFR
+    description: Initial level of X 1 EGFR. Maps to SBML symbol `X_1_EGFR`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_x_4_egfr_egfr
+    maps_to: signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model.initial_x_4_egfr_egfr
+    label: Initial X 4 EGFR EGFR
+    description: Initial level of X 4 EGFR EGFR. Maps to SBML symbol `X_4_EGFR_EGFR`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_x_5_egfr_erb_b3
+    maps_to: signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model.initial_x_5_egfr_erb_b3
+    label: Initial X 5 EGFR Erb B3
+    description: Initial level of X 5 EGFR Erb B3. Maps to SBML symbol `X_5_EGFR_ErbB3`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: x_1_egfr
+    maps_to: signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model.x_1_egfr
+    label: X 1 EGFR
+    description: X 1 EGFR. Maps to SBML symbol `X_1_EGFR` and is emitted in native
+      SBML units.
+  - name: x_4_egfr_egfr
+    maps_to: signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model.x_4_egfr_egfr
+    label: X 4 EGFR EGFR
+    description: X 4 EGFR EGFR. Maps to SBML symbol `X_4_EGFR_EGFR` and is emitted
+      in native SBML units.
+  - name: x_2_erb_b3
+    maps_to: signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model.x_2_erb_b3
+    label: X 2 Erb B3
+    description: X 2 Erb B3. Maps to SBML symbol `X_2_ErbB3` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_ito2019_gefitnib_resistance_of_lung_adenocarcino_biomd0000000827_model.species_labels
+    label: Observable labels

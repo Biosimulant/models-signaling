@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Jung2019 - egulating glioblastoma signaling pathways and anti-invasion therapy
+  cell cycle dynamics model Visualisation
+description: Question-and-answer and chart visualisation for cell-cycle regulatory
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+- oncology
+- pharmacology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_jung2019_egulating_glioblastoma_signaling_pathwa_biomd0000000829_model
+    title: Jung2019 - egulating glioblastoma signaling pathways and anti-invasion
+      therapy cell cycle dynamics model
+    context: metabolic and hormone signaling response
+    question: How does Jung2019 - egulating glioblastoma signaling pathways and anti-invasion
+      therapy cell cycle dynamics model shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      glucose_g: float
+      drug_d: float
+      mi_r_451_m: float
+      ampk_a: float
+      m_tor_r: float
+      delta_d: float
+      cdh1_cell_cycle_regulator: float
+      source_defined_cycb_state: float
+      p55cdc_t: float
+      source_defined_mass_state: float
+      mass_s: float
+      p55cdc_a: float
+      source_defined_plk1_state: float
+    species_labels:
+      glucose_g: Glucose G
+      drug_d: Drug D
+      mi_r_451_m: Mi R 451 M
+      ampk_a: AMPK A
+      m_tor_r: M TOR R
+      delta_d: Delta D
+      cdh1_cell_cycle_regulator: Cdh1 cell-cycle regulator
+      source_defined_cycb_state: source-defined CYCB state
+      p55cdc_t: P55cdc T
+      source_defined_mass_state: source-defined MASS state
+      mass_s: Mass S
+      p55cdc_a: P55cdc A
+      source_defined_plk1_state: source-defined PLK1 state
+io:
+  inputs: []
+  outputs: []

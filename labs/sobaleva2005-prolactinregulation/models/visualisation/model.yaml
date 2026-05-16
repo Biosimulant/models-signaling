@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: Sobaleva2005_ProlactinRegulation Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Sobaleva2005_ProlactinRegulation.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_sobaleva2005_prolactinregulation_model7896869925_model
+    title: Sobaleva2005_ProlactinRegulation
+    context: GPCR and cAMP/PKA signaling
+    question: How does Sobaleva2005 ProlactinRegulation route receptor activity into
+      cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_r_state: float
+      source_defined_u_state: float
+      source_defined_b1_state: float
+      source_defined_b2_state: float
+      response_node_x: float
+    species_labels:
+      source_defined_r_state: Source Defined R State
+      source_defined_u_state: Source Defined U State
+      source_defined_b1_state: Source Defined B1 State
+      source_defined_b2_state: Source Defined B2 State
+      response_node_x: Response Node X
+io:
+  inputs: []
+  outputs: []

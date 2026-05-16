@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Nair2015 - Interaction between neuromodulators via GPCRs - Effect on cAMP/PKA
+  signaling (D2 Neuron)
+description: 'Nair2015 - Interaction betweenneuromodulators via GPCRs - Effect on
+  cAMP/PKA signaling (D2Neuron) This model is described in the article: Sensing Positive
+  versus Negative Reward Signals through Adenyl. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- camp-pka
+- neuroscience
+- physiology
+authors:
+- Biosimulant Team
+- Anu G Nair
+- Omar Gutierrez-Arenas
+- Olivia Eriksson
+- Pierre Vincent
+- Jeanette Hellgren Kotaleski
+upstream:
+  id: biomodels_ebi:BIOMD0000000636
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000636
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000636
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000636?filename=BIOMD0000000636_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.nair2015_interaction_between_neuromodulators_via_biomd0000000636:Nair2015InteractionBetweenNeuromodulatorsViaBiomd0000000636Model
+  init_kwargs:
+    model_path: data/BIOMD0000000636.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_adenosine
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000636_model.initial_adenosine
+    label: Initial adenosine
+    description: Initial level of adenosine. Maps to SBML symbol `mwbe974953_e869_4622_b4a8_745555c8d7fd`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_amp
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000636_model.initial_amp
+    label: Initial AMP
+    description: Initial level of AMP. Maps to SBML symbol `mw9710c658_a2a1_4f49_b494_af109853f251`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_atp
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000636_model.initial_atp
+    label: Initial ATP
+    description: Initial level of ATP. Maps to SBML symbol `mw46dccec6_6f0f_40f6_a10c_2f34ae7a005a`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: golf_g_protein
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000636_model.golf_g_protein
+    label: Golf G protein
+    description: Golf G protein. Maps to SBML symbol `mw351f6cee_3e64_4b8e_8e60_24b1aca99a92`
+      and is emitted in native SBML units.
+  - name: camp
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000636_model.camp
+    label: cAMP
+    description: cAMP. Maps to SBML symbol `mw1c97b02d_169a_4eb8_bc84_1be57c51a255`
+      and is emitted in native SBML units.
+  - name: source_defined_ac5_state
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000636_model.source_defined_ac5_state
+    label: source-defined AC5 state
+    description: source-defined AC5 state. Maps to SBML symbol `mw724f1afe_8032_40ae_96ca_808ab7b8b943`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000636_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000636_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_nair2015_interaction_between_neuromodulators_via_biomd0000000636_model.species_labels
+    label: Observable labels

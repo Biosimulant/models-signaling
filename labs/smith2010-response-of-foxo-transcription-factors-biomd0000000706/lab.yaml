@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: BIOMD0000000706 - Smith2010 - Response of FOXO Transcription Factors to Post-Translational Modifications
+  (with acetylation pathway) Lab
+description: 'Clean Biosimulant lab for systems signaling model: Smith2010 - Response
+  of FOXO Transcription Factors to Post-Translational Modifications (with acetylation
+  pathway). Values are native SBML quantities; equations, parameters, and initial
+  values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.state
+  to:
+  - visualisation.signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model_state
+- from: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.summary
+  to:
+  - visualisation.signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model_summary
+- from: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.species_labels
+  to:
+  - visualisation.signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_cytoplasm_foxo1_tot
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.initial_cytoplasm_foxo1_tot
+    label: Initial Cytoplasm Foxo1 Tot
+    description: Initial level of Cytoplasm Foxo1 Tot. Maps to SBML symbol `cytoplasm_Foxo1_tot`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_dnabound_foxo1_tot
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.initial_dnabound_foxo1_tot
+    label: Initial Dnabound Foxo1 Tot
+    description: Initial level of Dnabound Foxo1 Tot. Maps to SBML symbol `dnabound_Foxo1_tot`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_foxo1_acetylated_tot
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.initial_foxo1_acetylated_tot
+    label: Initial Foxo1 Acetylated Tot
+    description: Initial level of Foxo1 Acetylated Tot. Maps to SBML symbol `Foxo1_Ac1_tot`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: cytoplasm_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.cytoplasm_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated
+    label: Cytoplasm Foxo1 Unphosphorylated Unacetylated Notpolyubiquitinated
+    description: Cytoplasm Foxo1 Unphosphorylated Unacetylated Notpolyubiquitinated.
+      Maps to SBML symbol `cytoplasm_Foxo1_Pa0_Ac0_pUb0` and is emitted in native
+      SBML units.
+  - name: nucleus_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.nucleus_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated
+    label: Nucleus Foxo1 Unphosphorylated Unacetylated Notpolyubiquitinated
+    description: Nucleus Foxo1 Unphosphorylated Unacetylated Notpolyubiquitinated.
+      Maps to SBML symbol `nucleus_Foxo1_Pa0_Ac0_pUb0` and is emitted in native SBML
+      units.
+  - name: dnabound_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.dnabound_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated
+    label: Dnabound Foxo1 Unphosphorylated Unacetylated Notpolyubiquitinated
+    description: Dnabound Foxo1 Unphosphorylated Unacetylated Notpolyubiquitinated.
+      Maps to SBML symbol `dnabound_Foxo1_Pa0_Ac0_pUb0` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.species_labels
+    label: Observable labels

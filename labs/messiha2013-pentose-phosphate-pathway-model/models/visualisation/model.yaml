@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Messiha2013 - Pentose phosphate pathway model Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Messiha2013 - Pentose phosphate pathway model.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_messiha2013_pentose_phosphate_pathway_model_biomd0000000502_model
+    title: Messiha2013 - Pentose phosphate pathway model
+    context: metabolic and hormone signaling response
+    question: How does Messiha2013 - Pentose phosphate pathway model shift hormone-linked
+      signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      e4p: float
+      g6l: float
+      nadph: float
+      p6g: float
+      r5p: float
+      ru5p: float
+      s7p: float
+      x5p: float
+      source_defined_nadp_state: float
+      g6p: float
+      f6p: float
+      source_defined_gap_state: float
+      source_defined_gnd1_state: float
+      source_defined_gnd2_state: float
+      source_defined_nqm1_state: float
+      source_defined_rki1_state: float
+      source_defined_rpe1_state: float
+      source_defined_sol3_state: float
+      source_defined_tal1_state: float
+      source_defined_tkl1_state: float
+      source_defined_zwf1_state: float
+    species_labels:
+      e4p: E4P
+      g6l: G6L
+      nadph: NADPH
+      p6g: P6G
+      r5p: R5P
+      ru5p: Ru5p
+      s7p: S7P
+      x5p: X5P
+      source_defined_nadp_state: source-defined NADP state
+      g6p: G6P
+      f6p: F6P
+      source_defined_gap_state: source-defined GAP state
+      source_defined_gnd1_state: source-defined GND1 state
+      source_defined_gnd2_state: source-defined GND2 state
+      source_defined_nqm1_state: source-defined NQM1 state
+      source_defined_rki1_state: source-defined RKI1 state
+      source_defined_rpe1_state: source-defined RPE1 state
+      source_defined_sol3_state: source-defined SOL3 state
+      source_defined_tal1_state: source-defined TAL1 state
+      source_defined_tkl1_state: source-defined TKL1 state
+      source_defined_zwf1_state: source-defined ZWF1 state
+io:
+  inputs: []
+  outputs: []

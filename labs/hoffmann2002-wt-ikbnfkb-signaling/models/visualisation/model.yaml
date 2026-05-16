@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Hoffmann2002_WT_IkBNFkB_Signaling Visualisation
+description: Question-and-answer and chart visualisation for NF-kB pathway signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model
+    title: Hoffmann2002_WT_IkBNFkB_Signaling
+    context: NF-kB activation and feedback signaling
+    question: How does Hoffmann2002 WT IkBNFkB Signaling move NF-kB and inhibitor-linked
+      signaling states?
+    visual_scope: NF-kB activation and feedback signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      ik_balpha: float
+      nfkb: float
+      ik_balpha_nf_k_b: float
+      ik_bbeta: float
+      ik_bbeta_nf_k_b: float
+      ik_beps: float
+      ik_beps_nf_k_b: float
+      ikk_ik_balpha: float
+      ikk_ik_balpha_nf_k_b: float
+      source_defined_ikk_state: float
+      ikk_ik_bbeta: float
+      ikk_ik_bbeta_nf_k_b: float
+      ikk_ik_beps: float
+      ikk_ik_beps_nf_k_b: float
+      nf_k_b_nuc: float
+      ik_balpha_nuc: float
+      ik_balpha_nuc_nf_k_b_nuc: float
+      ik_bbeta_nuc: float
+      ik_bbeta_nuc_nf_k_b_nuc: float
+      ik_beps_nuc: float
+      ik_balpha_transcript: float
+      ik_bbeta_transcript: float
+      ik_beps_transcript: float
+      ik_beps_nuc_nf_k_b_nuc: float
+    species_labels:
+      ik_balpha: Ik Balpha
+      nfkb: NF-kB
+      ik_balpha_nf_k_b: Ik Balpha NF K B
+      ik_bbeta: Ik Bbeta
+      ik_bbeta_nf_k_b: Ik Bbeta NF K B
+      ik_beps: Ik Beps
+      ik_beps_nf_k_b: Ik Beps NF K B
+      ikk_ik_balpha: IKK Ik Balpha
+      ikk_ik_balpha_nf_k_b: IKK Ik Balpha NF K B
+      source_defined_ikk_state: Source Defined IKK State
+      ikk_ik_bbeta: IKK Ik Bbeta
+      ikk_ik_bbeta_nf_k_b: IKK Ik Bbeta NF K B
+      ikk_ik_beps: IKK Ik Beps
+      ikk_ik_beps_nf_k_b: IKK Ik Beps NF K B
+      nf_k_b_nuc: NF K B Nuc
+      ik_balpha_nuc: Ik Balpha Nuc
+      ik_balpha_nuc_nf_k_b_nuc: Ik Balpha Nuc NF K B Nuc
+      ik_bbeta_nuc: Ik Bbeta Nuc
+      ik_bbeta_nuc_nf_k_b_nuc: Ik Bbeta Nuc NF K B Nuc
+      ik_beps_nuc: Ik Beps Nuc
+      ik_balpha_transcript: Ik Balpha Transcript
+      ik_bbeta_transcript: Ik Bbeta Transcript
+      ik_beps_transcript: Ik Beps Transcript
+      ik_beps_nuc_nf_k_b_nuc: Ik Beps Nuc NF K B Nuc
+io:
+  inputs: []
+  outputs: []

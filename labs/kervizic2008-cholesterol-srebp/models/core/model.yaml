@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Kervizic2008_Cholesterol_SREBP
+description: Model of cholesterol regulation (with Boolean Formulae) (2008) This model
+  is described in Dynamical modeling of the cholesterol regulatory pathway with Boolean
+  networks ; Gwenael Kervizic and Laurent. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+authors:
+- Biosimulant Team
+- Gwenael Kervizic
+- Laurent Corcos
+upstream:
+  id: biomodels_ebi:MODEL0568648427
+  source_db: biomodels_ebi
+  source_id: MODEL0568648427
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0568648427
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0568648427?filename=MODEL0568648427_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kervizic2008_cholesterol_srebp:Kervizic2008CholesterolSrebpModel0568648427Model
+  init_kwargs:
+    model_path: data/MODEL0568648427.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_srebp_scap
+    maps_to: signaling_sbml_kervizic2008_cholesterol_srebp_model0568648427_model.initial_srebp_scap
+    label: Initial SREBP SCAP
+    description: Initial level of SREBP SCAP. Maps to SBML symbol `s0`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: srebp_scap
+    maps_to: signaling_sbml_kervizic2008_cholesterol_srebp_model0568648427_model.srebp_scap
+    label: SREBP SCAP
+    description: SREBP SCAP. Maps to SBML symbol `s0` and is emitted in native SBML
+      units.
+  - name: acetyl_co_a_c_acetyltransferase_gene
+    maps_to: signaling_sbml_kervizic2008_cholesterol_srebp_model0568648427_model.acetyl_co_a_c_acetyltransferase_gene
+    label: Acetyl Co A C Acetyltransferase Gene
+    description: Acetyl Co A C Acetyltransferase Gene. Maps to SBML symbol `s12` and
+      is emitted in native SBML units.
+  - name: acetyl_co_a_c_acetyltransferase_rna
+    maps_to: signaling_sbml_kervizic2008_cholesterol_srebp_model0568648427_model.acetyl_co_a_c_acetyltransferase_rna
+    label: Acetyl Co A C Acetyltransferase RNA
+    description: Acetyl Co A C Acetyltransferase RNA. Maps to SBML symbol `s13` and
+      is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_kervizic2008_cholesterol_srebp_model0568648427_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_kervizic2008_cholesterol_srebp_model0568648427_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_kervizic2008_cholesterol_srebp_model0568648427_model.species_labels
+    label: Observable labels

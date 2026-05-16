@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Chen2009 - ErbB Signaling Lab
+description: 'Clean Biosimulant lab for systems signaling model: Chen2009 - ErbB Signaling.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model.state
+  to:
+  - visualisation.signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model_state
+- from: signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model.summary
+  to:
+  - visualisation.signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model_summary
+- from: signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model.species_labels
+  to:
+  - visualisation.signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_egf
+    maps_to: signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model.initial_egf
+    label: Initial EGF
+    description: Initial level of EGF. Maps to SBML symbol `c1`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_heregulin
+    maps_to: signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model.initial_heregulin
+    label: Initial heregulin
+    description: Initial level of heregulin. Maps to SBML symbol `c515`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_heregulin_2
+    maps_to: signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model.initial_heregulin_2
+    label: Initial heregulin
+    description: Initial level of heregulin. Maps to SBML symbol `c514`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: source_2_egf_erb_b1_atp_full_active
+    maps_to: signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model.source_2_egf_erb_b1_atp_full_active
+    label: 2 EGF Erb B1 ATP Full active
+    description: 2 EGF Erb B1 ATP Full active. Maps to SBML symbol `c116` and is emitted
+      in native SBML units.
+  - name: source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp
+    maps_to: signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model.source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp
+    label: 2 EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange
+      factor RAS GDP
+    description: 2 EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange
+      factor RAS GDP. Maps to SBML symbol `c27` and is emitted in native SBML units.
+  - name: source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp
+    maps_to: signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model.source_2_egf_erb_b1_p_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_c_pp
+    label: 2 EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange
+      factor RAS GDP C PP
+    description: 2 EGF Erb B1 P GAP Grb2 adapter protein SOS guanine-nucleotide exchange
+      factor RAS GDP C PP. Maps to SBML symbol `c89` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_chen2009_erbb_signaling_biomd0000000255_model.species_labels
+    label: Observable labels

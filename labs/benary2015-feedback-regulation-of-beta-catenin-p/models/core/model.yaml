@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: Benary2015 - feedback regulation of beta-catenin pathway by HOS and FWD1
+description: It's a mathematical model studying feedback control of B-catenin pathway
+  by HOS and FWD1 using Lee2003 model as base. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- wnt
+authors:
+- Biosimulant Team
+- Uwe Benary
+- Bente Kofahl
+- Andreas Hecht
+- Jana Wolf
+upstream:
+  id: biomodels_ebi:MODEL1908050003
+  source_db: biomodels_ebi
+  source_id: MODEL1908050003
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1908050003
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1908050003?filename=Benary2015.xml
+  license: CC0
+biosim:
+  entrypoint: src.benary2015_feedback_regulation_of_beta_catenin_p:Benary2015FeedbackRegulationOfBetaCateninPModel1908050003Model
+  init_kwargs:
+    model_path: data/MODEL1908050003.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_wnt_state
+    maps_to: signaling_sbml_benary2015_feedback_regulation_of_beta_catenin_p_model1908050003_model.initial_source_defined_wnt_state
+    label: Initial source-defined WNT state
+    description: Initial level of source-defined WNT state. Maps to SBML symbol `Wnt`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: b_catenin_apc_axin_gsk3
+    maps_to: signaling_sbml_benary2015_feedback_regulation_of_beta_catenin_p_model1908050003_model.b_catenin_apc_axin_gsk3
+    label: B Catenin APC Axin GSK3
+    description: B Catenin APC Axin GSK3. Maps to SBML symbol `B_catenin_APC__axin__GSK3`
+      and is emitted in native SBML units.
+  - name: b_catenin_apc_axin_gsk3_2
+    maps_to: signaling_sbml_benary2015_feedback_regulation_of_beta_catenin_p_model1908050003_model.b_catenin_apc_axin_gsk3_2
+    label: B Catenin APC Axin GSK3
+    description: B Catenin APC Axin GSK3. Maps to SBML symbol `B_catenin__APC__axin__GSK3`
+      and is emitted in native SBML units.
+  - name: b_catenin
+    maps_to: signaling_sbml_benary2015_feedback_regulation_of_beta_catenin_p_model1908050003_model.b_catenin
+    label: B Catenin
+    description: B Catenin. Maps to SBML symbol `B_catenin` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_benary2015_feedback_regulation_of_beta_catenin_p_model1908050003_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_benary2015_feedback_regulation_of_beta_catenin_p_model1908050003_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_benary2015_feedback_regulation_of_beta_catenin_p_model1908050003_model.species_labels
+    label: Observable labels

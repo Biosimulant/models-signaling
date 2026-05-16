@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Vaseghi1999_Pentose_PP_yeast Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Vaseghi1999_Pentose_PP_yeast.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_vaseghi1999_pentose_pp_yeast_model1004070001_model
+    title: Vaseghi1999_Pentose_PP_yeast
+    context: metabolic and hormone signaling response
+    question: How does Vaseghi1999 Pentose PP yeast shift hormone-linked signaling
+      readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      glucose_6_phosphate: float
+      source_6_phosphogluconate: float
+      ribulose_5_phosphate: float
+      xylulose_5_phosphate: float
+      fructose_6_phosphate: float
+      erythrose_4_phosphate: float
+      glyceraldehyde_3_phosphate: float
+      ribose_5_phosphate: float
+      sedoheptulose_7_phosphate: float
+      phosphoribosylpyrophosphate: float
+      phenylalanine: float
+      tyrosine: float
+      tryptophan: float
+      source_defined_nadp_state: float
+      nadph: float
+      mg_atp: float
+    species_labels:
+      glucose_6_phosphate: Glucose 6 Phosphate
+      source_6_phosphogluconate: 6 Phosphogluconate
+      ribulose_5_phosphate: Ribulose 5 Phosphate
+      xylulose_5_phosphate: Xylulose 5 Phosphate
+      fructose_6_phosphate: Fructose 6 Phosphate
+      erythrose_4_phosphate: Erythrose 4 Phosphate
+      glyceraldehyde_3_phosphate: Glyceraldehyde 3 Phosphate
+      ribose_5_phosphate: Ribose 5 Phosphate
+      sedoheptulose_7_phosphate: Sedoheptulose 7 Phosphate
+      phosphoribosylpyrophosphate: Phosphoribosylpyrophosphate
+      phenylalanine: Phenylalanine
+      tyrosine: Tyrosine
+      tryptophan: Tryptophan
+      source_defined_nadp_state: source-defined NADP+ state
+      nadph: NADPH
+      mg_atp: Mg ATP
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "369a2e7c-85c0-4a47-bb2c-a0ca85d18c33",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "49fc7621-8e1e-4981-9ccb-0d1946f84a66",
+  "created_at": "2026-05-15T19:08:10.617471670+00:00",
+  "last_synced_at": "2026-05-16T10:12:18.170482+00:00",
+  "hub_manifest_hash": "2b98ec46f487c79cc9a8f7b9c5da2b9863b2d3cae37007640f91a109d9165921",
+  "package_name": "lipniacki2004-mathematical-model-of-nfkb-regulatory-module-lab"
+}

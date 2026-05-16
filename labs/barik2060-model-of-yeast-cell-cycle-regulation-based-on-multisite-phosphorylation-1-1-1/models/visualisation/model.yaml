@@ -1,0 +1,160 @@
+schema_version: '2.0'
+title: A model of yeast cell-cycle regulation based on multisite phosphorylation_1_1_1
+  Visualisation
+description: Question-and-answer and chart visualisation for cell-cycle regulatory
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_a_model_of_yeast_cell_cycle_regulation_based_on_model1812060001_model
+    title: A model of yeast cell-cycle regulation based on multisite phosphorylation_1_1_1
+    context: cell-cycle regulatory signaling
+    question: How does A model of yeast cell-cycle regulation based on multisite phosphorylation
+      1 1 1 move checkpoint or cycle-control signaling states?
+    visual_scope: cell-cycle regulatory signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_v_state: float
+      cln3_cyclin: float
+      mitotic_clb_cyclin: float
+      s_phase_clb_cyclin: float
+      cdc14_phosphatase: float
+      source_defined_sbf_state: float
+      source_defined_sbfp1_state: float
+      source_defined_sbfp4_state: float
+      source_defined_hbf_state: float
+      source_defined_whi5_state: float
+      whi5p1: float
+      whi5p6: float
+      source_defined_hi5_state: float
+      source_defined_net1_state: float
+      net1p1: float
+      net1p8: float
+      source_defined_rent_state: float
+      rentp1: float
+      rentp5: float
+      source_defined_ht1_state: float
+      source_defined_cmp_state: float
+      source_defined_cmpp1_state: float
+      source_defined_cmpp2_state: float
+      cdh1_cell_cycle_regulator: float
+      cdh1p1: float
+      cdh1p10: float
+      source_defined_mn3_state: float
+      source_defined_mbm_state: float
+      source_defined_ga_state: float
+      source_defined_mbs_state: float
+      mc14: float
+      source_defined_mhbf_state: float
+      source_defined_mi5_state: float
+      source_defined_mt1_state: float
+      source_defined_mht1_state: float
+      source_defined_mh1_state: float
+      net1rtotal: float
+      rent_total: float
+      cdh1ptotal: float
+      source_defined_sbfp2_state: float
+      source_defined_sbfp3_state: float
+      whi5p2: float
+      whi5p3: float
+      whi5p4: float
+      whi5p5: float
+      net1p2: float
+      net1p3: float
+      net1p4: float
+      net1p5: float
+      net1p6: float
+      net1p7: float
+      rentp2: float
+      rentp3: float
+      rentp4: float
+      cdh1p2: float
+      cdh1p3: float
+      cdh1p4: float
+      cdh1p5: float
+      cdh1p6: float
+      cdh1p7: float
+      cdh1p8: float
+      cdh1p9: float
+      source_defined_mhi5_state: float
+    species_labels:
+      source_defined_v_state: source-defined V state
+      cln3_cyclin: Cln3 cyclin
+      mitotic_clb_cyclin: mitotic Clb cyclin
+      s_phase_clb_cyclin: S-phase Clb cyclin
+      cdc14_phosphatase: Cdc14 phosphatase
+      source_defined_sbf_state: source-defined SBF state
+      source_defined_sbfp1_state: source-defined SBFP1 state
+      source_defined_sbfp4_state: source-defined SBFP4 state
+      source_defined_hbf_state: source-defined HBF state
+      source_defined_whi5_state: source-defined WHI5 state
+      whi5p1: Whi5p1
+      whi5p6: Whi5p6
+      source_defined_hi5_state: source-defined HI5 state
+      source_defined_net1_state: source-defined NET1 state
+      net1p1: Net1p1
+      net1p8: Net1p8
+      source_defined_rent_state: source-defined RENT state
+      rentp1: RENTP1
+      rentp5: RENTP5
+      source_defined_ht1_state: source-defined HT1 state
+      source_defined_cmp_state: source-defined CMP state
+      source_defined_cmpp1_state: source-defined CMPP1 state
+      source_defined_cmpp2_state: source-defined CMPP2 state
+      cdh1_cell_cycle_regulator: Cdh1 cell-cycle regulator
+      cdh1p1: Cdh1p1
+      cdh1p10: Cdh1p10
+      source_defined_mn3_state: source-defined MN3 state
+      source_defined_mbm_state: source-defined MBM state
+      source_defined_ga_state: source-defined GA state
+      source_defined_mbs_state: source-defined MBS state
+      mc14: Mc14
+      source_defined_mhbf_state: source-defined MHBF state
+      source_defined_mi5_state: source-defined MI5 state
+      source_defined_mt1_state: source-defined MT1 state
+      source_defined_mht1_state: source-defined MHT1 state
+      source_defined_mh1_state: source-defined MH1 state
+      net1rtotal: Net1rtotal
+      rent_total: Rent Total
+      cdh1ptotal: Cdh1ptotal
+      source_defined_sbfp2_state: source-defined SBFP2 state
+      source_defined_sbfp3_state: source-defined SBFP3 state
+      whi5p2: Whi5p2
+      whi5p3: Whi5p3
+      whi5p4: Whi5p4
+      whi5p5: Whi5p5
+      net1p2: Net1p2
+      net1p3: Net1p3
+      net1p4: Net1p4
+      net1p5: Net1p5
+      net1p6: Net1p6
+      net1p7: Net1p7
+      rentp2: RENTP2
+      rentp3: RENTP3
+      rentp4: RENTP4
+      cdh1p2: Cdh1p2
+      cdh1p3: Cdh1p3
+      cdh1p4: Cdh1p4
+      cdh1p5: Cdh1p5
+      cdh1p6: Cdh1p6
+      cdh1p7: Cdh1p7
+      cdh1p8: Cdh1p8
+      cdh1p9: Cdh1p9
+      source_defined_mhi5_state: source-defined MHI5 state
+io:
+  inputs: []
+  outputs: []

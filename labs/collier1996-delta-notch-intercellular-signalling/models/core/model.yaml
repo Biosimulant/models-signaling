@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Collier1996 - Delta Notch intercellular signalling and lateral inhibition
+description: ODE model describing how slight variations in Notch and Delta cellular
+  concentrations, through lateral inhibition, lead to cells with different states
+  of differentiation. It can be used to explore signaling dynamics and compare pathway
+  response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- notch
+authors:
+- Biosimulant Team
+- J R Collier
+- N A Monk
+- P K Maini
+- J H Lewis
+upstream:
+  id: biomodels_ebi:BIOMD0000001047
+  source_db: biomodels_ebi
+  source_id: BIOMD0000001047
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001047
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001047?filename=delta_notch.xml
+  license: CC0
+biosim:
+  entrypoint: src.collier1996_delta_notch_intercellular_signalling:Collier1996DeltaNotchIntercellularSignallingBiomd0000001047Model
+  init_kwargs:
+    model_path: data/BIOMD0000001047.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_notch1
+    maps_to: signaling_sbml_collier1996_delta_notch_intercellular_signalling_biomd0000001047_model.initial_notch1
+    label: Initial Notch1
+    description: Initial level of Notch1. Maps to SBML symbol `notch1`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_notch2
+    maps_to: signaling_sbml_collier1996_delta_notch_intercellular_signalling_biomd0000001047_model.initial_notch2
+    label: Initial Notch2
+    description: Initial level of Notch2. Maps to SBML symbol `notch2`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: delta1
+    maps_to: signaling_sbml_collier1996_delta_notch_intercellular_signalling_biomd0000001047_model.delta1
+    label: Delta1
+    description: Delta1. Maps to SBML symbol `delta1` and is emitted in native SBML
+      units.
+  - name: delta2
+    maps_to: signaling_sbml_collier1996_delta_notch_intercellular_signalling_biomd0000001047_model.delta2
+    label: Delta2
+    description: Delta2. Maps to SBML symbol `delta2` and is emitted in native SBML
+      units.
+  - name: notch1
+    maps_to: signaling_sbml_collier1996_delta_notch_intercellular_signalling_biomd0000001047_model.notch1
+    label: Notch1
+    description: Notch1. Maps to SBML symbol `notch1` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_collier1996_delta_notch_intercellular_signalling_biomd0000001047_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_collier1996_delta_notch_intercellular_signalling_biomd0000001047_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_collier1996_delta_notch_intercellular_signalling_biomd0000001047_model.species_labels
+    label: Observable labels

@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Borisov2009_EGF_Insulin_Crosstalk
+description: 'described in: Systems-level interactions between insulin-EGF networks
+  amplify mitogenic signaling. Borisov N, Aksamitiene E, Kiyatkin A, Legewie S, Berkhout
+  J, Maiwald T, Kaimachnikov NP, Timmer J, Ho.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+- hormone-signaling
+authors:
+- Biosimulant Team
+- Nikolay Borisov
+- Edita Aksamitiene
+- Anatoly Kiyatkin
+- Stefan Legewie
+- Jan Berkhout
+upstream:
+  id: biomodels_ebi:BIOMD0000000223
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000223
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000223
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000223?filename=BIOMD0000000223_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.borisov2009_egf_insulin_crosstalk:Borisov2009EgfInsulinCrosstalkBiomd0000000223Model
+  init_kwargs:
+    model_path: data/BIOMD0000000223.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_egf
+    maps_to: signaling_sbml_borisov2009_egf_insulin_crosstalk_biomd0000000223_model.initial_egf
+    label: Initial EGF
+    description: Initial level of EGF. Maps to SBML symbol `EGF`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: ras_gap
+    maps_to: signaling_sbml_borisov2009_egf_insulin_crosstalk_biomd0000000223_model.ras_gap
+    label: RAS GAP
+    description: RAS GAP. Maps to SBML symbol `RasGAP` and is emitted in native SBML
+      units.
+  - name: rp_ras_gap
+    maps_to: signaling_sbml_borisov2009_egf_insulin_crosstalk_biomd0000000223_model.rp_ras_gap
+    label: Rp RAS GAP
+    description: Rp RAS GAP. Maps to SBML symbol `Rp_RasGAP` and is emitted in native
+      SBML units.
+  - name: phosphorylated_insulin_receptor_ras_gap
+    maps_to: signaling_sbml_borisov2009_egf_insulin_crosstalk_biomd0000000223_model.phosphorylated_insulin_receptor_ras_gap
+    label: Phosphorylated Insulin Receptor RAS GAP
+    description: Phosphorylated Insulin Receptor RAS GAP. Maps to SBML symbol `IRp_RasGAP`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_borisov2009_egf_insulin_crosstalk_biomd0000000223_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_borisov2009_egf_insulin_crosstalk_biomd0000000223_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_borisov2009_egf_insulin_crosstalk_biomd0000000223_model.species_labels
+    label: Observable labels

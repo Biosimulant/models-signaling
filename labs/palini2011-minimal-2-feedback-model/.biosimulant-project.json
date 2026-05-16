@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "832808b5-678e-4d1d-bf2e-7f95718eab9a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8cc3f70b-193a-4998-8517-76a3bc14e8a5",
+  "created_at": "2026-05-16T05:46:11.033314730+00:00",
+  "last_synced_at": "2026-05-16T10:36:34.619494+00:00",
+  "hub_manifest_hash": "d5b977d5bb2f05008bcf96207c0ddd8322c9a58aaf2e52a42ef58d93107cc882",
+  "package_name": "palini2011-minimal-2-feedback-model-lab"
+}

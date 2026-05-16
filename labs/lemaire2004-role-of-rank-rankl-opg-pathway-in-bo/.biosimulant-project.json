@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0dc131cd-994a-4cd1-a22a-5d8b1c861d80",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "05566f01-9809-4dd4-8833-d58daa3497ff",
+  "created_at": "2026-05-15T19:08:10.514591585+00:00",
+  "last_synced_at": "2026-05-16T10:07:55.406851+00:00",
+  "hub_manifest_hash": "a29ac46e785e609d789da70b2a186cae4f910ac777fdd8fb51dd7fe05ba19f83",
+  "package_name": "lemaire2004-role-of-rank-rankl-opg-pathway-in-bone-remodelling-p"
+}

@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Phosphatase activities on PI(3,4,5)P3 and PI(3,4)P2 Lab
+description: 'Clean Biosimulant lab for systems signaling model: Phosphatase activities
+  on PI(3,4,5)P3 and PI(3,4)P2. Values are native SBML quantities; equations, parameters,
+  and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model.state
+  to:
+  - visualisation.signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model_state
+- from: signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model.summary
+  to:
+  - visualisation.signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model_summary
+- from: signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model.species_labels
+  to:
+  - visualisation.signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_egf_sig_level
+    maps_to: signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model.initial_egf_sig_level
+    label: EGF Sig
+    description: EGF Sig source parameter. Maps to SBML symbol `EGF_sig` and preserves
+      the bundled default.
+  - name: initial_for_egf_sig_level
+    maps_to: signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model.initial_for_egf_sig_level
+    label: Initial For EGF Sig
+    description: Initial For EGF Sig source parameter. Maps to SBML symbol `ModelValue_13`
+      and preserves the bundled default.
+  - name: initial_inpp4ab
+    maps_to: signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model.initial_inpp4ab
+    label: Initial INPP4AB
+    description: Initial level of INPP4AB. Maps to SBML symbol `INPP4AB`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: egf
+    maps_to: signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model.egf
+    label: EGF
+    description: EGF. Maps to SBML symbol `EGF` and is emitted in native SBML units.
+  - name: egfr
+    maps_to: signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model.egfr
+    label: EGFR
+    description: EGFR. Maps to SBML symbol `EGFR` and is emitted in native SBML units.
+  - name: egfr_p
+    maps_to: signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model.egfr_p
+    label: EGFR P
+    description: EGFR P. Maps to SBML symbol `EGFR_P` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_phosphatase_activities_on_pi_3_4_5_p3_and_pi_3_4_model1704190000_model.species_labels
+    label: Observable labels

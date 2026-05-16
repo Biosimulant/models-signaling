@@ -1,0 +1,84 @@
+schema_version: '2.0'
+title: Capuani2015 - Binding of Cbl and Gbr2 to EGFR (Multisite Phosphorylation Model
+  - MPM)
+description: Fabrizio Capuani, Alexia Conte, Elisabetta Argenzio, Luca Marchetti,
+  Corrado Priami, Simona Polo, Pier Paolo Di Fiore, Sara Sigismund & Andrea Ciliberto.
+  It can be used to explore signaling dynamics and compare pathway response across
+  conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- egfr
+authors:
+- Biosimulant Team
+- Fabrizio Capuani
+- Alexia Conte
+- Elisabetta Argenzio
+- Luca Marchetti
+- Corrado Priami
+upstream:
+  id: biomodels_ebi:BIOMD0000000594
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000594
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000594
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000594?filename=BIOMD0000000594_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.capuani2015_binding_of_cbl_and_gbr2_to_egfr_mult:Capuani2015BindingOfCblAndGbr2ToEgfrMultBiomd0000000594Model
+  init_kwargs:
+    model_path: data/BIOMD0000000594.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cbl_ubiquitin_ligase_factor_level
+    maps_to: signaling_sbml_capuani2015_binding_of_cbl_and_gbr2_to_egfr_mult_biomd0000000594_model.initial_cbl_ubiquitin_ligase_factor_level
+    label: Cbl ubiquitin ligase Factor
+    description: Cbl ubiquitin ligase Factor source parameter. Maps to SBML symbol
+      `CblFactor` and preserves the bundled default.
+  - name: initial_egfr_00uu
+    maps_to: signaling_sbml_capuani2015_binding_of_cbl_and_gbr2_to_egfr_mult_biomd0000000594_model.initial_egfr_00uu
+    label: Initial EGFR 00UU
+    description: Initial level of EGFR 00UU. Maps to SBML symbol `EGFR_00UU`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_egfr_01ug
+    maps_to: signaling_sbml_capuani2015_binding_of_cbl_and_gbr2_to_egfr_mult_biomd0000000594_model.initial_egfr_01ug
+    label: Initial EGFR 01UG
+    description: Initial level of EGFR 01UG. Maps to SBML symbol `EGFR_01UG`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: cbl_ubiquitin_ligase
+    maps_to: signaling_sbml_capuani2015_binding_of_cbl_and_gbr2_to_egfr_mult_biomd0000000594_model.cbl_ubiquitin_ligase
+    label: Cbl ubiquitin ligase
+    description: Cbl ubiquitin ligase. Maps to SBML symbol `Cbl` and is emitted in
+      native SBML units.
+  - name: grb2_adapter_protein
+    maps_to: signaling_sbml_capuani2015_binding_of_cbl_and_gbr2_to_egfr_mult_biomd0000000594_model.grb2_adapter_protein
+    label: Grb2 adapter protein
+    description: Grb2 adapter protein. Maps to SBML symbol `Grb2` and is emitted in
+      native SBML units.
+  - name: tyrosine_site
+    maps_to: signaling_sbml_capuani2015_binding_of_cbl_and_gbr2_to_egfr_mult_biomd0000000594_model.tyrosine_site
+    label: tyrosine site
+    description: tyrosine site. Maps to SBML symbol `Tyr` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_capuani2015_binding_of_cbl_and_gbr2_to_egfr_mult_biomd0000000594_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_capuani2015_binding_of_cbl_and_gbr2_to_egfr_mult_biomd0000000594_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_capuani2015_binding_of_cbl_and_gbr2_to_egfr_mult_biomd0000000594_model.species_labels
+    label: Observable labels

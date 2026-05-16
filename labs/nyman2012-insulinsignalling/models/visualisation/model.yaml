@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Nyman2012_InsulinSignalling Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- metabolic-signaling
+- hormone-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model
+    title: Nyman2012_InsulinSignalling
+    context: GPCR and cAMP/PKA signaling
+    question: How does Nyman2012 InsulinSignalling route receptor activity into cAMP/PKA-linked
+      readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      insulin_receptor: float
+      insulin_bound_insulin_receptor: float
+      phosphorylated_insulin_receptor: float
+      internalized_phosphorylated_insulin_receptor: float
+      internalized_insulin_receptor: float
+      irs: float
+      irsi_p: float
+      response_node_x: float
+      phosphorylated_response_node_x: float
+    species_labels:
+      insulin_receptor: insulin receptor
+      insulin_bound_insulin_receptor: insulin-bound insulin receptor
+      phosphorylated_insulin_receptor: phosphorylated insulin receptor
+      internalized_phosphorylated_insulin_receptor: internalized phosphorylated insulin
+        receptor
+      internalized_insulin_receptor: internalized insulin receptor
+      irs: IRS
+      irsi_p: Irsi P
+      response_node_x: response node X
+      phosphorylated_response_node_x: phosphorylated response node X
+io:
+  inputs: []
+  outputs: []

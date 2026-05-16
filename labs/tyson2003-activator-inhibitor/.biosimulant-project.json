@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "35e7b6f8-cf8e-4dfd-b6d4-89ed973f7b9c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4c88eaef-e701-489a-9616-bf21e76f847c",
+  "created_at": "2026-05-16T05:58:28.444586449+00:00",
+  "last_synced_at": "2026-05-16T11:18:18.500953+00:00",
+  "hub_manifest_hash": "8a33d9333bdc5de1ba46639222d5756abb2a246b3918befcc0430649d1f3151a",
+  "package_name": "tyson2003-activator-inhibitor-lab"
+}

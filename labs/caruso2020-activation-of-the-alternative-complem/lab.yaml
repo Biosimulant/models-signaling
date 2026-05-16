@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Caruso2020 - Activation of the alternative complement pathway and effects on
+  hemolysis Lab
+description: Clean Biosimulant lab for immune signaling. Values are native SBML quantities;
+  equations, parameters, and initial values remain in the bundled source file.
+models:
+- alias: signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model.state
+  to:
+  - visualisation.signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model_state
+- from: signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model.summary
+  to:
+  - visualisation.signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model_summary
+- from: signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model.species_labels
+  to:
+  - visualisation.signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- complement
+io:
+  inputs:
+  - name: initial_complement_c3
+    maps_to: signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model.initial_complement_c3
+    label: Initial complement C3
+    description: Initial level of complement C3. Maps to SBML symbol `C3`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: nf_complement_c3b
+    maps_to: signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model.nf_complement_c3b
+    label: Nf complement C3b
+    description: Nf complement C3b. Maps to SBML symbol `nfC3b` and is emitted in
+      native SBML units.
+  - name: complement_c3_h2o_fluid
+    maps_to: signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model.complement_c3_h2o_fluid
+    label: complement C3 H2O Fluid
+    description: complement C3 H2O Fluid. Maps to SBML symbol `C3_H2O__fluid` and
+      is emitted in native SBML units.
+  - name: complement_c3_h2o_b_fluid
+    maps_to: signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model.complement_c3_h2o_b_fluid
+    label: complement C3 H2O B Fluid
+    description: complement C3 H2O B Fluid. Maps to SBML symbol `C3_H2O_B_fluid` and
+      is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_caruso2020_activation_of_the_alternative_complem_model2109110001_model.species_labels
+    label: Observable labels

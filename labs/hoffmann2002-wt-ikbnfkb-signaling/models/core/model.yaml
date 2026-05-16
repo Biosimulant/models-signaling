@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Hoffmann2002_WT_IkBNFkB_Signaling
+description: This model corresponds to the IkB-NFkB signaling in wild type cells and
+  reproduces the dynamics of the species as depicted in Figure 2 F of the paper. The
+  authors mention that the simulation is carrie.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+authors:
+- Biosimulant Team
+- Alexander Hoffmann
+- Andre Levchenko
+- Martin L Scott
+- David Baltimore
+upstream:
+  id: biomodels_ebi:BIOMD0000000140
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000140
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000140
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000140?filename=BIOMD0000000140_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hoffmann2002_wt_ikbnfkb_signaling:Hoffmann2002WtIkbnfkbSignalingBiomd0000000140Model
+  init_kwargs:
+    model_path: data/BIOMD0000000140.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ik_balpha
+    maps_to: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model.initial_ik_balpha
+    label: Initial Ik Balpha
+    description: Initial level of Ik Balpha. Maps to SBML symbol `IkBalpha`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: nfkb
+    maps_to: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model.nfkb
+    label: NF-kB
+    description: NF-kB. Maps to SBML symbol `NFkB` and is emitted in native SBML units.
+  - name: ik_balpha_nf_k_b
+    maps_to: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model.ik_balpha_nf_k_b
+    label: Ik Balpha NF K B
+    description: Ik Balpha NF K B. Maps to SBML symbol `IkBalpha_NFkB` and is emitted
+      in native SBML units.
+  - name: ik_bbeta_nf_k_b
+    maps_to: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model.ik_bbeta_nf_k_b
+    label: Ik Bbeta NF K B
+    description: Ik Bbeta NF K B. Maps to SBML symbol `IkBbeta_NFkB` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model.species_labels
+    label: Observable labels

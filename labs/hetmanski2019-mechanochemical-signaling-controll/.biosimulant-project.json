@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e8139233-a993-4b7b-b828-68c882b054a7",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3db66f0e-f6af-4fe1-87ba-e2eb090b639f",
+  "created_at": "2026-05-15T19:08:09.935417828+00:00",
+  "last_synced_at": "2026-05-16T09:47:47.459910+00:00",
+  "hub_manifest_hash": "b6e35fbc88eb6b9aaffca8df8d445d6b9f44b22d43a6ed0f9e7ba16d048282d0",
+  "package_name": "hetmanski2019-mechanochemical-signaling-controlled-rear-retracti"
+}

@@ -1,0 +1,99 @@
+schema_version: '2.0'
+title: Kervizic2008_Cholesterol_SREBP Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_kervizic2008_cholesterol_srebp_model0568648427_model
+    title: Kervizic2008_Cholesterol_SREBP
+    context: metabolic and hormone signaling response
+    question: How does Kervizic2008 Cholesterol SREBP shift hormone-linked signaling
+      readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      srebp_scap: float
+      p_srebp: float
+      m_srebp: float
+      hmg_co_a_synthase_gene: float
+      hmg_co_a_synthase_rna: float
+      hmg_co_a_synthase: float
+      hmg_co_a_reductase_gene: float
+      hmg_co_a_reductase_rna: float
+      hmg_co_a_reductase: float
+      fpp_synthase_gene: float
+      fpp_synthase_rna: float
+      fpp_synthase: float
+      acetyl_co_a_c_acetyltransferase_gene: float
+      acetyl_co_a_c_acetyltransferase_rna: float
+      acetyl_co_a_c_acetyltransferase: float
+      cyp51_gene: float
+      cyp51_rna: float
+      cyp51: float
+      acetyl_co_a: float
+      acetoacetyl_co_a: float
+      hmg_co_a: float
+      mevalonic_acid: float
+      mevalonyl_pyrophosphate: float
+      isopentenyl_pyrophosphate: float
+      dimethyl_allyl_pyrophosphate: float
+      geranyl_pyrophosphate: float
+      farnesyl_pyrophosphate: float
+      squalene: float
+      lanosterol: float
+      desmosterol: float
+      septdehydrocholesterol: float
+      cholesterol: float
+      statins: float
+    species_labels:
+      srebp_scap: SREBP SCAP
+      p_srebp: P SREBP
+      m_srebp: M SREBP
+      hmg_co_a_synthase_gene: HMG Co A Synthase Gene
+      hmg_co_a_synthase_rna: HMG Co A Synthase RNA
+      hmg_co_a_synthase: HMG Co A Synthase
+      hmg_co_a_reductase_gene: HMG Co A Reductase Gene
+      hmg_co_a_reductase_rna: HMG Co A Reductase RNA
+      hmg_co_a_reductase: HMG Co A Reductase
+      fpp_synthase_gene: FPP Synthase Gene
+      fpp_synthase_rna: FPP Synthase RNA
+      fpp_synthase: FPP Synthase
+      acetyl_co_a_c_acetyltransferase_gene: Acetyl Co A C Acetyltransferase Gene
+      acetyl_co_a_c_acetyltransferase_rna: Acetyl Co A C Acetyltransferase RNA
+      acetyl_co_a_c_acetyltransferase: Acetyl Co A C Acetyltransferase
+      cyp51_gene: Cyp51 Gene
+      cyp51_rna: Cyp51 RNA
+      cyp51: Cyp51
+      acetyl_co_a: Acetyl Co A
+      acetoacetyl_co_a: Acetoacetyl Co A
+      hmg_co_a: HMG Co A
+      mevalonic_acid: Mevalonic Acid
+      mevalonyl_pyrophosphate: Mevalonyl Pyrophosphate
+      isopentenyl_pyrophosphate: Isopentenyl Pyrophosphate
+      dimethyl_allyl_pyrophosphate: Dimethyl Allyl Pyrophosphate
+      geranyl_pyrophosphate: Geranyl Pyrophosphate
+      farnesyl_pyrophosphate: Farnesyl Pyrophosphate
+      squalene: Squalene
+      lanosterol: Lanosterol
+      desmosterol: Desmosterol
+      septdehydrocholesterol: Septdehydrocholesterol
+      cholesterol: Cholesterol
+      statins: Statins
+io:
+  inputs: []
+  outputs: []

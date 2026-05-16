@@ -1,0 +1,117 @@
+schema_version: '2.0'
+title: Kok2020 - IFNalpha-induced signaling in Huh7.5 cells Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Kok2020 - IFNalpha-induced signaling in Huh7.5 cells.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cytokine-signaling
+- interferon-signaling
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_kok2020_ifnalpha_induced_signaling_in_huh7_5_cel_biomd0000000959_model
+    title: Kok2020 - IFNalpha-induced signaling in Huh7.5 cells
+    context: GPCR and cAMP/PKA signaling
+    question: How does Kok2020 - IFNalpha-induced signaling in Huh7.5 cells route
+      receptor activity into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_rec_state: float
+      source_defined_socs1_state: float
+      source_defined_ifna_state: float
+      a_rec_ifna: float
+      usp18: float
+      stat1c: float
+      stat2c: float
+      p_stat1p_stat2c: float
+      p_stat1p_stat2n: float
+      stat1n: float
+      stat2n: float
+      isgf3c: float
+      isgf3n: float
+      irf9n: float
+      p_stat1dimc: float
+      p_stat1dimn: float
+      occ_gas_isrebs: float
+      occ_gasbs: float
+      irf9c: float
+      socs3: float
+      stat1m_rna: float
+      stat2m_rna: float
+      irf9m_rna: float
+      irf2m_rna: float
+      source_defined_irf2_state: float
+      usp18m_rna: float
+      socs1m_rna: float
+      socs3m_rna: float
+      stat1_lc_1: float
+      stat1_lc_2: float
+      stat1_lc_3: float
+      stat2_lc_1: float
+      stat2_lc_2: float
+      stat2_lc_3: float
+      stat2_lc_4: float
+      stat2_lc_5: float
+      irf9_lc_1: float
+      irf9_lc_2: float
+      usp18_lc_1: float
+      usp18_lc_2: float
+      socs1_lc_1: float
+    species_labels:
+      source_defined_rec_state: source-defined REC state
+      source_defined_socs1_state: source-defined SOCS1 state
+      source_defined_ifna_state: source-defined IFNA state
+      a_rec_ifna: A Rec Ifna
+      usp18: USP18
+      stat1c: Stat1c
+      stat2c: Stat2c
+      p_stat1p_stat2c: P Stat1p Stat2c
+      p_stat1p_stat2n: P Stat1p Stat2n
+      stat1n: Stat1n
+      stat2n: Stat2n
+      isgf3c: Isgf3c
+      isgf3n: Isgf3n
+      irf9n: Irf9n
+      p_stat1dimc: P Stat1dimc
+      p_stat1dimn: P Stat1dimn
+      occ_gas_isrebs: Occ GAS Isrebs
+      occ_gasbs: Occ Gasbs
+      irf9c: Irf9c
+      socs3: SOCS3
+      stat1m_rna: Stat1m RNA
+      stat2m_rna: Stat2m RNA
+      irf9m_rna: Irf9m RNA
+      irf2m_rna: Irf2m RNA
+      source_defined_irf2_state: source-defined IRF2 state
+      usp18m_rna: Usp18m RNA
+      socs1m_rna: Socs1m RNA
+      socs3m_rna: Socs3m RNA
+      stat1_lc_1: STAT1 LC 1
+      stat1_lc_2: STAT1 LC 2
+      stat1_lc_3: STAT1 LC 3
+      stat2_lc_1: STAT2 LC 1
+      stat2_lc_2: STAT2 LC 2
+      stat2_lc_3: STAT2 LC 3
+      stat2_lc_4: STAT2 LC 4
+      stat2_lc_5: STAT2 LC 5
+      irf9_lc_1: IRF9 LC 1
+      irf9_lc_2: IRF9 LC 2
+      usp18_lc_1: USP18 LC 1
+      usp18_lc_2: USP18 LC 2
+      socs1_lc_1: SOCS1 LC 1
+io:
+  inputs: []
+  outputs: []

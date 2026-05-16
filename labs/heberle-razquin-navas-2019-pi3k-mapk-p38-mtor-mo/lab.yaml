@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Heberle-Razquin Navas-2019 - PI3K-MAPK/p38-mTOR Model V Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model.state
+  to:
+  - visualisation.signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model_state
+- from: signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model.summary
+  to:
+  - visualisation.signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model_summary
+- from: signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model.species_labels
+  to:
+  - visualisation.signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- pi3k-akt
+- mtor
+- stress-response
+io:
+  inputs:
+  - name: initial_akt_p_s473_obs
+    maps_to: signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model.initial_akt_p_s473_obs
+    label: Initial AKT P S473 Obs
+    description: Initial level of AKT P S473 Obs. Maps to SBML symbol `Akt_pS473_obs`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_akt_p_t308_obs
+    maps_to: signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model.initial_akt_p_t308_obs
+    label: Initial AKT P T308 Obs
+    description: Initial level of AKT P T308 Obs. Maps to SBML symbol `Akt_pT308_obs`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_four_ebp1_p_t37_46_obs
+    maps_to: signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model.initial_four_ebp1_p_t37_46_obs
+    label: Initial Four EBP1 P T37 46 Obs
+    description: Initial level of Four EBP1 P T37 46 Obs. Maps to SBML symbol `fourEBP1_pT37_46_obs`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: akt_p_t308_obs
+    maps_to: signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model.akt_p_t308_obs
+    label: AKT P T308 Obs
+    description: AKT P T308 Obs. Maps to SBML symbol `Akt_pT308_obs` and is emitted
+      in native SBML units.
+  - name: akt_p_s473_obs
+    maps_to: signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model.akt_p_s473_obs
+    label: AKT P S473 Obs
+    description: AKT P S473 Obs. Maps to SBML symbol `Akt_pS473_obs` and is emitted
+      in native SBML units.
+  - name: pras40_p_t246_obs
+    maps_to: signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model.pras40_p_t246_obs
+    label: PRAS40 P T246 Obs
+    description: PRAS40 P T246 Obs. Maps to SBML symbol `PRAS40_pT246_obs` and is
+      emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_heberle_razquin_navas_2019_pi3k_mapk_p38_mtor_mo_model1902140002_model.species_labels
+    label: Observable labels

@@ -1,0 +1,42 @@
+schema_version: '2.0'
+title: GonzalezMiranda2013 - The effect of circadian oscillations on biochemical cell
+  signaling by NF-κB Visualisation
+description: Question-and-answer and chart visualisation for NF-kB pathway signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- circadian
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_gonzalezmiranda2013_the_effect_of_circadian_osci_biomd0000000893_model
+    title: GonzalezMiranda2013 - The effect of circadian oscillations on biochemical
+      cell signaling by NF-κB
+    context: NF-kB activation and feedback signaling
+    question: How does GonzalezMiranda2013 - The effect of circadian oscillations
+      on biochemical cell signaling by NF-κB move NF-kB and inhibitor-linked signaling
+      states?
+    visual_scope: NF-kB activation and feedback signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      response_node_x: float
+      source_defined_y_state: float
+      source_defined_z_state: float
+    species_labels:
+      response_node_x: response node X
+      source_defined_y_state: source-defined Y state
+      source_defined_z_state: source-defined Z state
+io:
+  inputs: []
+  outputs: []

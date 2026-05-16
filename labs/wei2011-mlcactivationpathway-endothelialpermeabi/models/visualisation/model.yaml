@@ -1,0 +1,438 @@
+schema_version: '2.0'
+title: Wei2011_MLCactivationPathway_EndothelialPermeability Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Wei2011_MLCactivationPathway_EndothelialPermeability.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- coagulation
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_wei2011_mlcactivationpathway_endothelialpermeabi_model1102210000_model
+    title: Wei2011_MLCactivationPathway_EndothelialPermeability
+    context: metabolic and hormone signaling response
+    question: How does Wei2011 MLCactivationPathway EndothelialPermeability shift
+      hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      thrombin: float
+      ca2plus_1: float
+      hisatamine: float
+      ca2plus_2: float
+      ca2plus_3: float
+      ca2plus_4: float
+      ca2plus_5: float
+      ca2plus_6: float
+      thrombin_r: float
+      pro_thrombin_r: float
+      thrombin_r_active: float
+      source_defined_rgs_state: float
+      inositol: float
+      degradation: float
+      rgs_gq_alpha_gtp: float
+      gtp: float
+      gq_alpha_gtp: float
+      gdp: float
+      ip3r: float
+      ip3_ip3r: float
+      p115rho_gef: float
+      rho_gap: float
+      dag: float
+      ip3: float
+      rho_gtp: float
+      source_defined_pip2_state: float
+      source_defined_pc_state: float
+      rho_gdp: float
+      ca2plus_calcium_m: float
+      calcium_m_2ca2plus: float
+      calcium_m_3ca2plus: float
+      calcium_m_4ca2plus: float
+      source_defined_mlck_state: float
+      mlck_ca2plus_calcium_m: float
+      mlck_3ca2plus_calcium_m: float
+      mlck_4ca2plus_calcium_m: float
+      pkc: float
+      pkc_active_3: float
+      pkc_active_3_cpi_17: float
+      cpi_17_mypt1_ppase: float
+      p_cpi_17_mypt1_ppasep: float
+      cpi_17: float
+      source_defined_mlc_state: float
+      source_defined_pmlc_state: float
+      p_cpi_17: float
+      ca2plus: float
+      calmodulin: float
+      g_beta_response_parameter_gamma_2: float
+      plc_beta_response_parameter: float
+      ca2plus_trunsp: float
+      ca2plus_pump: float
+      g12_alpha_gdp: float
+      g12_alpha_gtp: float
+      gq_alpha_gdp: float
+      plc_beta_response_parameter_gq_alpha_gtp: float
+      ca2plus_trunsp_2ca2plus: float
+      ca2plus_pump_ca2plus: float
+      pp_mlc: float
+      mypt1_ppase_p_mlc: float
+      mypt1_ppase_pp_mlc: float
+      mlck_mlc: float
+      mlck_p_mlc: float
+      mlck_4ca2plus_calcium_m_mlc: float
+      mlck_3ca2plus_calcium_m_mlc: float
+      mlck_4ca2plus_calcium_m_p_mlc: float
+      mlck_3ca2plus_calcium_m_p_mlc: float
+      mlck_2ca2plus_calcium_m_mlc: float
+      mlck_2ca2plus_calcium_m_p_mlc: float
+      mlck_ca2plus_calcium_m_mlc: float
+      mlck_ca2plus_calcium_m_p_mlc: float
+      plc_beta_response_parameter_gq_alpha_gtp_ca2plus: float
+      pkc_ca2plus_dag: float
+      pkc_ca2plus: float
+      plc_beta_response_parameter_ca2plus: float
+      mypt1_ppase: float
+      p_mypt1_ppase: float
+      thrombin_pro_thrombin_r: float
+      g12_alpha_beta_response_parameter_gamma_1_gdp: float
+      g12_alpha_beta_response_parameter_gamma_1_gdp_thrombin_r_active: float
+      g_beta_response_parameter_gamma_1: float
+      gq_alpha_beta_response_parameter_gamma_2_gdp: float
+      gq_alpha_beta_response_parameter_gamma_2_gdp_thrombin_r_active: float
+      p115rho_gef_g12_alpha_gtp: float
+      p115rho_gef_g12_alpha_gtp_rho_gdp: float
+      rho_gtp_rho_gap: float
+      plc_beta_response_parameter_ca2plus_pip2: float
+      plc_beta_response_parameter_gq_alpha_gtp_ca2plus_pip2: float
+      mlck_2ca2plus_calcium_m: float
+      p_mypt1_ppase_pp_mlc: float
+      p_mypt1_ppase_p_mlc: float
+      ca2plus_extleak: float
+      ca2plus_ip3_ip3r: float
+      ca2plus_ext1: float
+      ca2plus_intleak: float
+      ca2plus_int1: float
+      rho_gdi: float
+      rho_gdp_rho_gdi: float
+      p_rock: float
+      source_defined_rock_state: float
+      rho_gtp_rock: float
+      p_rock_mlc: float
+      p_rock_p_mlc: float
+      rho_gtp_rock_mlc: float
+      rho_gtp_rock_p_mlc: float
+      p_rock_mypt1_ppase: float
+      rho_gtp_rock_mypt1_ppase: float
+      source_defined_vegf_state: float
+      vegfr2: float
+      vegf_vegfr2: float
+      vegf_vegfr2_2: float
+      vegf_p_vegfr2_2: float
+      vegf_p_vegfr2_2_shc_adapter_protein: float
+      vegf_p_vegfr2_2_p_shc_adapter_protein: float
+      source_defined_pshc_state: float
+      p_shc_adapter_protein_shp: float
+      source_defined_shp_state: float
+      grb2_adapter_protein: float
+      vegf_p_vegfr2_2_p_shc_adapter_protein_grb2_adapter_protein: float
+      sos_guanine_nucleotide_exchange_factor: float
+      vegf_p_vegfr2_2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      ras_gdp: float
+      vegf_p_vegfr2_2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      vegf_p_vegfr2_2_grb2_adapter_protein: float
+      vegf_p_vegfr2_2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      vegf_p_vegfr2_2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      shc_adapter_protein: float
+      ras_gtp: float
+      raf: float
+      ras_gtp_raf: float
+      source_defined_praf_state: float
+      mek: float
+      p_raf_mek: float
+      source_defined_pmek_state: float
+      p_raf_p_mek: float
+      pp_mek: float
+      erk: float
+      pp_mek_erk: float
+      perk_kinase: float
+      pp_mek_p_erk: float
+      pp_erk: float
+      source_defined_pase_state: float
+      p_raf_pase: float
+      pp2a: float
+      pp_mek_pp2a: float
+      p_mek_pp2a: float
+      source_defined_mkp3_state: float
+      pp_erk_mkp3: float
+      p_erk_mkp3: float
+      pp_erk_mlck: float
+      ras_gap: float
+      ras_gtp_ras_gap: float
+      p_mlck: float
+      pp_erk_p_mlck: float
+      pp_mlck: float
+      pp_mlck_mlc: float
+      pp_mlck_p_mlc: float
+      plc_gamma: float
+      plc_gamma_ca2plus: float
+      plc_gamma_ca2plus_pip2: float
+      vegf_p_vegfr2_2_plc_gamma_ca2plus: float
+      vegf_p_vegfr2_2_plc_gamma_ca2plus_pip2: float
+      vegf_p_vegfr2_2_plc_gamma: float
+      source_defined_enos_state: float
+      pkc_ca2plus_e_nos: float
+      e_nos_active: float
+      source_defined_no_state: float
+      source_defined_gc_state: float
+      source_defined_no_gc_state: float
+      no_gc_gtp: float
+      source_defined_cgmp_state: float
+      source_defined_pkg_state: float
+      c_gmp_pkg: float
+      pkg_active: float
+      pkg_raf: float
+      source_defined_l_arg_state: float
+      e_nos_active_l_arg: float
+      source_defined_l_cit_state: float
+      source_defined_no1_state: float
+      source_defined_no2_state: float
+      source_defined_no3_state: float
+      pp_erk_p_mlck_mlc: float
+      pp_erk_p_mlck_p_mlc: float
+      pp_erk_vegf_p_vegfr2_2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      source_defined_psos_state: float
+      pp_erk_vegf_p_vegfr2_2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      h1r: float
+      histamine_h1r: float
+      h1r_active: float
+      g_sub_q_endsub_alpha_beta_response_parameter_gamma_2_gdp_h1r_active: float
+      pkg_rock: float
+      ca2plus_store: float
+    species_labels:
+      thrombin: Thrombin
+      ca2plus_1: Ca2plus 1
+      hisatamine: Hisatamine
+      ca2plus_2: Ca2plus 2
+      ca2plus_3: Ca2plus 3
+      ca2plus_4: Ca2plus 4
+      ca2plus_5: Ca2plus 5
+      ca2plus_6: Ca2plus 6
+      thrombin_r: Thrombin R
+      pro_thrombin_r: Pro Thrombin R
+      thrombin_r_active: Thrombin R active
+      source_defined_rgs_state: source-defined RGS state
+      inositol: Inositol
+      degradation: Degradation
+      rgs_gq_alpha_gtp: RGS Gq Alpha GTP
+      gtp: GTP
+      gq_alpha_gtp: Gq Alpha GTP
+      gdp: GDP
+      ip3r: IP3R
+      ip3_ip3r: IP3 IP3R
+      p115rho_gef: P115rho GEF
+      rho_gap: Rho GAP
+      dag: DAG
+      ip3: IP3
+      rho_gtp: Rho GTP
+      source_defined_pip2_state: source-defined PIP2 state
+      source_defined_pc_state: source-defined PC state
+      rho_gdp: Rho GDP
+      ca2plus_calcium_m: Ca2plus calcium M
+      calcium_m_2ca2plus: calcium M 2ca2plus
+      calcium_m_3ca2plus: calcium M 3ca2plus
+      calcium_m_4ca2plus: calcium M 4ca2plus
+      source_defined_mlck_state: source-defined MLCK state
+      mlck_ca2plus_calcium_m: MLCK Ca2plus calcium M
+      mlck_3ca2plus_calcium_m: MLCK 3ca2plus calcium M
+      mlck_4ca2plus_calcium_m: MLCK 4ca2plus calcium M
+      pkc: PKC
+      pkc_active_3: PKC active 3
+      pkc_active_3_cpi_17: PKC active 3 CPI 17
+      cpi_17_mypt1_ppase: CPI 17 MYPT1 Ppase
+      p_cpi_17_mypt1_ppasep: P CPI 17 MYPT1 Ppasep
+      cpi_17: CPI 17
+      source_defined_mlc_state: source-defined MLC state
+      source_defined_pmlc_state: source-defined PMLC state
+      p_cpi_17: P CPI 17
+      ca2plus: Ca2plus
+      calmodulin: calmodulin
+      g_beta_response_parameter_gamma_2: G beta response parameter Gamma 2
+      plc_beta_response_parameter: PLC beta response parameter
+      ca2plus_trunsp: Ca2plus Trunsp
+      ca2plus_pump: Ca2plus Pump
+      g12_alpha_gdp: G12 Alpha GDP
+      g12_alpha_gtp: G12 Alpha GTP
+      gq_alpha_gdp: Gq Alpha GDP
+      plc_beta_response_parameter_gq_alpha_gtp: PLC beta response parameter Gq Alpha
+        GTP
+      ca2plus_trunsp_2ca2plus: Ca2plus Trunsp 2ca2plus
+      ca2plus_pump_ca2plus: Ca2plus Pump Ca2plus
+      pp_mlc: Pp MLC
+      mypt1_ppase_p_mlc: MYPT1 Ppase P MLC
+      mypt1_ppase_pp_mlc: MYPT1 Ppase Pp MLC
+      mlck_mlc: MLCK MLC
+      mlck_p_mlc: MLCK P MLC
+      mlck_4ca2plus_calcium_m_mlc: MLCK 4ca2plus calcium M MLC
+      mlck_3ca2plus_calcium_m_mlc: MLCK 3ca2plus calcium M MLC
+      mlck_4ca2plus_calcium_m_p_mlc: MLCK 4ca2plus calcium M P MLC
+      mlck_3ca2plus_calcium_m_p_mlc: MLCK 3ca2plus calcium M P MLC
+      mlck_2ca2plus_calcium_m_mlc: MLCK 2ca2plus calcium M MLC
+      mlck_2ca2plus_calcium_m_p_mlc: MLCK 2ca2plus calcium M P MLC
+      mlck_ca2plus_calcium_m_mlc: MLCK Ca2plus calcium M MLC
+      mlck_ca2plus_calcium_m_p_mlc: MLCK Ca2plus calcium M P MLC
+      plc_beta_response_parameter_gq_alpha_gtp_ca2plus: PLC beta response parameter
+        Gq Alpha GTP Ca2plus
+      pkc_ca2plus_dag: PKC Ca2plus DAG
+      pkc_ca2plus: PKC Ca2plus
+      plc_beta_response_parameter_ca2plus: PLC beta response parameter Ca2plus
+      mypt1_ppase: MYPT1 Ppase
+      p_mypt1_ppase: P MYPT1 Ppase
+      thrombin_pro_thrombin_r: Thrombin Pro Thrombin R
+      g12_alpha_beta_response_parameter_gamma_1_gdp: G12 Alpha beta response parameter
+        Gamma 1 GDP
+      g12_alpha_beta_response_parameter_gamma_1_gdp_thrombin_r_active: G12 Alpha beta
+        response parameter Gamma 1 GDP Thrombin R active
+      g_beta_response_parameter_gamma_1: G beta response parameter Gamma 1
+      gq_alpha_beta_response_parameter_gamma_2_gdp: Gq Alpha beta response parameter
+        Gamma 2 GDP
+      gq_alpha_beta_response_parameter_gamma_2_gdp_thrombin_r_active: Gq Alpha beta
+        response parameter Gamma 2 GDP Thrombin R active
+      p115rho_gef_g12_alpha_gtp: P115rho GEF G12 Alpha GTP
+      p115rho_gef_g12_alpha_gtp_rho_gdp: P115rho GEF G12 Alpha GTP Rho GDP
+      rho_gtp_rho_gap: Rho GTP Rho GAP
+      plc_beta_response_parameter_ca2plus_pip2: PLC beta response parameter Ca2plus
+        PIP2
+      plc_beta_response_parameter_gq_alpha_gtp_ca2plus_pip2: PLC beta response parameter
+        Gq Alpha GTP Ca2plus PIP2
+      mlck_2ca2plus_calcium_m: MLCK 2ca2plus calcium M
+      p_mypt1_ppase_pp_mlc: P MYPT1 Ppase Pp MLC
+      p_mypt1_ppase_p_mlc: P MYPT1 Ppase P MLC
+      ca2plus_extleak: Ca2plus Extleak
+      ca2plus_ip3_ip3r: Ca2plus IP3 IP3R
+      ca2plus_ext1: Ca2plus Ext1
+      ca2plus_intleak: Ca2plus Intleak
+      ca2plus_int1: Ca2plus Int1
+      rho_gdi: Rho GDI
+      rho_gdp_rho_gdi: Rho GDP Rho GDI
+      p_rock: P ROCK
+      source_defined_rock_state: source-defined ROCK state
+      rho_gtp_rock: Rho GTP ROCK
+      p_rock_mlc: P ROCK MLC
+      p_rock_p_mlc: P ROCK P MLC
+      rho_gtp_rock_mlc: Rho GTP ROCK MLC
+      rho_gtp_rock_p_mlc: Rho GTP ROCK P MLC
+      p_rock_mypt1_ppase: P ROCK MYPT1 Ppase
+      rho_gtp_rock_mypt1_ppase: Rho GTP ROCK MYPT1 Ppase
+      source_defined_vegf_state: source-defined VEGF state
+      vegfr2: VEGFR2
+      vegf_vegfr2: VEGF VEGFR2
+      vegf_vegfr2_2: VEGF VEGFR2 2
+      vegf_p_vegfr2_2: VEGF P VEGFR2 2
+      vegf_p_vegfr2_2_shc_adapter_protein: VEGF P VEGFR2 2 Shc adapter protein
+      vegf_p_vegfr2_2_p_shc_adapter_protein: VEGF P VEGFR2 2 P Shc adapter protein
+      source_defined_pshc_state: source-defined PSHC state
+      p_shc_adapter_protein_shp: P Shc adapter protein SHP
+      source_defined_shp_state: source-defined SHP state
+      grb2_adapter_protein: Grb2 adapter protein
+      vegf_p_vegfr2_2_p_shc_adapter_protein_grb2_adapter_protein: VEGF P VEGFR2 2
+        P Shc adapter protein Grb2 adapter protein
+      sos_guanine_nucleotide_exchange_factor: SOS guanine-nucleotide exchange factor
+      vegf_p_vegfr2_2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: VEGF
+        P VEGFR2 2 P Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Grb2 adapter protein
+        SOS guanine-nucleotide exchange factor
+      ras_gdp: RAS GDP
+      vegf_p_vegfr2_2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: VEGF
+        P VEGFR2 2 P Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      vegf_p_vegfr2_2_grb2_adapter_protein: VEGF P VEGFR2 2 Grb2 adapter protein
+      vegf_p_vegfr2_2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: VEGF
+        P VEGFR2 2 Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      vegf_p_vegfr2_2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: VEGF
+        P VEGFR2 2 Grb2 adapter protein SOS guanine-nucleotide exchange factor RAS
+        GDP
+      shc_adapter_protein: Shc adapter protein
+      ras_gtp: RAS GTP
+      raf: RAF
+      ras_gtp_raf: RAS GTP RAF
+      source_defined_praf_state: source-defined PRAF state
+      mek: MEK
+      p_raf_mek: P RAF MEK
+      source_defined_pmek_state: source-defined PMEK state
+      p_raf_p_mek: P RAF P MEK
+      pp_mek: Pp MEK
+      erk: ERK
+      pp_mek_erk: Pp MEK ERK
+      perk_kinase: PERK kinase
+      pp_mek_p_erk: Pp MEK P ERK
+      pp_erk: Pp ERK
+      source_defined_pase_state: source-defined PASE state
+      p_raf_pase: P RAF Pase
+      pp2a: PP2A
+      pp_mek_pp2a: Pp MEK PP2A
+      p_mek_pp2a: P MEK PP2A
+      source_defined_mkp3_state: source-defined MKP3 state
+      pp_erk_mkp3: Pp ERK MKP3
+      p_erk_mkp3: P ERK MKP3
+      pp_erk_mlck: Pp ERK MLCK
+      ras_gap: RAS GAP
+      ras_gtp_ras_gap: RAS GTP RAS GAP
+      p_mlck: P MLCK
+      pp_erk_p_mlck: Pp ERK P MLCK
+      pp_mlck: Pp MLCK
+      pp_mlck_mlc: Pp MLCK MLC
+      pp_mlck_p_mlc: Pp MLCK P MLC
+      plc_gamma: PLC Gamma
+      plc_gamma_ca2plus: PLC Gamma Ca2plus
+      plc_gamma_ca2plus_pip2: PLC Gamma Ca2plus PIP2
+      vegf_p_vegfr2_2_plc_gamma_ca2plus: VEGF P VEGFR2 2 PLC Gamma Ca2plus
+      vegf_p_vegfr2_2_plc_gamma_ca2plus_pip2: VEGF P VEGFR2 2 PLC Gamma Ca2plus PIP2
+      vegf_p_vegfr2_2_plc_gamma: VEGF P VEGFR2 2 PLC Gamma
+      source_defined_enos_state: source-defined ENOS state
+      pkc_ca2plus_e_nos: PKC Ca2plus E NOS
+      e_nos_active: E NOS active
+      source_defined_no_state: source-defined NO state
+      source_defined_gc_state: source-defined GC state
+      source_defined_no_gc_state: source-defined NO-GC state
+      no_gc_gtp: NO GC GTP
+      source_defined_cgmp_state: source-defined CGMP state
+      source_defined_pkg_state: source-defined PKG state
+      c_gmp_pkg: C GMP PKG
+      pkg_active: PKG active
+      pkg_raf: PKG RAF
+      source_defined_l_arg_state: source-defined L-ARG state
+      e_nos_active_l_arg: E NOS active L Arg
+      source_defined_l_cit_state: source-defined L-CIT state
+      source_defined_no1_state: source-defined NO1 state
+      source_defined_no2_state: source-defined NO2 state
+      source_defined_no3_state: source-defined NO3 state
+      pp_erk_p_mlck_mlc: Pp ERK P MLCK MLC
+      pp_erk_p_mlck_p_mlc: Pp ERK P MLCK P MLC
+      pp_erk_vegf_p_vegfr2_2_p_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Pp
+        ERK VEGF P VEGFR2 2 P Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      source_defined_psos_state: source-defined PSOS state
+      pp_erk_vegf_p_vegfr2_2_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Pp
+        ERK VEGF P VEGFR2 2 Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      h1r: H1R
+      histamine_h1r: Histamine H1R
+      h1r_active: H1R active
+      g_sub_q_endsub_alpha_beta_response_parameter_gamma_2_gdp_h1r_active: G Sub Q
+        Endsub Alpha beta response parameter Gamma 2 GDP H1R active
+      pkg_rock: PKG ROCK
+      ca2plus_store: Ca2plus Store
+io:
+  inputs: []
+  outputs: []

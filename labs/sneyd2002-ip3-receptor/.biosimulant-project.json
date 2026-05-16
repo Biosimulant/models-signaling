@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b4009290-4617-4334-82ec-c2a9dcce3a16",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f05fd4df-ac79-415f-9b69-8bb8c274f889",
+  "created_at": "2026-05-16T05:58:27.462097507+00:00",
+  "last_synced_at": "2026-05-16T11:08:50.407815+00:00",
+  "hub_manifest_hash": "9da2353edb214426bb3341d2e20647de1c0dc6d4340e89c39b74c36aecf5ea91",
+  "package_name": "sneyd2002-ip3-receptor-lab"
+}

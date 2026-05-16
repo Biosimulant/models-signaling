@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Rutkis2013 - Entner-Doudoroff pathway in Z.mobilis (cell-free) Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Rutkis2013 - Entner-Doudoroff pathway in Z.mobilis (cell-free).'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model
+    title: Rutkis2013 - Entner-Doudoroff pathway in Z.mobilis (cell-free)
+    context: metabolic and hormone signaling response
+    question: How does Rutkis2013 - Entner-Doudoroff pathway in Z.mobilis (cell-free)
+      shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      glucex: float
+      ethanolex: float
+      gluccy: float
+      gluc6p: float
+      source_defined_bpg_state: float
+      p3g: float
+      p2g: float
+      source_defined_pep_state: float
+      source_defined_pyr_state: float
+      source_defined_acet_state: float
+      nad: float
+      source_defined_nadh_state: float
+      source_defined_co2_state: float
+      ethanolcy: float
+      atp: float
+      adp: float
+      pglacton: float
+      pgluconate: float
+      source_defined_kdpg_state: float
+      source_defined_gap_state: float
+      amp: float
+    species_labels:
+      glucex: Glucex
+      ethanolex: Ethanolex
+      gluccy: Gluccy
+      gluc6p: GLUC6P
+      source_defined_bpg_state: source-defined BPG state
+      p3g: P3G
+      p2g: P2G
+      source_defined_pep_state: source-defined PEP state
+      source_defined_pyr_state: source-defined PYR state
+      source_defined_acet_state: source-defined ACET state
+      nad: NAD
+      source_defined_nadh_state: source-defined NADH state
+      source_defined_co2_state: source-defined CO2 state
+      ethanolcy: Ethanolcy
+      atp: ATP
+      adp: ADP
+      pglacton: PGLACTON
+      pgluconate: PGLUCONATE
+      source_defined_kdpg_state: source-defined KDPG state
+      source_defined_gap_state: source-defined GAP state
+      amp: AMP
+io:
+  inputs: []
+  outputs: []

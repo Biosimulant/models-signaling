@@ -1,0 +1,44 @@
+schema_version: '2.0'
+title: Markevich2004_MAPK_orderedMM2kinases Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_markevich2004_mapk_orderedmm2kinases_biomd0000000031_model
+    title: Markevich2004_MAPK_orderedMM2kinases
+    context: receptor-to-MAPK cascade signaling
+    question: How does Markevich2004 MAPK orderedMM2kinases propagate receptor or
+      RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_m_state: float
+      source_defined_mp_state: float
+      dual_phosphorylated_mapk: float
+      mapkk1: float
+      mapkk2: float
+      source_defined_mkp3_state: float
+    species_labels:
+      source_defined_m_state: Source Defined M State
+      source_defined_mp_state: Source Defined MP State
+      dual_phosphorylated_mapk: Dual Phosphorylated MAPK
+      mapkk1: MAPKK1
+      mapkk2: MAPKK2
+      source_defined_mkp3_state: Source Defined MKP3 State
+io:
+  inputs: []
+  outputs: []

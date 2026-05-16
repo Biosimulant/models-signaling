@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Caruso2020 - Alternative Complement Pathway model Lab
+description: Clean Biosimulant lab for immune signaling. Values are native SBML quantities;
+  equations, parameters, and initial values remain in the bundled source file.
+models:
+- alias: signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model.state
+  to:
+  - visualisation.signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model_state
+- from: signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model.summary
+  to:
+  - visualisation.signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model_summary
+- from: signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model.species_labels
+  to:
+  - visualisation.signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- complement
+io:
+  inputs:
+  - name: initial_k_el_c5a_level
+    maps_to: signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model.initial_k_el_c5a_level
+    label: K El C5a
+    description: K El C5a source parameter. Maps to SBML symbol `mw0eca22f3_9f69_4c28_8450_109dea301a7e`
+      and preserves the bundled default.
+  - name: initial_k_el_drug_level
+    maps_to: signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model.initial_k_el_drug_level
+    label: K El Drug
+    description: K El Drug source parameter. Maps to SBML symbol `mw2904b9f4_09fe_48f9_a742_05908528bc90`
+      and preserves the bundled default.
+  - name: initial_k_el_i_complement_c3b_level
+    maps_to: signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model.initial_k_el_i_complement_c3b_level
+    label: K El I complement C3b
+    description: K El I complement C3b source parameter. Maps to SBML symbol `mwf3fb9035_f67a_4a45_a797_5c11abaa0feb`
+      and preserves the bundled default.
+  outputs:
+  - name: cn_ugm_l
+    maps_to: signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model.cn_ugm_l
+    label: Cn Ugm L
+    description: Cn Ugm L. Maps to SBML symbol `mw43392936_e299_4891_89da_819acae8a437`
+      and is emitted in native SBML units.
+  - name: erythrocytes_u_m
+    maps_to: signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model.erythrocytes_u_m
+    label: Erythrocytes U M
+    description: Erythrocytes U M. Maps to SBML symbol `mw69ef1201_c624_479d_9761_6839f82ca5fd`
+      and is emitted in native SBML units.
+  - name: erythrocytes_n_l
+    maps_to: signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model.erythrocytes_n_l
+    label: Erythrocytes N L
+    description: Erythrocytes N L. Maps to SBML symbol `mwb12eecaa_a5f3_4796_a6b0_621255476677`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_caruso2020_alternative_complement_pathway_model_model2206230002_model.species_labels
+    label: Observable labels

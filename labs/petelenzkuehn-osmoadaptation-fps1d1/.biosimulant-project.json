@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8cc5831f-2a42-420f-a513-fe524d0735ea",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "caeefc7c-17c2-4640-8691-5387947879e7",
+  "created_at": "2026-05-16T05:46:11.318954468+00:00",
+  "last_synced_at": "2026-05-16T10:40:36.960304+00:00",
+  "hub_manifest_hash": "e613b18771fb6f0b7cc61fe2035ac125aef7261adfe5991078ef5717469a4790",
+  "package_name": "petelenzkuehn-osmoadaptation-fps1d1-lab"
+}

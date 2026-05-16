@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Heiland2019 - NAD pathway model analysing the impact of NNMT on pathway dynamics
+  and evolution
+description: This is a detailed model of NAD biosynthesis and consumption representing
+  pathway variances across kingdoms. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Mathias Bockwoldt
+- Dorothée Houry
+- Marc Niere
+- Toni I. Gossmann
+- Ines Reinartz
+upstream:
+  id: biomodels_ebi:MODEL1905220001
+  source_db: biomodels_ebi
+  source_id: MODEL1905220001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1905220001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1905220001?filename=data_S2_NAD_evolution_model.xml
+  license: CC0
+biosim:
+  entrypoint: src.heiland2019_nad_pathway_model_analysing_the_impa:Heiland2019NadPathwayModelAnalysingTheImpaModel1905220001Model
+  init_kwargs:
+    model_path: data/MODEL1905220001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_adp
+    maps_to: signaling_sbml_heiland2019_nad_pathway_model_analysing_the_impa_model1905220001_model.initial_adp
+    label: Initial ADP
+    description: Initial level of ADP. Maps to SBML symbol `ADP`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_amp
+    maps_to: signaling_sbml_heiland2019_nad_pathway_model_analysing_the_impa_model1905220001_model.initial_amp
+    label: Initial AMP
+    description: Initial level of AMP. Maps to SBML symbol `AMP`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_atp
+    maps_to: signaling_sbml_heiland2019_nad_pathway_model_analysing_the_impa_model1905220001_model.initial_atp
+    label: Initial ATP
+    description: Initial level of ATP. Maps to SBML symbol `ATP`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: nicotinate_mononucleotide
+    maps_to: signaling_sbml_heiland2019_nad_pathway_model_analysing_the_impa_model1905220001_model.nicotinate_mononucleotide
+    label: nicotinate mononucleotide
+    description: nicotinate mononucleotide. Maps to SBML symbol `NaMN` and is emitted
+      in native SBML units.
+  - name: nicotinamide
+    maps_to: signaling_sbml_heiland2019_nad_pathway_model_analysing_the_impa_model1905220001_model.nicotinamide
+    label: nicotinamide
+    description: nicotinamide. Maps to SBML symbol `NAM` and is emitted in native
+      SBML units.
+  - name: nad
+    maps_to: signaling_sbml_heiland2019_nad_pathway_model_analysing_the_impa_model1905220001_model.nad
+    label: NAD
+    description: NAD. Maps to SBML symbol `NAD` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_heiland2019_nad_pathway_model_analysing_the_impa_model1905220001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_heiland2019_nad_pathway_model_analysing_the_impa_model1905220001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_heiland2019_nad_pathway_model_analysing_the_impa_model1905220001_model.species_labels
+    label: Observable labels

@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Bush2016 - Extended Carrousel model of GPCR-RGS Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Bush2016 - Extended Carrousel model of GPCR-RGS.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_bush2016_extended_carrousel_model_of_gpcr_rgs_biomd0000000638_model
+    title: Bush2016 - Extended Carrousel model of GPCR-RGS
+    context: GPCR and cAMP/PKA signaling
+    question: How does Bush2016 - Extended Carrousel model of GPCR-RGS route receptor
+      activity into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_r_state: float
+      source_defined_lr_state: float
+      source_defined_g_state: float
+      source_defined_gt_state: float
+      source_defined_gd_state: float
+      source_defined_rg_state: float
+      g_beta_gamma_complex: float
+      source_defined_lrg_state: float
+      ligand_receptor_gtp_complex: float
+      source_defined_rgd_state: float
+      source_defined_rgt_state: float
+      source_defined_lrgd_state: float
+      lrrgs: float
+      lrrgs_g: float
+      lrrgs_gd: float
+      lrrgs_gt: float
+      source_defined_rrgs_state: float
+      rrgs_g: float
+      rrgs_gd: float
+      rrgs_gt: float
+      source_defined_rgs_state: float
+    species_labels:
+      source_defined_r_state: source-defined R state
+      source_defined_lr_state: source-defined LR state
+      source_defined_g_state: source-defined G state
+      source_defined_gt_state: source-defined GT state
+      source_defined_gd_state: source-defined GD state
+      source_defined_rg_state: source-defined RG state
+      g_beta_gamma_complex: G beta-gamma complex
+      source_defined_lrg_state: source-defined LRG state
+      ligand_receptor_gtp_complex: ligand-receptor GTP complex
+      source_defined_rgd_state: source-defined RGD state
+      source_defined_rgt_state: source-defined RGT state
+      source_defined_lrgd_state: source-defined LRGD state
+      lrrgs: Lrrgs
+      lrrgs_g: Lrrgs G
+      lrrgs_gd: Lrrgs Gd
+      lrrgs_gt: Lrrgs Gt
+      source_defined_rrgs_state: source-defined RRGS state
+      rrgs_g: Rrgs G
+      rrgs_gd: Rrgs Gd
+      rrgs_gt: Rrgs Gt
+      source_defined_rgs_state: source-defined RGS state
+io:
+  inputs: []
+  outputs: []

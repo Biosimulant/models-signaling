@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "46237eb3-432d-4e2f-8c4f-ec122abbd773",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "78ffa18d-6f75-46ad-8afd-b5215ee0e46d",
+  "created_at": "2026-05-15T19:08:09.534300497+00:00",
+  "last_synced_at": "2026-05-16T09:35:47.105066+00:00",
+  "hub_manifest_hash": "770d148ea0e169712addac2e04c25b1fd791e55b4d3bbe7a64fe102fb1397802",
+  "package_name": "dupont1992-ca-dpt-protein-phospho-lab"
+}

@@ -1,0 +1,69 @@
+schema_version: '2.0'
+title: Schaber2006_Pheromone_Starvation_Crosstalk Lab
+description: 'Clean Biosimulant lab for systems signaling model: Schaber2006_Pheromone_Starvation_Crosstalk.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model.state
+  to:
+  - visualisation.signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model_state
+- from: signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model.summary
+  to:
+  - visualisation.signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model_summary
+- from: signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model.species_labels
+  to:
+  - visualisation.signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_source_defined_p_state
+    maps_to: signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model.initial_source_defined_p_state
+    label: Initial source-defined P state
+    description: Initial level of source-defined P state. Maps to SBML symbol `p`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_s_state
+    maps_to: signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model.initial_source_defined_s_state
+    label: Initial source-defined S state
+    description: Initial level of source-defined S state. Maps to SBML symbol `s`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_ste5_state
+    maps_to: signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model.source_defined_ste5_state
+    label: source-defined STE5 state
+    description: source-defined STE5 state. Maps to SBML symbol `Ste5` and is emitted
+      in native SBML units.
+  - name: ste11
+    maps_to: signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model.ste11
+    label: Ste11
+    description: Ste11. Maps to SBML symbol `Ste11` and is emitted in native SBML
+      units.
+  - name: ste5ste11
+    maps_to: signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model.ste5ste11
+    label: Ste5ste11
+    description: Ste5ste11. Maps to SBML symbol `Ste5Ste11` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_schaber2006_pheromone_starvation_crosstalk_biomd0000000237_model.species_labels
+    label: Observable labels

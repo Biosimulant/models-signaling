@@ -1,0 +1,151 @@
+schema_version: '2.0'
+title: Brummel-Ziedins2012 - Contribution of the PC pathway to thrombin generation
+  Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Brummel-Ziedins2012 - Contribution of the PC pathway to thrombin generation.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- coagulation
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_brummel_ziedins2012_contribution_of_the_pc_pathw_model1807180002_model
+    title: Brummel-Ziedins2012 - Contribution of the PC pathway to thrombin generation
+    context: metabolic and hormone signaling response
+    question: How does Brummel-Ziedins2012 - Contribution of the PC pathway to thrombin
+      generation shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_tf_state: float
+      tf_vii: float
+      source_defined_vii_state: float
+      tf_viia: float
+      source_defined_viia_state: float
+      source_defined_xa_state: float
+      source_defined_iia_state: float
+      tf_viia_x: float
+      response_node_x: float
+      tf_viia_xa: float
+      source_defined_ix_state: float
+      tf_viia_ix: float
+      activated_clotting_factor_ix: float
+      source_defined_ii_state: float
+      source_defined_viii_state: float
+      viiia: float
+      activated_clotting_factor_ix_viiia: float
+      activated_clotting_factor_ix_viiia_x: float
+      viii_ica1: float
+      viii_a2: float
+      source_defined_v_state: float
+      source_defined_va_state: float
+      source_defined_xa_va_state: float
+      xa_va_ii: float
+      source_defined_miia_state: float
+      source_defined_tfpi_state: float
+      xa_tfpi: float
+      tf_viia_xa_tfpi: float
+      atiii: float
+      xa_atiii: float
+      m_iia_atiii: float
+      activated_clotting_factor_ix_atiii: float
+      iia_atiii: float
+      tf_viia_atiii: float
+      source_defined_tm_state: float
+      tm_iia: float
+      source_defined_pc_state: float
+      tm_iia_pc: float
+      source_defined_apc_state: float
+      apc_va: float
+      source_defined_va5_state: float
+      source_defined_va3_state: float
+      apc_va5: float
+      apc_va3: float
+      va53: float
+      source_defined_hcf_state: float
+      source_defined_lca1_state: float
+      apc_lca1: float
+      tm_iia_apc: float
+      source_defined_xa_va5_state: float
+      source_defined_xa_va3_state: float
+      xa_va5_ii: float
+      xa_va3_ii: float
+      tm_m_iia: float
+      tm_m_iia_pc: float
+      xa_va53: float
+      xa_va53_ii: float
+      source_defined_ii_va_state: float
+    species_labels:
+      source_defined_tf_state: source-defined TF state
+      tf_vii: TF VII
+      source_defined_vii_state: source-defined VII state
+      tf_viia: TF Viia
+      source_defined_viia_state: source-defined VIIA state
+      source_defined_xa_state: source-defined XA state
+      source_defined_iia_state: source-defined IIA state
+      tf_viia_x: TF Viia X
+      response_node_x: response node X
+      tf_viia_xa: TF Viia Xa
+      source_defined_ix_state: source-defined IX state
+      tf_viia_ix: TF Viia IX
+      activated_clotting_factor_ix: activated clotting factor IX
+      source_defined_ii_state: source-defined II state
+      source_defined_viii_state: source-defined VIII state
+      viiia: Viiia
+      activated_clotting_factor_ix_viiia: activated clotting factor IX Viiia
+      activated_clotting_factor_ix_viiia_x: activated clotting factor IX Viiia X
+      viii_ica1: VIII Ica1
+      viii_a2: VIII A2
+      source_defined_v_state: source-defined V state
+      source_defined_va_state: source-defined VA state
+      source_defined_xa_va_state: source-defined XA_VA state
+      xa_va_ii: Xa Va II
+      source_defined_miia_state: source-defined MIIA state
+      source_defined_tfpi_state: source-defined TFPI state
+      xa_tfpi: Xa TFPI
+      tf_viia_xa_tfpi: TF Viia Xa TFPI
+      atiii: ATIII
+      xa_atiii: Xa ATIII
+      m_iia_atiii: M Iia ATIII
+      activated_clotting_factor_ix_atiii: activated clotting factor IX ATIII
+      iia_atiii: Iia ATIII
+      tf_viia_atiii: TF Viia ATIII
+      source_defined_tm_state: source-defined TM state
+      tm_iia: TM Iia
+      source_defined_pc_state: source-defined PC state
+      tm_iia_pc: TM Iia PC
+      source_defined_apc_state: source-defined APC state
+      apc_va: APC Va
+      source_defined_va5_state: source-defined VA5 state
+      source_defined_va3_state: source-defined VA3 state
+      apc_va5: APC Va5
+      apc_va3: APC Va3
+      va53: Va53
+      source_defined_hcf_state: source-defined HCF state
+      source_defined_lca1_state: source-defined LCA1 state
+      apc_lca1: APC LCA1
+      tm_iia_apc: TM Iia APC
+      source_defined_xa_va5_state: source-defined XA_VA5 state
+      source_defined_xa_va3_state: source-defined XA_VA3 state
+      xa_va5_ii: Xa Va5 II
+      xa_va3_ii: Xa Va3 II
+      tm_m_iia: TM M Iia
+      tm_m_iia_pc: TM M Iia PC
+      xa_va53: Xa Va53
+      xa_va53_ii: Xa Va53 II
+      source_defined_ii_va_state: source-defined II_VA state
+io:
+  inputs: []
+  outputs: []

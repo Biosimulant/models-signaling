@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "45049167-4294-4fe2-b510-bbf67065a9ac",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "dafcc820-bcf9-4dab-abfe-b5f3cd4df6f8",
+  "created_at": "2026-05-16T05:58:27.435177509+00:00",
+  "last_synced_at": "2026-05-16T11:09:21.583190+00:00",
+  "hub_manifest_hash": "a523ada0faf19f218157e9842f794f19f751e1aaab38215289f2230f478d554b",
+  "package_name": "smith2013-regulation-of-insulin-signalling-by-oxidative-stress-l"
+}

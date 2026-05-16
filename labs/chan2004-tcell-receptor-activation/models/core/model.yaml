@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Chan2004_TCell_receptor_activation
+description: The model reproduces Fig 3a of the paper. Please note that the authors
+  mention that they used a value of 2 for n, n being the power in the positive feedback
+  function for kinase autocatalysis, however.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+authors:
+- Biosimulant Team
+- Cliburn Chan
+- Jaroslav Stark
+- Andrew J T George
+upstream:
+  id: biomodels_ebi:BIOMD0000000120
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000120
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000120
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000120?filename=BIOMD0000000120_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.chan2004_tcell_receptor_activation:Chan2004TcellReceptorActivationBiomd0000000120Model
+  init_kwargs:
+    model_path: data/BIOMD0000000120.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_inactive_lck
+    maps_to: signaling_sbml_chan2004_tcell_receptor_activation_biomd0000000120_model.initial_inactive_lck
+    label: Initial Inactive Lck
+    description: Initial level of Inactive Lck. Maps to SBML symbol `lck_inactive`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: inactive_lck
+    maps_to: signaling_sbml_chan2004_tcell_receptor_activation_biomd0000000120_model.inactive_lck
+    label: Inactive Lck
+    description: Inactive Lck. Maps to SBML symbol `lck_inactive` and is emitted in
+      native SBML units.
+  - name: active_lck
+    maps_to: signaling_sbml_chan2004_tcell_receptor_activation_biomd0000000120_model.active_lck
+    label: active Lck
+    description: active Lck. Maps to SBML symbol `lck_active` and is emitted in native
+      SBML units.
+  - name: inactive_phosphatase
+    maps_to: signaling_sbml_chan2004_tcell_receptor_activation_biomd0000000120_model.inactive_phosphatase
+    label: Inactive Phosphatase
+    description: Inactive Phosphatase. Maps to SBML symbol `phosphatase_inactive`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_chan2004_tcell_receptor_activation_biomd0000000120_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_chan2004_tcell_receptor_activation_biomd0000000120_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_chan2004_tcell_receptor_activation_biomd0000000120_model.species_labels
+    label: Observable labels

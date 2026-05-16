@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Pathak2013 - MAPK activation in response to various biotic stresses
+description: Pathak2013 - MAPK activation in response to various biotic stresses MAPK
+  activation mechanism in response to various biotic (fungal and bacterial pathogens)
+  stress conditions in plants This model is d. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- stress-response
+- plant-signaling
+authors:
+- Biosimulant Team
+- Rajesh Kumar Pathak
+- Gohar Taj
+- Dinesh Pandey
+- Sandeep Arora
+- Anil Kumar
+upstream:
+  id: biomodels_ebi:BIOMD0000000492
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000492
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000492
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000492?filename=BIOMD0000000492_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.pathak2013_mapk_activation_in_response_to_variou_biomd0000000492:Pathak2013MapkActivationInResponseToVariouBiomd0000000492Model
+  init_kwargs:
+    model_path: data/BIOMD0000000492.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_fungal_pathogen
+    maps_to: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000492_model.initial_fungal_pathogen
+    label: Initial Fungal Pathogen
+    description: Initial level of Fungal Pathogen. Maps to SBML symbol `s1`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: mapkkk
+    maps_to: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000492_model.mapkkk
+    label: MAPKKK
+    description: MAPKKK. Maps to SBML symbol `s7` and is emitted in native SBML units.
+  - name: mapkkk_2
+    maps_to: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000492_model.mapkkk_2
+    label: MAPKKK
+    description: MAPKKK. Maps to SBML symbol `s8` and is emitted in native SBML units.
+  - name: mapkkk1
+    maps_to: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000492_model.mapkkk1
+    label: MAPKKK1
+    description: MAPKKK1. Maps to SBML symbol `s9` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000492_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000492_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000492_model.species_labels
+    label: Observable labels

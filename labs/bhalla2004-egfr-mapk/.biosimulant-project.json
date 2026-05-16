@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "df214a60-15ea-45bb-a291-5424666e0b9c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b59eddb3-c768-4822-a576-27f135fda4de",
+  "created_at": "2026-05-15T19:08:08.946134644+00:00",
+  "last_synced_at": "2026-05-16T09:07:00.095117+00:00",
+  "hub_manifest_hash": "fca6f6de61a42499b45b665fbe0004b17809a854574d0c86b49158f872de8ee9",
+  "package_name": "bhalla2004-egfr-mapk-lab"
+}

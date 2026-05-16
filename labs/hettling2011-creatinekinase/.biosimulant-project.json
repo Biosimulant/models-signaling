@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2faf36b1-25c0-4d83-b45f-eb7062980faf",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f7afbe2c-84d8-4183-b5e4-348ec66f2639",
+  "created_at": "2026-05-15T19:08:09.965468648+00:00",
+  "last_synced_at": "2026-05-16T09:48:41.427118+00:00",
+  "hub_manifest_hash": "21102683b4f78038ffaad19da9e7df59040af89e21e64640b852a00424d0daca",
+  "package_name": "hettling2011-creatinekinase-lab"
+}

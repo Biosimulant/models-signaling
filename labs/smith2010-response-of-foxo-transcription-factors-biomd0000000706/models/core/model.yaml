@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Smith2010 - Response of FOXO Transcription Factors to Post-Translational Modifications
+  (with acetylation pathway)
+description: Graham R. It can be used to explore signaling dynamics and compare pathway
+  response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Graham R Smith
+- Daryl P Shanley
+upstream:
+  id: biomodels_ebi:BIOMD0000000706
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000706
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000706
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000706?filename=BIOMD0000000706_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.smith2010_response_of_foxo_transcription_factors_biomd0000000706:Smith2010ResponseOfFoxoTranscriptionFactorsBiomd0000000706Model
+  init_kwargs:
+    model_path: data/BIOMD0000000706.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cytoplasm_foxo1_tot
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.initial_cytoplasm_foxo1_tot
+    label: Initial Cytoplasm Foxo1 Tot
+    description: Initial level of Cytoplasm Foxo1 Tot. Maps to SBML symbol `cytoplasm_Foxo1_tot`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_dnabound_foxo1_tot
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.initial_dnabound_foxo1_tot
+    label: Initial Dnabound Foxo1 Tot
+    description: Initial level of Dnabound Foxo1 Tot. Maps to SBML symbol `dnabound_Foxo1_tot`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_foxo1_acetylated_tot
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.initial_foxo1_acetylated_tot
+    label: Initial Foxo1 Acetylated Tot
+    description: Initial level of Foxo1 Acetylated Tot. Maps to SBML symbol `Foxo1_Ac1_tot`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: cytoplasm_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.cytoplasm_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated
+    label: Cytoplasm Foxo1 Unphosphorylated Unacetylated Notpolyubiquitinated
+    description: Cytoplasm Foxo1 Unphosphorylated Unacetylated Notpolyubiquitinated.
+      Maps to SBML symbol `cytoplasm_Foxo1_Pa0_Ac0_pUb0` and is emitted in native
+      SBML units.
+  - name: nucleus_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.nucleus_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated
+    label: Nucleus Foxo1 Unphosphorylated Unacetylated Notpolyubiquitinated
+    description: Nucleus Foxo1 Unphosphorylated Unacetylated Notpolyubiquitinated.
+      Maps to SBML symbol `nucleus_Foxo1_Pa0_Ac0_pUb0` and is emitted in native SBML
+      units.
+  - name: dnabound_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.dnabound_foxo1_unphosphorylated_unacetylated_notpolyubiquitinated
+    label: Dnabound Foxo1 Unphosphorylated Unacetylated Notpolyubiquitinated
+    description: Dnabound Foxo1 Unphosphorylated Unacetylated Notpolyubiquitinated.
+      Maps to SBML symbol `dnabound_Foxo1_Pa0_Ac0_pUb0` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_smith2010_response_of_foxo_transcription_factors_biomd0000000706_model.species_labels
+    label: Observable labels

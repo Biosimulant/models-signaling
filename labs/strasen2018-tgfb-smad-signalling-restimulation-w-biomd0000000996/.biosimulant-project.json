@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8820e8f6-70e2-4cb4-abde-a097d94b2a1a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "14dff5e3-313a-4714-aedf-ef119a0383e8",
+  "created_at": "2026-05-16T05:58:28.135323130+00:00",
+  "last_synced_at": "2026-05-16T11:14:48.166944+00:00",
+  "hub_manifest_hash": "9c0f87eea1fee34ae4651e1cafb4c0d35b3a093e9190b7c216aec6f4e1c0f3d4",
+  "package_name": "strasen2018-tgfb-smad-signalling-restimulation-with-100pm-tgfb-a"
+}

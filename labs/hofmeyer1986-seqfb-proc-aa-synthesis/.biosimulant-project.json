@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "dfee3079-9f6a-43d4-98fb-cad402397b4d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "97838362-a283-4b9c-8e55-856c8111f11f",
+  "created_at": "2026-05-15T19:08:10.025399788+00:00",
+  "last_synced_at": "2026-05-16T09:50:15.472336+00:00",
+  "hub_manifest_hash": "db771e6c007b937445d7353314bb3a60068beecb5dc135d5bc7a313ce80cb6c8",
+  "package_name": "hofmeyer1986-seqfb-proc-aa-synthesis-lab"
+}

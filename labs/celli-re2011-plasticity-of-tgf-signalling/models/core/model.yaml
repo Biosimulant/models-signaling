@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Cellière2011 - Plasticity of TGF-β Signalling
+description: Cellière2011 - Plasticity of TGF-β Signalling Transforming growth factor
+  beta (TGF-β) signalling has been implicated as an important regulator of almost
+  all major cell behaviours, including proliferat. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Geraldine Cellière
+- Georgios Fengos
+- Marianne Hervé
+- Dagmar Iber
+upstream:
+  id: biomodels_ebi:BIOMD0000000600
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000600
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000600
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000600?filename=BIOMD0000000600_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.celli_re2011_plasticity_of_tgf_signalling:CelliRe2011PlasticityOfTgfSignallingBiomd0000000600Model
+  init_kwargs:
+    model_path: data/BIOMD0000000600.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_tgf_beta
+    maps_to: signaling_sbml_celli_re2011_plasticity_of_tgf_signalling_biomd0000000600_model.initial_tgf_beta
+    label: Initial TGF-beta
+    description: Initial level of TGF-beta. Maps to SBML symbol `TGFb`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_i_smad_tgf_beta_tgf_beta_r_p
+    maps_to: signaling_sbml_celli_re2011_plasticity_of_tgf_signalling_biomd0000000600_model.initial_i_smad_tgf_beta_tgf_beta_r_p
+    label: Initial I SMAD TGF-beta TGF-beta R P
+    description: Initial level of I SMAD TGF-beta TGF-beta R P. Maps to SBML symbol
+      `I_Smad_TGFb_TGFbR_P`; exposed as a traceable initial-condition perturbation.
+  - name: initial_tgf_beta_tgf_beta_r
+    maps_to: signaling_sbml_celli_re2011_plasticity_of_tgf_signalling_biomd0000000600_model.initial_tgf_beta_tgf_beta_r
+    label: Initial TGF-beta TGF-beta R
+    description: Initial level of TGF-beta TGF-beta R. Maps to SBML symbol `TGFb_TGFbR`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: i_smad_tgf_beta_tgf_beta_r_p
+    maps_to: signaling_sbml_celli_re2011_plasticity_of_tgf_signalling_biomd0000000600_model.i_smad_tgf_beta_tgf_beta_r_p
+    label: I SMAD TGF-beta TGF-beta R P
+    description: I SMAD TGF-beta TGF-beta R P. Maps to SBML symbol `I_Smad_TGFb_TGFbR_P`
+      and is emitted in native SBML units.
+  - name: smad
+    maps_to: signaling_sbml_celli_re2011_plasticity_of_tgf_signalling_biomd0000000600_model.smad
+    label: SMAD
+    description: SMAD. Maps to SBML symbol `Smad` and is emitted in native SBML units.
+  - name: smad_p
+    maps_to: signaling_sbml_celli_re2011_plasticity_of_tgf_signalling_biomd0000000600_model.smad_p
+    label: SMAD P
+    description: SMAD P. Maps to SBML symbol `Smad_P` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_celli_re2011_plasticity_of_tgf_signalling_biomd0000000600_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_celli_re2011_plasticity_of_tgf_signalling_biomd0000000600_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_celli_re2011_plasticity_of_tgf_signalling_biomd0000000600_model.species_labels
+    label: Observable labels

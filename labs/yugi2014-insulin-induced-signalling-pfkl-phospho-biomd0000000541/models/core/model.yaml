@@ -1,0 +1,84 @@
+schema_version: '2.0'
+title: Yugi2014 - Insulin induced signalling (PFKL phosphorylation) - model 2
+description: Yugi2014 - Insulin induced signalling (PFKLphosphorylation) - model 2
+  Insulin induces phosphorylation and activation of liver-type phosphofructokinase
+  1, which thereby controls a key reaction in glyco. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+- hormone-signaling
+authors:
+- Biosimulant Team
+- Katsuyuki Yugi
+- Hiroyuki Kubota
+- Yu Toyoshima
+- Rei Noguchi
+- Kentaro Kawata
+upstream:
+  id: biomodels_ebi:BIOMD0000000541
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000541
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000541
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000541?filename=BIOMD0000000541_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000541:Yugi2014InsulinInducedSignallingPfklPhosphoBiomd0000000541Model
+  init_kwargs:
+    model_path: data/BIOMD0000000541.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_akt
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000541_model.initial_akt
+    label: Initial AKT
+    description: Initial level of AKT. Maps to SBML symbol `s28`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_f6p_proxy
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000541_model.initial_f6p_proxy
+    label: Initial F6P Proxy
+    description: Initial level of F6P Proxy. Maps to SBML symbol `s22`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_abstract_source_state_s34
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000541_model.initial_abstract_source_state_s34
+    label: Initial Abstract source state S34
+    description: Initial level of Abstract source state S34. Maps to SBML symbol `s34`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: insulin_receptor_complex
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000541_model.insulin_receptor_complex
+    label: insulin receptor Complex
+    description: insulin receptor Complex. Maps to SBML symbol `s23` and is emitted
+      in native SBML units.
+  - name: pro_insulin_receptor_complex
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000541_model.pro_insulin_receptor_complex
+    label: Pro insulin receptor Complex
+    description: Pro insulin receptor Complex. Maps to SBML symbol `s24` and is emitted
+      in native SBML units.
+  - name: p1ir_complex
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000541_model.p1ir_complex
+    label: P1ir Complex
+    description: P1ir Complex. Maps to SBML symbol `s25` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000541_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000541_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000541_model.species_labels
+    label: Observable labels

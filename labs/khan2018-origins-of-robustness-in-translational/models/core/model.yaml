@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Khan2018 - Origins of robustness in translational control via eukaryotic translation
+  initiation factor (eIF) 2
+description: This is a ordinary differential equation-based model of the eukaryotic
+  translation initiation factor (eIF2) phosphorylation pathway, a pathway important
+  for regulating protein synthesis activity in eu. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+authors:
+- Biosimulant Team
+- Mohammad Farhan Khan
+- Sarah Spurgeon
+- Tobias von der Haar
+upstream:
+  id: biomodels_ebi:MODEL1911120001
+  source_db: biomodels_ebi
+  source_id: MODEL1911120001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1911120001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1911120001?filename=Khan2018.xml
+  license: CC0
+biosim:
+  entrypoint: src.khan2018_origins_of_robustness_in_translational:Khan2018OriginsOfRobustnessInTranslationalModel1911120001Model
+  init_kwargs:
+    model_path: data/MODEL1911120001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_e_if2_gdp
+    maps_to: signaling_sbml_khan2018_origins_of_robustness_in_translational_model1911120001_model.initial_e_if2_gdp
+    label: Initial E IF2 GDP
+    description: Initial level of E IF2 GDP. Maps to SBML symbol `eIF2_GDP`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: e_if2_gdp
+    maps_to: signaling_sbml_khan2018_origins_of_robustness_in_translational_model1911120001_model.e_if2_gdp
+    label: E IF2 GDP
+    description: E IF2 GDP. Maps to SBML symbol `eIF2_GDP` and is emitted in native
+      SBML units.
+  - name: e_if2b
+    maps_to: signaling_sbml_khan2018_origins_of_robustness_in_translational_model1911120001_model.e_if2b
+    label: E IF2B
+    description: E IF2B. Maps to SBML symbol `eIF2B` and is emitted in native SBML
+      units.
+  - name: e_if2_gtp
+    maps_to: signaling_sbml_khan2018_origins_of_robustness_in_translational_model1911120001_model.e_if2_gtp
+    label: E IF2 GTP
+    description: E IF2 GTP. Maps to SBML symbol `eIF2_GTP` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_khan2018_origins_of_robustness_in_translational_model1911120001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_khan2018_origins_of_robustness_in_translational_model1911120001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_khan2018_origins_of_robustness_in_translational_model1911120001_model.species_labels
+    label: Observable labels

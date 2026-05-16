@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "518fdf21-e2b2-4603-b381-1d6bf4a8df18",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e9e7aa38-3309-44c6-b833-e5e783fba52e",
+  "created_at": "2026-05-16T05:51:46.261908288+00:00",
+  "last_synced_at": "2026-05-16T10:45:00.111974+00:00",
+  "hub_manifest_hash": "b498e6db91b01bb29f3a8a2c5421826e2393909e230fd09cbc304e9827ab7dab",
+  "package_name": "sackmann2006-mating-pheromone-response-pathway-of-s-cerevisiae-l"
+}

@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Neumann2010_CD95Stimulation_NFkB_Apoptosis Lab
+description: Clean Biosimulant lab for NF-kB pathway signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model.state
+  to:
+  - visualisation.signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model_state
+- from: signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model.summary
+  to:
+  - visualisation.signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model_summary
+- from: signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model.species_labels
+  to:
+  - visualisation.signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- apoptosis
+io:
+  inputs:
+  - name: initial_source_defined_l_state
+    maps_to: signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model.initial_source_defined_l_state
+    label: Initial source-defined L state
+    description: Initial level of source-defined L state. Maps to SBML symbol `L`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: nf_k_b_ik_b
+    maps_to: signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model.nf_k_b_ik_b
+    label: NF K B Ik B
+    description: NF K B Ik B. Maps to SBML symbol `NF_kB_IkB` and is emitted in native
+      SBML units.
+  - name: nf_k_b_ik_b_p
+    maps_to: signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model.nf_k_b_ik_b_p
+    label: NF K B Ik B P
+    description: NF K B Ik B P. Maps to SBML symbol `NF_kB_IkB_P` and is emitted in
+      native SBML units.
+  - name: nfkb
+    maps_to: signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model.nfkb
+    label: NF-kB
+    description: NF-kB. Maps to SBML symbol `NF_kB_star` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_neumann2010_cd95stimulation_nfkb_apoptosis_biomd0000000243_model.species_labels
+    label: Observable labels

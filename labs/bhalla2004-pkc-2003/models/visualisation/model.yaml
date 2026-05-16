@@ -1,0 +1,67 @@
+schema_version: '2.0'
+title: Bhalla2004_PKC_2003 Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Bhalla2004_PKC_2003.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- camp-pka
+- gpcr
+- neuroscience
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_bhalla2004_pkc_2003_model9080388197_model
+    title: Bhalla2004_PKC_2003
+    context: GPCR and cAMP/PKA signaling
+    question: How does Bhalla2004 PKC 2003 route receptor activity into cAMP/PKA-linked
+      readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      calcium_bound_pkc: float
+      dag_and_arachidonic_acid_active_pkc: float
+      arachidonic_acid_active_calcium_bound_pkc: float
+      membrane_active_calcium_bound_pkc: float
+      membrane_active_dag_bound_pkc: float
+      basal_active_pkc: float
+      arachidonic_acid_active_pkc: float
+      calcium_and_dag_bound_pkc: float
+      dag_bound_pkc: float
+      dag_and_arachidonic_acid_bound_pkc: float
+      cytosolic_pkc: float
+      dag: float
+      calcium: float
+      source_defined_aa_state: float
+      active_pkc: float
+    species_labels:
+      calcium_bound_pkc: Calcium bound PKC
+      dag_and_arachidonic_acid_active_pkc: DAG And Arachidonic Acid active PKC
+      arachidonic_acid_active_calcium_bound_pkc: Arachidonic Acid active Calcium bound
+        PKC
+      membrane_active_calcium_bound_pkc: Membrane active Calcium bound PKC
+      membrane_active_dag_bound_pkc: Membrane active DAG bound PKC
+      basal_active_pkc: Basal active PKC
+      arachidonic_acid_active_pkc: Arachidonic Acid active PKC
+      calcium_and_dag_bound_pkc: Calcium And DAG bound PKC
+      dag_bound_pkc: DAG bound PKC
+      dag_and_arachidonic_acid_bound_pkc: DAG And Arachidonic Acid bound PKC
+      cytosolic_pkc: cytosolic PKC
+      dag: DAG
+      calcium: Calcium
+      source_defined_aa_state: Source Defined AA State
+      active_pkc: active PKC
+io:
+  inputs: []
+  outputs: []

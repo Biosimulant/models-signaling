@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Mechanotransduction & Inflammation
+description: 'Deep review of our previous model MODEL2302150001 and publication Dent
+  et al., 2015 ( Mechanotransduction map: simulation model, molecular pathway, gene
+  set ) with more mechanical stimuli and specific. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- immune-signaling
+authors:
+- Biosimulant Team
+- Christine Nardini
+upstream:
+  id: biomodels_ebi:MODEL2406110001
+  source_db: biomodels_ebi
+  source_id: MODEL2406110001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2406110001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2406110001?filename=MechanotransductionSBMLPathway_17.10.24.xml
+  license: CC0
+biosim:
+  entrypoint: src.nardini2015_mechanotransduction_and_inflammation:MechanotransductionAndInflammationModel2406110001Model
+  init_kwargs:
+    model_path: data/MODEL2406110001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_calcium_state
+    maps_to: signaling_sbml_mechanotransduction_and_inflammation_model2406110001_model.initial_source_defined_calcium_state
+    label: Initial source-defined CA2+ state
+    description: Initial level of source-defined CA2+ state. Maps to SBML symbol `s423`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_calcium_state_2
+    maps_to: signaling_sbml_mechanotransduction_and_inflammation_model2406110001_model.initial_source_defined_calcium_state_2
+    label: Initial source-defined CA2+ state
+    description: Initial level of source-defined CA2+ state. Maps to SBML symbol `s425`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_camp
+    maps_to: signaling_sbml_mechanotransduction_and_inflammation_model2406110001_model.initial_camp
+    label: Initial cAMP
+    description: Initial level of cAMP. Maps to SBML symbol `s859`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: source_defined_nfkb1_state
+    maps_to: signaling_sbml_mechanotransduction_and_inflammation_model2406110001_model.source_defined_nfkb1_state
+    label: source-defined NFKB1 state
+    description: source-defined NFKB1 state. Maps to SBML symbol `s15` and is emitted
+      in native SBML units.
+  - name: source_defined_akt1_state
+    maps_to: signaling_sbml_mechanotransduction_and_inflammation_model2406110001_model.source_defined_akt1_state
+    label: source-defined AKT1 state
+    description: source-defined AKT1 state. Maps to SBML symbol `s866` and is emitted
+      in native SBML units.
+  - name: arp2_3_complex
+    maps_to: signaling_sbml_mechanotransduction_and_inflammation_model2406110001_model.arp2_3_complex
+    label: ARP2 3 Complex
+    description: ARP2 3 Complex. Maps to SBML symbol `s907` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_mechanotransduction_and_inflammation_model2406110001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_mechanotransduction_and_inflammation_model2406110001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_mechanotransduction_and_inflammation_model2406110001_model.species_labels
+    label: Observable labels

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f5c3bfbd-d219-44ec-8c7d-e75c813f115d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "47545661-d55f-45ca-9f72-c3ad44df6745",
+  "created_at": "2026-05-15T19:08:09.591695187+00:00",
+  "last_synced_at": "2026-05-16T09:37:24.568129+00:00",
+  "hub_manifest_hash": "91511c8f7da8e832b8efaf9c214c775926607a73fc8bd17958f3c3a8dfc9f37f",
+  "package_name": "fujita2010-akt-signalling-ngf-lab"
+}

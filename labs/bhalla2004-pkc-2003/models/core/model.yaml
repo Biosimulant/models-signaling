@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Bhalla2004_PKC_2003
+description: This model consists of receptor-ligand interaction, G-protein activation,
+  Adenylyl cyclase mediated formation of cAMP and activation of PKA in the neuron.
+  It can be used to explore signaling dynamics and compare pathway response across
+  conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- camp-pka
+- gpcr
+- neuroscience
+- physiology
+authors:
+- Biosimulant Team
+- Upinder S Bhalla
+upstream:
+  id: biomodels_ebi:MODEL9080388197
+  source_db: biomodels_ebi
+  source_id: MODEL9080388197
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL9080388197
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9080388197?filename=MODEL9080388197_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bhalla2004_pkc_2003:Bhalla2004Pkc2003Model9080388197Model
+  init_kwargs:
+    model_path: data/MODEL9080388197.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_dag
+    maps_to: signaling_sbml_bhalla2004_pkc_2003_model9080388197_model.initial_dag
+    label: Initial DAG
+    description: Initial level of DAG. Maps to SBML symbol `DAG`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_source_defined_aa_state
+    maps_to: signaling_sbml_bhalla2004_pkc_2003_model9080388197_model.initial_source_defined_aa_state
+    label: Initial source-defined AA state
+    description: Initial level of source-defined AA state. Maps to SBML symbol `AA`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_calcium
+    maps_to: signaling_sbml_bhalla2004_pkc_2003_model9080388197_model.initial_calcium
+    label: Initial calcium
+    description: Initial level of calcium. Maps to SBML symbol `Ca`; exposed as a
+      traceable initial-condition perturbation.
+  outputs:
+  - name: calcium_bound_pkc
+    maps_to: signaling_sbml_bhalla2004_pkc_2003_model9080388197_model.calcium_bound_pkc
+    label: Calcium bound PKC
+    description: Calcium bound PKC. Maps to SBML symbol `PKC_slash_PKC_minus_Ca` and
+      is emitted in native SBML units.
+  - name: arachidonic_acid_active_calcium_bound_pkc
+    maps_to: signaling_sbml_bhalla2004_pkc_2003_model9080388197_model.arachidonic_acid_active_calcium_bound_pkc
+    label: Arachidonic Acid active Calcium bound PKC
+    description: Arachidonic Acid active Calcium bound PKC. Maps to SBML symbol `PKC_slash_PKC_minus_Ca_minus_AA_star_`
+      and is emitted in native SBML units.
+  - name: membrane_active_calcium_bound_pkc
+    maps_to: signaling_sbml_bhalla2004_pkc_2003_model9080388197_model.membrane_active_calcium_bound_pkc
+    label: Membrane active Calcium bound PKC
+    description: Membrane active Calcium bound PKC. Maps to SBML symbol `PKC_slash_PKC_minus_Ca_minus_memb_star_`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_bhalla2004_pkc_2003_model9080388197_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_bhalla2004_pkc_2003_model9080388197_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_bhalla2004_pkc_2003_model9080388197_model.species_labels
+    label: Observable labels

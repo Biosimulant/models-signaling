@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "aba4f7b7-c23c-4bc0-991f-3c09856df656",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7ed555c4-5940-45e6-bbe8-29cb84549568",
+  "created_at": "2026-05-16T05:38:38.526887014+00:00",
+  "last_synced_at": "2026-05-16T10:25:33.293838+00:00",
+  "hub_manifest_hash": "9872f34b152a4341746d1060394b3170fd4fa7205d6b9b6ae280461df7f1839a",
+  "package_name": "mechanotransduction-inflammation-lab"
+}

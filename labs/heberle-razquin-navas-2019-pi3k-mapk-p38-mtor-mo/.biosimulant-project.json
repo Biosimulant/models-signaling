@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c283c908-08a1-4645-a865-6420b96bbd71",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3768398a-c2e4-4796-9058-45fbfa4f21af",
+  "created_at": "2026-05-15T19:08:09.843267834+00:00",
+  "last_synced_at": "2026-05-16T09:45:54.616530+00:00",
+  "hub_manifest_hash": "84f4dac513f17e95944e83bf089126fdcb5362a18e4d4b0cfe0a13f9051aa539",
+  "package_name": "heberle-razquin-navas-2019-pi3k-mapk-p38-mtor-model-v-lab"
+}

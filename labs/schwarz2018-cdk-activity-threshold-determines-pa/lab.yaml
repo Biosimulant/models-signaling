@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Schwarz2018-Cdk Activity Threshold Determines Passage through the Restriction
+  Point Lab
+description: Clean Biosimulant lab for cell-cycle regulatory signaling. Values are
+  native SBML quantities; equations, parameters, and initial values remain in the
+  bundled source file.
+models:
+- alias: signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model.state
+  to:
+  - visualisation.signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model_state
+- from: signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model.summary
+  to:
+  - visualisation.signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model_summary
+- from: signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model.species_labels
+  to:
+  - visualisation.signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+io:
+  inputs:
+  - name: initial_myc_transcription_factor
+    maps_to: signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model.initial_myc_transcription_factor
+    label: Initial MYC transcription factor
+    description: Initial level of MYC transcription factor. Maps to SBML symbol `Myc`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: phosphorylated_rb
+    maps_to: signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model.phosphorylated_rb
+    label: Phosphorylated Rb
+    description: Phosphorylated Rb. Maps to SBML symbol `Phosphorylated_Rb` and is
+      emitted in native SBML units.
+  - name: rb_e2f_complex
+    maps_to: signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model.rb_e2f_complex
+    label: Rb E2F Complex
+    description: Rb E2F Complex. Maps to SBML symbol `Rb_E2F_complex` and is emitted
+      in native SBML units.
+  - name: myc_transcription_factor
+    maps_to: signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model.myc_transcription_factor
+    label: MYC transcription factor
+    description: MYC transcription factor. Maps to SBML symbol `Myc` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model.species_labels
+    label: Observable labels

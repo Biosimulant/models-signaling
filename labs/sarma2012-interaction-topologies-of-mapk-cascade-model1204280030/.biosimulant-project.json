@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ceb076a8-5fca-438f-b54a-b3ca754150dc",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1fc4f0ed-e72c-4b0a-96c3-76bfccf2179c",
+  "created_at": "2026-05-16T05:58:25.787227930+00:00",
+  "last_synced_at": "2026-05-16T10:54:58.087658+00:00",
+  "hub_manifest_hash": "28d2a10ec7f503ead05ebfdc10a277eda02e8419368acc051e4bae81dc62d6dc",
+  "package_name": "sarma2012-interaction-topologies-of-mapk-cascade-m2-k2-pseq-shor"
+}

@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Huarat2016 -Starvation-induced Ser/Thr protein kinase ArnS (Saci_1181) (Model
+  14)
+description: 'Huarat2016 -Starvation-induced Ser/Thrprotein kinase ArnS (Saci_1181)
+  (Model 14) This model is described in the article: ArnS, a kinase involved in starvation-induced
+  archaellum expression. It can be used to explore signaling dynamics and compare
+  pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- camp-pka
+authors:
+- Biosimulant Team
+- M Florencia Haurat
+- Ana Sofia Figueiredo
+- Lena Hoffmann
+- Lingling Li
+- Katharina Herr
+upstream:
+  id: biomodels_ebi:MODEL1607210000
+  source_db: biomodels_ebi
+  source_id: MODEL1607210000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1607210000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1607210000?filename=MODEL1607210000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.huarat2016_starvation_induced_ser_thr_protein_ki:Huarat2016StarvationInducedSerThrProteinKiModel1607210000Model
+  init_kwargs:
+    model_path: data/MODEL1607210000.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_arns_state
+    maps_to: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.initial_source_defined_arns_state
+    label: Initial source-defined ARNS state
+    description: Initial level of source-defined ARNS state. Maps to SBML symbol `saci1181`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_nfb_state
+    maps_to: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.source_defined_nfb_state
+    label: source-defined NFB state
+    description: source-defined NFB state. Maps to SBML symbol `nFB` and is emitted
+      in native SBML units.
+  - name: source_defined_nfb2_state
+    maps_to: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.source_defined_nfb2_state
+    label: source-defined NFB2 state
+    description: source-defined NFB2 state. Maps to SBML symbol `nFB2` and is emitted
+      in native SBML units.
+  - name: source_defined_arns_state
+    maps_to: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.source_defined_arns_state
+    label: source-defined ARNS state
+    description: source-defined ARNS state. Maps to SBML symbol `saci1181` and is
+      emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_huarat2016_starvation_induced_ser_thr_protein_ki_model1607210000_model.species_labels
+    label: Observable labels

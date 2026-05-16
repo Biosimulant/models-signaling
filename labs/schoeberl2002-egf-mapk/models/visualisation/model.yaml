@@ -1,0 +1,271 @@
+schema_version: '2.0'
+title: Schoeberl2002 - EGF MAPK Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model
+    title: Schoeberl2002 - EGF MAPK
+    context: receptor-to-MAPK cascade signaling
+    question: How does Schoeberl2002 - EGF MAPK propagate receptor or RAS/ERK pathway
+      activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      egf: float
+      egfr: float
+      egf_egfr: float
+      egf_egfr_2: float
+      egf_egfr_2_2: float
+      egfri: float
+      egf_egfr_2_gap_grb2_adapter_protein_prot: float
+      egf_egfri_2: float
+      proti: float
+      egf_egfri: float
+      egf_egfri_2_2: float
+      source_defined_prot_state: float
+      egfideg: float
+      source_defined_gap_state: float
+      egf_egfr_2_gap: float
+      source_defined_egfi_state: float
+      egf_egfri_2_gap: float
+      egf_egfri_2_gap_grb2_adapter_protein: float
+      egf_egfri_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      egf_egfri_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      egf_egfri_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      grb2_adapter_protein: float
+      egf_egfr_2_gap_grb2_adapter_protein: float
+      sos_guanine_nucleotide_exchange_factor: float
+      egf_egfr_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      ras_gdp: float
+      egf_egfr_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      ras_gtp: float
+      egf_egfr_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      shc_adapter_protein: float
+      egf_egfr_2_gap_shc_adapter_protein: float
+      egf_egfr_2_gap_shc_adapter_protein_2: float
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein: float
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      shc_adapter_protein_grb2_adapter_protein: float
+      shc_adapter_protein_2: float
+      raf: float
+      raf_ras_gtp: float
+      ras_gtp_2: float
+      phosphotase1: float
+      raf_2: float
+      raf_p_ase: float
+      mek: float
+      mek_raf: float
+      source_defined_mek_p_state: float
+      mek_p_raf: float
+      mek_pp: float
+      mek_pp_p_ase2: float
+      phosphatase2: float
+      mek_p_p_ase2: float
+      erk: float
+      erk_mek_pp: float
+      source_defined_erk_p_state: float
+      erk_p_mek_pp: float
+      erk_pp: float
+      phosphotase3: float
+      erk_pp_p_ase3: float
+      erk_p_p_ase3: float
+      egf_egfri_2_gap_shc_adapter_protein: float
+      egf_egfri_2_gap_shc_adapter_protein_2: float
+      egf_egfri_2_gap_shc_adapter_protein_grb2_adapter_protein: float
+      egf_egfri_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: float
+      egf_egfri_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: float
+      egf_egfri_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: float
+      rasi_gtp: float
+      rafi_rasi_gtp: float
+      rasi_gtp_2: float
+      source_defined_rafi_state: float
+      rafi_p_ase: float
+      meki_rafi: float
+      meki_p: float
+      meki_p_rafi: float
+      meki_pp: float
+      meki_pp_p_ase2i: float
+      meki_p_p_ase2i: float
+      erki_meki_pp: float
+      erki_p: float
+      erki_p_meki_pp: float
+      erki_pp: float
+      erki_pp_p_ase3i: float
+      erki_p_p_ase3i: float
+      egfrideg: float
+      egf_egfri_2deg: float
+      egf_egfr_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_prot: float
+      egf_egfr_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_prot: float
+      egf_egfr_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_prot: float
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein_prot: float
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_prot: float
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_prot: float
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_prot: float
+      source_defined_t_raf_state: float
+      t_ras_gtp: float
+      t_mek_pp: float
+      t_erk_pp: float
+      t_shc_adapter_protein_p_t: float
+      t_egf_egfr: float
+    species_labels:
+      egf: EGF
+      egfr: EGFR
+      egf_egfr: EGF EGFR
+      egf_egfr_2: EGF EGFR 2
+      egf_egfr_2_2: EGF EGFR 2
+      egfri: Egfri
+      egf_egfr_2_gap_grb2_adapter_protein_prot: EGF EGFR 2 GAP Grb2 adapter protein
+        Prot
+      egf_egfri_2: EGF Egfri 2
+      proti: Proti
+      egf_egfri: EGF Egfri
+      egf_egfri_2_2: EGF Egfri 2
+      source_defined_prot_state: source-defined PROT state
+      egfideg: Egfideg
+      source_defined_gap_state: source-defined GAP state
+      egf_egfr_2_gap: EGF EGFR 2 GAP
+      source_defined_egfi_state: source-defined EGFI state
+      egf_egfri_2_gap: EGF Egfri 2 GAP
+      egf_egfri_2_gap_grb2_adapter_protein: EGF Egfri 2 GAP Grb2 adapter protein
+      egf_egfri_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: EGF
+        Egfri 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      egf_egfri_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: EGF
+        Egfri 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor RAS
+        GDP
+      egf_egfri_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: EGF
+        Egfri 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor RAS
+        GTP
+      grb2_adapter_protein: Grb2 adapter protein
+      egf_egfr_2_gap_grb2_adapter_protein: EGF EGFR 2 GAP Grb2 adapter protein
+      sos_guanine_nucleotide_exchange_factor: SOS guanine-nucleotide exchange factor
+      egf_egfr_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: EGF
+        EGFR 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      ras_gdp: RAS GDP
+      egf_egfr_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: EGF
+        EGFR 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor RAS
+        GDP
+      ras_gtp: RAS GTP
+      egf_egfr_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: EGF
+        EGFR 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor RAS
+        GTP
+      grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Grb2 adapter protein
+        SOS guanine-nucleotide exchange factor
+      shc_adapter_protein: Shc adapter protein
+      egf_egfr_2_gap_shc_adapter_protein: EGF EGFR 2 GAP Shc adapter protein
+      egf_egfr_2_gap_shc_adapter_protein_2: EGF EGFR 2 GAP Shc adapter protein
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein: EGF EGFR 2 GAP Shc
+        adapter protein Grb2 adapter protein
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: EGF
+        EGFR 2 GAP Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: EGF
+        EGFR 2 GAP Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: EGF
+        EGFR 2 GAP Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: Shc
+        adapter protein Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      shc_adapter_protein_grb2_adapter_protein: Shc adapter protein Grb2 adapter protein
+      shc_adapter_protein_2: Shc adapter protein
+      raf: RAF
+      raf_ras_gtp: RAF RAS GTP
+      ras_gtp_2: RAS GTP
+      phosphotase1: Phosphotase1
+      raf_2: RAF
+      raf_p_ase: RAF P Ase
+      mek: MEK
+      mek_raf: MEK RAF
+      source_defined_mek_p_state: source-defined MEK-P state
+      mek_p_raf: MEK P RAF
+      mek_pp: MEK PP
+      mek_pp_p_ase2: MEK PP P Ase2
+      phosphatase2: Phosphatase2
+      mek_p_p_ase2: MEK P P Ase2
+      erk: ERK
+      erk_mek_pp: ERK MEK PP
+      source_defined_erk_p_state: source-defined ERK-P state
+      erk_p_mek_pp: ERK P MEK PP
+      erk_pp: ERK PP
+      phosphotase3: Phosphotase3
+      erk_pp_p_ase3: ERK PP P Ase3
+      erk_p_p_ase3: ERK P P Ase3
+      egf_egfri_2_gap_shc_adapter_protein: EGF Egfri 2 GAP Shc adapter protein
+      egf_egfri_2_gap_shc_adapter_protein_2: EGF Egfri 2 GAP Shc adapter protein
+      egf_egfri_2_gap_shc_adapter_protein_grb2_adapter_protein: EGF Egfri 2 GAP Shc
+        adapter protein Grb2 adapter protein
+      egf_egfri_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor: EGF
+        Egfri 2 GAP Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor
+      egf_egfri_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp: EGF
+        Egfri 2 GAP Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP
+      egf_egfri_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp: EGF
+        Egfri 2 GAP Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP
+      rasi_gtp: Rasi GTP
+      rafi_rasi_gtp: Rafi Rasi GTP
+      rasi_gtp_2: Rasi GTP
+      source_defined_rafi_state: source-defined RAFI* state
+      rafi_p_ase: Rafi P Ase
+      meki_rafi: Meki Rafi
+      meki_p: Meki P
+      meki_p_rafi: Meki P Rafi
+      meki_pp: Meki PP
+      meki_pp_p_ase2i: Meki PP P Ase2i
+      meki_p_p_ase2i: Meki P P Ase2i
+      erki_meki_pp: Erki Meki PP
+      erki_p: Erki P
+      erki_p_meki_pp: Erki P Meki PP
+      erki_pp: Erki PP
+      erki_pp_p_ase3i: Erki PP P Ase3i
+      erki_p_p_ase3i: Erki P P Ase3i
+      egfrideg: Egfrideg
+      egf_egfri_2deg: EGF Egfri 2deg
+      egf_egfr_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_prot: EGF
+        EGFR 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor Prot
+      egf_egfr_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_prot: EGF
+        EGFR 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor RAS
+        GDP Prot
+      egf_egfr_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_prot: EGF
+        EGFR 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor RAS
+        GTP Prot
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein_prot: EGF EGFR 2 GAP
+        Shc adapter protein Grb2 adapter protein Prot
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_prot: EGF
+        EGFR 2 GAP Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor Prot
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp_prot: EGF
+        EGFR 2 GAP Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GDP Prot
+      egf_egfr_2_gap_shc_adapter_protein_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp_prot: EGF
+        EGFR 2 GAP Shc adapter protein Grb2 adapter protein SOS guanine-nucleotide
+        exchange factor RAS GTP Prot
+      source_defined_t_raf_state: source-defined T_RAF* state
+      t_ras_gtp: T RAS GTP
+      t_mek_pp: T MEK PP
+      t_erk_pp: T ERK PP
+      t_shc_adapter_protein_p_t: T Shc adapter protein P T
+      t_egf_egfr: T EGF EGFR
+io:
+  inputs: []
+  outputs: []

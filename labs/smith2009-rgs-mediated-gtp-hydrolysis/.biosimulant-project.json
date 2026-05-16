@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "586efa25-3b78-4def-ac0e-bcb5da725de8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2e9550ed-4c7a-4ab3-9bd2-ac4b7d9608d7",
+  "created_at": "2026-05-16T05:58:27.177616880+00:00",
+  "last_synced_at": "2026-05-16T11:07:19.477596+00:00",
+  "hub_manifest_hash": "e70de7b8745218f5da897500db3d7340f55bfd447597b79205f387035aacc43a",
+  "package_name": "smith2009-rgs-mediated-gtp-hydrolysis-lab"
+}

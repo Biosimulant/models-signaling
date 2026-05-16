@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Kofahl2004_PheromonePathway
+description: 'This a model from the article: Modelling the dynamics of the yeast pheromone
+  pathway. Kofahl B, Klipp E Yeast [2004 Jul; Volume: 21 (Issue: 10 )] Page info:
+  831-50 15300679 , Abstract: We present a ma.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Bente Kofahl
+- Edda Klipp
+upstream:
+  id: biomodels_ebi:BIOMD0000000032
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000032
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000032
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000032?filename=BIOMD0000000032_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kofahl2004_pheromonepathway:Kofahl2004PheromonepathwayBiomd0000000032Model
+  init_kwargs:
+    model_path: data/BIOMD0000000032.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_p_state
+    maps_to: signaling_sbml_kofahl2004_pheromonepathway_biomd0000000032_model.initial_source_defined_p_state
+    label: Initial source-defined P state
+    description: Initial level of source-defined P state. Maps to SBML symbol `p`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_factor
+    maps_to: signaling_sbml_kofahl2004_pheromonepathway_biomd0000000032_model.initial_factor
+    label: Initial Factor
+    description: Initial level of Factor. Maps to SBML symbol `alpha`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: ste2active
+    maps_to: signaling_sbml_kofahl2004_pheromonepathway_biomd0000000032_model.ste2active
+    label: Ste2active
+    description: Ste2active. Maps to SBML symbol `Ste2a` and is emitted in native
+      SBML units.
+  - name: complex_c
+    maps_to: signaling_sbml_kofahl2004_pheromonepathway_biomd0000000032_model.complex_c
+    label: Complex C
+    description: Complex C. Maps to SBML symbol `complexC` and is emitted in native
+      SBML units.
+  - name: complex_d
+    maps_to: signaling_sbml_kofahl2004_pheromonepathway_biomd0000000032_model.complex_d
+    label: Complex D
+    description: Complex D. Maps to SBML symbol `complexD` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_kofahl2004_pheromonepathway_biomd0000000032_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_kofahl2004_pheromonepathway_biomd0000000032_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_kofahl2004_pheromonepathway_biomd0000000032_model.species_labels
+    label: Observable labels

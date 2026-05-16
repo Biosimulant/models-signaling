@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "db3613df-a4d1-45c3-ab89-c2b36c72a705",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "58232474-5f56-48ec-aced-31d48f08efdc",
+  "created_at": "2026-05-15T19:08:08.988751173+00:00",
+  "last_synced_at": "2026-05-16T09:07:38.876474+00:00",
+  "hub_manifest_hash": "7bdbb3932f2fa64e20b0fc77702411298c72afbf4bd7387d0394df9c3ed65ca7",
+  "package_name": "bhattacharya2014-a-mathematical-model-of-the-sterol-regulatory-e"
+}

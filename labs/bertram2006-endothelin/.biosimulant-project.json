@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2b5d90f7-3115-4f3d-99b2-3432fccb4c83",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6cdc2c48-cb0c-459a-b6d0-5088508f4b2d",
+  "created_at": "2026-05-15T19:08:08.854012233+00:00",
+  "last_synced_at": "2026-05-16T09:05:32.612913+00:00",
+  "hub_manifest_hash": "eeb1f413eb055430b4cdcd935109702099e7df719bf7c6245f9178a4f39d52c0",
+  "package_name": "bertram2006-endothelin-lab"
+}

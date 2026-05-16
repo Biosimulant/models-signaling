@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Schwarz2018-Cdk Activity Threshold Determines Passage through the Restriction
+  Point Visualisation
+description: Question-and-answer and chart visualisation for cell-cycle regulatory
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_schwarz2018_cdk_activity_threshold_determines_pa_biomd0000000918_model
+    title: Schwarz2018-Cdk Activity Threshold Determines Passage through the Restriction
+      Point
+    context: cell-cycle regulatory signaling
+    question: How does Schwarz2018-Cdk Activity Threshold Determines Passage through
+      the Restriction Point move checkpoint or cycle-control signaling states?
+    visual_scope: cell-cycle regulatory signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      myc_transcription_factor: float
+      e2f: float
+      source_defined_cycd_state: float
+      source_defined_cyce_state: float
+      source_defined_rb_state: float
+      phosphorylated_rb: float
+      rb_e2f_complex: float
+      serum: float
+    species_labels:
+      myc_transcription_factor: MYC transcription factor
+      e2f: E2F
+      source_defined_cycd_state: source-defined CYCD state
+      source_defined_cyce_state: source-defined CYCE state
+      source_defined_rb_state: source-defined RB state
+      phosphorylated_rb: Phosphorylated Rb
+      rb_e2f_complex: Rb E2F Complex
+      serum: Serum
+io:
+  inputs: []
+  outputs: []

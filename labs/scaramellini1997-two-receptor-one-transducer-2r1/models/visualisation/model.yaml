@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Scaramellini1997 - Two-receptor:One-transducer (2R1T) model for analysis of
+  interactions between agonists Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Scaramellini1997 - Two-receptor:One-transducer (2R1T) model for analysis of interactions
+  between agonists.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_scaramellini1997_two_receptor_one_transducer_2r1_biomd0000001008_model
+    title: Scaramellini1997 - Two-receptor:One-transducer (2R1T) model for analysis
+      of interactions between agonists
+    context: GPCR and cAMP/PKA signaling
+    question: How does Scaramellini1997 - Two-receptor:One-transducer (2R1T) model
+      for analysis of interactions between agonists route receptor activity into cAMP/PKA-linked
+      readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      mediator_a1: float
+      mediator_a2: float
+      agonist_1: float
+      agonist_2: float
+      effect: float
+    species_labels:
+      mediator_a1: Mediator A1
+      mediator_a2: Mediator A2
+      agonist_1: Agonist 1
+      agonist_2: Agonist 2
+      effect: Effect
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Zi2011_TGF-beta_Pathway
+description: 'This model is from the article: Quantitative analysis of transient and
+  sustained transforming growth factor-β signaling dynamics. Zhike Zi, Zipei Feng,
+  Douglas A Chapnick, Markus Dahl, Difan Deng, Edd.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- tgf-beta
+authors:
+- Biosimulant Team
+- Zhike Zi
+- Zipei Feng
+- Douglas A Chapnick
+- Markus Dahl
+- Difan Deng
+upstream:
+  id: biomodels_ebi:BIOMD0000000342
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000342
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000342
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000342?filename=BIOMD0000000342_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.zi2011_tgf_beta_pathway:Zi2011TgfBetaPathwayBiomd0000000342Model
+  init_kwargs:
+    model_path: data/BIOMD0000000342.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_kdeg_tgf_beta_response_parameter_level
+    maps_to: signaling_sbml_zi2011_tgf_beta_pathway_biomd0000000342_model.initial_kdeg_tgf_beta_response_parameter_level
+    label: Kdeg TGF beta response parameter
+    description: Kdeg TGF beta response parameter source parameter. Maps to SBML symbol
+      `kdeg_TGF_beta` and preserves the bundled default.
+  - name: initial_empty_degraded
+    maps_to: signaling_sbml_zi2011_tgf_beta_pathway_biomd0000000342_model.initial_empty_degraded
+    label: Initial Empty Degraded
+    description: Initial level of Empty Degraded. Maps to SBML symbol `empty_degraded`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_aa_state
+    maps_to: signaling_sbml_zi2011_tgf_beta_pathway_biomd0000000342_model.initial_source_defined_aa_state
+    label: Initial source-defined AA state
+    description: Initial level of source-defined AA state. Maps to SBML symbol `AA`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: smad2c
+    maps_to: signaling_sbml_zi2011_tgf_beta_pathway_biomd0000000342_model.smad2c
+    label: Smad2c
+    description: Smad2c. Maps to SBML symbol `Smad2c` and is emitted in native SBML
+      units.
+  - name: smad2n
+    maps_to: signaling_sbml_zi2011_tgf_beta_pathway_biomd0000000342_model.smad2n
+    label: Smad2n
+    description: Smad2n. Maps to SBML symbol `Smad2n` and is emitted in native SBML
+      units.
+  - name: smad4c
+    maps_to: signaling_sbml_zi2011_tgf_beta_pathway_biomd0000000342_model.smad4c
+    label: Smad4c
+    description: Smad4c. Maps to SBML symbol `Smad4c` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_zi2011_tgf_beta_pathway_biomd0000000342_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_zi2011_tgf_beta_pathway_biomd0000000342_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_zi2011_tgf_beta_pathway_biomd0000000342_model.species_labels
+    label: Observable labels

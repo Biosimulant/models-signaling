@@ -1,0 +1,147 @@
+schema_version: '2.0'
+title: Pathak2013 - MAPK activation in response to various abiotic stresses Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- stress-response
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_pathak2013_mapk_activation_in_response_to_variou_biomd0000000491_model
+    title: Pathak2013 - MAPK activation in response to various abiotic stresses
+    context: receptor-to-MAPK cascade signaling
+    question: How does Pathak2013 - MAPK activation in response to various abiotic
+      stresses propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      cold_stress_input: float
+      source_defined_salt_state: float
+      drought: float
+      h2o2: float
+      heavy_metal: float
+      ethylene: float
+      source_defined_rlks_state: float
+      source_defined_lrr_state: float
+      source_defined_crks_state: float
+      lec_rk2: float
+      source_defined_etr1_state: float
+      source_defined_etr2_state: float
+      mapkkk: float
+      mapkkk_2: float
+      mapkkk1: float
+      source_defined_ctr1_state: float
+      mapkk: float
+      mapkk_2: float
+      mapk: float
+      mapk_2: float
+      mapkk1: float
+      mapkk2: float
+      mapkk3: float
+      mapkk4: float
+      mapkk5: float
+      mapkk6: float
+      mapkk7: float
+      mapkk9: float
+      source_defined_mapk2_state: float
+      source_defined_mapk3_state: float
+      source_defined_mapk4_state: float
+      source_defined_mapk6_state: float
+      source_defined_wrky1_state: float
+      source_defined_wrky1_state_2: float
+      wrky12: float
+      wrky12_2: float
+      source_defined_wrky8_state: float
+      source_defined_wrky8_state_2: float
+      wrky25: float
+      wrky25_2: float
+      wrky22: float
+      wrky22_2: float
+      wrky29: float
+      wrky29_2: float
+      wrky33: float
+      wrky33_2: float
+      wrky28: float
+      wrky28_2: float
+      source_defined_myb2_state: float
+      source_defined_myb2_state_2: float
+      source_defined_myb4_state: float
+      source_defined_myb4_state_2: float
+      myb44: float
+      source_defined_nac_state: float
+      source_defined_bzip_state: float
+      source_defined_ap2_state: float
+      response: float
+    species_labels:
+      cold_stress_input: cold stress input
+      source_defined_salt_state: source-defined SALT state
+      drought: Drought
+      h2o2: H2O2
+      heavy_metal: Heavy Metal
+      ethylene: Ethylene
+      source_defined_rlks_state: source-defined RLKS state
+      source_defined_lrr_state: source-defined LRR state
+      source_defined_crks_state: source-defined CRKS state
+      lec_rk2: Lec RK2
+      source_defined_etr1_state: source-defined ETR1 state
+      source_defined_etr2_state: source-defined ETR2 state
+      mapkkk: MAPKKK
+      mapkkk_2: MAPKKK
+      mapkkk1: MAPKKK1
+      source_defined_ctr1_state: source-defined CTR1 state
+      mapkk: MAPKK
+      mapkk_2: MAPKK
+      mapk: MAPK
+      mapk_2: MAPK
+      mapkk1: MAPKK1
+      mapkk2: MAPKK2
+      mapkk3: MAPKK3
+      mapkk4: MAPKK4
+      mapkk5: MAPKK5
+      mapkk6: MAPKK6
+      mapkk7: MAPKK7
+      mapkk9: MAPKK9
+      source_defined_mapk2_state: source-defined MAPK2 state
+      source_defined_mapk3_state: source-defined MAPK3 state
+      source_defined_mapk4_state: source-defined MAPK4 state
+      source_defined_mapk6_state: source-defined MAPK6 state
+      source_defined_wrky1_state: source-defined WRKY1 state
+      source_defined_wrky1_state_2: source-defined WRKY1 state
+      wrky12: WRKY12
+      wrky12_2: WRKY12
+      source_defined_wrky8_state: source-defined WRKY8 state
+      source_defined_wrky8_state_2: source-defined WRKY8 state
+      wrky25: WRKY25
+      wrky25_2: WRKY25
+      wrky22: WRKY22
+      wrky22_2: WRKY22
+      wrky29: WRKY29
+      wrky29_2: WRKY29
+      wrky33: WRKY33
+      wrky33_2: WRKY33
+      wrky28: WRKY28
+      wrky28_2: WRKY28
+      source_defined_myb2_state: source-defined MYB2 state
+      source_defined_myb2_state_2: source-defined MYB2 state
+      source_defined_myb4_state: source-defined MYB4 state
+      source_defined_myb4_state_2: source-defined MYB4 state
+      myb44: MYB44
+      source_defined_nac_state: source-defined NAC state
+      source_defined_bzip_state: source-defined BZIP state
+      source_defined_ap2_state: source-defined AP2 state
+      response: Response
+io:
+  inputs: []
+  outputs: []

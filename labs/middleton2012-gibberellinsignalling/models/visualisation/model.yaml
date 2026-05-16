@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Middleton2012_GibberellinSignalling Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Middleton2012_GibberellinSignalling.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_middleton2012_gibberellinsignalling_biomd0000000422_model
+    title: Middleton2012_GibberellinSignalling
+    context: plant signaling response
+    question: How does Middleton2012 GibberellinSignalling respond through its source-defined
+      plant signaling states?
+    visual_scope: plant signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_ga4_state: float
+      source_defined_gid_state: float
+      della: float
+      della_u: float
+      ga12: float
+      ga15: float
+      ga24: float
+      source_defined_ga9_state: float
+      ga20ox: float
+      ga3ox: float
+      ga20ox_2: float
+      della_2: float
+      ga3ox_2: float
+      source_defined_gid_state_2: float
+      ga4_gid: float
+      ga9_ga3ox: float
+      ga24_ga20ox: float
+      ga15_ga20ox: float
+      ga12_ga20ox: float
+      ga4_gid_closed: float
+      ga4_gid_della2: float
+      ga4_gid_della1: float
+    species_labels:
+      source_defined_ga4_state: source-defined GA4 state
+      source_defined_gid_state: source-defined GID state
+      della: DELLA
+      della_u: DELLA U
+      ga12: GA12
+      ga15: GA15
+      ga24: GA24
+      source_defined_ga9_state: source-defined GA9 state
+      ga20ox: Ga20ox
+      ga3ox: Ga3ox
+      ga20ox_2: Ga20ox
+      della_2: Della
+      ga3ox_2: Ga3ox
+      source_defined_gid_state_2: source-defined GID state
+      ga4_gid: GA4 GID
+      ga9_ga3ox: GA9 Ga3ox
+      ga24_ga20ox: GA24 Ga20ox
+      ga15_ga20ox: GA15 Ga20ox
+      ga12_ga20ox: GA12 Ga20ox
+      ga4_gid_closed: GA4 GID closed
+      ga4_gid_della2: GA4 GID DELLA2
+      ga4_gid_della1: GA4 GID DELLA1
+io:
+  inputs: []
+  outputs: []

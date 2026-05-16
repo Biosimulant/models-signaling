@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "df192c88-c0ca-40d4-90d5-fb200a3ae60e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "db0f44e1-b6a3-453e-b85a-a85cdf09b9fc",
+  "created_at": "2026-05-15T19:08:09.489262476+00:00",
+  "last_synced_at": "2026-05-16T09:34:43.047877+00:00",
+  "hub_manifest_hash": "f2d5981bbca94bedd3bf7d10395eed0634c9305f24d055dcf36877ec37c573dc",
+  "package_name": "dicamillo2016-insulin-signalling-pathway-rule-based-model-lab"
+}

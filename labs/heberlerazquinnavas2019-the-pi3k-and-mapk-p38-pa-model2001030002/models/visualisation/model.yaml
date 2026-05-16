@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: HeberleRazquinNavas2019 - The PI3K and MAPK/p38 pathways control stress granuleassembly
+  in a hierarchical manner model 2 Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- pi3k-akt
+- stress-response
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_heberlerazquinnavas2019_the_pi3k_and_mapk_p38_pa_model2001030002_model
+    title: HeberleRazquinNavas2019 - The PI3K and MAPK/p38 pathways control stress
+      granuleassembly in a hierarchical manner model 2
+    context: receptor-to-MAPK cascade signaling
+    question: How does HeberleRazquinNavas2019 - The PI3K and MAPK/p38 pathways control
+      stress granuleassembly in a hierarchical manner model 2 propagate receptor or
+      RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      x1_0: float
+      x1_1: float
+      x2_0: float
+      x2_1: float
+      x2_2: float
+      x4_0: float
+      x4_1: float
+      x5_0: float
+      x5_1: float
+      x8_0: float
+      x8_1: float
+      x8_2: float
+      x8_3: float
+      x9_0: float
+      x9_2: float
+      x10_0: float
+      x10_1: float
+      x10_2: float
+      x10_3: float
+      x11_0: float
+      x11_1: float
+      x11_2: float
+      x11_3: float
+      x12_0: float
+      x12_1: float
+      akt_p_t308_obs: float
+      akt_p_s473_obs: float
+      tsc1_tsc2_p_t1462_obs: float
+      pras40_p_t246_obs: float
+      pras40_p_s183_obs: float
+      four_ebp1_p_t37_46_obs: float
+      p70_s6k_p_t389_obs: float
+      p70_s6k_p_t229_obs: float
+      irs1_p_s636_639_obs: float
+    species_labels:
+      x1_0: X1 0
+      x1_1: X1 1
+      x2_0: X2 0
+      x2_1: X2 1
+      x2_2: X2 2
+      x4_0: X4 0
+      x4_1: X4 1
+      x5_0: X5 0
+      x5_1: X5 1
+      x8_0: X8 0
+      x8_1: X8 1
+      x8_2: X8 2
+      x8_3: X8 3
+      x9_0: X9 0
+      x9_2: X9 2
+      x10_0: X10 0
+      x10_1: X10 1
+      x10_2: X10 2
+      x10_3: X10 3
+      x11_0: X11 0
+      x11_1: X11 1
+      x11_2: X11 2
+      x11_3: X11 3
+      x12_0: X12 0
+      x12_1: X12 1
+      akt_p_t308_obs: AKT P T308 Obs
+      akt_p_s473_obs: AKT P S473 Obs
+      tsc1_tsc2_p_t1462_obs: TSC1 TSC2 P T1462 Obs
+      pras40_p_t246_obs: PRAS40 P T246 Obs
+      pras40_p_s183_obs: PRAS40 P S183 Obs
+      four_ebp1_p_t37_46_obs: Four EBP1 P T37 46 Obs
+      p70_s6k_p_t389_obs: P70 S6K P T389 Obs
+      p70_s6k_p_t229_obs: P70 S6K P T229 Obs
+      irs1_p_s636_639_obs: IRS1 P S636 639 Obs
+io:
+  inputs: []
+  outputs: []

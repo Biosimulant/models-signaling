@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e124dada-b761-40f0-9e30-3a11194c1fd5",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fd16a41e-7d64-4aee-bb24-fb8f5326341d",
+  "created_at": "2026-05-15T19:08:09.405749454+00:00",
+  "last_synced_at": "2026-05-16T09:24:23.705334+00:00",
+  "hub_manifest_hash": "c961ad0d7ab9b30ae8d6c5ff0f38f901a480994151dd106245e2431cd141c90f",
+  "package_name": "collier1996-delta-notch-intercellular-signalling-and-lateral-inh"
+}

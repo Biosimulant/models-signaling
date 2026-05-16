@@ -1,0 +1,41 @@
+schema_version: '2.0'
+title: Becker2010_EpoR_CoreModel Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Becker2010_EpoR_CoreModel.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model
+    title: Becker2010_EpoR_CoreModel
+    context: GPCR and cAMP/PKA signaling
+    question: How does Becker2010 EpoR CoreModel route receptor activity into cAMP/PKA-linked
+      readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      epo_receptor: float
+      erythropoietin: float
+      erythropoietin_erythropoietin_r: float
+      erythropoietin_erythropoietin_ri: float
+    species_labels:
+      epo_receptor: EPO receptor
+      erythropoietin: erythropoietin
+      erythropoietin_erythropoietin_r: erythropoietin erythropoietin R
+      erythropoietin_erythropoietin_ri: erythropoietin erythropoietin Ri
+io:
+  inputs: []
+  outputs: []

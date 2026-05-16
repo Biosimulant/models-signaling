@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Mazein2013 - Shunt pathway
+description: Signaling Mazein2013Shunt Pathway Model1409170003Model represents signaling
+  mazein2013 shunt pathway model1409170003 mechanisms from biomodels_ebi reference
+  biomodels_ebi:MODEL1409170003. When you run it, you can inspect state and compare
+  temporal behavior between baseline and adjusted inputs.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- Alexander Mazein
+- Steven Watterson
+- Wei-Yuan Hsieh
+- William J Griffiths
+- Peter Ghazal
+upstream:
+  id: biomodels_ebi:MODEL1409170003
+  source_db: biomodels_ebi
+  source_id: MODEL1409170003
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1409170003
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1409170003?filename=MODEL1409170003_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.mazein2013_shunt_pathway:Mazein2013ShuntPathwayModel1409170003Model
+  init_kwargs:
+    model_path: data/MODEL1409170003.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_tm7sf2
+    maps_to: signaling_sbml_mazein2013_shunt_pathway_model1409170003_model.initial_tm7sf2
+    label: Initial TM7SF2
+    description: Initial level of TM7SF2. Maps to SBML symbol `s54`; exposed as a
+      traceable initial-condition perturbation.
+  outputs:
+  - name: source_4_alpha_carboxyzymosterol
+    maps_to: signaling_sbml_mazein2013_shunt_pathway_model1409170003_model.source_4_alpha_carboxyzymosterol
+    label: 4 Alpha Carboxyzymosterol
+    description: 4 Alpha Carboxyzymosterol. Maps to SBML symbol `s60` and is emitted
+      in native SBML units.
+  - name: source_4_alpha_carboxy_4_beta_response_parameter_methylzymosterol
+    maps_to: signaling_sbml_mazein2013_shunt_pathway_model1409170003_model.source_4_alpha_carboxy_4_beta_response_parameter_methylzymosterol
+    label: 4 Alpha Carboxy 4 beta response parameter Methylzymosterol
+    description: 4 Alpha Carboxy 4 beta response parameter Methylzymosterol. Maps
+      to SBML symbol `s55` and is emitted in native SBML units.
+  - name: source_4_alpha_carboxy_4_beta_response_parameter_methyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol
+    maps_to: signaling_sbml_mazein2013_shunt_pathway_model1409170003_model.source_4_alpha_carboxy_4_beta_response_parameter_methyl_5_alpha_cholest_8_en_3_beta_response_parameter_ol
+    label: 4 Alpha Carboxy 4 beta response parameter Methyl 5 Alpha Cholest 8 En 3
+      beta response parameter Ol
+    description: 4 Alpha Carboxy 4 beta response parameter Methyl 5 Alpha Cholest
+      8 En 3 beta response parameter Ol. Maps to SBML symbol `s71` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_mazein2013_shunt_pathway_model1409170003_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_mazein2013_shunt_pathway_model1409170003_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_mazein2013_shunt_pathway_model1409170003_model.species_labels
+    label: Observable labels

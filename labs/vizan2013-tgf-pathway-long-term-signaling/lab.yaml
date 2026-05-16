@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Vizan2013 - TGF pathway long term signaling Lab
+description: 'Clean Biosimulant lab for systems signaling model: Vizan2013 - TGF pathway
+  long term signaling. Values are native SBML quantities; equations, parameters, and
+  initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model.state
+  to:
+  - visualisation.signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model_state
+- from: signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model.summary
+  to:
+  - visualisation.signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model_summary
+- from: signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model.species_labels
+  to:
+  - visualisation.signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_source_defined_rt_state
+    maps_to: signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model.initial_source_defined_rt_state
+    label: Initial source-defined RT state
+    description: Initial level of source-defined RT state. Maps to SBML symbol `species_24`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_r_state
+    maps_to: signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model.initial_source_defined_r_state
+    label: Initial source-defined R state
+    description: Initial level of source-defined R state. Maps to SBML symbol `species_5`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_p_s2c
+    maps_to: signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model.initial_p_s2c
+    label: Initial P S2c
+    description: Initial level of P S2c. Maps to SBML symbol `species_8`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: abstract_source_state_s22
+    maps_to: signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model.abstract_source_state_s22
+    label: Abstract source state S22
+    description: Abstract source state S22. Maps to SBML symbol `species_1` and is
+      emitted in native SBML units.
+  - name: abstract_source_state_s24
+    maps_to: signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model.abstract_source_state_s24
+    label: Abstract source state S24
+    description: Abstract source state S24. Maps to SBML symbol `species_2` and is
+      emitted in native SBML units.
+  - name: p_s2tot
+    maps_to: signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model.p_s2tot
+    label: P S2tot
+    description: P S2tot. Maps to SBML symbol `species_3` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model.species_labels
+    label: Observable labels

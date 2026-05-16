@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Hayashi1999_NOSynth_Phospho Lab
+description: 'Clean Biosimulant lab for systems signaling model: Hayashi1999_NOSynth_Phospho.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model.state
+  to:
+  - visualisation.signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model_state
+- from: signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model.summary
+  to:
+  - visualisation.signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model_summary
+- from: signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model.species_labels
+  to:
+  - visualisation.signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- neuroscience
+- physiology
+io:
+  inputs:
+  - name: initial_nos_calcium_m_ca4
+    maps_to: signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model.initial_nos_calcium_m_ca4
+    label: Initial NOS calcium M Ca4
+    description: Initial level of NOS calcium M Ca4. Maps to SBML symbol `NOS_slash_CaM_minus_Ca4`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_nos_calcium_mkialpha
+    maps_to: signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model.initial_nos_calcium_mkialpha
+    label: Initial NOS calcium Mkialpha
+    description: Initial level of NOS calcium Mkialpha. Maps to SBML symbol `NOS_slash_CaMKIalpha`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_nos_calcium_mkiialpha
+    maps_to: signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model.initial_nos_calcium_mkiialpha
+    label: Initial NOS calcium Mkiialpha
+    description: Initial level of NOS calcium Mkiialpha. Maps to SBML symbol `NOS_slash_CaMKIIalpha`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: nos_calcium_calcium_mn_nos
+    maps_to: signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model.nos_calcium_calcium_mn_nos
+    label: NOS Calcium Calcium Mn NOS
+    description: NOS Calcium Calcium Mn NOS. Maps to SBML symbol `NOS_slash_Ca_minus_CaMnNOS`
+      and is emitted in native SBML units.
+  - name: nos_calcium_calcium_mn_nos_kenz_kenz_cplx
+    maps_to: signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model.nos_calcium_calcium_mn_nos_kenz_kenz_cplx
+    label: NOS Calcium Calcium Mn NOS Kenz Kenz Cplx
+    description: NOS Calcium Calcium Mn NOS Kenz Kenz Cplx. Maps to SBML symbol `NOS_slash_Ca_minus_CaMnNOS_slash_kenz_slash_kenz_cplx`
+      and is emitted in native SBML units.
+  - name: nos_calcium_mkiv_kenz_kenz_cplx
+    maps_to: signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model.nos_calcium_mkiv_kenz_kenz_cplx
+    label: NOS Calcium MKIV Kenz Kenz Cplx
+    description: NOS Calcium MKIV Kenz Kenz Cplx. Maps to SBML symbol `NOS_slash_CaMKIV_slash_kenz_slash_kenz_cplx`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_hayashi1999_nosynth_phospho_model4780784080_model.species_labels
+    label: Observable labels

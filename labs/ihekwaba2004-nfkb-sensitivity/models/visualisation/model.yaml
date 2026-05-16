@@ -1,0 +1,84 @@
+schema_version: '2.0'
+title: Ihekwaba2004_NFkB_Sensitivity Visualisation
+description: Question-and-answer and chart visualisation for NF-kB pathway signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_ihekwaba2004_nfkb_sensitivity_biomd0000000230_model
+    title: Ihekwaba2004_NFkB_Sensitivity
+    context: NF-kB activation and feedback signaling
+    question: How does Ihekwaba2004 NFkB Sensitivity move NF-kB and inhibitor-linked
+      signaling states?
+    visual_scope: NF-kB activation and feedback signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      nfkb: float
+      ikkik_ba: float
+      ikkik_ba_nfk_b: float
+      source_defined_ikk_state: float
+      source_defined_ikba_state: float
+      ikkik_complement_factor_bb: float
+      ikkik_complement_factor_bb_nfk_b: float
+      source_defined_ikbb_state: float
+      ikkik_be: float
+      ikkik_be_nfk_b: float
+      source_defined_ikbe_state: float
+      ik_ba_nfk_b: float
+      ik_complement_factor_bb_nfk_b: float
+      ik_be_nfk_b: float
+      source: float
+      ik_bat: float
+      sink_species: float
+      nfk_bn: float
+      ik_ban: float
+      ik_ban_nfk_bn: float
+      ik_bbn: float
+      ik_bbn_nfk_bn: float
+      ik_bbt: float
+      ik_ben: float
+      ik_ben_nfk_bn: float
+      ik_bet: float
+    species_labels:
+      nfkb: NF-kB
+      ikkik_ba: Ikkik Ba
+      ikkik_ba_nfk_b: Ikkik Ba Nfk B
+      source_defined_ikk_state: source-defined IKK state
+      source_defined_ikba_state: source-defined IKBA state
+      ikkik_complement_factor_bb: Ikkik complement factor Bb
+      ikkik_complement_factor_bb_nfk_b: Ikkik complement factor Bb Nfk B
+      source_defined_ikbb_state: source-defined IKBB state
+      ikkik_be: Ikkik Be
+      ikkik_be_nfk_b: Ikkik Be Nfk B
+      source_defined_ikbe_state: source-defined IKBE state
+      ik_ba_nfk_b: Ik Ba Nfk B
+      ik_complement_factor_bb_nfk_b: Ik complement factor Bb Nfk B
+      ik_be_nfk_b: Ik Be Nfk B
+      source: Source
+      ik_bat: Ik Bat
+      sink_species: sink species
+      nfk_bn: Nfk Bn
+      ik_ban: Ik Ban
+      ik_ban_nfk_bn: Ik Ban Nfk Bn
+      ik_bbn: Ik Bbn
+      ik_bbn_nfk_bn: Ik Bbn Nfk Bn
+      ik_bbt: Ik Bbt
+      ik_ben: Ik Ben
+      ik_ben_nfk_bn: Ik Ben Nfk Bn
+      ik_bet: Ik Bet
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ae4c70fe-8fae-43d2-9a51-9348c0e2aedf",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1e16265c-7b90-4b71-be34-a7a52418689f",
+  "created_at": "2026-05-16T05:58:29.511006889+00:00",
+  "last_synced_at": "2026-05-16T11:24:01.571214+00:00",
+  "hub_manifest_hash": "b89db503eabe4075f123e7adcefed4120995854c4539ec0f2255902504529cbe",
+  "package_name": "xu2005-blood-coagulation-model-of-activated-factors-of-extrinsic"
+}

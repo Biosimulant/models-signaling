@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6706e968-1970-40ad-9c21-62e4c9ede65d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c1adc6dd-5d42-4c38-b0a3-0d13071af1c2",
+  "created_at": "2026-05-16T05:38:38.041712675+00:00",
+  "last_synced_at": "2026-05-16T10:18:56.020545+00:00",
+  "hub_manifest_hash": "67817fd54797405ef3e4c46e127e020a178ac362d869baa557926c9afd037fd7",
+  "package_name": "mazein2013-shunt-pathway-lab"
+}

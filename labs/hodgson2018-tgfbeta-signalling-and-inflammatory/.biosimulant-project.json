@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "acd3d944-e967-48f1-b148-92808e916641",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "beb6fb67-f700-4e82-aa9e-d1702e821176",
+  "created_at": "2026-05-15T19:08:10.002323946+00:00",
+  "last_synced_at": "2026-05-16T09:49:19.815491+00:00",
+  "hub_manifest_hash": "cb78d21489941aa506523fa05b7a55a57bd260117ca10977b36433e89db4fee8",
+  "package_name": "hodgson2018-tgfbeta-signalling-and-inflammatory-response-lab"
+}

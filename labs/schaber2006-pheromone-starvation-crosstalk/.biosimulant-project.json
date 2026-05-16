@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "80ef142a-2afb-4e18-aa15-e399e9513635",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2c200f0e-cd87-442d-b722-fd5026e10231",
+  "created_at": "2026-05-16T05:58:26.798757136+00:00",
+  "last_synced_at": "2026-05-16T11:01:03.432322+00:00",
+  "hub_manifest_hash": "27a7343e8a2908d67adf12ccdfaf9cb2c671c3070037e26eab64ccfc0461ab87",
+  "package_name": "schaber2006-pheromone-starvation-crosstalk-lab"
+}

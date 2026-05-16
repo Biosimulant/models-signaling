@@ -1,0 +1,98 @@
+schema_version: '2.0'
+title: Pokhilko2013 - TOC1 signalling in Arabidopsis circadian clock Visualisation
+description: Question-and-answer and chart visualisation for circadian regulatory
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- circadian
+- plant-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_pokhilko2013_toc1_signalling_in_arabidopsis_circ_biomd0000000445_model
+    title: Pokhilko2013 - TOC1 signalling in Arabidopsis circadian clock
+    context: plant signaling response
+    question: How does Pokhilko2013 - TOC1 signalling in Arabidopsis circadian clock
+      respond through its source-defined plant signaling states?
+    visual_scope: plant signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      c_abar_m: float
+      c_pp2c: float
+      c_sn_rk2: float
+      source_defined_cs_state: float
+      c_cop1c: float
+      c_cop1d: float
+      c_cop1n: float
+      source_defined_ce3_state: float
+      c_e3_m: float
+      c_e3n: float
+      source_defined_ce4_state: float
+      c_e4_m: float
+      source_defined_cec_state: float
+      source_defined_ceg_state: float
+      source_defined_cg_state: float
+      source_defined_cg_m_state: float
+      source_defined_cl_state: float
+      source_defined_clux_state: float
+      c_lux_m: float
+      source_defined_cl_m_state: float
+      source_defined_clm_state: float
+      source_defined_cni_state: float
+      source_defined_cni_m_state: float
+      source_defined_cp_state: float
+      source_defined_cp7_state: float
+      c_p7_m: float
+      source_defined_cp9_state: float
+      c_p9_m: float
+      source_defined_ct_state: float
+      source_defined_ct_m_state: float
+      source_defined_czg_state: float
+      source_defined_cztl_state: float
+    species_labels:
+      c_abar_m: C ABAR M
+      c_pp2c: C PP2C
+      c_sn_rk2: C Sn RK2
+      source_defined_cs_state: source-defined CS state
+      c_cop1c: C Cop1c
+      c_cop1d: C Cop1d
+      c_cop1n: C Cop1n
+      source_defined_ce3_state: source-defined CE3 state
+      c_e3_m: C E3 M
+      c_e3n: C E3n
+      source_defined_ce4_state: source-defined CE4 state
+      c_e4_m: C E4 M
+      source_defined_cec_state: source-defined CEC state
+      source_defined_ceg_state: source-defined CEG state
+      source_defined_cg_state: source-defined CG state
+      source_defined_cg_m_state: source-defined CG_M state
+      source_defined_cl_state: source-defined CL state
+      source_defined_clux_state: source-defined CLUX state
+      c_lux_m: C LUX M
+      source_defined_cl_m_state: source-defined CL_M state
+      source_defined_clm_state: source-defined CLM state
+      source_defined_cni_state: source-defined CNI state
+      source_defined_cni_m_state: source-defined CNI_M state
+      source_defined_cp_state: source-defined CP state
+      source_defined_cp7_state: source-defined CP7 state
+      c_p7_m: C P7 M
+      source_defined_cp9_state: source-defined CP9 state
+      c_p9_m: C P9 M
+      source_defined_ct_state: source-defined CT state
+      source_defined_ct_m_state: source-defined CT_M state
+      source_defined_czg_state: source-defined CZG state
+      source_defined_cztl_state: source-defined CZTL state
+io:
+  inputs: []
+  outputs: []

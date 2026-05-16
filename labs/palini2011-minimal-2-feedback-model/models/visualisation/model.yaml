@@ -1,0 +1,45 @@
+schema_version: '2.0'
+title: Palini2011_Minimal_2_Feedback_Model Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Palini2011_Minimal_2_Feedback_Model.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_palini2011_minimal_2_feedback_model_biomd0000000325_model
+    title: Palini2011_Minimal_2_Feedback_Model
+    context: GPCR and cAMP/PKA signaling
+    question: How does Palini2011 Minimal 2 Feedback Model route receptor activity
+      into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_l_state: float
+      source_defined_r_state: float
+      source_defined_c_state: float
+      source_defined_i_state: float
+      response_node_x: float
+      source_defined_a_state: float
+    species_labels:
+      source_defined_l_state: Source Defined L State
+      source_defined_r_state: Source Defined R State
+      source_defined_c_state: Source Defined C State
+      source_defined_i_state: Source Defined I State
+      response_node_x: Response Node X
+      source_defined_a_state: Source Defined A State
+io:
+  inputs: []
+  outputs: []

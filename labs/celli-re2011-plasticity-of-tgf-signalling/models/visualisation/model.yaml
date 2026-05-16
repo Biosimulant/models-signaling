@@ -1,0 +1,69 @@
+schema_version: '2.0'
+title: Cellière2011 - Plasticity of TGF-β Signalling Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Cellière2011 - Plasticity of TGF-β Signalling.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_celli_re2011_plasticity_of_tgf_signalling_biomd0000000600_model
+    title: Cellière2011 - Plasticity of TGF-β Signalling
+    context: growth-control pathway signaling
+    question: How does Cellière2011 - Plasticity of TGF-β Signalling shift developmental
+      or growth-control pathway states?
+    visual_scope: growth-control pathway signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      tgf_beta_r: float
+      tgf_beta_tgf_beta_r: float
+      tgf_beta_tgf_beta_r_p: float
+      i_smad_tgf_beta_tgf_beta_r_p: float
+      smad: float
+      smad_p: float
+      co_smad: float
+      smad_p_smad_p: float
+      smad_p_co_smad: float
+      i_smad_m_rna2: float
+      i_smad: float
+      smad_n: float
+      smad_p_smad_p_n: float
+      smad_p_n: float
+      smad_p_co_smad_n: float
+      co_smad_n: float
+      i_smad_m_rna1: float
+      tgf_beta: float
+    species_labels:
+      tgf_beta_r: TGF-beta R
+      tgf_beta_tgf_beta_r: TGF-beta TGF-beta R
+      tgf_beta_tgf_beta_r_p: TGF-beta TGF-beta R P
+      i_smad_tgf_beta_tgf_beta_r_p: I SMAD TGF-beta TGF-beta R P
+      smad: SMAD
+      smad_p: SMAD P
+      co_smad: Co SMAD
+      smad_p_smad_p: SMAD P SMAD P
+      smad_p_co_smad: SMAD P Co SMAD
+      i_smad_m_rna2: I SMAD M RNA2
+      i_smad: I SMAD
+      smad_n: SMAD N
+      smad_p_smad_p_n: SMAD P SMAD P N
+      smad_p_n: SMAD P N
+      smad_p_co_smad_n: SMAD P Co SMAD N
+      co_smad_n: Co SMAD N
+      i_smad_m_rna1: I SMAD M RNA1
+      tgf_beta: TGF-beta
+io:
+  inputs: []
+  outputs: []

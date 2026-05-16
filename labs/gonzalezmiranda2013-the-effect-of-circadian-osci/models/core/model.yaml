@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: GonzalezMiranda2013 - The effect of circadian oscillations on biochemical cell
+  signaling by NF-κB
+description: This is a mathematical model for NF-κB oscillations, described by a set
+  of ordinary nonlinear differential equations, when perturbed by a circadian oscillation.
+  It can be used to explore signaling dynamics and compare pathway response across
+  conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- circadian
+authors:
+- Biosimulant Team
+- J M González-Miranda
+upstream:
+  id: biomodels_ebi:BIOMD0000000893
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000893
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000893
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000893?filename=GonzalezMiranda2013.xml
+  license: CC0
+biosim:
+  entrypoint: src.gonzalezmiranda2013_the_effect_of_circadian_osci:Gonzalezmiranda2013TheEffectOfCircadianOsciBiomd0000000893Model
+  init_kwargs:
+    model_path: data/BIOMD0000000893.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_response_node_x
+    maps_to: signaling_sbml_gonzalezmiranda2013_the_effect_of_circadian_osci_biomd0000000893_model.initial_response_node_x
+    label: Initial response node X
+    description: Initial level of response node X. Maps to SBML symbol `x`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: response_node_x
+    maps_to: signaling_sbml_gonzalezmiranda2013_the_effect_of_circadian_osci_biomd0000000893_model.response_node_x
+    label: response node X
+    description: response node X. Maps to SBML symbol `x` and is emitted in native
+      SBML units.
+  - name: source_defined_y_state
+    maps_to: signaling_sbml_gonzalezmiranda2013_the_effect_of_circadian_osci_biomd0000000893_model.source_defined_y_state
+    label: source-defined Y state
+    description: source-defined Y state. Maps to SBML symbol `y` and is emitted in
+      native SBML units.
+  - name: source_defined_z_state
+    maps_to: signaling_sbml_gonzalezmiranda2013_the_effect_of_circadian_osci_biomd0000000893_model.source_defined_z_state
+    label: source-defined Z state
+    description: source-defined Z state. Maps to SBML symbol `z` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_gonzalezmiranda2013_the_effect_of_circadian_osci_biomd0000000893_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_gonzalezmiranda2013_the_effect_of_circadian_osci_biomd0000000893_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_gonzalezmiranda2013_the_effect_of_circadian_osci_biomd0000000893_model.species_labels
+    label: Observable labels

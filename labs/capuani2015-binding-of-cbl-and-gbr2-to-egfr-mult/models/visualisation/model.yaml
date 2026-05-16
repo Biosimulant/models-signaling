@@ -1,0 +1,100 @@
+schema_version: '2.0'
+title: Capuani2015 - Binding of Cbl and Gbr2 to EGFR (Multisite Phosphorylation Model
+  - MPM) Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- egfr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_capuani2015_binding_of_cbl_and_gbr2_to_egfr_mult_biomd0000000594_model
+    title: Capuani2015 - Binding of Cbl and Gbr2 to EGFR (Multisite Phosphorylation
+      Model - MPM)
+    context: receptor-to-MAPK cascade signaling
+    question: How does Capuani2015 - Binding of Cbl and Gbr2 to EGFR (Multisite Phosphorylation
+      Model - MPM) propagate receptor or RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      cbl_ubiquitin_ligase: float
+      grb2_adapter_protein: float
+      source_defined_cg_state: float
+      tyrosine_site: float
+      source_defined_ub_state: float
+      tyrosine_site_norm: float
+      ub_norm: float
+      egfr_00uu: float
+      egfr_10uu: float
+      egfr_10cu: float
+      egfr_10lu: float
+      egfr_01uu: float
+      egfr_01ug: float
+      egfr_01ul: float
+      egfr_11uu: float
+      egfr_11cu: float
+      egfr_11lu: float
+      egfr_11ug: float
+      egfr_11ul: float
+      egfr_11cg: float
+      egfr_11cc: float
+      egfr_11lg: float
+      egfr_02uu: float
+      egfr_02ug: float
+      egfr_02ul: float
+      egfr_12uu: float
+      egfr_12cu: float
+      egfr_12lu: float
+      egfr_12ug: float
+      egfr_12ul: float
+      egfr_12cg: float
+      egfr_12cc: float
+      egfr_12lg: float
+    species_labels:
+      cbl_ubiquitin_ligase: Cbl ubiquitin ligase
+      grb2_adapter_protein: Grb2 adapter protein
+      source_defined_cg_state: source-defined CG state
+      tyrosine_site: tyrosine site
+      source_defined_ub_state: source-defined UB state
+      tyrosine_site_norm: tyrosine site Norm
+      ub_norm: Ub Norm
+      egfr_00uu: EGFR 00UU
+      egfr_10uu: EGFR 10UU
+      egfr_10cu: EGFR 10CU
+      egfr_10lu: EGFR 10LU
+      egfr_01uu: EGFR 01UU
+      egfr_01ug: EGFR 01UG
+      egfr_01ul: EGFR 01UL
+      egfr_11uu: EGFR 11UU
+      egfr_11cu: EGFR 11CU
+      egfr_11lu: EGFR 11LU
+      egfr_11ug: EGFR 11UG
+      egfr_11ul: EGFR 11UL
+      egfr_11cg: EGFR 11CG
+      egfr_11cc: EGFR 11CC
+      egfr_11lg: EGFR 11LG
+      egfr_02uu: EGFR 02UU
+      egfr_02ug: EGFR 02UG
+      egfr_02ul: EGFR 02UL
+      egfr_12uu: EGFR 12UU
+      egfr_12cu: EGFR 12CU
+      egfr_12lu: EGFR 12LU
+      egfr_12ug: EGFR 12UG
+      egfr_12ul: EGFR 12UL
+      egfr_12cg: EGFR 12CG
+      egfr_12cc: EGFR 12CC
+      egfr_12lg: EGFR 12LG
+io:
+  inputs: []
+  outputs: []

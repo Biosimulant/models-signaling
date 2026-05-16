@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "1b695fbc-b385-400a-9296-0b8f149c4a7e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f5327702-4501-4ff5-aef5-e8d60ef13d1c",
+  "created_at": "2026-05-16T05:51:46.220147724+00:00",
+  "last_synced_at": "2026-05-16T10:44:32.466135+00:00",
+  "hub_manifest_hash": "48c3eba0ff5448c0c83ce174cea3a50881c8f714369fc5c1be6b88d12fa76a0b",
+  "package_name": "rutkis2013-entner-doudoroff-pathway-in-z-mobilis-cell-free-lab"
+}

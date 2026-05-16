@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Heitzler2012 - GPCR signalling Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Heitzler2012 - GPCR signalling.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_heitzler2012_gpcr_signalling_biomd0000000842_model
+    title: Heitzler2012 - GPCR signalling
+    context: GPCR and cAMP/PKA signaling
+    question: How does Heitzler2012 - GPCR signalling route receptor activity into
+      cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_hr_state: float
+      source_defined_gp_state: float
+      erk: float
+      source_defined_pip2_state: float
+      dag: float
+      pkc: float
+      source_defined_pkc_a_state: float
+      gp_p_erk: float
+      b_p_erk: float
+      b_arrestin1: float
+      b_arrestin2: float
+      source_defined_gp_a_state: float
+      source_defined_hr_p1_state: float
+      hr_p1_b_arrestin1: float
+      hr_p1_b_arrestin2: float
+      source_defined_hr_p2_state: float
+      hr_b_arrestin2: float
+      hr_p2_b_arrestin2: float
+      grk2_3: float
+      grk5_6: float
+      perk_kinase: float
+    species_labels:
+      source_defined_hr_state: source-defined HR state
+      source_defined_gp_state: source-defined GP state
+      erk: ERK
+      source_defined_pip2_state: source-defined PIP2 state
+      dag: DAG
+      pkc: PKC
+      source_defined_pkc_a_state: source-defined PKC_A state
+      gp_p_erk: Gp P ERK
+      b_p_erk: B P ERK
+      b_arrestin1: B Arrestin1
+      b_arrestin2: B Arrestin2
+      source_defined_gp_a_state: source-defined GP_A state
+      source_defined_hr_p1_state: source-defined HR-P1 state
+      hr_p1_b_arrestin1: HR P1 B Arrestin1
+      hr_p1_b_arrestin2: HR P1 B Arrestin2
+      source_defined_hr_p2_state: source-defined HR-P2 state
+      hr_b_arrestin2: HR B Arrestin2
+      hr_p2_b_arrestin2: HR P2 B Arrestin2
+      grk2_3: GRK2 3
+      grk5_6: GRK5 6
+      perk_kinase: PERK kinase
+io:
+  inputs: []
+  outputs: []

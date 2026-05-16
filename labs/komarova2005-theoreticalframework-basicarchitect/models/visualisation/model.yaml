@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: Komarova2005_TheoreticalFramework_BasicArchitecture Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Komarova2005_TheoreticalFramework_BasicArchitecture.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_komarova2005_theoreticalframework_basicarchitect_biomd0000000125_model
+    title: Komarova2005_TheoreticalFramework_BasicArchitecture
+    context: phosphorylation and regulatory motif dynamics
+    question: How does Komarova2005 TheoreticalFramework BasicArchitecture express
+      its source-modeled signaling motif over the baseline run?
+    visual_scope: phosphorylation and regulatory motif dynamics
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_x1_state: float
+      source_defined_x2_state: float
+      source_defined_y2_state: float
+      source_defined_x0_state: float
+      source_defined_y0_state: float
+    species_labels:
+      source_defined_x1_state: Source Defined X1 State
+      source_defined_x2_state: Source Defined X2 State
+      source_defined_y2_state: Source Defined Y2 State
+      source_defined_x0_state: Source Defined X0 State
+      source_defined_y0_state: Source Defined Y0 State
+io:
+  inputs: []
+  outputs: []

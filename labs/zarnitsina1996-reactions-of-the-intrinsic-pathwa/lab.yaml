@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Zarnitsina1996 - Reactions of the Intrinsic Pathway of Blood Coagulation Lab
+description: 'Clean Biosimulant lab for systems signaling model: Zarnitsina1996 -
+  Reactions of the Intrinsic Pathway of Blood Coagulation. Values are native SBML
+  quantities; equations, parameters, and initial values remain in the bundled source
+  file.'
+models:
+- alias: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.state
+  to:
+  - visualisation.signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model_state
+- from: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.summary
+  to:
+  - visualisation.signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model_summary
+- from: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.species_labels
+  to:
+  - visualisation.signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- coagulation
+- physiology
+io:
+  inputs:
+  - name: initial_source_defined_ix_state
+    maps_to: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.initial_source_defined_ix_state
+    label: Initial source-defined IX state
+    description: Initial level of source-defined IX state. Maps to SBML symbol `IX`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: activated_clotting_factor_ix
+    maps_to: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.activated_clotting_factor_ix
+    label: activated clotting factor IX
+    description: activated clotting factor IX. Maps to SBML symbol `IXa` and is emitted
+      in native SBML units.
+  - name: activated_clotting_factor_xi
+    maps_to: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.activated_clotting_factor_xi
+    label: activated clotting factor XI
+    description: activated clotting factor XI. Maps to SBML symbol `XIa` and is emitted
+      in native SBML units.
+  - name: activated_clotting_factor_ix_at
+    maps_to: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.activated_clotting_factor_ix_at
+    label: activated clotting factor IX AT
+    description: activated clotting factor IX AT. Maps to SBML symbol `IXa_AT` and
+      is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_zarnitsina1996_reactions_of_the_intrinsic_pathwa_model1806140001_model.species_labels
+    label: Observable labels

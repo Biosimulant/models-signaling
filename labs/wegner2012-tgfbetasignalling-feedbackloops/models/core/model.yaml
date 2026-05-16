@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Wegner2012_TGFbetaSignalling_FeedbackLoops
+description: 'This model is from the article: Dynamics and feedback loops in the transforming
+  growth factor β signaling pathway. Wegner K, Bachmann A, Schad JU, Lucarelli P,
+  Sahle S, Nickel P, Meyer C, Klingmüller.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- tgf-beta
+authors:
+- Biosimulant Team
+- Katja Wegner
+- Anastasia Bachmann
+- Jan-Ulrich Schad
+- Philippe Lucarelli
+- Sven Sahle
+upstream:
+  id: biomodels_ebi:BIOMD0000000410
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000410
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000410
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000410?filename=BIOMD0000000410_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.wegner2012_tgfbetasignalling_feedbackloops:Wegner2012TgfbetasignallingFeedbackloopsBiomd0000000410Model
+  init_kwargs:
+    model_path: data/BIOMD0000000410.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_tgfbeta_level
+    maps_to: signaling_sbml_wegner2012_tgfbetasignalling_feedbackloops_biomd0000000410_model.initial_tgfbeta_level
+    label: Tgfbeta
+    description: Tgfbeta source parameter. Maps to SBML symbol `parameter_1` and preserves
+      the bundled default.
+  - name: initial_tgf_ri
+    maps_to: signaling_sbml_wegner2012_tgfbetasignalling_feedbackloops_biomd0000000410_model.initial_tgf_ri
+    label: Initial TGF RI
+    description: Initial level of TGF RI. Maps to SBML symbol `_84`; exposed as a
+      traceable initial-condition perturbation.
+  - name: initial_tgf_rii
+    maps_to: signaling_sbml_wegner2012_tgfbetasignalling_feedbackloops_biomd0000000410_model.initial_tgf_rii
+    label: Initial TGF RII
+    description: Initial level of TGF RII. Maps to SBML symbol `_75`; exposed as a
+      traceable initial-condition perturbation.
+  outputs:
+  - name: rec_active
+    maps_to: signaling_sbml_wegner2012_tgfbetasignalling_feedbackloops_biomd0000000410_model.rec_active
+    label: Rec active
+    description: Rec active. Maps to SBML symbol `_96` and is emitted in native SBML
+      units.
+  - name: smad2_c
+    maps_to: signaling_sbml_wegner2012_tgfbetasignalling_feedbackloops_biomd0000000410_model.smad2_c
+    label: Smad2 C
+    description: Smad2 C. Maps to SBML symbol `_99` and is emitted in native SBML
+      units.
+  - name: smad2_sara
+    maps_to: signaling_sbml_wegner2012_tgfbetasignalling_feedbackloops_biomd0000000410_model.smad2_sara
+    label: Smad2 SARA
+    description: Smad2 SARA. Maps to SBML symbol `_105` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_wegner2012_tgfbetasignalling_feedbackloops_biomd0000000410_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_wegner2012_tgfbetasignalling_feedbackloops_biomd0000000410_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_wegner2012_tgfbetasignalling_feedbackloops_biomd0000000410_model.species_labels
+    label: Observable labels

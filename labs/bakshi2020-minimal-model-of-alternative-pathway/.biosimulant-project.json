@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e005aa83-2477-43c8-b66a-93f19e195885",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "939f17d6-d7a1-4301-84bf-5c0611556c7d",
+  "created_at": "2026-05-15T19:08:08.681218124+00:00",
+  "last_synced_at": "2026-05-16T08:46:53.331554+00:00",
+  "hub_manifest_hash": "c4dc24965a26b8adee6cc3476eadd8da6f6e38adda48e83450c144cedd4a51c4",
+  "package_name": "bakshi2020-minimal-model-of-alternative-pathway-of-complement-sy"
+}

@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Cui2008_CardiacMyocytes Lab
+description: Clean Biosimulant lab for calcium and second-messenger signaling. Values
+  are native SBML quantities; equations, parameters, and initial values remain in
+  the bundled source file.
+models:
+- alias: signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model.state
+  to:
+  - visualisation.signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model_state
+- from: signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model.summary
+  to:
+  - visualisation.signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model_summary
+- from: signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model.species_labels
+  to:
+  - visualisation.signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+- physiology
+io:
+  inputs:
+  - name: initial_source_defined_bmk1_state
+    maps_to: signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model.initial_source_defined_bmk1_state
+    label: Initial source-defined BMK1 state
+    description: Initial level of source-defined BMK1 state. Maps to SBML symbol `BMK1`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: nfatc
+    maps_to: signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model.nfatc
+    label: Nfatc
+    description: Nfatc. Maps to SBML symbol `NFATc` and is emitted in native SBML
+      units.
+  - name: nfatn
+    maps_to: signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model.nfatn
+    label: Nfatn
+    description: Nfatn. Maps to SBML symbol `NFATn` and is emitted in native SBML
+      units.
+  - name: nfatpc
+    maps_to: signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model.nfatpc
+    label: Nfatpc
+    description: Nfatpc. Maps to SBML symbol `NFATpc` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_cui2008_cardiacmyocytes_model1172425728_model.species_labels
+    label: Observable labels

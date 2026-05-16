@@ -1,0 +1,85 @@
+schema_version: '2.0'
+title: Li2019 - Neurogranin stimulates Ca/calmodulin-dependent kinase II by inhibiting
+  Calcineurin
+description: Calmodulin sits at the center of molecular mechanisms underlying learning
+  and memory. Its complex, and sometimes opposite, influences via the binding to various
+  proteins are yet to be fully understood.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- calcium-signaling
+- neuroscience
+- physiology
+authors:
+- Biosimulant Team
+- Lu Li
+- Massimo Lai
+- Stephen Cole
+- Nicolas Le Novère
+- Stuart J. Edelstein
+upstream:
+  id: biomodels_ebi:MODEL1903010001
+  source_db: biomodels_ebi
+  source_id: MODEL1903010001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1903010001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1903010001?filename=Li2019_NeurograninRegulatesSynapticPlasticity.xml
+  license: CC0
+biosim:
+  entrypoint: src.li2019_neurogranin_stimulates_ca_calmodulin_depe:Li2019NeurograninStimulatesCaCalmodulinDepeModel1903010001Model
+  init_kwargs:
+    model_path: data/MODEL1903010001.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_kd_calcium_n_ca2_calcium_level
+    maps_to: signaling_sbml_li2019_neurogranin_stimulates_ca_calmodulin_depe_model1903010001_model.initial_kd_calcium_n_ca2_calcium_level
+    label: Kd calcium N Ca2 calcium
+    description: Kd calcium N Ca2 calcium source parameter. Maps to SBML symbol `parameter_6`
+      and preserves the bundled default.
+  - name: initial_kd_calcium_n_rr_level
+    maps_to: signaling_sbml_li2019_neurogranin_stimulates_ca_calmodulin_depe_model1903010001_model.initial_kd_calcium_n_rr_level
+    label: Kd calcium N RR
+    description: Kd calcium N RR source parameter. Maps to SBML symbol `Kd_PP2BCa2_RR`
+      and preserves the bundled default.
+  - name: initial_kon_calcium_n_rr_level
+    maps_to: signaling_sbml_li2019_neurogranin_stimulates_ca_calmodulin_depe_model1903010001_model.initial_kon_calcium_n_rr_level
+    label: Kon calcium N RR
+    description: Kon calcium N RR source parameter. Maps to SBML symbol `kon_PP2BCa2`
+      and preserves the bundled default.
+  outputs:
+  - name: calcium_m_rr_0_0
+    maps_to: signaling_sbml_li2019_neurogranin_stimulates_ca_calmodulin_depe_model1903010001_model.calcium_m_rr_0_0
+    label: calcium M RR 0 0
+    description: calcium M RR 0 0. Maps to SBML symbol `cam_RR_0_0` and is emitted
+      in native SBML units.
+  - name: calcium_m_rr_0_calcium_nca4
+    maps_to: signaling_sbml_li2019_neurogranin_stimulates_ca_calmodulin_depe_model1903010001_model.calcium_m_rr_0_calcium_nca4
+    label: calcium M RR 0 calcium Nca4
+    description: calcium M RR 0 calcium Nca4. Maps to SBML symbol `cam_RR_0_PP2BCa2`
+      and is emitted in native SBML units.
+  - name: calcium_m_rr_0_calcium_mkii
+    maps_to: signaling_sbml_li2019_neurogranin_stimulates_ca_calmodulin_depe_model1903010001_model.calcium_m_rr_0_calcium_mkii
+    label: calcium M RR 0 calcium MKII
+    description: calcium M RR 0 calcium MKII. Maps to SBML symbol `cam_RR_0_CaMKII`
+      and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_li2019_neurogranin_stimulates_ca_calmodulin_depe_model1903010001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_li2019_neurogranin_stimulates_ca_calmodulin_depe_model1903010001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_li2019_neurogranin_stimulates_ca_calmodulin_depe_model1903010001_model.species_labels
+    label: Observable labels

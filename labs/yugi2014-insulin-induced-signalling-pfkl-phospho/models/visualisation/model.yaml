@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Yugi2014 - Insulin induced signalling (PFKL phosphorylation) - model 1 Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+- hormone-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_yugi2014_insulin_induced_signalling_pfkl_phospho_biomd0000000540_model
+    title: Yugi2014 - Insulin induced signalling (PFKL phosphorylation) - model 1
+    context: metabolic and hormone signaling response
+    question: How does Yugi2014 - Insulin induced signalling (PFKL phosphorylation)
+      - model 1 shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_pfkl_state: float
+      fbpase: float
+      f6p: float
+      f1_6bp: float
+      source_defined_pep_state: float
+      isocitrate: float
+      source_2_oxoglutarate: float
+      malate: float
+      f2_6bp: float
+      citrate: float
+      source_defined_aldo_state: float
+      p_pfkl: float
+      f6p_proxy: float
+    species_labels:
+      source_defined_pfkl_state: source-defined PFKL state
+      fbpase: Fbpase
+      f6p: F6P
+      f1_6bp: F1 6BP
+      source_defined_pep_state: source-defined PEP state
+      isocitrate: Isocitrate
+      source_2_oxoglutarate: 2 Oxoglutarate
+      malate: Malate
+      f2_6bp: F2 6BP
+      citrate: Citrate
+      source_defined_aldo_state: source-defined ALDO state
+      p_pfkl: P PFKL
+      f6p_proxy: F6P Proxy
+io:
+  inputs: []
+  outputs: []

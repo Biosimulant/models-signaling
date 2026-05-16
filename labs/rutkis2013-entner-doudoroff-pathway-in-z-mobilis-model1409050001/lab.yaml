@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Rutkis2013 - Entner-Doudoroff pathway in Z.mobilis (cell-free) Lab
+description: 'Clean Biosimulant lab for systems signaling model: Rutkis2013 - Entner-Doudoroff
+  pathway in Z.mobilis (cell-free). Values are native SBML quantities; equations,
+  parameters, and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model.state
+  to:
+  - visualisation.signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model_state
+- from: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model.summary
+  to:
+  - visualisation.signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model_summary
+- from: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model.species_labels
+  to:
+  - visualisation.signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+io:
+  inputs:
+  - name: initial_source_defined_co2_state
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model.initial_source_defined_co2_state
+    label: Initial source-defined CO2 state
+    description: Initial level of source-defined CO2 state. Maps to SBML symbol `CO2`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: glucex
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model.glucex
+    label: Glucex
+    description: Glucex. Maps to SBML symbol `GLCo` and is emitted in native SBML
+      units.
+  - name: ethanolex
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model.ethanolex
+    label: Ethanolex
+    description: Ethanolex. Maps to SBML symbol `species_1` and is emitted in native
+      SBML units.
+  - name: gluccy
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model.gluccy
+    label: Gluccy
+    description: Gluccy. Maps to SBML symbol `GLCi` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_rutkis2013_entner_doudoroff_pathway_in_z_mobilis_model1409050001_model.species_labels
+    label: Observable labels

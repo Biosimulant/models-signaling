@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b20e4260-1c00-423e-b081-54cce08d6d9e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fcef5e6c-78ec-4e4a-8d57-63dfd04d403a",
+  "created_at": "2026-05-16T05:46:11.186291952+00:00",
+  "last_synced_at": "2026-05-16T10:38:51.179037+00:00",
+  "hub_manifest_hash": "6df7a36740b40285c96637f34891e0e4923cb8e6db9dca2b09b75dc6d57b9a92",
+  "package_name": "pathak2013-mapk-activation-in-response-to-various-biotic-stresse"
+}

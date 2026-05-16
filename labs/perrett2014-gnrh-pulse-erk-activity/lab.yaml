@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Perrett2014 - GnRH pulse, ERK activity Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model.state
+  to:
+  - visualisation.signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model_state
+- from: signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model.summary
+  to:
+  - visualisation.signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model_summary
+- from: signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model.species_labels
+  to:
+  - visualisation.signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- ras-erk
+io:
+  inputs:
+  - name: initial_hr_inact
+    maps_to: signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model.initial_hr_inact
+    label: Initial HR Inact
+    description: Initial level of HR Inact. Maps to SBML symbol `species_11`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_mek_act
+    maps_to: signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model.initial_mek_act
+    label: Initial MEK Act
+    description: Initial level of MEK Act. Maps to SBML symbol `species_14`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_p_erk_c
+    maps_to: signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model.initial_p_erk_c
+    label: Initial P ERK C
+    description: Initial level of P ERK C. Maps to SBML symbol `species_13`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: nuclear_phosphorylated_erk
+    maps_to: signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model.nuclear_phosphorylated_erk
+    label: nuclear phosphorylated ERK
+    description: nuclear phosphorylated ERK. Maps to SBML symbol `species_1` and is
+      emitted in native SBML units.
+  - name: pp_erk_n
+    maps_to: signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model.pp_erk_n
+    label: Pp ERK N
+    description: Pp ERK N. Maps to SBML symbol `species_2` and is emitted in native
+      SBML units.
+  - name: cytosolic_phosphorylated_erk
+    maps_to: signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model.cytosolic_phosphorylated_erk
+    label: cytosolic phosphorylated ERK
+    description: cytosolic phosphorylated ERK. Maps to SBML symbol `species_6` and
+      is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_perrett2014_gnrh_pulse_erk_activity_model1509050002_model.species_labels
+    label: Observable labels

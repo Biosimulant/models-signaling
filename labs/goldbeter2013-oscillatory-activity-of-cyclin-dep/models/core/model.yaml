@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Goldbeter2013-Oscillatory activity of cyclin-dependent kinases in the cell
+  cycle
+description: A model for oscillations of Cdc2 kinase in embryonic cell cycles based
+  on Michaelis–Menten phosphorylation–dephosphorylation kinetics shows that the occurrence
+  and amplitude of the oscillations strong. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cell-cycle-signaling
+authors:
+- Biosimulant Team
+- Albert Goldbeter
+upstream:
+  id: biomodels_ebi:BIOMD0000000944
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000944
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000944
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000944?filename=Goldbeter2013.xml
+  license: CC0
+biosim:
+  entrypoint: src.goldbeter2013_oscillatory_activity_of_cyclin_dep:Goldbeter2013OscillatoryActivityOfCyclinDepBiomd0000000944Model
+  init_kwargs:
+    model_path: data/BIOMD0000000944.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cyclin
+    maps_to: signaling_sbml_goldbeter2013_oscillatory_activity_of_cyclin_dep_biomd0000000944_model.initial_cyclin
+    label: Initial Cyclin
+    description: Initial level of Cyclin. Maps to SBML symbol `Cyclin`; exposed as
+      a traceable initial-condition perturbation.
+  outputs:
+  - name: active_cdc2_kinase
+    maps_to: signaling_sbml_goldbeter2013_oscillatory_activity_of_cyclin_dep_biomd0000000944_model.active_cdc2_kinase
+    label: active Cdc2 Kinase
+    description: active Cdc2 Kinase. Maps to SBML symbol `Active_Cdc2_kinase` and
+      is emitted in native SBML units.
+  - name: active_apc
+    maps_to: signaling_sbml_goldbeter2013_oscillatory_activity_of_cyclin_dep_biomd0000000944_model.active_apc
+    label: active APC
+    description: active APC. Maps to SBML symbol `Active_APC` and is emitted in native
+      SBML units.
+  - name: cyclin
+    maps_to: signaling_sbml_goldbeter2013_oscillatory_activity_of_cyclin_dep_biomd0000000944_model.cyclin
+    label: Cyclin
+    description: Cyclin. Maps to SBML symbol `Cyclin` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_goldbeter2013_oscillatory_activity_of_cyclin_dep_biomd0000000944_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_goldbeter2013_oscillatory_activity_of_cyclin_dep_biomd0000000944_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_goldbeter2013_oscillatory_activity_of_cyclin_dep_biomd0000000944_model.species_labels
+    label: Observable labels

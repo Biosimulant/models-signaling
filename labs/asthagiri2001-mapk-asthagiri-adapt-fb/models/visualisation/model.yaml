@@ -1,0 +1,112 @@
+schema_version: '2.0'
+title: Asthagiri2001_MAPK_Asthagiri_adapt_fb Visualisation
+description: Question-and-answer and chart visualisation for MAPK/ERK receptor signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_asthagiri2001_mapk_asthagiri_adapt_fb_model9147975215_model
+    title: Asthagiri2001_MAPK_Asthagiri_adapt_fb
+    context: receptor-to-MAPK cascade signaling
+    question: How does Asthagiri2001 MAPK Asthagiri adapt fb propagate receptor or
+      RAS/ERK pathway activity?
+    visual_scope: receptor-to-MAPK cascade signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_r_state: float
+      source_defined_c_state: float
+      c_active: float
+      source_defined_c2_state: float
+      source_defined_a1_state: float
+      source_defined_a2_state: float
+      c_active_a1: float
+      a1a2: float
+      e0_active: float
+      e0_active_e1_activ_e1_activ_cplx: float
+      source_defined_e1_state: float
+      e1_active: float
+      e1_active_e2_activ_e2_activ_cplx: float
+      source_defined_p1_state: float
+      p1_e1_active_deactiv_e1_active_deactiv_cplx: float
+      source_defined_e2_state: float
+      e2_active: float
+      e2_active_e3_activ_e3_activ_cplx: float
+      source_defined_p2_state: float
+      p2_e2_active_deactiv_e2_active_deactiv_cplx: float
+      source_defined_e3_state: float
+      e3_active: float
+      e3_active_e4_activ_e4_activ_cplx: float
+      source_defined_p3_state: float
+      p3_e3_active_deactiv_e3_active_deactiv_cplx: float
+      source_defined_e4_state: float
+      e4_active: float
+      e4_active_e5_activ_e5_activ_cplx: float
+      e4_active_e4_active_adpt_fb_e4_active_adpt_fb_cplx: float
+      source_defined_p4_state: float
+      p4_e4_active_deactiv_e4_active_deactiv_cplx: float
+      source_defined_e5_state: float
+      source_defined_p5_state: float
+      p5_e5_active_deactiv_e5_active_deactiv_cplx: float
+      e5_active: float
+      source_defined_a2_state_2: float
+      source_defined_l_state: float
+    species_labels:
+      source_defined_r_state: Source Defined R State
+      source_defined_c_state: Source Defined C State
+      c_active: C active
+      source_defined_c2_state: Source Defined C2 State
+      source_defined_a1_state: Source Defined A1 State
+      source_defined_a2_state: Source Defined A2 State
+      c_active_a1: C active A1
+      a1a2: A1A2
+      e0_active: E0 active
+      e0_active_e1_activ_e1_activ_cplx: E0 active E1 Activ E1 Activ Cplx
+      source_defined_e1_state: Source Defined E1 State
+      e1_active: E1 active
+      e1_active_e2_activ_e2_activ_cplx: E1 active E2 Activ E2 Activ Cplx
+      source_defined_p1_state: Source Defined P1 State
+      p1_e1_active_deactiv_e1_active_deactiv_cplx: P1 E1 active Deactiv E1 active
+        Deactiv Cplx
+      source_defined_e2_state: Source Defined E2 State
+      e2_active: E2 active
+      e2_active_e3_activ_e3_activ_cplx: E2 active E3 Activ E3 Activ Cplx
+      source_defined_p2_state: Source Defined P2 State
+      p2_e2_active_deactiv_e2_active_deactiv_cplx: P2 E2 active Deactiv E2 active
+        Deactiv Cplx
+      source_defined_e3_state: Source Defined E3 State
+      e3_active: E3 active
+      e3_active_e4_activ_e4_activ_cplx: E3 active E4 Activ E4 Activ Cplx
+      source_defined_p3_state: Source Defined P3 State
+      p3_e3_active_deactiv_e3_active_deactiv_cplx: P3 E3 active Deactiv E3 active
+        Deactiv Cplx
+      source_defined_e4_state: Source Defined E4 State
+      e4_active: E4 active
+      e4_active_e5_activ_e5_activ_cplx: E4 active E5 Activ E5 Activ Cplx
+      e4_active_e4_active_adpt_fb_e4_active_adpt_fb_cplx: E4 active E4 active Adpt
+        Fb E4 active Adpt Fb Cplx
+      source_defined_p4_state: Source Defined P4 State
+      p4_e4_active_deactiv_e4_active_deactiv_cplx: P4 E4 active Deactiv E4 active
+        Deactiv Cplx
+      source_defined_e5_state: Source Defined E5 State
+      source_defined_p5_state: Source Defined P5 State
+      p5_e5_active_deactiv_e5_active_deactiv_cplx: P5 E5 active Deactiv E5 active
+        Deactiv Cplx
+      e5_active: E5 active
+      source_defined_a2_state_2: Source Defined A2 State
+      source_defined_l_state: Source Defined L State
+io:
+  inputs: []
+  outputs: []

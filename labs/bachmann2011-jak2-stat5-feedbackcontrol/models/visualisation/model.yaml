@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Bachmann2011_JAK2-STAT5_FeedbackControl Visualisation
+description: Question-and-answer and chart visualisation for JAK/STAT cytokine signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- jak-stat
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_bachmann2011_jak2_stat5_feedbackcontrol_biomd0000000347_model
+    title: Bachmann2011_JAK2-STAT5_FeedbackControl
+    context: JAK/STAT receptor-to-transcription signaling
+    question: How does Bachmann2011 JAK2-STAT5 FeedbackControl transmit cytokine receptor
+      activity into STAT pathway states?
+    visual_scope: JAK/STAT receptor-to-transcription signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      epo_receptor_jak2_complex: float
+      phosphorylated_epo_receptor_jak2_complex: float
+      site_1_phosphorylated_epo_receptor_jak2_complex: float
+      site_2_phosphorylated_epo_receptor_jak2_complex: float
+      dual_site_phosphorylated_epo_receptor_jak2_complex: float
+      cis_bound_epo_receptor_jak2_complex: float
+      shp1_phosphatase: float
+      shp1act: float
+      stat5: float
+      phosphorylated_stat5: float
+      nuclear_phosphorylated_stat5: float
+      cisn_rna1: float
+      cisn_rna2: float
+      cisn_rna3: float
+      cisn_rna4: float
+      cisn_rna5: float
+      cisrna: float
+      cis_feedback_regulator: float
+      socs3n_rna1: float
+      socs3n_rna2: float
+      socs3n_rna3: float
+      socs3n_rna4: float
+      socs3n_rna5: float
+      socs3rna: float
+      socs3: float
+      erythropoietin: float
+    species_labels:
+      epo_receptor_jak2_complex: EPO receptor-JAK2 complex
+      phosphorylated_epo_receptor_jak2_complex: phosphorylated EPO receptor-JAK2 complex
+      site_1_phosphorylated_epo_receptor_jak2_complex: site 1 phosphorylated EPO receptor-JAK2
+        complex
+      site_2_phosphorylated_epo_receptor_jak2_complex: site 2 phosphorylated EPO receptor-JAK2
+        complex
+      dual_site_phosphorylated_epo_receptor_jak2_complex: dual-site phosphorylated
+        EPO receptor-JAK2 complex
+      cis_bound_epo_receptor_jak2_complex: CIS-bound EPO receptor-JAK2 complex
+      shp1_phosphatase: SHP1 phosphatase
+      shp1act: Shp1act
+      stat5: STAT5
+      phosphorylated_stat5: phosphorylated STAT5
+      nuclear_phosphorylated_stat5: nuclear phosphorylated STAT5
+      cisn_rna1: Cisn RNA1
+      cisn_rna2: Cisn RNA2
+      cisn_rna3: Cisn RNA3
+      cisn_rna4: Cisn RNA4
+      cisn_rna5: Cisn RNA5
+      cisrna: CISRNA
+      cis_feedback_regulator: CIS feedback regulator
+      socs3n_rna1: Socs3n RNA1
+      socs3n_rna2: Socs3n RNA2
+      socs3n_rna3: Socs3n RNA3
+      socs3n_rna4: Socs3n RNA4
+      socs3n_rna5: Socs3n RNA5
+      socs3rna: SOCS3RNA
+      socs3: SOCS3
+      erythropoietin: erythropoietin
+io:
+  inputs: []
+  outputs: []

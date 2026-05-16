@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Pokhilko1998 - Intrinsic Activation Kinetics (Dimensional Model) Lab
+description: 'Clean Biosimulant lab for systems signaling model: Pokhilko1998 - Intrinsic
+  Activation Kinetics (Dimensional Model). Values are native SBML quantities; equations,
+  parameters, and initial values remain in the bundled source file.'
+models:
+- alias: signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model.state
+  to:
+  - visualisation.signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model_state
+- from: signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model.summary
+  to:
+  - visualisation.signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model_summary
+- from: signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model.species_labels
+  to:
+  - visualisation.signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- coagulation
+io:
+  inputs:
+  - name: initial_response_node_x
+    maps_to: signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model.initial_response_node_x
+    label: Initial response node X
+    description: Initial level of response node X. Maps to SBML symbol `X`; exposed
+      as a traceable initial-condition perturbation.
+  - name: initial_source_defined_y_state
+    maps_to: signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model.initial_source_defined_y_state
+    label: Initial source-defined Y state
+    description: Initial level of source-defined Y state. Maps to SBML symbol `Y`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_z_state
+    maps_to: signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model.initial_source_defined_z_state
+    label: Initial source-defined Z state
+    description: Initial level of source-defined Z state. Maps to SBML symbol `Z`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: response_node_x
+    maps_to: signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model.response_node_x
+    label: response node X
+    description: response node X. Maps to SBML symbol `X` and is emitted in native
+      SBML units.
+  - name: source_defined_y_state
+    maps_to: signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model.source_defined_y_state
+    label: source-defined Y state
+    description: source-defined Y state. Maps to SBML symbol `Y` and is emitted in
+      native SBML units.
+  - name: source_defined_z_state
+    maps_to: signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model.source_defined_z_state
+    label: source-defined Z state
+    description: source-defined Z state. Maps to SBML symbol `Z` and is emitted in
+      native SBML units.
+  - name: state
+    maps_to: signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_pokhilko1998_intrinsic_activation_kinetics_dimen_model1808210003_model.species_labels
+    label: Observable labels

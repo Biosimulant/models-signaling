@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Nyman2012_InsulinSignalling Lab
+description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values
+  are native SBML quantities; equations, parameters, and initial values remain in
+  the bundled source file.
+models:
+- alias: signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model.state
+  to:
+  - visualisation.signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model_state
+- from: signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model.summary
+  to:
+  - visualisation.signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model_summary
+- from: signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model.species_labels
+  to:
+  - visualisation.signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- metabolic-signaling
+- hormone-signaling
+io:
+  inputs:
+  - name: initial_k1a_basic_level
+    maps_to: signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model.initial_k1a_basic_level
+    label: K1a Basic
+    description: K1a Basic source parameter. Maps to SBML symbol `k1aBasic` and preserves
+      the bundled default.
+  outputs:
+  - name: insulin_bound_insulin_receptor
+    maps_to: signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model.insulin_bound_insulin_receptor
+    label: insulin-bound insulin receptor
+    description: insulin-bound insulin receptor. Maps to SBML symbol `IRins` and is
+      emitted in native SBML units.
+  - name: phosphorylated_insulin_receptor
+    maps_to: signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model.phosphorylated_insulin_receptor
+    label: phosphorylated insulin receptor
+    description: phosphorylated insulin receptor. Maps to SBML symbol `IRp` and is
+      emitted in native SBML units.
+  - name: internalized_phosphorylated_insulin_receptor
+    maps_to: signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model.internalized_phosphorylated_insulin_receptor
+    label: internalized phosphorylated insulin receptor
+    description: internalized phosphorylated insulin receptor. Maps to SBML symbol
+      `IRiP` and is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_nyman2012_insulinsignalling_biomd0000000423_model.species_labels
+    label: Observable labels

@@ -1,0 +1,97 @@
+schema_version: '2.0'
+title: Bhalla2004_PKA_2003 Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Bhalla2004_PKA_2003.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- camp-pka
+- gpcr
+- neuroscience
+- physiology
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_bhalla2004_pka_2003_model9079740062_model
+    title: Bhalla2004_PKA_2003
+    context: GPCR and cAMP/PKA signaling
+    question: How does Bhalla2004 PKA 2003 route receptor activity into cAMP/PKA-linked
+      readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      pka_r2c2: float
+      pka_pka_inhibitor: float
+      pka_inhibited_pka: float
+      pka_c_amp_dot_r2c2: float
+      pka_camp2_dot_r2c2: float
+      pka_camp3_dot_r2c2: float
+      pka_camp4_dot_r2c2: float
+      pka_camp4_dot_r2c: float
+      pka_camp4_dot_r2: float
+      camp: float
+      pka_active: float
+      pka_active_phosph_pde_phosph_pde_cplx: float
+      ac_c_amp_pde: float
+      ac_c_amp_pde_pde_pde_cplx: float
+      ac_c_amp_pde_active: float
+      ac_c_amp_pde_active_pde_active_pde_active_cplx: float
+      ac_gs_dot_ac: float
+      source_defined_ac_ac_state: float
+      gtp_dot_ga: float
+      source_defined_gs_r_state: float
+      gs_l_dot_r: float
+      gs_gdp_dot_gabc: float
+      gs_l_dot_r_dot_gdp_dot_gabc: float
+      gs_gdp_dot_ga: float
+      gs_g_beta_response_parameter_response_parameter_response_parameter_response_parameter_response_parameter_gamma_complex: float
+      gs_r_dot_gdp_dot_gabc: float
+      ac_atp: float
+      ac_amp: float
+      source_defined_gs_l_state: float
+    species_labels:
+      pka_r2c2: PKA R2C2
+      pka_pka_inhibitor: PKA PKA Inhibitor
+      pka_inhibited_pka: PKA Inhibited PKA
+      pka_c_amp_dot_r2c2: PKA C AMP Dot R2C2
+      pka_camp2_dot_r2c2: PKA CAMP2 Dot R2C2
+      pka_camp3_dot_r2c2: PKA CAMP3 Dot R2C2
+      pka_camp4_dot_r2c2: PKA CAMP4 Dot R2C2
+      pka_camp4_dot_r2c: PKA CAMP4 Dot R2C
+      pka_camp4_dot_r2: PKA CAMP4 Dot R2
+      camp: cAMP
+      pka_active: PKA active
+      pka_active_phosph_pde_phosph_pde_cplx: PKA active Phosph PDE Phosph PDE Cplx
+      ac_c_amp_pde: AC C AMP PDE
+      ac_c_amp_pde_pde_pde_cplx: AC C AMP PDE PDE PDE Cplx
+      ac_c_amp_pde_active: AC C AMP PDE active
+      ac_c_amp_pde_active_pde_active_pde_active_cplx: AC C AMP PDE active PDE active
+        PDE active Cplx
+      ac_gs_dot_ac: AC Gs Dot AC
+      source_defined_ac_ac_state: Source Defined AC AC State
+      gtp_dot_ga: GTP Dot Ga
+      source_defined_gs_r_state: Source Defined GS R State
+      gs_l_dot_r: Gs L Dot R
+      gs_gdp_dot_gabc: Gs GDP Dot Gabc
+      gs_l_dot_r_dot_gdp_dot_gabc: Gs L Dot R Dot GDP Dot Gabc
+      gs_gdp_dot_ga: Gs GDP Dot Ga
+      gs_g_beta_response_parameter_response_parameter_response_parameter_response_parameter_response_parameter_gamma_complex: Gs
+        G beta response parameter Response Parameter Response Parameter Response Parameter
+        Response Parameter Gamma Complex
+      gs_r_dot_gdp_dot_gabc: Gs R Dot GDP Dot Gabc
+      ac_atp: AC ATP
+      ac_amp: AC AMP
+      source_defined_gs_l_state: Source Defined GS L State
+io:
+  inputs: []
+  outputs: []

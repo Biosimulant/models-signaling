@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Gray2016 - The Akt switch model
+description: This is a simple, linear, four-compartment ordinary differential equation
+  (ODE) model Akt activation that tracks both the phosphorylation state and the physical
+  location (cytosol, plasma membrane) of. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- pi3k-akt
+authors:
+- Biosimulant Team
+- Catheryn W Gray
+- Adelle C F Coster
+upstream:
+  id: biomodels_ebi:BIOMD0000000854
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000854
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000854
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000854?filename=Gray2016.xml
+  license: CC0
+biosim:
+  entrypoint: src.gray2016_the_akt_switch_model:Gray2016TheAktSwitchModelBiomd0000000854Model
+  init_kwargs:
+    model_path: data/BIOMD0000000854.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_ac_state
+    maps_to: signaling_sbml_gray2016_the_akt_switch_model_biomd0000000854_model.initial_source_defined_ac_state
+    label: Initial source-defined AC state
+    description: Initial level of source-defined AC state. Maps to SBML symbol `Ac`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_ac_state
+    maps_to: signaling_sbml_gray2016_the_akt_switch_model_biomd0000000854_model.source_defined_ac_state
+    label: source-defined AC state
+    description: source-defined AC state. Maps to SBML symbol `Ac` and is emitted
+      in native SBML units.
+  - name: source_defined_pc_state
+    maps_to: signaling_sbml_gray2016_the_akt_switch_model_biomd0000000854_model.source_defined_pc_state
+    label: source-defined PC state
+    description: source-defined PC state. Maps to SBML symbol `Pc` and is emitted
+      in native SBML units.
+  - name: source_defined_ap_state
+    maps_to: signaling_sbml_gray2016_the_akt_switch_model_biomd0000000854_model.source_defined_ap_state
+    label: source-defined AP state
+    description: source-defined AP state. Maps to SBML symbol `Ap` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_gray2016_the_akt_switch_model_biomd0000000854_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_gray2016_the_akt_switch_model_biomd0000000854_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_gray2016_the_akt_switch_model_biomd0000000854_model.species_labels
+    label: Observable labels

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d58c9532-d9f8-42b3-befe-211607c5ad88",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0c8ac7d3-08dc-4db8-b740-6efb42cc7b1a",
+  "created_at": "2026-05-15T19:08:10.385957126+00:00",
+  "last_synced_at": "2026-05-16T10:01:27.678587+00:00",
+  "hub_manifest_hash": "d4b36584ea46e562ed658c45e44498dea1c58f4a442612c456b3687e83ec8fde",
+  "package_name": "kok2020-ifnalpha-induced-signaling-in-huh7-5-cells-lab"
+}

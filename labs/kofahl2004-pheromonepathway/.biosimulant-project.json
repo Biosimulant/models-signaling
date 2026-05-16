@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "dac33f76-3217-47ff-b76c-971d43989f23",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ef9306e6-ede5-43a6-baf6-0176125c059c",
+  "created_at": "2026-05-15T19:08:10.345183715+00:00",
+  "last_synced_at": "2026-05-16T10:00:14.023455+00:00",
+  "hub_manifest_hash": "bd6c8e639f7df15110da2792cea43164991a5251957901f37166b10220c348fb",
+  "package_name": "kofahl2004-pheromonepathway-lab"
+}

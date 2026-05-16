@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "052353d9-1fd9-4602-995d-a1d679402a4e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ff90aba6-7f27-41e9-b5cc-a9d9cb6cf5dc",
+  "created_at": "2026-05-16T05:58:29.556753236+00:00",
+  "last_synced_at": "2026-05-16T11:24:38.114174+00:00",
+  "hub_manifest_hash": "0baee8689a5e5390f8062f3eb85b69d3a22cdeb225ee962a601e1039c2c6eb28",
+  "package_name": "yao2016-calcium-signaling-lab"
+}

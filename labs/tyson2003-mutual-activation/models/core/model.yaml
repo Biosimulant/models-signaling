@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Tyson2003_Mutual_Activation
+description: 'This is an SBML implementation the model of mutual activation (figure
+  1e) described in the article: Sniffers, buzzers, toggles and blinkers: dynamics
+  of regulatory and signaling pathways in the cell. It can be used to explore signaling
+  dynamics and compare pathway response across conditions.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+authors:
+- Biosimulant Team
+- John J Tyson
+- Katherine C Chen
+- Bela Novak
+upstream:
+  id: biomodels_ebi:BIOMD0000000311
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000311
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000311
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000311?filename=BIOMD0000000311_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.tyson2003_mutual_activation:Tyson2003MutualActivationBiomd0000000311Model
+  init_kwargs:
+    model_path: data/BIOMD0000000311.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_e_state
+    maps_to: signaling_sbml_tyson2003_mutual_activation_biomd0000000311_model.initial_source_defined_e_state
+    label: Initial source-defined E state
+    description: Initial level of source-defined E state. Maps to SBML symbol `E`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_ep_state
+    maps_to: signaling_sbml_tyson2003_mutual_activation_biomd0000000311_model.initial_source_defined_ep_state
+    label: Initial source-defined EP state
+    description: Initial level of source-defined EP state. Maps to SBML symbol `Ep`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_source_defined_s_state
+    maps_to: signaling_sbml_tyson2003_mutual_activation_biomd0000000311_model.initial_source_defined_s_state
+    label: Initial source-defined S state
+    description: Initial level of source-defined S state. Maps to SBML symbol `S`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_r_state
+    maps_to: signaling_sbml_tyson2003_mutual_activation_biomd0000000311_model.source_defined_r_state
+    label: Source Defined R State
+    description: Source Defined R State. Maps to SBML symbol `R` and is emitted in
+      native SBML units.
+  - name: source_defined_s_state
+    maps_to: signaling_sbml_tyson2003_mutual_activation_biomd0000000311_model.source_defined_s_state
+    label: Source Defined S State
+    description: Source Defined S State. Maps to SBML symbol `S` and is emitted in
+      native SBML units.
+  - name: source_defined_ep_state
+    maps_to: signaling_sbml_tyson2003_mutual_activation_biomd0000000311_model.source_defined_ep_state
+    label: Source Defined EP State
+    description: Source Defined EP State. Maps to SBML symbol `Ep` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_tyson2003_mutual_activation_biomd0000000311_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_tyson2003_mutual_activation_biomd0000000311_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_tyson2003_mutual_activation_biomd0000000311_model.species_labels
+    label: Observable labels

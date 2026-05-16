@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "43f3133c-ab59-450d-b76c-980dec59907e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "423139fa-6a9f-45bb-b2fa-61dc6438ab84",
+  "created_at": "2026-05-16T05:38:38.561899161+00:00",
+  "last_synced_at": "2026-05-16T10:25:15.370037+00:00",
+  "hub_manifest_hash": "2b623583c71694d939e0d59e3837791939246baa3ba0cf8efc8d2b593ca94c21",
+  "package_name": "neumann2010-cd95stimulation-nfkb-apoptosis-lab"
+}

@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Oliveira2020 - Beta-Alanine pathway for Acrylic Acid production from glucose
+  Lab
+description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values
+  are native SBML quantities; equations, parameters, and initial values remain in
+  the bundled source file.
+models:
+- alias: signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model.state
+  to:
+  - visualisation.signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model_state
+- from: signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model.summary
+  to:
+  - visualisation.signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model_summary
+- from: signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model.species_labels
+  to:
+  - visualisation.signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- metabolic-signaling
+io:
+  inputs:
+  - name: initial_coenzyme_a
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model.initial_coenzyme_a
+    label: Initial coenzyme A
+    description: Initial level of coenzyme A. Maps to SBML symbol `COA`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_cysteine
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model.initial_cysteine
+    label: Initial cysteine
+    description: Initial level of cysteine. Maps to SBML symbol `CYS`; exposed as
+      a traceable initial-condition perturbation.
+  - name: initial_h2o
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model.initial_h2o
+    label: Initial H2O
+    description: Initial level of H2O. Maps to SBML symbol `H2O`; exposed as a traceable
+      initial-condition perturbation.
+  outputs:
+  - name: camp
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model.camp
+    label: cAMP
+    description: cAMP. Maps to SBML symbol `CAMP` and is emitted in native SBML units.
+  - name: accoa
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model.accoa
+    label: ACCOA
+    description: ACCOA. Maps to SBML symbol `ACCOA` and is emitted in native SBML
+      units.
+  - name: source_defined_aco_state
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model.source_defined_aco_state
+    label: source-defined ACO state
+    description: source-defined ACO state. Maps to SBML symbol `ACO` and is emitted
+      in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_oliveira2020_beta_alanine_pathway_for_acrylic_ac_model2010040001_model.species_labels
+    label: Observable labels

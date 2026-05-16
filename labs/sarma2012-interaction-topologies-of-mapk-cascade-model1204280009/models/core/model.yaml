@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Sarma2012 - Interaction topologies of MAPK cascade (M1_K1_USEQ_short_duration_signal)
+description: Sarma2012 - Interaction topologies of MAPK cascade (M1_K1_USEQ_short_duration_signal)
+  The paper presents the various interaction topologies between the kinases and phosphatases
+  of MAPK cascade. It can be used to explore signaling dynamics and compare pathway
+  response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+authors:
+- Biosimulant Team
+- Uddipan Sarma
+- Indira Ghosh
+upstream:
+  id: biomodels_ebi:MODEL1204280009
+  source_db: biomodels_ebi
+  source_id: MODEL1204280009
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1204280009
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1204280009?filename=MODEL1204280009_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.sarma2012_interaction_topologies_of_mapk_cascade_model1204280009:Sarma2012InteractionTopologiesOfMapkCascadeModel1204280009Model
+  init_kwargs:
+    model_path: data/MODEL1204280009.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_mapk_kinase_kinase
+    maps_to: signaling_sbml_sarma2012_interaction_topologies_of_mapk_cascade_model1204280009_model.initial_mapk_kinase_kinase
+    label: Initial MAPK kinase kinase
+    description: Initial level of MAPK kinase kinase. Maps to SBML symbol `species_1`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: mapk_kinase_kinase
+    maps_to: signaling_sbml_sarma2012_interaction_topologies_of_mapk_cascade_model1204280009_model.mapk_kinase_kinase
+    label: MAPK kinase kinase
+    description: MAPK kinase kinase. Maps to SBML symbol `species_1` and is emitted
+      in native SBML units.
+  - name: mapk_kinase_kinase_p
+    maps_to: signaling_sbml_sarma2012_interaction_topologies_of_mapk_cascade_model1204280009_model.mapk_kinase_kinase_p
+    label: MAPK kinase kinase P
+    description: MAPK kinase kinase P. Maps to SBML symbol `species_2` and is emitted
+      in native SBML units.
+  - name: mapk_kinase
+    maps_to: signaling_sbml_sarma2012_interaction_topologies_of_mapk_cascade_model1204280009_model.mapk_kinase
+    label: MAPK kinase
+    description: MAPK kinase. Maps to SBML symbol `species_3` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_sarma2012_interaction_topologies_of_mapk_cascade_model1204280009_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_sarma2012_interaction_topologies_of_mapk_cascade_model1204280009_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_sarma2012_interaction_topologies_of_mapk_cascade_model1204280009_model.species_labels
+    label: Observable labels

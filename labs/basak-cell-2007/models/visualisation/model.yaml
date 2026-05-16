@@ -1,0 +1,95 @@
+schema_version: '2.0'
+title: Basak_Cell_2007 Visualisation
+description: Question-and-answer and chart visualisation for NF-kB pathway signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- nfkb
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_basak_cell_2007_model8478881246_model
+    title: Basak_Cell_2007
+    context: NF-kB activation and feedback signaling
+    question: How does Basak Cell 2007 move NF-kB and inhibitor-linked signaling states?
+    visual_scope: NF-kB activation and feedback signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      ik_bat: float
+      source_defined_ikba_state: float
+      ik_ban: float
+      ik_ba_ikk: float
+      ik_ba_nfk_b: float
+      ik_ba_nfk_bn: float
+      ik_ba_ikknfk_b: float
+      nfkb: float
+      source_defined_ikk2_state: float
+      nfk_bn: float
+      source_defined_ikk1_state: float
+      ik_complement_factor_bb_ikk: float
+      ik_complement_factor_bb_ikknfk_b: float
+      ik_complement_factor_bb_nfk_bn: float
+      ik_complement_factor_bb_nfk_b: float
+      ik_bbn: float
+      source_defined_ikbb_state: float
+      ik_bbt: float
+      ik_bet: float
+      source_defined_ikbe_state: float
+      ik_ben: float
+      ik_be_nfk_b: float
+      ik_be_nfk_bn: float
+      ik_be_ikknfk_b: float
+      ik_be_ikk: float
+      p100ikk1: float
+      p100ikk1nfk_b: float
+      p100nfk_bn: float
+      p100nfk_b: float
+      p100n: float
+      abstract_source_state_p100: float
+      p100t: float
+    species_labels:
+      ik_bat: Ik Bat
+      source_defined_ikba_state: source-defined IKBA state
+      ik_ban: Ik Ban
+      ik_ba_ikk: Ik Ba IKK
+      ik_ba_nfk_b: Ik Ba Nfk B
+      ik_ba_nfk_bn: Ik Ba Nfk Bn
+      ik_ba_ikknfk_b: Ik Ba Ikknfk B
+      nfkb: NF-kB
+      source_defined_ikk2_state: source-defined IKK2 state
+      nfk_bn: Nfk Bn
+      source_defined_ikk1_state: source-defined IKK1 state
+      ik_complement_factor_bb_ikk: Ik complement factor Bb IKK
+      ik_complement_factor_bb_ikknfk_b: Ik complement factor Bb Ikknfk B
+      ik_complement_factor_bb_nfk_bn: Ik complement factor Bb Nfk Bn
+      ik_complement_factor_bb_nfk_b: Ik complement factor Bb Nfk B
+      ik_bbn: Ik Bbn
+      source_defined_ikbb_state: source-defined IKBB state
+      ik_bbt: Ik Bbt
+      ik_bet: Ik Bet
+      source_defined_ikbe_state: source-defined IKBE state
+      ik_ben: Ik Ben
+      ik_be_nfk_b: Ik Be Nfk B
+      ik_be_nfk_bn: Ik Be Nfk Bn
+      ik_be_ikknfk_b: Ik Be Ikknfk B
+      ik_be_ikk: Ik Be IKK
+      p100ikk1: P100IKK1
+      p100ikk1nfk_b: P100ikk1nfk B
+      p100nfk_bn: P100nfk Bn
+      p100nfk_b: P100nfk B
+      p100n: P100n
+      abstract_source_state_p100: Abstract source state P100
+      p100t: P100t
+io:
+  inputs: []
+  outputs: []

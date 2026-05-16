@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Becker2010_EpoR_CoreModel Lab
+description: 'Clean Biosimulant lab for systems signaling model: Becker2010_EpoR_CoreModel.
+  Values are native SBML quantities; equations, parameters, and initial values remain
+  in the bundled source file.'
+models:
+- alias: signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model.state
+  to:
+  - visualisation.signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model_state
+- from: signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model.summary
+  to:
+  - visualisation.signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model_summary
+- from: signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model.species_labels
+  to:
+  - visualisation.signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+io:
+  inputs:
+  - name: initial_epo_receptor
+    maps_to: signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model.initial_epo_receptor
+    label: Initial EPO receptor
+    description: Initial level of EPO receptor. Maps to SBML symbol `EpoR`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: epo_receptor
+    maps_to: signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model.epo_receptor
+    label: EPO receptor
+    description: EPO receptor. Maps to SBML symbol `EpoR` and is emitted in native
+      SBML units.
+  - name: erythropoietin
+    maps_to: signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model.erythropoietin
+    label: erythropoietin
+    description: erythropoietin. Maps to SBML symbol `Epo` and is emitted in native
+      SBML units.
+  - name: erythropoietin_erythropoietin_r
+    maps_to: signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model.erythropoietin_erythropoietin_r
+    label: erythropoietin erythropoietin R
+    description: erythropoietin erythropoietin R. Maps to SBML symbol `Epo_EpoR` and
+      is emitted in native SBML units.
+  - name: state
+    maps_to: signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_becker2010_epor_coremodel_biomd0000000271_model.species_labels
+    label: Observable labels

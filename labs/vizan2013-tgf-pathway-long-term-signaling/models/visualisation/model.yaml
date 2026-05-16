@@ -1,0 +1,85 @@
+schema_version: '2.0'
+title: Vizan2013 - TGF pathway long term signaling Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Vizan2013 - TGF pathway long term signaling.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_vizan2013_tgf_pathway_long_term_signaling_biomd0000000499_model
+    title: Vizan2013 - TGF pathway long term signaling
+    context: metabolic and hormone signaling response
+    question: How does Vizan2013 - TGF pathway long term signaling shift hormone-linked
+      signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      abstract_source_state_s22: float
+      abstract_source_state_s24: float
+      p_s2tot: float
+      source_defined_tgf_state: float
+      source_defined_r_state: float
+      s2c: float
+      source_defined_rcom_state: float
+      p_s2c: float
+      rcom_s: float
+      s2n: float
+      s22n: float
+      s4n: float
+      s22c: float
+      p_s2n: float
+      p_s2fn: float
+      s24n: float
+      s24c: float
+      s4fc: float
+      s4c: float
+      p_s2fc: float
+      s4fn: float
+      source_defined_sbi_state: float
+      source_defined_rtot_state: float
+      source_defined_rt_state: float
+      rcom_i: float
+      source_defined_ract_state: float
+    species_labels:
+      abstract_source_state_s22: Abstract source state S22
+      abstract_source_state_s24: Abstract source state S24
+      p_s2tot: P S2tot
+      source_defined_tgf_state: source-defined TGF state
+      source_defined_r_state: source-defined R state
+      s2c: S2c
+      source_defined_rcom_state: source-defined RCOM state
+      p_s2c: P S2c
+      rcom_s: Rcom S
+      s2n: S2n
+      s22n: S22n
+      s4n: S4n
+      s22c: S22c
+      p_s2n: P S2n
+      p_s2fn: P S2fn
+      s24n: S24n
+      s24c: S24c
+      s4fc: S4fc
+      s4c: S4c
+      p_s2fc: P S2fc
+      s4fn: S4fn
+      source_defined_sbi_state: source-defined SBI state
+      source_defined_rtot_state: source-defined RTOT state
+      source_defined_rt_state: source-defined RT state
+      rcom_i: Rcom I
+      source_defined_ract_state: source-defined RACT state
+io:
+  inputs: []
+  outputs: []

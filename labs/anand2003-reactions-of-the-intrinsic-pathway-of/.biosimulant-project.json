@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "173c0547-8238-4070-abe4-46cda77aed0b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "18a82dbd-b13f-4c3a-b4cd-dec2313fe433",
+  "created_at": "2026-05-15T19:08:08.620819402+00:00",
+  "last_synced_at": "2026-05-16T08:44:04.315836+00:00",
+  "hub_manifest_hash": "af747b0b34fe6073e5b4b33d951206a6cd2af28e71938370b1d8a7c164acc828",
+  "package_name": "anand2003-reactions-of-the-intrinsic-pathway-of-blood-coagulatio"
+}

@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Chulian2021 - feedback signalling in B lymphopoeisis
+description: Salvador Chulián, Álvaro Martínez-Rubio, Anna Marciniak-Czochra, Thomas
+  Stiehl, Cristina Blázquez Goñi, Juan Francisco Rodríguez Gutiérrez, Manuel Ramírez
+  Orellana, Ana Castillo Robleda, Víctor M. It can be used to explore signaling dynamics
+  and compare pathway response across conditions.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- immune-signaling
+- physiology
+authors:
+- Biosimulant Team
+- Chulián S
+- Martínez-Rubio Á
+- Marciniak-Czochra A
+- Stiehl T
+- Goñi CB
+upstream:
+  id: biomodels_ebi:BIOMD0000001056
+  source_db: biomodels_ebi
+  source_id: BIOMD0000001056
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001056
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001056?filename=chulian2021.xml
+  license: CC0
+biosim:
+  entrypoint: src.chulian2021_feedback_signalling_in_b_lymphopoeis:Chulian2021FeedbackSignallingInBLymphopoeisBiomd0000001056Model
+  init_kwargs:
+    model_path: data/BIOMD0000001056.xml
+    integration_step: 0.01
+  communication_step: 0.1
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_source_defined_c1_state
+    maps_to: signaling_sbml_chulian2021_feedback_signalling_in_b_lymphopoeis_biomd0000001056_model.initial_source_defined_c1_state
+    label: Initial source-defined C1 state
+    description: Initial level of source-defined C1 state. Maps to SBML symbol `C1`;
+      exposed as a traceable initial-condition perturbation.
+  outputs:
+  - name: source_defined_c1_state
+    maps_to: signaling_sbml_chulian2021_feedback_signalling_in_b_lymphopoeis_biomd0000001056_model.source_defined_c1_state
+    label: source-defined C1 state
+    description: source-defined C1 state. Maps to SBML symbol `C1` and is emitted
+      in native SBML units.
+  - name: source_defined_c2_state
+    maps_to: signaling_sbml_chulian2021_feedback_signalling_in_b_lymphopoeis_biomd0000001056_model.source_defined_c2_state
+    label: source-defined C2 state
+    description: source-defined C2 state. Maps to SBML symbol `C2` and is emitted
+      in native SBML units.
+  - name: complement_c3
+    maps_to: signaling_sbml_chulian2021_feedback_signalling_in_b_lymphopoeis_biomd0000001056_model.complement_c3
+    label: complement C3
+    description: complement C3. Maps to SBML symbol `C3` and is emitted in native
+      SBML units.
+  - name: state
+    maps_to: signaling_sbml_chulian2021_feedback_signalling_in_b_lymphopoeis_biomd0000001056_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_chulian2021_feedback_signalling_in_b_lymphopoeis_biomd0000001056_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_chulian2021_feedback_signalling_in_b_lymphopoeis_biomd0000001056_model.species_labels
+    label: Observable labels

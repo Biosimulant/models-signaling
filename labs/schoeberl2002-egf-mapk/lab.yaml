@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Schoeberl2002 - EGF MAPK Lab
+description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
+  SBML quantities; equations, parameters, and initial values remain in the bundled
+  source file.
+models:
+- alias: signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model.state
+  to:
+  - visualisation.signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model_state
+- from: signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model.summary
+  to:
+  - visualisation.signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model_summary
+- from: signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model.species_labels
+  to:
+  - visualisation.signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- mapk
+io:
+  inputs:
+  - name: initial_egf
+    maps_to: signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model.initial_egf
+    label: Initial EGF
+    description: Initial level of EGF. Maps to SBML symbol `x1`; exposed as a traceable
+      initial-condition perturbation.
+  - name: initial_t_egf_egfr
+    maps_to: signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model.initial_t_egf_egfr
+    label: Initial T EGF EGFR
+    description: Initial level of T EGF EGFR. Maps to SBML symbol `EGF_EGFR_act`;
+      exposed as a traceable initial-condition perturbation.
+  - name: initial_t_erk_pp
+    maps_to: signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model.initial_t_erk_pp
+    label: Initial T ERK PP
+    description: Initial level of T ERK PP. Maps to SBML symbol `ERK_PP`; exposed
+      as a traceable initial-condition perturbation.
+  outputs:
+  - name: egf_egfri_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp
+    maps_to: signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model.egf_egfri_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gdp
+    label: EGF Egfri 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      RAS GDP
+    description: EGF Egfri 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange
+      factor RAS GDP. Maps to SBML symbol `x20` and is emitted in native SBML units.
+  - name: egf_egfri_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp
+    maps_to: signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model.egf_egfri_2_gap_grb2_adapter_protein_sos_guanine_nucleotide_exchange_factor_ras_gtp
+    label: EGF Egfri 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange factor
+      RAS GTP
+    description: EGF Egfri 2 GAP Grb2 adapter protein SOS guanine-nucleotide exchange
+      factor RAS GTP. Maps to SBML symbol `x21` and is emitted in native SBML units.
+  - name: ras_gdp
+    maps_to: signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model.ras_gdp
+    label: RAS GDP
+    description: RAS GDP. Maps to SBML symbol `x26` and is emitted in native SBML
+      units.
+  - name: state
+    maps_to: signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model.state
+    label: Observable state
+  - name: summary
+    maps_to: signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model.summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: signaling_sbml_schoeberl2002_egf_mapk_biomd0000000019_model.species_labels
+    label: Observable labels

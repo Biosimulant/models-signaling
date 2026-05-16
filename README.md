@@ -1,10 +1,13 @@
 # models-signaling
 
-Curated collection of **cell signaling** and **signal transduction** simulation models for the **biosim** platform. This repository contains 372 computational models of signaling pathways, receptor dynamics, second messengers, and signal transduction cascades.
+> Storage-only repo: each former root model now lives in `labs/<slug>/models/core/` and is wrapped by
+> `labs/<slug>/lab.yaml`. This repo has no repo-level import catalog and no composed labs at the root.
+
+Curated collection of **cell signaling** and **signal transduction** simulation models for the **biosim** platform. This repository contains cleaned computational labs for signaling pathways, receptor dynamics, second messengers, and signal transduction cascades.
 
 ## What's Inside
 
-### Models (372 packages)
+### Labs
 
 **Cell Signaling** — signal transduction pathways, receptor activation, and signaling networks:
 

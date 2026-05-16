@@ -1,0 +1,217 @@
+schema_version: '2.0'
+title: Oliveira2020 - Malonyl-CoA pathway for 3-hydroxypropionate production from
+  glycerol Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Oliveira2020 - Malonyl-CoA pathway for 3-hydroxypropionate production from glycerol.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_oliveira2020_malonyl_coa_pathway_for_3_hydroxypr_model2010030008_model
+    title: Oliveira2020 - Malonyl-CoA pathway for 3-hydroxypropionate production from
+      glycerol
+    context: metabolic and hormone signaling response
+    question: How does Oliveira2020 - Malonyl-CoA pathway for 3-hydroxypropionate
+      production from glycerol shift hormone-linked signaling readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      accoa: float
+      source_defined_aco_state: float
+      source_defined_acp_state: float
+      source_defined_akg_state: float
+      source_defined_bpg_state: float
+      source_defined_cit_state: float
+      source_defined_dap_state: float
+      e4p: float
+      f6p: float
+      source_defined_fdp_state: float
+      source_defined_fum_state: float
+      g6p: float
+      source_defined_gap_state: float
+      gl6p: float
+      source_defined_glx_state: float
+      source_defined_icit_state: float
+      source_defined_kdpg_state: float
+      source_defined_mal_state: float
+      nad: float
+      source_defined_nadh_state: float
+      source_defined_nadp_state: float
+      nadph: float
+      source_defined_oaa_state: float
+      source_defined_pep_state: float
+      source_defined_pga2_state: float
+      source_defined_pga3_state: float
+      source_defined_pgn_state: float
+      source_defined_pyr_state: float
+      source_defined_q_state: float
+      source_defined_qh2_state: float
+      r5p: float
+      ru5p: float
+      s7p: float
+      sucrose: float
+      succoa: float
+      x5p: float
+      source_defined_ei_state: float
+      source_defined_eip_state: float
+      source_defined_eiia_state: float
+      eiia_p: float
+      eiicb: float
+      eiicb_p: float
+      source_defined_hpr_state: float
+      source_defined_hprp_state: float
+      source_defined_icd_state: float
+      source_defined_icdp_state: float
+      source_defined_tal_state: float
+      source_defined_talc3_state: float
+      source_defined_tkt_state: float
+      source_defined_tktc2_state: float
+      adp: float
+      amp: float
+      atp: float
+      camp: float
+      coenzyme_a: float
+      source_defined_hco3_state: float
+      source_defined_p_state: float
+      source_defined_mg_state: float
+      mg_adp: float
+      mg_atp: float
+      mg_fdp: float
+      aspartate_ligand: float
+      cysteine: float
+      source_defined_mn_state: float
+      source_defined_hin_state: float
+      h2o: float
+      source_defined_o2_state: float
+      source_defined_fad_state: float
+      source_defined_fadh2_state: float
+      acetate: float
+      source_defined_glcx_state: float
+      source_defined_px_state: float
+      source_defined_acex_state: float
+      source_defined_hout_state: float
+      source_defined_glcp_state: float
+      source_defined_pp_state: float
+      source_defined_acep_state: float
+      g3p: float
+      source_defined_gly_state: float
+      source_defined_mcoa_state: float
+      source_defined_lglu_state: float
+      source_defined_ba_state: float
+      source_3hp: float
+      source_defined_msa_state: float
+      source_defined_glyp_state: float
+      source_defined_glyx_state: float
+      source_defined_bap_state: float
+      source_defined_bax_state: float
+      source_defined_dha_state: float
+      source_3hpp: float
+      source_3hpx: float
+    species_labels:
+      accoa: ACCOA
+      source_defined_aco_state: source-defined ACO state
+      source_defined_acp_state: source-defined ACP state
+      source_defined_akg_state: source-defined AKG state
+      source_defined_bpg_state: source-defined BPG state
+      source_defined_cit_state: source-defined CIT state
+      source_defined_dap_state: source-defined DAP state
+      e4p: E4P
+      f6p: F6P
+      source_defined_fdp_state: source-defined FDP state
+      source_defined_fum_state: source-defined FUM state
+      g6p: G6P
+      source_defined_gap_state: source-defined GAP state
+      gl6p: GL6P
+      source_defined_glx_state: source-defined GLX state
+      source_defined_icit_state: source-defined ICIT state
+      source_defined_kdpg_state: source-defined KDPG state
+      source_defined_mal_state: source-defined MAL state
+      nad: NAD
+      source_defined_nadh_state: source-defined NADH state
+      source_defined_nadp_state: source-defined NADP state
+      nadph: NADPH
+      source_defined_oaa_state: source-defined OAA state
+      source_defined_pep_state: source-defined PEP state
+      source_defined_pga2_state: source-defined PGA2 state
+      source_defined_pga3_state: source-defined PGA3 state
+      source_defined_pgn_state: source-defined PGN state
+      source_defined_pyr_state: source-defined PYR state
+      source_defined_q_state: source-defined Q state
+      source_defined_qh2_state: source-defined QH2 state
+      r5p: R5P
+      ru5p: RU5P
+      s7p: S7P
+      sucrose: sucrose
+      succoa: SUCCOA
+      x5p: X5P
+      source_defined_ei_state: source-defined EI state
+      source_defined_eip_state: source-defined EIP state
+      source_defined_eiia_state: source-defined EIIA state
+      eiia_p: Eiia P
+      eiicb: Eiicb
+      eiicb_p: Eiicb P
+      source_defined_hpr_state: source-defined HPR state
+      source_defined_hprp_state: source-defined HPRP state
+      source_defined_icd_state: source-defined ICD state
+      source_defined_icdp_state: source-defined ICDP state
+      source_defined_tal_state: source-defined TAL state
+      source_defined_talc3_state: source-defined TALC3 state
+      source_defined_tkt_state: source-defined TKT state
+      source_defined_tktc2_state: source-defined TKTC2 state
+      adp: ADP
+      amp: AMP
+      atp: ATP
+      camp: cAMP
+      coenzyme_a: coenzyme A
+      source_defined_hco3_state: source-defined HCO3 state
+      source_defined_p_state: source-defined P state
+      source_defined_mg_state: source-defined MG state
+      mg_adp: Mg ADP
+      mg_atp: Mg ATP
+      mg_fdp: Mg FDP
+      aspartate_ligand: aspartate ligand
+      cysteine: cysteine
+      source_defined_mn_state: source-defined MN state
+      source_defined_hin_state: source-defined HIN state
+      h2o: H2O
+      source_defined_o2_state: source-defined O2 state
+      source_defined_fad_state: source-defined FAD state
+      source_defined_fadh2_state: source-defined FADH2 state
+      acetate: acetate
+      source_defined_glcx_state: source-defined GLCX state
+      source_defined_px_state: source-defined PX state
+      source_defined_acex_state: source-defined ACEX state
+      source_defined_hout_state: source-defined HOUT state
+      source_defined_glcp_state: source-defined GLCP state
+      source_defined_pp_state: source-defined PP state
+      source_defined_acep_state: source-defined ACEP state
+      g3p: G3P
+      source_defined_gly_state: source-defined GLY state
+      source_defined_mcoa_state: source-defined MCOA state
+      source_defined_lglu_state: source-defined LGLU state
+      source_defined_ba_state: source-defined BA state
+      source_3hp: 3HP
+      source_defined_msa_state: source-defined MSA state
+      source_defined_glyp_state: source-defined GLYP state
+      source_defined_glyx_state: source-defined GLYX state
+      source_defined_bap_state: source-defined BAP state
+      source_defined_bax_state: source-defined BAX state
+      source_defined_dha_state: source-defined DHA state
+      source_3hpp: 3hpp
+      source_3hpx: 3hpx
+io:
+  inputs: []
+  outputs: []

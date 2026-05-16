@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Beard2005_Mitochondrial_Respiration Visualisation
+description: Question-and-answer and chart visualisation for metabolic and hormone-linked
+  signaling.
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- stress-response
+- metabolic-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_beard2005_mitochondrial_respiration_model4151491057_model
+    title: Beard2005_Mitochondrial_Respiration
+    context: metabolic and hormone signaling response
+    question: How does Beard2005 Mitochondrial Respiration shift hormone-linked signaling
+      readouts?
+    visual_scope: metabolic and hormone signaling response
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_h_x_state: float
+      source_defined_k_x_state: float
+      source_defined_mg_x_state: float
+      nadh_x: float
+      source_defined_qh2_state: float
+      source_defined_cred_state: float
+      source_defined_atp_x_state: float
+      source_defined_adp_x_state: float
+      atp_mx: float
+      adp_mx: float
+      source_defined_pi_x_state: float
+      intracellular_atp: float
+      intracellular_adp: float
+      source_defined_amp_i_state: float
+      atp_mi: float
+      adp_mi: float
+      source_defined_pi_i_state: float
+      source_defined_dpsi_state: float
+      source_defined_o2_state: float
+    species_labels:
+      source_defined_h_x_state: Source Defined H X State
+      source_defined_k_x_state: Source Defined K X State
+      source_defined_mg_x_state: Source Defined MG X State
+      nadh_x: NADH X
+      source_defined_qh2_state: Source Defined QH2 State
+      source_defined_cred_state: Source Defined CRED State
+      source_defined_atp_x_state: Source Defined ATP X State
+      source_defined_adp_x_state: Source Defined ADP X State
+      atp_mx: ATP Mx
+      adp_mx: ADP Mx
+      source_defined_pi_x_state: Source Defined PI X State
+      intracellular_atp: Intracellular ATP
+      intracellular_adp: Intracellular ADP
+      source_defined_amp_i_state: Source Defined AMP I State
+      atp_mi: ATP Mi
+      adp_mi: ADP Mi
+      source_defined_pi_i_state: Source Defined PI I State
+      source_defined_dpsi_state: Source Defined DPSI State
+      source_defined_o2_state: Source Defined O2 State
+io:
+  inputs: []
+  outputs: []

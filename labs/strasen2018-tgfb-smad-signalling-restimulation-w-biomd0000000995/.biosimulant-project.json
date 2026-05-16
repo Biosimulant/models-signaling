@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "de9d8693-9690-467a-a25a-3053dc5c167c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fc1b0c4b-8291-4a09-af9f-180069af4c9b",
+  "created_at": "2026-05-16T05:58:28.081226845+00:00",
+  "last_synced_at": "2026-05-16T12:31:43.449689+00:00",
+  "hub_manifest_hash": "6934eea3731a961ad300abae9d6ab558aca36e93084bda1ffe193dec38864f6e",
+  "package_name": "biomd0000000995-strasen2018-tgfb-smad-signalling-restimulation-w"
+}

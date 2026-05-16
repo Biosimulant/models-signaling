@@ -1,0 +1,45 @@
+schema_version: '2.0'
+title: Cookson2011_EnzymaticQueueingCoupling Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Cookson2011_EnzymaticQueueingCoupling.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- cellular-signaling
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_cookson2011_enzymaticqueueingcoupling_biomd0000000405_model
+    title: Cookson2011_EnzymaticQueueingCoupling
+    context: phosphorylation and regulatory motif dynamics
+    question: How does Cookson2011 EnzymaticQueueingCoupling express its source-modeled
+      signaling motif over the baseline run?
+    visual_scope: phosphorylation and regulatory motif dynamics
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      source_defined_x1_state: float
+      source_defined_x2_state: float
+      source_defined_e1_state: float
+      source_defined_e2_state: float
+      source_defined_e_state: float
+      source_defined_e_x1_state: float
+    species_labels:
+      source_defined_x1_state: source-defined X1 state
+      source_defined_x2_state: source-defined X2 state
+      source_defined_e1_state: source-defined E1 state
+      source_defined_e2_state: source-defined E2 state
+      source_defined_e_state: source-defined E state
+      source_defined_e_x1_state: source-defined E+X1 state
+io:
+  inputs: []
+  outputs: []

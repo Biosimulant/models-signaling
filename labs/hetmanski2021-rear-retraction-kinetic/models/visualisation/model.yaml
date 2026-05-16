@@ -1,0 +1,149 @@
+schema_version: '2.0'
+title: Hetmanski2021 rear retraction kinetic Visualisation
+description: 'Question-and-answer and chart visualisation for systems signaling model:
+  Hetmanski2021 rear retraction kinetic.'
+standard: other
+tags:
+- signaling
+- systems
+- systems-biology
+- sbml
+- faithful
+- biomodels_ebi
+- gpcr
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 0.1
+  entrypoint: src.signaling_visualisation:SignalingVisualisationModel
+  init_kwargs:
+    source_alias: signaling_sbml_hetmanski2021_rear_retraction_kinetic_model2103010001_model
+    title: Hetmanski2021 rear retraction kinetic
+    context: GPCR and cAMP/PKA signaling
+    question: How does Hetmanski2021 rear retraction kinetic route receptor activity
+      into cAMP/PKA-linked readouts?
+    visual_scope: GPCR and cAMP/PKA signaling
+    caveat: Values are native SBML quantities; equations, parameters, units, and initial
+      values remain in the bundled source file.
+    state_schema:
+      rho_agdp: float
+      rho_agtp: float
+      rock1i: float
+      rock1a: float
+      rho_a_rock1: float
+      source_defined_drfi_state: float
+      source_defined_drfa_state: float
+      pkn2i: float
+      rho_a_pkn2: float
+      pkn2a: float
+      limki: float
+      rock1_limk: float
+      limka: float
+      cofilina: float
+      limk_cofilin: float
+      cofilini: float
+      actinag: float
+      drf_actin: float
+      actinf: float
+      cofilin_actin: float
+      cpi_17i: float
+      pkn2_cpi17: float
+      cpi_17a: float
+      rock1_cpi17: float
+      mlcpa: float
+      rock_mlcp: float
+      mlcpi: float
+      cpi17_mlcp: float
+      rho_a_drf: float
+      rock1_drf: float
+      p_mlca: float
+      p_mlci: float
+      mlcp_pmlc: float
+      rock1_p_mlc_mlcp: float
+      cavi_src: float
+      cav1a: float
+      source_defined_srca_state: float
+      cav1i: float
+      source_defined_srci_state: float
+      cav_gef: float
+      source_defined_gefi_state: float
+      source_defined_gefa_state: float
+      p190gapi: float
+      src_p190: float
+      p190gapa: float
+      actomyo_high: float
+      polcont_high: float
+      polcont_low: float
+      polystiff_high: float
+      recoil_fast: float
+      tension_d: float
+      tension_i: float
+      actomyo_low: float
+      recoil_slow: float
+      p190gap_rho_a: float
+      rho_gef: float
+      cava_src: float
+      pkn2_actin: float
+    species_labels:
+      rho_agdp: Rho Agdp
+      rho_agtp: Rho Agtp
+      rock1i: Rock1i
+      rock1a: Rock1a
+      rho_a_rock1: Rho A Rock1
+      source_defined_drfi_state: source-defined DRFI state
+      source_defined_drfa_state: source-defined DRFA state
+      pkn2i: Pkn2i
+      rho_a_pkn2: Rho A PKN2
+      pkn2a: Pkn2a
+      limki: Limki
+      rock1_limk: ROCK1 LIMK
+      limka: Limka
+      cofilina: Cofilina
+      limk_cofilin: LIMK Cofilin
+      cofilini: Cofilini
+      actinag: Actinag
+      drf_actin: DRF Actin
+      actinf: Actinf
+      cofilin_actin: Cofilin Actin
+      cpi_17i: CPI 17i
+      pkn2_cpi17: PKN2 CPI17
+      cpi_17a: CPI 17a
+      rock1_cpi17: ROCK1 CPI17
+      mlcpa: Mlcpa
+      rock_mlcp: ROCK MLCP
+      mlcpi: Mlcpi
+      cpi17_mlcp: CPI17 MLCP
+      rho_a_drf: Rho A Drf
+      rock1_drf: ROCK1 DRF
+      p_mlca: P Mlca
+      p_mlci: P Mlci
+      mlcp_pmlc: MLCP PMLC
+      rock1_p_mlc_mlcp: Rock1 P MLC MLCP
+      cavi_src: Cavi Src
+      cav1a: Cav1a
+      source_defined_srca_state: source-defined SRCA state
+      cav1i: Cav1i
+      source_defined_srci_state: source-defined SRCI state
+      cav_gef: Cav Gef
+      source_defined_gefi_state: source-defined GEFI state
+      source_defined_gefa_state: source-defined GEFA state
+      p190gapi: P190gapi
+      src_p190: Src P190
+      p190gapa: P190gapa
+      actomyo_high: Actomyo High
+      polcont_high: Polcont High
+      polcont_low: Polcont Low
+      polystiff_high: Polystiff High
+      recoil_fast: Recoil Fast
+      tension_d: Tension D
+      tension_i: Tension I
+      actomyo_low: Actomyo Low
+      recoil_slow: Recoil Slow
+      p190gap_rho_a: P190gap Rho A
+      rho_gef: Rho Gef
+      cava_src: Cava Src
+      pkn2_actin: Pkn2 Actin
+io:
+  inputs: []
+  outputs: []

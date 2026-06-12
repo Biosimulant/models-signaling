@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: lemon2003-ca2dynamics
+version: 1.0.0
 title: Lemon2003_Ca2Dynamics Lab
 description: Clean Biosimulant lab for calcium and second-messenger signaling. Values
   are native SBML quantities; equations, parameters, and initial values remain in

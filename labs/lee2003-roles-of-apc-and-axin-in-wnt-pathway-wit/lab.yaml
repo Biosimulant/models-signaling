@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: lee2003-roles-of-apc-and-axin-in-wnt-pathway-wit
+version: 1.0.0
 title: Lee2003 - Roles of APC and Axin in Wnt Pathway (without regulatory loop) Lab
 description: Clean Biosimulant lab for developmental and growth-control signaling.
   Values are native SBML quantities; equations, parameters, and initial values remain

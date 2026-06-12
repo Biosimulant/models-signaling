@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: hetmanski2019-mechanochemical-signaling-controll
+version: 1.0.0
 title: Hetmanski2019 - Mechanochemical signaling controlled rear retraction of migrating
   cell Lab
 description: 'Clean Biosimulant lab for systems signaling model: Hetmanski2019 - Mechanochemical

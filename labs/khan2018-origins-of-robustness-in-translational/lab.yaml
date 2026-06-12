@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: khan2018-origins-of-robustness-in-translational
+version: 1.0.0
 title: Khan2018 - Origins of robustness in translational control via eukaryotic translation
   initiation factor (eIF) 2 Lab
 description: 'Clean Biosimulant lab for systems signaling model: Khan2018 - Origins

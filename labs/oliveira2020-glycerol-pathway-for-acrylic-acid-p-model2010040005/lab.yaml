@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: oliveira2020-glycerol-pathway-for-acrylic-acid-p-model2010040005
+version: 1.0.0
 title: MODEL2010040005 - Oliveira2020 - Glycerol pathway for Acrylic Acid production from glycerol Lab
 description: 'Clean Biosimulant lab for systems signaling model: Oliveira2020 - Glycerol
   pathway for Acrylic Acid production from glycerol. Values are native SBML quantities;

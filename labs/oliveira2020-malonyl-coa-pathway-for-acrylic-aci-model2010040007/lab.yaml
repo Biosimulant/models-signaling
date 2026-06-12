@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: oliveira2020-malonyl-coa-pathway-for-acrylic-aci-model2010040007
+version: 1.0.0
 title: MODEL2010040007 - Oliveira2020 - Malonyl-CoA pathway for Acrylic Acid production from glycerol
   Lab
 description: 'Clean Biosimulant lab for systems signaling model: Oliveira2020 - Malonyl-CoA

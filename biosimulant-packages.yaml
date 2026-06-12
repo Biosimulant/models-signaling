@@ -1,0 +1,1942 @@
+schema_version: "1"
+namespace: demi
+default_visibility: public
+packages:
+  - id: abell2011-calciumsignaling-withadaptation-lab
+    package: abell2011-calciumsignaling-withadaptation
+    version: 1.0.0
+    type: lab
+    path: labs/abell2011-calciumsignaling-withadaptation
+    visibility: public
+  - id: abell2011-calciumsignaling-withoutadaptation-lab
+    package: abell2011-calciumsignaling-withoutadaptation
+    version: 1.0.0
+    type: lab
+    path: labs/abell2011-calciumsignaling-withoutadaptation
+    visibility: public
+  - id: adlung2021-cell-to-cell-variability-in-jak2-stat-lab
+    package: adlung2021-cell-to-cell-variability-in-jak2-stat
+    version: 1.0.0
+    type: lab
+    path: labs/adlung2021-cell-to-cell-variability-in-jak2-stat
+    visibility: public
+  - id: ajay-bhalla-2007-bistable-lab
+    package: ajay-bhalla-2007-bistable
+    version: 1.0.0
+    type: lab
+    path: labs/ajay-bhalla-2007-bistable
+    visibility: public
+  - id: ajay-bhalla-2007-pkm-lab
+    package: ajay-bhalla-2007-pkm
+    version: 1.0.0
+    type: lab
+    path: labs/ajay-bhalla-2007-pkm
+    visibility: public
+  - id: almeida2019-transcription-based-circadian-mechan-lab
+    package: almeida2019-transcription-based-circadian-mechan
+    version: 1.0.0
+    type: lab
+    path: labs/almeida2019-transcription-based-circadian-mechan
+    visibility: public
+  - id: amara2013-pcna-ubiquitylation-in-the-activation-lab
+    package: amara2013-pcna-ubiquitylation-in-the-activation
+    version: 1.0.0
+    type: lab
+    path: labs/amara2013-pcna-ubiquitylation-in-the-activation
+    visibility: public
+  - id: amstein2017-tnfr1-mediated-nf-b-signaling-petri-lab
+    package: amstein2017-tnfr1-mediated-nf-b-signaling-petri
+    version: 1.0.0
+    type: lab
+    path: labs/amstein2017-tnfr1-mediated-nf-b-signaling-petri
+    visibility: public
+  - id: anand2003-reactions-of-the-intrinsic-pathway-of-lab
+    package: anand2003-reactions-of-the-intrinsic-pathway-of
+    version: 1.0.0
+    type: lab
+    path: labs/anand2003-reactions-of-the-intrinsic-pathway-of
+    visibility: public
+  - id: araujo2016-positive-feedback-in-cdk1-signalling-lab
+    package: araujo2016-positive-feedback-in-cdk1-signalling
+    version: 1.0.0
+    type: lab
+    path: labs/araujo2016-positive-feedback-in-cdk1-signalling
+    visibility: public
+  - id: asthagiri2001-mapk-asthagiri-adapt-fb-lab
+    package: asthagiri2001-mapk-asthagiri-adapt-fb
+    version: 1.0.0
+    type: lab
+    path: labs/asthagiri2001-mapk-asthagiri-adapt-fb
+    visibility: public
+  - id: bachmann2011-jak2-stat5-feedbackcontrol-lab
+    package: bachmann2011-jak2-stat5-feedbackcontrol
+    version: 1.0.0
+    type: lab
+    path: labs/bachmann2011-jak2-stat5-feedbackcontrol
+    visibility: public
+  - id: bakshi2020-minimal-model-of-alternative-pathway-lab
+    package: bakshi2020-minimal-model-of-alternative-pathway
+    version: 1.0.0
+    type: lab
+    path: labs/bakshi2020-minimal-model-of-alternative-pathway
+    visibility: public
+  - id: bakshi2020-properdin-model-of-alternative-pathwa-lab
+    package: bakshi2020-properdin-model-of-alternative-pathwa
+    version: 1.0.0
+    type: lab
+    path: labs/bakshi2020-properdin-model-of-alternative-pathwa
+    visibility: public
+  - id: bakshi2020-truncated-minimal-model-of-alternativ-lab
+    package: bakshi2020-truncated-minimal-model-of-alternativ
+    version: 1.0.0
+    type: lab
+    path: labs/bakshi2020-truncated-minimal-model-of-alternativ
+    visibility: public
+  - id: barik2060-model-of-yeast-cell-cycle-regulation-based-on-69af50c1-lab
+    package: barik2060-model-of-yeast-cell-cycle-regulation-based-on-69af50c1
+    version: 1.0.0
+    type: lab
+    path: labs/barik2060-model-of-yeast-cell-cycle-regulation-based-on-multisite-phosphorylation-1-1-1
+    visibility: public
+  - id: basak-cell-2007-lab
+    package: basak-cell-2007
+    version: 1.0.0
+    type: lab
+    path: labs/basak-cell-2007
+    visibility: public
+  - id: beard2005-mitochondrial-respiration-lab
+    package: beard2005-mitochondrial-respiration
+    version: 1.0.0
+    type: lab
+    path: labs/beard2005-mitochondrial-respiration
+    visibility: public
+  - id: becker2010-epor-auxiliarymodel-lab
+    package: becker2010-epor-auxiliarymodel
+    version: 1.0.0
+    type: lab
+    path: labs/becker2010-epor-auxiliarymodel
+    visibility: public
+  - id: becker2010-epor-coremodel-lab
+    package: becker2010-epor-coremodel
+    version: 1.0.0
+    type: lab
+    path: labs/becker2010-epor-coremodel
+    visibility: public
+  - id: benary2015-feedback-regulation-of-beta-catenin-p-lab
+    package: benary2015-feedback-regulation-of-beta-catenin-p
+    version: 1.0.0
+    type: lab
+    path: labs/benary2015-feedback-regulation-of-beta-catenin-p
+    visibility: public
+  - id: benary2019-controlling-nfkb-dynamics-by-b-trcp-lab
+    package: benary2019-controlling-nfkb-dynamics-by-b-trcp
+    version: 1.0.0
+    type: lab
+    path: labs/benary2019-controlling-nfkb-dynamics-by-b-trcp
+    visibility: public
+  - id: benson2017-systems-pharmacology-multidrug-choles-lab
+    package: benson2017-systems-pharmacology-multidrug-choles
+    version: 1.0.0
+    type: lab
+    path: labs/benson2017-systems-pharmacology-multidrug-choles
+    visibility: public
+  - id: bertram2006-endothelin-lab
+    package: bertram2006-endothelin
+    version: 1.0.0
+    type: lab
+    path: labs/bertram2006-endothelin
+    visibility: public
+  - id: besozzi2012-oscillatory-regimes-in-the-ras-camp-lab
+    package: besozzi2012-oscillatory-regimes-in-the-ras-camp
+    version: 1.0.0
+    type: lab
+    path: labs/besozzi2012-oscillatory-regimes-in-the-ras-camp
+    visibility: public
+  - id: bhalla2002-camp-pathway-lab
+    package: bhalla2002-camp-pathway
+    version: 1.0.0
+    type: lab
+    path: labs/bhalla2002-camp-pathway
+    visibility: public
+  - id: bhalla2002-mkp1-feedback-effects-lab
+    package: bhalla2002-mkp1-feedback-effects
+    version: 1.0.0
+    type: lab
+    path: labs/bhalla2002-mkp1-feedback-effects
+    visibility: public
+  - id: bhalla2004-egfr-mapk-lab
+    package: bhalla2004-egfr-mapk
+    version: 1.0.0
+    type: lab
+    path: labs/bhalla2004-egfr-mapk
+    visibility: public
+  - id: bhalla2004-pka-2003-lab
+    package: bhalla2004-pka-2003
+    version: 1.0.0
+    type: lab
+    path: labs/bhalla2004-pka-2003
+    visibility: public
+  - id: bhalla2004-pkc-2003-lab
+    package: bhalla2004-pkc-2003
+    version: 1.0.0
+    type: lab
+    path: labs/bhalla2004-pkc-2003
+    visibility: public
+  - id: bhattacharya2014-a-mathematical-model-of-the-ste-lab
+    package: bhattacharya2014-a-mathematical-model-of-the-ste
+    version: 1.0.0
+    type: lab
+    path: labs/bhattacharya2014-a-mathematical-model-of-the-ste
+    visibility: public
+  - id: bidkhori2012-egfr-signalling-in-nsclc-lab
+    package: bidkhori2012-egfr-signalling-in-nsclc
+    version: 1.0.0
+    type: lab
+    path: labs/bidkhori2012-egfr-signalling-in-nsclc
+    visibility: public
+  - id: bidkhori2012-normal-egfr-signalling-lab
+    package: bidkhori2012-normal-egfr-signalling
+    version: 1.0.0
+    type: lab
+    path: labs/bidkhori2012-normal-egfr-signalling
+    visibility: public
+  - id: borisov2009-egf-insulin-crosstalk-lab
+    package: borisov2009-egf-insulin-crosstalk
+    version: 1.0.0
+    type: lab
+    path: labs/borisov2009-egf-insulin-crosstalk
+    visibility: public
+  - id: br-nnmark2013-insulin-signalling-in-human-adipoc-lab
+    package: br-nnmark2013-insulin-signalling-in-human-adipoc
+    version: 1.0.0
+    type: lab
+    path: labs/br-nnmark2013-insulin-signalling-in-human-adipoc
+    visibility: public
+  - id: br-nnmark2013-insulin-signalling-in-human-adipoc-biomd0000000449-lab
+    package: br-nnmark2013-insulin-signalling-in-human-adipoc-biomd0000000449
+    version: 1.0.0
+    type: lab
+    path: labs/br-nnmark2013-insulin-signalling-in-human-adipoc-biomd0000000449
+    visibility: public
+  - id: brannmark2010-insulinsignalling-mifamodel-lab
+    package: brannmark2010-insulinsignalling-mifamodel
+    version: 1.0.0
+    type: lab
+    path: labs/brannmark2010-insulinsignalling-mifamodel
+    visibility: public
+  - id: bray1993-chemotaxis-lab
+    package: bray1993-chemotaxis
+    version: 1.0.0
+    type: lab
+    path: labs/bray1993-chemotaxis
+    visibility: public
+  - id: brown2004-ngf-and-egf-signaling-lab
+    package: brown2004-ngf-and-egf-signaling
+    version: 1.0.0
+    type: lab
+    path: labs/brown2004-ngf-and-egf-signaling
+    visibility: public
+  - id: brummel-ziedins2012-contribution-of-the-pc-pathw-lab
+    package: brummel-ziedins2012-contribution-of-the-pc-pathw
+    version: 1.0.0
+    type: lab
+    path: labs/brummel-ziedins2012-contribution-of-the-pc-pathw
+    visibility: public
+  - id: bush2016-extended-carrousel-model-of-gpcr-rgs-lab
+    package: bush2016-extended-carrousel-model-of-gpcr-rgs
+    version: 1.0.0
+    type: lab
+    path: labs/bush2016-extended-carrousel-model-of-gpcr-rgs
+    visibility: public
+  - id: bush2016-simplified-carrousel-model-of-gpcr-lab
+    package: bush2016-simplified-carrousel-model-of-gpcr
+    version: 1.0.0
+    type: lab
+    path: labs/bush2016-simplified-carrousel-model-of-gpcr
+    visibility: public
+  - id: cao2013-application-of-absis-in-the-the-enzymati-lab
+    package: cao2013-application-of-absis-in-the-the-enzymati
+    version: 1.0.0
+    type: lab
+    path: labs/cao2013-application-of-absis-in-the-the-enzymati
+    visibility: public
+  - id: capuani2015-binding-of-cbl-and-gbr2-to-egfr-mult-lab
+    package: capuani2015-binding-of-cbl-and-gbr2-to-egfr-mult
+    version: 1.0.0
+    type: lab
+    path: labs/capuani2015-binding-of-cbl-and-gbr2-to-egfr-mult
+    visibility: public
+  - id: caruso2020-activation-of-the-alternative-complem-lab
+    package: caruso2020-activation-of-the-alternative-complem
+    version: 1.0.0
+    type: lab
+    path: labs/caruso2020-activation-of-the-alternative-complem
+    visibility: public
+  - id: caruso2020-alternative-complement-pathway-model-lab
+    package: caruso2020-alternative-complement-pathway-model
+    version: 1.0.0
+    type: lab
+    path: labs/caruso2020-alternative-complement-pathway-model
+    visibility: public
+  - id: celli-re2011-plasticity-of-tgf-signalling-lab
+    package: celli-re2011-plasticity-of-tgf-signalling
+    version: 1.0.0
+    type: lab
+    path: labs/celli-re2011-plasticity-of-tgf-signalling
+    visibility: public
+  - id: chan2004-tcell-receptor-activation-lab
+    package: chan2004-tcell-receptor-activation
+    version: 1.0.0
+    type: lab
+    path: labs/chan2004-tcell-receptor-activation
+    visibility: public
+  - id: chang2008-erk-activation-hallucinogenic-drugs-me-lab
+    package: chang2008-erk-activation-hallucinogenic-drugs-me
+    version: 1.0.0
+    type: lab
+    path: labs/chang2008-erk-activation-hallucinogenic-drugs-me
+    visibility: public
+  - id: chen2009-erbb-signaling-lab
+    package: chen2009-erbb-signaling
+    version: 1.0.0
+    type: lab
+    path: labs/chen2009-erbb-signaling
+    visibility: public
+  - id: chulian2021-feedback-signalling-in-b-lymphopoeis-lab
+    package: chulian2021-feedback-signalling-in-b-lymphopoeis
+    version: 1.0.0
+    type: lab
+    path: labs/chulian2021-feedback-signalling-in-b-lymphopoeis
+    visibility: public
+  - id: collier1996-delta-notch-intercellular-signalling-lab
+    package: collier1996-delta-notch-intercellular-signalling
+    version: 1.0.0
+    type: lab
+    path: labs/collier1996-delta-notch-intercellular-signalling
+    visibility: public
+  - id: cookson2011-enzymaticqueueingcoupling-lab
+    package: cookson2011-enzymaticqueueingcoupling
+    version: 1.0.0
+    type: lab
+    path: labs/cookson2011-enzymaticqueueingcoupling
+    visibility: public
+  - id: cui2008-cardiacmyocytes-lab
+    package: cui2008-cardiacmyocytes
+    version: 1.0.0
+    type: lab
+    path: labs/cui2008-cardiacmyocytes
+    visibility: public
+  - id: cursons2015-regulation-of-erk-mapk-signaling-in-lab
+    package: cursons2015-regulation-of-erk-mapk-signaling-in
+    version: 1.0.0
+    type: lab
+    path: labs/cursons2015-regulation-of-erk-mapk-signaling-in
+    visibility: public
+  - id: dallepezze2012-tsc-independent-mtorc2-regulation-lab
+    package: dallepezze2012-tsc-independent-mtorc2-regulation
+    version: 1.0.0
+    type: lab
+    path: labs/dallepezze2012-tsc-independent-mtorc2-regulation
+    visibility: public
+  - id: dasgupta2020-reduced-model-of-receptor-clusturin-lab
+    package: dasgupta2020-reduced-model-of-receptor-clusturin
+    version: 1.0.0
+    type: lab
+    path: labs/dasgupta2020-reduced-model-of-receptor-clusturin
+    visibility: public
+  - id: dicamillo2016-insulin-signalling-pathway-rule-ba-lab
+    package: dicamillo2016-insulin-signalling-pathway-rule-ba
+    version: 1.0.0
+    type: lab
+    path: labs/dicamillo2016-insulin-signalling-pathway-rule-ba
+    visibility: public
+  - id: dual-g-protein-model-lab
+    package: dual-g-protein-model
+    version: 1.0.0
+    type: lab
+    path: labs/dual-g-protein-model
+    visibility: public
+  - id: dupeux2011-abareceptor-dimer-lab
+    package: dupeux2011-abareceptor-dimer
+    version: 1.0.0
+    type: lab
+    path: labs/dupeux2011-abareceptor-dimer
+    visibility: public
+  - id: dupeux2011-abareceptor-monomer-lab
+    package: dupeux2011-abareceptor-monomer
+    version: 1.0.0
+    type: lab
+    path: labs/dupeux2011-abareceptor-monomer
+    visibility: public
+  - id: dupont1992-ca-dpt-protein-phospho-lab
+    package: dupont1992-ca-dpt-protein-phospho
+    version: 1.0.0
+    type: lab
+    path: labs/dupont1992-ca-dpt-protein-phospho
+    visibility: public
+  - id: dutta-roy2015-opening-of-the-multiple-ampa-recep-lab
+    package: dutta-roy2015-opening-of-the-multiple-ampa-recep
+    version: 1.0.0
+    type: lab
+    path: labs/dutta-roy2015-opening-of-the-multiple-ampa-recep
+    visibility: public
+  - id: fujita2010-akt-signalling-egf-lab
+    package: fujita2010-akt-signalling-egf
+    version: 1.0.0
+    type: lab
+    path: labs/fujita2010-akt-signalling-egf
+    visibility: public
+  - id: fujita2010-akt-signalling-egfrinhib-lab
+    package: fujita2010-akt-signalling-egfrinhib
+    version: 1.0.0
+    type: lab
+    path: labs/fujita2010-akt-signalling-egfrinhib
+    visibility: public
+  - id: fujita2010-akt-signalling-ngf-lab
+    package: fujita2010-akt-signalling-ngf
+    version: 1.0.0
+    type: lab
+    path: labs/fujita2010-akt-signalling-ngf
+    visibility: public
+  - id: gerard2013-model-3-embryonic-type-eukaryotic-cel-lab
+    package: gerard2013-model-3-embryonic-type-eukaryotic-cel
+    version: 1.0.0
+    type: lab
+    path: labs/gerard2013-model-3-embryonic-type-eukaryotic-cel
+    visibility: public
+  - id: gex-fabry1984-model-of-receptor-mediated-endocyt-lab
+    package: gex-fabry1984-model-of-receptor-mediated-endocyt
+    version: 1.0.0
+    type: lab
+    path: labs/gex-fabry1984-model-of-receptor-mediated-endocyt
+    visibility: public
+  - id: goldbeter1991-min-mit-oscil-lab
+    package: goldbeter1991-min-mit-oscil
+    version: 1.0.0
+    type: lab
+    path: labs/goldbeter1991-min-mit-oscil
+    visibility: public
+  - id: goldbeter1991-min-mit-oscil-expl-inact-lab
+    package: goldbeter1991-min-mit-oscil-expl-inact
+    version: 1.0.0
+    type: lab
+    path: labs/goldbeter1991-min-mit-oscil-expl-inact
+    visibility: public
+  - id: goldbeter1996-cyclin-cdc2-kinase-oscillations-lab
+    package: goldbeter1996-cyclin-cdc2-kinase-oscillations
+    version: 1.0.0
+    type: lab
+    path: labs/goldbeter1996-cyclin-cdc2-kinase-oscillations
+    visibility: public
+  - id: goldbeter2007-somitogenesis-switch-lab
+    package: goldbeter2007-somitogenesis-switch
+    version: 1.0.0
+    type: lab
+    path: labs/goldbeter2007-somitogenesis-switch
+    visibility: public
+  - id: goldbeter2013-oscillatory-activity-of-cyclin-dep-lab
+    package: goldbeter2013-oscillatory-activity-of-cyclin-dep
+    version: 1.0.0
+    type: lab
+    path: labs/goldbeter2013-oscillatory-activity-of-cyclin-dep
+    visibility: public
+  - id: gonzalezmiranda2013-the-effect-of-circadian-osci-lab
+    package: gonzalezmiranda2013-the-effect-of-circadian-osci
+    version: 1.0.0
+    type: lab
+    path: labs/gonzalezmiranda2013-the-effect-of-circadian-osci
+    visibility: public
+  - id: gosselin2025-ecoli-bioproduction-insensitive-lab
+    package: gosselin2025-ecoli-bioproduction-insensitive
+    version: 1.0.0
+    type: lab
+    path: labs/gosselin2025-ecoli-bioproduction-insensitive
+    visibility: public
+  - id: gosselin2025-ecoli-bioproduction-sensitive-lab
+    package: gosselin2025-ecoli-bioproduction-sensitive
+    version: 1.0.0
+    type: lab
+    path: labs/gosselin2025-ecoli-bioproduction-sensitive
+    visibility: public
+  - id: gray2016-the-akt-switch-model-lab
+    package: gray2016-the-akt-switch-model
+    version: 1.0.0
+    type: lab
+    path: labs/gray2016-the-akt-switch-model
+    visibility: public
+  - id: grigolon2018-responses-to-auxin-signals-lab
+    package: grigolon2018-responses-to-auxin-signals
+    version: 1.0.0
+    type: lab
+    path: labs/grigolon2018-responses-to-auxin-signals
+    visibility: public
+  - id: grigolon2018-responses-to-auxin-signals-model2003060002-lab
+    package: grigolon2018-responses-to-auxin-signals-model2003060002
+    version: 1.0.0
+    type: lab
+    path: labs/grigolon2018-responses-to-auxin-signals-model2003060002
+    visibility: public
+  - id: gupta2007-hypothalamicpituitaryadrenal-modela-lab
+    package: gupta2007-hypothalamicpituitaryadrenal-modela
+    version: 1.0.0
+    type: lab
+    path: labs/gupta2007-hypothalamicpituitaryadrenal-modela
+    visibility: public
+  - id: gupta2007-hypothalamicpituitaryadrenal-modelb-lab
+    package: gupta2007-hypothalamicpituitaryadrenal-modelb
+    version: 1.0.0
+    type: lab
+    path: labs/gupta2007-hypothalamicpituitaryadrenal-modelb
+    visibility: public
+  - id: hammaren-geissen2022-pptop-model12-lab
+    package: hammaren-geissen2022-pptop-model12
+    version: 1.0.0
+    type: lab
+    path: labs/hammaren-geissen2022-pptop-model12
+    visibility: public
+  - id: harish2009-nuclear-cytoplasmic-erk-oscillation-m-lab
+    package: harish2009-nuclear-cytoplasmic-erk-oscillation-m
+    version: 1.0.0
+    type: lab
+    path: labs/harish2009-nuclear-cytoplasmic-erk-oscillation-m
+    visibility: public
+  - id: hass2017-panrtk-model-for-single-cell-line-lab
+    package: hass2017-panrtk-model-for-single-cell-line
+    version: 1.0.0
+    type: lab
+    path: labs/hass2017-panrtk-model-for-single-cell-line
+    visibility: public
+  - id: haugh2004-hgh-lab
+    package: haugh2004-hgh
+    version: 1.0.0
+    type: lab
+    path: labs/haugh2004-hgh
+    visibility: public
+  - id: hayashi1999-nosynth-phospho-lab
+    package: hayashi1999-nosynth-phospho
+    version: 1.0.0
+    type: lab
+    path: labs/hayashi1999-nosynth-phospho
+    visibility: public
+  - id: heberle-razquin-navas-2019-pi3k-mapk-p38-mtor-mo-lab
+    package: heberle-razquin-navas-2019-pi3k-mapk-p38-mtor-mo
+    version: 1.0.0
+    type: lab
+    path: labs/heberle-razquin-navas-2019-pi3k-mapk-p38-mtor-mo
+    visibility: public
+  - id: heberlerazquinnavas2019-the-pi3k-and-mapk-p38-pa-lab
+    package: heberlerazquinnavas2019-the-pi3k-and-mapk-p38-pa
+    version: 1.0.0
+    type: lab
+    path: labs/heberlerazquinnavas2019-the-pi3k-and-mapk-p38-pa
+    visibility: public
+  - id: heberlerazquinnavas2019-the-pi3k-and-mapk-p38-pa-model2001030002-lab
+    package: heberlerazquinnavas2019-the-pi3k-and-mapk-p38-pa-model2001030002
+    version: 1.0.0
+    type: lab
+    path: labs/heberlerazquinnavas2019-the-pi3k-and-mapk-p38-pa-model2001030002
+    visibility: public
+  - id: heiland2019-nad-pathway-model-analysing-the-impa-lab
+    package: heiland2019-nad-pathway-model-analysing-the-impa
+    version: 1.0.0
+    type: lab
+    path: labs/heiland2019-nad-pathway-model-analysing-the-impa
+    visibility: public
+  - id: heitzler2012-gpcr-signalling-lab
+    package: heitzler2012-gpcr-signalling
+    version: 1.0.0
+    type: lab
+    path: labs/heitzler2012-gpcr-signalling
+    visibility: public
+  - id: hermansen2015-denovo-biosynthesis-of-pyrimidines-lab
+    package: hermansen2015-denovo-biosynthesis-of-pyrimidines
+    version: 1.0.0
+    type: lab
+    path: labs/hermansen2015-denovo-biosynthesis-of-pyrimidines
+    visibility: public
+  - id: hetmanski2019-mechanochemical-signaling-controll-lab
+    package: hetmanski2019-mechanochemical-signaling-controll
+    version: 1.0.0
+    type: lab
+    path: labs/hetmanski2019-mechanochemical-signaling-controll
+    visibility: public
+  - id: hetmanski2021-rear-retraction-kinetic-lab
+    package: hetmanski2021-rear-retraction-kinetic
+    version: 1.0.0
+    type: lab
+    path: labs/hetmanski2021-rear-retraction-kinetic
+    visibility: public
+  - id: hettling2011-creatinekinase-lab
+    package: hettling2011-creatinekinase
+    version: 1.0.0
+    type: lab
+    path: labs/hettling2011-creatinekinase
+    visibility: public
+  - id: hingant2014-micellar-on-pathway-intermediate-in-lab
+    package: hingant2014-micellar-on-pathway-intermediate-in
+    version: 1.0.0
+    type: lab
+    path: labs/hingant2014-micellar-on-pathway-intermediate-in
+    visibility: public
+  - id: hodgson2018-tgfbeta-signalling-and-inflammatory-lab
+    package: hodgson2018-tgfbeta-signalling-and-inflammatory
+    version: 1.0.0
+    type: lab
+    path: labs/hodgson2018-tgfbeta-signalling-and-inflammatory
+    visibility: public
+  - id: hoffmann2002-wt-ikbnfkb-signaling-lab
+    package: hoffmann2002-wt-ikbnfkb-signaling
+    version: 1.0.0
+    type: lab
+    path: labs/hoffmann2002-wt-ikbnfkb-signaling
+    visibility: public
+  - id: hofmeyer1986-seqfb-proc-aa-synthesis-lab
+    package: hofmeyer1986-seqfb-proc-aa-synthesis
+    version: 1.0.0
+    type: lab
+    path: labs/hofmeyer1986-seqfb-proc-aa-synthesis
+    visibility: public
+  - id: hornberg2005-mapksignalling-lab
+    package: hornberg2005-mapksignalling
+    version: 1.0.0
+    type: lab
+    path: labs/hornberg2005-mapksignalling
+    visibility: public
+  - id: huang1996-ultrasensitivity-in-mapk-cascade-lab
+    package: huang1996-ultrasensitivity-in-mapk-cascade
+    version: 1.0.0
+    type: lab
+    path: labs/huang1996-ultrasensitivity-in-mapk-cascade
+    visibility: public
+  - id: huang2014-systematic-modeling-for-the-insulin-si-lab
+    package: huang2014-systematic-modeling-for-the-insulin-si
+    version: 1.0.0
+    type: lab
+    path: labs/huang2014-systematic-modeling-for-the-insulin-si
+    visibility: public
+  - id: huarat2016-starvation-induced-ser-thr-protein-ki-lab
+    package: huarat2016-starvation-induced-ser-thr-protein-ki
+    version: 1.0.0
+    type: lab
+    path: labs/huarat2016-starvation-induced-ser-thr-protein-ki
+    visibility: public
+  - id: hui2016-age-related-changes-in-articular-cartila-lab
+    package: hui2016-age-related-changes-in-articular-cartila
+    version: 1.0.0
+    type: lab
+    path: labs/hui2016-age-related-changes-in-articular-cartila
+    visibility: public
+  - id: ihekwaba2004-nfkb-sensitivity-lab
+    package: ihekwaba2004-nfkb-sensitivity
+    version: 1.0.0
+    type: lab
+    path: labs/ihekwaba2004-nfkb-sensitivity
+    visibility: public
+  - id: integrated-model-of-dna-damage-response-and-p53-lab
+    package: integrated-model-of-dna-damage-response-and-p53
+    version: 1.0.0
+    type: lab
+    path: labs/integrated-model-of-dna-damage-response-and-p53
+    visibility: public
+  - id: iribe2006-camkiikineticsmodel-lab
+    package: iribe2006-camkiikineticsmodel
+    version: 1.0.0
+    type: lab
+    path: labs/iribe2006-camkiikineticsmodel
+    visibility: public
+  - id: ito2019-gefitnib-resistance-of-lung-adenocarcino-lab
+    package: ito2019-gefitnib-resistance-of-lung-adenocarcino
+    version: 1.0.0
+    type: lab
+    path: labs/ito2019-gefitnib-resistance-of-lung-adenocarcino
+    visibility: public
+  - id: jafri1998-ventricularmyocyte-lab
+    package: jafri1998-ventricularmyocyte
+    version: 1.0.0
+    type: lab
+    path: labs/jafri1998-ventricularmyocyte
+    visibility: public
+  - id: jung2019-egulating-glioblastoma-signaling-pathwa-lab
+    package: jung2019-egulating-glioblastoma-signaling-pathwa
+    version: 1.0.0
+    type: lab
+    path: labs/jung2019-egulating-glioblastoma-signaling-pathwa
+    visibility: public
+  - id: jung2019-regulating-glioblastoma-signaling-pathw-lab
+    package: jung2019-regulating-glioblastoma-signaling-pathw
+    version: 1.0.0
+    type: lab
+    path: labs/jung2019-regulating-glioblastoma-signaling-pathw
+    visibility: public
+  - id: kawka2014-revealing-the-role-of-sgk1-in-the-dyna-lab
+    package: kawka2014-revealing-the-role-of-sgk1-in-the-dyna
+    version: 1.0.0
+    type: lab
+    path: labs/kawka2014-revealing-the-role-of-sgk1-in-the-dyna
+    visibility: public
+  - id: keizer1996-ryanodine-receptor-adaptation-lab
+    package: keizer1996-ryanodine-receptor-adaptation
+    version: 1.0.0
+    type: lab
+    path: labs/keizer1996-ryanodine-receptor-adaptation
+    visibility: public
+  - id: kervizic2008-cholesterol-srebp-lab
+    package: kervizic2008-cholesterol-srebp
+    version: 1.0.0
+    type: lab
+    path: labs/kervizic2008-cholesterol-srebp
+    visibility: public
+  - id: kessler2025-il-6-and-il-22-pathway-in-human-hepa-lab
+    package: kessler2025-il-6-and-il-22-pathway-in-human-hepa
+    version: 1.0.0
+    type: lab
+    path: labs/kessler2025-il-6-and-il-22-pathway-in-human-hepa
+    visibility: public
+  - id: khan2018-origins-of-robustness-in-translational-lab
+    package: khan2018-origins-of-robustness-in-translational
+    version: 1.0.0
+    type: lab
+    path: labs/khan2018-origins-of-robustness-in-translational
+    visibility: public
+  - id: kholodenko1999-egfr-signaling-lab
+    package: kholodenko1999-egfr-signaling
+    version: 1.0.0
+    type: lab
+    path: labs/kholodenko1999-egfr-signaling
+    visibility: public
+  - id: kholodenko2000-ultrasensitivity-and-negative-fee-lab
+    package: kholodenko2000-ultrasensitivity-and-negative-fee
+    version: 1.0.0
+    type: lab
+    path: labs/kholodenko2000-ultrasensitivity-and-negative-fee
+    visibility: public
+  - id: koch2005-sucrose-breakdown-pathway-petri-net-lab
+    package: koch2005-sucrose-breakdown-pathway-petri-net
+    version: 1.0.0
+    type: lab
+    path: labs/koch2005-sucrose-breakdown-pathway-petri-net
+    visibility: public
+  - id: kofahl2004-pheromonepathway-lab
+    package: kofahl2004-pheromonepathway
+    version: 1.0.0
+    type: lab
+    path: labs/kofahl2004-pheromonepathway
+    visibility: public
+  - id: kok2020-ifnalpha-induced-signaling-in-huh7-5-cel-lab
+    package: kok2020-ifnalpha-induced-signaling-in-huh7-5-cel
+    version: 1.0.0
+    type: lab
+    path: labs/kok2020-ifnalpha-induced-signaling-in-huh7-5-cel
+    visibility: public
+  - id: kolodkin2013-nuclear-receptor-mediated-cortisol-lab
+    package: kolodkin2013-nuclear-receptor-mediated-cortisol
+    version: 1.0.0
+    type: lab
+    path: labs/kolodkin2013-nuclear-receptor-mediated-cortisol
+    visibility: public
+  - id: komarova2005-theoreticalframework-basicarchitect-lab
+    package: komarova2005-theoreticalframework-basicarchitect
+    version: 1.0.0
+    type: lab
+    path: labs/komarova2005-theoreticalframework-basicarchitect
+    visibility: public
+  - id: konrath2023-genotoxic-stress-induced-ikk-nfkb-si-lab
+    package: konrath2023-genotoxic-stress-induced-ikk-nfkb-si
+    version: 1.0.0
+    type: lab
+    path: labs/konrath2023-genotoxic-stress-induced-ikk-nfkb-si
+    visibility: public
+  - id: koo2013-shear-stress-induced-akt-and-enos-phosph-lab
+    package: koo2013-shear-stress-induced-akt-and-enos-phosph
+    version: 1.0.0
+    type: lab
+    path: labs/koo2013-shear-stress-induced-akt-and-enos-phosph
+    visibility: public
+  - id: kubota2012-insulinaction-aktpathway-lab
+    package: kubota2012-insulinaction-aktpathway
+    version: 1.0.0
+    type: lab
+    path: labs/kubota2012-insulinaction-aktpathway
+    visibility: public
+  - id: kummer2000-oscillations-in-calcium-signalling-lab
+    package: kummer2000-oscillations-in-calcium-signalling
+    version: 1.0.0
+    type: lab
+    path: labs/kummer2000-oscillations-in-calcium-signalling
+    visibility: public
+  - id: kwang2003-the-influence-of-rkip-on-the-erk-signa-lab
+    package: kwang2003-the-influence-of-rkip-on-the-erk-signa
+    version: 1.0.0
+    type: lab
+    path: labs/kwang2003-the-influence-of-rkip-on-the-erk-signa
+    visibility: public
+  - id: lee2003-roles-of-apc-and-axin-in-wnt-pathway-wit-lab
+    package: lee2003-roles-of-apc-and-axin-in-wnt-pathway-wit
+    version: 1.0.0
+    type: lab
+    path: labs/lee2003-roles-of-apc-and-axin-in-wnt-pathway-wit
+    visibility: public
+  - id: lee2008-erk-and-pi3k-signal-integration-by-myc-lab
+    package: lee2008-erk-and-pi3k-signal-integration-by-myc
+    version: 1.0.0
+    type: lab
+    path: labs/lee2008-erk-and-pi3k-signal-integration-by-myc
+    visibility: public
+  - id: lemaire2004-role-of-rank-rankl-opg-pathway-in-bo-lab
+    package: lemaire2004-role-of-rank-rankl-opg-pathway-in-bo
+    version: 1.0.0
+    type: lab
+    path: labs/lemaire2004-role-of-rank-rankl-opg-pathway-in-bo
+    visibility: public
+  - id: lemon2003-ca2dynamics-lab
+    package: lemon2003-ca2dynamics
+    version: 1.0.0
+    type: lab
+    path: labs/lemon2003-ca2dynamics
+    visibility: public
+  - id: levchenko2000-mapk-noscaffold-lab
+    package: levchenko2000-mapk-noscaffold
+    version: 1.0.0
+    type: lab
+    path: labs/levchenko2000-mapk-noscaffold
+    visibility: public
+  - id: levchenko2000-mapk-scaffold-lab
+    package: levchenko2000-mapk-scaffold
+    version: 1.0.0
+    type: lab
+    path: labs/levchenko2000-mapk-scaffold
+    visibility: public
+  - id: li2019-neurogranin-stimulates-ca-calmodulin-depe-lab
+    package: li2019-neurogranin-stimulates-ca-calmodulin-depe
+    version: 1.0.0
+    type: lab
+    path: labs/li2019-neurogranin-stimulates-ca-calmodulin-depe
+    visibility: public
+  - id: lipniacki2004-mathematical-model-of-nfkb-regulat-lab
+    package: lipniacki2004-mathematical-model-of-nfkb-regulat
+    version: 1.0.0
+    type: lab
+    path: labs/lipniacki2004-mathematical-model-of-nfkb-regulat
+    visibility: public
+  - id: machado2014-curcumin-production-pathway-in-esche-lab
+    package: machado2014-curcumin-production-pathway-in-esche
+    version: 1.0.0
+    type: lab
+    path: labs/machado2014-curcumin-production-pathway-in-esche
+    visibility: public
+  - id: maeda2006-myosinphosphorylation-lab
+    package: maeda2006-myosinphosphorylation
+    version: 1.0.0
+    type: lab
+    path: labs/maeda2006-myosinphosphorylation
+    visibility: public
+  - id: markevich2004-mapk-double-phosphorylation-ordere-lab
+    package: markevich2004-mapk-double-phosphorylation-ordere
+    version: 1.0.0
+    type: lab
+    path: labs/markevich2004-mapk-double-phosphorylation-ordere
+    visibility: public
+  - id: markevich2004-mapk-orderedelementary-lab
+    package: markevich2004-mapk-orderedelementary
+    version: 1.0.0
+    type: lab
+    path: labs/markevich2004-mapk-orderedelementary
+    visibility: public
+  - id: markevich2004-mapk-orderedmm2kinases-lab
+    package: markevich2004-mapk-orderedmm2kinases
+    version: 1.0.0
+    type: lab
+    path: labs/markevich2004-mapk-orderedmm2kinases
+    visibility: public
+  - id: markevich2004-mapk-phosphorandomelementary-lab
+    package: markevich2004-mapk-phosphorandomelementary
+    version: 1.0.0
+    type: lab
+    path: labs/markevich2004-mapk-phosphorandomelementary
+    visibility: public
+  - id: markevich2004-mapk-phosphorandommm-lab
+    package: markevich2004-mapk-phosphorandommm
+    version: 1.0.0
+    type: lab
+    path: labs/markevich2004-mapk-phosphorandommm
+    visibility: public
+  - id: martinez-guimera2017-generic-redox-signalling-mo-lab
+    package: martinez-guimera2017-generic-redox-signalling-mo
+    version: 1.0.0
+    type: lab
+    path: labs/martinez-guimera2017-generic-redox-signalling-mo
+    visibility: public
+  - id: martinez-guimera2017-generic-redox-signalling-mo-model1710260001-lab
+    package: martinez-guimera2017-generic-redox-signalling-mo-model1710260001
+    version: 1.0.0
+    type: lab
+    path: labs/martinez-guimera2017-generic-redox-signalling-mo-model1710260001
+    visibility: public
+  - id: martinez-guimera2017-generic-redox-signalling-mo-model1710260002-lab
+    package: martinez-guimera2017-generic-redox-signalling-mo-model1710260002
+    version: 1.0.0
+    type: lab
+    path: labs/martinez-guimera2017-generic-redox-signalling-mo-model1710260002
+    visibility: public
+  - id: martinez-guimera2017-generic-redox-signalling-mo-model2001080001-lab
+    package: martinez-guimera2017-generic-redox-signalling-mo-model2001080001
+    version: 1.0.0
+    type: lab
+    path: labs/martinez-guimera2017-generic-redox-signalling-mo-model2001080001
+    visibility: public
+  - id: maurya2005-gtpasecycle-reducedorder-lab
+    package: maurya2005-gtpasecycle-reducedorder
+    version: 1.0.0
+    type: lab
+    path: labs/maurya2005-gtpasecycle-reducedorder
+    visibility: public
+  - id: mazein2013-cholesterol-biosynthesis-pathway-lab
+    package: mazein2013-cholesterol-biosynthesis-pathway
+    version: 1.0.0
+    type: lab
+    path: labs/mazein2013-cholesterol-biosynthesis-pathway
+    visibility: public
+  - id: mazein2013-shunt-pathway-lab
+    package: mazein2013-shunt-pathway
+    version: 1.0.0
+    type: lab
+    path: labs/mazein2013-shunt-pathway
+    visibility: public
+  - id: mcclean2007-crosstalk-lab
+    package: mcclean2007-crosstalk
+    version: 1.0.0
+    type: lab
+    path: labs/mcclean2007-crosstalk
+    visibility: public
+  - id: messiha2013-pentose-phosphate-pathway-model-lab
+    package: messiha2013-pentose-phosphate-pathway-model
+    version: 1.0.0
+    type: lab
+    path: labs/messiha2013-pentose-phosphate-pathway-model
+    visibility: public
+  - id: middleton2012-gibberellinsignalling-lab
+    package: middleton2012-gibberellinsignalling
+    version: 1.0.0
+    type: lab
+    path: labs/middleton2012-gibberellinsignalling
+    visibility: public
+  - id: mosbacher2022-yeast-hog-pathway-lab
+    package: mosbacher2022-yeast-hog-pathway
+    version: 1.0.0
+    type: lab
+    path: labs/mosbacher2022-yeast-hog-pathway
+    visibility: public
+  - id: mueller2015-hepatocyte-proliferation-t160-phosph-lab
+    package: mueller2015-hepatocyte-proliferation-t160-phosph
+    version: 1.0.0
+    type: lab
+    path: labs/mueller2015-hepatocyte-proliferation-t160-phosph
+    visibility: public
+  - id: mukhopadhyay2013-t-cell-receptor-proximal-signal-lab
+    package: mukhopadhyay2013-t-cell-receptor-proximal-signal
+    version: 1.0.0
+    type: lab
+    path: labs/mukhopadhyay2013-t-cell-receptor-proximal-signal
+    visibility: public
+  - id: muller2008-simplified-mapk-activation-dynamics-m-lab
+    package: muller2008-simplified-mapk-activation-dynamics-m
+    version: 1.0.0
+    type: lab
+    path: labs/muller2008-simplified-mapk-activation-dynamics-m
+    visibility: public
+  - id: nair2015-interaction-between-neuromodulators-via-lab
+    package: nair2015-interaction-between-neuromodulators-via
+    version: 1.0.0
+    type: lab
+    path: labs/nair2015-interaction-between-neuromodulators-via
+    visibility: public
+  - id: nair2015-interaction-between-neuromodulators-via-biomd0000000636-lab
+    package: nair2015-interaction-between-neuromodulators-via-biomd0000000636
+    version: 1.0.0
+    type: lab
+    path: labs/nair2015-interaction-between-neuromodulators-via-biomd0000000636
+    visibility: public
+  - id: nakakuki2010-cellfatedecision-core-lab
+    package: nakakuki2010-cellfatedecision-core
+    version: 1.0.0
+    type: lab
+    path: labs/nakakuki2010-cellfatedecision-core
+    visibility: public
+  - id: nakakuki2010-cellfatedecision-mechanistic-lab
+    package: nakakuki2010-cellfatedecision-mechanistic
+    version: 1.0.0
+    type: lab
+    path: labs/nakakuki2010-cellfatedecision-mechanistic
+    visibility: public
+  - id: nardini2015-mechanotransduction-and-inflammation-lab
+    package: nardini2015-mechanotransduction-and-inflammation
+    version: 1.0.0
+    type: lab
+    path: labs/nardini2015-mechanotransduction-and-inflammation
+    visibility: public
+  - id: neumann2010-cd95stimulation-nfkb-apoptosis-lab
+    package: neumann2010-cd95stimulation-nfkb-apoptosis
+    version: 1.0.0
+    type: lab
+    path: labs/neumann2010-cd95stimulation-nfkb-apoptosis
+    visibility: public
+  - id: neves2008-role-of-cell-shape-and-size-in-control-lab
+    package: neves2008-role-of-cell-shape-and-size-in-control
+    version: 1.0.0
+    type: lab
+    path: labs/neves2008-role-of-cell-shape-and-size-in-control
+    visibility: public
+  - id: novak2022-mitotic-kinase-oscillation-lab
+    package: novak2022-mitotic-kinase-oscillation
+    version: 1.0.0
+    type: lab
+    path: labs/novak2022-mitotic-kinase-oscillation
+    visibility: public
+  - id: nyman2012-insulinsignalling-lab
+    package: nyman2012-insulinsignalling
+    version: 1.0.0
+    type: lab
+    path: labs/nyman2012-insulinsignalling
+    visibility: public
+  - id: oliveira2020-beta-alanine-pathway-for-3-hydroxyp-lab
+    package: oliveira2020-beta-alanine-pathway-for-3-hydroxyp
+    version: 1.0.0
+    type: lab
+    path: labs/oliveira2020-beta-alanine-pathway-for-3-hydroxyp
+    visibility: public
+  - id: oliveira2020-beta-alanine-pathway-for-3-hydroxyp-model2010030003-lab
+    package: oliveira2020-beta-alanine-pathway-for-3-hydroxyp-model2010030003
+    version: 1.0.0
+    type: lab
+    path: labs/oliveira2020-beta-alanine-pathway-for-3-hydroxyp-model2010030003
+    visibility: public
+  - id: oliveira2020-beta-alanine-pathway-for-acrylic-ac-lab
+    package: oliveira2020-beta-alanine-pathway-for-acrylic-ac
+    version: 1.0.0
+    type: lab
+    path: labs/oliveira2020-beta-alanine-pathway-for-acrylic-ac
+    visibility: public
+  - id: oliveira2020-beta-alanine-pathway-for-acrylic-ac-model2010040002-lab
+    package: oliveira2020-beta-alanine-pathway-for-acrylic-ac-model2010040002
+    version: 1.0.0
+    type: lab
+    path: labs/oliveira2020-beta-alanine-pathway-for-acrylic-ac-model2010040002
+    visibility: public
+  - id: oliveira2020-glycerol-pathway-for-3-hydroxypropi-lab
+    package: oliveira2020-glycerol-pathway-for-3-hydroxypropi
+    version: 1.0.0
+    type: lab
+    path: labs/oliveira2020-glycerol-pathway-for-3-hydroxypropi
+    visibility: public
+  - id: oliveira2020-glycerol-pathway-for-3-hydroxypropi-model2010030005-lab
+    package: oliveira2020-glycerol-pathway-for-3-hydroxypropi-model2010030005
+    version: 1.0.0
+    type: lab
+    path: labs/oliveira2020-glycerol-pathway-for-3-hydroxypropi-model2010030005
+    visibility: public
+  - id: oliveira2020-glycerol-pathway-for-acrylic-acid-p-lab
+    package: oliveira2020-glycerol-pathway-for-acrylic-acid-p
+    version: 1.0.0
+    type: lab
+    path: labs/oliveira2020-glycerol-pathway-for-acrylic-acid-p
+    visibility: public
+  - id: oliveira2020-glycerol-pathway-for-acrylic-acid-p-model2010040005-lab
+    package: oliveira2020-glycerol-pathway-for-acrylic-acid-p-model2010040005
+    version: 1.0.0
+    type: lab
+    path: labs/oliveira2020-glycerol-pathway-for-acrylic-acid-p-model2010040005
+    visibility: public
+  - id: oliveira2020-malonyl-coa-pathway-for-3-hydroxypr-lab
+    package: oliveira2020-malonyl-coa-pathway-for-3-hydroxypr
+    version: 1.0.0
+    type: lab
+    path: labs/oliveira2020-malonyl-coa-pathway-for-3-hydroxypr
+    visibility: public
+  - id: oliveira2020-malonyl-coa-pathway-for-3-hydroxypr-model2010030008-lab
+    package: oliveira2020-malonyl-coa-pathway-for-3-hydroxypr-model2010030008
+    version: 1.0.0
+    type: lab
+    path: labs/oliveira2020-malonyl-coa-pathway-for-3-hydroxypr-model2010030008
+    visibility: public
+  - id: oliveira2020-malonyl-coa-pathway-for-acrylic-aci-lab
+    package: oliveira2020-malonyl-coa-pathway-for-acrylic-aci
+    version: 1.0.0
+    type: lab
+    path: labs/oliveira2020-malonyl-coa-pathway-for-acrylic-aci
+    visibility: public
+  - id: oliveira2020-malonyl-coa-pathway-for-acrylic-aci-model2010040007-lab
+    package: oliveira2020-malonyl-coa-pathway-for-acrylic-aci-model2010040007
+    version: 1.0.0
+    type: lab
+    path: labs/oliveira2020-malonyl-coa-pathway-for-acrylic-aci-model2010040007
+    visibility: public
+  - id: ortega2006-bistability-from-double-phosphorylati-lab
+    package: ortega2006-bistability-from-double-phosphorylati
+    version: 1.0.0
+    type: lab
+    path: labs/ortega2006-bistability-from-double-phosphorylati
+    visibility: public
+  - id: ouyang2014-photomorphogenic-uv-b-signalling-netw-lab
+    package: ouyang2014-photomorphogenic-uv-b-signalling-netw
+    version: 1.0.0
+    type: lab
+    path: labs/ouyang2014-photomorphogenic-uv-b-signalling-netw
+    visibility: public
+  - id: padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-lab
+    package: padala2017-erk-pi3k-akt-and-wnt-signalling-netwo
+    version: 1.0.0
+    type: lab
+    path: labs/padala2017-erk-pi3k-akt-and-wnt-signalling-netwo
+    visibility: public
+  - id: padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000652-lab
+    package: padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000652
+    version: 1.0.0
+    type: lab
+    path: labs/padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000652
+    visibility: public
+  - id: padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000653-lab
+    package: padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000653
+    version: 1.0.0
+    type: lab
+    path: labs/padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000653
+    visibility: public
+  - id: padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000654-lab
+    package: padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000654
+    version: 1.0.0
+    type: lab
+    path: labs/padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000654
+    visibility: public
+  - id: padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000655-lab
+    package: padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000655
+    version: 1.0.0
+    type: lab
+    path: labs/padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000655
+    visibility: public
+  - id: padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000656-lab
+    package: padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000656
+    version: 1.0.0
+    type: lab
+    path: labs/padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000656
+    visibility: public
+  - id: palini2011-minimal-2-feedback-model-lab
+    package: palini2011-minimal-2-feedback-model
+    version: 1.0.0
+    type: lab
+    path: labs/palini2011-minimal-2-feedback-model
+    visibility: public
+  - id: panteleev2002-tfpimechanism-schmema1-lab
+    package: panteleev2002-tfpimechanism-schmema1
+    version: 1.0.0
+    type: lab
+    path: labs/panteleev2002-tfpimechanism-schmema1
+    visibility: public
+  - id: panteleev2002-tfpimechanism-schmema2-lab
+    package: panteleev2002-tfpimechanism-schmema2
+    version: 1.0.0
+    type: lab
+    path: labs/panteleev2002-tfpimechanism-schmema2
+    visibility: public
+  - id: park2019-il7-receptor-signaling-in-t-cells-lab
+    package: park2019-il7-receptor-signaling-in-t-cells
+    version: 1.0.0
+    type: lab
+    path: labs/park2019-il7-receptor-signaling-in-t-cells
+    visibility: public
+  - id: pathak2013-mapk-activation-in-response-to-variou-lab
+    package: pathak2013-mapk-activation-in-response-to-variou
+    version: 1.0.0
+    type: lab
+    path: labs/pathak2013-mapk-activation-in-response-to-variou
+    visibility: public
+  - id: pathak2013-mapk-activation-in-response-to-variou-biomd0000000492-lab
+    package: pathak2013-mapk-activation-in-response-to-variou-biomd0000000492
+    version: 1.0.0
+    type: lab
+    path: labs/pathak2013-mapk-activation-in-response-to-variou-biomd0000000492
+    visibility: public
+  - id: pepke2010-full-ca2-cam-mcamkii-lab
+    package: pepke2010-full-ca2-cam-mcamkii
+    version: 1.0.0
+    type: lab
+    path: labs/pepke2010-full-ca2-cam-mcamkii
+    visibility: public
+  - id: perrett2014-gnrh-pulse-erk-activity-lab
+    package: perrett2014-gnrh-pulse-erk-activity
+    version: 1.0.0
+    type: lab
+    path: labs/perrett2014-gnrh-pulse-erk-activity
+    visibility: public
+  - id: petelenzkuehn-osmoadaptation-fps1d1-lab
+    package: petelenzkuehn-osmoadaptation-fps1d1
+    version: 1.0.0
+    type: lab
+    path: labs/petelenzkuehn-osmoadaptation-fps1d1
+    visibility: public
+  - id: petelenzkuehn-osmoadaptation-hog1att-lab
+    package: petelenzkuehn-osmoadaptation-hog1att
+    version: 1.0.0
+    type: lab
+    path: labs/petelenzkuehn-osmoadaptation-hog1att
+    visibility: public
+  - id: petelenzkuehn-osmoadaptation-hog1d-lab
+    package: petelenzkuehn-osmoadaptation-hog1d
+    version: 1.0.0
+    type: lab
+    path: labs/petelenzkuehn-osmoadaptation-hog1d
+    visibility: public
+  - id: petelenzkuehn-osmoadaptation-pfk2627d-lab
+    package: petelenzkuehn-osmoadaptation-pfk2627d
+    version: 1.0.0
+    type: lab
+    path: labs/petelenzkuehn-osmoadaptation-pfk2627d
+    visibility: public
+  - id: petelenzkuehn-osmoadaptation-wt-lab
+    package: petelenzkuehn-osmoadaptation-wt
+    version: 1.0.0
+    type: lab
+    path: labs/petelenzkuehn-osmoadaptation-wt
+    visibility: public
+  - id: phosphatase-activities-on-pi-3-4-5-p3-and-pi-3-4-lab
+    package: phosphatase-activities-on-pi-3-4-5-p3-and-pi-3-4
+    version: 1.0.0
+    type: lab
+    path: labs/phosphatase-activities-on-pi-3-4-5-p3-and-pi-3-4
+    visibility: public
+  - id: pinto2022-hybrid-sbml-ann-model-lab
+    package: pinto2022-hybrid-sbml-ann-model
+    version: 1.0.0
+    type: lab
+    path: labs/pinto2022-hybrid-sbml-ann-model
+    visibility: public
+  - id: platelet-par1-with-soce-lab
+    package: platelet-par1-with-soce
+    version: 1.0.0
+    type: lab
+    path: labs/platelet-par1-with-soce
+    visibility: public
+  - id: pokhilko1998-intrinsic-activation-kinetics-dimen-lab
+    package: pokhilko1998-intrinsic-activation-kinetics-dimen
+    version: 1.0.0
+    type: lab
+    path: labs/pokhilko1998-intrinsic-activation-kinetics-dimen
+    visibility: public
+  - id: pokhilko2013-toc1-signalling-in-arabidopsis-circ-lab
+    package: pokhilko2013-toc1-signalling-in-arabidopsis-circ
+    version: 1.0.0
+    type: lab
+    path: labs/pokhilko2013-toc1-signalling-in-arabidopsis-circ
+    visibility: public
+  - id: proctor2016-circadian-rhythm-of-pth-and-the-dyna-lab
+    package: proctor2016-circadian-rhythm-of-pth-and-the-dyna
+    version: 1.0.0
+    type: lab
+    path: labs/proctor2016-circadian-rhythm-of-pth-and-the-dyna
+    visibility: public
+  - id: ray2013-meiotic-initiation-in-s-cerevisiae-lab
+    package: ray2013-meiotic-initiation-in-s-cerevisiae
+    version: 1.0.0
+    type: lab
+    path: labs/ray2013-meiotic-initiation-in-s-cerevisiae
+    visibility: public
+  - id: reiterer2013-pseudophosphatase-styx-role-in-erk-lab
+    package: reiterer2013-pseudophosphatase-styx-role-in-erk
+    version: 1.0.0
+    type: lab
+    path: labs/reiterer2013-pseudophosphatase-styx-role-in-erk
+    visibility: public
+  - id: rutkis2013-entner-doudoroff-pathway-in-z-mobilis-lab
+    package: rutkis2013-entner-doudoroff-pathway-in-z-mobilis
+    version: 1.0.0
+    type: lab
+    path: labs/rutkis2013-entner-doudoroff-pathway-in-z-mobilis
+    visibility: public
+  - id: rutkis2013-entner-doudoroff-pathway-in-z-mobilis-model1409050001-lab
+    package: rutkis2013-entner-doudoroff-pathway-in-z-mobilis-model1409050001
+    version: 1.0.0
+    type: lab
+    path: labs/rutkis2013-entner-doudoroff-pathway-in-z-mobilis-model1409050001
+    visibility: public
+  - id: sackmann2006-mating-pheromone-response-pathway-o-lab
+    package: sackmann2006-mating-pheromone-response-pathway-o
+    version: 1.0.0
+    type: lab
+    path: labs/sackmann2006-mating-pheromone-response-pathway-o
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-biomd0000000431-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-biomd0000000431
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-biomd0000000431
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-biomd0000000432-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-biomd0000000432
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-biomd0000000432
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-biomd0000000433-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-biomd0000000433
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-biomd0000000433
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280001-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280001
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280001
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280002-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280002
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280002
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280003-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280003
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280003
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280004-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280004
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280004
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280005-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280005
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280005
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280006-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280006
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280006
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280007-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280007
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280007
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280008-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280008
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280008
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280009-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280009
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280009
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280010-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280010
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280010
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280011-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280011
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280011
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280012-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280012
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280012
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280013-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280013
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280013
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280014-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280014
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280014
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280015-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280015
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280015
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280016-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280016
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280016
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280017-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280017
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280017
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280018-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280018
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280018
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280019-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280019
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280019
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280021-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280021
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280021
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280022-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280022
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280022
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280023-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280023
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280023
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280025-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280025
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280025
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280026-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280026
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280026
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280027-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280027
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280027
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280028-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280028
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280028
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280029-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280029
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280029
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280030-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280030
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280030
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280031-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280031
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280031
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280032-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280032
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280032
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280033-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280033
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280033
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280034-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280034
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280034
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280035-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280035
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280035
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280037-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280037
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280037
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280038-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280038
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280038
+    visibility: public
+  - id: sarma2012-interaction-topologies-of-mapk-cascade-model1204280039-lab
+    package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280039
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-interaction-topologies-of-mapk-cascade-model1204280039
+    visibility: public
+  - id: sarma2012-oscillations-in-mapk-cascade-s1-lab
+    package: sarma2012-oscillations-in-mapk-cascade-s1
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-oscillations-in-mapk-cascade-s1
+    visibility: public
+  - id: sarma2012-oscillations-in-mapk-cascade-s1n-lab
+    package: sarma2012-oscillations-in-mapk-cascade-s1n
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-oscillations-in-mapk-cascade-s1n
+    visibility: public
+  - id: sarma2012-oscillations-in-mapk-cascade-s2-lab
+    package: sarma2012-oscillations-in-mapk-cascade-s2
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-oscillations-in-mapk-cascade-s2
+    visibility: public
+  - id: sarma2012-oscillations-in-mapk-cascade-s2-inclus-lab
+    package: sarma2012-oscillations-in-mapk-cascade-s2-inclus
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-oscillations-in-mapk-cascade-s2-inclus
+    visibility: public
+  - id: sarma2012-oscillations-in-mapk-cascade-s2n-lab
+    package: sarma2012-oscillations-in-mapk-cascade-s2n
+    version: 1.0.0
+    type: lab
+    path: labs/sarma2012-oscillations-in-mapk-cascade-s2n
+    visibility: public
+  - id: sasagawa2005-mapk-lab
+    package: sasagawa2005-mapk
+    version: 1.0.0
+    type: lab
+    path: labs/sasagawa2005-mapk
+    visibility: public
+  - id: scaramellini1997-two-receptor-one-transducer-2r1-lab
+    package: scaramellini1997-two-receptor-one-transducer-2r1
+    version: 1.0.0
+    type: lab
+    path: labs/scaramellini1997-two-receptor-one-transducer-2r1
+    visibility: public
+  - id: schaber2006-pheromone-starvation-crosstalk-lab
+    package: schaber2006-pheromone-starvation-crosstalk
+    version: 1.0.0
+    type: lab
+    path: labs/schaber2006-pheromone-starvation-crosstalk
+    visibility: public
+  - id: schaber2012-hog-pathway-in-yeast-lab
+    package: schaber2012-hog-pathway-in-yeast
+    version: 1.0.0
+    type: lab
+    path: labs/schaber2012-hog-pathway-in-yeast
+    visibility: public
+  - id: schilling2009-erk-distributive-lab
+    package: schilling2009-erk-distributive
+    version: 1.0.0
+    type: lab
+    path: labs/schilling2009-erk-distributive
+    visibility: public
+  - id: schoeberl2002-egf-mapk-lab
+    package: schoeberl2002-egf-mapk
+    version: 1.0.0
+    type: lab
+    path: labs/schoeberl2002-egf-mapk
+    visibility: public
+  - id: schwarz2018-cdk-activity-threshold-determines-pa-lab
+    package: schwarz2018-cdk-activity-threshold-determines-pa
+    version: 1.0.0
+    type: lab
+    path: labs/schwarz2018-cdk-activity-threshold-determines-pa
+    visibility: public
+  - id: sharp2013-lipopolysaccharide-induced-nfkb-activa-lab
+    package: sharp2013-lipopolysaccharide-induced-nfkb-activa
+    version: 1.0.0
+    type: lab
+    path: labs/sharp2013-lipopolysaccharide-induced-nfkb-activa
+    visibility: public
+  - id: shin2016-unveiling-hidden-dynamics-of-hippo-sign-lab
+    package: shin2016-unveiling-hidden-dynamics-of-hippo-sign
+    version: 1.0.0
+    type: lab
+    path: labs/shin2016-unveiling-hidden-dynamics-of-hippo-sign
+    visibility: public
+  - id: sible2007-mitotic-cell-cycle-mecanism-in-xenopus-lab
+    package: sible2007-mitotic-cell-cycle-mecanism-in-xenopus
+    version: 1.0.0
+    type: lab
+    path: labs/sible2007-mitotic-cell-cycle-mecanism-in-xenopus
+    visibility: public
+  - id: smallbone2015-forced-pathway-lab
+    package: smallbone2015-forced-pathway
+    version: 1.0.0
+    type: lab
+    path: labs/smallbone2015-forced-pathway
+    visibility: public
+  - id: smallbone2015-forced-pathway-feedback-lab
+    package: smallbone2015-forced-pathway-feedback
+    version: 1.0.0
+    type: lab
+    path: labs/smallbone2015-forced-pathway-feedback
+    visibility: public
+  - id: smallbone2015-pathway-lab
+    package: smallbone2015-pathway
+    version: 1.0.0
+    type: lab
+    path: labs/smallbone2015-pathway
+    visibility: public
+  - id: smallbone2015-pathway-feedback-lab
+    package: smallbone2015-pathway-feedback
+    version: 1.0.0
+    type: lab
+    path: labs/smallbone2015-pathway-feedback
+    visibility: public
+  - id: smith2009-rgs-mediated-gtp-hydrolysis-lab
+    package: smith2009-rgs-mediated-gtp-hydrolysis
+    version: 1.0.0
+    type: lab
+    path: labs/smith2009-rgs-mediated-gtp-hydrolysis
+    visibility: public
+  - id: smith2010-foxo-ptms-ageingrelatedsignallingpathw-lab
+    package: smith2010-foxo-ptms-ageingrelatedsignallingpathw
+    version: 1.0.0
+    type: lab
+    path: labs/smith2010-foxo-ptms-ageingrelatedsignallingpathw
+    visibility: public
+  - id: smith2010-response-of-foxo-transcription-factors-lab
+    package: smith2010-response-of-foxo-transcription-factors
+    version: 1.0.0
+    type: lab
+    path: labs/smith2010-response-of-foxo-transcription-factors
+    visibility: public
+  - id: smith2010-response-of-foxo-transcription-factors-biomd0000000706-lab
+    package: smith2010-response-of-foxo-transcription-factors-biomd0000000706
+    version: 1.0.0
+    type: lab
+    path: labs/smith2010-response-of-foxo-transcription-factors-biomd0000000706
+    visibility: public
+  - id: smith2013-regulation-of-insulin-signalling-by-ox-lab
+    package: smith2013-regulation-of-insulin-signalling-by-ox
+    version: 1.0.0
+    type: lab
+    path: labs/smith2013-regulation-of-insulin-signalling-by-ox
+    visibility: public
+  - id: sneyd2002-ip3-receptor-lab
+    package: sneyd2002-ip3-receptor
+    version: 1.0.0
+    type: lab
+    path: labs/sneyd2002-ip3-receptor
+    visibility: public
+  - id: sobaleva2005-prolactinregulation-lab
+    package: sobaleva2005-prolactinregulation
+    version: 1.0.0
+    type: lab
+    path: labs/sobaleva2005-prolactinregulation
+    visibility: public
+  - id: sobotta2017-il-6-induced-jak1-stat3-signaling-lab
+    package: sobotta2017-il-6-induced-jak1-stat3-signaling
+    version: 1.0.0
+    type: lab
+    path: labs/sobotta2017-il-6-induced-jak1-stat3-signaling
+    visibility: public
+  - id: starbuck1990-egf-binding-and-trafficking-dynamic-lab
+    package: starbuck1990-egf-binding-and-trafficking-dynamic
+    version: 1.0.0
+    type: lab
+    path: labs/starbuck1990-egf-binding-and-trafficking-dynamic
+    visibility: public
+  - id: strasen2018-tgfb-smad-signalling-class-1-lab
+    package: strasen2018-tgfb-smad-signalling-class-1
+    version: 1.0.0
+    type: lab
+    path: labs/strasen2018-tgfb-smad-signalling-class-1
+    visibility: public
+  - id: strasen2018-tgfb-smad-signalling-class-2-lab
+    package: strasen2018-tgfb-smad-signalling-class-2
+    version: 1.0.0
+    type: lab
+    path: labs/strasen2018-tgfb-smad-signalling-class-2
+    visibility: public
+  - id: strasen2018-tgfb-smad-signalling-class-3-lab
+    package: strasen2018-tgfb-smad-signalling-class-3
+    version: 1.0.0
+    type: lab
+    path: labs/strasen2018-tgfb-smad-signalling-class-3
+    visibility: public
+  - id: strasen2018-tgfb-smad-signalling-class-4-lab
+    package: strasen2018-tgfb-smad-signalling-class-4
+    version: 1.0.0
+    type: lab
+    path: labs/strasen2018-tgfb-smad-signalling-class-4
+    visibility: public
+  - id: strasen2018-tgfb-smad-signalling-class-5-lab
+    package: strasen2018-tgfb-smad-signalling-class-5
+    version: 1.0.0
+    type: lab
+    path: labs/strasen2018-tgfb-smad-signalling-class-5
+    visibility: public
+  - id: strasen2018-tgfb-smad-signalling-class-6-lab
+    package: strasen2018-tgfb-smad-signalling-class-6
+    version: 1.0.0
+    type: lab
+    path: labs/strasen2018-tgfb-smad-signalling-class-6
+    visibility: public
+  - id: strasen2018-tgfb-smad-signalling-degradation-of-lab
+    package: strasen2018-tgfb-smad-signalling-degradation-of
+    version: 1.0.0
+    type: lab
+    path: labs/strasen2018-tgfb-smad-signalling-degradation-of
+    visibility: public
+  - id: strasen2018-tgfb-smad-signalling-drb-treatment-lab
+    package: strasen2018-tgfb-smad-signalling-drb-treatment
+    version: 1.0.0
+    type: lab
+    path: labs/strasen2018-tgfb-smad-signalling-drb-treatment
+    visibility: public
+  - id: strasen2018-tgfb-smad-signalling-restimulation-w-lab
+    package: strasen2018-tgfb-smad-signalling-restimulation-w
+    version: 1.0.0
+    type: lab
+    path: labs/strasen2018-tgfb-smad-signalling-restimulation-w
+    visibility: public
+  - id: strasen2018-tgfb-smad-signalling-restimulation-w-biomd0000000995-lab
+    package: strasen2018-tgfb-smad-signalling-restimulation-w-biomd0000000995
+    version: 1.0.0
+    type: lab
+    path: labs/strasen2018-tgfb-smad-signalling-restimulation-w-biomd0000000995
+    visibility: public
+  - id: strasen2018-tgfb-smad-signalling-restimulation-w-biomd0000000996-lab
+    package: strasen2018-tgfb-smad-signalling-restimulation-w-biomd0000000996
+    version: 1.0.0
+    type: lab
+    path: labs/strasen2018-tgfb-smad-signalling-restimulation-w-biomd0000000996
+    visibility: public
+  - id: thiaville2016-wild-type-folate-pathway-model-wit-lab
+    package: thiaville2016-wild-type-folate-pathway-model-wit
+    version: 1.0.0
+    type: lab
+    path: labs/thiaville2016-wild-type-folate-pathway-model-wit
+    visibility: public
+  - id: thomsen1988-adenylatecyclase-inhibition-lab
+    package: thomsen1988-adenylatecyclase-inhibition
+    version: 1.0.0
+    type: lab
+    path: labs/thomsen1988-adenylatecyclase-inhibition
+    visibility: public
+  - id: thomson2009-unlimited-multistability-in-multisit-lab
+    package: thomson2009-unlimited-multistability-in-multisit
+    version: 1.0.0
+    type: lab
+    path: labs/thomson2009-unlimited-multistability-in-multisit
+    visibility: public
+  - id: tiwari2019-mathematical-model-of-nfkb-regulatory-lab
+    package: tiwari2019-mathematical-model-of-nfkb-regulatory
+    version: 1.0.0
+    type: lab
+    path: labs/tiwari2019-mathematical-model-of-nfkb-regulatory
+    visibility: public
+  - id: tlr4-nfkb-phospho-nf-kb-signaling-in-bmdm-lab
+    package: tlr4-nfkb-phospho-nf-kb-signaling-in-bmdm
+    version: 1.0.0
+    type: lab
+    path: labs/tlr4-nfkb-phospho-nf-kb-signaling-in-bmdm
+    visibility: public
+  - id: trares2022-canonical-nf-kb-pathway-petri-net-lab
+    package: trares2022-canonical-nf-kb-pathway-petri-net
+    version: 1.0.0
+    type: lab
+    path: labs/trares2022-canonical-nf-kb-pathway-petri-net
+    visibility: public
+  - id: trares2022-crosstalk-between-the-canonical-and-n-lab
+    package: trares2022-crosstalk-between-the-canonical-and-n
+    version: 1.0.0
+    type: lab
+    path: labs/trares2022-crosstalk-between-the-canonical-and-n
+    visibility: public
+  - id: trares2022-non-canonical-nf-kb-pathway-petri-net-lab
+    package: trares2022-non-canonical-nf-kb-pathway-petri-net
+    version: 1.0.0
+    type: lab
+    path: labs/trares2022-non-canonical-nf-kb-pathway-petri-net
+    visibility: public
+  - id: tyson2003-activator-inhibitor-lab
+    package: tyson2003-activator-inhibitor
+    version: 1.0.0
+    type: lab
+    path: labs/tyson2003-activator-inhibitor
+    visibility: public
+  - id: tyson2003-mutual-activation-lab
+    package: tyson2003-mutual-activation
+    version: 1.0.0
+    type: lab
+    path: labs/tyson2003-mutual-activation
+    visibility: public
+  - id: tyson2003-mutual-inhibition-lab
+    package: tyson2003-mutual-inhibition
+    version: 1.0.0
+    type: lab
+    path: labs/tyson2003-mutual-inhibition
+    visibility: public
+  - id: tyson2003-negfb-homeostasis-lab
+    package: tyson2003-negfb-homeostasis
+    version: 1.0.0
+    type: lab
+    path: labs/tyson2003-negfb-homeostasis
+    visibility: public
+  - id: tyson2003-perfect-adaption-lab
+    package: tyson2003-perfect-adaption
+    version: 1.0.0
+    type: lab
+    path: labs/tyson2003-perfect-adaption
+    visibility: public
+  - id: tyson2003-substrate-depletion-osc-lab
+    package: tyson2003-substrate-depletion-osc
+    version: 1.0.0
+    type: lab
+    path: labs/tyson2003-substrate-depletion-osc
+    visibility: public
+  - id: varusai2018-dynamic-modelling-of-the-mtor-signal-lab
+    package: varusai2018-dynamic-modelling-of-the-mtor-signal
+    version: 1.0.0
+    type: lab
+    path: labs/varusai2018-dynamic-modelling-of-the-mtor-signal
+    visibility: public
+  - id: vaseghi1999-pentose-pp-yeast-lab
+    package: vaseghi1999-pentose-pp-yeast
+    version: 1.0.0
+    type: lab
+    path: labs/vaseghi1999-pentose-pp-yeast
+    visibility: public
+  - id: vernoux2011-auxinsignaling-auxinfluctuating-lab
+    package: vernoux2011-auxinsignaling-auxinfluctuating
+    version: 1.0.0
+    type: lab
+    path: labs/vernoux2011-auxinsignaling-auxinfluctuating
+    visibility: public
+  - id: vernoux2011-auxinsignaling-auxinsinglestepinput-lab
+    package: vernoux2011-auxinsignaling-auxinsinglestepinput
+    version: 1.0.0
+    type: lab
+    path: labs/vernoux2011-auxinsignaling-auxinsinglestepinput
+    visibility: public
+  - id: vizan2013-tgf-pathway-long-term-signaling-lab
+    package: vizan2013-tgf-pathway-long-term-signaling
+    version: 1.0.0
+    type: lab
+    path: labs/vizan2013-tgf-pathway-long-term-signaling
+    visibility: public
+  - id: wanant2000-insulinreceptormodel-a-lab
+    package: wanant2000-insulinreceptormodel-a
+    version: 1.0.0
+    type: lab
+    path: labs/wanant2000-insulinreceptormodel-a
+    visibility: public
+  - id: wanant2000-insulinreceptormodel-b-lab
+    package: wanant2000-insulinreceptormodel-b
+    version: 1.0.0
+    type: lab
+    path: labs/wanant2000-insulinreceptormodel-b
+    visibility: public
+  - id: wegner2012-tgfbetasignalling-feedbackloops-lab
+    package: wegner2012-tgfbetasignalling-feedbackloops
+    version: 1.0.0
+    type: lab
+    path: labs/wegner2012-tgfbetasignalling-feedbackloops
+    visibility: public
+  - id: wei2011-mlcactivationpathway-endothelialpermeabi-lab
+    package: wei2011-mlcactivationpathway-endothelialpermeabi
+    version: 1.0.0
+    type: lab
+    path: labs/wei2011-mlcactivationpathway-endothelialpermeabi
+    visibility: public
+  - id: xu2005-blood-coagulation-model-of-activated-fact-lab
+    package: xu2005-blood-coagulation-model-of-activated-fact
+    version: 1.0.0
+    type: lab
+    path: labs/xu2005-blood-coagulation-model-of-activated-fact
+    visibility: public
+  - id: yan2012-rb-e2f-pathway-dynamics-with-mir449-lab
+    package: yan2012-rb-e2f-pathway-dynamics-with-mir449
+    version: 1.0.0
+    type: lab
+    path: labs/yan2012-rb-e2f-pathway-dynamics-with-mir449
+    visibility: public
+  - id: yao2016-calcium-signaling-lab
+    package: yao2016-calcium-signaling
+    version: 1.0.0
+    type: lab
+    path: labs/yao2016-calcium-signaling
+    visibility: public
+  - id: yapo2017-a2ar-camp-pka-signalling-in-d2-dopamine-lab
+    package: yapo2017-a2ar-camp-pka-signalling-in-d2-dopamine
+    version: 1.0.0
+    type: lab
+    path: labs/yapo2017-a2ar-camp-pka-signalling-in-d2-dopamine
+    visibility: public
+  - id: yapo2017-camp-pka-signalling-in-d1-dopamine-rece-lab
+    package: yapo2017-camp-pka-signalling-in-d1-dopamine-rece
+    version: 1.0.0
+    type: lab
+    path: labs/yapo2017-camp-pka-signalling-in-d1-dopamine-rece
+    visibility: public
+  - id: yugi2014-insulin-induced-signalling-pfkl-phospho-lab
+    package: yugi2014-insulin-induced-signalling-pfkl-phospho
+    version: 1.0.0
+    type: lab
+    path: labs/yugi2014-insulin-induced-signalling-pfkl-phospho
+    visibility: public
+  - id: yugi2014-insulin-induced-signalling-pfkl-phospho-biomd0000000541-lab
+    package: yugi2014-insulin-induced-signalling-pfkl-phospho-biomd0000000541
+    version: 1.0.0
+    type: lab
+    path: labs/yugi2014-insulin-induced-signalling-pfkl-phospho-biomd0000000541
+    visibility: public
+  - id: zarnitsina1996-reactions-of-the-intrinsic-pathwa-lab
+    package: zarnitsina1996-reactions-of-the-intrinsic-pathwa
+    version: 1.0.0
+    type: lab
+    path: labs/zarnitsina1996-reactions-of-the-intrinsic-pathwa
+    visibility: public
+  - id: zeilfelder2025-model-for-primary-human-hepatocyt-lab
+    package: zeilfelder2025-model-for-primary-human-hepatocyt
+    version: 1.0.0
+    type: lab
+    path: labs/zeilfelder2025-model-for-primary-human-hepatocyt
+    visibility: public
+  - id: zi2011-tgf-beta-pathway-lab
+    package: zi2011-tgf-beta-pathway
+    version: 1.0.0
+    type: lab
+    path: labs/zi2011-tgf-beta-pathway
+    visibility: public
+  - id: zymomonas-ed-pathway-lab
+    package: zymomonas-ed-pathway
+    version: 1.0.0
+    type: lab
+    path: labs/zymomonas-ed-pathway
+    visibility: public

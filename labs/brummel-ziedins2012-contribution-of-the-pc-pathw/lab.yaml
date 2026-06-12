@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: brummel-ziedins2012-contribution-of-the-pc-pathw
+version: 1.0.0
 title: Brummel-Ziedins2012 - Contribution of the PC pathway to thrombin generation
   Lab
 description: 'Clean Biosimulant lab for systems signaling model: Brummel-Ziedins2012

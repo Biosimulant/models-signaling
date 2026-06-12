@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: grigolon2018-responses-to-auxin-signals-model2003060002
+version: 1.0.0
 title: MODEL2003060002 - Grigolon2018 - Responses to auxin signals Lab
 description: 'Clean Biosimulant lab for systems signaling model: Grigolon2018 - Responses
   to auxin signals. Values are native SBML quantities; equations, parameters, and

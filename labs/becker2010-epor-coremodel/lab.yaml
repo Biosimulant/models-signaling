@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: becker2010-epor-coremodel
+version: 1.0.0
 title: Becker2010_EpoR_CoreModel Lab
 description: 'Clean Biosimulant lab for systems signaling model: Becker2010_EpoR_CoreModel.
   Values are native SBML quantities; equations, parameters, and initial values remain

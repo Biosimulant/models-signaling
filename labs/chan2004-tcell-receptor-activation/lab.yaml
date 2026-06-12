@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: chan2004-tcell-receptor-activation
+version: 1.0.0
 title: Chan2004_TCell_receptor_activation Lab
 description: 'Clean Biosimulant lab for systems signaling model: Chan2004_TCell_receptor_activation.
   Values are native SBML quantities; equations, parameters, and initial values remain

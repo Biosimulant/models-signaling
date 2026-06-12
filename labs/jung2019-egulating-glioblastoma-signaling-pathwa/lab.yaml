@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: jung2019-egulating-glioblastoma-signaling-pathwa
+version: 1.0.0
 title: Jung2019 - egulating glioblastoma signaling pathways and anti-invasion therapy
   cell cycle dynamics model Lab
 description: Clean Biosimulant lab for cell-cycle regulatory signaling. Values are

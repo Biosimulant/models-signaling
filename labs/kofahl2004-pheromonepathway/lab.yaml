@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kofahl2004-pheromonepathway
+version: 1.0.0
 title: Kofahl2004_PheromonePathway Lab
 description: 'Clean Biosimulant lab for systems signaling model: Kofahl2004_PheromonePathway.
   Values are native SBML quantities; equations, parameters, and initial values remain

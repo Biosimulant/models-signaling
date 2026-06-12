@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kervizic2008-cholesterol-srebp
+version: 1.0.0
 title: Kervizic2008_Cholesterol_SREBP Lab
 description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values
   are native SBML quantities; equations, parameters, and initial values remain in

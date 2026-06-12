@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: barik2060-model-of-yeast-cell-cycle-regulation-based-on-69af50c1
+version: 1.0.0
 title: A model of yeast cell-cycle regulation based on multisite phosphorylation_1_1_1
   Lab
 description: Clean Biosimulant lab for cell-cycle regulatory signaling. Values are

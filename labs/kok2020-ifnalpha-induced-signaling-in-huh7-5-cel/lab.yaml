@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kok2020-ifnalpha-induced-signaling-in-huh7-5-cel
+version: 1.0.0
 title: Kok2020 - IFNalpha-induced signaling in Huh7.5 cells Lab
 description: 'Clean Biosimulant lab for systems signaling model: Kok2020 - IFNalpha-induced
   signaling in Huh7.5 cells. Values are native SBML quantities; equations, parameters,

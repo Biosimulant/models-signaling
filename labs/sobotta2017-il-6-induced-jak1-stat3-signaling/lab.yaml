@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: sobotta2017-il-6-induced-jak1-stat3-signaling
+version: 1.0.0
 title: Sobotta2017 - IL-6-induced JAK1-STAT3-signaling Lab
 description: Clean Biosimulant lab for JAK/STAT cytokine signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

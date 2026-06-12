@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: nakakuki2010-cellfatedecision-core
+version: 1.0.0
 title: Nakakuki2010_CellFateDecision_Core Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: ortega2006-bistability-from-double-phosphorylati
+version: 1.0.0
 title: Ortega2006 - bistability from double phosphorylation in signal transduction
   Lab
 description: 'Clean Biosimulant lab for systems signaling model: Ortega2006 - bistability

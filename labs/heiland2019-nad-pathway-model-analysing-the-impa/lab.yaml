@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: heiland2019-nad-pathway-model-analysing-the-impa
+version: 1.0.0
 title: Heiland2019 - NAD pathway model analysing the impact of NNMT on pathway dynamics
   and evolution Lab
 description: 'Clean Biosimulant lab for systems signaling model: Heiland2019 - NAD

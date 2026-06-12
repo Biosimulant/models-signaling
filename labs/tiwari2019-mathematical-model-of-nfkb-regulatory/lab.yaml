@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: tiwari2019-mathematical-model-of-nfkb-regulatory
+version: 1.0.0
 title: Tiwari2019 - Mathematical model of NFKB regulatory module with TNF and ROS
   Lab
 description: Clean Biosimulant lab for NF-kB pathway signaling. Values are native

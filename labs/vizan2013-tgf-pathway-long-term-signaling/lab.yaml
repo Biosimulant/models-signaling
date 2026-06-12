@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: vizan2013-tgf-pathway-long-term-signaling
+version: 1.0.0
 title: Vizan2013 - TGF pathway long term signaling Lab
 description: 'Clean Biosimulant lab for systems signaling model: Vizan2013 - TGF pathway
   long term signaling. Values are native SBML quantities; equations, parameters, and

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: smith2010-response-of-foxo-transcription-factors-biomd0000000706
+version: 1.0.0
 title: BIOMD0000000706 - Smith2010 - Response of FOXO Transcription Factors to Post-Translational Modifications
   (with acetylation pathway) Lab
 description: 'Clean Biosimulant lab for systems signaling model: Smith2010 - Response

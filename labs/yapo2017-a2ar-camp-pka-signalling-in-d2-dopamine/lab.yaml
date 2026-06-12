@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: yapo2017-a2ar-camp-pka-signalling-in-d2-dopamine
+version: 1.0.0
 title: Yapo2017 - A2AR/cAMP/PKA signalling in D2 dopamine receptor expressing medium-spiny
   neurons Lab
 description: 'Clean Biosimulant lab for systems signaling model: Yapo2017 - A2AR/cAMP/PKA

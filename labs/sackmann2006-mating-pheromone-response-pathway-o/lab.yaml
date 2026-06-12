@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: sackmann2006-mating-pheromone-response-pathway-o
+version: 1.0.0
 title: Sackmann2006 - mating pheromone response pathway of S.cerevisiae Lab
 description: 'Clean Biosimulant lab for systems signaling model: Sackmann2006 - mating
   pheromone response pathway of S.cerevisiae. Values are native SBML quantities; equations,

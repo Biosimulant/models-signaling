@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: hayashi1999-nosynth-phospho
+version: 1.0.0
 title: Hayashi1999_NOSynth_Phospho Lab
 description: 'Clean Biosimulant lab for systems signaling model: Hayashi1999_NOSynth_Phospho.
   Values are native SBML quantities; equations, parameters, and initial values remain

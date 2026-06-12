@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: zeilfelder2025-model-for-primary-human-hepatocyt
+version: 1.0.0
 title: Zeilfelder2025 - Model for primary human hepatocytes (PHH) Lab
 description: 'Clean Biosimulant lab for systems signaling model: Zeilfelder2025 -
   Model for primary human hepatocytes (PHH). Values are native SBML quantities; equations,

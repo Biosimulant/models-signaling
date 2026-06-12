@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: bhattacharya2014-a-mathematical-model-of-the-ste
+version: 1.0.0
 title: Bhattacharya2014 - A mathematical model of the sterol regulatory element binding
   protein 2 cholesterol biosynthesis pathway Lab
 description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values

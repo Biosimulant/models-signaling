@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: wanant2000-insulinreceptormodel-a
+version: 1.0.0
 title: Wanant2000_InsulinReceptorModel_A Lab
 description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values
   are native SBML quantities; equations, parameters, and initial values remain in

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: benary2015-feedback-regulation-of-beta-catenin-p
+version: 1.0.0
 title: Benary2015 - feedback regulation of beta-catenin pathway by HOS and FWD1 Lab
 description: Clean Biosimulant lab for developmental and growth-control signaling.
   Values are native SBML quantities; equations, parameters, and initial values remain

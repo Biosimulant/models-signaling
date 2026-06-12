@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: jung2019-regulating-glioblastoma-signaling-pathw
+version: 1.0.0
 title: Jung2019 - Regulating glioblastoma signaling pathways and anti-invasion therapy
   - core control model Lab
 description: 'Clean Biosimulant lab for systems signaling model: Jung2019 - Regulating

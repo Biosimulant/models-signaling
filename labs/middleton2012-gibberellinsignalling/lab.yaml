@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: middleton2012-gibberellinsignalling
+version: 1.0.0
 title: Middleton2012_GibberellinSignalling Lab
 description: 'Clean Biosimulant lab for systems signaling model: Middleton2012_GibberellinSignalling.
   Values are native SBML quantities; equations, parameters, and initial values remain

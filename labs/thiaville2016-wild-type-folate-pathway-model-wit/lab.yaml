@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: thiaville2016-wild-type-folate-pathway-model-wit
+version: 1.0.0
 title: Thiaville2016 - Wild type folate pathway model with proposed PanB reaction
   Lab
 description: 'Clean Biosimulant lab for systems signaling model: Thiaville2016 - Wild

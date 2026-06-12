@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: hoffmann2002-wt-ikbnfkb-signaling
+version: 1.0.0
 title: Hoffmann2002_WT_IkBNFkB_Signaling Lab
 description: Clean Biosimulant lab for NF-kB pathway signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled
@@ -32,16 +34,37 @@ tags:
 - nfkb
 io:
   inputs:
+  - name: initial_inhibitor_kappa_b_alpha
+    maps_to: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model.initial_inhibitor_kappa_b_alpha
+    label: Initial inhibitor kappa B alpha
+    description: Initial inhibitor kappa B alpha level. Maps to SBML symbol `IkBalpha`;
+      exposed as a traceable initial-condition perturbation.
   - name: initial_ik_balpha
     maps_to: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model.initial_ik_balpha
-    label: Initial Ik Balpha
-    description: Initial level of Ik Balpha. Maps to SBML symbol `IkBalpha`; exposed
-      as a traceable initial-condition perturbation.
+    label: Initial inhibitor kappa B alpha (legacy)
+    description: Legacy alias for initial inhibitor kappa B alpha. Maps to SBML symbol
+      `IkBalpha`; exposed as a traceable initial-condition perturbation.
   outputs:
+  - name: nuclear_factor_kappa_b
+    maps_to: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model.nuclear_factor_kappa_b
+    label: Nuclear factor kappa B
+    description: Nuclear factor kappa B. Maps to SBML symbol `NFkB` and is emitted
+      in native SBML units.
+  - name: inhibitor_kappa_b_alpha_nuclear_factor_kappa_b_complex
+    maps_to: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model.inhibitor_kappa_b_alpha_nuclear_factor_kappa_b_complex
+    label: Inhibitor kappa B alpha - nuclear factor kappa B complex
+    description: Inhibitor kappa B alpha bound to nuclear factor kappa B. Maps to
+      SBML symbol `IkBalpha_NFkB` and is emitted in native SBML units.
+  - name: inhibitor_kappa_b_beta_nuclear_factor_kappa_b_complex
+    maps_to: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model.inhibitor_kappa_b_beta_nuclear_factor_kappa_b_complex
+    label: Inhibitor kappa B beta - nuclear factor kappa B complex
+    description: Inhibitor kappa B beta bound to nuclear factor kappa B. Maps to SBML
+      symbol `IkBbeta_NFkB` and is emitted in native SBML units.
   - name: nfkb
     maps_to: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model.nfkb
-    label: NF-kB
-    description: NF-kB. Maps to SBML symbol `NFkB` and is emitted in native SBML units.
+    label: NF-kB (legacy)
+    description: Legacy alias for nuclear factor kappa B. Maps to SBML symbol `NFkB`
+      and is emitted in native SBML units.
   - name: ik_balpha_nf_k_b
     maps_to: signaling_sbml_hoffmann2002_wt_ikbnfkb_signaling_biomd0000000140_model.ik_balpha_nf_k_b
     label: Ik Balpha NF K B

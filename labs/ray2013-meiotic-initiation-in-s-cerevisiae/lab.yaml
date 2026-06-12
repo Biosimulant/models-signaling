@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: ray2013-meiotic-initiation-in-s-cerevisiae
+version: 1.0.0
 title: Ray2013 - Meiotic initiation in S. cerevisiae Lab
 description: 'Clean Biosimulant lab for systems signaling model: Ray2013 - Meiotic
   initiation in S. cerevisiae. Values are native SBML quantities; equations, parameters,

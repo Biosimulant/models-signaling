@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: thomsen1988-adenylatecyclase-inhibition
+version: 1.0.0
 title: Thomsen1988_AdenylateCyclase_Inhibition Lab
 description: 'Clean Biosimulant lab for systems signaling model: Thomsen1988_AdenylateCyclase_Inhibition.
   Values are native SBML quantities; equations, parameters, and initial values remain

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: cao2013-application-of-absis-in-the-the-enzymati
+version: 1.0.0
 title: Cao2013 - Application of ABSIS in the the enzymatic futile cycle Lab
 description: 'Clean Biosimulant lab for systems signaling model: Cao2013 - Application
   of ABSIS in the the enzymatic futile cycle. Values are native SBML quantities; equations,

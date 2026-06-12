@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: oliveira2020-malonyl-coa-pathway-for-3-hydroxypr-model2010030008
+version: 1.0.0
 title: MODEL2010030008 - Oliveira2020 - Malonyl-CoA pathway for 3-hydroxypropionate production from
   glycerol Lab
 description: 'Clean Biosimulant lab for systems signaling model: Oliveira2020 - Malonyl-CoA

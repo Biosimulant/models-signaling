@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: komarova2005-theoreticalframework-basicarchitect
+version: 1.0.0
 title: Komarova2005_TheoreticalFramework_BasicArchitecture Lab
 description: 'Clean Biosimulant lab for systems signaling model: Komarova2005_TheoreticalFramework_BasicArchitecture.
   Values are native SBML quantities; equations, parameters, and initial values remain

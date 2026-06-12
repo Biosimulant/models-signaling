@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: li2019-neurogranin-stimulates-ca-calmodulin-depe
+version: 1.0.0
 title: Li2019 - Neurogranin stimulates Ca/calmodulin-dependent kinase II by inhibiting
   Calcineurin Lab
 description: Clean Biosimulant lab for calcium and second-messenger signaling. Values

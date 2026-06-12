@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: gray2016-the-akt-switch-model
+version: 1.0.0
 title: Gray2016 - The Akt switch model Lab
 description: 'Clean Biosimulant lab for systems signaling model: Gray2016 - The Akt
   switch model. Values are native SBML quantities; equations, parameters, and initial

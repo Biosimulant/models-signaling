@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: ouyang2014-photomorphogenic-uv-b-signalling-netw
+version: 1.0.0
 title: Ouyang2014 - photomorphogenic UV-B signalling network Lab
 description: 'Clean Biosimulant lab for systems signaling model: Ouyang2014 - photomorphogenic
   UV-B signalling network. Values are native SBML quantities; equations, parameters,

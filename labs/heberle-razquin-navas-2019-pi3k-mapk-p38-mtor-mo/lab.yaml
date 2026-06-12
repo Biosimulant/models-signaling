@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: heberle-razquin-navas-2019-pi3k-mapk-p38-mtor-mo
+version: 1.0.0
 title: Heberle-Razquin Navas-2019 - PI3K-MAPK/p38-mTOR Model V Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: anand2003-reactions-of-the-intrinsic-pathway-of
+version: 1.0.0
 title: Anand2003 - Reactions of the Intrinsic Pathway of Blood Coagulation with Platelet
   Activation Lab
 description: 'Clean Biosimulant lab for systems signaling model: Anand2003 - Reactions

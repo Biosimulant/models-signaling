@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: yapo2017-camp-pka-signalling-in-d1-dopamine-rece
+version: 1.0.0
 title: Yapo2017- cAMP/PKA signalling in D1 dopamine receptor expressing medium-spiny
   neurons Lab
 description: 'Clean Biosimulant lab for systems signaling model: Yapo2017- cAMP/PKA

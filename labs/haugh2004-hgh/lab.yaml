@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: haugh2004-hgh
+version: 1.0.0
 title: Haugh2004_hGH Lab
 description: 'Clean Biosimulant lab for systems signaling model: Haugh2004_hGH. Values
   are native SBML quantities; equations, parameters, and initial values remain in

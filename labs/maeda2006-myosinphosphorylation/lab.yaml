@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: maeda2006-myosinphosphorylation
+version: 1.0.0
 title: Maeda2006_MyosinPhosphorylation Lab
 description: 'Clean Biosimulant lab for systems signaling model: Maeda2006_MyosinPhosphorylation.
   Values are native SBML quantities; equations, parameters, and initial values remain

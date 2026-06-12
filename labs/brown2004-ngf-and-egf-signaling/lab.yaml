@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: brown2004-ngf-and-egf-signaling
+version: 1.0.0
 title: Brown2004 - NGF and EGF signaling Lab
 description: 'Clean Biosimulant lab for systems signaling model: Brown2004 - NGF and
   EGF signaling. Values are native SBML quantities; equations, parameters, and initial

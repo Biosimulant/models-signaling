@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: panteleev2002-tfpimechanism-schmema1
+version: 1.0.0
 title: Panteleev2002_TFPImechanism_schmema1 Lab
 description: 'Clean Biosimulant lab for systems signaling model: Panteleev2002_TFPImechanism_schmema1.
   Values are native SBML quantities; equations, parameters, and initial values remain

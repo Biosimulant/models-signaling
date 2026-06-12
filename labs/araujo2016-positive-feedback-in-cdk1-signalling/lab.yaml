@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: araujo2016-positive-feedback-in-cdk1-signalling
+version: 1.0.0
 title: Araujo2016 - Positive feedback in Cdk1 signalling keeps mitotic duration short
   and constant Lab
 description: Clean Biosimulant lab for cell-cycle regulatory signaling. Values are

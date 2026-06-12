@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: maurya2005-gtpasecycle-reducedorder
+version: 1.0.0
 title: Maurya2005_GTPaseCycle_reducedOrder Lab
 description: 'Clean Biosimulant lab for systems signaling model: Maurya2005_GTPaseCycle_reducedOrder.
   Values are native SBML quantities; equations, parameters, and initial values remain

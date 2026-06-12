@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: bakshi2020-properdin-model-of-alternative-pathwa
+version: 1.0.0
 title: Bakshi2020 - Properdin model of alternative pathway of complement system Lab
 description: Clean Biosimulant lab for immune signaling. Values are native SBML quantities;
   equations, parameters, and initial values remain in the bundled source file.

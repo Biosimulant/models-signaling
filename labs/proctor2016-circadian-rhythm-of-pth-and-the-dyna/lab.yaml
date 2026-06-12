@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: proctor2016-circadian-rhythm-of-pth-and-the-dyna
+version: 1.0.0
 title: Proctor2016 - Circadian rhythm of PTH and the dynamics of signaling molecules
   on bone remodeling Lab
 description: Clean Biosimulant lab for circadian regulatory signaling. Values are

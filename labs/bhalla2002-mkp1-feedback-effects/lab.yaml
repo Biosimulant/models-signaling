@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: bhalla2002-mkp1-feedback-effects
+version: 1.0.0
 title: Bhalla2002_mkp1_feedback_effects Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

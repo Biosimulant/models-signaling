@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: petelenzkuehn-osmoadaptation-hog1d
+version: 1.0.0
 title: PetelenzKuehn_osmoadaptation_hog1D Lab
 description: 'Clean Biosimulant lab for systems signaling model: PetelenzKuehn_osmoadaptation_hog1D.
   Values are native SBML quantities; equations, parameters, and initial values remain

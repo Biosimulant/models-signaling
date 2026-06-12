@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: collier1996-delta-notch-intercellular-signalling
+version: 1.0.0
 title: Collier1996 - Delta Notch intercellular signalling and lateral inhibition Lab
 description: Clean Biosimulant lab for developmental and growth-control signaling.
   Values are native SBML quantities; equations, parameters, and initial values remain

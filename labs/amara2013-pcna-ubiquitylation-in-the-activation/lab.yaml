@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: amara2013-pcna-ubiquitylation-in-the-activation
+version: 1.0.0
 title: Amara2013 - PCNA ubiquitylation in the activation of PRR pathway Lab
 description: 'Clean Biosimulant lab for systems signaling model: Amara2013 - PCNA
   ubiquitylation in the activation of PRR pathway. Values are native SBML quantities;

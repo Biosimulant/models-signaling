@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: lee2008-erk-and-pi3k-signal-integration-by-myc
+version: 1.0.0
 title: Lee2008 - ERK and PI3K signal integration by Myc Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

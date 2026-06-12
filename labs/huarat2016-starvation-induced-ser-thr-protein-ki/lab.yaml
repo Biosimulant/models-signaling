@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: huarat2016-starvation-induced-ser-thr-protein-ki
+version: 1.0.0
 title: Huarat2016 -Starvation-induced Ser/Thr protein kinase ArnS (Saci_1181) (Model
   14) Lab
 description: 'Clean Biosimulant lab for systems signaling model: Huarat2016 -Starvation-induced

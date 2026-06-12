@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: goldbeter1991-min-mit-oscil-expl-inact
+version: 1.0.0
 title: Goldbeter1991 - Min Mit Oscil, Expl Inact Lab
 description: Clean Biosimulant lab for cell-cycle regulatory signaling. Values are
   native SBML quantities; equations, parameters, and initial values remain in the

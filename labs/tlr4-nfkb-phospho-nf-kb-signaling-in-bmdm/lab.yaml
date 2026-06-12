@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: tlr4-nfkb-phospho-nf-kb-signaling-in-bmdm
+version: 1.0.0
 title: TLR4-NFkB-phospho-NF-kB signaling in BMDM Lab
 description: Clean Biosimulant lab for NF-kB pathway signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

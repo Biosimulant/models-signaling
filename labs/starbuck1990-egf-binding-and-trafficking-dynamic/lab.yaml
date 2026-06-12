@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: starbuck1990-egf-binding-and-trafficking-dynamic
+version: 1.0.0
 title: Starbuck1990 - EGF binding and trafficking dynamics in Fibroblast Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

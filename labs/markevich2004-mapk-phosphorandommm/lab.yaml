@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: markevich2004-mapk-phosphorandommm
+version: 1.0.0
 title: Markevich2004_MAPK_phosphoRandomMM Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

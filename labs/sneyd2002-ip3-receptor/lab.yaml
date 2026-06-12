@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: sneyd2002-ip3-receptor
+version: 1.0.0
 title: Sneyd2002_IP3_Receptor Lab
 description: 'Clean Biosimulant lab for systems signaling model: Sneyd2002_IP3_Receptor.
   Values are native SBML quantities; equations, parameters, and initial values remain

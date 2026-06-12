@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: cookson2011-enzymaticqueueingcoupling
+version: 1.0.0
 title: Cookson2011_EnzymaticQueueingCoupling Lab
 description: 'Clean Biosimulant lab for systems signaling model: Cookson2011_EnzymaticQueueingCoupling.
   Values are native SBML quantities; equations, parameters, and initial values remain

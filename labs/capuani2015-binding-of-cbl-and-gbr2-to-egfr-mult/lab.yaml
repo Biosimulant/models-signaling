@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: capuani2015-binding-of-cbl-and-gbr2-to-egfr-mult
+version: 1.0.0
 title: Capuani2015 - Binding of Cbl and Gbr2 to EGFR (Multisite Phosphorylation Model
   - MPM) Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native

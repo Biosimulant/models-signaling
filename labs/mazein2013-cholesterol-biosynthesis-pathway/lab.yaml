@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: mazein2013-cholesterol-biosynthesis-pathway
+version: 1.0.0
 title: Mazein2013 - Cholesterol biosynthesis pathway Lab
 description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values
   are native SBML quantities; equations, parameters, and initial values remain in

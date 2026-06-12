@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: smith2013-regulation-of-insulin-signalling-by-ox
+version: 1.0.0
 title: Smith2013 - Regulation of Insulin Signalling by Oxidative Stress Lab
 description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values
   are native SBML quantities; equations, parameters, and initial values remain in

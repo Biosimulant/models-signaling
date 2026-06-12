@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: amstein2017-tnfr1-mediated-nf-b-signaling-petri
+version: 1.0.0
 title: Amstein2017 - TNFR1-mediated Nf-κB signaling, Petri Net Lab
 description: Clean Biosimulant lab for NF-kB pathway signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

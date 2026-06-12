@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: machado2014-curcumin-production-pathway-in-esche
+version: 1.0.0
 title: Machado2014 - Curcumin production pathway in Escherichia coli Lab
 description: 'Clean Biosimulant lab for systems signaling model: Machado2014 - Curcumin
   production pathway in Escherichia coli. Values are native SBML quantities; equations,

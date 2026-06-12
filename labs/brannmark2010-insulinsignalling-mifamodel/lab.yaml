@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: brannmark2010-insulinsignalling-mifamodel
+version: 1.0.0
 title: Brannmark2010_InsulinSignalling_Mifamodel Lab
 description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values
   are native SBML quantities; equations, parameters, and initial values remain in

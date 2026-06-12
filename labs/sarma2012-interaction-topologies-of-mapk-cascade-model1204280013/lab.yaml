@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: sarma2012-interaction-topologies-of-mapk-cascade-model1204280013
+version: 1.0.0
 title: Sarma2012 - Interaction topologies of MAPK cascade (M1_K1_PSEQ_short_duration_signal)
   Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native

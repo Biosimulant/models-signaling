@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: ajay-bhalla-2007-bistable
+version: 1.0.0
 title: Ajay_Bhalla_2007_Bistable Lab
 description: 'Clean Biosimulant lab for systems signaling model: Ajay_Bhalla_2007_Bistable.
   Values are native SBML quantities; equations, parameters, and initial values remain

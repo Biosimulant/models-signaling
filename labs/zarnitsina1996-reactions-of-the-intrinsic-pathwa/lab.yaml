@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: zarnitsina1996-reactions-of-the-intrinsic-pathwa
+version: 1.0.0
 title: Zarnitsina1996 - Reactions of the Intrinsic Pathway of Blood Coagulation Lab
 description: 'Clean Biosimulant lab for systems signaling model: Zarnitsina1996 -
   Reactions of the Intrinsic Pathway of Blood Coagulation. Values are native SBML

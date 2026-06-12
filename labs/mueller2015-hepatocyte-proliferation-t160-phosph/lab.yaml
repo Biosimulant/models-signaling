@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: mueller2015-hepatocyte-proliferation-t160-phosph
+version: 1.0.0
 title: Mueller2015 - Hepatocyte proliferation, T160 phosphorylation of CDK2 Lab
 description: Clean Biosimulant lab for cell-cycle regulatory signaling. Values are
   native SBML quantities; equations, parameters, and initial values remain in the

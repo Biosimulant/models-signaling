@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: sharp2013-lipopolysaccharide-induced-nfkb-activa
+version: 1.0.0
 title: Sharp2013 - Lipopolysaccharide induced NFkB activation Lab
 description: Clean Biosimulant lab for NF-kB pathway signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

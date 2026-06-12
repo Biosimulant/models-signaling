@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: iribe2006-camkiikineticsmodel
+version: 1.0.0
 title: Iribe2006_CaMKIIkineticsModel Lab
 description: Clean Biosimulant lab for calcium and second-messenger signaling. Values
   are native SBML quantities; equations, parameters, and initial values remain in

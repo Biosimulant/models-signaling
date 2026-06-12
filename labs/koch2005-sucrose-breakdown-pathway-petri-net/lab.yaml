@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: koch2005-sucrose-breakdown-pathway-petri-net
+version: 1.0.0
 title: Koch2005 - Sucrose breakdown pathway - Petri net Lab
 description: 'Clean Biosimulant lab for systems signaling model: Koch2005 - Sucrose
   breakdown pathway - Petri net. Values are native SBML quantities; equations, parameters,

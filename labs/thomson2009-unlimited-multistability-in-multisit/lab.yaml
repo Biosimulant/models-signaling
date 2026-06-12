@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: thomson2009-unlimited-multistability-in-multisit
+version: 1.0.0
 title: Thomson2009 – Unlimited multistability in multisite phosphorylation systems
   Lab
 description: 'Clean Biosimulant lab for systems signaling model: Thomson2009 – Unlimited

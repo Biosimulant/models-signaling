@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: schwarz2018-cdk-activity-threshold-determines-pa
+version: 1.0.0
 title: Schwarz2018-Cdk Activity Threshold Determines Passage through the Restriction
   Point Lab
 description: Clean Biosimulant lab for cell-cycle regulatory signaling. Values are

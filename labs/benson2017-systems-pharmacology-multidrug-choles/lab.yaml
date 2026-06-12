@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: benson2017-systems-pharmacology-multidrug-choles
+version: 1.0.0
 title: Benson2017 - Systems Pharmacology Multidrug (cholesterol biosynthesis pathway)
   Lab
 description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values

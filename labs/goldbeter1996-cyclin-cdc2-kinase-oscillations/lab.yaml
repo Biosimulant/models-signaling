@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: goldbeter1996-cyclin-cdc2-kinase-oscillations
+version: 1.0.0
 title: Goldbeter1996 - Cyclin Cdc2 kinase Oscillations Lab
 description: Clean Biosimulant lab for cell-cycle regulatory signaling. Values are
   native SBML quantities; equations, parameters, and initial values remain in the

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: dutta-roy2015-opening-of-the-multiple-ampa-recep
+version: 1.0.0
 title: Dutta-Roy2015 - Opening of the multiple AMPA receptor conductance states Lab
 description: 'Clean Biosimulant lab for systems signaling model: Dutta-Roy2015 - Opening
   of the multiple AMPA receptor conductance states. Values are native SBML quantities;

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: chang2008-erk-activation-hallucinogenic-drugs-me
+version: 1.0.0
 title: Chang2008 - ERK activation, hallucinogenic drugs mediated signalling through
   serotonin receptors Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: trares2022-crosstalk-between-the-canonical-and-n
+version: 1.0.0
 title: Trares2022 - Crosstalk between the canonical and non-canonical NF-kB pathways,
   Petri net Lab
 description: Clean Biosimulant lab for NF-kB pathway signaling. Values are native

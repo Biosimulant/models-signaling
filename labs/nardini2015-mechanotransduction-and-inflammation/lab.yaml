@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: nardini2015-mechanotransduction-and-inflammation
+version: 1.0.0
 title: Mechanotransduction & Inflammation Lab
 description: Clean Biosimulant lab for immune signaling. Values are native SBML quantities;
   equations, parameters, and initial values remain in the bundled source file.

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: gosselin2025-ecoli-bioproduction-sensitive
+version: 1.0.0
 title: Gosselin2025 - Ecoli_bioproduction_sensitive Lab
 description: 'Clean Biosimulant lab for systems signaling model: Gosselin2025 - Ecoli_bioproduction_sensitive.
   Values are native SBML quantities; equations, parameters, and initial values remain

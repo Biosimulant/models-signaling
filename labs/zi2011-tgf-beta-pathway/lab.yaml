@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: zi2011-tgf-beta-pathway
+version: 1.0.0
 title: Zi2011_TGF-beta_Pathway Lab
 description: Clean Biosimulant lab for developmental and growth-control signaling.
   Values are native SBML quantities; equations, parameters, and initial values remain

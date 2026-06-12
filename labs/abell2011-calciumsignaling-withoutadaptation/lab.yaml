@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: abell2011-calciumsignaling-withoutadaptation
+version: 1.0.0
 title: Abell2011_CalciumSignaling_WithoutAdaptation Lab
 description: Clean Biosimulant lab for calcium and second-messenger signaling. Values
   are native SBML quantities; equations, parameters, and initial values remain in

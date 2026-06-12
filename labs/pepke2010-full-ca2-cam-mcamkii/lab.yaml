@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: pepke2010-full-ca2-cam-mcamkii
+version: 1.0.0
 title: Pepke2010_Full_Ca2/CaM_mCaMKII Lab
 description: Clean Biosimulant lab for calcium and second-messenger signaling. Values
   are native SBML quantities; equations, parameters, and initial values remain in

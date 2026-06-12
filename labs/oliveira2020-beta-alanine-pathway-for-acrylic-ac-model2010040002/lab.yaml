@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: oliveira2020-beta-alanine-pathway-for-acrylic-ac-model2010040002
+version: 1.0.0
 title: MODEL2010040002 - Oliveira2020 - Beta-Alanine pathway for Acrylic Acid production from glycerol
   Lab
 description: 'Clean Biosimulant lab for systems signaling model: Oliveira2020 - Beta-Alanine

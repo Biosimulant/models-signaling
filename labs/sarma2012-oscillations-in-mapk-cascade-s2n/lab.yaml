@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: sarma2012-oscillations-in-mapk-cascade-s2n
+version: 1.0.0
 title: Sarma2012 - Oscillations in MAPK cascade (S2n) Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

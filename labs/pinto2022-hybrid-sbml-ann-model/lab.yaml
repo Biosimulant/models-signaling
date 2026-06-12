@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: pinto2022-hybrid-sbml-ann-model
+version: 1.0.0
 title: Pinto2022 - Hybrid SBML/ANN model Lab
 description: 'Clean Biosimulant lab for systems signaling model: Pinto2022 - Hybrid
   SBML/ANN model. Values are native SBML quantities; equations, parameters, and initial

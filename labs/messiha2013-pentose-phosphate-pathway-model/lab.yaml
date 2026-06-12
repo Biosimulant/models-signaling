@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: messiha2013-pentose-phosphate-pathway-model
+version: 1.0.0
 title: Messiha2013 - Pentose phosphate pathway model Lab
 description: 'Clean Biosimulant lab for systems signaling model: Messiha2013 - Pentose
   phosphate pathway model. Values are native SBML quantities; equations, parameters,

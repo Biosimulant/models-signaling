@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: neumann2010-cd95stimulation-nfkb-apoptosis
+version: 1.0.0
 title: Neumann2010_CD95Stimulation_NFkB_Apoptosis Lab
 description: Clean Biosimulant lab for NF-kB pathway signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

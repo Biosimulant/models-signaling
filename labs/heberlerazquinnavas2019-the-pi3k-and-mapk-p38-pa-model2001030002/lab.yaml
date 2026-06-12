@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: heberlerazquinnavas2019-the-pi3k-and-mapk-p38-pa-model2001030002
+version: 1.0.0
 title: MODEL2001030002 - HeberleRazquinNavas2019 - The PI3K and MAPK/p38 pathways control stress granuleassembly
   in a hierarchical manner model 2 Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: gupta2007-hypothalamicpituitaryadrenal-modela
+version: 1.0.0
 title: Gupta2007_HypothalamicPituitaryAdrenal_ModelA Lab
 description: 'Clean Biosimulant lab for systems signaling model: Gupta2007_HypothalamicPituitaryAdrenal_ModelA.
   Values are native SBML quantities; equations, parameters, and initial values remain

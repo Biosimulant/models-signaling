@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kummer2000-oscillations-in-calcium-signalling
+version: 1.0.0
 title: Kummer2000 - Oscillations in Calcium Signalling Lab
 description: Clean Biosimulant lab for calcium and second-messenger signaling. Values
   are native SBML quantities; equations, parameters, and initial values remain in

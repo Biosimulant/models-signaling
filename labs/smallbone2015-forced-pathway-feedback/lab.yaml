@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: smallbone2015-forced-pathway-feedback
+version: 1.0.0
 title: Smallbone2015 - forced pathway feedback Lab
 description: 'Clean Biosimulant lab for systems signaling model: Smallbone2015 - forced
   pathway feedback. Values are native SBML quantities; equations, parameters, and

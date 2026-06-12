@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kessler2025-il-6-and-il-22-pathway-in-human-hepa
+version: 1.0.0
 title: Kessler2025 - IL-6 and IL-22 pathway in human hepatocytes Lab
 description: 'Clean Biosimulant lab for systems signaling model: Kessler2025 - IL-6
   and IL-22 pathway in human hepatocytes. Values are native SBML quantities; equations,

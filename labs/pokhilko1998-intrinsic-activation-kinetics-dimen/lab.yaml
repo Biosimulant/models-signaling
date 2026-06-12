@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: pokhilko1998-intrinsic-activation-kinetics-dimen
+version: 1.0.0
 title: Pokhilko1998 - Intrinsic Activation Kinetics (Dimensional Model) Lab
 description: 'Clean Biosimulant lab for systems signaling model: Pokhilko1998 - Intrinsic
   Activation Kinetics (Dimensional Model). Values are native SBML quantities; equations,

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: huang2014-systematic-modeling-for-the-insulin-si
+version: 1.0.0
 title: Huang2014 - Systematic modeling for the insulin signaling network mediated
   by IRS1 and IRS2 Lab
 description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values

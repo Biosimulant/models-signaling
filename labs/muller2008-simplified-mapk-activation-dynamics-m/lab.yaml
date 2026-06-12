@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: muller2008-simplified-mapk-activation-dynamics-m
+version: 1.0.0
 title: Muller2008 - Simplified MAPK activation Dynamics (Model B) Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

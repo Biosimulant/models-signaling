@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: varusai2018-dynamic-modelling-of-the-mtor-signal
+version: 1.0.0
 title: Varusai2018 - Dynamic modelling of the mTOR signalling network reveals complex
   emergent behaviours conferred by DEPTOR Lab
 description: 'Clean Biosimulant lab for systems signaling model: Varusai2018 - Dynamic

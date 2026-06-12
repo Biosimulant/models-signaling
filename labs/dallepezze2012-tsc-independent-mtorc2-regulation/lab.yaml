@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: dallepezze2012-tsc-independent-mtorc2-regulation
+version: 1.0.0
 title: DallePezze2012 - TSC-independent mTORC2 regulation Lab
 description: 'Clean Biosimulant lab for systems signaling model: DallePezze2012 -
   TSC-independent mTORC2 regulation. Values are native SBML quantities; equations,

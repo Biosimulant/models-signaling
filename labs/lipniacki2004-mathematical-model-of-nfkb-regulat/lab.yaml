@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: lipniacki2004-mathematical-model-of-nfkb-regulat
+version: 1.0.0
 title: Lipniacki2004 - Mathematical model of NFKB regulatory module Lab
 description: Clean Biosimulant lab for NF-kB pathway signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled
@@ -33,22 +35,48 @@ tags:
 - tnf-signaling
 io:
   inputs:
+  - name: initial_tumor_necrosis_factor_receptor_level
+    maps_to: signaling_sbml_lipniacki2004_mathematical_model_of_nfkb_regulat_biomd0000000786_model.initial_tumor_necrosis_factor_receptor_level
+    label: Initial tumor necrosis factor receptor level
+    description: Tumor necrosis factor receptor source parameter. Maps to SBML symbol
+      `TNF_R` and preserves the bundled default.
   - name: initial_tnf_receptor_level
     maps_to: signaling_sbml_lipniacki2004_mathematical_model_of_nfkb_regulat_biomd0000000786_model.initial_tnf_receptor_level
-    label: TNF receptor
-    description: TNF receptor source parameter. Maps to SBML symbol `TNF_R` and preserves
-      the bundled default.
+    label: TNF receptor level (legacy)
+    description: Legacy alias for tumor necrosis factor receptor level. Maps to SBML
+      symbol `TNF_R` and preserves the bundled default.
+  - name: initial_tumor_necrosis_factor_level
+    maps_to: signaling_sbml_lipniacki2004_mathematical_model_of_nfkb_regulat_biomd0000000786_model.initial_tumor_necrosis_factor_level
+    label: Initial tumor necrosis factor level
+    description: Initial tumor necrosis factor level. Maps to SBML symbol `TNF`; exposed
+      as a traceable initial-condition perturbation.
   - name: initial_tnf
     maps_to: signaling_sbml_lipniacki2004_mathematical_model_of_nfkb_regulat_biomd0000000786_model.initial_tnf
-    label: Initial TNF
-    description: Initial level of TNF. Maps to SBML symbol `TNF`; exposed as a traceable
-      initial-condition perturbation.
+    label: Initial TNF level (legacy)
+    description: Legacy alias for initial tumor necrosis factor level. Maps to SBML
+      symbol `TNF`; exposed as a traceable initial-condition perturbation.
   outputs:
+  - name: inhibitor_kappa_b_kinase_active
+    maps_to: signaling_sbml_lipniacki2004_mathematical_model_of_nfkb_regulat_biomd0000000786_model.inhibitor_kappa_b_kinase_active
+    label: Active inhibitor kappa B kinase
+    description: Active inhibitor kappa B kinase. Maps to SBML symbol `IKK_active`
+      and is emitted in native SBML units.
+  - name: active_kinase_inhibitor_kappa_b_complex
+    maps_to: signaling_sbml_lipniacki2004_mathematical_model_of_nfkb_regulat_biomd0000000786_model.active_kinase_inhibitor_kappa_b_complex
+    label: Active kinase - inhibitor kappa B complex
+    description: Active inhibitor kappa B kinase bound to inhibitor kappa B. Maps
+      to SBML symbol `IKKactive_IkB` and is emitted in native SBML units.
+  - name: active_kinase_inhibitor_kappa_b_nuclear_factor_kappa_b_complex
+    maps_to: signaling_sbml_lipniacki2004_mathematical_model_of_nfkb_regulat_biomd0000000786_model.active_kinase_inhibitor_kappa_b_nuclear_factor_kappa_b_complex
+    label: Active kinase - inhibitor kappa B - nuclear factor kappa B complex
+    description: Active inhibitor kappa B kinase bound to the inhibitor kappa B and
+      nuclear factor kappa B complex. Maps to SBML symbol `IKKactive_IkB_NFKB` and
+      is emitted in native SBML units.
   - name: ikk_active
     maps_to: signaling_sbml_lipniacki2004_mathematical_model_of_nfkb_regulat_biomd0000000786_model.ikk_active
-    label: IKK active
-    description: IKK active. Maps to SBML symbol `IKK_active` and is emitted in native
-      SBML units.
+    label: Active IKK (legacy)
+    description: Legacy alias for active inhibitor kappa B kinase. Maps to SBML symbol
+      `IKK_active` and is emitted in native SBML units.
   - name: ikkactive_ik_b
     maps_to: signaling_sbml_lipniacki2004_mathematical_model_of_nfkb_regulat_biomd0000000786_model.ikkactive_ik_b
     label: Ikkactive Ik B

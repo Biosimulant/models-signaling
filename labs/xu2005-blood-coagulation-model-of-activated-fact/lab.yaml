@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: xu2005-blood-coagulation-model-of-activated-fact
+version: 1.0.0
 title: Xu2005 - Blood Coagulation Model of Activated Factors of Extrinsic Pathway
   and TFPI Lab
 description: 'Clean Biosimulant lab for systems signaling model: Xu2005 - Blood Coagulation

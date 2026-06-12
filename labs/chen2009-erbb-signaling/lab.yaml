@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: chen2009-erbb-signaling
+version: 1.0.0
 title: Chen2009 - ErbB Signaling Lab
 description: 'Clean Biosimulant lab for systems signaling model: Chen2009 - ErbB Signaling.
   Values are native SBML quantities; equations, parameters, and initial values remain

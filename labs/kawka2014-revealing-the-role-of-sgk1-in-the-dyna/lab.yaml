@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kawka2014-revealing-the-role-of-sgk1-in-the-dyna
+version: 1.0.0
 title: Kawka2014 - Revealing the role of SGK1 in the dynamics of medulloblastoma using
   a mathematical model Lab
 description: Clean Biosimulant lab for developmental and growth-control signaling.

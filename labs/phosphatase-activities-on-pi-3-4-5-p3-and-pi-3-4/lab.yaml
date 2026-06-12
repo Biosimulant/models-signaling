@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: phosphatase-activities-on-pi-3-4-5-p3-and-pi-3-4
+version: 1.0.0
 title: Phosphatase activities on PI(3,4,5)P3 and PI(3,4)P2 Lab
 description: 'Clean Biosimulant lab for systems signaling model: Phosphatase activities
   on PI(3,4,5)P3 and PI(3,4)P2. Values are native SBML quantities; equations, parameters,

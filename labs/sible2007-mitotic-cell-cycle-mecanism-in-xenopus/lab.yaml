@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: sible2007-mitotic-cell-cycle-mecanism-in-xenopus
+version: 1.0.0
 title: Sible2007 - Mitotic cell cycle mecanism in Xenopus Laevis Lab
 description: Clean Biosimulant lab for cell-cycle regulatory signaling. Values are
   native SBML quantities; equations, parameters, and initial values remain in the

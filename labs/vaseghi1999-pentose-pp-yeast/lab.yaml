@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: vaseghi1999-pentose-pp-yeast
+version: 1.0.0
 title: Vaseghi1999_Pentose_PP_yeast Lab
 description: 'Clean Biosimulant lab for systems signaling model: Vaseghi1999_Pentose_PP_yeast.
   Values are native SBML quantities; equations, parameters, and initial values remain

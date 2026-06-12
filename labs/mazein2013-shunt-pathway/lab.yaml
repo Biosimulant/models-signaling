@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: mazein2013-shunt-pathway
+version: 1.0.0
 title: Mazein2013 - Shunt pathway Lab
 description: 'Clean Biosimulant lab for systems signaling model: Mazein2013 - Shunt
   pathway. Values are native SBML quantities; equations, parameters, and initial values

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: hingant2014-micellar-on-pathway-intermediate-in
+version: 1.0.0
 title: Hingant2014 - Micellar On-Pathway Intermediate in Prion Amyloid Formation Lab
 description: 'Clean Biosimulant lab for systems signaling model: Hingant2014 - Micellar
   On-Pathway Intermediate in Prion Amyloid Formation. Values are native SBML quantities;

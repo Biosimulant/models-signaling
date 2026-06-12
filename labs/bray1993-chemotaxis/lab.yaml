@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: bray1993-chemotaxis
+version: 1.0.0
 title: Bray1993_chemotaxis Lab
 description: 'Clean Biosimulant lab for systems signaling model: Bray1993_chemotaxis.
   Values are native SBML quantities; equations, parameters, and initial values remain

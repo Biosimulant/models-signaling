@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: reiterer2013-pseudophosphatase-styx-role-in-erk
+version: 1.0.0
 title: Reiterer2013 - pseudophosphatase STYX role in ERK signalling Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

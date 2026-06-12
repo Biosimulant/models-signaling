@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: adlung2021-cell-to-cell-variability-in-jak2-stat
+version: 1.0.0
 title: Adlung2021 - Cell-to-cell variability in JAK2/STAT5 pathway Lab
 description: Clean Biosimulant lab for JAK/STAT cytokine signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

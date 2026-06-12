@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: br-nnmark2013-insulin-signalling-in-human-adipoc
+version: 1.0.0
 title: Brännmark2013 - Insulin signalling in human adipocytes (normal condition) Lab
 description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values
   are native SBML quantities; equations, parameters, and initial values remain in

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: rutkis2013-entner-doudoroff-pathway-in-z-mobilis
+version: 1.0.0
 title: Rutkis2013 - Entner-Doudoroff pathway in Z.mobilis Lab
 description: 'Clean Biosimulant lab for systems signaling model: Rutkis2013 - Entner-Doudoroff
   pathway in Z.mobilis. Values are native SBML quantities; equations, parameters,

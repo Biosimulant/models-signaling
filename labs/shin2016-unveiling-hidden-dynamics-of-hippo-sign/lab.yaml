@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: shin2016-unveiling-hidden-dynamics-of-hippo-sign
+version: 1.0.0
 title: Shin2016 - Unveiling Hidden Dynamics of Hippo Signalling Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

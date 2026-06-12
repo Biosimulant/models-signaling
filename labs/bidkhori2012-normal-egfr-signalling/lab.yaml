@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: bidkhori2012-normal-egfr-signalling
+version: 1.0.0
 title: Bidkhori2012 - normal EGFR signalling Lab
 description: Clean Biosimulant lab for JAK/STAT cytokine signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

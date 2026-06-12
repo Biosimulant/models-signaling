@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: perrett2014-gnrh-pulse-erk-activity
+version: 1.0.0
 title: Perrett2014 - GnRH pulse, ERK activity Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

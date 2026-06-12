@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: bakshi2020-truncated-minimal-model-of-alternativ
+version: 1.0.0
 title: Bakshi2020 - Truncated minimal model of alternative pathway of complement system
   Lab
 description: Clean Biosimulant lab for immune signaling. Values are native SBML quantities;

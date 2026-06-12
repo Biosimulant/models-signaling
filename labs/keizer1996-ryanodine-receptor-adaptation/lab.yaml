@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: keizer1996-ryanodine-receptor-adaptation
+version: 1.0.0
 title: Keizer1996_Ryanodine_receptor_adaptation Lab
 description: 'Clean Biosimulant lab for systems signaling model: Keizer1996_Ryanodine_receptor_adaptation.
   Values are native SBML quantities; equations, parameters, and initial values remain

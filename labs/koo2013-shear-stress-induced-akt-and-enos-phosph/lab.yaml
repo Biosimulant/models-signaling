@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: koo2013-shear-stress-induced-akt-and-enos-phosph
+version: 1.0.0
 title: Koo2013 - Shear stress induced AKT and eNOS phosphorylation - Model 2 Lab
 description: 'Clean Biosimulant lab for systems signaling model: Koo2013 - Shear stress
   induced AKT and eNOS phosphorylation - Model 2. Values are native SBML quantities;

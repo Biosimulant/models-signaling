@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: padala2017-erk-pi3k-akt-and-wnt-signalling-netwo-biomd0000000653
+version: 1.0.0
 title: Padala2017- ERK, PI3K/Akt and Wnt signalling network (bRaf mutated) Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

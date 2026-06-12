@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: gerard2013-model-3-embryonic-type-eukaryotic-cel
+version: 1.0.0
 title: Gerard2013 - Model 3 - Embryonic-type eukaryotic Cell Cycle regulation based
   on negative feedback between Cdk/cyclin and APC and competitive inhibition between
   Cdk/cyclin and securin for polyubiquitylation_1 Lab

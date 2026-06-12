@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: hetmanski2021-rear-retraction-kinetic
+version: 1.0.0
 title: Hetmanski2021 rear retraction kinetic Lab
 description: 'Clean Biosimulant lab for systems signaling model: Hetmanski2021 rear
   retraction kinetic. Values are native SBML quantities; equations, parameters, and

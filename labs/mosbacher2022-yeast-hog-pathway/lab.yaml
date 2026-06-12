@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: mosbacher2022-yeast-hog-pathway
+version: 1.0.0
 title: Mosbacher2022 - Yeast HOG pathway Lab
 description: 'Clean Biosimulant lab for systems signaling model: Mosbacher2022 - Yeast
   HOG pathway. Values are native SBML quantities; equations, parameters, and initial

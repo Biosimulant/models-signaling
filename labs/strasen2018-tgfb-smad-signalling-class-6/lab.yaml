@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: strasen2018-tgfb-smad-signalling-class-6
+version: 1.0.0
 title: Strasen2018 - TGFb SMAD Signalling Class 6 Lab
 description: Clean Biosimulant lab for developmental and growth-control signaling.
   Values are native SBML quantities; equations, parameters, and initial values remain

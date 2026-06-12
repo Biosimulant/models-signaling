@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: dupont1992-ca-dpt-protein-phospho
+version: 1.0.0
 title: Dupont1992_Ca_dpt_protein_phospho Lab
 description: 'Clean Biosimulant lab for systems signaling model: Dupont1992_Ca_dpt_protein_phospho.
   Values are native SBML quantities; equations, parameters, and initial values remain

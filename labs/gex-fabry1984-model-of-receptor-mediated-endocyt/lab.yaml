@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: gex-fabry1984-model-of-receptor-mediated-endocyt
+version: 1.0.0
 title: Gex-Fabry1984 - model of receptor-mediated endocytosis of EGF in BALB/c 3T3
   cells Lab
 description: 'Clean Biosimulant lab for systems signaling model: Gex-Fabry1984 - model

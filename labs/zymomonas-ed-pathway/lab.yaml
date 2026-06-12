@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: zymomonas-ed-pathway
+version: 1.0.0
 title: Zymomonas ED Pathway Lab
 description: 'Clean Biosimulant lab for systems signaling model: Zymomonas ED Pathway.
   Values are native SBML quantities; equations, parameters, and initial values remain

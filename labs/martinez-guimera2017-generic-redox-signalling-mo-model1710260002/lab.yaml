@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: martinez-guimera2017-generic-redox-signalling-mo-model1710260002
+version: 1.0.0
 title: MODEL1710260002 - Martinez-Guimera2017 - Generic redox signalling model with negative feedforward
   regulation (Model 3) Lab
 description: 'Clean Biosimulant lab for systems signaling model: Martinez-Guimera2017

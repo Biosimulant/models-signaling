@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: almeida2019-transcription-based-circadian-mechan
+version: 1.0.0
 title: Almeida2019 - Transcription-based circadian mechanism controls the duration
   of molecular clock states in response to signaling inputs Lab
 description: Clean Biosimulant lab for circadian regulatory signaling. Values are

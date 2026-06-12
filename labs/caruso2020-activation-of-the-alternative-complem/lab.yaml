@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: caruso2020-activation-of-the-alternative-complem
+version: 1.0.0
 title: Caruso2020 - Activation of the alternative complement pathway and effects on
   hemolysis Lab
 description: Clean Biosimulant lab for immune signaling. Values are native SBML quantities;

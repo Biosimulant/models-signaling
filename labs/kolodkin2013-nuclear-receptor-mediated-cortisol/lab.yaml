@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kolodkin2013-nuclear-receptor-mediated-cortisol
+version: 1.0.0
 title: Kolodkin2013 - Nuclear receptor-mediated cortisol signalling network Lab
 description: 'Clean Biosimulant lab for systems signaling model: Kolodkin2013 - Nuclear
   receptor-mediated cortisol signalling network. Values are native SBML quantities;

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: schilling2009-erk-distributive
+version: 1.0.0
 title: Schilling2009 - ERK distributive Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

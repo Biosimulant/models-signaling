@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: dicamillo2016-insulin-signalling-pathway-rule-ba
+version: 1.0.0
 title: DiCamillo2016 - Insulin signalling pathway - Rule-based model Lab
 description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values
   are native SBML quantities; equations, parameters, and initial values remain in

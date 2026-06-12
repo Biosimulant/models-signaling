@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kholodenko1999-egfr-signaling
+version: 1.0.0
 title: Kholodenko1999 - EGFR signaling Lab
 description: Clean Biosimulant lab for MAPK/ERK receptor signaling. Values are native
   SBML quantities; equations, parameters, and initial values remain in the bundled

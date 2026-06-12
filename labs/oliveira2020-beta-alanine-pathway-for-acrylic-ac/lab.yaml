@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: oliveira2020-beta-alanine-pathway-for-acrylic-ac
+version: 1.0.0
 title: Oliveira2020 - Beta-Alanine pathway for Acrylic Acid production from glucose
   Lab
 description: Clean Biosimulant lab for metabolic and hormone-linked signaling. Values
